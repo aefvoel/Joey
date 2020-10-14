@@ -13,6 +13,9 @@
 		166C533B25373359007C5EF3 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C533A25373359007C5EF3 /* OnboardingViewController.swift */; };
 		166C534025373372007C5EF3 /* DetectEmotion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166C533F25373372007C5EF3 /* DetectEmotion.storyboard */; };
 		166C534D253733A0007C5EF3 /* DetectEmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C534C253733A0007C5EF3 /* DetectEmotionViewController.swift */; };
+		5A176D7A25373DF70064F26D /* Activities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A176D7925373DF70064F26D /* Activities.storyboard */; };
+		5A176D7F25373E5D0064F26D /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A176D7E25373E5D0064F26D /* ActivitiesViewController.swift */; };
+		5A176D84253740620064F26D /* ActivityListInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A176D83253740620064F26D /* ActivityListInstruction.swift */; };
 		AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A174253730F9003F8823 /* AppDelegate.swift */; };
 		AB92A177253730F9003F8823 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A176253730F9003F8823 /* SceneDelegate.swift */; };
 		AB92A179253730F9003F8823 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A178253730F9003F8823 /* ViewController.swift */; };
@@ -48,6 +51,9 @@
 		166C533A25373359007C5EF3 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		166C533F25373372007C5EF3 /* DetectEmotion.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetectEmotion.storyboard; sourceTree = "<group>"; };
 		166C534C253733A0007C5EF3 /* DetectEmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionViewController.swift; sourceTree = "<group>"; };
+		5A176D7925373DF70064F26D /* Activities.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Activities.storyboard; sourceTree = "<group>"; };
+		5A176D7E25373E5D0064F26D /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		5A176D83253740620064F26D /* ActivityListInstruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListInstruction.swift; sourceTree = "<group>"; };
 		AB92A171253730F9003F8823 /* Joey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB92A174253730F9003F8823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB92A176253730F9003F8823 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +171,40 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		5A176D7525373CE00064F26D /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				5A176D7625373CEE0064F26D /* Models */,
+				5A176D7825373D1B0064F26D /* Controllers */,
+				5A176D7725373D080064F26D /* Views */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		5A176D7625373CEE0064F26D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A176D83253740620064F26D /* ActivityListInstruction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5A176D7725373D080064F26D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A176D7925373DF70064F26D /* Activities.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5A176D7825373D1B0064F26D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A176D7E25373E5D0064F26D /* ActivitiesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		AB92A168253730F9003F8823 = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +228,7 @@
 		AB92A173253730F9003F8823 /* Joey */ = {
 			isa = PBXGroup;
 			children = (
+				5A176D7525373CE00064F26D /* Activities */,
 				166C532325373283007C5EF3 /* DetectEmotion */,
 				166C53222537327D007C5EF3 /* Onboarding */,
 				166C532125373272007C5EF3 /* Home */,
@@ -330,6 +371,7 @@
 				166C534025373372007C5EF3 /* DetectEmotion.storyboard in Resources */,
 				AB92A17C253730F9003F8823 /* Main.storyboard in Resources */,
 				166C532C253732DF007C5EF3 /* Home.storyboard in Resources */,
+				5A176D7A25373DF70064F26D /* Activities.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +401,8 @@
 				AB92A17F253730F9003F8823 /* Joey.xcdatamodeld in Sources */,
 				AB92A179253730F9003F8823 /* ViewController.swift in Sources */,
 				AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */,
+				5A176D84253740620064F26D /* ActivityListInstruction.swift in Sources */,
+				5A176D7F25373E5D0064F26D /* ActivitiesViewController.swift in Sources */,
 				166C534D253733A0007C5EF3 /* DetectEmotionViewController.swift in Sources */,
 				AB92A177253730F9003F8823 /* SceneDelegate.swift in Sources */,
 			);
