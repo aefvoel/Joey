@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BottomSheet",
+        "repositoryURL": "https://github.com/finn-no/BottomSheet",
+        "state": {
+          "branch": null,
+          "revision": "75d452a3221f508f7b4db3612fdfcdc1c5cddf33",
+          "version": "4.2.0"
+        }
+      },
+      {
+        "package": "Charts",
+        "repositoryURL": "https://github.com/danielgindi/Charts",
+        "state": {
+          "branch": null,
+          "revision": "66546404a6739173b8e436ab6bc1f2897cd08594",
+          "version": "3.6.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
