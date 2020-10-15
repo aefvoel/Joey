@@ -27,6 +27,7 @@
 		AB92A1AF25373A2A003F8823 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = AB92A1AE25373A2A003F8823 /* BottomSheet */; };
 		AB92A1B5253747E4003F8823 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = AB92A1B4253747E4003F8823 /* Charts */; };
 		AB92A1BC25374831003F8823 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB92A1BB25374831003F8823 /* CloudKit.framework */; };
+		ABED45F62538198E0005176A /* ActivityListInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABED45F52538198E0005176A /* ActivityListInstruction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		AB92A19B253730FA003F8823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB92A1B925374814003F8823 /* Joey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Joey.entitlements; sourceTree = "<group>"; };
 		AB92A1BB25374831003F8823 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		ABED45F52538198E0005176A /* ActivityListInstruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListInstruction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,12 +212,13 @@
 		AB92A173253730F9003F8823 /* Joey */ = {
 			isa = PBXGroup;
 			children = (
-				AB92A1B925374814003F8823 /* Joey.entitlements */,
+				ABED45F3253819530005176A /* Activities */,
 				166C5351253738DD007C5EF3 /* Helpers */,
 				166C532325373283007C5EF3 /* DetectEmotion */,
 				166C53222537327D007C5EF3 /* Onboarding */,
 				166C532125373272007C5EF3 /* Home */,
 				AB92A174253730F9003F8823 /* AppDelegate.swift */,
+				AB92A1B925374814003F8823 /* Joey.entitlements */,
 				AB92A176253730F9003F8823 /* SceneDelegate.swift */,
 				AB92A178253730F9003F8823 /* ViewController.swift */,
 				AB92A17A253730F9003F8823 /* Main.storyboard */,
@@ -251,6 +254,22 @@
 				AB92A1BB25374831003F8823 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABED45F3253819530005176A /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				ABED45F42538196E0005176A /* Models */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		ABED45F42538196E0005176A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABED45F52538198E0005176A /* ActivityListInstruction.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				166C5331253732E9007C5EF3 /* HomeViewController.swift in Sources */,
+				ABED45F62538198E0005176A /* ActivityListInstruction.swift in Sources */,
 				166C533B25373359007C5EF3 /* OnboardingViewController.swift in Sources */,
 				AB92A17F253730F9003F8823 /* Joey.xcdatamodeld in Sources */,
 				AB92A179253730F9003F8823 /* ViewController.swift in Sources */,
