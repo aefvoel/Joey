@@ -24,9 +24,10 @@
 		AB92A184253730FA003F8823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB92A182253730FA003F8823 /* LaunchScreen.storyboard */; };
 		AB92A18F253730FA003F8823 /* JoeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A18E253730FA003F8823 /* JoeyTests.swift */; };
 		AB92A19A253730FA003F8823 /* JoeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A199253730FA003F8823 /* JoeyUITests.swift */; };
-		AB92A1AF25373A2A003F8823 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = AB92A1AE25373A2A003F8823 /* BottomSheet */; };
 		AB92A1B5253747E4003F8823 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = AB92A1B4253747E4003F8823 /* Charts */; };
 		AB92A1BC25374831003F8823 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB92A1BB25374831003F8823 /* CloudKit.framework */; };
+		AB9857CB253C9F3D00485B29 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9857CA253C9F3D00485B29 /* BottomSheetViewController.swift */; };
+		AB9857D4253CB24E00485B29 /* FittedSheets in Frameworks */ = {isa = PBXBuildFile; productRef = AB9857D3253CB24E00485B29 /* FittedSheets */; };
 		ABED45F62538198E0005176A /* ActivityListInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABED45F52538198E0005176A /* ActivityListInstruction.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		AB92A19B253730FA003F8823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB92A1B925374814003F8823 /* Joey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Joey.entitlements; sourceTree = "<group>"; };
 		AB92A1BB25374831003F8823 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		AB9857CA253C9F3D00485B29 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
 		ABED45F52538198E0005176A /* ActivityListInstruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListInstruction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,8 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB9857D4253CB24E00485B29 /* FittedSheets in Frameworks */,
 				AB92A1BC25374831003F8823 /* CloudKit.framework in Frameworks */,
-				AB92A1AF25373A2A003F8823 /* BottomSheet in Frameworks */,
 				AB92A1B5253747E4003F8823 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				166C5330253732E9007C5EF3 /* HomeViewController.swift */,
+				AB9857CA253C9F3D00485B29 /* BottomSheetViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -289,8 +292,8 @@
 			);
 			name = Joey;
 			packageProductDependencies = (
-				AB92A1AE25373A2A003F8823 /* BottomSheet */,
 				AB92A1B4253747E4003F8823 /* Charts */,
+				AB9857D3253CB24E00485B29 /* FittedSheets */,
 			);
 			productName = Joey;
 			productReference = AB92A171253730F9003F8823 /* Joey.app */;
@@ -364,8 +367,8 @@
 			);
 			mainGroup = AB92A168253730F9003F8823;
 			packageReferences = (
-				AB92A1AD25373A2A003F8823 /* XCRemoteSwiftPackageReference "BottomSheet" */,
 				AB92A1B3253747E4003F8823 /* XCRemoteSwiftPackageReference "Charts" */,
+				AB9857D2253CB24E00485B29 /* XCRemoteSwiftPackageReference "FittedSheets" */,
 			);
 			productRefGroup = AB92A172253730F9003F8823 /* Products */;
 			projectDirPath = "";
@@ -419,6 +422,7 @@
 				AB92A17F253730F9003F8823 /* Joey.xcdatamodeld in Sources */,
 				AB92A179253730F9003F8823 /* ViewController.swift in Sources */,
 				166C5353253738F4007C5EF3 /* AlertHelper.swift in Sources */,
+				AB9857CB253C9F3D00485B29 /* BottomSheetViewController.swift in Sources */,
 				166C535B25373A66007C5EF3 /* UserDefaults.swift in Sources */,
 				AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */,
 				166C534D253733A0007C5EF3 /* DetectEmotionViewController.swift in Sources */,
@@ -759,14 +763,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AB92A1AD25373A2A003F8823 /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/finn-no/BottomSheet";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.2.0;
-			};
-		};
 		AB92A1B3253747E4003F8823 /* XCRemoteSwiftPackageReference "Charts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/danielgindi/Charts";
@@ -775,18 +771,26 @@
 				minimumVersion = 3.6.0;
 			};
 		};
+		AB9857D2253CB24E00485B29 /* XCRemoteSwiftPackageReference "FittedSheets" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gordontucker/FittedSheets";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AB92A1AE25373A2A003F8823 /* BottomSheet */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AB92A1AD25373A2A003F8823 /* XCRemoteSwiftPackageReference "BottomSheet" */;
-			productName = BottomSheet;
-		};
 		AB92A1B4253747E4003F8823 /* Charts */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AB92A1B3253747E4003F8823 /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = Charts;
+		};
+		AB9857D3253CB24E00485B29 /* FittedSheets */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB9857D2253CB24E00485B29 /* XCRemoteSwiftPackageReference "FittedSheets" */;
+			productName = FittedSheets;
 		};
 /* End XCSwiftPackageProductDependency section */
 

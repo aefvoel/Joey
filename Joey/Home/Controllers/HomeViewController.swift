@@ -6,12 +6,13 @@
 //
 
 import UIKit
+import FittedSheets
 
 class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        openBottomSheet()
         // Do any additional setup after loading the view.
     }
     
@@ -26,4 +27,37 @@ class HomeViewController: UIViewController {
     }
     */
 
+    @IBAction func onClickBottomSheet(_ sender: Any) {
+//        let vc = BottomSheetViewController() //change this to your class name
+//        self.present(vc, animated: true, completion: nil)
+//        let viewController = self.storyboard?.instantiateViewController(withIdentifier: "BottomSheetViewController") as! BottomSheetViewController
+//        present(viewController, animated: true)
+        openBottomSheet()
+    }
+    
+    private func openBottomSheet(){
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: "BottomSheetViewController") as! BottomSheetViewController
+        let options = SheetOptions(
+            useInlineMode: true
+        )
+        let sheetController = SheetViewController(controller: controller, sizes: [.percent(0.6), .fullscreen], options: options)
+
+//        self.present(sheetController, animated: false, completion: nil)
+        // Add child
+        sheetController.willMove(toParent: self)
+        self.addChild(sheetController)
+        view.addSubview(sheetController.view)
+        sheetController.didMove(toParent: self)
+
+        sheetController.view.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            sheetController.view.topAnchor.constraint(equalTo: view.topAnchor),
+            sheetController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            sheetController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            sheetController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
+
+        // animate in
+        sheetController.animateIn()
+    }
 }
