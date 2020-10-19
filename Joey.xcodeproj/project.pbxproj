@@ -16,6 +16,7 @@
 		166C5353253738F4007C5EF3 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C5352253738F4007C5EF3 /* AlertHelper.swift */; };
 		166C535B25373A66007C5EF3 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C535A25373A66007C5EF3 /* UserDefaults.swift */; };
 		5A119156253D995C00775C8D /* OnboardThemeSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A119155253D995C00775C8D /* OnboardThemeSelectorViewController.swift */; };
+		5AA607DA253DB89300BCB309 /* TOSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA607D9253DB89300BCB309 /* TOSViewController.swift */; };
 		AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A174253730F9003F8823 /* AppDelegate.swift */; };
 		AB92A177253730F9003F8823 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A176253730F9003F8823 /* SceneDelegate.swift */; };
 		AB92A179253730F9003F8823 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A178253730F9003F8823 /* ViewController.swift */; };
@@ -58,6 +59,7 @@
 		166C5352253738F4007C5EF3 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		166C535A25373A66007C5EF3 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		5A119155253D995C00775C8D /* OnboardThemeSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardThemeSelectorViewController.swift; sourceTree = "<group>"; };
+		5AA607D9253DB89300BCB309 /* TOSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOSViewController.swift; sourceTree = "<group>"; };
 		AB92A171253730F9003F8823 /* Joey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB92A174253730F9003F8823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB92A176253730F9003F8823 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			children = (
 				166C533A25373359007C5EF3 /* OnboardingViewController.swift */,
 				5A119155253D995C00775C8D /* OnboardThemeSelectorViewController.swift */,
+				5AA607D9253DB89300BCB309 /* TOSViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				AB92A17F253730F9003F8823 /* Joey.xcdatamodeld in Sources */,
 				AB92A179253730F9003F8823 /* ViewController.swift in Sources */,
 				166C5353253738F4007C5EF3 /* AlertHelper.swift in Sources */,
+				5AA607DA253DB89300BCB309 /* TOSViewController.swift in Sources */,
 				166C535B25373A66007C5EF3 /* UserDefaults.swift in Sources */,
 				AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */,
 				166C534D253733A0007C5EF3 /* DetectEmotionViewController.swift in Sources */,

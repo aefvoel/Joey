@@ -23,6 +23,7 @@ class OnboardThemeSelectorViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
     @IBAction func onGreenButtonPressed(_ sender: Any) {
         UserDefaultsHelper.setData(value: "Green", key: .themeColor)
         buttonThemeGreen.setImage(#imageLiteral(resourceName: "GreenSelected"), for: .normal)

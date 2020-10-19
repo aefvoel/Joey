@@ -20,6 +20,7 @@ class OnboardingViewController: UIViewController {
         buttonOnboarding?.layer.cornerRadius = 14.0
         labelName?.layer.cornerRadius = 14.0
         viewLabelBackground?.layer.cornerRadius = 14.0
+        dismissKeyboardOnScreen()
         
     }
     
@@ -36,6 +37,18 @@ class OnboardingViewController: UIViewController {
             UserDefaultsHelper.setData(value: labelName.text, key: .userName)
             UserDefaultsHelper.setData(value: "Green", key: .themeColor)
         }
+    }
+    
+    func dismissKeyboardOnScreen() {
+        let tapOnScreen: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+
+        tapOnScreen.cancelsTouchesInView = false
+
+        view.addGestureRecognizer(tapOnScreen)
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
 }

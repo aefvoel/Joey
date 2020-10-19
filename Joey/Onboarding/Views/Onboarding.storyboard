@@ -175,6 +175,9 @@
                                 <state key="normal" title="Terms of Service">
                                     <color key="titleColor" red="0.27450980390000002" green="0.70980392160000005" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ZbF-Ft-LtF" kind="presentation" id="1mW-WN-x8M"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITq-ak-UTx">
                                 <rect key="frame" x="222" y="719" width="85" height="27"/>
@@ -198,6 +201,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ldp-ex-kir" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="237.68115942028987" y="151.33928571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="I6D-UR-ech">
+            <objects>
+                <viewController id="ZbF-Ft-LtF" customClass="TOSViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yBZ-Xr-YMs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ToS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5d-5W-ZK6">
+                                <rect key="frame" x="186" y="472" width="29" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2i-g3-05B">
+                                <rect key="frame" x="24" y="24" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="OB_modalClose_xButton"/>
+                                <connections>
+                                    <action selector="onClickButtonClose:" destination="ZbF-Ft-LtF" eventType="touchUpInside" id="c57-1e-ggT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Fa-rl-qyb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Znv-OD-PcK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-504.34782608695656" y="879.91071428571422"/>
         </scene>
         <!--HomeViewController-->
         <scene sceneID="qr3-uR-fts">
@@ -309,6 +344,7 @@
         <image name="BlueNotSelected" width="286" height="72"/>
         <image name="GreenNotSelected" width="286" height="72"/>
         <image name="OB_joeyMascott" width="71" height="76"/>
+        <image name="OB_modalClose_xButton" width="41" height="41"/>
         <image name="PurpleNotSelected" width="286" height="72"/>
         <image name="activitiesIcon" width="56" height="54"/>
         <image name="detectEmotionIcon" width="56" height="56"/>
