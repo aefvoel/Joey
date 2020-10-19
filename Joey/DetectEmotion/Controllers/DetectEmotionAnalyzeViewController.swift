@@ -69,6 +69,6 @@ extension DetectEmotionAnalyzeViewController: ARSCNViewDelegate {
 
 extension DetectEmotionAnalyzeViewController: UIGestureRecognizerDelegate {
     @objc func sceneViewTapped() {
-        print("Hello, world!")
+        performSegue(withIdentifier: "toResult", sender: nil)
     }
 }

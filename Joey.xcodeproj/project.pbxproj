@@ -16,6 +16,7 @@
 		166C5353253738F4007C5EF3 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C5352253738F4007C5EF3 /* AlertHelper.swift */; };
 		166C535B25373A66007C5EF3 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C535A25373A66007C5EF3 /* UserDefaults.swift */; };
 		16AA990B253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AA990A253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift */; };
+		16D60308253E5D42001A45C9 /* DetectEmotionResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D60307253E5D42001A45C9 /* DetectEmotionResultViewController.swift */; };
 		AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A174253730F9003F8823 /* AppDelegate.swift */; };
 		AB92A177253730F9003F8823 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A176253730F9003F8823 /* SceneDelegate.swift */; };
 		AB92A179253730F9003F8823 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A178253730F9003F8823 /* ViewController.swift */; };
@@ -58,6 +59,7 @@
 		166C5352253738F4007C5EF3 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		166C535A25373A66007C5EF3 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		16AA990A253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionAnalyzeViewController.swift; sourceTree = "<group>"; };
+		16D60307253E5D42001A45C9 /* DetectEmotionResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionResultViewController.swift; sourceTree = "<group>"; };
 		AB92A171253730F9003F8823 /* Joey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB92A174253730F9003F8823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB92A176253730F9003F8823 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			children = (
 				166C534C253733A0007C5EF3 /* DetectEmotionStartViewController.swift */,
 				16AA990A253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift */,
+				16D60307253E5D42001A45C9 /* DetectEmotionResultViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				ABED45F62538198E0005176A /* ActivityListInstruction.swift in Sources */,
 				166C533B25373359007C5EF3 /* OnboardingViewController.swift in Sources */,
 				AB92A17F253730F9003F8823 /* Joey.xcdatamodeld in Sources */,
+				16D60308253E5D42001A45C9 /* DetectEmotionResultViewController.swift in Sources */,
 				AB92A179253730F9003F8823 /* ViewController.swift in Sources */,
 				166C5353253738F4007C5EF3 /* AlertHelper.swift in Sources */,
 				166C535B25373A66007C5EF3 /* UserDefaults.swift in Sources */,
