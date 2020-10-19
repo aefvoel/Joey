@@ -22,23 +22,20 @@ class OnboardingViewController: UIViewController {
         viewLabelBackground?.layer.cornerRadius = 14.0
         
     }
-
+    
     @IBAction func onClickButtonEnterName(_ sender: Any) {
-        if labelName.text == "" {
-            //AlertHelper.createAlert(title: "Okay", message: "test", onComplete: <#T##() -> Void#>)
+        if labelName.text?.isEmpty == true {
+            let alert = AlertHelper.createAlert(title: "Oops!", message: "Please enter your nickname first.") {
+                
+            }
+            alert.view.tintColor = #colorLiteral(red: 0.3529411765, green: 0.7607843137, blue: 0.7411764706, alpha: 1)
+            present(alert, animated: true, completion: nil)
+            
         }
         else {
             UserDefaultsHelper.setData(value: labelName.text, key: .userName)
+            UserDefaultsHelper.setData(value: "Green", key: .themeColor)
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
