@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Detect Emotion View Controller-->
+        <!--Detect Emotion Start View Controller-->
         <scene sceneID="iLl-Ys-xFQ">
             <objects>
-                <viewController storyboardIdentifier="DetectEmotionViewController" id="0cP-Xh-qbi" customClass="DetectEmotionViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetectEmotionStartViewController" id="0cP-Xh-qbi" customClass="DetectEmotionStartViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uef-7W-Q4T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,17 +35,22 @@
                                     <action selector="buttonStartTapped:" destination="0cP-Xh-qbi" eventType="touchUpInside" id="sGD-OW-6bb"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mascotBubble1" translatesAutoresizingMaskIntoConstraints="NO" id="xeF-4A-hwH">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotBubble1" translatesAutoresizingMaskIntoConstraints="NO" id="xeF-4A-hwH">
                                 <rect key="frame" x="140" y="681" width="230" height="123"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mascotImage" translatesAutoresizingMaskIntoConstraints="NO" id="eLF-6G-NXa">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotImage" translatesAutoresizingMaskIntoConstraints="NO" id="eLF-6G-NXa">
                                 <rect key="frame" x="0.0" y="764" width="132" height="132"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="ORp-fq-3ER"/>
+                                    <constraint firstAttribute="height" constant="132" id="Ud2-ga-iMj"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please make sure your  face is visible so that I can see you clearly" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbd-Zd-6CR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please make sure your  face is visible so that I can see you clearly" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbd-Zd-6CR">
                                 <rect key="frame" x="155" y="698" width="201" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="201" id="QVf-0V-oRA"/>
+                                    <constraint firstAttribute="height" constant="71" id="yFn-Fz-EYK"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -57,18 +62,94 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Og6-6J-GBE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eLF-6G-NXa" firstAttribute="leading" secondItem="Og6-6J-GBE" secondAttribute="leading" id="3dg-8n-bnJ"/>
+                            <constraint firstItem="Kbd-Zd-6CR" firstAttribute="leading" secondItem="xeF-4A-hwH" secondAttribute="trailing" constant="-215" id="EIA-qp-fiZ"/>
+                            <constraint firstItem="eLF-6G-NXa" firstAttribute="top" secondItem="xeF-4A-hwH" secondAttribute="bottom" constant="-40" id="TMg-ou-d04"/>
+                            <constraint firstItem="xeF-4A-hwH" firstAttribute="leading" secondItem="eLF-6G-NXa" secondAttribute="trailing" constant="8" symbolic="YES" id="cP7-Wi-lAZ"/>
+                            <constraint firstItem="xeF-4A-hwH" firstAttribute="top" secondItem="Kbd-Zd-6CR" secondAttribute="bottom" constant="-88" id="fnz-9r-ZT7"/>
+                            <constraint firstAttribute="bottom" secondItem="eLF-6G-NXa" secondAttribute="bottom" id="ugy-nZ-xk3"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="buttonStart" destination="y9p-zv-U66" id="eqt-Qs-kW5"/>
+                        <segue destination="4Qy-Oq-1m0" kind="show" identifier="toDetectEmotion" id="M1E-V1-3Bb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uqT-oa-ZmN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="50.724637681159422" y="124.55357142857142"/>
         </scene>
+        <!--Detect Emotion Analyze View Controller-->
+        <scene sceneID="d37-VR-gHq">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="4Qy-Oq-1m0" customClass="DetectEmotionAnalyzeViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bf-UQ-6WG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green-background" translatesAutoresizingMaskIntoConstraints="NO" id="4eb-pA-LAT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KtU-jb-9Xh" customClass="ARSCNView">
+                                <rect key="frame" x="24" y="194.5" width="366" height="407"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KtU-jb-9Xh" secondAttribute="height" multiplier="9:10" id="2nA-xw-o8P"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotBubble1" translatesAutoresizingMaskIntoConstraints="NO" id="Xez-oQ-4sw">
+                                <rect key="frame" x="140" y="681" width="230" height="123"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotImage" translatesAutoresizingMaskIntoConstraints="NO" id="B6D-Cc-Siv">
+                                <rect key="frame" x="0.0" y="764" width="132" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="i6o-CF-A8l"/>
+                                    <constraint firstAttribute="width" constant="132" id="jee-HN-VwM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please make sure your  face is visible so that I can see you clearly" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2M-lO-qUD">
+                                <rect key="frame" x="155" y="698" width="201" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="201" id="f81-Sv-E2t"/>
+                                    <constraint firstAttribute="height" constant="71" id="yCU-74-kP5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cgB-vY-EfF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xez-oQ-4sw" firstAttribute="top" secondItem="e2M-lO-qUD" secondAttribute="bottom" constant="-88" id="2ae-5S-cg6"/>
+                            <constraint firstItem="4eb-pA-LAT" firstAttribute="leading" secondItem="cgB-vY-EfF" secondAttribute="leading" id="4WX-td-RF8"/>
+                            <constraint firstItem="B6D-Cc-Siv" firstAttribute="top" secondItem="Xez-oQ-4sw" secondAttribute="bottom" constant="-40" id="6Au-Ws-IKz"/>
+                            <constraint firstItem="cgB-vY-EfF" firstAttribute="trailing" secondItem="KtU-jb-9Xh" secondAttribute="trailing" constant="24" id="Bya-r6-q4l"/>
+                            <constraint firstAttribute="bottom" secondItem="4eb-pA-LAT" secondAttribute="bottom" id="Gp5-qk-Gle"/>
+                            <constraint firstItem="B6D-Cc-Siv" firstAttribute="leading" secondItem="cgB-vY-EfF" secondAttribute="leading" id="NqF-Xb-5E8"/>
+                            <constraint firstItem="Xez-oQ-4sw" firstAttribute="leading" secondItem="B6D-Cc-Siv" secondAttribute="trailing" constant="8" symbolic="YES" id="RuE-bY-pe9"/>
+                            <constraint firstItem="e2M-lO-qUD" firstAttribute="leading" secondItem="Xez-oQ-4sw" secondAttribute="trailing" constant="-215" id="SnK-TC-aBT"/>
+                            <constraint firstItem="4eb-pA-LAT" firstAttribute="trailing" secondItem="cgB-vY-EfF" secondAttribute="trailing" id="U4v-Nf-ctZ"/>
+                            <constraint firstAttribute="bottom" secondItem="B6D-Cc-Siv" secondAttribute="bottom" id="bfm-9P-JzY"/>
+                            <constraint firstItem="KtU-jb-9Xh" firstAttribute="leading" secondItem="cgB-vY-EfF" secondAttribute="leading" constant="24" id="dxb-er-siF"/>
+                            <constraint firstItem="KtU-jb-9Xh" firstAttribute="centerY" secondItem="8bf-UQ-6WG" secondAttribute="centerY" constant="-50" id="lSq-Be-WjW"/>
+                            <constraint firstItem="4eb-pA-LAT" firstAttribute="top" secondItem="8bf-UQ-6WG" secondAttribute="top" id="lam-3X-qdC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bZT-8h-zZO"/>
+                    <connections>
+                        <outlet property="sceneView" destination="KtU-jb-9Xh" id="i4w-IW-74D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pAq-p6-gj7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942.02898550724649" y="124.55357142857142"/>
+        </scene>
     </scenes>
     <resources>
         <image name="analyzing" width="328" height="301"/>
+        <image name="green-background" width="414" height="896"/>
         <image name="mascotBubble1" width="230" height="123"/>
         <image name="mascotImage" width="132" height="132"/>
         <systemColor name="systemBackgroundColor">

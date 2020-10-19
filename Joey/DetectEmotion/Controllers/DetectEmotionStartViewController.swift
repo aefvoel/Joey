@@ -1,5 +1,5 @@
 //
-//  DetectEmotionViewController.swift
+//  DetectEmotionStartViewController.swift
 //  Joey
 //
 //  Created by Rahman Fadhil on 14/10/20.
@@ -9,7 +9,7 @@ import UIKit
 import ARKit
 import AVFoundation
 
-class DetectEmotionViewController: UIViewController {
+class DetectEmotionStartViewController: UIViewController {
 
     @IBOutlet weak var buttonStart: UIButton!
     
@@ -20,7 +20,7 @@ class DetectEmotionViewController: UIViewController {
     
     // MARK: - Setup views
     func setupView() {
-        buttonStart.layer.cornerRadius = 10
+        buttonStart.layer.cornerRadius = 14
     }
     
     @IBAction func buttonStartTapped(_ sender: Any) {
