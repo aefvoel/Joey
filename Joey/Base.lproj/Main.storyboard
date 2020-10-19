@@ -9,9 +9,9 @@
         <!--Navigation Controller-->
         <scene sceneID="Sic-KY-jtz">
             <objects>
-                <navigationController id="IuL-jc-hSK" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="IuL-jc-hSK" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dqH-Ej-DVf">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
