@@ -62,6 +62,9 @@
                                         <real key="value" value="14"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="WA5-Xk-N37" kind="show" id="Q3t-Ea-lnD"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePU-PO-rAe" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
                                 <rect key="frame" x="16" y="451" width="382" height="395"/>
@@ -134,6 +137,12 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuK-we-T1M">
+                                <rect key="frame" x="59" y="44" width="57" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vCU-FD-fzm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -144,6 +153,7 @@
                             <constraint firstItem="k9H-5I-fPH" firstAttribute="top" secondItem="cP4-sd-ZzV" secondAttribute="bottom" constant="32" id="HAz-0F-gyq"/>
                             <constraint firstItem="cP4-sd-ZzV" firstAttribute="trailing" secondItem="k9H-5I-fPH" secondAttribute="trailing" id="KLO-KI-hIM"/>
                             <constraint firstItem="ePU-PO-rAe" firstAttribute="leading" secondItem="vCU-FD-fzm" secondAttribute="leading" constant="16" id="NrS-SU-3hM"/>
+                            <constraint firstItem="PuK-we-T1M" firstAttribute="baseline" secondItem="reY-YN-JA1" secondAttribute="baseline" id="RmB-OU-UK1"/>
                             <constraint firstItem="cP4-sd-ZzV" firstAttribute="centerX" secondItem="G8S-2m-Uty" secondAttribute="centerX" id="TNa-8T-83r"/>
                             <constraint firstItem="k9H-5I-fPH" firstAttribute="leading" secondItem="ePU-PO-rAe" secondAttribute="leading" id="ViJ-MR-gwL"/>
                             <constraint firstItem="k9H-5I-fPH" firstAttribute="trailing" secondItem="ePU-PO-rAe" secondAttribute="trailing" id="WN1-NI-IV2"/>
@@ -152,6 +162,7 @@
                             <constraint firstItem="reY-YN-JA1" firstAttribute="leading" secondItem="G8S-2m-Uty" secondAttribute="leadingMargin" id="qwn-li-g35"/>
                             <constraint firstItem="ePU-PO-rAe" firstAttribute="top" secondItem="k9H-5I-fPH" secondAttribute="bottom" constant="32" id="s3L-Bq-aSo"/>
                             <constraint firstItem="ePU-PO-rAe" firstAttribute="top" secondItem="reY-YN-JA1" secondAttribute="top" constant="407" id="sTH-FK-3d2"/>
+                            <constraint firstItem="PuK-we-T1M" firstAttribute="leading" secondItem="reY-YN-JA1" secondAttribute="trailing" constant="8" id="tug-7p-zzz"/>
                             <constraint firstItem="vCU-FD-fzm" firstAttribute="trailing" secondItem="ePU-PO-rAe" secondAttribute="trailing" constant="16" id="xHA-Wo-16X"/>
                             <constraint firstItem="ePU-PO-rAe" firstAttribute="top" secondItem="k9H-5I-fPH" secondAttribute="bottom" constant="32" id="zWg-1s-hBy"/>
                         </constraints>
@@ -159,11 +170,22 @@
                     <connections>
                         <outlet property="activitiesChartView" destination="xcP-JR-Lut" id="mGV-q0-Jtk"/>
                         <outlet property="activitiesCollectionView" destination="bns-O8-eDQ" id="KjI-MK-k3X"/>
+                        <outlet property="labelUserName" destination="PuK-we-T1M" id="w4E-iW-hGh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zYA-E2-0BO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-291.304347826087" y="963.61607142857133"/>
+            <point key="canvasLocation" x="-291" y="867"/>
+        </scene>
+        <!--DetectEmotionStartViewController-->
+        <scene sceneID="7uB-tu-wgk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetectEmotion" referencedIdentifier="DetectEmotionStartViewController" id="WA5-Xk-N37" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="nh5-hq-mQO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RoB-U9-TaC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="741" y="867"/>
         </scene>
     </scenes>
     <designables>

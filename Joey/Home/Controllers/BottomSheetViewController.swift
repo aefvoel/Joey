@@ -12,9 +12,11 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
     
     @IBOutlet weak var activitiesCollectionView: UICollectionView!
     @IBOutlet weak var activitiesChartView: LineChartView!
+    @IBOutlet weak var labelUserName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         registerNib()
+        setupUI()
         setupChart()
         // Do any additional setup after loading the view.
     }
@@ -24,6 +26,9 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
         if let flowLayout = self.activitiesCollectionView?.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.estimatedItemSize = CGSize(width: 109, height: 150)
         }
+    }
+    func setupUI(){
+        labelUserName.text = UserDefaultsHelper.getData(type: String.self, forKey: .userName)
     }
     func setupChart(){
         activitiesChartView.delegate = self
