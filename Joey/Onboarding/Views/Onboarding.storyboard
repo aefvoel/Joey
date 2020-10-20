@@ -224,10 +224,10 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NPD-FH-nwV">
-                                            <rect key="frame" x="0.0" y="0.0" width="294" height="376"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="285" height="376"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vlQ-7W-FVk">
-                                                    <rect key="frame" x="0.0" y="0.0" width="294" height="51"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="285" height="51"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HrY-yH-5bI">
                                                             <rect key="frame" x="14" y="15" width="209" height="21"/>
@@ -240,7 +240,7 @@
                                                     <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRq-dl-DPt">
-                                                    <rect key="frame" x="0.0" y="51" width="294" height="325"/>
+                                                    <rect key="frame" x="0.0" y="51" width="285" height="325"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Answer" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pi-8g-GBu">
                                                             <rect key="frame" x="8" y="0.0" width="266" height="200"/>
@@ -259,7 +259,7 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="NPD-FH-nwV" secondAttribute="trailing" constant="-24" id="BRA-DG-5Qg"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="NPD-FH-nwV" secondAttribute="trailing" constant="-15" id="BRA-DG-5Qg"/>
                                         <constraint firstItem="NPD-FH-nwV" firstAttribute="leading" secondItem="ptV-ye-KLN" secondAttribute="leading" id="I9r-m5-itQ"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="NPD-FH-nwV" secondAttribute="bottom" constant="-37" id="MNZ-r5-8I1"/>
                                         <constraint firstItem="NPD-FH-nwV" firstAttribute="top" secondItem="ptV-ye-KLN" secondAttribute="top" id="TZj-kk-oO1"/>
