@@ -24,7 +24,7 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
         let nib = UINib(nibName: ActivitiesCollectionViewCell.nibName, bundle: nil)
         activitiesCollectionView?.register(nib, forCellWithReuseIdentifier: ActivitiesCollectionViewCell.reuseIdentifier)
         if let flowLayout = self.activitiesCollectionView?.collectionViewLayout as? UICollectionViewFlowLayout {
-            flowLayout.estimatedItemSize = CGSize(width: 109, height: 150)
+            flowLayout.estimatedItemSize = CGSize(width: 109, height: 155)
         }
     }
     func setupUI(){

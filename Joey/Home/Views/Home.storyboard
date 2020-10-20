@@ -7,6 +7,12 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Yuanti.ttc">
+            <string>STYuanti-SC-Bold</string>
+            <string>STYuanti-SC-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="0IO-Bv-S47">
@@ -19,7 +25,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I am Joey! Glad to see you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKJ-NC-ujO">
                                 <rect key="frame" x="20" y="135" width="374" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -41,18 +47,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reY-YN-JA1">
-                                <rect key="frame" x="20" y="44" width="31" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <rect key="frame" x="20" y="44" width="29" height="36.5"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cP4-sd-ZzV" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="16" y="108" width="382" height="45"/>
+                                <rect key="frame" x="16" y="112.5" width="382" height="45"/>
                                 <color key="backgroundColor" red="1" green="0.80392156862745101" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="S59-Yb-94f"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
                                 <state key="normal" title="Check your feeling">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -70,14 +76,14 @@
                                 <rect key="frame" x="16" y="451" width="382" height="395"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Space" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mE-xT-02q">
-                                        <rect key="frame" x="24" y="19" width="95" height="27"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <rect key="frame" x="24" y="19" width="92" height="31"/>
+                                        <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcP-JR-Lut" customClass="LineChartView" customModule="Charts">
-                                        <rect key="frame" x="12" y="68" width="358" height="293"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <rect key="frame" x="12" y="72" width="358" height="289"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.8666666666666667" green="0.40784313725490196" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
@@ -97,10 +103,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9H-5I-fPH" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="16" y="185" width="382" height="234"/>
+                                <rect key="frame" x="16" y="189.5" width="382" height="229.5"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bns-O8-eDQ">
-                                        <rect key="frame" x="17" y="64" width="348" height="149"/>
+                                        <rect key="frame" x="17" y="64" width="348" height="155.5"/>
                                         <color key="backgroundColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="E08-lV-QEV">
                                             <size key="itemSize" width="128" height="128"/>
@@ -115,20 +121,20 @@
                                         </connections>
                                     </collectionView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImO-Xs-HoM">
-                                        <rect key="frame" x="17" y="18" width="86.5" height="27"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <rect key="frame" x="17" y="18" width="90.5" height="31"/>
+                                        <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.3529411764705882" green="0.76078431372549016" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="bns-O8-eDQ" firstAttribute="top" secondItem="ImO-Xs-HoM" secondAttribute="bottom" constant="19" id="PI7-yf-G1R"/>
+                                    <constraint firstItem="bns-O8-eDQ" firstAttribute="top" secondItem="ImO-Xs-HoM" secondAttribute="bottom" constant="15" id="PI7-yf-G1R"/>
                                     <constraint firstItem="ImO-Xs-HoM" firstAttribute="leading" secondItem="k9H-5I-fPH" secondAttribute="leading" constant="17" id="Svh-BN-A4u"/>
                                     <constraint firstItem="bns-O8-eDQ" firstAttribute="centerX" secondItem="k9H-5I-fPH" secondAttribute="centerX" id="cJl-Va-eBh"/>
                                     <constraint firstItem="ImO-Xs-HoM" firstAttribute="top" secondItem="k9H-5I-fPH" secondAttribute="top" constant="18" id="hPs-M3-HM4"/>
                                     <constraint firstItem="ImO-Xs-HoM" firstAttribute="leading" secondItem="bns-O8-eDQ" secondAttribute="leading" id="ltr-MR-ftT"/>
-                                    <constraint firstAttribute="bottom" secondItem="bns-O8-eDQ" secondAttribute="bottom" constant="21" id="p96-bU-LPa"/>
+                                    <constraint firstAttribute="bottom" secondItem="bns-O8-eDQ" secondAttribute="bottom" constant="10" id="p96-bU-LPa"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
@@ -138,8 +144,8 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuK-we-T1M">
-                                <rect key="frame" x="59" y="44" width="57" height="32"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <rect key="frame" x="57" y="44" width="52" height="36.5"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -175,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zYA-E2-0BO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-291" y="867"/>
+            <point key="canvasLocation" x="-291.304347826087" y="866.51785714285711"/>
         </scene>
         <!--DetectEmotionStartViewController-->
         <scene sceneID="7uB-tu-wgk">
@@ -190,7 +196,7 @@
     </scenes>
     <designables>
         <designable name="cP4-sd-ZzV">
-            <size key="intrinsicContentSize" width="163" height="36"/>
+            <size key="intrinsicContentSize" width="164" height="40"/>
         </designable>
     </designables>
     <resources>
