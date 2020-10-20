@@ -68,6 +68,7 @@
 		16D60307253E5D42001A45C9 /* DetectEmotionResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionResultViewController.swift; sourceTree = "<group>"; };
 		5A119155253D995C00775C8D /* OnboardThemeSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardThemeSelectorViewController.swift; sourceTree = "<group>"; };
 		5AA607D9253DB89300BCB309 /* TOSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOSViewController.swift; sourceTree = "<group>"; };
+		5AD838C8253E8BCC0042D14E /* Yuanti.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yuanti.ttc; sourceTree = "<group>"; };
 		AB92A171253730F9003F8823 /* Joey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB92A174253730F9003F8823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB92A176253730F9003F8823 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -215,6 +216,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		5AD838C7253E8B940042D14E /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				5AD838C8253E8BCC0042D14E /* Yuanti.ttc */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		AB92A168253730F9003F8823 = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +248,7 @@
 		AB92A173253730F9003F8823 /* Joey */ = {
 			isa = PBXGroup;
 			children = (
+				5AD838C7253E8B940042D14E /* Font */,
 				ABED45F3253819530005176A /* Activities */,
 				166C5351253738DD007C5EF3 /* Helpers */,
 				166C532325373283007C5EF3 /* DetectEmotion */,
