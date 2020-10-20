@@ -1,5 +1,5 @@
 //
-//  TOSViewController.swift
+//  TOSPPViewController.swift
 //  Joey
 //
 //  Created by Setiawan Joddy on 19/10/20.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TOSViewController: UIViewController {
+class TOSPPViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
