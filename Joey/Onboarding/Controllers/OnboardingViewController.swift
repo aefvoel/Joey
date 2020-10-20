@@ -10,7 +10,7 @@ import UIKit
 class OnboardingViewController: UIViewController {
     
     @IBOutlet weak var buttonOnboarding: UIButton!
-    @IBOutlet weak var labelName: UITextField!
+    @IBOutlet weak var textFieldName: UITextField!
     @IBOutlet weak var viewLabelBackground: UIView!
     
     override func viewDidLoad() {
@@ -18,14 +18,14 @@ class OnboardingViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = true
         // Do any additional setup after loading the view.
         buttonOnboarding?.layer.cornerRadius = 14.0
-        labelName?.layer.cornerRadius = 14.0
         viewLabelBackground?.layer.cornerRadius = 14.0
         dismissKeyboardOnScreen()
+        textFieldName?.delegate = self
         
     }
     
     @IBAction func onClickButtonEnterName(_ sender: Any) {
-        if labelName.text?.isEmpty == true {
+        if textFieldName.text?.isEmpty == true {
             let alert = AlertHelper.createAlert(title: "Oops!", message: "Please enter your nickname first.") {
                 
             }
@@ -34,7 +34,7 @@ class OnboardingViewController: UIViewController {
             
         }
         else {
-            UserDefaultsHelper.setData(value: labelName.text, key: .userName)
+            UserDefaultsHelper.setData(value: textFieldName.text, key: .userName)
             UserDefaultsHelper.setData(value: "Green", key: .themeColor)
         }
     }
@@ -51,4 +51,11 @@ class OnboardingViewController: UIViewController {
         view.endEditing(true)
     }
     
+}
+
+extension OnboardingViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textFieldName: UITextField) -> Bool {
+        textFieldName.resignFirstResponder()
+        return true
+    }
 }

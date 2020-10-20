@@ -199,7 +199,7 @@
                     <navigationItem key="navigationItem" id="nDM-rJ-bx1"/>
                     <connections>
                         <outlet property="buttonOnboarding" destination="grB-UN-8bm" id="dfN-0m-wAX"/>
-                        <outlet property="labelName" destination="dzW-yI-Wal" id="Fe8-Vk-CJp"/>
+                        <outlet property="textFieldName" destination="dzW-yI-Wal" id="Fe8-Vk-CJp"/>
                         <outlet property="viewLabelBackground" destination="R4r-a5-5Xm" id="7jt-pq-fay"/>
                     </connections>
                 </viewController>
