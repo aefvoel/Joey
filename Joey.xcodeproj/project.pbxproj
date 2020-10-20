@@ -14,8 +14,6 @@
 		166C534025373372007C5EF3 /* DetectEmotion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166C533F25373372007C5EF3 /* DetectEmotion.storyboard */; };
 		166C534D253733A0007C5EF3 /* DetectEmotionStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C534C253733A0007C5EF3 /* DetectEmotionStartViewController.swift */; };
 		166C5353253738F4007C5EF3 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C5352253738F4007C5EF3 /* AlertHelper.swift */; };
-		166C535B25373A66007C5EF3 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C535A25373A66007C5EF3 /* UserDefaultsHelper.swift */; };
-		166C535B25373A66007C5EF3 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C535A25373A66007C5EF3 /* UserDefaults.swift */; };
 		16AA990B253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AA990A253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift */; };
 		16D60308253E5D42001A45C9 /* DetectEmotionResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D60307253E5D42001A45C9 /* DetectEmotionResultViewController.swift */; };
 		5A119156253D995C00775C8D /* OnboardThemeSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A119155253D995C00775C8D /* OnboardThemeSelectorViewController.swift */; };
@@ -33,6 +31,7 @@
 		AB92A1BC25374831003F8823 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB92A1BB25374831003F8823 /* CloudKit.framework */; };
 		AB9857CB253C9F3D00485B29 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9857CA253C9F3D00485B29 /* BottomSheetViewController.swift */; };
 		AB9857D4253CB24E00485B29 /* FittedSheets in Frameworks */ = {isa = PBXBuildFile; productRef = AB9857D3253CB24E00485B29 /* FittedSheets */; };
+		ABEBCCAF253E87AC002E03A6 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEBCCAE253E87AC002E03A6 /* UserDefaultsHelper.swift */; };
 		ABECBF10253D891C00EF7D43 /* ActivitiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECBF0E253D891C00EF7D43 /* ActivitiesCollectionViewCell.swift */; };
 		ABECBF11253D891C00EF7D43 /* ActivitiesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABECBF0F253D891C00EF7D43 /* ActivitiesCollectionViewCell.xib */; };
 		ABECBF17253D8E7600EF7D43 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECBF16253D8E7600EF7D43 /* Activity.swift */; };
@@ -65,8 +64,6 @@
 		166C533F25373372007C5EF3 /* DetectEmotion.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetectEmotion.storyboard; sourceTree = "<group>"; };
 		166C534C253733A0007C5EF3 /* DetectEmotionStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionStartViewController.swift; sourceTree = "<group>"; };
 		166C5352253738F4007C5EF3 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
-		166C535A25373A66007C5EF3 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
-		166C535A25373A66007C5EF3 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		16AA990A253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionAnalyzeViewController.swift; sourceTree = "<group>"; };
 		16D60307253E5D42001A45C9 /* DetectEmotionResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionResultViewController.swift; sourceTree = "<group>"; };
 		5A119155253D995C00775C8D /* OnboardThemeSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardThemeSelectorViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +86,7 @@
 		AB92A1B925374814003F8823 /* Joey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Joey.entitlements; sourceTree = "<group>"; };
 		AB92A1BB25374831003F8823 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		AB9857CA253C9F3D00485B29 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		ABEBCCAE253E87AC002E03A6 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		ABECBF0E253D891C00EF7D43 /* ActivitiesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesCollectionViewCell.swift; sourceTree = "<group>"; };
 		ABECBF0F253D891C00EF7D43 /* ActivitiesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivitiesCollectionViewCell.xib; sourceTree = "<group>"; };
 		ABECBF16253D8E7600EF7D43 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
@@ -210,8 +208,8 @@
 		166C5351253738DD007C5EF3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				ABEBCCAE253E87AC002E03A6 /* UserDefaultsHelper.swift */,
 				166C5352253738F4007C5EF3 /* AlertHelper.swift */,
-				166C535A25373A66007C5EF3 /* UserDefaultsHelper.swift */,
 				ABECBF21253D9F1900EF7D43 /* CornerRadiusHelper.swift */,
 			);
 			path = Helpers;
@@ -461,13 +459,12 @@
 				AB92A179253730F9003F8823 /* ViewController.swift in Sources */,
 				166C5353253738F4007C5EF3 /* AlertHelper.swift in Sources */,
 				AB9857CB253C9F3D00485B29 /* BottomSheetViewController.swift in Sources */,
-				166C535B25373A66007C5EF3 /* UserDefaultsHelper.swift in Sources */,
+				ABEBCCAF253E87AC002E03A6 /* UserDefaultsHelper.swift in Sources */,
 				AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */,
 				ABECBF10253D891C00EF7D43 /* ActivitiesCollectionViewCell.swift in Sources */,
-				166C534D253733A0007C5EF3 /* DetectEmotionViewController.swift in Sources */,
+				166C534D253733A0007C5EF3 /* DetectEmotionStartViewController.swift in Sources */,
 				ABECBF17253D8E7600EF7D43 /* Activity.swift in Sources */,
 				5AA607DA253DB89300BCB309 /* TOSViewController.swift in Sources */,
-				166C535B25373A66007C5EF3 /* UserDefaults.swift in Sources */,
 				AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */,
 				16AA990B253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift in Sources */,
 				166C534D253733A0007C5EF3 /* DetectEmotionStartViewController.swift in Sources */,
