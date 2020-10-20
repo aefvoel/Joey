@@ -8,11 +8,22 @@
 import UIKit
 
 class DetectEmotionResultViewController: UIViewController {
-
+    
+    var faceImage: UIImage?
+    var emotion: String?
+    
+    @IBOutlet weak var viewContainer: UIView!
+    @IBOutlet weak var imageResult: UIImageView!
+    @IBOutlet weak var labelResult: UILabel!
+    @IBOutlet weak var buttonContinue: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        viewContainer.layer.cornerRadius = 14
+        imageResult.image = faceImage
+        labelResult.text = emotion
+        buttonContinue.layer.cornerRadius = 14
     }
     
 

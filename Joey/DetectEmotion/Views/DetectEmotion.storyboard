@@ -163,24 +163,33 @@
                                 <rect key="frame" x="24" y="244.5" width="366" height="407"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Jh-Pj-88t">
-                                        <rect key="frame" x="0.0" y="314" width="366" height="53"/>
+                                        <rect key="frame" x="0.0" y="324" width="366" height="53"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Look" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AL1-Fe-eIN">
-                                        <rect key="frame" x="0.0" y="267" width="366" height="29"/>
+                                        <rect key="frame" x="0.0" y="277" width="366" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="analyzing" translatesAutoresizingMaskIntoConstraints="NO" id="XER-9o-0ri">
+                                        <rect key="frame" x="83" y="40" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="1Qp-KN-ice"/>
+                                            <constraint firstAttribute="height" constant="200" id="eJj-Su-NhQ"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="3Jh-Pj-88t" secondAttribute="bottom" constant="40" id="3xA-n9-dJm"/>
+                                    <constraint firstAttribute="bottom" secondItem="3Jh-Pj-88t" secondAttribute="bottom" constant="30" id="3xA-n9-dJm"/>
                                     <constraint firstAttribute="trailing" secondItem="3Jh-Pj-88t" secondAttribute="trailing" id="AhS-a4-M4x"/>
+                                    <constraint firstItem="XER-9o-0ri" firstAttribute="top" secondItem="Gbp-6g-Mdj" secondAttribute="top" constant="40" id="Cd4-au-KVk"/>
                                     <constraint firstItem="AL1-Fe-eIN" firstAttribute="trailing" secondItem="3Jh-Pj-88t" secondAttribute="trailing" id="DOs-1m-TS3"/>
                                     <constraint firstItem="3Jh-Pj-88t" firstAttribute="leading" secondItem="Gbp-6g-Mdj" secondAttribute="leading" id="UMk-m1-Chm"/>
+                                    <constraint firstItem="XER-9o-0ri" firstAttribute="centerX" secondItem="Gbp-6g-Mdj" secondAttribute="centerX" id="eHP-Mu-TG2"/>
                                     <constraint firstAttribute="width" secondItem="Gbp-6g-Mdj" secondAttribute="height" multiplier="9:10" id="ggU-N6-J6B"/>
                                     <constraint firstItem="AL1-Fe-eIN" firstAttribute="leading" secondItem="3Jh-Pj-88t" secondAttribute="leading" id="mjT-cc-q1r"/>
                                     <constraint firstItem="3Jh-Pj-88t" firstAttribute="top" secondItem="AL1-Fe-eIN" secondAttribute="bottom" constant="18" id="vKh-Dp-kK8"/>
@@ -220,6 +229,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DtZ-rs-I2h"/>
+                    <connections>
+                        <outlet property="buttonContinue" destination="FU8-Ys-D4V" id="uoK-V6-g4R"/>
+                        <outlet property="imageResult" destination="XER-9o-0ri" id="mp0-4L-uQk"/>
+                        <outlet property="labelResult" destination="3Jh-Pj-88t" id="MWW-QQ-aoU"/>
+                        <outlet property="viewContainer" destination="Gbp-6g-Mdj" id="2bi-Y9-Fgy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcc-x2-X0A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

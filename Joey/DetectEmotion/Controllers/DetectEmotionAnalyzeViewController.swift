@@ -33,15 +33,15 @@ class DetectEmotionAnalyzeViewController: UIViewController {
         sceneView.session.pause()
     }
     
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let vc = segue.destination as? DetectEmotionResultViewController {
+            vc.faceImage = sceneView.snapshot()
+            vc.emotion = "SAD" // TODO: replace with real emotion result
+        }
     }
-    */
 
 }
 
