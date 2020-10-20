@@ -27,7 +27,21 @@ class DetectEmotionResultViewController: UIViewController {
         buttonContinue.layer.cornerRadius = 14
     }
     
-
+    @IBAction func buttonContinueTapped(_ sender: Any) {
+        if let emotion = emotion {
+            EmotionHelper.save(emotion: emotion) { (error) in
+                let alert = AlertHelper.createAlert(title: "Failed to save emotion to your phone!", message: "If you want to save your emotion to your space, please scan your face again.") {
+                    DispatchQueue.main.async {
+                        self.navigationController?.popViewController(animated: true)
+                    }
+                }
+                DispatchQueue.main.async {
+                    self.present(alert, animated: true)
+                }
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

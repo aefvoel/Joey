@@ -217,6 +217,9 @@
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonContinueTapped:" destination="eI4-Tb-QJd" eventType="touchUpInside" id="rub-gg-6CN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mvT-Qy-3nF"/>
