@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="-281" y="159"/>
         </scene>
-        <!--DetectEmotionViewController-->
+        <!--DetectEmotionStartViewController-->
         <scene sceneID="ipv-wn-L1E">
             <objects>
-                <viewControllerPlaceholder storyboardName="DetectEmotion" referencedIdentifier="DetectEmotionViewController" id="4rI-Kb-mO5" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="DetectEmotion" referencedIdentifier="DetectEmotionStartViewController" id="4rI-Kb-mO5" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="xcc-2c-XHQ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4sK-pc-ecT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
