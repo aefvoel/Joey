@@ -1,13 +1,13 @@
 //
-//  DetectEmotionViewController.swift
+//  TOSViewController.swift
 //  Joey
 //
-//  Created by Rahman Fadhil on 14/10/20.
+//  Created by Setiawan Joddy on 19/10/20.
 //
 
 import UIKit
 
-class DetectEmotionViewController: UIViewController {
+class TOSViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,7 +15,10 @@ class DetectEmotionViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func onClickButtonClose(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

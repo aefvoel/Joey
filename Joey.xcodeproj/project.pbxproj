@@ -12,9 +12,14 @@
 		166C53362537332F007C5EF3 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166C53352537332F007C5EF3 /* Onboarding.storyboard */; };
 		166C533B25373359007C5EF3 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C533A25373359007C5EF3 /* OnboardingViewController.swift */; };
 		166C534025373372007C5EF3 /* DetectEmotion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166C533F25373372007C5EF3 /* DetectEmotion.storyboard */; };
-		166C534D253733A0007C5EF3 /* DetectEmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C534C253733A0007C5EF3 /* DetectEmotionViewController.swift */; };
+		166C534D253733A0007C5EF3 /* DetectEmotionStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C534C253733A0007C5EF3 /* DetectEmotionStartViewController.swift */; };
 		166C5353253738F4007C5EF3 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C5352253738F4007C5EF3 /* AlertHelper.swift */; };
 		166C535B25373A66007C5EF3 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C535A25373A66007C5EF3 /* UserDefaultsHelper.swift */; };
+		166C535B25373A66007C5EF3 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C535A25373A66007C5EF3 /* UserDefaults.swift */; };
+		16AA990B253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AA990A253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift */; };
+		16D60308253E5D42001A45C9 /* DetectEmotionResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D60307253E5D42001A45C9 /* DetectEmotionResultViewController.swift */; };
+		5A119156253D995C00775C8D /* OnboardThemeSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A119155253D995C00775C8D /* OnboardThemeSelectorViewController.swift */; };
+		5AA607DA253DB89300BCB309 /* TOSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA607D9253DB89300BCB309 /* TOSViewController.swift */; };
 		AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A174253730F9003F8823 /* AppDelegate.swift */; };
 		AB92A177253730F9003F8823 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A176253730F9003F8823 /* SceneDelegate.swift */; };
 		AB92A179253730F9003F8823 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A178253730F9003F8823 /* ViewController.swift */; };
@@ -58,9 +63,14 @@
 		166C53352537332F007C5EF3 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		166C533A25373359007C5EF3 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		166C533F25373372007C5EF3 /* DetectEmotion.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetectEmotion.storyboard; sourceTree = "<group>"; };
-		166C534C253733A0007C5EF3 /* DetectEmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionViewController.swift; sourceTree = "<group>"; };
+		166C534C253733A0007C5EF3 /* DetectEmotionStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionStartViewController.swift; sourceTree = "<group>"; };
 		166C5352253738F4007C5EF3 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		166C535A25373A66007C5EF3 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		166C535A25373A66007C5EF3 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		16AA990A253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionAnalyzeViewController.swift; sourceTree = "<group>"; };
+		16D60307253E5D42001A45C9 /* DetectEmotionResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionResultViewController.swift; sourceTree = "<group>"; };
+		5A119155253D995C00775C8D /* OnboardThemeSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardThemeSelectorViewController.swift; sourceTree = "<group>"; };
+		5AA607D9253DB89300BCB309 /* TOSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOSViewController.swift; sourceTree = "<group>"; };
 		AB92A171253730F9003F8823 /* Joey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB92A174253730F9003F8823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB92A176253730F9003F8823 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				166C533A25373359007C5EF3 /* OnboardingViewController.swift */,
+				5A119155253D995C00775C8D /* OnboardThemeSelectorViewController.swift */,
+				5AA607D9253DB89300BCB309 /* TOSViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -188,7 +200,9 @@
 		166C532A253732BB007C5EF3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				166C534C253733A0007C5EF3 /* DetectEmotionViewController.swift */,
+				166C534C253733A0007C5EF3 /* DetectEmotionStartViewController.swift */,
+				16AA990A253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift */,
+				16D60307253E5D42001A45C9 /* DetectEmotionResultViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -440,8 +454,10 @@
 				166C5331253732E9007C5EF3 /* HomeViewController.swift in Sources */,
 				ABED45F62538198E0005176A /* ActivityListInstruction.swift in Sources */,
 				ABECBF22253D9F1900EF7D43 /* CornerRadiusHelper.swift in Sources */,
+				5A119156253D995C00775C8D /* OnboardThemeSelectorViewController.swift in Sources */,
 				166C533B25373359007C5EF3 /* OnboardingViewController.swift in Sources */,
 				AB92A17F253730F9003F8823 /* Joey.xcdatamodeld in Sources */,
+				16D60308253E5D42001A45C9 /* DetectEmotionResultViewController.swift in Sources */,
 				AB92A179253730F9003F8823 /* ViewController.swift in Sources */,
 				166C5353253738F4007C5EF3 /* AlertHelper.swift in Sources */,
 				AB9857CB253C9F3D00485B29 /* BottomSheetViewController.swift in Sources */,
@@ -450,6 +466,11 @@
 				ABECBF10253D891C00EF7D43 /* ActivitiesCollectionViewCell.swift in Sources */,
 				166C534D253733A0007C5EF3 /* DetectEmotionViewController.swift in Sources */,
 				ABECBF17253D8E7600EF7D43 /* Activity.swift in Sources */,
+				5AA607DA253DB89300BCB309 /* TOSViewController.swift in Sources */,
+				166C535B25373A66007C5EF3 /* UserDefaults.swift in Sources */,
+				AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */,
+				16AA990B253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift in Sources */,
+				166C534D253733A0007C5EF3 /* DetectEmotionStartViewController.swift in Sources */,
 				AB92A177253730F9003F8823 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

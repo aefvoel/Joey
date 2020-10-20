@@ -9,9 +9,9 @@
         <!--Navigation Controller-->
         <scene sceneID="Sic-KY-jtz">
             <objects>
-                <navigationController id="IuL-jc-hSK" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="IuL-jc-hSK" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dqH-Ej-DVf">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -22,13 +22,13 @@
             </objects>
             <point key="canvasLocation" x="987" y="125"/>
         </scene>
-        <!--OnboardingViewController-->
+        <!--InitialOnboarding-->
         <scene sceneID="vdR-GK-ha1">
             <objects>
-                <viewControllerPlaceholder storyboardName="Onboarding" referencedIdentifier="OnboardingViewController" id="heP-7t-sgB" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YfP-U3-trw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardIdentifier="InitialOnboarding" storyboardName="Onboarding" referencedIdentifier="InitialOnboarding" id="heP-7t-sgB" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="HJn-j3-GWp"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YfP-U3-trw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1667" y="132"/>
         </scene>
