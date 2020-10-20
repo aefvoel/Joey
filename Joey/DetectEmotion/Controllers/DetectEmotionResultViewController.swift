@@ -21,6 +21,7 @@ class DetectEmotionResultViewController: UIViewController {
         super.viewDidLoad()
 
         viewContainer.layer.cornerRadius = 14
+        imageResult.layer.cornerRadius = 14
         imageResult.image = faceImage
         labelResult.text = emotion
         buttonContinue.layer.cornerRadius = 14

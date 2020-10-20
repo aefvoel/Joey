@@ -7,6 +7,12 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Yuanti.ttc">
+            <string>STYuanti-SC-Bold</string>
+            <string>STYuanti-SC-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Detect Emotion Start View Controller-->
         <scene sceneID="iLl-Ys-xFQ">
@@ -17,17 +23,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Analyzing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00e-RX-0hD">
-                                <rect key="frame" x="115" y="96" width="184" height="53"/>
+                                <rect key="frame" x="113" y="96" width="188" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="44"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9p-zv-U66">
                                 <rect key="frame" x="62" y="550" width="290" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.96862745098039216" green="0.62745098039215685" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.62745098039215685" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -45,18 +51,18 @@
                                     <constraint firstAttribute="height" constant="132" id="Ud2-ga-iMj"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please make sure your  face is visible so that I can see you clearly" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbd-Zd-6CR">
-                                <rect key="frame" x="155" y="698" width="201" height="71"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please make sure your  face is visible so that I can see you clearly" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbd-Zd-6CR">
+                                <rect key="frame" x="155" y="695" width="201" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="201" id="QVf-0V-oRA"/>
-                                    <constraint firstAttribute="height" constant="71" id="yFn-Fz-EYK"/>
+                                    <constraint firstAttribute="height" constant="80" id="yFn-Fz-EYK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="analyzing" translatesAutoresizingMaskIntoConstraints="NO" id="ck5-L6-UO3">
-                                <rect key="frame" x="87" y="229" width="240" height="240"/>
+                                <rect key="frame" x="62" y="207" width="290" height="290"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -67,7 +73,7 @@
                             <constraint firstItem="Kbd-Zd-6CR" firstAttribute="leading" secondItem="xeF-4A-hwH" secondAttribute="trailing" constant="-215" id="EIA-qp-fiZ"/>
                             <constraint firstItem="eLF-6G-NXa" firstAttribute="top" secondItem="xeF-4A-hwH" secondAttribute="bottom" constant="-40" id="TMg-ou-d04"/>
                             <constraint firstItem="xeF-4A-hwH" firstAttribute="leading" secondItem="eLF-6G-NXa" secondAttribute="trailing" constant="8" symbolic="YES" id="cP7-Wi-lAZ"/>
-                            <constraint firstItem="xeF-4A-hwH" firstAttribute="top" secondItem="Kbd-Zd-6CR" secondAttribute="bottom" constant="-88" id="fnz-9r-ZT7"/>
+                            <constraint firstItem="xeF-4A-hwH" firstAttribute="top" secondItem="Kbd-Zd-6CR" secondAttribute="bottom" constant="-94" id="fnz-9r-ZT7"/>
                             <constraint firstAttribute="bottom" secondItem="eLF-6G-NXa" secondAttribute="bottom" id="ugy-nZ-xk3"/>
                         </constraints>
                     </view>
@@ -109,12 +115,12 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please make sure your  face is visible so that I can see you clearly" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2M-lO-qUD">
-                                <rect key="frame" x="155" y="698" width="201" height="71"/>
+                                <rect key="frame" x="155" y="695" width="201" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="201" id="f81-Sv-E2t"/>
-                                    <constraint firstAttribute="height" constant="71" id="yCU-74-kP5"/>
+                                    <constraint firstAttribute="height" constant="80" id="yCU-74-kP5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -122,7 +128,7 @@
                         <viewLayoutGuide key="safeArea" id="cgB-vY-EfF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Xez-oQ-4sw" firstAttribute="top" secondItem="e2M-lO-qUD" secondAttribute="bottom" constant="-88" id="2ae-5S-cg6"/>
+                            <constraint firstItem="Xez-oQ-4sw" firstAttribute="top" secondItem="e2M-lO-qUD" secondAttribute="bottom" constant="-94" id="2ae-5S-cg6"/>
                             <constraint firstItem="4eb-pA-LAT" firstAttribute="leading" secondItem="cgB-vY-EfF" secondAttribute="leading" id="4WX-td-RF8"/>
                             <constraint firstItem="B6D-Cc-Siv" firstAttribute="top" secondItem="Xez-oQ-4sw" secondAttribute="bottom" constant="-40" id="6Au-Ws-IKz"/>
                             <constraint firstItem="cgB-vY-EfF" firstAttribute="trailing" secondItem="KtU-jb-9Xh" secondAttribute="trailing" constant="24" id="Bya-r6-q4l"/>
@@ -163,14 +169,14 @@
                                 <rect key="frame" x="24" y="244.5" width="366" height="407"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Jh-Pj-88t">
-                                        <rect key="frame" x="0.0" y="324" width="366" height="53"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                                        <rect key="frame" x="0.0" y="315" width="366" height="62"/>
+                                        <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="44"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Look" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AL1-Fe-eIN">
-                                        <rect key="frame" x="0.0" y="277" width="366" height="29"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <rect key="frame" x="0.0" y="263" width="366" height="34"/>
+                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -196,18 +202,18 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FD4-Ax-UdJ">
-                                <rect key="frame" x="24" y="151.5" width="366" height="53"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <rect key="frame" x="24" y="142.5" width="366" height="62"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="44"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FU8-Ys-D4V">
                                 <rect key="frame" x="24" y="691.5" width="366" height="45"/>
-                                <color key="backgroundColor" red="0.96862745100000003" green="0.62745098040000002" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.62745098039215685" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="hrL-JZ-jg3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -243,7 +249,7 @@
         <!--View Controller-->
         <scene sceneID="dMe-S3-mVB">
             <objects>
-                <viewController id="F79-6i-Uzn" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="F79-6i-Uzn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tLg-46-dXm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -322,6 +328,7 @@
                             <constraint firstItem="emo-E0-iS3" firstAttribute="leading" secondItem="jeT-Wa-4wL" secondAttribute="leading" id="yy8-Hv-xK9"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="SRM-Od-zQl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zzR-J5-eUl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -330,8 +337,7 @@
         <!--View Controller-->
         <scene sceneID="7eI-fs-mRN">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="49Z-y7-8LW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="Feu-Oo-vQJ" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Feu-Oo-vQJ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l1C-Qk-pZh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -411,7 +417,9 @@
                             <constraint firstItem="gOB-uI-MD0" firstAttribute="trailing" secondItem="ktX-D3-vyJ" secondAttribute="trailing" id="zcD-u6-ahk"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="cPG-PS-zUA"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="49Z-y7-8LW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3605.7971014492755" y="124.55357142857142"/>
         </scene>
