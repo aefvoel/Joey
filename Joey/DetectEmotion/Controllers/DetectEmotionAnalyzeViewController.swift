@@ -10,6 +10,8 @@ import ARKit
 
 class DetectEmotionAnalyzeViewController: UIViewController {
 
+    var emotion: String?
+    
     @IBOutlet weak var sceneView: ARSCNView!
     
     override func viewDidLoad() {
@@ -39,7 +41,7 @@ class DetectEmotionAnalyzeViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? DetectEmotionResultViewController {
             vc.faceImage = sceneView.snapshot()
-            vc.emotion = "SAD" // TODO: replace with real emotion result
+            vc.emotion = emotion
         }
     }
 
@@ -52,13 +54,25 @@ extension DetectEmotionAnalyzeViewController: ARSCNViewDelegate {
         guard let device = sceneView.device else { return nil }
         let faceGeometry = ARSCNFaceGeometry(device: device)
         let node = SCNNode(geometry: faceGeometry)
-        node.geometry?.firstMaterial?.fillMode = .fill
+        node.geometry?.firstMaterial?.fillMode = .lines
         return node
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
         guard let faceAnchor = anchor as? ARFaceAnchor, let faceGeometry = node.geometry as? ARSCNFaceGeometry else {
             return
+        }
+        
+        let data = FaceData(faceAnchor)
+        
+        if data.browDownRight > 0.3 && data.browDownLeft > 0.3 {
+            emotion = "Angry"
+        } else if data.mouthFrownRight > 0.3 && data.mouthFrownLeft > 0.3 {
+            emotion = "Sad"
+        } else if data.mouthSmileRight > 0.3 && data.mouthSmileLeft > 0.3 {
+            emotion = "Happy"
+        } else {
+            emotion = "Neutral"
         }
         
         faceGeometry.update(from: faceAnchor.geometry)
