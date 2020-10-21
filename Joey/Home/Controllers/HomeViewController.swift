@@ -55,7 +55,7 @@ class HomeViewController: UIViewController {
             // Determines if using inline mode or not
             useInlineMode: true
         )
-        let sheetController = SheetViewController(controller: controller, sizes: [.percent(0.7), .fullscreen], options: options)
+        let sheetController = SheetViewController(controller: controller, sizes: [.percent(0.5), .percent(0.7)], options: options)
         
         // The size of the grip in the pull bar
         sheetController.gripSize = CGSize(width: 83, height: 7)
