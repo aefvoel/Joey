@@ -511,7 +511,7 @@
                                                     <rect key="frame" x="0.0" y="66" width="286" height="325"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3m-yq-Tjm">
-                                                            <rect key="frame" x="8" y="16" width="266" height="200"/>
+                                                            <rect key="frame" x="8" y="16" width="266" height="139"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="15"/>
                                                             <nil key="textColor"/>
