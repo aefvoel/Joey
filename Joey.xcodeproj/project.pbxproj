@@ -41,6 +41,7 @@
 		AB9857CB253C9F3D00485B29 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9857CA253C9F3D00485B29 /* BottomSheetViewController.swift */; };
 		AB9857D4253CB24E00485B29 /* FittedSheets in Frameworks */ = {isa = PBXBuildFile; productRef = AB9857D3253CB24E00485B29 /* FittedSheets */; };
 		ABEBCCAF253E87AC002E03A6 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEBCCAE253E87AC002E03A6 /* UserDefaultsHelper.swift */; };
+		ABEBCCC3253E949F002E03A6 /* Yuanti.ttc in Resources */ = {isa = PBXBuildFile; fileRef = ABEBCCC2253E949F002E03A6 /* Yuanti.ttc */; };
 		ABECBF10253D891C00EF7D43 /* ActivitiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECBF0E253D891C00EF7D43 /* ActivitiesCollectionViewCell.swift */; };
 		ABECBF11253D891C00EF7D43 /* ActivitiesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABECBF0F253D891C00EF7D43 /* ActivitiesCollectionViewCell.xib */; };
 		ABECBF17253D8E7600EF7D43 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECBF16253D8E7600EF7D43 /* Activity.swift */; };
@@ -86,6 +87,7 @@
 		5AAE9BB4253F08610075966B /* PrivPolicyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivPolicyTableViewCell.swift; sourceTree = "<group>"; };
 		5AAE9BB9253F08820075966B /* PrivPolicyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivPolicyTableViewController.swift; sourceTree = "<group>"; };
 		5AD838C8253E8BCC0042D14E /* Yuanti.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yuanti.ttc; sourceTree = "<group>"; };
+		5AA607D9253DB89300BCB309 /* TOSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOSViewController.swift; sourceTree = "<group>"; };
 		AB92A171253730F9003F8823 /* Joey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB92A174253730F9003F8823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB92A176253730F9003F8823 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		AB92A1BB25374831003F8823 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		AB9857CA253C9F3D00485B29 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
 		ABEBCCAE253E87AC002E03A6 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		ABEBCCC2253E949F002E03A6 /* Yuanti.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yuanti.ttc; sourceTree = "<group>"; };
 		ABECBF0E253D891C00EF7D43 /* ActivitiesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesCollectionViewCell.swift; sourceTree = "<group>"; };
 		ABECBF0F253D891C00EF7D43 /* ActivitiesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivitiesCollectionViewCell.xib; sourceTree = "<group>"; };
 		ABECBF16253D8E7600EF7D43 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
@@ -263,6 +266,8 @@
 				5AAE9BB4253F08610075966B /* PrivPolicyTableViewCell.swift */,
 			);
 			path = PrivacyPolicy;
+			sourceTree = "<group>";
+		};
 		167E0E71253EA1AC00602784 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,7 +279,7 @@
 		5AD838C7253E8B940042D14E /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				5AD838C8253E8BCC0042D14E /* Yuanti.ttc */,
+				ABEBCCC2253E949F002E03A6 /* Yuanti.ttc */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -489,6 +494,7 @@
 				166C534025373372007C5EF3 /* DetectEmotion.storyboard in Resources */,
 				AB92A17C253730F9003F8823 /* Main.storyboard in Resources */,
 				5A8C6E9C253E9E5A00F95286 /* Yuanti.ttc in Resources */,
+				ABEBCCC3253E949F002E03A6 /* Yuanti.ttc in Resources */,
 				166C532C253732DF007C5EF3 /* Home.storyboard in Resources */,
 				ABECBF11253D891C00EF7D43 /* ActivitiesCollectionViewCell.xib in Resources */,
 			);

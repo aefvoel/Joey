@@ -10,6 +10,7 @@ import Charts
 
 class BottomSheetViewController: UIViewController, ChartViewDelegate {
     
+    @IBOutlet weak var bottomSheetScrollView: UIScrollView!
     @IBOutlet weak var activitiesCollectionView: UICollectionView!
     @IBOutlet weak var activitiesChartView: LineChartView!
     @IBOutlet weak var labelUserName: UILabel!
@@ -24,10 +25,11 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
         let nib = UINib(nibName: ActivitiesCollectionViewCell.nibName, bundle: nil)
         activitiesCollectionView?.register(nib, forCellWithReuseIdentifier: ActivitiesCollectionViewCell.reuseIdentifier)
         if let flowLayout = self.activitiesCollectionView?.collectionViewLayout as? UICollectionViewFlowLayout {
-            flowLayout.estimatedItemSize = CGSize(width: 109, height: 150)
+            flowLayout.estimatedItemSize = CGSize(width: 109, height: 155)
         }
     }
     func setupUI(){
+        self.sheetViewController?.handleScrollView(self.bottomSheetScrollView)
         labelUserName.text = UserDefaultsHelper.getData(type: String.self, forKey: .userName)
     }
     func setupChart(){
@@ -39,6 +41,8 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
         
         activitiesChartView.rightAxis.enabled = false
         activitiesChartView.xAxis.enabled = true
+        activitiesChartView.xAxis.drawGridLinesEnabled = false
+        activitiesChartView.leftAxis.drawGridLinesEnabled = false
         
         activitiesChartView.legend.form = .line
         
@@ -51,10 +55,10 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
             let value = ChartDataEntry(x: Double(i), y: Double(number[i]))
             lineChartEntry.append(value)
         }
-        let lineChart = LineChartDataSet(entries: lineChartEntry, label: "Mood")
+        let lineChart = LineChartDataSet(entries: lineChartEntry, label: "Sad")
         lineChart.drawIconsEnabled = true
-        lineChart.setColor(.red)
-        lineChart.setCircleColor(.black)
+        lineChart.setColor(.black)
+        lineChart.setCircleColor(.red)
         lineChart.lineWidth = 3
         lineChart.circleRadius = 3
         lineChart.drawCircleHoleEnabled = true
