@@ -19,7 +19,14 @@
 		16AA990B253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AA990A253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift */; };
 		16D60308253E5D42001A45C9 /* DetectEmotionResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D60307253E5D42001A45C9 /* DetectEmotionResultViewController.swift */; };
 		5A119156253D995C00775C8D /* OnboardThemeSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A119155253D995C00775C8D /* OnboardThemeSelectorViewController.swift */; };
-		5AA607DA253DB89300BCB309 /* TOSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA607D9253DB89300BCB309 /* TOSViewController.swift */; };
+		5A8C6E9C253E9E5A00F95286 /* Yuanti.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 5AD838C8253E8BCC0042D14E /* Yuanti.ttc */; };
+		5A8C6EA1253EA51800F95286 /* TOSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C6EA0253EA51800F95286 /* TOSTableViewController.swift */; };
+		5A8C6EA6253EA57600F95286 /* TermsOfServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C6EA5253EA57600F95286 /* TermsOfServiceModel.swift */; };
+		5A8C6EAF253EAA4F00F95286 /* TOSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C6EAE253EAA4F00F95286 /* TOSTableViewCell.swift */; };
+		5AA607DA253DB89300BCB309 /* TOSPPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA607D9253DB89300BCB309 /* TOSPPViewController.swift */; };
+		5AAE9BAB253F03400075966B /* PrivacyPolicyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE9BAA253F03400075966B /* PrivacyPolicyModel.swift */; };
+		5AAE9BB5253F08610075966B /* PrivPolicyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE9BB4253F08610075966B /* PrivPolicyTableViewCell.swift */; };
+		5AAE9BBA253F08820075966B /* PrivPolicyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE9BB9253F08820075966B /* PrivPolicyTableViewController.swift */; };
 		AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A174253730F9003F8823 /* AppDelegate.swift */; };
 		AB92A177253730F9003F8823 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A176253730F9003F8823 /* SceneDelegate.swift */; };
 		AB92A179253730F9003F8823 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A178253730F9003F8823 /* ViewController.swift */; };
@@ -71,7 +78,13 @@
 		16AA990A253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionAnalyzeViewController.swift; sourceTree = "<group>"; };
 		16D60307253E5D42001A45C9 /* DetectEmotionResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionResultViewController.swift; sourceTree = "<group>"; };
 		5A119155253D995C00775C8D /* OnboardThemeSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardThemeSelectorViewController.swift; sourceTree = "<group>"; };
-		5AA607D9253DB89300BCB309 /* TOSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOSViewController.swift; sourceTree = "<group>"; };
+		5A8C6EA0253EA51800F95286 /* TOSTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOSTableViewController.swift; sourceTree = "<group>"; };
+		5A8C6EA5253EA57600F95286 /* TermsOfServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceModel.swift; sourceTree = "<group>"; };
+		5A8C6EAE253EAA4F00F95286 /* TOSTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOSTableViewCell.swift; sourceTree = "<group>"; };
+		5AA607D9253DB89300BCB309 /* TOSPPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOSPPViewController.swift; sourceTree = "<group>"; };
+		5AAE9BAA253F03400075966B /* PrivacyPolicyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyModel.swift; sourceTree = "<group>"; };
+		5AAE9BB4253F08610075966B /* PrivPolicyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivPolicyTableViewCell.swift; sourceTree = "<group>"; };
+		5AAE9BB9253F08820075966B /* PrivPolicyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivPolicyTableViewController.swift; sourceTree = "<group>"; };
 		5AD838C8253E8BCC0042D14E /* Yuanti.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yuanti.ttc; sourceTree = "<group>"; };
 		AB92A171253730F9003F8823 /* Joey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB92A174253730F9003F8823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +153,7 @@
 		166C53222537327D007C5EF3 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				5A8C6EAA253EA58000F95286 /* Model */,
 				166C5328253732B3007C5EF3 /* Controllers */,
 				166C5327253732B0007C5EF3 /* Views */,
 			);
@@ -188,7 +202,9 @@
 			children = (
 				166C533A25373359007C5EF3 /* OnboardingViewController.swift */,
 				5A119155253D995C00775C8D /* OnboardThemeSelectorViewController.swift */,
-				5AA607D9253DB89300BCB309 /* TOSViewController.swift */,
+				5AA607D9253DB89300BCB309 /* TOSPPViewController.swift */,
+				5AAE9BB3253F08360075966B /* PrivacyPolicy */,
+				5AAE9BAF253F03B60075966B /* TermsOfService */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -220,6 +236,33 @@
 				167E0E7A253EABA700602784 /* EmotionHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5A8C6EAA253EA58000F95286 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A8C6EA5253EA57600F95286 /* TermsOfServiceModel.swift */,
+				5AAE9BAA253F03400075966B /* PrivacyPolicyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5AAE9BAF253F03B60075966B /* TermsOfService */ = {
+			isa = PBXGroup;
+			children = (
+				5A8C6EA0253EA51800F95286 /* TOSTableViewController.swift */,
+				5A8C6EAE253EAA4F00F95286 /* TOSTableViewCell.swift */,
+			);
+			path = TermsOfService;
+			sourceTree = "<group>";
+		};
+		5AAE9BB3253F08360075966B /* PrivacyPolicy */ = {
+			isa = PBXGroup;
+			children = (
+				5AAE9BB9253F08820075966B /* PrivPolicyTableViewController.swift */,
+				5AAE9BB4253F08610075966B /* PrivPolicyTableViewCell.swift */,
+			);
+			path = PrivacyPolicy;
 			sourceTree = "<group>";
 		};
 		167E0E71253EA1AC00602784 /* Models */ = {
@@ -447,6 +490,7 @@
 				AB92A181253730FA003F8823 /* Assets.xcassets in Resources */,
 				166C534025373372007C5EF3 /* DetectEmotion.storyboard in Resources */,
 				AB92A17C253730F9003F8823 /* Main.storyboard in Resources */,
+				5A8C6E9C253E9E5A00F95286 /* Yuanti.ttc in Resources */,
 				166C532C253732DF007C5EF3 /* Home.storyboard in Resources */,
 				ABECBF11253D891C00EF7D43 /* ActivitiesCollectionViewCell.xib in Resources */,
 			);
@@ -479,19 +523,25 @@
 				5A119156253D995C00775C8D /* OnboardThemeSelectorViewController.swift in Sources */,
 				166C533B25373359007C5EF3 /* OnboardingViewController.swift in Sources */,
 				AB92A17F253730F9003F8823 /* Joey.xcdatamodeld in Sources */,
+				5AAE9BBA253F08820075966B /* PrivPolicyTableViewController.swift in Sources */,
+				5A8C6EA6253EA57600F95286 /* TermsOfServiceModel.swift in Sources */,
 				16D60308253E5D42001A45C9 /* DetectEmotionResultViewController.swift in Sources */,
 				167E0E7B253EABA700602784 /* EmotionHelper.swift in Sources */,
 				AB92A179253730F9003F8823 /* ViewController.swift in Sources */,
 				166C5353253738F4007C5EF3 /* AlertHelper.swift in Sources */,
+				5AAE9BAB253F03400075966B /* PrivacyPolicyModel.swift in Sources */,
 				AB9857CB253C9F3D00485B29 /* BottomSheetViewController.swift in Sources */,
 				ABEBCCAF253E87AC002E03A6 /* UserDefaultsHelper.swift in Sources */,
+				5A8C6EAF253EAA4F00F95286 /* TOSTableViewCell.swift in Sources */,
 				AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */,
+				5AAE9BB5253F08610075966B /* PrivPolicyTableViewCell.swift in Sources */,
 				ABECBF10253D891C00EF7D43 /* ActivitiesCollectionViewCell.swift in Sources */,
 				166C534D253733A0007C5EF3 /* DetectEmotionStartViewController.swift in Sources */,
 				ABECBF17253D8E7600EF7D43 /* Activity.swift in Sources */,
-				5AA607DA253DB89300BCB309 /* TOSViewController.swift in Sources */,
+				5AA607DA253DB89300BCB309 /* TOSPPViewController.swift in Sources */,
 				AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */,
 				16AA990B253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift in Sources */,
+				5A8C6EA1253EA51800F95286 /* TOSTableViewController.swift in Sources */,
 				166C534D253733A0007C5EF3 /* DetectEmotionStartViewController.swift in Sources */,
 				167E0E73253EA1CB00602784 /* FaceData.swift in Sources */,
 				AB92A177253730F9003F8823 /* SceneDelegate.swift in Sources */,
