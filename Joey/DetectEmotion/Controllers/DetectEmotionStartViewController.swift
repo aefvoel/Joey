@@ -15,12 +15,6 @@ class DetectEmotionStartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
-    }
-    
-    // MARK: - Setup views
-    func setupView() {
-        buttonStart.layer.cornerRadius = 14
     }
     
     @IBAction func buttonStartTapped(_ sender: Any) {
