@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YiK-O8-0XZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Yuanti.ttc">
+            <string>STYuanti-SC-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Practice Smiling View Controller-->
         <scene sceneID="DJ8-vX-4kZ">
@@ -16,24 +21,146 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Practice Smiling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7j6-6r-E9H">
-                                <rect key="frame" x="146" y="438" width="123" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Practice Smiling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7j6-6r-E9H">
+                                <rect key="frame" x="66" y="139" width="282" height="56"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bX9-NF-RR3" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="64" y="529" width="286" height="45"/>
+                                <color key="backgroundColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="DsV-pX-pF7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onClickStart:" destination="YiK-O8-0XZ" eventType="touchUpInside" id="FCH-qr-iq3"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotImage" translatesAutoresizingMaskIntoConstraints="NO" id="nc2-t9-ZnT">
+                                <rect key="frame" x="0.0" y="768" width="194" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="BHv-3x-MIO"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotBubble1" translatesAutoresizingMaskIntoConstraints="NO" id="DEB-Ej-Kxy">
+                                <rect key="frame" x="170" y="637" width="224" height="123"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There’s a huge difference between a fake smile and a genuine smile :)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iu6-jN-CIp">
+                                <rect key="frame" x="179" y="649" width="208" height="83"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="211-UR-vbh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DEB-Ej-Kxy" firstAttribute="top" secondItem="bX9-NF-RR3" secondAttribute="bottom" constant="63" id="3rc-Rb-hLi"/>
+                            <constraint firstItem="Iu6-jN-CIp" firstAttribute="top" secondItem="bX9-NF-RR3" secondAttribute="bottom" constant="75" id="AWU-uD-mVp"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="nc2-t9-ZnT" secondAttribute="bottom" constant="-34" id="J4P-Md-8UL"/>
+                            <constraint firstItem="211-UR-vbh" firstAttribute="trailing" secondItem="nc2-t9-ZnT" secondAttribute="trailing" constant="220" id="KBq-k6-xt7"/>
+                            <constraint firstItem="nc2-t9-ZnT" firstAttribute="top" secondItem="DEB-Ej-Kxy" secondAttribute="bottom" constant="8" id="Lvw-Vy-CWd"/>
+                            <constraint firstItem="7j6-6r-E9H" firstAttribute="top" secondItem="211-UR-vbh" secondAttribute="top" constant="95" id="NoN-CD-U7z"/>
+                            <constraint firstItem="Iu6-jN-CIp" firstAttribute="centerX" secondItem="DEB-Ej-Kxy" secondAttribute="centerX" constant="1" id="dH4-Aw-Cef"/>
+                            <constraint firstItem="DEB-Ej-Kxy" firstAttribute="trailing" secondItem="d7l-mt-3pp" secondAttribute="trailingMargin" id="exb-2m-VCX"/>
+                            <constraint firstItem="7j6-6r-E9H" firstAttribute="centerX" secondItem="bX9-NF-RR3" secondAttribute="centerX" id="h5j-Ng-rAN"/>
+                            <constraint firstItem="bX9-NF-RR3" firstAttribute="leading" secondItem="211-UR-vbh" secondAttribute="leading" constant="64" id="hpD-8V-mPd"/>
+                            <constraint firstItem="Iu6-jN-CIp" firstAttribute="leading" secondItem="211-UR-vbh" secondAttribute="leading" constant="179" id="ia4-6d-Ik6"/>
+                            <constraint firstItem="nc2-t9-ZnT" firstAttribute="leading" secondItem="211-UR-vbh" secondAttribute="leading" id="pMx-KY-CAg"/>
+                            <constraint firstItem="nc2-t9-ZnT" firstAttribute="top" secondItem="Iu6-jN-CIp" secondAttribute="bottom" constant="36" id="u6g-UC-jTS"/>
+                            <constraint firstItem="7j6-6r-E9H" firstAttribute="centerX" secondItem="d7l-mt-3pp" secondAttribute="centerX" id="uKI-JB-EhB"/>
+                            <constraint firstItem="211-UR-vbh" firstAttribute="trailing" secondItem="Iu6-jN-CIp" secondAttribute="trailing" constant="27" id="x2V-OU-7OF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="CdR-Vt-UP7" kind="show" identifier="toStartPractice" id="9G2-0U-Br5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXw-Xu-Hyd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="183" y="169"/>
+            <point key="canvasLocation" x="113" y="143"/>
+        </scene>
+        <!--Start Practice Smiling View Controller-->
+        <scene sceneID="TdZ-y2-d8c">
+            <objects>
+                <viewController storyboardIdentifier="PracticeSmilingAnalyzeViewController" modalPresentationStyle="fullScreen" id="CdR-Vt-UP7" customClass="StartPracticeSmilingViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="APP-4y-bir">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotImage" translatesAutoresizingMaskIntoConstraints="NO" id="hse-zt-lse">
+                                <rect key="frame" x="0.0" y="768" width="194" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="SVH-VV-cMs"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotBubble1" translatesAutoresizingMaskIntoConstraints="NO" id="XH1-jN-6NU">
+                                <rect key="frame" x="170" y="637" width="224" height="123"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please make sure that your face is visible so that I can see you clearly" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZY7-3i-jR3">
+                                <rect key="frame" x="179" y="656" width="208" height="76"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vq0-kE-3Ph">
+                                <rect key="frame" x="156" y="130" width="94" height="56"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sQc-Ed-a4z" customClass="ARSCNView">
+                                <rect key="frame" x="20" y="213" width="367" height="353"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sqN-GE-fAU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hse-zt-lse" firstAttribute="top" secondItem="XH1-jN-6NU" secondAttribute="bottom" constant="8" id="9lh-T9-CZy"/>
+                            <constraint firstItem="ZY7-3i-jR3" firstAttribute="centerX" secondItem="XH1-jN-6NU" secondAttribute="centerX" constant="1" id="F9y-0Z-G6W"/>
+                            <constraint firstItem="hse-zt-lse" firstAttribute="top" secondItem="ZY7-3i-jR3" secondAttribute="bottom" constant="36" id="OaS-sp-hVE"/>
+                            <constraint firstItem="hse-zt-lse" firstAttribute="leading" secondItem="sqN-GE-fAU" secondAttribute="leading" id="T35-mF-Ygg"/>
+                            <constraint firstItem="ZY7-3i-jR3" firstAttribute="leading" secondItem="sqN-GE-fAU" secondAttribute="leading" constant="179" id="YUM-vx-OiW"/>
+                            <constraint firstItem="Vq0-kE-3Ph" firstAttribute="leading" secondItem="sqN-GE-fAU" secondAttribute="leading" constant="156" id="bHN-FV-SDX"/>
+                            <constraint firstItem="sqN-GE-fAU" firstAttribute="trailing" secondItem="hse-zt-lse" secondAttribute="trailing" constant="220" id="ecE-fA-c4V"/>
+                            <constraint firstItem="sqN-GE-fAU" firstAttribute="trailing" secondItem="ZY7-3i-jR3" secondAttribute="trailing" constant="27" id="h2c-zx-8Pq"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="hse-zt-lse" secondAttribute="bottom" constant="-34" id="i09-Yr-IrF"/>
+                            <constraint firstItem="Vq0-kE-3Ph" firstAttribute="top" secondItem="sqN-GE-fAU" secondAttribute="top" constant="86" id="iGf-zU-iUT"/>
+                            <constraint firstItem="XH1-jN-6NU" firstAttribute="trailing" secondItem="APP-4y-bir" secondAttribute="trailingMargin" id="kn6-FV-g6x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bQ7-ZB-f1b"/>
+                    <connections>
+                        <outlet property="labelSmile" destination="Vq0-kE-3Ph" id="RfI-Rg-EsN"/>
+                        <outlet property="sceneView" destination="sQc-Ed-a4z" id="Jhv-jr-7wP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jnQ-r0-InG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013.0434782608696" y="142.63392857142856"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="bX9-NF-RR3">
+            <size key="intrinsicContentSize" width="45" height="40"/>
+        </designable>
+    </designables>
     <resources>
+        <image name="mascotBubble1" width="230" height="123"/>
+        <image name="mascotImage" width="132" height="132"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

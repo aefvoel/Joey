@@ -50,6 +50,7 @@
 		AB933DE025406D4D00DBBD0D /* TOSPPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB933DDF25406D4D00DBBD0D /* TOSPPViewController.swift */; };
 		AB9857CB253C9F3D00485B29 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9857CA253C9F3D00485B29 /* BottomSheetViewController.swift */; };
 		AB9857D4253CB24E00485B29 /* FittedSheets in Frameworks */ = {isa = PBXBuildFile; productRef = AB9857D3253CB24E00485B29 /* FittedSheets */; };
+		ABD9DE32254157C300C2154C /* StartPracticeSmilingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9DE31254157C300C2154C /* StartPracticeSmilingViewController.swift */; };
 		ABEBCCAF253E87AC002E03A6 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEBCCAE253E87AC002E03A6 /* UserDefaultsHelper.swift */; };
 		ABEBCCC3253E949F002E03A6 /* Yuanti.ttc in Resources */ = {isa = PBXBuildFile; fileRef = ABEBCCC2253E949F002E03A6 /* Yuanti.ttc */; };
 		ABECBF10253D891C00EF7D43 /* ActivitiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECBF0E253D891C00EF7D43 /* ActivitiesCollectionViewCell.swift */; };
@@ -126,6 +127,7 @@
 		AB92A1BB25374831003F8823 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		AB933DDF25406D4D00DBBD0D /* TOSPPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TOSPPViewController.swift; sourceTree = "<group>"; };
 		AB9857CA253C9F3D00485B29 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		ABD9DE31254157C300C2154C /* StartPracticeSmilingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPracticeSmilingViewController.swift; sourceTree = "<group>"; };
 		ABEBCCAE253E87AC002E03A6 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		ABEBCCC2253E949F002E03A6 /* Yuanti.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yuanti.ttc; sourceTree = "<group>"; };
 		ABECBF0E253D891C00EF7D43 /* ActivitiesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				16170ACF254105070095D1A5 /* PracticeSmilingViewController.swift */,
+				ABD9DE31254157C300C2154C /* StartPracticeSmilingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -691,6 +694,7 @@
 				5A119156253D995C00775C8D /* OnboardThemeSelectorViewController.swift in Sources */,
 				166C533B25373359007C5EF3 /* OnboardingViewController.swift in Sources */,
 				AB92A17F253730F9003F8823 /* Joey.xcdatamodeld in Sources */,
+				ABD9DE32254157C300C2154C /* StartPracticeSmilingViewController.swift in Sources */,
 				5AAE9BBA253F08820075966B /* PrivPolicyTableViewController.swift in Sources */,
 				5A8C6EA6253EA57600F95286 /* TermsOfServiceModel.swift in Sources */,
 				16D60308253E5D42001A45C9 /* DetectEmotionResultViewController.swift in Sources */,
