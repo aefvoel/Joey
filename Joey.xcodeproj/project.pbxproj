@@ -18,7 +18,6 @@
 		167E0E7B253EABA700602784 /* EmotionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167E0E7A253EABA700602784 /* EmotionHelper.swift */; };
 		16AA990B253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AA990A253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift */; };
 		16D60308253E5D42001A45C9 /* DetectEmotionResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D60307253E5D42001A45C9 /* DetectEmotionResultViewController.swift */; };
-		5A119156253D995C00775C8D /* OnboardThemeSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A119155253D995C00775C8D /* OnboardThemeSelectorViewController.swift */; };
 		5A8C6EA1253EA51800F95286 /* TOSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C6EA0253EA51800F95286 /* TOSTableViewController.swift */; };
 		5A8C6EA6253EA57600F95286 /* TermsOfServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C6EA5253EA57600F95286 /* TermsOfServiceModel.swift */; };
 		5A8C6EAF253EAA4F00F95286 /* TOSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C6EAE253EAA4F00F95286 /* TOSTableViewCell.swift */; };
@@ -78,7 +77,6 @@
 		167E0E7A253EABA700602784 /* EmotionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionHelper.swift; sourceTree = "<group>"; };
 		16AA990A253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionAnalyzeViewController.swift; sourceTree = "<group>"; };
 		16D60307253E5D42001A45C9 /* DetectEmotionResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionResultViewController.swift; sourceTree = "<group>"; };
-		5A119155253D995C00775C8D /* OnboardThemeSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardThemeSelectorViewController.swift; sourceTree = "<group>"; };
 		5A8C6EA0253EA51800F95286 /* TOSTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOSTableViewController.swift; sourceTree = "<group>"; };
 		5A8C6EA5253EA57600F95286 /* TermsOfServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceModel.swift; sourceTree = "<group>"; };
 		5A8C6EAE253EAA4F00F95286 /* TOSTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOSTableViewCell.swift; sourceTree = "<group>"; };
@@ -206,7 +204,6 @@
 				5A9DA16025406BFE0090EC41 /* TOSPPViewController.swift */,
 				AB933DDF25406D4D00DBBD0D /* TOSPPViewController.swift */,
 				166C533A25373359007C5EF3 /* OnboardingViewController.swift */,
-				5A119155253D995C00775C8D /* OnboardThemeSelectorViewController.swift */,
 				5AAE9BB3253F08360075966B /* PrivacyPolicy */,
 				5AAE9BAF253F03B60075966B /* TermsOfService */,
 			);
@@ -262,7 +259,6 @@
 		5A9DA15F25406BA10090EC41 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				5AD838C8253E8BCC0042D14E /* Yuanti.ttc */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -542,7 +538,6 @@
 				166C5331253732E9007C5EF3 /* HomeViewController.swift in Sources */,
 				ABED45F62538198E0005176A /* ActivityListInstruction.swift in Sources */,
 				ABECBF22253D9F1900EF7D43 /* CornerRadiusHelper.swift in Sources */,
-				5A119156253D995C00775C8D /* OnboardThemeSelectorViewController.swift in Sources */,
 				166C533B25373359007C5EF3 /* OnboardingViewController.swift in Sources */,
 				AB92A17F253730F9003F8823 /* Joey.xcdatamodeld in Sources */,
 				5AAE9BBA253F08820075966B /* PrivPolicyTableViewController.swift in Sources */,
