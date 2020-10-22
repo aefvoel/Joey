@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Yuanti.ttc">
+            <string>STYuanti-SC-Bold</string>
+            <string>STYuanti-SC-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Instruction View Controller-->
+        <scene sceneID="7Kk-m5-Hh5">
+            <objects>
+                <viewController id="1Y0-RP-YVy" customClass="InstructionViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0X0-c2-zO7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="de_background" translatesAutoresizingMaskIntoConstraints="NO" id="eq8-WR-Pyf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="3U4-du-RD2"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wnh-vG-V2p">
+                                <rect key="frame" x="0.0" y="240" width="414" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jacobson's Relaxation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TG4-B0-EAU">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                        <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.3529411764705882" green="0.76078431372549016" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="TG4-B0-EAU" secondAttribute="bottom" id="51E-cz-n8y"/>
+                                    <constraint firstAttribute="height" constant="64" id="eRn-Sg-aGW"/>
+                                    <constraint firstItem="TG4-B0-EAU" firstAttribute="top" secondItem="wnh-vG-V2p" secondAttribute="top" id="ghG-Xp-fBa"/>
+                                    <constraint firstAttribute="trailing" secondItem="TG4-B0-EAU" secondAttribute="trailing" id="jWY-ql-v53"/>
+                                    <constraint firstItem="TG4-B0-EAU" firstAttribute="leading" secondItem="wnh-vG-V2p" secondAttribute="leading" id="nNg-73-TMk"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsQ-48-VLX">
+                                <rect key="frame" x="24" y="328" width="366" height="28"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Cl-wV-rne" customClass="TextViewFixed" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="24" y="374" width="366" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="PAs-hD-h7K"/>
+                                </constraints>
+                                <string key="text">Practicing gratitude is actually really simple. Write three things that you’re grateful for today and I will turn it into something beautiful that you can always remember. Try to be as detailed as you can. Record every little thing associated with the person or the incident you are offering your gratitude to.</string>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This activity can help you:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0c7-p1-8Oj">
+                                <rect key="frame" x="24" y="550" width="366" height="26"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTw-sI-wUh" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="24" y="793" width="366" height="45"/>
+                                <color key="backgroundColor" red="0.3529411764705882" green="0.76078431372549016" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="hzW-34-NSB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonContinueTapped:" destination="1Y0-RP-YVy" eventType="touchUpInside" id="9qz-wX-bYA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wg4-i3-3WF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eq8-WR-Pyf" firstAttribute="top" secondItem="0X0-c2-zO7" secondAttribute="top" id="03o-z7-sJ6"/>
+                            <constraint firstItem="HsQ-48-VLX" firstAttribute="top" secondItem="wnh-vG-V2p" secondAttribute="bottom" constant="24" id="8bq-vW-E7i"/>
+                            <constraint firstItem="eq8-WR-Pyf" firstAttribute="leading" secondItem="wg4-i3-3WF" secondAttribute="leading" id="Bxp-GQ-IhF"/>
+                            <constraint firstItem="uTw-sI-wUh" firstAttribute="leading" secondItem="0c7-p1-8Oj" secondAttribute="leading" id="IYW-cA-ALg"/>
+                            <constraint firstItem="0c7-p1-8Oj" firstAttribute="top" secondItem="5Cl-wV-rne" secondAttribute="bottom" constant="48" id="Jgp-t0-pqY"/>
+                            <constraint firstItem="wg4-i3-3WF" firstAttribute="bottom" secondItem="uTw-sI-wUh" secondAttribute="bottom" constant="24" id="KEZ-xV-rJX"/>
+                            <constraint firstItem="wnh-vG-V2p" firstAttribute="leading" secondItem="wg4-i3-3WF" secondAttribute="leading" id="Pb5-tM-g9y"/>
+                            <constraint firstItem="eq8-WR-Pyf" firstAttribute="trailing" secondItem="wg4-i3-3WF" secondAttribute="trailing" id="WBK-mG-fPa"/>
+                            <constraint firstItem="wg4-i3-3WF" firstAttribute="trailing" secondItem="HsQ-48-VLX" secondAttribute="trailing" constant="24" id="YDT-mS-XeH"/>
+                            <constraint firstItem="wnh-vG-V2p" firstAttribute="top" secondItem="eq8-WR-Pyf" secondAttribute="bottom" id="Zak-I7-LOD"/>
+                            <constraint firstItem="0c7-p1-8Oj" firstAttribute="leading" secondItem="5Cl-wV-rne" secondAttribute="leading" id="dgE-hV-a44"/>
+                            <constraint firstItem="uTw-sI-wUh" firstAttribute="trailing" secondItem="0c7-p1-8Oj" secondAttribute="trailing" id="ein-mP-wZE"/>
+                            <constraint firstItem="5Cl-wV-rne" firstAttribute="leading" secondItem="HsQ-48-VLX" secondAttribute="leading" id="qWh-jO-eQM"/>
+                            <constraint firstItem="HsQ-48-VLX" firstAttribute="leading" secondItem="wg4-i3-3WF" secondAttribute="leading" constant="24" id="r2O-d1-6k8"/>
+                            <constraint firstItem="5Cl-wV-rne" firstAttribute="top" secondItem="HsQ-48-VLX" secondAttribute="bottom" constant="18" id="uWl-VA-0V1"/>
+                            <constraint firstItem="wnh-vG-V2p" firstAttribute="trailing" secondItem="wg4-i3-3WF" secondAttribute="trailing" id="v1p-Qf-88w"/>
+                            <constraint firstItem="5Cl-wV-rne" firstAttribute="trailing" secondItem="HsQ-48-VLX" secondAttribute="trailing" id="wK3-g0-sbP"/>
+                            <constraint firstItem="0c7-p1-8Oj" firstAttribute="trailing" secondItem="5Cl-wV-rne" secondAttribute="trailing" id="xwf-bV-1tF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="4Az-fS-Sei" kind="show" identifier="toJacobson" id="7y6-UC-aIU"/>
+                        <segue destination="XQb-VW-I1r" kind="show" identifier="toSmiling" id="6Nk-Ot-zYQ"/>
+                        <segue destination="Eht-GO-KQY" kind="show" identifier="toMirror" id="cl9-j3-9Pg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQh-fM-EZf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102.89855072463769" y="177.45535714285714"/>
+        </scene>
+        <!--JacobsonViewController-->
+        <scene sceneID="Ajf-mc-n6G">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Jacobson" referencedIdentifier="JacobsonViewController" id="4Az-fS-Sei" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="X3b-9d-bdA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L2y-S1-kpX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823" y="147"/>
+        </scene>
+        <!--PracticeSmilingViewController-->
+        <scene sceneID="uII-JP-efC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PracticeSmiling" referencedIdentifier="PracticeSmilingViewController" id="XQb-VW-I1r" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="WeZ-NW-Oeo"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mgX-5w-yCq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="223"/>
+        </scene>
+        <!--MirrorViewController-->
+        <scene sceneID="rvd-dS-m0f">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Mirror" referencedIdentifier="MirrorViewController" id="Eht-GO-KQY" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3iK-aF-bIU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L5J-JY-sD5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="811" y="314"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="uTw-sI-wUh">
+            <size key="intrinsicContentSize" width="81" height="36"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="de_background" width="414" height="896"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
