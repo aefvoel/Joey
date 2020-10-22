@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Activities View Controller-->
         <scene sceneID="bYS-hW-KJz">
             <objects>
-                <viewController id="stn-ve-a9C" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ActivitiesViewController" id="stn-ve-a9C" customClass="ActivitiesViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lLp-Dm-jjP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="143" y="184"/>
         </scene>
-        <!--Jacobson-->
+        <!--JacobsonViewController-->
         <scene sceneID="Nim-j7-EJu">
             <objects>
-                <viewControllerPlaceholder storyboardName="Jacobson" id="1tA-ld-XfP" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Jacobson" referencedIdentifier="JacobsonViewController" id="1tA-ld-XfP" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="TeN-DC-TrS"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="43k-5p-hfV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
