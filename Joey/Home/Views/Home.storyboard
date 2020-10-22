@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -177,7 +177,7 @@
                                                 <rect key="frame" x="24" y="742" width="63" height="30"/>
                                                 <state key="normal" title="Activities"/>
                                                 <connections>
-                                                    <segue destination="VC8-iB-yPj" kind="show" id="JqQ-pO-AjS"/>
+                                                    <segue destination="VC8-iB-yPj" kind="show" id="4Ef-Sv-Oig"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5k0-O1-eFe">
@@ -264,10 +264,10 @@
             </objects>
             <point key="canvasLocation" x="740" y="1004"/>
         </scene>
-        <!--ActivitiesViewController-->
+        <!--ActivityListVC-->
         <scene sceneID="1AU-I1-tei">
             <objects>
-                <viewControllerPlaceholder storyboardName="Activities" referencedIdentifier="ActivitiesViewController" id="VC8-iB-yPj" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Activities" referencedIdentifier="ActivityListVC" id="VC8-iB-yPj" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Cl4-2R-GRR"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="62w-Js-cuY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
