@@ -15,6 +15,8 @@
 		16170AD0254105070095D1A5 /* PracticeSmilingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16170ACF254105070095D1A5 /* PracticeSmilingViewController.swift */; };
 		16170ADA25411EAE0095D1A5 /* MirrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16170AD925411EAE0095D1A5 /* MirrorViewController.swift */; };
 		16170AE325411EBE0095D1A5 /* Mirror.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16170AE225411EBE0095D1A5 /* Mirror.storyboard */; };
+		16170AF1254127070095D1A5 /* ThoughtsRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16170AF0254127070095D1A5 /* ThoughtsRecordViewController.swift */; };
+		16170AF9254127100095D1A5 /* ThoughtsRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16170AF8254127100095D1A5 /* ThoughtsRecord.storyboard */; };
 		166C532C253732DF007C5EF3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166C532B253732DF007C5EF3 /* Home.storyboard */; };
 		166C5331253732E9007C5EF3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C5330253732E9007C5EF3 /* HomeViewController.swift */; };
 		166C53362537332F007C5EF3 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166C53352537332F007C5EF3 /* Onboarding.storyboard */; };
@@ -83,6 +85,8 @@
 		16170ACF254105070095D1A5 /* PracticeSmilingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSmilingViewController.swift; sourceTree = "<group>"; };
 		16170AD925411EAE0095D1A5 /* MirrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorViewController.swift; sourceTree = "<group>"; };
 		16170AE225411EBE0095D1A5 /* Mirror.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mirror.storyboard; sourceTree = "<group>"; };
+		16170AF0254127070095D1A5 /* ThoughtsRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtsRecordViewController.swift; sourceTree = "<group>"; };
+		16170AF8254127100095D1A5 /* ThoughtsRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThoughtsRecord.storyboard; sourceTree = "<group>"; };
 		166C532B253732DF007C5EF3 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		166C5330253732E9007C5EF3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		166C53352537332F007C5EF3 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
@@ -250,6 +254,31 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		16170AED254126F00095D1A5 /* ThoughtsRecord */ = {
+			isa = PBXGroup;
+			children = (
+				16170AEF254126FB0095D1A5 /* Views */,
+				16170AEE254126F70095D1A5 /* Controllers */,
+			);
+			path = ThoughtsRecord;
+			sourceTree = "<group>";
+		};
+		16170AEE254126F70095D1A5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				16170AF0254127070095D1A5 /* ThoughtsRecordViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		16170AEF254126FB0095D1A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				16170AF8254127100095D1A5 /* ThoughtsRecord.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		166C532125373272007C5EF3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,7 +398,6 @@
 		5A9DA15F25406BA10090EC41 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				5AD838C8253E8BCC0042D14E /* Yuanti.ttc */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -426,6 +454,7 @@
 		AB92A173253730F9003F8823 /* Joey */ = {
 			isa = PBXGroup;
 			children = (
+				16170AED254126F00095D1A5 /* ThoughtsRecord */,
 				16170AD725411E9D0095D1A5 /* Mirror */,
 				16170AC7254104D70095D1A5 /* PracticeSmiling */,
 				16170AA8254103010095D1A5 /* Jacobson */,
@@ -624,9 +653,9 @@
 				166C53362537332F007C5EF3 /* Onboarding.storyboard in Resources */,
 				AB92A181253730FA003F8823 /* Assets.xcassets in Resources */,
 				166C534025373372007C5EF3 /* DetectEmotion.storyboard in Resources */,
+				16170AF9254127100095D1A5 /* ThoughtsRecord.storyboard in Resources */,
 				AB92A17C253730F9003F8823 /* Main.storyboard in Resources */,
 				16170AB4254103750095D1A5 /* Activities.storyboard in Resources */,
-				5A8C6E9C253E9E5A00F95286 /* Yuanti.ttc in Resources */,
 				ABEBCCC3253E949F002E03A6 /* Yuanti.ttc in Resources */,
 				16170AE325411EBE0095D1A5 /* Mirror.storyboard in Resources */,
 				166C532C253732DF007C5EF3 /* Home.storyboard in Resources */,
@@ -689,6 +718,7 @@
 				166C534D253733A0007C5EF3 /* DetectEmotionStartViewController.swift in Sources */,
 				167E0E73253EA1CB00602784 /* FaceData.swift in Sources */,
 				AB92A177253730F9003F8823 /* SceneDelegate.swift in Sources */,
+				16170AF1254127070095D1A5 /* ThoughtsRecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
