@@ -39,6 +39,14 @@
                                     <segue destination="weI-Jj-1Po" kind="show" id="zYO-BA-bMW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbn-wY-KYo">
+                                <rect key="frame" x="186" y="621" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Mirror"/>
+                                <connections>
+                                    <segue destination="gGL-D5-EFZ" kind="show" id="Bhj-hD-Jje"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Lhd-ua-s83"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -67,6 +75,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bBg-oC-Mrf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="951" y="204"/>
+        </scene>
+        <!--MirrorViewController-->
+        <scene sceneID="nVh-ci-fJI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Mirror" referencedIdentifier="MirrorViewController" id="gGL-D5-EFZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="VuJ-w2-aCn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYx-Pe-h3d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912" y="308"/>
         </scene>
     </scenes>
     <resources>
