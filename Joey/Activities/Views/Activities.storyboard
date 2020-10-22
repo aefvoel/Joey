@@ -31,6 +31,14 @@
                                     <segue destination="1tA-ld-XfP" kind="show" id="Wnf-sx-yt4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbA-fT-gps">
+                                <rect key="frame" x="152" y="556" width="111" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Practice Smiling"/>
+                                <connections>
+                                    <segue destination="weI-Jj-1Po" kind="show" id="zYO-BA-bMW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Lhd-ua-s83"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -49,6 +57,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="43k-5p-hfV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="861" y="80"/>
+        </scene>
+        <!--PracticeSmilingViewController-->
+        <scene sceneID="sax-2w-dc4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PracticeSmiling" referencedIdentifier="PracticeSmilingViewController" id="weI-Jj-1Po" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PaN-Vg-Yd8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bBg-oC-Mrf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="204"/>
         </scene>
     </scenes>
     <resources>

@@ -11,6 +11,8 @@
 		16170AB4254103750095D1A5 /* Activities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16170AB3254103750095D1A5 /* Activities.storyboard */; };
 		16170ABB254103C20095D1A5 /* JacobsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16170ABA254103C20095D1A5 /* JacobsonViewController.swift */; };
 		16170AC3254103CC0095D1A5 /* Jacobson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16170AC2254103CC0095D1A5 /* Jacobson.storyboard */; };
+		16170ACB254104EE0095D1A5 /* PracticeSmiling.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16170ACA254104EE0095D1A5 /* PracticeSmiling.storyboard */; };
+		16170AD0254105070095D1A5 /* PracticeSmilingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16170ACF254105070095D1A5 /* PracticeSmilingViewController.swift */; };
 		166C532C253732DF007C5EF3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166C532B253732DF007C5EF3 /* Home.storyboard */; };
 		166C5331253732E9007C5EF3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C5330253732E9007C5EF3 /* HomeViewController.swift */; };
 		166C53362537332F007C5EF3 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166C53352537332F007C5EF3 /* Onboarding.storyboard */; };
@@ -75,6 +77,8 @@
 		16170AB3254103750095D1A5 /* Activities.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Activities.storyboard; sourceTree = "<group>"; };
 		16170ABA254103C20095D1A5 /* JacobsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JacobsonViewController.swift; sourceTree = "<group>"; };
 		16170AC2254103CC0095D1A5 /* Jacobson.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jacobson.storyboard; sourceTree = "<group>"; };
+		16170ACA254104EE0095D1A5 /* PracticeSmiling.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PracticeSmiling.storyboard; sourceTree = "<group>"; };
+		16170ACF254105070095D1A5 /* PracticeSmilingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSmilingViewController.swift; sourceTree = "<group>"; };
 		166C532B253732DF007C5EF3 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		166C5330253732E9007C5EF3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		166C53352537332F007C5EF3 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
@@ -189,6 +193,31 @@
 				16170AC2254103CC0095D1A5 /* Jacobson.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		16170AC7254104D70095D1A5 /* PracticeSmiling */ = {
+			isa = PBXGroup;
+			children = (
+				16170AC9254104E30095D1A5 /* Controllers */,
+				16170AC8254104DF0095D1A5 /* Views */,
+			);
+			path = PracticeSmiling;
+			sourceTree = "<group>";
+		};
+		16170AC8254104DF0095D1A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				16170ACA254104EE0095D1A5 /* PracticeSmiling.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		16170AC9254104E30095D1A5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				16170ACF254105070095D1A5 /* PracticeSmilingViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		166C532125373272007C5EF3 /* Home */ = {
@@ -365,13 +394,14 @@
 		AB92A173253730F9003F8823 /* Joey */ = {
 			isa = PBXGroup;
 			children = (
+				16170AC7254104D70095D1A5 /* PracticeSmiling */,
 				16170AA8254103010095D1A5 /* Jacobson */,
-				5AD838C7253E8B940042D14E /* Font */,
 				ABED45F3253819530005176A /* Activities */,
 				166C5351253738DD007C5EF3 /* Helpers */,
 				166C532325373283007C5EF3 /* DetectEmotion */,
 				166C53222537327D007C5EF3 /* Onboarding */,
 				166C532125373272007C5EF3 /* Home */,
+				5AD838C7253E8B940042D14E /* Font */,
 				AB92A174253730F9003F8823 /* AppDelegate.swift */,
 				AB92A1B925374814003F8823 /* Joey.entitlements */,
 				AB92A176253730F9003F8823 /* SceneDelegate.swift */,
@@ -559,6 +589,7 @@
 				ABEBCCC3253E949F002E03A6 /* Yuanti.ttc in Resources */,
 				166C532C253732DF007C5EF3 /* Home.storyboard in Resources */,
 				ABECBF11253D891C00EF7D43 /* ActivitiesCollectionViewCell.xib in Resources */,
+				16170ACB254104EE0095D1A5 /* PracticeSmiling.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +633,7 @@
 				AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */,
 				5A9DA16125406BFE0090EC41 /* TOSPPViewController.swift in Sources */,
 				5AAE9BB5253F08610075966B /* PrivPolicyTableViewCell.swift in Sources */,
+				16170AD0254105070095D1A5 /* PracticeSmilingViewController.swift in Sources */,
 				ABECBF10253D891C00EF7D43 /* ActivitiesCollectionViewCell.swift in Sources */,
 				166C534D253733A0007C5EF3 /* DetectEmotionStartViewController.swift in Sources */,
 				16170AAB254103460095D1A5 /* ActivitiesViewController.swift in Sources */,
