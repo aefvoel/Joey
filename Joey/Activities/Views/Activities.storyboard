@@ -69,8 +69,8 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="imageViewActivity" destination="vWU-gO-rdN" id="hXN-5d-Ih4"/>
-                                            <outlet property="labelActivityName" destination="ShA-iI-V4x" id="Ktn-jO-Oki"/>
                                             <outlet property="labelActivityShortDesc" destination="bNB-Y6-czX" id="xOz-Om-DeI"/>
+                                            <outlet property="labelActivityTitle" destination="ShA-iI-V4x" id="Ktn-jO-Oki"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -96,11 +96,22 @@
                     <navigationItem key="navigationItem" id="RUG-wH-pYg"/>
                     <connections>
                         <outlet property="tableView" destination="ffb-z8-gh1" id="Eqs-sY-RWY"/>
+                        <segue destination="zos-N4-orj" kind="show" identifier="toInstruction" id="Sww-Ta-kut"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yGa-UD-Cv6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="169.56521739130437" y="182.8125"/>
+        </scene>
+        <!--InstructionViewController-->
+        <scene sceneID="kHh-OU-mzv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Instruction" referencedIdentifier="InstructionViewController" id="zos-N4-orj" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Lmg-oe-i1l"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wzR-1B-lT9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-133" y="587"/>
         </scene>
         <!--Activities View Controller-->
         <scene sceneID="bYS-hW-KJz">

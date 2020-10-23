@@ -16,7 +16,7 @@ class InstructionViewController: UIViewController {
     }
     
     @IBAction func buttonContinueTapped(_ sender: Any) {
-        switch activityInstruction?.activityTitle {
+        switch activityInstruction?.title {
         case "Mirror Technique":
             performSegue(withIdentifier: "toMirror", sender: nil)
         case "Jacobson's Technique":

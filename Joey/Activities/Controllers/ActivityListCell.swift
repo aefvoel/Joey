@@ -10,12 +10,12 @@ import UIKit
 class ActivityListCell: UITableViewCell {
     
     @IBOutlet weak var imageViewActivity: UIImageView!
-    @IBOutlet weak var labelActivityName: UILabel!
+    @IBOutlet weak var labelActivityTitle: UILabel!
     @IBOutlet weak var labelActivityShortDesc: UILabel!
     
-    func setActivity(activity: ActivityListModel) {
+    func setActivity(activity: ActivitiesInstruction) {
         imageViewActivity.image = activity.activityImage
-        labelActivityName.text = activity.activityName
+        labelActivityTitle.text = activity.title
         labelActivityShortDesc.text = activity.activityShortDesc
     }
     

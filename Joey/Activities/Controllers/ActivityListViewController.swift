@@ -11,36 +11,18 @@ class ActivityListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var activityArray: [ActivityListModel] = []
+    var activityArray: [ActivitiesInstruction] = activitiesInstructionArray
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView.separatorStyle = .none
         
-        activityArray = createArray()
-        
         tableView.delegate = self
         tableView.dataSource = self
         
         
     }
-
-    func createArray() -> [ActivityListModel] {
-        
-        var tempActivity: [ActivityListModel] = []
-        
-        let practiceSmiling = ActivityListModel(activityImage: #imageLiteral(resourceName: "PurpleNotSelected"), activityName: "Practice Smiling", activityShortDesc: "Practice Mindfulness")
-        let mirrorTechnique = ActivityListModel(activityImage: #imageLiteral(resourceName: "GreenNotSelected"), activityName: "Mirror Technique", activityShortDesc: "Release Negative Thoughts")
-        let jacobsonRelaxation = ActivityListModel(activityImage: #imageLiteral(resourceName: "BlueNotSelected"), activityName: "Jacobson's Relaxation", activityShortDesc: "Release Negative Thoughts")
-        
-        tempActivity.append(practiceSmiling)
-        tempActivity.append(mirrorTechnique)
-        tempActivity.append(jacobsonRelaxation)
-        
-        return tempActivity
-    }
-    
 
     /*
     // MARK: - Navigation
@@ -78,5 +60,13 @@ extension ActivityListViewController: UITableViewDelegate, UITableViewDataSource
     //Buat ngesegue
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        performSegue(withIdentifier: "toInstruction", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? InstructionViewController {
+            vc.activityInstruction = activityArray[tableView.indexPathForSelectedRow!.row]
+        }
     }
 }
