@@ -7,6 +7,12 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Yuanti.ttc">
+            <string>STYuanti-SC-Bold</string>
+            <string>STYuanti-SC-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Jacobson View Controller-->
         <scene sceneID="LSS-Um-wmt">
@@ -16,24 +22,97 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jacobson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hro-XD-Ui6">
-                                <rect key="frame" x="170" y="438" width="74" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hro-XD-Ui6">
+                                <rect key="frame" x="24" y="130" width="366" height="62"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="44"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feetGuide" translatesAutoresizingMaskIntoConstraints="NO" id="M3W-eA-uMz">
+                                <rect key="frame" x="87" y="234" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="P8q-R0-GMo"/>
+                                    <constraint firstAttribute="height" constant="240" id="Wdg-TH-ZIH"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xg8-uk-Ki9">
+                                <rect key="frame" x="55" y="538" width="304" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">1. 	Gently tighten the muscles of your abdomen, but don’t strain.
+2. 	Notice the tension for a few moments. Then release, and notice the relaxation. Repeat.
+3. 	Become aware of the difference between the tensed muscles and the relaxed muscles.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nOi-Je-ZVU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xg8-uk-Ki9" firstAttribute="top" secondItem="M3W-eA-uMz" secondAttribute="bottom" constant="64" id="9O2-iT-mq1"/>
+                            <constraint firstItem="nOi-Je-ZVU" firstAttribute="bottom" secondItem="xg8-uk-Ki9" secondAttribute="bottom" constant="24" id="DUi-nd-3ed"/>
+                            <constraint firstItem="M3W-eA-uMz" firstAttribute="centerX" secondItem="hro-XD-Ui6" secondAttribute="centerX" id="RmJ-W2-tzz"/>
+                            <constraint firstItem="xg8-uk-Ki9" firstAttribute="trailing" secondItem="M3W-eA-uMz" secondAttribute="trailing" constant="32" id="ZA4-6K-3kV"/>
+                            <constraint firstItem="xg8-uk-Ki9" firstAttribute="leading" secondItem="M3W-eA-uMz" secondAttribute="leading" constant="-32" id="cAU-9a-pu3"/>
+                            <constraint firstItem="nOi-Je-ZVU" firstAttribute="trailing" secondItem="hro-XD-Ui6" secondAttribute="trailing" constant="24" id="eKR-G9-s00"/>
+                            <constraint firstItem="M3W-eA-uMz" firstAttribute="top" secondItem="hro-XD-Ui6" secondAttribute="bottom" constant="42" id="fPc-mD-us1"/>
+                            <constraint firstItem="hro-XD-Ui6" firstAttribute="top" secondItem="nOi-Je-ZVU" secondAttribute="top" constant="86" id="nld-5v-Kh8"/>
+                            <constraint firstItem="hro-XD-Ui6" firstAttribute="leading" secondItem="nOi-Je-ZVU" secondAttribute="leading" constant="24" id="sTl-mm-Yuy"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5xJ-w0-Jhv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="210" y="165"/>
+            <point key="canvasLocation" x="208.69565217391306" y="164.73214285714286"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NW5-T0-kCf">
+            <objects>
+                <viewController id="yfK-To-gI5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TLB-Fv-Cc6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="de_background" translatesAutoresizingMaskIntoConstraints="NO" id="b4Z-uy-GYJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqG-l5-2rw">
+                                <rect key="frame" x="24" y="130" width="366" height="62"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feetGuide" translatesAutoresizingMaskIntoConstraints="NO" id="qZX-Aj-9C1">
+                                <rect key="frame" x="87" y="234" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="8FY-gj-2bc"/>
+                                    <constraint firstAttribute="width" constant="240" id="cRb-HM-Yb5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VYI-es-gjY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VYI-es-gjY" firstAttribute="trailing" secondItem="gqG-l5-2rw" secondAttribute="trailing" constant="24" id="9Ex-3g-h5r"/>
+                            <constraint firstItem="qZX-Aj-9C1" firstAttribute="top" secondItem="gqG-l5-2rw" secondAttribute="bottom" constant="42" id="9sj-LP-S6E"/>
+                            <constraint firstItem="gqG-l5-2rw" firstAttribute="top" secondItem="VYI-es-gjY" secondAttribute="top" constant="86" id="Ubc-9G-O3X"/>
+                            <constraint firstItem="gqG-l5-2rw" firstAttribute="leading" secondItem="VYI-es-gjY" secondAttribute="leading" constant="24" id="bEt-zE-oyB"/>
+                            <constraint firstItem="qZX-Aj-9C1" firstAttribute="centerX" secondItem="gqG-l5-2rw" secondAttribute="centerX" id="jZ8-wv-YHV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pIg-65-V26" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069.5652173913045" y="164.73214285714286"/>
         </scene>
     </scenes>
     <resources>
+        <image name="de_background" width="414" height="896"/>
+        <image name="feetGuide" width="286" height="286"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
