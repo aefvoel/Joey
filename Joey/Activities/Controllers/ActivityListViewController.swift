@@ -55,7 +55,7 @@ extension ActivityListViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 145
+        return 150
     }
     
     //Buat ngesegue

@@ -15,6 +15,7 @@ class ActivityListCell: UITableViewCell {
     
     func setActivity(activity: ActivitiesInstruction) {
         imageViewActivity.image = activity.activityImage
+        imageViewActivity.layer.cornerRadius = 14.0
         labelActivityTitle.text = activity.title
         labelActivityShortDesc.text = activity.activityShortDesc
     }
