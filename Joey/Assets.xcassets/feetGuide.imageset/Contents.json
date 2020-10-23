@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "mascotBubble-small_border.png",
+      "filename" : "feetGuide.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "mascotBubble-small_border@2x.png",
+      "filename" : "feetGuide@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "mascotBubble-small_border@3x.png",
+      "filename" : "feetGuide@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
