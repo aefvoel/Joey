@@ -11,6 +11,7 @@ class ActivityListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    var selectedActivity: ActivitiesInstruction?
     var activityArray: [ActivitiesInstruction] = activitiesInstructionArray
     
     override func viewDidLoad() {
@@ -60,13 +61,13 @@ extension ActivityListViewController: UITableViewDelegate, UITableViewDataSource
     //Buat ngesegue
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
+        selectedActivity = activityArray[indexPath.row]
         performSegue(withIdentifier: "toInstruction", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? InstructionViewController {
-            vc.activityInstruction = activityArray[tableView.indexPathForSelectedRow!.row]
+            vc.activityInstruction = selectedActivity
         }
     }
 }
