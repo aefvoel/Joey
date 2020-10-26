@@ -18,7 +18,7 @@
         <scene sceneID="7Kk-m5-Hh5">
             <objects>
                 <viewController id="1Y0-RP-YVy" customClass="InstructionViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0X0-c2-zO7">
+                    <view key="view" contentMode="scaleToFill" id="0X0-c2-zO7" customClass="InstructionView" customModule="Joey" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -113,8 +113,13 @@
                             <constraint firstItem="5Cl-wV-rne" firstAttribute="trailing" secondItem="HsQ-48-VLX" secondAttribute="trailing" id="wK3-g0-sbP"/>
                             <constraint firstItem="0c7-p1-8Oj" firstAttribute="trailing" secondItem="5Cl-wV-rne" secondAttribute="trailing" id="xwf-bV-1tF"/>
                         </constraints>
+                        <connections>
+                            <outlet property="labelTitle" destination="TG4-B0-EAU" id="5ha-az-EOu"/>
+                            <outlet property="textInstruction" destination="5Cl-wV-rne" id="NwE-B9-vo9"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="instructionView" destination="0X0-c2-zO7" id="ppS-Ph-WEz"/>
                         <segue destination="4Az-fS-Sei" kind="show" identifier="toJacobson" id="7y6-UC-aIU"/>
                         <segue destination="XQb-VW-I1r" kind="show" identifier="toSmiling" id="6Nk-Ot-zYQ"/>
                         <segue destination="Eht-GO-KQY" kind="show" identifier="toMirror" id="cl9-j3-9Pg"/>

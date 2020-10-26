@@ -32,6 +32,24 @@ import UIKit
         layer.cornerRadius = rounded ? cornerRadius : 0
         layer.masksToBounds = rounded ? true : false
     }
+    
+    @IBInspectable var borderWidth: CGFloat {
+        get {
+            return layer.borderWidth
+        }
+        set {
+            layer.borderWidth = newValue
+        }
+    }
+
+    @IBInspectable var borderColor: UIColor? {
+        get {
+            return UIColor(cgColor: layer.borderColor!)
+        }
+        set {
+            layer.borderColor = newValue?.cgColor
+        }
+    }
 }
 
 @IBDesignable class RoundedView: UIView
@@ -58,6 +76,24 @@ import UIKit
         layer.cornerRadius = rounded ? cornerRadius : 0
         layer.masksToBounds = rounded ? true : false
     }
+    
+    @IBInspectable var borderWidth: CGFloat {
+        get {
+            return layer.borderWidth
+        }
+        set {
+            layer.borderWidth = newValue
+        }
+    }
+
+    @IBInspectable var borderColor: UIColor? {
+        get {
+            return UIColor(cgColor: layer.borderColor!)
+        }
+        set {
+            layer.borderColor = newValue?.cgColor
+        }
+    }
 }
 
 @IBDesignable class RoundedButton: UIButton
@@ -83,5 +119,33 @@ import UIKit
     func updateCornerRadius() {
         layer.cornerRadius = rounded ? cornerRadius : 0
         layer.masksToBounds = rounded ? true : false
+    }
+    
+    @IBInspectable var borderWidth: CGFloat {
+        get {
+            return layer.borderWidth
+        }
+        set {
+            layer.borderWidth = newValue
+        }
+    }
+
+    @IBInspectable var borderColor: UIColor? {
+        get {
+            return UIColor(cgColor: layer.borderColor!)
+        }
+        set {
+            layer.borderColor = newValue?.cgColor
+        }
+    }
+
+}
+
+
+class CustomSlider: UISlider {
+    @IBInspectable var trackHeight: CGFloat = 2
+    
+    override func trackRect(forBounds bounds: CGRect) -> CGRect {
+        return CGRect(origin: bounds.origin, size: CGSize(width: bounds.width, height: trackHeight))
     }
 }
