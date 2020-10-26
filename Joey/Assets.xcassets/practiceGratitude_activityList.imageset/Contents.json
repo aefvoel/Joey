@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "practiceGratitude_activityList.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "practiceGratitude_activityList@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "practiceGratitude_activityList@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
