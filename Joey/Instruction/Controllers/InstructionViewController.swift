@@ -26,7 +26,7 @@ class InstructionViewController: UIViewController {
         case "Jacobson's Technique":
             performSegue(withIdentifier: "toJacobson", sender: nil)
         case "Smile":
-            performSegue(withIdentifier: "toSmile", sender: nil)
+            performSegue(withIdentifier: "toSmiling", sender: nil)
         default:
             navigationController?.popViewController(animated: true)
         }

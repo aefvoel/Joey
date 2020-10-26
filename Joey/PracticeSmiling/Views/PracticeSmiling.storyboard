@@ -23,13 +23,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Practice Smiling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7j6-6r-E9H">
-                                <rect key="frame" x="62" y="111" width="290" height="47"/>
+                                <rect key="frame" x="66" y="111" width="282" height="56"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bX9-NF-RR3" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="62" y="565" width="290" height="45"/>
+                                <rect key="frame" x="66" y="565" width="286" height="45"/>
                                 <color key="backgroundColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="XiY-Zf-apL"/>
@@ -59,7 +59,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GzL-PP-IEE" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="24" y="183" width="366" height="349"/>
+                                <rect key="frame" x="24" y="192" width="366" height="340"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="practiceSmiling_miniCard" translatesAutoresizingMaskIntoConstraints="NO" id="TJC-Ts-jQg">
                                         <rect key="frame" x="8" y="8" width="350" height="332"/>
@@ -221,7 +221,7 @@
     </scenes>
     <designables>
         <designable name="bX9-NF-RR3">
-            <size key="intrinsicContentSize" width="43" height="36"/>
+            <size key="intrinsicContentSize" width="45" height="40"/>
         </designable>
     </designables>
     <resources>

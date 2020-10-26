@@ -20,6 +20,14 @@ class StartPracticeSmilingViewController: UIViewController {
     var isRunning = false
     var isSmile = false
     
+    var imageView: UIImageView = {
+        let imageView = UIImageView(frame: .zero)
+        imageView.image = UIImage(named: "de_background")
+        imageView.contentMode = .scaleAspectFill
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -30,6 +38,13 @@ class StartPracticeSmilingViewController: UIViewController {
         sceneView.delegate = self
         progressView.progress = 0.0
         progressView.layer.cornerRadius = 4
+        self.view.insertSubview(imageView, at: 0)
+        NSLayoutConstraint.activate([
+            imageView.topAnchor.constraint(equalTo: view.topAnchor),
+            imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

@@ -38,7 +38,7 @@
                         <action selector="onClickBackButton:" destination="-1" eventType="touchUpInside" id="e8e-q6-Jrs"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="Joey" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shB-5G-YQw">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="Joey" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shB-5G-YQw">
                     <rect key="frame" x="60" y="9" width="340" height="29"/>
                     <accessibility key="accessibilityConfiguration" identifier="topBarNavigation_titleLbl"/>
                     <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
