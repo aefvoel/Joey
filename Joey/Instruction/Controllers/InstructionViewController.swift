@@ -9,10 +9,14 @@ import UIKit
 
 class InstructionViewController: UIViewController {
     
+    @IBOutlet var instructionView: InstructionView!
     var activityInstruction: ActivitiesInstruction?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let data = activityInstruction {
+            instructionView.setupData(data: data)
+        }
     }
     
     @IBAction func buttonContinueTapped(_ sender: Any) {

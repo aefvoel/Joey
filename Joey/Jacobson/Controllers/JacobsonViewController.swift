@@ -12,7 +12,8 @@ class JacobsonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Circular Timer
+        // https://stackoverflow.com/a/30292047/11752450
     }
     
 

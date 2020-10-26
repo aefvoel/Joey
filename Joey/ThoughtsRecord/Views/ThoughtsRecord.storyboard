@@ -23,33 +23,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thoughts Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d71-4z-3ep">
-                                <rect key="frame" x="24" y="137" width="366" height="35"/>
+                                <rect key="frame" x="24" y="137" width="366" height="42"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TR-Icon" translatesAutoresizingMaskIntoConstraints="NO" id="C61-Ns-u2B">
-                                <rect key="frame" x="114" y="204" width="186" height="186"/>
+                                <rect key="frame" x="114" y="211" width="186" height="186"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4P-Hf-oH7">
-                                <rect key="frame" x="24" y="422" width="366" height="82"/>
+                                <rect key="frame" x="24" y="429" width="366" height="98"/>
                                 <string key="text">Thoughts record is a part of CBT that is already proven to help you challenge your negative thinking. All you have to do is following the steps and tell Joey what you really think and feel. It doesn’t have to be perfect! However, make it as specific and honest as possible.</string>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeZ-rP-h7g">
-                                <rect key="frame" x="24" y="528" width="366" height="49"/>
+                                <rect key="frame" x="24" y="551" width="366" height="59"/>
                                 <string key="text">Thoughts Record can help you to be aware of your negative thoughts, to create rational alternatives, to challenge negative (and unhelpful positive) thoughts</string>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whyitworks-icon" translatesAutoresizingMaskIntoConstraints="NO" id="JTj-TD-LZV">
-                                <rect key="frame" x="24" y="609" width="21" height="21"/>
+                                <rect key="frame" x="24" y="642" width="21" height="21"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCe-pO-lc0">
-                                <rect key="frame" x="53" y="609" width="89" height="21"/>
+                                <rect key="frame" x="53" y="642" width="87" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="RIk-Qv-I0o"/>
                                 </constraints>
@@ -119,8 +119,57 @@
                     <view key="view" contentMode="scaleToFill" id="rOX-SD-4yK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TR-Bubble" translatesAutoresizingMaskIntoConstraints="NO" id="3Nl-8i-Q74">
+                                <rect key="frame" x="24" y="128" width="366" height="126"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gak-SE-me5">
+                                <rect key="frame" x="225" y="232" width="165" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="FB3-1F-yqt"/>
+                                    <constraint firstAttribute="height" constant="22" id="xjS-zz-Rkw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="16"/>
+                                <state key="normal" title="How do I answer this?">
+                                    <color key="titleColor" red="0.86666666670000003" green="0.40784313729999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joey-medium" translatesAutoresizingMaskIntoConstraints="NO" id="eWY-jb-Lxo">
+                                <rect key="frame" x="23" y="296" width="165" height="156"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="GOJ-zM-KUY"/>
+                                    <constraint firstAttribute="height" constant="156" id="sxy-kY-Rnh"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wWz-gX-rQc" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="28" y="452" width="366" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hd9-dn-A5V"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hd9-dn-A5V" firstAttribute="trailing" secondItem="3Nl-8i-Q74" secondAttribute="trailing" constant="24" id="KaD-x3-zv8"/>
+                            <constraint firstItem="hd9-dn-A5V" firstAttribute="bottom" secondItem="gak-SE-me5" secondAttribute="bottom" constant="608" id="LBg-VH-zgV"/>
+                            <constraint firstItem="3Nl-8i-Q74" firstAttribute="top" secondItem="hd9-dn-A5V" secondAttribute="top" constant="84" id="O2n-7y-SKh"/>
+                            <constraint firstItem="eWY-jb-Lxo" firstAttribute="leading" secondItem="hd9-dn-A5V" secondAttribute="leading" constant="23" id="dPA-K2-jAp"/>
+                            <constraint firstItem="eWY-jb-Lxo" firstAttribute="top" secondItem="3Nl-8i-Q74" secondAttribute="bottom" constant="42" id="dzq-hh-Sb0"/>
+                            <constraint firstItem="3Nl-8i-Q74" firstAttribute="leading" secondItem="hd9-dn-A5V" secondAttribute="leading" constant="24" id="mNm-5Q-e4V"/>
+                            <constraint firstItem="hd9-dn-A5V" firstAttribute="trailing" secondItem="gak-SE-me5" secondAttribute="trailing" constant="24" id="zXT-eg-zRG"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DFH-R2-k5Q"/>
                 </viewController>
@@ -159,7 +208,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="gBH-cK-IAi">
                                 <rect key="frame" x="24" y="159" width="366" height="649"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">As Albert Einstein once said, “The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”, and I agree! Whenever you feel like drowning in your own thoughts, you can change it by challenging it! 
+                                <string key="text">As Albert Einstein once said, “The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”, and I agree! Whenever you feel like drowning in your own thoughts, you can change it by challenging it! 
 
 Thoughts Record helps you think about your thinking. It is the basic tool of cognitive therapy. It is a series of questions that lead you step-by-step through the process of identifying your negative thinking and changing it.
 
@@ -174,7 +223,7 @@ The key benefits of using thought records are:
 •	very practical and easy to use anywhere, 
 •	you can look back and compare changes over the weeks, simply writing your ‘hot thoughts’ down can be very cathartic and is a good practice to get into, not just for mental health problems (such as depression, anxiety and eating disorders) but also for personal growth and development.
 
-Try not to be frustrated about the fact that this takes time. These are big changes, and they will not happen overnight, but in small increments that may only become perceptible gradually. Both the process of using the thought record, and of retraining your brain, will be difficult at first, but it will get easier over time. It helps to choose a specific day and time to fill in your thought record.</mutableString>
+Try not to be frustrated about the fact that this takes time. These are big changes, and they will not happen overnight, but in small increments that may only become perceptible gradually. Both the process of using the thought record, and of retraining your brain, will be difficult at first, but it will get easier over time. It helps to choose a specific day and time to fill in your thought record.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -257,7 +306,7 @@ Try not to be frustrated about the fact that this takes time. These are big chan
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="faM-B1-dc6">
                                 <rect key="frame" x="24" y="159" width="366" height="703"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Identify a situation in which you had a strong feeling or reaction, or wish you had handled things differently. 
+                                <string key="text">Identify a situation in which you had a strong feeling or reaction, or wish you had handled things differently. 
 
 Describe what happened, sticking with the facts. 
 
@@ -275,7 +324,7 @@ This is just an example. You can always do it in any way you like, after all it�
 
 
 You don’t have to do thought records perfectly. Its not rocket science or brain surgery. Just do the best you can and don’t think too much!
-</mutableString>
+</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -306,12 +355,14 @@ You don’t have to do thought records perfectly. Its not rocket science or br
     </scenes>
     <designables>
         <designable name="ioN-YR-MtI">
-            <size key="intrinsicContentSize" width="43" height="36"/>
+            <size key="intrinsicContentSize" width="45" height="40"/>
         </designable>
     </designables>
     <resources>
         <image name="OB_modalClose_xButton" width="41" height="41"/>
+        <image name="TR-Bubble" width="366" height="126"/>
         <image name="TR-Icon" width="186" height="186"/>
+        <image name="joey-medium" width="226" height="222"/>
         <image name="whyitworks-icon" width="21" height="21"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
