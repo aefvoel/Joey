@@ -2,16 +2,206 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Yuanti.ttc">
+            <string>STYuanti-SC-Bold</string>
+            <string>STYuanti-SC-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Thoughts Record View Controller-->
+        <scene sceneID="lnr-y3-p93">
+            <objects>
+                <viewController storyboardIdentifier="ThoughtsRecordViewController" id="BYD-lP-QQX" customClass="ThoughtsRecordViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ivt-tD-5Ag">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thoughts Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d71-4z-3ep">
+                                <rect key="frame" x="24" y="137" width="366" height="35"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TR-Icon" translatesAutoresizingMaskIntoConstraints="NO" id="C61-Ns-u2B">
+                                <rect key="frame" x="114" y="204" width="186" height="186"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4P-Hf-oH7">
+                                <rect key="frame" x="24" y="422" width="366" height="82"/>
+                                <string key="text">Thoughts record is a part of CBT that is already proven to help you challenge your negative thinking. All you have to do is following the steps and tell Joey what you really think and feel. It doesn’t have to be perfect! However, make it as specific and honest as possible.</string>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeZ-rP-h7g">
+                                <rect key="frame" x="24" y="528" width="366" height="49"/>
+                                <string key="text">Thoughts Record can help you to be aware of your negative thoughts, to create rational alternatives, to challenge negative (and unhelpful positive) thoughts</string>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whyitworks-icon" translatesAutoresizingMaskIntoConstraints="NO" id="JTj-TD-LZV">
+                                <rect key="frame" x="24" y="609" width="21" height="21"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCe-pO-lc0">
+                                <rect key="frame" x="53" y="609" width="89" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="RIk-Qv-I0o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="14"/>
+                                <state key="normal" title="Why it works?">
+                                    <color key="titleColor" red="0.8666666666666667" green="0.40784313725490196" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="TuT-Hq-yKV" kind="presentation" id="f2H-iR-BEf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioN-YR-MtI" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="64" y="779" width="286" height="45"/>
+                                <color key="backgroundColor" red="0.3529411764705882" green="0.76078431372549016" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="286" id="3de-QT-4ke"/>
+                                    <constraint firstAttribute="height" constant="45" id="MPD-iK-o4l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7AK-JA-pUu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ioN-YR-MtI" secondAttribute="bottom" constant="72" id="26X-nY-M6J"/>
+                            <constraint firstAttribute="trailing" secondItem="d71-4z-3ep" secondAttribute="trailing" constant="24" id="4hY-fg-Sty"/>
+                            <constraint firstItem="eeZ-rP-h7g" firstAttribute="centerX" secondItem="ivt-tD-5Ag" secondAttribute="centerX" id="67E-ni-T3B"/>
+                            <constraint firstAttribute="trailing" secondItem="F4P-Hf-oH7" secondAttribute="trailing" constant="24" id="B1n-3I-Xnr"/>
+                            <constraint firstItem="xCe-pO-lc0" firstAttribute="leading" secondItem="JTj-TD-LZV" secondAttribute="trailing" constant="8" id="Cge-ks-Bif"/>
+                            <constraint firstItem="xCe-pO-lc0" firstAttribute="top" secondItem="eeZ-rP-h7g" secondAttribute="bottom" constant="32" id="DhN-j7-xJ3"/>
+                            <constraint firstItem="JTj-TD-LZV" firstAttribute="top" secondItem="eeZ-rP-h7g" secondAttribute="bottom" constant="32" id="FUV-T9-SJw"/>
+                            <constraint firstItem="ioN-YR-MtI" firstAttribute="centerX" secondItem="ivt-tD-5Ag" secondAttribute="centerX" id="H4q-lK-8Bq"/>
+                            <constraint firstItem="C61-Ns-u2B" firstAttribute="top" secondItem="d71-4z-3ep" secondAttribute="bottom" constant="32" id="Jec-eE-cRC"/>
+                            <constraint firstItem="JTj-TD-LZV" firstAttribute="leading" secondItem="7AK-JA-pUu" secondAttribute="leading" constant="24" id="NHS-5B-3Q3"/>
+                            <constraint firstItem="eeZ-rP-h7g" firstAttribute="top" secondItem="F4P-Hf-oH7" secondAttribute="bottom" constant="24" id="QRm-r0-W2h"/>
+                            <constraint firstItem="F4P-Hf-oH7" firstAttribute="leading" secondItem="ivt-tD-5Ag" secondAttribute="leading" constant="24" id="RAa-zU-sXU"/>
+                            <constraint firstItem="d71-4z-3ep" firstAttribute="top" secondItem="7AK-JA-pUu" secondAttribute="top" constant="93" id="aPt-YB-Gqn"/>
+                            <constraint firstItem="F4P-Hf-oH7" firstAttribute="centerX" secondItem="ivt-tD-5Ag" secondAttribute="centerX" id="bpt-8N-wx6"/>
+                            <constraint firstItem="C61-Ns-u2B" firstAttribute="centerX" secondItem="ivt-tD-5Ag" secondAttribute="centerX" id="f3r-xu-v9t"/>
+                            <constraint firstItem="eeZ-rP-h7g" firstAttribute="leading" secondItem="7AK-JA-pUu" secondAttribute="leading" constant="24" id="gPq-OY-N7o"/>
+                            <constraint firstItem="d71-4z-3ep" firstAttribute="leading" secondItem="ivt-tD-5Ag" secondAttribute="leading" constant="24" id="hum-a7-gfK"/>
+                            <constraint firstItem="7AK-JA-pUu" firstAttribute="trailing" secondItem="eeZ-rP-h7g" secondAttribute="trailing" constant="24" id="wA6-ee-xkP"/>
+                            <constraint firstItem="F4P-Hf-oH7" firstAttribute="top" secondItem="C61-Ns-u2B" secondAttribute="bottom" constant="32" id="xxY-Bz-xys"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IfI-zG-4B4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1491" y="-90"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uUs-fJ-Ebe">
+            <objects>
+                <viewController id="Wcb-dc-ddC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rOX-SD-4yK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hd9-dn-A5V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g6y-sl-ajZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-707" y="-90"/>
+        </scene>
+        <!--Hints View Controller-->
+        <scene sceneID="elj-1m-nWn">
+            <objects>
+                <viewController id="TuT-Hq-yKV" customClass="hintsViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cCd-6W-cxy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDc-aJ-e7E">
+                                <rect key="frame" x="24" y="24" width="41" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="3xC-uj-6o8"/>
+                                    <constraint firstAttribute="height" constant="41" id="Hig-Zv-ocm"/>
+                                </constraints>
+                                <state key="normal" image="OB_modalClose_xButton"/>
+                                <connections>
+                                    <action selector="onClickDismissButton:" destination="TuT-Hq-yKV" eventType="touchUpInside" id="3yF-EF-LKg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thoughts Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMC-OD-q5M">
+                                <rect key="frame" x="24" y="93" width="366" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="cjn-PO-xi3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="30"/>
+                                <color key="textColor" red="0.3529411764705882" green="0.76078431372549016" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="gBH-cK-IAi">
+                                <rect key="frame" x="24" y="159" width="366" height="649"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">As Albert Einstein once said, “The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”, and I agree! Whenever you feel like drowning in your own thoughts, you can change it by challenging it! 
+
+Thoughts Record helps you think about your thinking. It is the basic tool of cognitive therapy. It is a series of questions that lead you step-by-step through the process of identifying your negative thinking and changing it.
+
+Thoughts Record gives you a chance to reflect on your thinking after the fact, when you’re not reacting out of fear or anger, so that it’s easier to identify negative thinking.
+
+The end result of a thought record is a more balanced view. When you complete a thought record, you turn your attention inward and notice your thoughts and feelings. We are often so out of touch with ourselves that we have no idea what we’re really thinking or feeling. 
+
+The process helps you slow down and identify what’s going on. When you bring such awareness to your internal experience, there’s often a spontaneous shift in how you feel.
+
+The key benefits of using thought records are: 
+•	it retrains your brain by teaching you to challenge negative thoughts and come up with healthier alternative ones
+•	very practical and easy to use anywhere, 
+•	you can look back and compare changes over the weeks, simply writing your ‘hot thoughts’ down can be very cathartic and is a good practice to get into, not just for mental health problems (such as depression, anxiety and eating disorders) but also for personal growth and development.
+
+Try not to be frustrated about the fact that this takes time. These are big changes, and they will not happen overnight, but in small increments that may only become perceptible gradually. Both the process of using the thought record, and of retraining your brain, will be difficult at first, but it will get easier over time. It helps to choose a specific day and time to fill in your thought record.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1ay-GJ-j8c"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lMC-OD-q5M" firstAttribute="top" secondItem="cCd-6W-cxy" secondAttribute="top" constant="93" id="1eL-wV-bTR"/>
+                            <constraint firstItem="MDc-aJ-e7E" firstAttribute="leading" secondItem="1ay-GJ-j8c" secondAttribute="leading" constant="24" id="97h-gK-OnD"/>
+                            <constraint firstItem="1ay-GJ-j8c" firstAttribute="trailing" secondItem="gBH-cK-IAi" secondAttribute="trailing" constant="24" id="Qj6-Oj-SCP"/>
+                            <constraint firstItem="gBH-cK-IAi" firstAttribute="bottom" secondItem="1ay-GJ-j8c" secondAttribute="bottom" id="So6-E1-RYl"/>
+                            <constraint firstItem="gBH-cK-IAi" firstAttribute="leading" secondItem="1ay-GJ-j8c" secondAttribute="leading" constant="24" id="YV0-sk-tza"/>
+                            <constraint firstItem="gBH-cK-IAi" firstAttribute="top" secondItem="lMC-OD-q5M" secondAttribute="bottom" constant="24" id="Yfi-ee-iIk"/>
+                            <constraint firstItem="1ay-GJ-j8c" firstAttribute="trailing" secondItem="lMC-OD-q5M" secondAttribute="trailing" constant="24" id="poa-uf-hTa"/>
+                            <constraint firstItem="lMC-OD-q5M" firstAttribute="leading" secondItem="1ay-GJ-j8c" secondAttribute="leading" constant="24" id="txY-TF-ZDX"/>
+                            <constraint firstItem="MDc-aJ-e7E" firstAttribute="top" secondItem="1ay-GJ-j8c" secondAttribute="top" constant="24" id="wki-4V-FmC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="gBH-cK-IAi" id="km6-Ye-H52"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="STZ-RP-zdD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1491" y="700"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="W63-K1-3tR">
             <objects>
-                <viewController storyboardIdentifier="ThoughtsRecordViewController" id="2xx-zN-w0A" customClass="ThoughtsRecordViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2xx-zN-w0A" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pM0-S0-yxM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,10 +220,98 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hvo-vT-PfT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="303" y="212"/>
+            <point key="canvasLocation" x="-1491" y="-793"/>
+        </scene>
+        <!--Hints View Controller-->
+        <scene sceneID="ZeS-WP-CS9">
+            <objects>
+                <viewController id="C4F-hp-kSX" customClass="hintsViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xfw-If-Rs9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJj-Cb-K8c">
+                                <rect key="frame" x="24" y="68" width="41" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="1Gm-gE-B7M"/>
+                                    <constraint firstAttribute="width" constant="41" id="AJk-hb-qvg"/>
+                                </constraints>
+                                <state key="normal" image="OB_modalClose_xButton"/>
+                                <connections>
+                                    <action selector="onClickDismissButton:" destination="C4F-hp-kSX" eventType="touchUpInside" id="ObO-EB-FW8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Situation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfx-qC-lsG">
+                                <rect key="frame" x="24" y="93" width="366" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="5QY-Zo-SuU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="30"/>
+                                <color key="textColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="faM-B1-dc6">
+                                <rect key="frame" x="24" y="159" width="366" height="703"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Identify a situation in which you had a strong feeling or reaction, or wish you had handled things differently. 
+
+Describe what happened, sticking with the facts. 
+
+Include these details: 
+- Where and when did it happen?
+- Who was involved?
+- What, specifically, happened?
+
+For example: 
+“I got rejected from one master’s programme I applied for.”
+“I said something wrong at a social event.” “I felt embarrassed about….”
+“I felt anxious thinking about….”
+
+This is just an example. You can always do it in any way you like, after all it’s your space! But I suggest you do it as specific as you can because it will help you to ackownledge the whole situation easier!
+
+
+You don’t have to do thought records perfectly. Its not rocket science or brain surgery. Just do the best you can and don’t think too much!
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RFf-BX-19X"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RFf-BX-19X" firstAttribute="trailing" secondItem="Nfx-qC-lsG" secondAttribute="trailing" constant="24" id="4pb-Qx-kWr"/>
+                            <constraint firstItem="Nfx-qC-lsG" firstAttribute="leading" secondItem="RFf-BX-19X" secondAttribute="leading" constant="24" id="6Xr-vt-oHY"/>
+                            <constraint firstItem="Nfx-qC-lsG" firstAttribute="top" secondItem="xfw-If-Rs9" secondAttribute="top" constant="93" id="7pD-yY-Vfl"/>
+                            <constraint firstItem="faM-B1-dc6" firstAttribute="top" secondItem="Nfx-qC-lsG" secondAttribute="bottom" constant="24" id="FCv-FX-4lP"/>
+                            <constraint firstItem="faM-B1-dc6" firstAttribute="bottom" secondItem="RFf-BX-19X" secondAttribute="bottom" id="J2g-y4-fjk"/>
+                            <constraint firstItem="qJj-Cb-K8c" firstAttribute="top" secondItem="RFf-BX-19X" secondAttribute="top" constant="24" id="LkR-Xr-jxY"/>
+                            <constraint firstItem="qJj-Cb-K8c" firstAttribute="leading" secondItem="RFf-BX-19X" secondAttribute="leading" constant="24" id="Nc4-kQ-Njv"/>
+                            <constraint firstItem="RFf-BX-19X" firstAttribute="trailing" secondItem="faM-B1-dc6" secondAttribute="trailing" constant="24" id="OWw-ox-356"/>
+                            <constraint firstItem="faM-B1-dc6" firstAttribute="leading" secondItem="RFf-BX-19X" secondAttribute="leading" constant="24" id="tof-jZ-vvP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="faM-B1-dc6" id="bLS-Cl-T7d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qpc-G2-u9i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-707" y="700"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="ioN-YR-MtI">
+            <size key="intrinsicContentSize" width="43" height="36"/>
+        </designable>
+    </designables>
     <resources>
+        <image name="OB_modalClose_xButton" width="41" height="41"/>
+        <image name="TR-Icon" width="186" height="186"/>
+        <image name="whyitworks-icon" width="21" height="21"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
