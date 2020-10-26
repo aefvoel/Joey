@@ -14,24 +14,26 @@ class NavigationBar: UIView {
     @IBOutlet var view: UIView!
     @IBOutlet weak var buttonBack: UIButton!
     @IBOutlet weak var labelTitle: UILabel!
-    
-    var isBackButtonHidden: Bool {
-            set {
-                buttonBack.isHidden = newValue
-            }
-            get {
-                return buttonBack.isHidden
-            }
-        }
+    @IBOutlet weak var labelIndicator: UILabel!
+    var delegate: UIViewController!
     
     var title: String = "" {
         didSet {
             labelTitle.text = title
         }
     }
+    var indicator: String = "" {
+        didSet {
+            labelIndicator.text = title
+        }
+    }
     
     override func awakeFromNib() {
         initWithNib()
+    }
+    
+    @IBAction func onClickBackButton(_ sender: Any) {
+        delegate.navigationController?.popViewController(animated: true)
     }
     
     private func initWithNib() {

@@ -14,7 +14,8 @@ class StartPracticeSmilingViewController: UIViewController {
     @IBOutlet weak var labelSmile: UILabel!
     @IBOutlet weak var sceneView: ARSCNView!
     @IBOutlet weak var progressView: UIProgressView!
-    
+    @IBOutlet weak var labelInstruction: UILabel!
+    @IBOutlet weak var navBar: NavigationBar!
     var progressBarTimer: Timer!
     var isRunning = false
     var isSmile = false
@@ -25,6 +26,7 @@ class StartPracticeSmilingViewController: UIViewController {
     }
     
     func setupUI(){
+        navBar.delegate = self
         sceneView.delegate = self
         progressView.progress = 0.0
         progressView.layer.cornerRadius = 4

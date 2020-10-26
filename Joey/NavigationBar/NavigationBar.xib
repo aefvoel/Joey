@@ -10,12 +10,14 @@
     <customFonts key="customFonts">
         <array key="Yuanti.ttc">
             <string>STYuanti-SC-Bold</string>
+            <string>STYuanti-SC-Regular</string>
         </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
             <connections>
                 <outlet property="buttonBack" destination="unR-Ml-tWu" id="kKa-eS-Kn5"/>
+                <outlet property="labelIndicator" destination="0Ko-Zy-cmK" id="7gZ-k5-Gth"/>
                 <outlet property="labelTitle" destination="shB-5G-YQw" id="4CB-EA-WWJ"/>
                 <outlet property="view" destination="AB3-JX-r91" id="nHs-kE-rQG"/>
             </connections>
@@ -32,6 +34,9 @@
                     <state key="normal">
                         <imageReference key="image" image="chevron.left.circle.fill" catalog="system" symbolScale="large"/>
                     </state>
+                    <connections>
+                        <action selector="onClickBackButton:" destination="-1" eventType="touchUpInside" id="e8e-q6-Jrs"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="Joey" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shB-5G-YQw">
                     <rect key="frame" x="60" y="9" width="340" height="29"/>
@@ -39,18 +44,30 @@
                     <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Ko-Zy-cmK">
+                    <rect key="frame" x="408" y="9" width="52" height="29"/>
+                    <accessibility key="accessibilityConfiguration" identifier="topBarNavigation_titleLbl"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="52" id="K6E-BF-Bu1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="wpF-P1-aoN"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="unR-Ml-tWu" firstAttribute="top" secondItem="AB3-JX-r91" secondAttribute="top" id="244-aa-gFs"/>
-                <constraint firstItem="unR-Ml-tWu" firstAttribute="leading" secondItem="wpF-P1-aoN" secondAttribute="leading" id="2PD-Q6-rhO"/>
-                <constraint firstItem="shB-5G-YQw" firstAttribute="leading" secondItem="unR-Ml-tWu" secondAttribute="trailing" id="A7A-eo-76d"/>
-                <constraint firstItem="wpF-P1-aoN" firstAttribute="trailing" secondItem="shB-5G-YQw" secondAttribute="trailing" constant="60" id="C4o-Kd-23R"/>
-                <constraint firstItem="shB-5G-YQw" firstAttribute="centerX" secondItem="AB3-JX-r91" secondAttribute="centerX" id="dXB-0I-fIm"/>
-                <constraint firstItem="shB-5G-YQw" firstAttribute="top" secondItem="AB3-JX-r91" secondAttribute="top" constant="9" id="kni-Qm-93G"/>
-                <constraint firstItem="shB-5G-YQw" firstAttribute="centerY" secondItem="AB3-JX-r91" secondAttribute="centerY" id="mZl-Wd-zg1"/>
-                <constraint firstItem="unR-Ml-tWu" firstAttribute="centerY" secondItem="shB-5G-YQw" secondAttribute="centerY" id="pcF-H1-CLU"/>
+                <constraint firstItem="shB-5G-YQw" firstAttribute="leading" secondItem="unR-Ml-tWu" secondAttribute="trailing" id="9Ni-VS-66h"/>
+                <constraint firstItem="shB-5G-YQw" firstAttribute="firstBaseline" secondItem="0Ko-Zy-cmK" secondAttribute="firstBaseline" id="QBt-wQ-szh"/>
+                <constraint firstItem="shB-5G-YQw" firstAttribute="top" secondItem="AB3-JX-r91" secondAttribute="top" constant="9" id="UDJ-BR-IsF"/>
+                <constraint firstItem="shB-5G-YQw" firstAttribute="centerX" secondItem="AB3-JX-r91" secondAttribute="centerX" id="XBm-ef-Fe4"/>
+                <constraint firstItem="unR-Ml-tWu" firstAttribute="centerY" secondItem="shB-5G-YQw" secondAttribute="centerY" id="cGp-SD-a3x"/>
+                <constraint firstItem="unR-Ml-tWu" firstAttribute="leading" secondItem="wpF-P1-aoN" secondAttribute="leading" id="fym-Tc-waO"/>
+                <constraint firstItem="shB-5G-YQw" firstAttribute="baseline" secondItem="0Ko-Zy-cmK" secondAttribute="baseline" id="hNN-jk-S28"/>
+                <constraint firstItem="0Ko-Zy-cmK" firstAttribute="leading" secondItem="shB-5G-YQw" secondAttribute="trailing" constant="8" id="lJZ-Lx-YXj"/>
+                <constraint firstItem="unR-Ml-tWu" firstAttribute="centerY" secondItem="AB3-JX-r91" secondAttribute="centerY" id="nlO-JT-7pN"/>
+                <constraint firstItem="0Ko-Zy-cmK" firstAttribute="trailing" secondItem="wpF-P1-aoN" secondAttribute="trailing" id="pmS-Ve-W0i"/>
+                <constraint firstItem="unR-Ml-tWu" firstAttribute="top" secondItem="AB3-JX-r91" secondAttribute="top" id="qVC-qa-ioz"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>

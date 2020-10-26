@@ -20,10 +20,7 @@ class PracticeSmilingViewController: UIViewController {
     }
     
     func setupUI(){
-        navBar.buttonBack.addTarget(self, action: #selector(didButtonClick), for: .touchUpInside)
-    }
-    @objc func didButtonClick(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+        navBar.delegate = self
     }
 
     @IBAction func onClickStart(_ sender: Any) {

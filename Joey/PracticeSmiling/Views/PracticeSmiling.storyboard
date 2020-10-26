@@ -10,6 +10,7 @@
     <customFonts key="customFonts">
         <array key="Yuanti.ttc">
             <string>STYuanti-SC-Bold</string>
+            <string>STYuanti-SC-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -22,26 +23,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Practice Smiling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7j6-6r-E9H">
-                                <rect key="frame" x="66" y="139" width="282" height="56"/>
+                                <rect key="frame" x="62" y="111" width="290" height="47"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bX9-NF-RR3">
-                                <rect key="frame" x="64" y="529" width="286" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bX9-NF-RR3" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="62" y="565" width="290" height="45"/>
                                 <color key="backgroundColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="DsV-pX-pF7"/>
+                                    <constraint firstAttribute="height" constant="45" id="XiY-Zf-apL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="14"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onClickStart:" destination="YiK-O8-0XZ" eventType="touchUpInside" id="FCH-qr-iq3"/>
@@ -50,42 +51,81 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotImage" translatesAutoresizingMaskIntoConstraints="NO" id="nc2-t9-ZnT">
                                 <rect key="frame" x="0.0" y="768" width="194" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="BHv-3x-MIO"/>
+                                    <constraint firstAttribute="height" constant="128" id="mAW-CO-kf3"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotBubble1" translatesAutoresizingMaskIntoConstraints="NO" id="DEB-Ej-Kxy">
-                                <rect key="frame" x="170" y="637" width="224" height="123"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There’s a huge difference between a fake smile and a genuine smile :)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iu6-jN-CIp">
-                                <rect key="frame" x="179" y="649" width="208" height="83"/>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yGS-V0-hms" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yGS-V0-hms" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GzL-PP-IEE" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="24" y="183" width="366" height="349"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="practiceSmiling_miniCard" translatesAutoresizingMaskIntoConstraints="NO" id="TJC-Ts-jQg">
+                                        <rect key="frame" x="8" y="8" width="350" height="332"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="332" id="2Q3-6B-ReJ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="TJC-Ts-jQg" firstAttribute="top" secondItem="GzL-PP-IEE" secondAttribute="topMargin" id="LZM-Fp-SDQ"/>
+                                    <constraint firstItem="TJC-Ts-jQg" firstAttribute="trailing" secondItem="GzL-PP-IEE" secondAttribute="trailingMargin" id="Qlu-aY-vUe"/>
+                                    <constraint firstItem="TJC-Ts-jQg" firstAttribute="leading" secondItem="GzL-PP-IEE" secondAttribute="leadingMargin" id="TV5-fn-r7W"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotBubble" translatesAutoresizingMaskIntoConstraints="NO" id="DEB-Ej-Kxy">
+                                <rect key="frame" x="170" y="707" width="224" height="113"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There’s a huge difference between a fake smile and a genuine smile :)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iu6-jN-CIp">
+                                <rect key="frame" x="178" y="707" width="208" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="GKS-yV-OyZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="211-UR-vbh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DEB-Ej-Kxy" firstAttribute="top" secondItem="bX9-NF-RR3" secondAttribute="bottom" constant="63" id="3rc-Rb-hLi"/>
-                            <constraint firstItem="Iu6-jN-CIp" firstAttribute="top" secondItem="bX9-NF-RR3" secondAttribute="bottom" constant="75" id="AWU-uD-mVp"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="nc2-t9-ZnT" secondAttribute="bottom" constant="-34" id="J4P-Md-8UL"/>
-                            <constraint firstItem="211-UR-vbh" firstAttribute="trailing" secondItem="nc2-t9-ZnT" secondAttribute="trailing" constant="220" id="KBq-k6-xt7"/>
-                            <constraint firstItem="nc2-t9-ZnT" firstAttribute="top" secondItem="DEB-Ej-Kxy" secondAttribute="bottom" constant="8" id="Lvw-Vy-CWd"/>
-                            <constraint firstItem="7j6-6r-E9H" firstAttribute="top" secondItem="211-UR-vbh" secondAttribute="top" constant="95" id="NoN-CD-U7z"/>
-                            <constraint firstItem="Iu6-jN-CIp" firstAttribute="centerX" secondItem="DEB-Ej-Kxy" secondAttribute="centerX" constant="1" id="dH4-Aw-Cef"/>
-                            <constraint firstItem="DEB-Ej-Kxy" firstAttribute="trailing" secondItem="d7l-mt-3pp" secondAttribute="trailingMargin" id="exb-2m-VCX"/>
-                            <constraint firstItem="7j6-6r-E9H" firstAttribute="centerX" secondItem="bX9-NF-RR3" secondAttribute="centerX" id="h5j-Ng-rAN"/>
-                            <constraint firstItem="bX9-NF-RR3" firstAttribute="leading" secondItem="211-UR-vbh" secondAttribute="leading" constant="64" id="hpD-8V-mPd"/>
-                            <constraint firstItem="Iu6-jN-CIp" firstAttribute="leading" secondItem="211-UR-vbh" secondAttribute="leading" constant="179" id="ia4-6d-Ik6"/>
-                            <constraint firstItem="nc2-t9-ZnT" firstAttribute="leading" secondItem="211-UR-vbh" secondAttribute="leading" id="pMx-KY-CAg"/>
-                            <constraint firstItem="nc2-t9-ZnT" firstAttribute="top" secondItem="Iu6-jN-CIp" secondAttribute="bottom" constant="36" id="u6g-UC-jTS"/>
-                            <constraint firstItem="7j6-6r-E9H" firstAttribute="centerX" secondItem="d7l-mt-3pp" secondAttribute="centerX" id="uKI-JB-EhB"/>
-                            <constraint firstItem="211-UR-vbh" firstAttribute="trailing" secondItem="Iu6-jN-CIp" secondAttribute="trailing" constant="27" id="x2V-OU-7OF"/>
+                            <constraint firstItem="DEB-Ej-Kxy" firstAttribute="centerX" secondItem="Iu6-jN-CIp" secondAttribute="centerX" id="1xW-TY-aRl"/>
+                            <constraint firstItem="7j6-6r-E9H" firstAttribute="leading" secondItem="bX9-NF-RR3" secondAttribute="leading" id="25R-4f-WwW"/>
+                            <constraint firstItem="7j6-6r-E9H" firstAttribute="top" secondItem="yGS-V0-hms" secondAttribute="bottom" constant="20" id="4g4-56-vb1"/>
+                            <constraint firstItem="7j6-6r-E9H" firstAttribute="top" secondItem="d7l-mt-3pp" secondAttribute="top" constant="111" id="79e-FS-xmL"/>
+                            <constraint firstItem="yGS-V0-hms" firstAttribute="leading" secondItem="211-UR-vbh" secondAttribute="leading" id="91m-IN-Qqf"/>
+                            <constraint firstItem="211-UR-vbh" firstAttribute="bottom" secondItem="Iu6-jN-CIp" secondAttribute="bottom" constant="70" id="AK2-HV-om7"/>
+                            <constraint firstItem="yGS-V0-hms" firstAttribute="top" secondItem="211-UR-vbh" secondAttribute="top" id="EuR-7r-Xx6"/>
+                            <constraint firstItem="DEB-Ej-Kxy" firstAttribute="top" secondItem="bX9-NF-RR3" secondAttribute="bottom" constant="97" id="L0l-43-Wts"/>
+                            <constraint firstItem="GzL-PP-IEE" firstAttribute="leading" secondItem="211-UR-vbh" secondAttribute="leading" constant="24" id="McL-Em-f0j"/>
+                            <constraint firstItem="Iu6-jN-CIp" firstAttribute="leading" secondItem="211-UR-vbh" secondAttribute="leading" constant="178" id="TXH-O7-Sre"/>
+                            <constraint firstItem="DEB-Ej-Kxy" firstAttribute="top" secondItem="Iu6-jN-CIp" secondAttribute="top" id="VzU-oX-gxD"/>
+                            <constraint firstItem="DEB-Ej-Kxy" firstAttribute="leading" secondItem="211-UR-vbh" secondAttribute="leading" constant="170" id="Wmp-XY-bpt"/>
+                            <constraint firstItem="211-UR-vbh" firstAttribute="bottom" secondItem="DEB-Ej-Kxy" secondAttribute="bottom" constant="42" id="boX-nH-s95"/>
+                            <constraint firstItem="GzL-PP-IEE" firstAttribute="top" secondItem="7j6-6r-E9H" secondAttribute="bottom" constant="25" id="i8L-Yg-F4O"/>
+                            <constraint firstItem="DEB-Ej-Kxy" firstAttribute="trailing" secondItem="d7l-mt-3pp" secondAttribute="trailingMargin" id="k3w-MC-ChK"/>
+                            <constraint firstItem="211-UR-vbh" firstAttribute="trailing" secondItem="bX9-NF-RR3" secondAttribute="trailing" constant="62" id="obh-OK-B5v"/>
+                            <constraint firstItem="bX9-NF-RR3" firstAttribute="top" secondItem="GzL-PP-IEE" secondAttribute="bottom" constant="33" id="qkT-7d-r47"/>
+                            <constraint firstItem="yGS-V0-hms" firstAttribute="centerX" secondItem="d7l-mt-3pp" secondAttribute="centerX" id="tLu-WD-vfP"/>
+                            <constraint firstItem="yGS-V0-hms" firstAttribute="leading" secondItem="nc2-t9-ZnT" secondAttribute="leading" id="ufG-dG-6kH"/>
+                            <constraint firstItem="211-UR-vbh" firstAttribute="trailing" secondItem="nc2-t9-ZnT" secondAttribute="trailing" constant="220" id="wiI-X2-BuP"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="nc2-t9-ZnT" secondAttribute="bottom" constant="-34" id="xgV-L2-jIi"/>
+                            <constraint firstItem="yGS-V0-hms" firstAttribute="centerX" secondItem="7j6-6r-E9H" secondAttribute="centerX" id="y9s-Fz-XEp"/>
+                            <constraint firstItem="7j6-6r-E9H" firstAttribute="centerX" secondItem="GzL-PP-IEE" secondAttribute="centerX" id="ysx-7o-mP7"/>
                         </constraints>
                     </view>
                     <connections>
@@ -105,66 +145,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotImage" translatesAutoresizingMaskIntoConstraints="NO" id="hse-zt-lse">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mascotImage" translatesAutoresizingMaskIntoConstraints="NO" id="hse-zt-lse">
                                 <rect key="frame" x="0.0" y="768" width="194" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="SVH-VV-cMs"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotBubble1" translatesAutoresizingMaskIntoConstraints="NO" id="XH1-jN-6NU">
-                                <rect key="frame" x="170" y="637" width="224" height="123"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please make sure that your face is visible so that I can see you clearly" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZY7-3i-jR3">
-                                <rect key="frame" x="179" y="656" width="208" height="76"/>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Smile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vq0-kE-3Ph">
+                                <rect key="frame" x="24" y="115" width="367" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vq0-kE-3Ph">
-                                <rect key="frame" x="20" y="65" width="367" height="56"/>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="40"/>
-                                <nil key="textColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mascotBubble" translatesAutoresizingMaskIntoConstraints="NO" id="XH1-jN-6NU">
+                                <rect key="frame" x="170" y="708" width="224" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please make sure that your face is visible so that I can see you clearly" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZY7-3i-jR3">
+                                <rect key="frame" x="178" y="708" width="208" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sQc-Ed-a4z" customClass="ARSCNView">
-                                <rect key="frame" x="20" y="228" width="367" height="338"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8HK-vf-RQs" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="20" y="233" width="374" height="429"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sQc-Ed-a4z" customClass="ARSCNView">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="429"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XMW-r5-b7Q" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qkJ-2g-ZZQ">
-                                <rect key="frame" x="92" y="160.5" width="230" height="16"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="16" id="Lxj-O4-rc1"/>
-                                </constraints>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qkJ-2g-ZZQ">
+                                <rect key="frame" x="92" y="195" width="230" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="progressTintColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sqN-GE-fAU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="qkJ-2g-ZZQ" firstAttribute="leading" secondItem="APP-4y-bir" secondAttribute="leadingMargin" constant="72" id="4rs-jQ-X0e"/>
-                            <constraint firstItem="hse-zt-lse" firstAttribute="top" secondItem="XH1-jN-6NU" secondAttribute="bottom" constant="8" id="9lh-T9-CZy"/>
-                            <constraint firstItem="Vq0-kE-3Ph" firstAttribute="leading" secondItem="sQc-Ed-a4z" secondAttribute="leading" id="9uU-Wm-Ys6"/>
-                            <constraint firstItem="qkJ-2g-ZZQ" firstAttribute="trailing" secondItem="sQc-Ed-a4z" secondAttribute="trailing" constant="-65" id="CIw-Pt-w2u"/>
-                            <constraint firstItem="ZY7-3i-jR3" firstAttribute="centerX" secondItem="XH1-jN-6NU" secondAttribute="centerX" constant="1" id="F9y-0Z-G6W"/>
-                            <constraint firstItem="Vq0-kE-3Ph" firstAttribute="top" secondItem="sqN-GE-fAU" secondAttribute="top" constant="21" id="Nib-Xd-uHO"/>
-                            <constraint firstItem="hse-zt-lse" firstAttribute="top" secondItem="ZY7-3i-jR3" secondAttribute="bottom" constant="36" id="OaS-sp-hVE"/>
-                            <constraint firstItem="hse-zt-lse" firstAttribute="leading" secondItem="sqN-GE-fAU" secondAttribute="leading" id="T35-mF-Ygg"/>
-                            <constraint firstItem="sQc-Ed-a4z" firstAttribute="top" secondItem="qkJ-2g-ZZQ" secondAttribute="bottom" constant="51.5" id="USV-6r-i7Q"/>
-                            <constraint firstItem="qkJ-2g-ZZQ" firstAttribute="trailing" secondItem="ZY7-3i-jR3" secondAttribute="trailing" constant="-65" id="WbR-zv-M9B"/>
-                            <constraint firstItem="ZY7-3i-jR3" firstAttribute="leading" secondItem="sqN-GE-fAU" secondAttribute="leading" constant="179" id="YUM-vx-OiW"/>
-                            <constraint firstItem="qkJ-2g-ZZQ" firstAttribute="leading" secondItem="sQc-Ed-a4z" secondAttribute="leading" constant="72" id="YWG-F9-VqS"/>
-                            <constraint firstItem="XH1-jN-6NU" firstAttribute="top" secondItem="sQc-Ed-a4z" secondAttribute="bottom" constant="71" id="bAn-Op-V7G"/>
-                            <constraint firstItem="qkJ-2g-ZZQ" firstAttribute="top" secondItem="Vq0-kE-3Ph" secondAttribute="bottom" constant="39.5" id="bKf-WY-Efg"/>
-                            <constraint firstItem="Vq0-kE-3Ph" firstAttribute="trailing" secondItem="sQc-Ed-a4z" secondAttribute="trailing" id="cEg-UG-yUV"/>
-                            <constraint firstItem="sqN-GE-fAU" firstAttribute="trailing" secondItem="hse-zt-lse" secondAttribute="trailing" constant="220" id="ecE-fA-c4V"/>
-                            <constraint firstItem="sqN-GE-fAU" firstAttribute="trailing" secondItem="ZY7-3i-jR3" secondAttribute="trailing" constant="27" id="h2c-zx-8Pq"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="hse-zt-lse" secondAttribute="bottom" constant="-34" id="i09-Yr-IrF"/>
-                            <constraint firstItem="XH1-jN-6NU" firstAttribute="trailing" secondItem="APP-4y-bir" secondAttribute="trailingMargin" id="kn6-FV-g6x"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bQ7-ZB-f1b"/>
                     <connections>
+                        <outlet property="labelInstruction" destination="ZY7-3i-jR3" id="Kps-Bd-17o"/>
                         <outlet property="labelSmile" destination="Vq0-kE-3Ph" id="RfI-Rg-EsN"/>
+                        <outlet property="navBar" destination="XMW-r5-b7Q" id="L5X-Q2-GOG"/>
                         <outlet property="progressView" destination="qkJ-2g-ZZQ" id="iw1-EP-YkJ"/>
                         <outlet property="sceneView" destination="sQc-Ed-a4z" id="Jhv-jr-7wP"/>
                     </connections>
@@ -174,9 +219,15 @@
             <point key="canvasLocation" x="1013.0434782608696" y="142.63392857142856"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="bX9-NF-RR3">
+            <size key="intrinsicContentSize" width="43" height="36"/>
+        </designable>
+    </designables>
     <resources>
-        <image name="mascotBubble1" width="230" height="123"/>
+        <image name="mascotBubble" width="231" height="125"/>
         <image name="mascotImage" width="132" height="132"/>
+        <image name="practiceSmiling_miniCard" width="862" height="862"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
