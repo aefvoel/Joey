@@ -28,7 +28,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Analyzing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00e-RX-0hD">
-                                <rect key="frame" x="62" y="108" width="290" height="51.5"/>
+                                <rect key="frame" x="62" y="108" width="290" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="290" id="LJP-IV-Zqh"/>
                                 </constraints>
@@ -44,7 +44,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9p-zv-U66" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="62" y="513.5" width="290" height="45"/>
+                                <rect key="frame" x="62" y="524" width="290" height="45"/>
                                 <color key="backgroundColor" red="0.3529411764705882" green="0.76078431372549016" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="j8B-wi-0Ww"/>
@@ -71,7 +71,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="analyzing" translatesAutoresizingMaskIntoConstraints="NO" id="ck5-L6-UO3">
-                                <rect key="frame" x="62" y="191.5" width="290" height="290"/>
+                                <rect key="frame" x="62" y="202" width="290" height="290"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ck5-L6-UO3" secondAttribute="height" multiplier="1:1" id="St4-Ug-JlT"/>
                                 </constraints>
@@ -186,10 +186,10 @@
             </objects>
             <point key="canvasLocation" x="942.02898550724649" y="124.55357142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Detect Emotion Validate View Controller-->
         <scene sceneID="bSw-1h-B5W">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Alw-JU-PYX" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Alw-JU-PYX" customClass="DetectEmotionValidateViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z8v-Go-1g3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -246,7 +246,7 @@ From what I see, you look need to be cheered up now. Is that true?</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="Iai-ai-YmM" kind="show" id="0fe-sk-r5e"/>
+                                    <action selector="validResultTapped:" destination="Alw-JU-PYX" eventType="touchUpInside" id="Ew7-Nf-QSG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7J-km-hhE" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
@@ -273,7 +273,7 @@ From what I see, you look need to be cheered up now. Is that true?</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="e7n-gI-Uef" kind="show" id="EIM-Lo-KW5"/>
+                                    <action selector="invalidResultTapped:" destination="Alw-JU-PYX" eventType="touchUpInside" id="9He-gp-U1m"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93C-Ac-rPn" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
@@ -299,6 +299,9 @@ From what I see, you look need to be cheered up now. Is that true?</string>
                                         <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="validResultTapped:" destination="Alw-JU-PYX" eventType="touchUpInside" id="LkJ-Fe-ga5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lPM-wh-Teq"/>
@@ -322,6 +325,10 @@ From what I see, you look need to be cheered up now. Is that true?</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bfq-TK-dEA"/>
+                    <connections>
+                        <segue destination="Iai-ai-YmM" kind="show" identifier="toScale" id="pvP-8n-yaw"/>
+                        <segue destination="e7n-gI-Uef" kind="show" identifier="toWrongResult" id="hoq-ai-7OY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dv0-1j-VZJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -607,10 +614,10 @@ Do you want me to see your face again?</string>
             </objects>
             <point key="canvasLocation" x="2686.9565217391305" y="885.9375"/>
         </scene>
-        <!--View Controller-->
+        <!--Detect Emotion Scale View Controller-->
         <scene sceneID="3sZ-T0-owm">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Iai-ai-YmM" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Iai-ai-YmM" customClass="DetectEmotionScaleViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xYR-A5-fv7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -646,13 +653,13 @@ how intense do you think you need to be cheered up?</string>
                                 </userDefinedRuntimeAttributes>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaM-L9-HcK">
-                                <rect key="frame" x="365.5" y="406.5" width="24.5" height="26"/>
+                                <rect key="frame" x="370" y="406.5" width="20" height="31"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWu-x7-s6U">
-                                <rect key="frame" x="24" y="406.5" width="13" height="26"/>
+                                <rect key="frame" x="24" y="406.5" width="13" height="31"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -674,6 +681,9 @@ how intense do you think you need to be cheered up?</string>
                                         <real key="value" value="14"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onOkayButtonTapped:" destination="Iai-ai-YmM" eventType="touchUpInside" id="e19-UR-NrJ"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotImage" translatesAutoresizingMaskIntoConstraints="NO" id="sO9-KW-DzL">
                                 <rect key="frame" x="107" y="696" width="200" height="200"/>
@@ -709,6 +719,7 @@ how intense do you think you need to be cheered up?</string>
                     </view>
                     <navigationItem key="navigationItem" id="2WT-he-2Uc"/>
                     <connections>
+                        <outlet property="scaleSlider" destination="NfW-C8-BrN" id="RkM-hC-dS1"/>
                         <segue destination="Nme-VA-Ttw" kind="show" identifier="toReason" id="FrB-i7-GOI"/>
                     </connections>
                 </viewController>
@@ -716,10 +727,10 @@ how intense do you think you need to be cheered up?</string>
             </objects>
             <point key="canvasLocation" x="2686.9565217391305" y="124.55357142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Detect Emotion Reason View Controller-->
         <scene sceneID="kmD-5M-Bt3">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Nme-VA-Ttw" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Nme-VA-Ttw" customClass="DetectEmotionReasonViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CwX-Qf-omw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -742,17 +753,10 @@ how intense do you think you need to be cheered up?</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotImage" translatesAutoresizingMaskIntoConstraints="NO" id="UX4-vV-9NQ">
-                                <rect key="frame" x="107" y="696" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="QWO-JM-IX9"/>
-                                    <constraint firstAttribute="height" constant="200" id="buP-Bn-Si9"/>
-                                </constraints>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="tvK-dm-coa">
                                 <rect key="frame" x="24" y="366.5" width="366" height="45"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRs-0Q-hcs" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRs-0Q-hcs" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="171" height="45"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
@@ -771,8 +775,11 @@ how intense do you think you need to be cheered up?</string>
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="answerTapped:" destination="Nme-VA-Ttw" eventType="touchUpInside" id="ijV-0e-YBK"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pt-Us-iSp" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pt-Us-iSp" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                         <rect key="frame" x="195" y="0.0" width="171" height="45"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
@@ -791,6 +798,9 @@ how intense do you think you need to be cheered up?</string>
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="answerTapped:" destination="Nme-VA-Ttw" eventType="touchUpInside" id="0cr-Ne-NHU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -800,7 +810,7 @@ how intense do you think you need to be cheered up?</string>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="bEx-Ma-BOO">
                                 <rect key="frame" x="24" y="429.5" width="366" height="45"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybp-mn-gz0" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybp-mn-gz0" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="171" height="45"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
@@ -819,8 +829,11 @@ how intense do you think you need to be cheered up?</string>
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="answerTapped:" destination="Nme-VA-Ttw" eventType="touchUpInside" id="I6j-cC-pWL"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5f-5x-3iR" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5f-5x-3iR" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                         <rect key="frame" x="195" y="0.0" width="171" height="45"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
@@ -839,6 +852,9 @@ how intense do you think you need to be cheered up?</string>
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="answerTapped:" destination="Nme-VA-Ttw" eventType="touchUpInside" id="2aV-B7-55w"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -848,7 +864,7 @@ how intense do you think you need to be cheered up?</string>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="gz3-xv-iul">
                                 <rect key="frame" x="24" y="492.5" width="366" height="45"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWm-k0-d0m" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWm-k0-d0m" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="171" height="45"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
@@ -867,8 +883,11 @@ how intense do you think you need to be cheered up?</string>
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="answerTapped:" destination="Nme-VA-Ttw" eventType="touchUpInside" id="BrR-Ua-uUT"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5S-LX-MZM" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5S-LX-MZM" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                         <rect key="frame" x="195" y="0.0" width="171" height="45"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
@@ -887,6 +906,9 @@ how intense do you think you need to be cheered up?</string>
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="answerTapped:" destination="Nme-VA-Ttw" eventType="touchUpInside" id="mec-Uw-25a"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -896,7 +918,7 @@ how intense do you think you need to be cheered up?</string>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="GL8-jW-oA2">
                                 <rect key="frame" x="24" y="555.5" width="366" height="45"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoG-nf-PLd" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoG-nf-PLd" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="171" height="45"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
@@ -915,8 +937,11 @@ how intense do you think you need to be cheered up?</string>
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="answerTapped:" destination="Nme-VA-Ttw" eventType="touchUpInside" id="pRZ-Y8-mV0"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1e-D9-KBi" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1e-D9-KBi" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                         <rect key="frame" x="195" y="0.0" width="171" height="45"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
@@ -935,6 +960,9 @@ how intense do you think you need to be cheered up?</string>
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="answerTapped:" destination="Nme-VA-Ttw" eventType="touchUpInside" id="ibq-t2-wEI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -944,7 +972,7 @@ how intense do you think you need to be cheered up?</string>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="nNZ-gZ-8LT">
                                 <rect key="frame" x="24" y="618.5" width="366" height="45"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1S-VN-MEe" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1S-VN-MEe" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="171" height="45"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
@@ -963,8 +991,11 @@ how intense do you think you need to be cheered up?</string>
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="answerTapped:" destination="Nme-VA-Ttw" eventType="touchUpInside" id="IEg-sy-oZR"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swh-4c-4Wt" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swh-4c-4Wt" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                         <rect key="frame" x="195" y="0.0" width="171" height="45"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
@@ -983,12 +1014,22 @@ how intense do you think you need to be cheered up?</string>
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="answerTapped:" destination="Nme-VA-Ttw" eventType="touchUpInside" id="nV4-Pm-qIf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="KYW-YD-33z"/>
                                 </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotImage" translatesAutoresizingMaskIntoConstraints="NO" id="UX4-vV-9NQ">
+                                <rect key="frame" x="107" y="696" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="QWO-JM-IX9"/>
+                                    <constraint firstAttribute="height" constant="200" id="buP-Bn-Si9"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iQ4-om-lf7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1032,10 +1073,10 @@ how intense do you think you need to be cheered up?</string>
             </objects>
             <point key="canvasLocation" x="3463.7681159420295" y="124.55357142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Detect Emotion Advice View Controller-->
         <scene sceneID="beZ-Nm-tzr">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="El3-G7-cvk" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="El3-G7-cvk" customClass="DetectEmotionAdviceViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bpg-Lk-034">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1094,6 +1135,7 @@ how intense do you think you need to be cheered up?</string>
                     </view>
                     <navigationItem key="navigationItem" id="mKk-Uk-KQE"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="Qjt-Gd-3ia" id="Tdg-00-j2o"/>
                         <segue destination="uny-x4-LER" kind="show" identifier="toSuggestActivity" id="pg2-9w-kOs"/>
                     </connections>
                 </viewController>
@@ -1215,77 +1257,77 @@ Do you want to start now?</string>
     </scenes>
     <designables>
         <designable name="3as-GI-k6f">
-            <size key="intrinsicContentSize" width="112" height="36"/>
+            <size key="intrinsicContentSize" width="110" height="40"/>
         </designable>
         <designable name="7pt-Us-iSp">
-            <size key="intrinsicContentSize" width="42" height="33"/>
+            <size key="intrinsicContentSize" width="41" height="38"/>
         </designable>
         <designable name="8UW-K0-gkC">
-            <size key="intrinsicContentSize" width="119" height="33"/>
+            <size key="intrinsicContentSize" width="113" height="38"/>
         </designable>
         <designable name="93C-Ac-rPn">
-            <size key="intrinsicContentSize" width="61" height="36"/>
+            <size key="intrinsicContentSize" width="59" height="40"/>
         </designable>
         <designable name="F7J-km-hhE">
-            <size key="intrinsicContentSize" width="30" height="36"/>
+            <size key="intrinsicContentSize" width="30" height="40"/>
         </designable>
         <designable name="Gzb-iW-F76">
-            <size key="intrinsicContentSize" width="90" height="36"/>
+            <size key="intrinsicContentSize" width="90" height="40"/>
         </designable>
         <designable name="LzU-3y-o1a">
-            <size key="intrinsicContentSize" width="49" height="33"/>
+            <size key="intrinsicContentSize" width="47" height="38"/>
         </designable>
         <designable name="Swh-4c-4Wt">
-            <size key="intrinsicContentSize" width="46" height="33"/>
+            <size key="intrinsicContentSize" width="46" height="38"/>
         </designable>
         <designable name="Tlv-mX-jcb">
-            <size key="intrinsicContentSize" width="62" height="33"/>
+            <size key="intrinsicContentSize" width="67" height="38"/>
         </designable>
         <designable name="b5f-5x-3iR">
-            <size key="intrinsicContentSize" width="53" height="33"/>
+            <size key="intrinsicContentSize" width="50" height="38"/>
         </designable>
         <designable name="dQ4-7d-7Yr">
-            <size key="intrinsicContentSize" width="30" height="36"/>
+            <size key="intrinsicContentSize" width="30" height="40"/>
         </designable>
         <designable name="fF8-TX-VEG">
-            <size key="intrinsicContentSize" width="32" height="36"/>
+            <size key="intrinsicContentSize" width="30" height="40"/>
         </designable>
         <designable name="i5S-LX-MZM">
-            <size key="intrinsicContentSize" width="100" height="33"/>
+            <size key="intrinsicContentSize" width="98" height="38"/>
         </designable>
         <designable name="noC-Lw-i7n">
-            <size key="intrinsicContentSize" width="32" height="36"/>
+            <size key="intrinsicContentSize" width="30" height="40"/>
         </designable>
         <designable name="rRs-0Q-hcs">
-            <size key="intrinsicContentSize" width="104" height="33"/>
+            <size key="intrinsicContentSize" width="102" height="38"/>
         </designable>
         <designable name="rWm-k0-d0m">
-            <size key="intrinsicContentSize" width="102" height="33"/>
+            <size key="intrinsicContentSize" width="103" height="38"/>
         </designable>
         <designable name="s1S-VN-MEe">
-            <size key="intrinsicContentSize" width="53" height="33"/>
+            <size key="intrinsicContentSize" width="53" height="38"/>
         </designable>
         <designable name="snN-j3-4qP">
-            <size key="intrinsicContentSize" width="47" height="36"/>
+            <size key="intrinsicContentSize" width="46" height="40"/>
         </designable>
         <designable name="uoG-nf-PLd">
-            <size key="intrinsicContentSize" width="53" height="33"/>
+            <size key="intrinsicContentSize" width="53" height="38"/>
         </designable>
         <designable name="weG-KG-ehu">
-            <size key="intrinsicContentSize" width="80" height="33"/>
+            <size key="intrinsicContentSize" width="77" height="38"/>
         </designable>
         <designable name="y1e-D9-KBi">
-            <size key="intrinsicContentSize" width="55" height="33"/>
+            <size key="intrinsicContentSize" width="53" height="38"/>
         </designable>
         <designable name="y9p-zv-U66">
-            <size key="intrinsicContentSize" width="43" height="36"/>
+            <size key="intrinsicContentSize" width="45" height="40"/>
         </designable>
         <designable name="ybp-mn-gz0">
-            <size key="intrinsicContentSize" width="60" height="33"/>
+            <size key="intrinsicContentSize" width="58" height="38"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="Pps-6o-9vR"/>
+        <segue reference="pvP-8n-yaw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="analyzing" width="357" height="340"/>
