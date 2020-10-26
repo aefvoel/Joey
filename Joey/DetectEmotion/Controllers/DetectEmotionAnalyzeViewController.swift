@@ -39,10 +39,9 @@ class DetectEmotionAnalyzeViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let vc = segue.destination as? DetectEmotionResultViewController {
-//            vc.faceImage = sceneView.snapshot()
-//            vc.emotion = emotion
-//        }
+        if let vc = segue.destination as? DetectEmotionValidateViewController, let emotion = emotion {
+            vc.data = FollowUp(emotion: emotion)
+        }
     }
 
 }
