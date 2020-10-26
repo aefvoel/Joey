@@ -27,7 +27,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bX9-NF-RR3" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bX9-NF-RR3">
                                 <rect key="frame" x="64" y="529" width="286" height="45"/>
                                 <color key="backgroundColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -62,6 +62,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yGS-V0-hms" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="211-UR-vbh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -84,12 +89,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="navBar" destination="yGS-V0-hms" id="4KJ-m4-ml3"/>
                         <segue destination="CdR-Vt-UP7" kind="show" identifier="toStartPractice" id="9G2-0U-Br5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXw-Xu-Hyd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113" y="143"/>
+            <point key="canvasLocation" x="111.59420289855073" y="142.63392857142856"/>
         </scene>
         <!--Start Practice Smiling View Controller-->
         <scene sceneID="TdZ-y2-d8c">
@@ -114,37 +120,52 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vq0-kE-3Ph">
-                                <rect key="frame" x="156" y="130" width="94" height="56"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vq0-kE-3Ph">
+                                <rect key="frame" x="20" y="65" width="367" height="56"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sQc-Ed-a4z" customClass="ARSCNView">
-                                <rect key="frame" x="20" y="213" width="367" height="353"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sQc-Ed-a4z" customClass="ARSCNView">
+                                <rect key="frame" x="20" y="228" width="367" height="338"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qkJ-2g-ZZQ">
+                                <rect key="frame" x="92" y="160.5" width="230" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="Lxj-O4-rc1"/>
+                                </constraints>
+                                <color key="progressTintColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sqN-GE-fAU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="qkJ-2g-ZZQ" firstAttribute="leading" secondItem="APP-4y-bir" secondAttribute="leadingMargin" constant="72" id="4rs-jQ-X0e"/>
                             <constraint firstItem="hse-zt-lse" firstAttribute="top" secondItem="XH1-jN-6NU" secondAttribute="bottom" constant="8" id="9lh-T9-CZy"/>
+                            <constraint firstItem="Vq0-kE-3Ph" firstAttribute="leading" secondItem="sQc-Ed-a4z" secondAttribute="leading" id="9uU-Wm-Ys6"/>
+                            <constraint firstItem="qkJ-2g-ZZQ" firstAttribute="trailing" secondItem="sQc-Ed-a4z" secondAttribute="trailing" constant="-65" id="CIw-Pt-w2u"/>
                             <constraint firstItem="ZY7-3i-jR3" firstAttribute="centerX" secondItem="XH1-jN-6NU" secondAttribute="centerX" constant="1" id="F9y-0Z-G6W"/>
+                            <constraint firstItem="Vq0-kE-3Ph" firstAttribute="top" secondItem="sqN-GE-fAU" secondAttribute="top" constant="21" id="Nib-Xd-uHO"/>
                             <constraint firstItem="hse-zt-lse" firstAttribute="top" secondItem="ZY7-3i-jR3" secondAttribute="bottom" constant="36" id="OaS-sp-hVE"/>
                             <constraint firstItem="hse-zt-lse" firstAttribute="leading" secondItem="sqN-GE-fAU" secondAttribute="leading" id="T35-mF-Ygg"/>
+                            <constraint firstItem="sQc-Ed-a4z" firstAttribute="top" secondItem="qkJ-2g-ZZQ" secondAttribute="bottom" constant="51.5" id="USV-6r-i7Q"/>
+                            <constraint firstItem="qkJ-2g-ZZQ" firstAttribute="trailing" secondItem="ZY7-3i-jR3" secondAttribute="trailing" constant="-65" id="WbR-zv-M9B"/>
                             <constraint firstItem="ZY7-3i-jR3" firstAttribute="leading" secondItem="sqN-GE-fAU" secondAttribute="leading" constant="179" id="YUM-vx-OiW"/>
-                            <constraint firstItem="Vq0-kE-3Ph" firstAttribute="leading" secondItem="sqN-GE-fAU" secondAttribute="leading" constant="156" id="bHN-FV-SDX"/>
+                            <constraint firstItem="qkJ-2g-ZZQ" firstAttribute="leading" secondItem="sQc-Ed-a4z" secondAttribute="leading" constant="72" id="YWG-F9-VqS"/>
+                            <constraint firstItem="XH1-jN-6NU" firstAttribute="top" secondItem="sQc-Ed-a4z" secondAttribute="bottom" constant="71" id="bAn-Op-V7G"/>
+                            <constraint firstItem="qkJ-2g-ZZQ" firstAttribute="top" secondItem="Vq0-kE-3Ph" secondAttribute="bottom" constant="39.5" id="bKf-WY-Efg"/>
+                            <constraint firstItem="Vq0-kE-3Ph" firstAttribute="trailing" secondItem="sQc-Ed-a4z" secondAttribute="trailing" id="cEg-UG-yUV"/>
                             <constraint firstItem="sqN-GE-fAU" firstAttribute="trailing" secondItem="hse-zt-lse" secondAttribute="trailing" constant="220" id="ecE-fA-c4V"/>
                             <constraint firstItem="sqN-GE-fAU" firstAttribute="trailing" secondItem="ZY7-3i-jR3" secondAttribute="trailing" constant="27" id="h2c-zx-8Pq"/>
                             <constraint firstAttribute="bottomMargin" secondItem="hse-zt-lse" secondAttribute="bottom" constant="-34" id="i09-Yr-IrF"/>
-                            <constraint firstItem="Vq0-kE-3Ph" firstAttribute="top" secondItem="sqN-GE-fAU" secondAttribute="top" constant="86" id="iGf-zU-iUT"/>
                             <constraint firstItem="XH1-jN-6NU" firstAttribute="trailing" secondItem="APP-4y-bir" secondAttribute="trailingMargin" id="kn6-FV-g6x"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bQ7-ZB-f1b"/>
                     <connections>
                         <outlet property="labelSmile" destination="Vq0-kE-3Ph" id="RfI-Rg-EsN"/>
+                        <outlet property="progressView" destination="qkJ-2g-ZZQ" id="iw1-EP-YkJ"/>
                         <outlet property="sceneView" destination="sQc-Ed-a4z" id="Jhv-jr-7wP"/>
                     </connections>
                 </viewController>
@@ -153,11 +174,6 @@
             <point key="canvasLocation" x="1013.0434782608696" y="142.63392857142856"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="bX9-NF-RR3">
-            <size key="intrinsicContentSize" width="45" height="40"/>
-        </designable>
-    </designables>
     <resources>
         <image name="mascotBubble1" width="230" height="123"/>
         <image name="mascotImage" width="132" height="132"/>

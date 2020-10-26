@@ -179,13 +179,13 @@
                                 <rect key="frame" x="24" y="244.5" width="366" height="407"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Jh-Pj-88t">
-                                        <rect key="frame" x="0.0" y="325.5" width="366" height="51.5"/>
+                                        <rect key="frame" x="0.0" y="315" width="366" height="62"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="44"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Look" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AL1-Fe-eIN">
-                                        <rect key="frame" x="0.0" y="279.5" width="366" height="28"/>
+                                        <rect key="frame" x="0.0" y="263" width="366" height="34"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -218,7 +218,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FD4-Ax-UdJ">
-                                <rect key="frame" x="24" y="153" width="366" height="51.5"/>
+                                <rect key="frame" x="24" y="142.5" width="366" height="62"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="44"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -464,13 +464,13 @@
     </scenes>
     <designables>
         <designable name="FU8-Ys-D4V">
-            <size key="intrinsicContentSize" width="81" height="36"/>
+            <size key="intrinsicContentSize" width="81" height="40"/>
         </designable>
         <designable name="XBN-W0-c23">
-            <size key="intrinsicContentSize" width="47" height="36"/>
+            <size key="intrinsicContentSize" width="46" height="40"/>
         </designable>
         <designable name="y9p-zv-U66">
-            <size key="intrinsicContentSize" width="43" height="36"/>
+            <size key="intrinsicContentSize" width="45" height="40"/>
         </designable>
     </designables>
     <resources>

@@ -54,6 +54,8 @@
 		AB9857CB253C9F3D00485B29 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9857CA253C9F3D00485B29 /* BottomSheetViewController.swift */; };
 		AB9857D4253CB24E00485B29 /* FittedSheets in Frameworks */ = {isa = PBXBuildFile; productRef = AB9857D3253CB24E00485B29 /* FittedSheets */; };
 		ABD9DE32254157C300C2154C /* StartPracticeSmilingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9DE31254157C300C2154C /* StartPracticeSmilingViewController.swift */; };
+		ABD9DE4425466E9D00C2154C /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9DE4325466E9D00C2154C /* NavigationBar.swift */; };
+		ABD9DE5C2546721600C2154C /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD9DE5B2546721600C2154C /* NavigationBar.xib */; };
 		ABEBCCAF253E87AC002E03A6 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEBCCAE253E87AC002E03A6 /* UserDefaultsHelper.swift */; };
 		ABEBCCC3253E949F002E03A6 /* Yuanti.ttc in Resources */ = {isa = PBXBuildFile; fileRef = ABEBCCC2253E949F002E03A6 /* Yuanti.ttc */; };
 		ABECBF10253D891C00EF7D43 /* ActivitiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECBF0E253D891C00EF7D43 /* ActivitiesCollectionViewCell.swift */; };
@@ -134,6 +136,8 @@
 		AB933DDF25406D4D00DBBD0D /* TOSPPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TOSPPViewController.swift; sourceTree = "<group>"; };
 		AB9857CA253C9F3D00485B29 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
 		ABD9DE31254157C300C2154C /* StartPracticeSmilingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPracticeSmilingViewController.swift; sourceTree = "<group>"; };
+		ABD9DE4325466E9D00C2154C /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		ABD9DE5B2546721600C2154C /* NavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
 		ABEBCCAE253E87AC002E03A6 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		ABEBCCC2253E949F002E03A6 /* Yuanti.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yuanti.ttc; sourceTree = "<group>"; };
 		ABECBF0E253D891C00EF7D43 /* ActivitiesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -489,6 +493,7 @@
 		AB92A173253730F9003F8823 /* Joey */ = {
 			isa = PBXGroup;
 			children = (
+				ABD9DE4225466DE900C2154C /* NavigationBar */,
 				169C073325413C170071387C /* Instruction */,
 				16170AED254126F00095D1A5 /* ThoughtsRecord */,
 				16170AD725411E9D0095D1A5 /* Mirror */,
@@ -545,6 +550,15 @@
 				5AD838C8253E8BCC0042D14E /* Yuanti.ttc */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		ABD9DE4225466DE900C2154C /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				ABD9DE5B2546721600C2154C /* NavigationBar.xib */,
+				ABD9DE4325466E9D00C2154C /* NavigationBar.swift */,
+			);
+			path = NavigationBar;
 			sourceTree = "<group>";
 		};
 		ABECBF15253D8D9700EF7D43 /* Models */ = {
@@ -693,6 +707,7 @@
 				AB92A17C253730F9003F8823 /* Main.storyboard in Resources */,
 				169C073F25413C3C0071387C /* Instruction.storyboard in Resources */,
 				16170AB4254103750095D1A5 /* Activities.storyboard in Resources */,
+				ABD9DE5C2546721600C2154C /* NavigationBar.xib in Resources */,
 				ABEBCCC3253E949F002E03A6 /* Yuanti.ttc in Resources */,
 				16170AE325411EBE0095D1A5 /* Mirror.storyboard in Resources */,
 				166C532C253732DF007C5EF3 /* Home.storyboard in Resources */,
@@ -759,6 +774,7 @@
 				167E0E73253EA1CB00602784 /* FaceData.swift in Sources */,
 				AB92A177253730F9003F8823 /* SceneDelegate.swift in Sources */,
 				16170AF1254127070095D1A5 /* ThoughtsRecordViewController.swift in Sources */,
+				ABD9DE4425466E9D00C2154C /* NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

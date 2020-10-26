@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Yuanti.ttc">
+            <string>STYuanti-SC-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonBack" destination="unR-Ml-tWu" id="kKa-eS-Kn5"/>
+                <outlet property="labelTitle" destination="shB-5G-YQw" id="4CB-EA-WWJ"/>
+                <outlet property="view" destination="AB3-JX-r91" id="nHs-kE-rQG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="AB3-JX-r91" userLabel="Content">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="47"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unR-Ml-tWu">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="47"/>
+                    <accessibility key="accessibilityConfiguration" identifier="topBarNavigation_backBtn"/>
+                    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal">
+                        <imageReference key="image" image="chevron.left.circle.fill" catalog="system" symbolScale="large"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="Joey" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shB-5G-YQw">
+                    <rect key="frame" x="60" y="9" width="340" height="29"/>
+                    <accessibility key="accessibilityConfiguration" identifier="topBarNavigation_titleLbl"/>
+                    <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="wpF-P1-aoN"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="unR-Ml-tWu" firstAttribute="top" secondItem="AB3-JX-r91" secondAttribute="top" id="244-aa-gFs"/>
+                <constraint firstItem="unR-Ml-tWu" firstAttribute="leading" secondItem="wpF-P1-aoN" secondAttribute="leading" id="2PD-Q6-rhO"/>
+                <constraint firstItem="shB-5G-YQw" firstAttribute="leading" secondItem="unR-Ml-tWu" secondAttribute="trailing" id="A7A-eo-76d"/>
+                <constraint firstItem="wpF-P1-aoN" firstAttribute="trailing" secondItem="shB-5G-YQw" secondAttribute="trailing" constant="60" id="C4o-Kd-23R"/>
+                <constraint firstItem="shB-5G-YQw" firstAttribute="centerX" secondItem="AB3-JX-r91" secondAttribute="centerX" id="dXB-0I-fIm"/>
+                <constraint firstItem="shB-5G-YQw" firstAttribute="top" secondItem="AB3-JX-r91" secondAttribute="top" constant="9" id="kni-Qm-93G"/>
+                <constraint firstItem="shB-5G-YQw" firstAttribute="centerY" secondItem="AB3-JX-r91" secondAttribute="centerY" id="mZl-Wd-zg1"/>
+                <constraint firstItem="unR-Ml-tWu" firstAttribute="centerY" secondItem="shB-5G-YQw" secondAttribute="centerY" id="pcF-H1-CLU"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="114.49275362318842" y="46.540178571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.left.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

@@ -11,11 +11,20 @@ import AVFoundation
 
 class PracticeSmilingViewController: UIViewController {
     
+    
+    @IBOutlet weak var navBar: NavigationBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupUI()
     }
-
+    
+    func setupUI(){
+        navBar.buttonBack.addTarget(self, action: #selector(didButtonClick), for: .touchUpInside)
+    }
+    @objc func didButtonClick(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
 
     @IBAction func onClickStart(_ sender: Any) {
         guard ARFaceTrackingConfiguration.isSupported else {
