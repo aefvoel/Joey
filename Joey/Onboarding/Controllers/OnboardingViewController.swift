@@ -26,12 +26,13 @@ class OnboardingViewController: UIViewController {
         viewLabelBackground?.layer.cornerRadius = 14.0
         dismissKeyboardOnScreen()
         textFieldName?.delegate = self
-        if UserDefaultsHelper.getData(type: Bool.self, forKey: .isLoggedIn) ?? false  {
+        if UserDefaultsHelper.getData(type: Bool.self, forKey: .isLoggedIn) ?? false {
             if let vc = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController {
                 if let navigator = navigationController {
                     navigator.pushViewController(vc, animated: true)
                 }
             }
+            
         }
     }
     

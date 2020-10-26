@@ -7,33 +7,183 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Yuanti.ttc">
+            <string>STYuanti-SC-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Mirror View Controller-->
-        <scene sceneID="frM-0A-ZQJ">
+        <scene sceneID="9hr-P9-jMJ">
             <objects>
-                <viewController storyboardIdentifier="MirrorViewController" id="hfO-51-R98" customClass="MirrorViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JrG-pD-DPI">
+                <viewController storyboardIdentifier="MirrorViewController" id="tbV-vw-q1c" customClass="MirrorViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CMS-bz-Low">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mirror" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39W-01-Dkb">
-                                <rect key="frame" x="184" y="438" width="46" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mirror Technique" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRX-Mn-LLa">
+                                <rect key="frame" x="57" y="111" width="300" height="56"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8l-dF-REe" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="57" y="565" width="295" height="45"/>
+                                <color key="backgroundColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="4ON-1H-PsW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="brE-9X-Tg8" kind="show" id="xhf-Kr-bbv"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotImage" translatesAutoresizingMaskIntoConstraints="NO" id="wWT-3k-Tdz">
+                                <rect key="frame" x="0.0" y="768" width="194" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="BOD-UM-z21"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y3V-oA-Xak" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBV-3L-FnD" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="24" y="192" width="366" height="340"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mirror Technique_miniCard" translatesAutoresizingMaskIntoConstraints="NO" id="e8V-bN-LuN">
+                                        <rect key="frame" x="8" y="8" width="350" height="332"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="332" id="Fcq-ch-faK"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="e8V-bN-LuN" firstAttribute="top" secondItem="sBV-3L-FnD" secondAttribute="topMargin" id="3Km-ba-8rR"/>
+                                    <constraint firstItem="e8V-bN-LuN" firstAttribute="leading" secondItem="sBV-3L-FnD" secondAttribute="leadingMargin" id="6I9-4b-M5b"/>
+                                    <constraint firstItem="e8V-bN-LuN" firstAttribute="trailing" secondItem="sBV-3L-FnD" secondAttribute="trailingMargin" id="GFc-DV-SCf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotBubble" translatesAutoresizingMaskIntoConstraints="NO" id="Bfz-Zp-HTi">
+                                <rect key="frame" x="170" y="707" width="224" height="113"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your session length for doing mirror technique exercise" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTP-gc-7qk">
+                                <rect key="frame" x="178" y="707" width="208" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="PFr-LD-FGb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="3eQ-kW-o6z"/>
+                        <viewLayoutGuide key="safeArea" id="ymo-H7-0Pa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Bfz-Zp-HTi" firstAttribute="trailing" secondItem="CMS-bz-Low" secondAttribute="trailingMargin" id="1iq-jJ-IYS"/>
+                            <constraint firstItem="Y3V-oA-Xak" firstAttribute="leading" secondItem="wWT-3k-Tdz" secondAttribute="leading" id="Afo-5A-2mz"/>
+                            <constraint firstItem="sBV-3L-FnD" firstAttribute="top" secondItem="dRX-Mn-LLa" secondAttribute="bottom" constant="25" id="Did-fS-XfN"/>
+                            <constraint firstItem="Bfz-Zp-HTi" firstAttribute="top" secondItem="qTP-gc-7qk" secondAttribute="top" id="Jee-Tx-m2x"/>
+                            <constraint firstItem="ymo-H7-0Pa" firstAttribute="bottom" secondItem="Bfz-Zp-HTi" secondAttribute="bottom" constant="42" id="KMa-Pe-0Zi"/>
+                            <constraint firstItem="Y3V-oA-Xak" firstAttribute="top" secondItem="ymo-H7-0Pa" secondAttribute="top" id="LlZ-xT-Z8q"/>
+                            <constraint firstItem="k8l-dF-REe" firstAttribute="top" secondItem="sBV-3L-FnD" secondAttribute="bottom" constant="33" id="Oh6-VZ-n49"/>
+                            <constraint firstItem="qTP-gc-7qk" firstAttribute="leading" secondItem="ymo-H7-0Pa" secondAttribute="leading" constant="178" id="QM1-87-tjP"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="wWT-3k-Tdz" secondAttribute="bottom" constant="-34" id="Ujr-c4-PbL"/>
+                            <constraint firstItem="ymo-H7-0Pa" firstAttribute="trailing" secondItem="k8l-dF-REe" secondAttribute="trailing" constant="62" id="Xlq-wb-qEz"/>
+                            <constraint firstItem="ymo-H7-0Pa" firstAttribute="trailing" secondItem="wWT-3k-Tdz" secondAttribute="trailing" constant="220" id="Zv4-Nh-2Rt"/>
+                            <constraint firstItem="Bfz-Zp-HTi" firstAttribute="centerX" secondItem="qTP-gc-7qk" secondAttribute="centerX" id="ajr-SD-zb5"/>
+                            <constraint firstItem="sBV-3L-FnD" firstAttribute="leading" secondItem="ymo-H7-0Pa" secondAttribute="leading" constant="24" id="bR8-yK-XLo"/>
+                            <constraint firstItem="Y3V-oA-Xak" firstAttribute="centerX" secondItem="dRX-Mn-LLa" secondAttribute="centerX" id="bqH-xq-7rl"/>
+                            <constraint firstItem="dRX-Mn-LLa" firstAttribute="centerX" secondItem="sBV-3L-FnD" secondAttribute="centerX" id="fUZ-kk-r0m"/>
+                            <constraint firstItem="Y3V-oA-Xak" firstAttribute="leading" secondItem="ymo-H7-0Pa" secondAttribute="leading" id="iug-oa-pvU"/>
+                            <constraint firstItem="dRX-Mn-LLa" firstAttribute="top" secondItem="CMS-bz-Low" secondAttribute="top" constant="111" id="qEa-Rv-dho"/>
+                            <constraint firstItem="Bfz-Zp-HTi" firstAttribute="top" secondItem="k8l-dF-REe" secondAttribute="bottom" constant="97" id="r7r-kM-RDe"/>
+                            <constraint firstItem="Bfz-Zp-HTi" firstAttribute="leading" secondItem="ymo-H7-0Pa" secondAttribute="leading" constant="170" id="rct-zj-Vgv"/>
+                            <constraint firstItem="Y3V-oA-Xak" firstAttribute="centerX" secondItem="CMS-bz-Low" secondAttribute="centerX" id="tCo-Pe-hMU"/>
+                            <constraint firstItem="dRX-Mn-LLa" firstAttribute="leading" secondItem="k8l-dF-REe" secondAttribute="leading" id="tFp-u5-sHH"/>
+                            <constraint firstItem="ymo-H7-0Pa" firstAttribute="bottom" secondItem="qTP-gc-7qk" secondAttribute="bottom" constant="70" id="wOd-7K-tPi"/>
+                            <constraint firstItem="dRX-Mn-LLa" firstAttribute="top" secondItem="Y3V-oA-Xak" secondAttribute="bottom" constant="20" id="xba-XQ-dii"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iaK-O7-dHx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="25J-U7-hql" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="206" y="145"/>
+            <point key="canvasLocation" x="413" y="134"/>
+        </scene>
+        <!--Mirror View Controller-->
+        <scene sceneID="t8H-Yz-rbF">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="brE-9X-Tg8" customClass="MirrorViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M71-mc-brD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mascotImage" translatesAutoresizingMaskIntoConstraints="NO" id="hEj-ns-uVj">
+                                <rect key="frame" x="0.0" y="768" width="194" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ee-zg-4IW" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mascotBubble" translatesAutoresizingMaskIntoConstraints="NO" id="5cd-1v-cDE">
+                                <rect key="frame" x="170" y="707" width="224" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose your session length for doing mirror technique exercise" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3k-IC-gmy">
+                                <rect key="frame" x="178" y="707" width="208" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iw4-pI-32D">
+                                <rect key="frame" x="0.0" y="99" width="414" height="797"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iBl-5z-MoX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TPv-Ta-l2o"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BGZ-cg-vBs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1160.8695652173915" y="133.92857142857142"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="k8l-dF-REe">
+            <size key="intrinsicContentSize" width="45" height="40"/>
+        </designable>
+    </designables>
     <resources>
+        <image name="Mirror Technique_miniCard" width="862" height="862"/>
+        <image name="mascotBubble" width="231" height="125"/>
+        <image name="mascotImage" width="132" height="132"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
