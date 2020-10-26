@@ -13,7 +13,7 @@ class InstructionView: UIView {
     @IBOutlet weak var textInstruction: TextViewFixed!
     
     func setupData(data: ActivitiesInstruction) {
-        labelTitle.text = data.activityTitle
+        labelTitle.text = data.title
         textInstruction.text = data.instructionContent
     }
 
