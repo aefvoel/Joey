@@ -30,11 +30,11 @@ struct FollowUp {
     var scaleType: ScaleType? {
         if let scale = scale {
             if scale <= 0.3 {
-                return .big
+                return .small
             } else if scale > 0.3 && scale <= 0.7 {
                 return .medium
             } else {
-                return .small
+                return .big
             }
         } else {
             return nil

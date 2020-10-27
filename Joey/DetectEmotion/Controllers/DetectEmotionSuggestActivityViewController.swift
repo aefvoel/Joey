@@ -9,11 +9,13 @@ import UIKit
 
 class DetectEmotionSuggestActivityViewController: UIViewController {
 
+    var data: FollowUp?
     @IBOutlet weak var navBar: NavigationBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navBar.delegate = self
+        let activity = data?.suggestActivity()
     }
     
 
