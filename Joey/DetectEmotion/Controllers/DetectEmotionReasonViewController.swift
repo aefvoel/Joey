@@ -9,12 +9,12 @@ import UIKit
 
 class DetectEmotionReasonViewController: UIViewController {
     
+    @IBOutlet weak var navBar: NavigationBar!
     var data: FollowUp?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        navBar.delegate = self
     }
     
     @IBAction func answerTapped(_ sender: UIButton) {
@@ -27,7 +27,9 @@ class DetectEmotionReasonViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if let vc = segue.destination as? DetectEmotionAdviceViewController {
+            vc.data = data
+        }
     }
 
 }
