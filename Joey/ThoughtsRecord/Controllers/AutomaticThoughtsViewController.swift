@@ -9,6 +9,8 @@ import UIKit
 
 class AutomaticThoughtsViewController: UIViewController, UITextViewDelegate {
     
+    var data: ThoughtsRecordTemp?
+    
     var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.image = UIImage(named: "page_background3")
@@ -27,6 +29,11 @@ class AutomaticThoughtsViewController: UIViewController, UITextViewDelegate {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func onClickContinueButton(_ sender: Any) {
+        guard let answer = textViewInitialThoughts?.text else { return }
+        data?.initialThoughts = answer
+    }
+    
     func setupUI(){
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.view.insertSubview(imageView, at: 0)
@@ -42,6 +49,20 @@ class AutomaticThoughtsViewController: UIViewController, UITextViewDelegate {
         textViewInitialThoughts.delegate = self
         textViewInitialThoughts.text = "Type your answer here"
         textViewInitialThoughts.textColor = UIColor.lightGray
+    }
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textViewInitialThoughts.textColor == UIColor.lightGray {
+            textViewInitialThoughts.text = nil
+            textViewInitialThoughts.textColor = UIColor.black
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textViewInitialThoughts.text.isEmpty {
+            textViewInitialThoughts.text = "Type your answer here"
+            textViewInitialThoughts.textColor = UIColor.lightGray
+        }
     }
 
     /*

@@ -7,7 +7,9 @@
 
 import UIKit
 
-class AlternativeThoughtsViewController: UIViewController {
+class AlternativeThoughtsViewController: UIViewController, UITextViewDelegate {
+    
+    var data: ThoughtsRecordTemp?
     
     var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
@@ -17,10 +19,18 @@ class AlternativeThoughtsViewController: UIViewController {
         return imageView
     }()
 
+    @IBOutlet weak var textView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        textViewPlaceholder()
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func onClickContinueButton(_ sender: Any) {
+        guard let answer = textView?.text else { return }
+        data?.alternativeThoughts = answer
     }
     
     func setupUI(){
@@ -34,6 +44,25 @@ class AlternativeThoughtsViewController: UIViewController {
         ])
     }
     
+    func textViewPlaceholder() {
+        textView.delegate = self
+        textView.text = "Type your answer here"
+        textView.textColor = UIColor.lightGray
+    }
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.textColor == UIColor.lightGray {
+            textView.text = nil
+            textView.textColor = UIColor.black
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = "Type your answer here"
+            textView.textColor = UIColor.lightGray
+        }
+    }
 
     /*
     // MARK: - Navigation

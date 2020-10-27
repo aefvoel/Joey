@@ -16,12 +16,26 @@ class MoodsViewController: UIViewController {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func answerTapped(_ sender: UIButton) {
+        if sender.backgroundColor == .white {
+            sender.backgroundColor = #colorLiteral(red: 0.3529411765, green: 0.7607843137, blue: 0.7411764706, alpha: 1)
+            sender.setTitleColor(.white, for: .normal)
+            sender.tintColor = .clear
+            sender.isSelected = true
+        }
+        else {
+            sender.backgroundColor = .white
+            sender.setTitleColor(.black, for: .normal)
+            sender.isSelected = false
+        }
     }
     
     func setupUI(){

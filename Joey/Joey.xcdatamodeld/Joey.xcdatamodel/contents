@@ -4,7 +4,7 @@
         <attribute name="category" optional="YES" attributeType="String"/>
         <attribute name="testedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
-    <entity name="Thought" representedClassName="Thought" syncable="YES" codeGenerationType="class">
+    <entity name="ThoughtsRecord" representedClassName="ThoughtsRecord" syncable="YES" codeGenerationType="class">
         <attribute name="alternate_thoughts" optional="YES" attributeType="String"/>
         <attribute name="evidence_not_support" optional="YES" attributeType="String"/>
         <attribute name="evidence_support" optional="YES" attributeType="String"/>
@@ -15,6 +15,6 @@
     </entity>
     <elements>
         <element name="Emotion" positionX="-63" positionY="-18" width="128" height="73"/>
-        <element name="Thought" positionX="-54" positionY="9" width="128" height="148"/>
+        <element name="ThoughtsRecord" positionX="-54" positionY="9" width="128" height="148"/>
     </elements>
 </model>
