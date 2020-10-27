@@ -90,6 +90,13 @@
                                     <action selector="buttonContinueTapped:" destination="1Y0-RP-YVy" eventType="touchUpInside" id="9qz-wX-bYA"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLZ-vD-NYQ" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="RgY-4j-W4y"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wg4-i3-3WF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -97,15 +104,18 @@
                             <constraint firstItem="eq8-WR-Pyf" firstAttribute="top" secondItem="0X0-c2-zO7" secondAttribute="top" id="03o-z7-sJ6"/>
                             <constraint firstItem="HsQ-48-VLX" firstAttribute="top" secondItem="wnh-vG-V2p" secondAttribute="bottom" constant="24" id="8bq-vW-E7i"/>
                             <constraint firstItem="eq8-WR-Pyf" firstAttribute="leading" secondItem="wg4-i3-3WF" secondAttribute="leading" id="Bxp-GQ-IhF"/>
+                            <constraint firstItem="hLZ-vD-NYQ" firstAttribute="leading" secondItem="eq8-WR-Pyf" secondAttribute="leading" id="HCB-NT-yyb"/>
                             <constraint firstItem="uTw-sI-wUh" firstAttribute="leading" secondItem="0c7-p1-8Oj" secondAttribute="leading" id="IYW-cA-ALg"/>
                             <constraint firstItem="0c7-p1-8Oj" firstAttribute="top" secondItem="5Cl-wV-rne" secondAttribute="bottom" constant="48" id="Jgp-t0-pqY"/>
                             <constraint firstItem="wg4-i3-3WF" firstAttribute="bottom" secondItem="uTw-sI-wUh" secondAttribute="bottom" constant="24" id="KEZ-xV-rJX"/>
+                            <constraint firstItem="hLZ-vD-NYQ" firstAttribute="top" secondItem="wg4-i3-3WF" secondAttribute="top" id="NBi-0y-Ra0"/>
                             <constraint firstItem="wnh-vG-V2p" firstAttribute="leading" secondItem="wg4-i3-3WF" secondAttribute="leading" id="Pb5-tM-g9y"/>
                             <constraint firstItem="eq8-WR-Pyf" firstAttribute="trailing" secondItem="wg4-i3-3WF" secondAttribute="trailing" id="WBK-mG-fPa"/>
                             <constraint firstItem="wg4-i3-3WF" firstAttribute="trailing" secondItem="HsQ-48-VLX" secondAttribute="trailing" constant="24" id="YDT-mS-XeH"/>
                             <constraint firstItem="wnh-vG-V2p" firstAttribute="top" secondItem="eq8-WR-Pyf" secondAttribute="bottom" id="Zak-I7-LOD"/>
                             <constraint firstItem="0c7-p1-8Oj" firstAttribute="leading" secondItem="5Cl-wV-rne" secondAttribute="leading" id="dgE-hV-a44"/>
                             <constraint firstItem="uTw-sI-wUh" firstAttribute="trailing" secondItem="0c7-p1-8Oj" secondAttribute="trailing" id="ein-mP-wZE"/>
+                            <constraint firstItem="hLZ-vD-NYQ" firstAttribute="trailing" secondItem="eq8-WR-Pyf" secondAttribute="trailing" id="i7H-Gl-FLI"/>
                             <constraint firstItem="5Cl-wV-rne" firstAttribute="leading" secondItem="HsQ-48-VLX" secondAttribute="leading" id="qWh-jO-eQM"/>
                             <constraint firstItem="HsQ-48-VLX" firstAttribute="leading" secondItem="wg4-i3-3WF" secondAttribute="leading" constant="24" id="r2O-d1-6k8"/>
                             <constraint firstItem="5Cl-wV-rne" firstAttribute="top" secondItem="HsQ-48-VLX" secondAttribute="bottom" constant="18" id="uWl-VA-0V1"/>
@@ -120,6 +130,7 @@
                     </view>
                     <connections>
                         <outlet property="instructionView" destination="0X0-c2-zO7" id="ppS-Ph-WEz"/>
+                        <outlet property="navBar" destination="hLZ-vD-NYQ" id="SzL-wx-A8A"/>
                         <segue destination="4Az-fS-Sei" kind="show" identifier="toJacobson" id="7y6-UC-aIU"/>
                         <segue destination="XQb-VW-I1r" kind="show" identifier="toSmiling" id="6Nk-Ot-zYQ"/>
                         <segue destination="Eht-GO-KQY" kind="show" identifier="toMirror" id="cl9-j3-9Pg"/>

@@ -13,12 +13,18 @@ class StartPracticeSmilingViewController: UIViewController {
     
     @IBOutlet weak var labelSmile: UILabel!
     @IBOutlet weak var sceneView: ARSCNView!
-    @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var labelInstruction: UILabel!
     @IBOutlet weak var navBar: NavigationBar!
     var progressBarTimer: Timer!
     var isRunning = false
-    var isSmile = false
+    var isSmile: Bool! {
+        didSet {
+            print(isSmile!)
+        }
+    }
+    
+    var countdownTimer: Timer!
+    var totalTime = 60
     
     var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
@@ -34,10 +40,11 @@ class StartPracticeSmilingViewController: UIViewController {
     }
     
     func setupUI(){
+        startTimer()
         navBar.delegate = self
         sceneView.delegate = self
-        progressView.progress = 0.0
-        progressView.layer.cornerRadius = 4
+//        progressView.progress = 0.0
+//        progressView.layer.cornerRadius = 4
         self.view.insertSubview(imageView, at: 0)
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -51,6 +58,7 @@ class StartPracticeSmilingViewController: UIViewController {
         let configuration = ARFaceTrackingConfiguration()
         configuration.isLightEstimationEnabled = true
         sceneView.session.run(configuration)
+        
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -59,34 +67,73 @@ class StartPracticeSmilingViewController: UIViewController {
     }
     
     func handleSmile(smileValue: CGFloat) {
-        switch smileValue {
-        case _ where smileValue > 0.2:
+        if smileValue > 0.2 {
             isSmile = true
-
-        default:
+        }
+        else {
             isSmile = false
-            setRunning()
         }
     }
     
-    func setRunning(){
-        if isRunning {
-            progressBarTimer.invalidate()
-        } else {
-            progressView.progress = 0.0
-            self.progressBarTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.updateProgressView), userInfo: nil, repeats: true)
-        }
-        isRunning = !isRunning
-        
+//    func setRunning(){
+//        if isRunning {
+//            progressBarTimer.invalidate()
+//        } else {
+//            progressView.progress = 0.0
+//            self.progressBarTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.updateProgressView), userInfo: nil, repeats: true)
+//        }
+//        isRunning = !isRunning
+//
+//    }
+//    @objc func updateProgressView(){
+//        progressView.progress += 0.1
+//        progressView.setProgress(progressView.progress, animated: true)
+//        if(progressView.progress == 1.0)
+//        {
+//            progressBarTimer.invalidate()
+//            isRunning = false
+//        }
+//    }
+    
+    
+    func startTimer() {
+        countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateTime), userInfo: nil, repeats: true)
     }
-    @objc func updateProgressView(){
-        progressView.progress += 0.1
-        progressView.setProgress(progressView.progress, animated: true)
-        if(progressView.progress == 1.0)
-        {
-            progressBarTimer.invalidate()
-            isRunning = false
+    
+    @objc func updateTime() {
+        labelSmile.text = "\(timeFormatted(totalTime))"
+        
+        if totalTime < 55 && totalTime > 10 {
+            DispatchQueue.main.async {
+                if self.isSmile {
+                    self.labelInstruction.text = "Yup! Keep that smile longer.. Hold on for 5 more seconds!"
+                } else {
+                    self.labelInstruction.text = "Think of something positive about yourself and try to smile naturally"
+                }
+            }
         }
+        else if totalTime < 10 && totalTime > 0 {
+            labelInstruction.text = "Almost there.."
+        }
+        
+        
+        if totalTime != 0 {
+            totalTime -= 1
+        } else {
+            endTimer()
+            performSegue(withIdentifier: "toAfterActivity", sender: nil)
+        }
+    }
+    
+    func endTimer() {
+        countdownTimer.invalidate()
+    }
+    
+    func timeFormatted(_ totalSeconds: Int) -> String {
+        let seconds: Int = totalSeconds % 60
+        let minutes: Int = (totalSeconds / 60) % 60
+        //     let hours: Int = totalSeconds / 3600
+        return String(format: "%02d:%02d", minutes, seconds)
     }
 }
 
@@ -100,10 +147,14 @@ extension StartPracticeSmilingViewController: ARSCNViewDelegate {
         
         let data = FaceData(faceAnchor)
         
-        DispatchQueue.main.async {
-            // Update label for new smile value
+//        DispatchQueue.main.async {
+//            self.handleSmile(smileValue: CGFloat((data.mouthSmileLeft + data.mouthSmileRight)/2.0))
+//        }
+//
+        let workItem = DispatchWorkItem {
             self.handleSmile(smileValue: CGFloat((data.mouthSmileLeft + data.mouthSmileRight)/2.0))
         }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: workItem)
         
     }
 }

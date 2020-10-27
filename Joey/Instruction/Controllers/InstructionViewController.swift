@@ -12,11 +12,13 @@ class InstructionViewController: UIViewController {
     @IBOutlet var instructionView: InstructionView!
     var activityInstruction: ActivitiesInstruction?
 
+    @IBOutlet weak var navBar: NavigationBar!
     override func viewDidLoad() {
         super.viewDidLoad()
         if let data = activityInstruction {
             instructionView.setupData(data: data)
         }
+        navBar.delegate = self
     }
     
     @IBAction func buttonContinueTapped(_ sender: Any) {
