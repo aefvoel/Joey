@@ -9,11 +9,13 @@ import UIKit
 
 class DetectEmotionScaleViewController: UIViewController {
 
+    @IBOutlet weak var navBar: NavigationBar!
     var data: FollowUp?
     @IBOutlet weak var scaleSlider: CustomSlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navBar.delegate = self
     }
     
     @IBAction func onOkayButtonTapped(_ sender: Any) {

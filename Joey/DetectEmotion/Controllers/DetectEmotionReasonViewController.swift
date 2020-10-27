@@ -9,12 +9,12 @@ import UIKit
 
 class DetectEmotionReasonViewController: UIViewController {
     
+    @IBOutlet weak var navBar: NavigationBar!
     var data: FollowUp?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        navBar.delegate = self
     }
     
     @IBAction func answerTapped(_ sender: UIButton) {

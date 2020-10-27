@@ -10,6 +10,7 @@ import ARKit
 
 class DetectEmotionAnalyzeViewController: UIViewController {
 
+    @IBOutlet weak var navBar: NavigationBar!
     var emotion: String?
     
     @IBOutlet weak var sceneView: ARSCNView!
@@ -18,6 +19,7 @@ class DetectEmotionAnalyzeViewController: UIViewController {
         super.viewDidLoad()
         
         sceneView.delegate = self
+        navBar.delegate = self
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(sceneViewTapped))
         tapGesture.delegate = self

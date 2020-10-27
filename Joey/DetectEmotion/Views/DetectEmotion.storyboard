@@ -86,16 +86,26 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfn-23-Ub2" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="HT5-jr-9kZ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Og6-6J-GBE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="eLF-6G-NXa" firstAttribute="leading" secondItem="Og6-6J-GBE" secondAttribute="leading" constant="32" id="3dg-8n-bnJ"/>
+                            <constraint firstItem="kfn-23-Ub2" firstAttribute="leading" secondItem="Og6-6J-GBE" secondAttribute="leading" id="8R1-aX-4gp"/>
                             <constraint firstItem="itQ-ey-o4Y" firstAttribute="top" secondItem="Kbd-Zd-6CR" secondAttribute="bottom" constant="-91" id="8zu-OI-oaz"/>
                             <constraint firstItem="ck5-L6-UO3" firstAttribute="leading" secondItem="00e-RX-0hD" secondAttribute="leading" id="Bum-HN-AKb"/>
+                            <constraint firstItem="kfn-23-Ub2" firstAttribute="top" secondItem="Og6-6J-GBE" secondAttribute="top" id="D4B-gl-YyP"/>
                             <constraint firstItem="itQ-ey-o4Y" firstAttribute="trailing" secondItem="y9p-zv-U66" secondAttribute="trailing" id="IFN-hw-X0V"/>
                             <constraint firstItem="00e-RX-0hD" firstAttribute="top" secondItem="Og6-6J-GBE" secondAttribute="top" constant="64" id="NPa-9w-f8Y"/>
                             <constraint firstItem="ck5-L6-UO3" firstAttribute="top" secondItem="00e-RX-0hD" secondAttribute="bottom" constant="32" id="afM-ev-HZM"/>
+                            <constraint firstItem="kfn-23-Ub2" firstAttribute="trailing" secondItem="Og6-6J-GBE" secondAttribute="trailing" id="fki-p3-7AR"/>
                             <constraint firstItem="eLF-6G-NXa" firstAttribute="top" secondItem="itQ-ey-o4Y" secondAttribute="bottom" constant="-12" id="jpf-QM-WXr"/>
                             <constraint firstItem="y9p-zv-U66" firstAttribute="trailing" secondItem="ck5-L6-UO3" secondAttribute="trailing" id="keS-LZ-URF"/>
                             <constraint firstItem="y9p-zv-U66" firstAttribute="top" secondItem="ck5-L6-UO3" secondAttribute="bottom" constant="32" id="nTn-pu-6rr"/>
@@ -108,6 +118,7 @@
                     </view>
                     <connections>
                         <outlet property="buttonStart" destination="y9p-zv-U66" id="eqt-Qs-kW5"/>
+                        <outlet property="navBar" destination="kfn-23-Ub2" id="Dmn-Uo-NYK"/>
                         <segue destination="4Qy-Oq-1m0" kind="show" identifier="toDetectEmotion" id="M1E-V1-3Bb"/>
                     </connections>
                 </viewController>
@@ -158,6 +169,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Frc-Ts-xLe" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="LSB-MQ-Sh1"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cgB-vY-EfF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -166,6 +184,7 @@
                             <constraint firstItem="FSQ-z2-zMF" firstAttribute="trailing" secondItem="KtU-jb-9Xh" secondAttribute="trailing" id="7Zh-kn-yIB"/>
                             <constraint firstItem="KtU-jb-9Xh" firstAttribute="centerX" secondItem="8bf-UQ-6WG" secondAttribute="centerX" id="9CT-ut-mr8"/>
                             <constraint firstItem="FtL-af-9OW" firstAttribute="leading" secondItem="cgB-vY-EfF" secondAttribute="leading" constant="32" id="Fke-M3-C6Q"/>
+                            <constraint firstItem="Frc-Ts-xLe" firstAttribute="leading" secondItem="cgB-vY-EfF" secondAttribute="leading" id="Gjp-xs-eqP"/>
                             <constraint firstAttribute="bottom" secondItem="4eb-pA-LAT" secondAttribute="bottom" id="Gp5-qk-Gle"/>
                             <constraint firstItem="4eb-pA-LAT" firstAttribute="trailing" secondItem="cgB-vY-EfF" secondAttribute="trailing" id="U4v-Nf-ctZ"/>
                             <constraint firstItem="FSQ-z2-zMF" firstAttribute="top" secondItem="BVf-Nj-wjl" secondAttribute="bottom" constant="-91" id="bi1-Cv-4zp"/>
@@ -174,10 +193,13 @@
                             <constraint firstItem="4eb-pA-LAT" firstAttribute="top" secondItem="8bf-UQ-6WG" secondAttribute="top" id="lam-3X-qdC"/>
                             <constraint firstItem="FtL-af-9OW" firstAttribute="top" secondItem="FSQ-z2-zMF" secondAttribute="bottom" constant="-12" id="nky-oT-gLD"/>
                             <constraint firstAttribute="bottom" secondItem="FtL-af-9OW" secondAttribute="bottom" id="oal-iT-Rj5"/>
+                            <constraint firstItem="Frc-Ts-xLe" firstAttribute="top" secondItem="cgB-vY-EfF" secondAttribute="top" id="wHj-uc-1hr"/>
+                            <constraint firstItem="Frc-Ts-xLe" firstAttribute="trailing" secondItem="cgB-vY-EfF" secondAttribute="trailing" id="ynU-FY-dIU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bZT-8h-zZO"/>
                     <connections>
+                        <outlet property="navBar" destination="Frc-Ts-xLe" id="ZM8-9N-acS"/>
                         <outlet property="sceneView" destination="KtU-jb-9Xh" id="i4w-IW-74D"/>
                         <segue destination="Alw-JU-PYX" kind="show" identifier="toQuestions" id="Pmd-0p-sFU"/>
                     </connections>
@@ -303,18 +325,28 @@ From what I see, you look need to be cheered up now. Is that true?</string>
                                     <action selector="validResultTapped:" destination="Alw-JU-PYX" eventType="touchUpInside" id="LkJ-Fe-ga5"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmO-l6-Gzh" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="fQI-n9-oxx"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lPM-wh-Teq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="6Xl-9g-L1Z" secondAttribute="bottom" id="5kn-ge-axT"/>
                             <constraint firstItem="lPM-wh-Teq" firstAttribute="trailing" secondItem="kol-PY-7b1" secondAttribute="trailing" constant="24" id="AeF-sA-dIa"/>
+                            <constraint firstItem="hmO-l6-Gzh" firstAttribute="leading" secondItem="lPM-wh-Teq" secondAttribute="leading" id="Ay6-Az-f2p"/>
                             <constraint firstItem="F7J-km-hhE" firstAttribute="centerX" secondItem="fF8-TX-VEG" secondAttribute="centerX" id="BQX-tl-LdO"/>
+                            <constraint firstItem="hmO-l6-Gzh" firstAttribute="trailing" secondItem="lPM-wh-Teq" secondAttribute="trailing" id="Cnh-Fd-4ST"/>
                             <constraint firstItem="F7J-km-hhE" firstAttribute="top" secondItem="fF8-TX-VEG" secondAttribute="bottom" constant="24" id="ItK-3S-9Hj"/>
                             <constraint firstItem="lPM-wh-Teq" firstAttribute="trailing" secondItem="r7s-W9-erx" secondAttribute="trailing" constant="48" id="J3P-pu-aWK"/>
                             <constraint firstItem="fF8-TX-VEG" firstAttribute="top" secondItem="kol-PY-7b1" secondAttribute="bottom" constant="64" id="QBL-Ps-SWj"/>
                             <constraint firstItem="kol-PY-7b1" firstAttribute="leading" secondItem="lPM-wh-Teq" secondAttribute="leading" constant="24" id="Sdc-ZZ-fBZ"/>
                             <constraint firstItem="fF8-TX-VEG" firstAttribute="centerX" secondItem="kol-PY-7b1" secondAttribute="centerX" id="TaF-kj-r63"/>
+                            <constraint firstItem="hmO-l6-Gzh" firstAttribute="top" secondItem="lPM-wh-Teq" secondAttribute="top" id="UdQ-Js-aSH"/>
                             <constraint firstItem="6Xl-9g-L1Z" firstAttribute="centerX" secondItem="z8v-Go-1g3" secondAttribute="centerX" id="f4W-nP-Vwv"/>
                             <constraint firstItem="kol-PY-7b1" firstAttribute="top" secondItem="r7s-W9-erx" secondAttribute="bottom" constant="-143" id="g3v-cJ-Kgb"/>
                             <constraint firstItem="kol-PY-7b1" firstAttribute="top" secondItem="lPM-wh-Teq" secondAttribute="top" constant="64" id="mUy-aO-UdE"/>
@@ -326,6 +358,7 @@ From what I see, you look need to be cheered up now. Is that true?</string>
                     </view>
                     <navigationItem key="navigationItem" id="bfq-TK-dEA"/>
                     <connections>
+                        <outlet property="navBar" destination="hmO-l6-Gzh" id="5vp-r6-xPs"/>
                         <segue destination="Iai-ai-YmM" kind="show" identifier="toScale" id="pvP-8n-yaw"/>
                         <segue destination="e7n-gI-Uef" kind="show" identifier="toWrongResult" id="hoq-ai-7OY"/>
                     </connections>
@@ -334,10 +367,10 @@ From what I see, you look need to be cheered up now. Is that true?</string>
             </objects>
             <point key="canvasLocation" x="1871.0144927536232" y="124.55357142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Detect Emotion Analyze Again View Controller-->
         <scene sceneID="nV5-A0-73u">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="e7n-gI-Uef" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="e7n-gI-Uef" customClass="DetectEmotionAnalyzeAgainViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HxM-SI-WsQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -375,6 +408,9 @@ From what I see, you look need to be cheered up now. Is that true?</string>
                                         <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onYesButtonTapped:" destination="e7n-gI-Uef" eventType="touchUpInside" id="j75-pI-VBP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQ4-7d-7Yr" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                 <rect key="frame" x="87" y="436" width="240" height="45"/>
@@ -420,12 +456,20 @@ Do you want me to see your face again?</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="opR-q6-uAz" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="PiD-5c-IQb"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fXX-kh-AQl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="IJv-Jq-RWM" firstAttribute="top" secondItem="HxM-SI-WsQ" secondAttribute="top" id="7ze-Vx-zYj"/>
                             <constraint firstItem="dQ4-7d-7Yr" firstAttribute="centerX" secondItem="noC-Lw-i7n" secondAttribute="centerX" id="A2h-T3-Vqv"/>
+                            <constraint firstItem="opR-q6-uAz" firstAttribute="leading" secondItem="fXX-kh-AQl" secondAttribute="leading" id="AmF-kt-CbJ"/>
                             <constraint firstItem="EkI-ZV-EZC" firstAttribute="leading" secondItem="fXX-kh-AQl" secondAttribute="leading" constant="48" id="Azh-zt-TFJ"/>
                             <constraint firstItem="rpv-4T-TA4" firstAttribute="leading" secondItem="fXX-kh-AQl" secondAttribute="leading" constant="24" id="Nhp-Zb-WJM"/>
                             <constraint firstAttribute="bottom" secondItem="IJv-Jq-RWM" secondAttribute="bottom" id="OK4-bR-Ofd"/>
@@ -433,26 +477,31 @@ Do you want me to see your face again?</string>
                             <constraint firstItem="noC-Lw-i7n" firstAttribute="centerX" secondItem="rpv-4T-TA4" secondAttribute="centerX" id="ULd-XQ-y4o"/>
                             <constraint firstItem="rpv-4T-TA4" firstAttribute="width" secondItem="rpv-4T-TA4" secondAttribute="height" multiplier="15:8" id="ar5-8j-q6l"/>
                             <constraint firstItem="IJv-Jq-RWM" firstAttribute="trailing" secondItem="fXX-kh-AQl" secondAttribute="trailing" id="cUS-El-R0P"/>
+                            <constraint firstItem="opR-q6-uAz" firstAttribute="trailing" secondItem="fXX-kh-AQl" secondAttribute="trailing" id="dP9-9d-ds7"/>
                             <constraint firstItem="rpv-4T-TA4" firstAttribute="top" secondItem="fXX-kh-AQl" secondAttribute="top" constant="64" id="eyj-KZ-GRe"/>
                             <constraint firstItem="noC-Lw-i7n" firstAttribute="top" secondItem="rpv-4T-TA4" secondAttribute="bottom" constant="64" id="frT-1k-jkS"/>
                             <constraint firstItem="IJv-Jq-RWM" firstAttribute="leading" secondItem="fXX-kh-AQl" secondAttribute="leading" id="gff-RE-uwY"/>
                             <constraint firstItem="fXX-kh-AQl" firstAttribute="trailing" secondItem="EkI-ZV-EZC" secondAttribute="trailing" constant="48" id="hUZ-By-rHn"/>
                             <constraint firstItem="dQ4-7d-7Yr" firstAttribute="top" secondItem="noC-Lw-i7n" secondAttribute="bottom" constant="24" id="jyz-r0-bQd"/>
+                            <constraint firstItem="opR-q6-uAz" firstAttribute="top" secondItem="fXX-kh-AQl" secondAttribute="top" id="l53-ba-pNa"/>
                             <constraint firstItem="rpv-4T-TA4" firstAttribute="top" secondItem="EkI-ZV-EZC" secondAttribute="bottom" constant="-143" id="nh0-iw-qg1"/>
                             <constraint firstItem="1QI-A2-WNT" firstAttribute="centerX" secondItem="HxM-SI-WsQ" secondAttribute="centerX" id="r91-s4-3qa"/>
                             <constraint firstAttribute="bottom" secondItem="1QI-A2-WNT" secondAttribute="bottom" id="z5P-kL-e51"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ohA-PZ-mf9"/>
+                    <connections>
+                        <outlet property="navBar" destination="opR-q6-uAz" id="MDK-W1-ab2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lzY-rx-0aO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1871.0144927536232" y="885.9375"/>
         </scene>
-        <!--View Controller-->
+        <!--Detect Emotion Correction View Controller-->
         <scene sceneID="K5K-Is-LXI">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="5uB-H1-Axs" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="5uB-H1-Axs" customClass="DetectEmotionCorrectionViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fdU-vA-FV7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -506,6 +555,9 @@ Do you want me to see your face again?</string>
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onAnswerButtonTapped:" destination="5uB-H1-Axs" eventType="touchUpInside" id="Hqk-s6-PiS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LzU-3y-o1a" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                         <rect key="frame" x="195" y="0.0" width="171" height="45"/>
@@ -526,6 +578,9 @@ Do you want me to see your face again?</string>
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onAnswerButtonTapped:" destination="5uB-H1-Axs" eventType="touchUpInside" id="5Rx-Vk-1qG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -554,6 +609,9 @@ Do you want me to see your face again?</string>
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onAnswerButtonTapped:" destination="5uB-H1-Axs" eventType="touchUpInside" id="4nD-p7-tgp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8UW-K0-gkC" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                         <rect key="frame" x="195" y="0.0" width="171" height="45"/>
@@ -574,18 +632,29 @@ Do you want me to see your face again?</string>
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onAnswerButtonTapped:" destination="5uB-H1-Axs" eventType="touchUpInside" id="jew-CQ-80b"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="NiM-k5-Csd"/>
                                 </constraints>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHx-My-Xbz" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="sS8-H2-2Ru"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jl0-ZQ-aLX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="VT5-dd-aK5" secondAttribute="bottom" id="1v3-0l-Usl"/>
                             <constraint firstItem="Jl0-ZQ-aLX" firstAttribute="trailing" secondItem="cPS-qs-9By" secondAttribute="trailing" constant="24" id="C6d-nv-hHc"/>
+                            <constraint firstItem="XHx-My-Xbz" firstAttribute="trailing" secondItem="Jl0-ZQ-aLX" secondAttribute="trailing" id="F4N-Qd-twt"/>
                             <constraint firstItem="cPS-qs-9By" firstAttribute="top" secondItem="O0E-rM-A5v" secondAttribute="bottom" constant="-143" id="G2i-sr-ewD"/>
                             <constraint firstItem="80t-7T-fAR" firstAttribute="centerX" secondItem="cPS-qs-9By" secondAttribute="centerX" id="J90-f8-gPY"/>
                             <constraint firstItem="aPt-D3-kTM" firstAttribute="leading" secondItem="80t-7T-fAR" secondAttribute="leading" id="Jwb-J9-joe"/>
@@ -594,10 +663,12 @@ Do you want me to see your face again?</string>
                             <constraint firstItem="Jl0-ZQ-aLX" firstAttribute="trailing" secondItem="O0E-rM-A5v" secondAttribute="trailing" constant="48" id="Stu-J0-sDr"/>
                             <constraint firstAttribute="bottom" secondItem="X2w-xo-UyB" secondAttribute="bottom" id="TEo-9D-XZY"/>
                             <constraint firstItem="VT5-dd-aK5" firstAttribute="centerX" secondItem="fdU-vA-FV7" secondAttribute="centerX" id="UKy-bq-Fgf"/>
+                            <constraint firstItem="XHx-My-Xbz" firstAttribute="top" secondItem="Jl0-ZQ-aLX" secondAttribute="top" id="Wxv-kZ-JUJ"/>
                             <constraint firstItem="aPt-D3-kTM" firstAttribute="top" secondItem="80t-7T-fAR" secondAttribute="bottom" constant="18" id="crE-jV-zfr"/>
                             <constraint firstItem="80t-7T-fAR" firstAttribute="trailing" secondItem="cPS-qs-9By" secondAttribute="trailing" id="dGc-TT-eqQ"/>
                             <constraint firstItem="cPS-qs-9By" firstAttribute="top" secondItem="Jl0-ZQ-aLX" secondAttribute="top" constant="64" id="l0B-ty-SuV"/>
                             <constraint firstItem="80t-7T-fAR" firstAttribute="top" secondItem="cPS-qs-9By" secondAttribute="bottom" constant="64" id="mZK-hf-QAV"/>
+                            <constraint firstItem="XHx-My-Xbz" firstAttribute="leading" secondItem="Jl0-ZQ-aLX" secondAttribute="leading" id="p3O-9b-CZj"/>
                             <constraint firstItem="aPt-D3-kTM" firstAttribute="trailing" secondItem="80t-7T-fAR" secondAttribute="trailing" id="qBJ-XG-crK"/>
                             <constraint firstItem="O0E-rM-A5v" firstAttribute="leading" secondItem="Jl0-ZQ-aLX" secondAttribute="leading" constant="48" id="sah-1U-6Bm"/>
                             <constraint firstItem="cPS-qs-9By" firstAttribute="leading" secondItem="Jl0-ZQ-aLX" secondAttribute="leading" constant="24" id="tQo-6C-ibu"/>
@@ -607,7 +678,8 @@ Do you want me to see your face again?</string>
                     </view>
                     <navigationItem key="navigationItem" id="k28-nP-REH"/>
                     <connections>
-                        <segue destination="Iai-ai-YmM" kind="show" id="Pps-6o-9vR"/>
+                        <outlet property="navBar" destination="XHx-My-Xbz" id="8H1-jb-o2v"/>
+                        <segue destination="Iai-ai-YmM" kind="show" identifier="toScale" id="Pps-6o-9vR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fM4-bg-qep" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -692,16 +764,25 @@ how intense do you think you need to be cheered up?</string>
                                     <constraint firstAttribute="width" constant="200" id="QjZ-rY-O1L"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e0v-6M-yxl" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="lfZ-Es-DLx"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0Va-v8-nfB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="e0v-6M-yxl" firstAttribute="trailing" secondItem="0Va-v8-nfB" secondAttribute="trailing" id="3uy-lE-KOL"/>
                             <constraint firstAttribute="trailing" secondItem="pE8-yA-Cc5" secondAttribute="trailing" constant="48" id="6BX-Wx-t3X"/>
                             <constraint firstItem="NfW-C8-BrN" firstAttribute="leading" secondItem="FWu-pZ-5iH" secondAttribute="leading" id="9co-wv-UFM"/>
                             <constraint firstItem="pE8-yA-Cc5" firstAttribute="centerX" secondItem="xYR-A5-fv7" secondAttribute="centerX" id="9ge-PD-nkV"/>
                             <constraint firstItem="AWu-x7-s6U" firstAttribute="leading" secondItem="NfW-C8-BrN" secondAttribute="leading" id="Bzw-t8-g86"/>
                             <constraint firstItem="FWu-pZ-5iH" firstAttribute="top" secondItem="0Va-v8-nfB" secondAttribute="top" constant="64" id="Pos-cY-pso"/>
                             <constraint firstItem="FWu-pZ-5iH" firstAttribute="top" secondItem="pE8-yA-Cc5" secondAttribute="bottom" constant="-143" id="QL7-nV-TKE"/>
+                            <constraint firstItem="e0v-6M-yxl" firstAttribute="top" secondItem="0Va-v8-nfB" secondAttribute="top" id="RjU-BG-OqX"/>
                             <constraint firstItem="pE8-yA-Cc5" firstAttribute="leading" secondItem="xYR-A5-fv7" secondAttribute="leading" constant="48" id="S1Q-Ye-I6M"/>
                             <constraint firstItem="0Va-v8-nfB" firstAttribute="trailing" secondItem="FWu-pZ-5iH" secondAttribute="trailing" constant="24" id="TsT-sS-6Ma"/>
                             <constraint firstItem="AWu-x7-s6U" firstAttribute="centerY" secondItem="LaM-L9-HcK" secondAttribute="centerY" id="ZrA-GX-hPk"/>
@@ -710,6 +791,7 @@ how intense do you think you need to be cheered up?</string>
                             <constraint firstItem="sO9-KW-DzL" firstAttribute="centerX" secondItem="xYR-A5-fv7" secondAttribute="centerX" id="f8Z-QW-Zbc"/>
                             <constraint firstItem="NfW-C8-BrN" firstAttribute="top" secondItem="FWu-pZ-5iH" secondAttribute="bottom" constant="64" id="g2p-nc-cr6"/>
                             <constraint firstItem="LaM-L9-HcK" firstAttribute="top" secondItem="NfW-C8-BrN" secondAttribute="bottom" constant="10" id="gSb-Yx-WxK"/>
+                            <constraint firstItem="e0v-6M-yxl" firstAttribute="leading" secondItem="0Va-v8-nfB" secondAttribute="leading" id="hfE-9M-H9H"/>
                             <constraint firstItem="snN-j3-4qP" firstAttribute="top" secondItem="NfW-C8-BrN" secondAttribute="bottom" constant="100" id="i8y-5a-rPO"/>
                             <constraint firstItem="NfW-C8-BrN" firstAttribute="trailing" secondItem="FWu-pZ-5iH" secondAttribute="trailing" id="lH5-dZ-wdf"/>
                             <constraint firstItem="FWu-pZ-5iH" firstAttribute="leading" secondItem="0Va-v8-nfB" secondAttribute="leading" constant="24" id="lVW-dd-VT8"/>
@@ -719,6 +801,7 @@ how intense do you think you need to be cheered up?</string>
                     </view>
                     <navigationItem key="navigationItem" id="2WT-he-2Uc"/>
                     <connections>
+                        <outlet property="navBar" destination="e0v-6M-yxl" id="JPj-qj-7Kw"/>
                         <outlet property="scaleSlider" destination="NfW-C8-BrN" id="RkM-hC-dS1"/>
                         <segue destination="Nme-VA-Ttw" kind="show" identifier="toReason" id="FrB-i7-GOI"/>
                     </connections>
@@ -1030,6 +1113,13 @@ how intense do you think you need to be cheered up?</string>
                                     <constraint firstAttribute="height" constant="200" id="buP-Bn-Si9"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o1l-yB-UBG" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="SMU-rT-pql"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iQ4-om-lf7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1037,6 +1127,7 @@ how intense do you think you need to be cheered up?</string>
                             <constraint firstAttribute="bottom" secondItem="UX4-vV-9NQ" secondAttribute="bottom" id="2sH-Bu-LmF"/>
                             <constraint firstItem="VdY-At-obO" firstAttribute="top" secondItem="iQ4-om-lf7" secondAttribute="top" constant="64" id="3dm-NG-6yQ"/>
                             <constraint firstItem="GL8-jW-oA2" firstAttribute="leading" secondItem="gz3-xv-iul" secondAttribute="leading" id="3ec-ro-Bof"/>
+                            <constraint firstItem="o1l-yB-UBG" firstAttribute="top" secondItem="iQ4-om-lf7" secondAttribute="top" id="5NL-Uq-bgz"/>
                             <constraint firstItem="h9c-fg-gWP" firstAttribute="leading" secondItem="iQ4-om-lf7" secondAttribute="leading" constant="48" id="8tu-ml-HnD"/>
                             <constraint firstItem="GL8-jW-oA2" firstAttribute="trailing" secondItem="gz3-xv-iul" secondAttribute="trailing" id="EBg-ax-ZwG"/>
                             <constraint firstItem="nNZ-gZ-8LT" firstAttribute="top" secondItem="GL8-jW-oA2" secondAttribute="bottom" constant="18" id="GzP-wZ-RQQ"/>
@@ -1044,6 +1135,7 @@ how intense do you think you need to be cheered up?</string>
                             <constraint firstItem="gz3-xv-iul" firstAttribute="leading" secondItem="bEx-Ma-BOO" secondAttribute="leading" id="HhL-av-xK6"/>
                             <constraint firstItem="9hp-hP-K6j" firstAttribute="leading" secondItem="iQ4-om-lf7" secondAttribute="leading" id="M9U-7I-Yby"/>
                             <constraint firstItem="9hp-hP-K6j" firstAttribute="trailing" secondItem="iQ4-om-lf7" secondAttribute="trailing" id="NOS-R3-e2c"/>
+                            <constraint firstItem="o1l-yB-UBG" firstAttribute="leading" secondItem="iQ4-om-lf7" secondAttribute="leading" id="PFY-q0-qmo"/>
                             <constraint firstItem="bEx-Ma-BOO" firstAttribute="leading" secondItem="tvK-dm-coa" secondAttribute="leading" id="Qap-s7-m4e"/>
                             <constraint firstItem="9hp-hP-K6j" firstAttribute="top" secondItem="CwX-Qf-omw" secondAttribute="top" id="Tvt-YH-gwm"/>
                             <constraint firstItem="nNZ-gZ-8LT" firstAttribute="trailing" secondItem="GL8-jW-oA2" secondAttribute="trailing" id="UeI-kx-1Mo"/>
@@ -1062,10 +1154,12 @@ how intense do you think you need to be cheered up?</string>
                             <constraint firstItem="tvK-dm-coa" firstAttribute="top" secondItem="VdY-At-obO" secondAttribute="bottom" constant="64" id="oHo-TZ-eyZ"/>
                             <constraint firstItem="nNZ-gZ-8LT" firstAttribute="leading" secondItem="GL8-jW-oA2" secondAttribute="leading" id="pKw-96-0q1"/>
                             <constraint firstItem="tvK-dm-coa" firstAttribute="trailing" secondItem="VdY-At-obO" secondAttribute="trailing" id="riL-hg-dfM"/>
+                            <constraint firstItem="o1l-yB-UBG" firstAttribute="trailing" secondItem="iQ4-om-lf7" secondAttribute="trailing" id="srs-XO-rTw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="I1f-F7-EfD"/>
                     <connections>
+                        <outlet property="navBar" destination="o1l-yB-UBG" id="8NB-8B-Hvt"/>
                         <segue destination="El3-G7-cvk" kind="show" identifier="toAdvice" id="HCs-kh-qkt"/>
                     </connections>
                 </viewController>
@@ -1113,6 +1207,13 @@ how intense do you think you need to be cheered up?</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dEz-rJ-kmv" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="d8y-QO-vCH"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IQf-ed-KJs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1120,10 +1221,13 @@ how intense do you think you need to be cheered up?</string>
                             <constraint firstAttribute="bottom" secondItem="MJ4-I3-GyU" secondAttribute="bottom" id="0pq-ik-Bv1"/>
                             <constraint firstItem="Qjt-Gd-3ia" firstAttribute="top" secondItem="Bpg-Lk-034" secondAttribute="top" id="28w-hg-3Y8"/>
                             <constraint firstItem="Qjt-Gd-3ia" firstAttribute="trailing" secondItem="IQf-ed-KJs" secondAttribute="trailing" id="2DG-NS-Bxl"/>
+                            <constraint firstItem="dEz-rJ-kmv" firstAttribute="leading" secondItem="IQf-ed-KJs" secondAttribute="leading" id="6gE-C9-H66"/>
                             <constraint firstItem="Qjt-Gd-3ia" firstAttribute="leading" secondItem="IQf-ed-KJs" secondAttribute="leading" id="70a-1q-Pa7"/>
+                            <constraint firstItem="dEz-rJ-kmv" firstAttribute="trailing" secondItem="IQf-ed-KJs" secondAttribute="trailing" id="M1U-pL-87o"/>
                             <constraint firstItem="9UI-dX-fmX" firstAttribute="top" secondItem="IQf-ed-KJs" secondAttribute="top" constant="64" id="NbP-Xp-pmm"/>
                             <constraint firstItem="Urd-yx-3nh" firstAttribute="leading" secondItem="IQf-ed-KJs" secondAttribute="leading" constant="48" id="QSx-J3-O4W"/>
                             <constraint firstItem="X7s-jH-UZn" firstAttribute="centerX" secondItem="Bpg-Lk-034" secondAttribute="centerX" id="V5q-u9-1p4"/>
+                            <constraint firstItem="dEz-rJ-kmv" firstAttribute="top" secondItem="IQf-ed-KJs" secondAttribute="top" id="VyW-q5-C5r"/>
                             <constraint firstItem="X7s-jH-UZn" firstAttribute="centerY" secondItem="Bpg-Lk-034" secondAttribute="centerY" id="bGA-GN-ast"/>
                             <constraint firstItem="IQf-ed-KJs" firstAttribute="trailing" secondItem="9UI-dX-fmX" secondAttribute="trailing" constant="24" id="gIK-JO-zxl"/>
                             <constraint firstItem="9UI-dX-fmX" firstAttribute="top" secondItem="Urd-yx-3nh" secondAttribute="bottom" constant="-226" id="kGC-pv-Q2P"/>
@@ -1136,6 +1240,7 @@ how intense do you think you need to be cheered up?</string>
                     <navigationItem key="navigationItem" id="mKk-Uk-KQE"/>
                     <connections>
                         <outlet property="backgroundImage" destination="Qjt-Gd-3ia" id="Tdg-00-j2o"/>
+                        <outlet property="navBar" destination="dEz-rJ-kmv" id="vc1-AM-xml"/>
                         <segue destination="uny-x4-LER" kind="show" identifier="toSuggestActivity" id="pg2-9w-kOs"/>
                     </connections>
                 </viewController>
@@ -1143,10 +1248,10 @@ how intense do you think you need to be cheered up?</string>
             </objects>
             <point key="canvasLocation" x="4311.594202898551" y="124.55357142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Detect Emotion Suggest Activity View Controller-->
         <scene sceneID="aoo-Re-y6Q">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="uny-x4-LER" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="uny-x4-LER" customClass="DetectEmotionSuggestActivityViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3w8-wZ-gWj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1226,12 +1331,21 @@ Do you want to start now?</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1V-HB-VSo" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="7FG-gn-lxF"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bi6-ep-JHJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="D1V-HB-VSo" firstAttribute="top" secondItem="Bi6-ep-JHJ" secondAttribute="top" id="7Zs-Uh-kAf"/>
                             <constraint firstItem="3as-GI-k6f" firstAttribute="centerX" secondItem="Gzb-iW-F76" secondAttribute="centerX" id="949-Ui-BKr"/>
                             <constraint firstItem="pet-U7-sgb" firstAttribute="top" secondItem="3w8-wZ-gWj" secondAttribute="top" id="EYL-hI-87r"/>
+                            <constraint firstItem="D1V-HB-VSo" firstAttribute="leading" secondItem="Bi6-ep-JHJ" secondAttribute="leading" id="FH6-yM-0uK"/>
                             <constraint firstItem="d0L-Gk-nz4" firstAttribute="leading" secondItem="Bi6-ep-JHJ" secondAttribute="leading" constant="24" id="GGM-bb-xpr"/>
                             <constraint firstAttribute="bottom" secondItem="pet-U7-sgb" secondAttribute="bottom" id="IJy-3k-qsX"/>
                             <constraint firstItem="Bi6-ep-JHJ" firstAttribute="trailing" secondItem="d0L-Gk-nz4" secondAttribute="trailing" constant="24" id="KMd-OS-WQE"/>
@@ -1246,9 +1360,13 @@ Do you want to start now?</string>
                             <constraint firstItem="3as-GI-k6f" firstAttribute="top" secondItem="Gzb-iW-F76" secondAttribute="bottom" constant="24" id="j7J-KQ-FPg"/>
                             <constraint firstAttribute="bottom" secondItem="gXJ-Mz-ouC" secondAttribute="bottom" id="kc1-3k-9Cf"/>
                             <constraint firstItem="d0L-Gk-nz4" firstAttribute="top" secondItem="wsP-Mk-ocs" secondAttribute="bottom" constant="-143" id="mHZ-Ar-ZQj"/>
+                            <constraint firstItem="D1V-HB-VSo" firstAttribute="trailing" secondItem="Bi6-ep-JHJ" secondAttribute="trailing" id="u0A-S6-w0e"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="I1K-g6-w6t"/>
+                    <connections>
+                        <outlet property="navBar" destination="D1V-HB-VSo" id="6oi-ns-L2Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aqw-rm-arq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1327,7 +1445,7 @@ Do you want to start now?</string>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="pvP-8n-yaw"/>
+        <segue reference="Pps-6o-9vR"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="analyzing" width="357" height="340"/>

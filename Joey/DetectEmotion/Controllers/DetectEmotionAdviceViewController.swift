@@ -9,10 +9,12 @@ import UIKit
 
 class DetectEmotionAdviceViewController: UIViewController {
 
+    @IBOutlet weak var navBar: NavigationBar!
     @IBOutlet weak var backgroundImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navBar.delegate = self
         let singleTap = UITapGestureRecognizer(target: self, action: #selector(onBackgroundTapped))
         singleTap.numberOfTapsRequired = 1
         singleTap.numberOfTouchesRequired = 1

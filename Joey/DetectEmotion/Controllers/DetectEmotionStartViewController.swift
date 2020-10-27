@@ -11,10 +11,12 @@ import AVFoundation
 
 class DetectEmotionStartViewController: UIViewController {
 
+    @IBOutlet weak var navBar: NavigationBar!
     @IBOutlet weak var buttonStart: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navBar.delegate = self
     }
     
     @IBAction func buttonStartTapped(_ sender: Any) {
