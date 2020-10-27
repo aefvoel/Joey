@@ -1,5 +1,5 @@
 //
-//  SituationViewController.swift
+//  AutomaticThoughtsViewController.swift
 //  Joey
 //
 //  Created by Setiawan Joddy on 26/10/20.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SituationViewController: UIViewController, UITextViewDelegate {
+class AutomaticThoughtsViewController: UIViewController, UITextViewDelegate {
     
     var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
@@ -17,12 +17,11 @@ class SituationViewController: UIViewController, UITextViewDelegate {
         return imageView
     }()
     
-    @IBOutlet weak var textViewSituationAnswer: UITextView!
+    @IBOutlet weak var textViewInitialThoughts: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        
         textViewPlaceholder()
 
         // Do any additional setup after loading the view.
@@ -40,11 +39,11 @@ class SituationViewController: UIViewController, UITextViewDelegate {
     }
     
     func textViewPlaceholder() {
-        textViewSituationAnswer.delegate = self
-        textViewSituationAnswer.text = "Type your answer here"
-        textViewSituationAnswer.textColor = UIColor.lightGray
+        textViewInitialThoughts.delegate = self
+        textViewInitialThoughts.text = "Type your answer here"
+        textViewInitialThoughts.textColor = UIColor.lightGray
     }
-    
+
     /*
     // MARK: - Navigation
 

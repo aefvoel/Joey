@@ -5,14 +5,16 @@
         <attribute name="testedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
     <entity name="Thought" representedClassName="Thought" syncable="YES" codeGenerationType="class">
-        <attribute name="alternate" optional="YES" attributeType="String"/>
-        <attribute name="behaviour" optional="YES" attributeType="String"/>
-        <attribute name="emotion" optional="YES" attributeType="String"/>
+        <attribute name="alternate_thoughts" optional="YES" attributeType="String"/>
+        <attribute name="evidence_not_support" optional="YES" attributeType="String"/>
+        <attribute name="evidence_support" optional="YES" attributeType="String"/>
+        <attribute name="moods" optional="YES" attributeType="String"/>
+        <attribute name="new_moods" optional="YES" attributeType="String"/>
         <attribute name="situation" optional="YES" attributeType="String"/>
         <attribute name="thoughts" optional="YES" attributeType="String"/>
     </entity>
     <elements>
         <element name="Emotion" positionX="-63" positionY="-18" width="128" height="73"/>
-        <element name="Thought" positionX="-54" positionY="9" width="128" height="118"/>
+        <element name="Thought" positionX="-54" positionY="9" width="128" height="148"/>
     </elements>
 </model>
