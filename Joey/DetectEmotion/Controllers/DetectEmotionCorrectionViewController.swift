@@ -18,6 +18,16 @@ class DetectEmotionCorrectionViewController: UIViewController {
     }
     
     @IBAction func onAnswerButtonTapped(_ sender: UIButton) {
+        switch sender.tag {
+        case 1:
+            data?.correctEmotion = .happy
+        case 2:
+            data?.correctEmotion = .neutral
+        case 3:
+            data?.correctEmotion = .angry
+        default:
+            data?.correctEmotion = .sad
+        }
         performSegue(withIdentifier: "toScale", sender: nil)
     }
     

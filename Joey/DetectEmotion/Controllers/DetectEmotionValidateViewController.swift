@@ -24,7 +24,7 @@ class DetectEmotionValidateViewController: UIViewController {
     }
     
     @IBAction func invalidResultTapped(_ sender: Any) {
-        data?.isDetectionResultValid = true
+        data?.isDetectionResultValid = false
         performSegue(withIdentifier: "toWrongResult", sender: nil)
     }
     

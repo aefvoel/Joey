@@ -11,7 +11,7 @@ import ARKit
 class DetectEmotionAnalyzeViewController: UIViewController {
 
     @IBOutlet weak var navBar: NavigationBar!
-    var emotion: String?
+    var emotion: FollowUp.EmotionType?
     
     @IBOutlet weak var sceneView: ARSCNView!
     
@@ -67,13 +67,13 @@ extension DetectEmotionAnalyzeViewController: ARSCNViewDelegate {
         let data = FaceData(faceAnchor)
         
         if data.browDownRight > 0.3 && data.browDownLeft > 0.3 {
-            emotion = "Angry"
+            emotion = .angry
         } else if data.mouthFrownRight > 0.3 && data.mouthFrownLeft > 0.3 {
-            emotion = "Sad"
+            emotion = .sad
         } else if data.mouthSmileRight > 0.3 && data.mouthSmileLeft > 0.3 {
-            emotion = "Happy"
+            emotion = .happy
         } else {
-            emotion = "Neutral"
+            emotion = .neutral
         }
         
         faceGeometry.update(from: faceAnchor.geometry)
