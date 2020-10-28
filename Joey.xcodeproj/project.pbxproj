@@ -52,6 +52,7 @@
 		5AD1E5B22541403B00BD18D5 /* ActivityListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1E5B12541403B00BD18D5 /* ActivityListCell.swift */; };
 		5AD1E5B7254141D000BD18D5 /* ActivityListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1E5B6254141D000BD18D5 /* ActivityListModel.swift */; };
 		AB46C13D25486A6D00D2F22C /* AfterActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB46C13C25486A6D00D2F22C /* AfterActivityViewController.swift */; };
+		AB7292D6254911ED0003B21E /* StartMirrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7292D5254911ED0003B21E /* StartMirrorViewController.swift */; };
 		AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A174253730F9003F8823 /* AppDelegate.swift */; };
 		AB92A177253730F9003F8823 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A176253730F9003F8823 /* SceneDelegate.swift */; };
 		AB92A179253730F9003F8823 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A178253730F9003F8823 /* ViewController.swift */; };
@@ -143,6 +144,7 @@
 		5AD1E5B6254141D000BD18D5 /* ActivityListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListModel.swift; sourceTree = "<group>"; };
 		5AD838C8253E8BCC0042D14E /* Yuanti.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yuanti.ttc; sourceTree = "<group>"; };
 		AB46C13C25486A6D00D2F22C /* AfterActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterActivityViewController.swift; sourceTree = "<group>"; };
+		AB7292D5254911ED0003B21E /* StartMirrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMirrorViewController.swift; sourceTree = "<group>"; };
 		AB92A171253730F9003F8823 /* Joey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB92A174253730F9003F8823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB92A176253730F9003F8823 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				16170AD925411EAE0095D1A5 /* MirrorViewController.swift */,
+				AB7292D5254911ED0003B21E /* StartMirrorViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -784,6 +787,7 @@
 				16EE8CA425414A1200FA9CE6 /* InstructionView.swift in Sources */,
 				166C533B25373359007C5EF3 /* OnboardingViewController.swift in Sources */,
 				AB92A17F253730F9003F8823 /* Joey.xcdatamodeld in Sources */,
+				AB7292D6254911ED0003B21E /* StartMirrorViewController.swift in Sources */,
 				ABD9DE32254157C300C2154C /* StartPracticeSmilingViewController.swift in Sources */,
 				5AAE9BBA253F08820075966B /* PrivPolicyTableViewController.swift in Sources */,
 				5AD1E5B7254141D000BD18D5 /* ActivityListModel.swift in Sources */,
