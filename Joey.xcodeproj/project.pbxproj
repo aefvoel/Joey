@@ -60,7 +60,7 @@
 		5AAE9BBA253F08820075966B /* PrivPolicyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE9BB9253F08820075966B /* PrivPolicyTableViewController.swift */; };
 		5AD1E5AD2541363200BD18D5 /* ActivityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1E5AC2541363200BD18D5 /* ActivityListViewController.swift */; };
 		5AD1E5B22541403B00BD18D5 /* ActivityListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1E5B12541403B00BD18D5 /* ActivityListCell.swift */; };
-		5AD1E5B7254141D000BD18D5 /* ActivityListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1E5B6254141D000BD18D5 /* ActivityListModel.swift */; };
+		5AD1E5B7254141D000BD18D5 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		AB46C13D25486A6D00D2F22C /* AfterActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB46C13C25486A6D00D2F22C /* AfterActivityViewController.swift */; };
 		AB7292D6254911ED0003B21E /* StartMirrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7292D5254911ED0003B21E /* StartMirrorViewController.swift */; };
 		AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A174253730F9003F8823 /* AppDelegate.swift */; };
@@ -74,7 +74,6 @@
 		AB92A19A253730FA003F8823 /* JoeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A199253730FA003F8823 /* JoeyUITests.swift */; };
 		AB92A1B5253747E4003F8823 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = AB92A1B4253747E4003F8823 /* Charts */; };
 		AB92A1BC25374831003F8823 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB92A1BB25374831003F8823 /* CloudKit.framework */; };
-		AB933DE025406D4D00DBBD0D /* TOSPPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB933DDF25406D4D00DBBD0D /* TOSPPViewController.swift */; };
 		AB9857CB253C9F3D00485B29 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9857CA253C9F3D00485B29 /* BottomSheetViewController.swift */; };
 		AB9857D4253CB24E00485B29 /* FittedSheets in Frameworks */ = {isa = PBXBuildFile; productRef = AB9857D3253CB24E00485B29 /* FittedSheets */; };
 		ABD9DE32254157C300C2154C /* StartPracticeSmilingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9DE31254157C300C2154C /* StartPracticeSmilingViewController.swift */; };
@@ -734,7 +733,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					AB92A170253730F9003F8823 = {
 						CreatedOnToolsVersion = 12.0.1;
@@ -826,7 +825,7 @@
 				AB7292D6254911ED0003B21E /* StartMirrorViewController.swift in Sources */,
 				ABD9DE32254157C300C2154C /* StartPracticeSmilingViewController.swift in Sources */,
 				5AAE9BBA253F08820075966B /* PrivPolicyTableViewController.swift in Sources */,
-				5AD1E5B7254141D000BD18D5 /* ActivityListModel.swift in Sources */,
+				5AD1E5B7254141D000BD18D5 /* (null) in Sources */,
 				AB46C13D25486A6D00D2F22C /* AfterActivityViewController.swift in Sources */,
 				5AD1E5B22541403B00BD18D5 /* ActivityListCell.swift in Sources */,
 				5A8C6EA6253EA57600F95286 /* TermsOfServiceModel.swift in Sources */,
@@ -851,7 +850,6 @@
 				169C0744254143A90071387C /* TextViewFixed.swift in Sources */,
 				5A9DA16125406BFE0090EC41 /* TOSPPViewController.swift in Sources */,
 				5A68412C2547D56400CDFB59 /* EvidenceNotSupportViewController.swift in Sources */,
-				AB933DE025406D4D00DBBD0D /* TOSPPViewController.swift in Sources */,
 				5A0FD165254718260048B757 /* AutomaticThoughtsViewController.swift in Sources */,
 				5AAE9BB5253F08610075966B /* PrivPolicyTableViewCell.swift in Sources */,
 				16170AD0254105070095D1A5 /* PracticeSmilingViewController.swift in Sources */,
@@ -861,7 +859,6 @@
 				16475D9A2547DAE70074D025 /* DetectEmotionSuggestActivityViewController.swift in Sources */,
 				16170AAB254103460095D1A5 /* ActivitiesViewController.swift in Sources */,
 				ABECBF17253D8E7600EF7D43 /* Activity.swift in Sources */,
-				AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */,
 				5AD1E5AD2541363200BD18D5 /* ActivityListViewController.swift in Sources */,
 				16AA990B253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift in Sources */,
 				16170ABB254103C20095D1A5 /* JacobsonViewController.swift in Sources */,
@@ -870,7 +867,6 @@
 				169C073625413C300071387C /* InstructionViewController.swift in Sources */,
 				5A6841272547D45100CDFB59 /* EvidenceViewController.swift in Sources */,
 				5A68414C25482AD200CDFB59 /* ThoughtsRecordHelper.swift in Sources */,
-				166C534D253733A0007C5EF3 /* DetectEmotionStartViewController.swift in Sources */,
 				16475D9F2547DBA80074D025 /* DetectEmotionCorrectionViewController.swift in Sources */,
 				167E0E73253EA1CB00602784 /* FaceData.swift in Sources */,
 				162142DC25468B9D001BFF86 /* DetectEmotionScaleViewController.swift in Sources */,

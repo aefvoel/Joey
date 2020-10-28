@@ -9,7 +9,6 @@ import UIKit
 
 class InstructionViewController: UIViewController {
     
-    @IBOutlet weak var navBar: NavigationBar!
     @IBOutlet var instructionView: InstructionView!
     var activityInstruction: ActivitiesInstruction?
 
@@ -20,7 +19,6 @@ class InstructionViewController: UIViewController {
         if let data = activityInstruction {
             instructionView.setupData(data: data)
         }
-        navBar.delegate = self
     }
     
     @IBAction func buttonContinueTapped(_ sender: Any) {

@@ -28,7 +28,7 @@ var activitiesInstructionArray = [
         whyItWorks: ["Terpercaya", "Bagus", "Nyaman"],
         activityImage: #imageLiteral(resourceName: "mirrorTechnique_activityList"),
         activityShortDesc: "Release negative thoughts",
-        activityHomeImage: #imageLiteral(resourceName: "OB_joeyMascott"),
+        activityHomeImage: #imageLiteral(resourceName: "Mirror Technique_miniCard"),
         activityInstructionImage: #imageLiteral(resourceName: "instruction_practicesmiling")
     ),
     
@@ -40,7 +40,7 @@ var activitiesInstructionArray = [
         whyItWorks: ["Terpercaya", "Bagus", "Nyaman"],
         activityImage: #imageLiteral(resourceName: "practiceSmiling_activityList"),
         activityShortDesc: "Practice Mindfulness",
-        activityHomeImage: #imageLiteral(resourceName: "OB_joeyMascott"),
+        activityHomeImage: #imageLiteral(resourceName: "practiceSmiling_miniCard"),
         activityInstructionImage: #imageLiteral(resourceName: "instruction_practicesmiling")
     ),
     
@@ -52,7 +52,7 @@ var activitiesInstructionArray = [
         whyItWorks: ["Terpercaya", "Bagus", "Nyaman"],
         activityImage: #imageLiteral(resourceName: "jackobsRelaxation_activityList"),
         activityShortDesc: "Release negative thoughts",
-        activityHomeImage: #imageLiteral(resourceName: "mascotImage"),
+        activityHomeImage: #imageLiteral(resourceName: "Jackob_miniCard"),
         activityInstructionImage: #imageLiteral(resourceName: "instruction_jacobson")
     ),
     
