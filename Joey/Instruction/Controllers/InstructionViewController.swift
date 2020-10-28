@@ -9,11 +9,13 @@ import UIKit
 
 class InstructionViewController: UIViewController {
     
+    @IBOutlet weak var navBar: NavigationBar!
     @IBOutlet var instructionView: InstructionView!
     var activityInstruction: ActivitiesInstruction?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navBar.delegate = self
         if let data = activityInstruction {
             instructionView.setupData(data: data)
         }
