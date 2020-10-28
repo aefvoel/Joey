@@ -14,6 +14,7 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var activitiesCollectionView: UICollectionView!
     @IBOutlet weak var activitiesChartView: LineChartView!
     @IBOutlet weak var labelUserName: UILabel!
+    var selectedActivity: ActivitiesInstruction?
     override func viewDidLoad() {
         super.viewDidLoad()
         registerNib()
@@ -91,6 +92,12 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
         activitiesChartView.data = lineChartData
         activitiesChartView.chartDescription?.text = "Your Mood"
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? InstructionViewController {
+            vc.activityInstruction = selectedActivity
+        }
+    }
     /*
      // MARK: - Navigation
      
@@ -102,19 +109,24 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
      */
 }
 
-extension BottomSheetViewController: UICollectionViewDataSource {
+extension BottomSheetViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return activityList.count
+        return activitiesInstructionArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ActivitiesCollectionViewCell.reuseIdentifier,
                                                          for: indexPath) as? ActivitiesCollectionViewCell {
-            cell.configureCell(label: activityList[indexPath.row].label, image: activityList[indexPath.row].image)
+            cell.configureCell(label: activitiesInstructionArray[indexPath.row].title, image: activitiesInstructionArray[indexPath.row].activityHomeImage)
             return cell
         }
         return UICollectionViewCell()
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedActivity = activitiesInstructionArray[indexPath.row]
+        performSegue(withIdentifier: "toInstruction", sender: nil)
+    }
+    
 }
 //extension BottomSheetViewController: UICollectionViewDelegateFlowLayout {
 //    func collectionView(_ collectionView: UICollectionView,

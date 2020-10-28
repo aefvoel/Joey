@@ -11,6 +11,7 @@ class ActivityListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var navBar: NavigationBar!
     var selectedActivity: ActivitiesInstruction?
     var activityArray: [ActivitiesInstruction] = activitiesInstructionArray
     
@@ -21,6 +22,7 @@ class ActivityListViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        navBar.delegate = self
         
         
     }

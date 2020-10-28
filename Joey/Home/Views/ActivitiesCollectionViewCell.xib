@@ -8,7 +8,7 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="Yuanti.ttc">
-            <string>STYuanti-SC-Regular</string>
+            <string>STYuanti-SC-Bold</string>
         </array>
     </customFonts>
     <objects>
@@ -28,13 +28,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbW-6v-gmq">
                                 <rect key="frame" x="0.0" y="110" width="109" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" image="queensperil" translatesAutoresizingMaskIntoConstraints="NO" id="ZrY-XT-NIW" customClass="RoundedImage" customModule="Joey" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" image="Jackob_miniCard" translatesAutoresizingMaskIntoConstraints="NO" id="ZrY-XT-NIW" customClass="RoundedImage" customModule="Joey" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="109" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
@@ -59,10 +60,10 @@
     </objects>
     <designables>
         <designable name="ZrY-XT-NIW">
-            <size key="intrinsicContentSize" width="640" height="1000"/>
+            <size key="intrinsicContentSize" width="862" height="862"/>
         </designable>
     </designables>
     <resources>
-        <image name="queensperil" width="640" height="1000"/>
+        <image name="Jackob_miniCard" width="862" height="862"/>
     </resources>
 </document>

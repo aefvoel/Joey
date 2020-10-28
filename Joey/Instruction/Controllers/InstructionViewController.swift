@@ -13,12 +13,14 @@ class InstructionViewController: UIViewController {
     @IBOutlet var instructionView: InstructionView!
     var activityInstruction: ActivitiesInstruction?
 
+    @IBOutlet weak var navBar: NavigationBar!
     override func viewDidLoad() {
         super.viewDidLoad()
         navBar.delegate = self
         if let data = activityInstruction {
             instructionView.setupData(data: data)
         }
+        navBar.delegate = self
     }
     
     @IBAction func buttonContinueTapped(_ sender: Any) {
@@ -28,7 +30,7 @@ class InstructionViewController: UIViewController {
         case "Jacobson's Technique":
             performSegue(withIdentifier: "toJacobson", sender: nil)
         case "Smile":
-            performSegue(withIdentifier: "toSmile", sender: nil)
+            performSegue(withIdentifier: "toSmiling", sender: nil)
         default:
             navigationController?.popViewController(animated: true)
         }
