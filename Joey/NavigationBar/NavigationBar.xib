@@ -55,7 +55,6 @@
                 </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="wpF-P1-aoN"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="shB-5G-YQw" firstAttribute="leading" secondItem="unR-Ml-tWu" secondAttribute="trailing" id="9Ni-VS-66h"/>
                 <constraint firstItem="shB-5G-YQw" firstAttribute="firstBaseline" secondItem="0Ko-Zy-cmK" secondAttribute="firstBaseline" id="QBt-wQ-szh"/>
