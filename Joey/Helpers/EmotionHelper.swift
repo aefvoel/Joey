@@ -16,10 +16,13 @@ class EmotionHelper {
         return appDelegate.persistentContainer.viewContext
     }()
     
-    static func save(emotion: String, onComplete: @escaping (Error?) -> Void) {
+    static func save(data: FollowUp, onComplete: @escaping (Error?) -> Void) {
         let entity = NSEntityDescription.entity(forEntityName: entityName, in: context)!
         let emotion = NSManagedObject(entity: entity, insertInto: context)
-        emotion.setValue(emotion, forKey: "category")
+        emotion.setValue(data.emotion.rawValue, forKey: "emotion")
+        emotion.setValue(data.isDetectionResultValid, forKey: "isResultVaid")
+        emotion.setValue(data.reason, forKey: "reason")
+        emotion.setValue(data.scale, forKey: "scale")
         emotion.setValue(Date(), forKey: "testedAt")
         
         do {
