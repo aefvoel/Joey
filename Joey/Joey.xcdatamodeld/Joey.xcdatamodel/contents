@@ -11,11 +11,24 @@
         <attribute name="alternate" optional="YES" attributeType="String"/>
         <attribute name="behaviour" optional="YES" attributeType="String"/>
         <attribute name="emotion" optional="YES" attributeType="String"/>
+        <attribute name="isResultValid" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="reason" optional="YES" attributeType="String"/>
+        <attribute name="scale" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="testedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="ThoughtsRecord" representedClassName="ThoughtsRecord" syncable="YES" codeGenerationType="class">
+        <attribute name="alternate_thoughts" optional="YES" attributeType="String"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="evidence_not_support" optional="YES" attributeType="String"/>
+        <attribute name="evidence_support" optional="YES" attributeType="String"/>
+        <attribute name="moods" optional="YES" attributeType="String"/>
+        <attribute name="new_moods" optional="YES" attributeType="String"/>
         <attribute name="situation" optional="YES" attributeType="String"/>
         <attribute name="thoughts" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Emotion" positionX="-63" positionY="-18" width="128" height="118"/>
-        <element name="Thought" positionX="-54" positionY="9" width="128" height="118"/>
+        <element name="Emotion" positionX="-63" positionY="-18" width="128" height="73"/>
+        <element name="Thought" positionX="160" positionY="192" width="128" height="148"/>
+        <element name="ThoughtsRecord" positionX="-54" positionY="9" width="128" height="163"/>
     </elements>
 </model>

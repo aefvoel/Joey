@@ -1,17 +1,15 @@
 //
-//  SituationViewController.swift
+//  MoodsViewController.swift
 //  Joey
 //
-//  Created by Setiawan Joddy on 26/10/20.
+//  Created by Setiawan Joddy on 27/10/20.
 //
 
 import UIKit
 
-class SituationViewController: UIViewController, UITextViewDelegate {
+class MoodsViewController: UIViewController {
     
-    @IBOutlet weak var navBar: NavigationBar!
-    
-    var data = ThoughtsRecordTemp()
+    var data: ThoughtsRecordTemp?
     
     var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
@@ -21,23 +19,39 @@ class SituationViewController: UIViewController, UITextViewDelegate {
         return imageView
     }()
     
-    @IBOutlet weak var textViewSituationAnswer: UITextView!
+    @IBOutlet weak var navBar: NavigationBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        textViewPlaceholder()
-        
+
         // Do any additional setup after loading the view.
     }
     
     @IBAction func onClickContinueButton(_ sender: Any) {
-        guard let answer = textViewSituationAnswer?.text else { return }
-        data.situation = answer
+        performSegue(withIdentifier: "toAutoThoughts", sender: nil)
+    }
+    
+    @IBAction func answerTapped(_ sender: UIButton) {
+        if !sender.isSelected {
+            sender.backgroundColor = #colorLiteral(red: 0.3529411765, green: 0.7607843137, blue: 0.7411764706, alpha: 1)
+            sender.setTitleColor(.white, for: .normal)
+            sender.tintColor = .clear
+            sender.isSelected = true
+            data?.moods.append(sender.titleLabel!.text!)
+        }
+        else {
+            sender.backgroundColor = .white
+            sender.setTitleColor(.black, for: .normal)
+            sender.isSelected = false
+            if let index = data?.moods.firstIndex(of: sender.titleLabel!.text!) {
+                data?.moods.remove(at: index)
+            }
+        }
+        print(data?.moods)
     }
     
     func setupUI(){
-        
         navBar.delegate = self
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.view.insertSubview(imageView, at: 0)
@@ -48,33 +62,13 @@ class SituationViewController: UIViewController, UITextViewDelegate {
             imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
-    
-    func textViewPlaceholder() {
-        textViewSituationAnswer.delegate = self
-        textViewSituationAnswer.text = "Type your answer here"
-        textViewSituationAnswer.textColor = UIColor.lightGray
-    }
-    
-    func textViewDidBeginEditing(_ textView: UITextView) {
-        if textViewSituationAnswer.textColor == UIColor.lightGray {
-            textViewSituationAnswer.text = nil
-            textViewSituationAnswer.textColor = UIColor.black
-        }
-    }
-    
-    func textViewDidEndEditing(_ textView: UITextView) {
-        if textViewSituationAnswer.text.isEmpty {
-            textViewSituationAnswer.text = "Type your answer here"
-            textViewSituationAnswer.textColor = UIColor.lightGray
-        }
-    }
-    
+
     
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? MoodsViewController {
+        if let vc = segue.destination as? AutomaticThoughtsViewController {
             vc.data = data
         }
     }
