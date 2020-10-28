@@ -21,6 +21,8 @@ class EvidenceNotSupportViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var textView: UITextView!
     
+    @IBOutlet weak var navBar: NavigationBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -34,6 +36,7 @@ class EvidenceNotSupportViewController: UIViewController, UITextViewDelegate {
     }
     
     func setupUI(){
+        navBar.delegate = self
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.view.insertSubview(imageView, at: 0)
         NSLayoutConstraint.activate([
@@ -64,14 +67,15 @@ class EvidenceNotSupportViewController: UIViewController, UITextViewDelegate {
         }
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let vc = segue.destination as? AlternativeThoughtsViewController {
+            vc.data = data
+        }
     }
-    */
+    
 
 }

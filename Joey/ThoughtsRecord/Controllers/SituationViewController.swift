@@ -9,7 +9,9 @@ import UIKit
 
 class SituationViewController: UIViewController, UITextViewDelegate {
     
-    var data: ThoughtsRecordTemp?
+    @IBOutlet weak var navBar: NavigationBar!
+    
+    var data = ThoughtsRecordTemp()
     
     var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
@@ -24,18 +26,19 @@ class SituationViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        
         textViewPlaceholder()
-
+        
         // Do any additional setup after loading the view.
     }
     
     @IBAction func onClickContinueButton(_ sender: Any) {
         guard let answer = textViewSituationAnswer?.text else { return }
-        data?.situation = answer
+        data.situation = answer
     }
     
     func setupUI(){
+        
+        navBar.delegate = self
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.view.insertSubview(imageView, at: 0)
         NSLayoutConstraint.activate([
@@ -66,14 +69,15 @@ class SituationViewController: UIViewController, UITextViewDelegate {
         }
     }
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let vc = segue.destination as? MoodsViewController {
+            vc.data = data
+        }
     }
-    */
+    
 
 }

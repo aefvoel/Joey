@@ -8,11 +8,12 @@
 import Foundation
 
 struct ThoughtsRecordTemp {
-    var situation: String
-    var moods: [String]
-    var initialThoughts: String
-    var evidence: String
-    var notSupportedEvidence: String
-    var alternativeThoughts: String
-    var newMoods: [String]
+    var situation: String?
+    var moods: [String] = []
+    var initialThoughts: String?
+    var evidence: String?
+    var notSupportedEvidence: String?
+    var alternativeThoughts: String?
+    var newMoods: [String] = []
+    let createdAt = Date()
 }

@@ -18,6 +18,7 @@
     </entity>
     <entity name="ThoughtsRecord" representedClassName="ThoughtsRecord" syncable="YES" codeGenerationType="class">
         <attribute name="alternate_thoughts" optional="YES" attributeType="String"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="evidence_not_support" optional="YES" attributeType="String"/>
         <attribute name="evidence_support" optional="YES" attributeType="String"/>
         <attribute name="moods" optional="YES" attributeType="String"/>
@@ -27,6 +28,7 @@
     </entity>
     <elements>
         <element name="Emotion" positionX="-63" positionY="-18" width="128" height="73"/>
-        <element name="ThoughtsRecord" positionX="-54" positionY="9" width="128" height="148"/>
+        <element name="Thought" positionX="160" positionY="192" width="128" height="148"/>
+        <element name="ThoughtsRecord" positionX="-54" positionY="9" width="128" height="163"/>
     </elements>
 </model>

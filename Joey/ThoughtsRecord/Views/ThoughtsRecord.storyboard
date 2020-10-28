@@ -18,39 +18,39 @@
         <!--Thoughts Record View Controller-->
         <scene sceneID="lnr-y3-p93">
             <objects>
-                <viewController storyboardIdentifier="ThoughtsRecordViewController" id="BYD-lP-QQX" customClass="ThoughtsRecordViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ThoughtsRecordViewController" modalPresentationStyle="fullScreen" id="BYD-lP-QQX" customClass="ThoughtsRecordViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ivt-tD-5Ag">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thoughts Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d71-4z-3ep">
-                                <rect key="frame" x="24" y="137" width="366" height="35"/>
+                                <rect key="frame" x="24" y="137" width="366" height="42"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TR-Icon" translatesAutoresizingMaskIntoConstraints="NO" id="C61-Ns-u2B">
-                                <rect key="frame" x="114" y="204" width="186" height="186"/>
+                                <rect key="frame" x="114" y="211" width="186" height="186"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4P-Hf-oH7">
-                                <rect key="frame" x="24" y="422" width="366" height="82"/>
+                                <rect key="frame" x="24" y="429" width="366" height="98"/>
                                 <string key="text">Thoughts record is a part of CBT that is already proven to help you challenge your negative thinking. All you have to do is following the steps and tell Joey what you really think and feel. It doesn’t have to be perfect! However, make it as specific and honest as possible.</string>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeZ-rP-h7g">
-                                <rect key="frame" x="24" y="528" width="366" height="49"/>
+                                <rect key="frame" x="24" y="551" width="366" height="59"/>
                                 <string key="text">Thoughts Record can help you to be aware of your negative thoughts, to create rational alternatives, to challenge negative (and unhelpful positive) thoughts</string>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whyitworks-icon" translatesAutoresizingMaskIntoConstraints="NO" id="JTj-TD-LZV">
-                                <rect key="frame" x="24" y="609" width="21" height="21"/>
+                                <rect key="frame" x="24" y="642" width="21" height="21"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCe-pO-lc0">
-                                <rect key="frame" x="53" y="609" width="89" height="21"/>
+                                <rect key="frame" x="53" y="642" width="87" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="RIk-Qv-I0o"/>
                                 </constraints>
@@ -108,6 +108,7 @@
                             <constraint firstItem="F4P-Hf-oH7" firstAttribute="top" secondItem="C61-Ns-u2B" secondAttribute="bottom" constant="32" id="xxY-Bz-xys"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="wmv-x5-a13"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IfI-zG-4B4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -203,21 +204,31 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j4c-DI-q3C" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="J6P-oK-AMj"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hd9-dn-A5V"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="wWz-gX-rQc" firstAttribute="trailing" secondItem="rOX-SD-4yK" secondAttribute="trailingMargin" id="ClA-Jm-9EY"/>
+                            <constraint firstItem="j4c-DI-q3C" firstAttribute="leading" secondItem="hd9-dn-A5V" secondAttribute="leading" id="HEo-36-b0J"/>
                             <constraint firstItem="gsV-aP-7be" firstAttribute="centerX" secondItem="rOX-SD-4yK" secondAttribute="centerX" id="HdH-PZ-NIZ"/>
                             <constraint firstItem="SUn-Qu-1Pb" firstAttribute="leading" secondItem="hd9-dn-A5V" secondAttribute="leading" constant="64" id="Hj4-aT-azt"/>
                             <constraint firstItem="hd9-dn-A5V" firstAttribute="trailing" secondItem="3Nl-8i-Q74" secondAttribute="trailing" constant="24" id="KSN-2f-lJb"/>
                             <constraint firstItem="hd9-dn-A5V" firstAttribute="bottom" secondItem="gak-SE-me5" secondAttribute="bottom" constant="608" id="LBg-VH-zgV"/>
+                            <constraint firstItem="j4c-DI-q3C" firstAttribute="top" secondItem="hd9-dn-A5V" secondAttribute="top" id="LWJ-ib-FT0"/>
                             <constraint firstItem="3Nl-8i-Q74" firstAttribute="top" secondItem="hd9-dn-A5V" secondAttribute="top" constant="84" id="O2n-7y-SKh"/>
                             <constraint firstItem="wWz-gX-rQc" firstAttribute="top" secondItem="eWY-jb-Lxo" secondAttribute="bottom" id="Pp8-id-mkn"/>
                             <constraint firstItem="SUn-Qu-1Pb" firstAttribute="top" secondItem="wWz-gX-rQc" secondAttribute="bottom" constant="68" id="S5O-Tj-Dez"/>
                             <constraint firstItem="hd9-dn-A5V" firstAttribute="trailing" secondItem="SUn-Qu-1Pb" secondAttribute="trailing" constant="64" id="bUu-a8-NdZ"/>
                             <constraint firstItem="eWY-jb-Lxo" firstAttribute="leading" secondItem="hd9-dn-A5V" secondAttribute="leading" constant="23" id="dPA-K2-jAp"/>
                             <constraint firstItem="eWY-jb-Lxo" firstAttribute="top" secondItem="3Nl-8i-Q74" secondAttribute="bottom" constant="42" id="dzq-hh-Sb0"/>
+                            <constraint firstItem="hd9-dn-A5V" firstAttribute="trailing" secondItem="j4c-DI-q3C" secondAttribute="trailing" id="haU-uA-9Jz"/>
                             <constraint firstItem="wWz-gX-rQc" firstAttribute="centerX" secondItem="rOX-SD-4yK" secondAttribute="centerX" id="ign-KS-rQr"/>
                             <constraint firstItem="3Nl-8i-Q74" firstAttribute="leading" secondItem="hd9-dn-A5V" secondAttribute="leading" constant="24" id="mNm-5Q-e4V"/>
                             <constraint firstItem="gak-SE-me5" firstAttribute="top" secondItem="gsV-aP-7be" secondAttribute="bottom" constant="33" id="o1F-kT-Mwq"/>
@@ -227,6 +238,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="DFH-R2-k5Q"/>
                     <connections>
+                        <outlet property="navBar" destination="j4c-DI-q3C" id="POo-F8-FaD"/>
                         <outlet property="textViewSituationAnswer" destination="yUF-JM-Peg" id="khd-5i-RBr"/>
                     </connections>
                 </viewController>
@@ -905,6 +917,13 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1K0-ST-YgA" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="r7O-qs-j87"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="x5w-Fp-oUR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -919,16 +938,20 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                             <constraint firstItem="vlQ-gr-0MG" firstAttribute="top" secondItem="x5w-Fp-oUR" secondAttribute="top" constant="84" id="SBM-VP-L91"/>
                             <constraint firstItem="ryL-t0-orx" firstAttribute="top" secondItem="Gio-4K-qfe" secondAttribute="bottom" constant="33" id="bVW-tH-kwe"/>
                             <constraint firstItem="Gio-4K-qfe" firstAttribute="centerX" secondItem="oOq-Hw-d9N" secondAttribute="centerX" id="emg-NA-OUb"/>
+                            <constraint firstItem="1K0-ST-YgA" firstAttribute="top" secondItem="x5w-Fp-oUR" secondAttribute="top" id="f8b-NV-O1w"/>
                             <constraint firstItem="x5w-Fp-oUR" firstAttribute="trailing" secondItem="ryL-t0-orx" secondAttribute="trailing" constant="24" id="h7y-5z-Jnd"/>
                             <constraint firstItem="p92-9P-m7V" firstAttribute="trailing" secondItem="oOq-Hw-d9N" secondAttribute="trailingMargin" id="ihm-b7-AJC"/>
                             <constraint firstAttribute="bottom" secondItem="LVr-x4-enK" secondAttribute="bottom" constant="72" id="jDO-BR-De7"/>
                             <constraint firstItem="p92-9P-m7V" firstAttribute="centerX" secondItem="oOq-Hw-d9N" secondAttribute="centerX" id="oHA-Qd-kBY"/>
+                            <constraint firstItem="1K0-ST-YgA" firstAttribute="leading" secondItem="x5w-Fp-oUR" secondAttribute="leading" id="qhb-j0-iFI"/>
                             <constraint firstItem="4zM-oo-Ct5" firstAttribute="leading" secondItem="x5w-Fp-oUR" secondAttribute="leading" constant="23" id="sjZ-2t-v4u"/>
+                            <constraint firstItem="x5w-Fp-oUR" firstAttribute="trailing" secondItem="1K0-ST-YgA" secondAttribute="trailing" id="tb4-QJ-3UJ"/>
                             <constraint firstItem="p92-9P-m7V" firstAttribute="top" secondItem="4zM-oo-Ct5" secondAttribute="bottom" id="wNq-uM-p8k"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0Z9-He-gmw"/>
                     <connections>
+                        <outlet property="navBar" destination="1K0-ST-YgA" id="kV8-Bm-A5B"/>
                         <outlet property="textViewInitialThoughts" destination="DvE-fe-fv3" id="lOP-Wg-NtX"/>
                     </connections>
                 </viewController>
@@ -979,10 +1002,10 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="K5O-gs-Uje">
-                                <rect key="frame" x="40" y="343" width="334" height="33"/>
+                                <rect key="frame" x="40" y="343" width="334" height="38"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qo3-BQ-McZ" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Happy">
@@ -1004,8 +1027,8 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                             <action selector="answerTapped:" destination="a9q-3B-cZH" eventType="touchUpInside" id="FZg-yf-lB3"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lae-Nf-sZw" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="179" y="0.0" width="155" height="33"/>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lae-Nf-sZw" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                        <rect key="frame" x="179" y="0.0" width="155" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Neutral">
@@ -1030,10 +1053,10 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="R9e-ac-pAw">
-                                <rect key="frame" x="40" y="392" width="334" height="33"/>
+                                <rect key="frame" x="40" y="397" width="334" height="38"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xP7-7r-H0r" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="33"/>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xP7-7r-H0r" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Angry">
@@ -1055,8 +1078,8 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                             <action selector="answerTapped:" destination="a9q-3B-cZH" eventType="touchUpInside" id="byN-9j-odq"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyX-1O-vga" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="179" y="0.0" width="155" height="33"/>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyX-1O-vga" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                        <rect key="frame" x="179" y="0.0" width="155" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Sad">
@@ -1081,10 +1104,10 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="NDu-DZ-2Z6">
-                                <rect key="frame" x="40" y="441" width="334" height="33"/>
+                                <rect key="frame" x="40" y="451" width="334" height="38"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Juj-MS-h47" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Anxious">
@@ -1107,7 +1130,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVO-7E-olH" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="179" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="179" y="0.0" width="155" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Guilty">
@@ -1132,10 +1155,10 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Ayk-ie-BpX">
-                                <rect key="frame" x="40" y="490" width="334" height="33"/>
+                                <rect key="frame" x="40" y="505" width="334" height="38"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ay-b0-IhI" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Stressed">
@@ -1158,7 +1181,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkg-Cb-LdB" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="179" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="179" y="0.0" width="155" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Dissapointed">
@@ -1183,10 +1206,10 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="C2H-BZ-dGi">
-                                <rect key="frame" x="40" y="539" width="334" height="33"/>
+                                <rect key="frame" x="40" y="559" width="334" height="38"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfc-7p-0S5" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Empty">
@@ -1209,7 +1232,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQP-rH-rih" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="179" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="179" y="0.0" width="155" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Ashamed">
@@ -1234,7 +1257,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFl-gc-ptI" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="64" y="596" width="286" height="45"/>
+                                <rect key="frame" x="64" y="621" width="286" height="45"/>
                                 <color key="backgroundColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="DS4-MU-ZpM"/>
@@ -1254,19 +1277,29 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="kRS-yZ-wOh" kind="show" id="j88-vU-BrL"/>
+                                    <action selector="onClickContinueButton:" destination="a9q-3B-cZH" eventType="touchUpInside" id="OQQ-qm-BGX"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zlr-Ks-xno" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="fdn-n5-1eh"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5HS-IZ-fcO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Zlr-Ks-xno" firstAttribute="top" secondItem="5HS-IZ-fcO" secondAttribute="top" id="1UG-8m-fj8"/>
                             <constraint firstItem="5HS-IZ-fcO" firstAttribute="trailing" secondItem="K5O-gs-Uje" secondAttribute="trailing" constant="40" id="3ct-Xn-rLq"/>
                             <constraint firstItem="K5O-gs-Uje" firstAttribute="centerX" secondItem="ZCb-cL-0vf" secondAttribute="centerX" id="6EA-fg-QGt"/>
+                            <constraint firstItem="Zlr-Ks-xno" firstAttribute="leading" secondItem="5HS-IZ-fcO" secondAttribute="leading" id="7jD-Zw-Moh"/>
                             <constraint firstItem="5HS-IZ-fcO" firstAttribute="trailing" secondItem="aFl-gc-ptI" secondAttribute="trailing" constant="64" id="8rj-Ps-Z5J"/>
                             <constraint firstItem="5HS-IZ-fcO" firstAttribute="trailing" secondItem="C2H-BZ-dGi" secondAttribute="trailing" constant="40" id="AO7-nA-29W"/>
                             <constraint firstItem="zfI-ku-sYQ" firstAttribute="leading" secondItem="5HS-IZ-fcO" secondAttribute="leading" constant="24" id="DDw-Us-g8N"/>
                             <constraint firstItem="aFl-gc-ptI" firstAttribute="top" secondItem="C2H-BZ-dGi" secondAttribute="bottom" constant="24" id="EL5-0Y-q39"/>
+                            <constraint firstItem="5HS-IZ-fcO" firstAttribute="trailing" secondItem="Zlr-Ks-xno" secondAttribute="trailing" id="HEF-uW-GZc"/>
                             <constraint firstItem="R9e-ac-pAw" firstAttribute="top" secondItem="K5O-gs-Uje" secondAttribute="bottom" constant="16" id="Hbm-N1-fqi"/>
                             <constraint firstItem="5HS-IZ-fcO" firstAttribute="bottom" secondItem="s6q-Tz-eXp" secondAttribute="bottom" constant="608" id="Hej-qs-mLI"/>
                             <constraint firstItem="R9e-ac-pAw" firstAttribute="centerX" secondItem="ZCb-cL-0vf" secondAttribute="centerX" id="INL-I2-LyW"/>
@@ -1296,6 +1329,10 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DY6-sc-FV4"/>
+                    <connections>
+                        <outlet property="navBar" destination="Zlr-Ks-xno" id="Fwa-ST-W8r"/>
+                        <segue destination="kRS-yZ-wOh" kind="show" identifier="toAutoThoughts" id="XPe-b6-hJn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7LC-DM-xEF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1391,13 +1428,22 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rVU-7b-mn5" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="vrV-7v-hBy"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b9e-zI-Eds"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="rVU-7b-mn5" firstAttribute="leading" secondItem="b9e-zI-Eds" secondAttribute="leading" id="1lH-4X-ae3"/>
                             <constraint firstItem="b9e-zI-Eds" firstAttribute="trailing" secondItem="cDc-Rm-lz0" secondAttribute="trailing" constant="64" id="3DS-2h-A7D"/>
                             <constraint firstItem="QtT-Oi-CkW" firstAttribute="leading" secondItem="b9e-zI-Eds" secondAttribute="leading" constant="24" id="4NX-C5-FT1"/>
                             <constraint firstItem="b9e-zI-Eds" firstAttribute="bottom" secondItem="Z9D-kG-MYt" secondAttribute="bottom" constant="608" id="4y9-gT-gea"/>
+                            <constraint firstItem="b9e-zI-Eds" firstAttribute="trailing" secondItem="rVU-7b-mn5" secondAttribute="trailing" id="Asb-w3-uok"/>
                             <constraint firstItem="cDc-Rm-lz0" firstAttribute="leading" secondItem="b9e-zI-Eds" secondAttribute="leading" constant="64" id="BVt-fQ-Ia2"/>
                             <constraint firstItem="cDc-Rm-lz0" firstAttribute="top" secondItem="cRg-SK-eb4" secondAttribute="bottom" constant="68" id="F9Z-wC-3QK"/>
                             <constraint firstItem="cRg-SK-eb4" firstAttribute="trailing" secondItem="7Ff-FZ-eoQ" secondAttribute="trailingMargin" id="J8m-t5-8KT"/>
@@ -1409,12 +1455,14 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                             <constraint firstItem="b9e-zI-Eds" firstAttribute="trailing" secondItem="QtT-Oi-CkW" secondAttribute="trailing" constant="24" id="Ybi-pc-eUC"/>
                             <constraint firstItem="cRg-SK-eb4" firstAttribute="centerX" secondItem="7Ff-FZ-eoQ" secondAttribute="centerX" id="Yvf-V3-ZWV"/>
                             <constraint firstItem="b9e-zI-Eds" firstAttribute="trailing" secondItem="Z9D-kG-MYt" secondAttribute="trailing" constant="24" id="aaN-Wq-OwH"/>
+                            <constraint firstItem="rVU-7b-mn5" firstAttribute="top" secondItem="b9e-zI-Eds" secondAttribute="top" id="cgg-z1-YM8"/>
                             <constraint firstItem="cRg-SK-eb4" firstAttribute="top" secondItem="Efg-kK-VPH" secondAttribute="bottom" id="jRl-jk-49k"/>
                             <constraint firstItem="Z9D-kG-MYt" firstAttribute="top" secondItem="Sug-Kn-7QE" secondAttribute="bottom" constant="33" id="o2K-As-3Oe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="s2U-j9-akk"/>
                     <connections>
+                        <outlet property="navBar" destination="rVU-7b-mn5" id="90X-TG-0cX"/>
                         <outlet property="textView" destination="ZIc-JZ-OXW" id="Eij-rc-maJ"/>
                     </connections>
                 </viewController>
@@ -1512,11 +1560,21 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gD4-lU-gOu" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="GdV-Om-IBI"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rlf-23-OMh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rlf-23-OMh" firstAttribute="trailing" secondItem="mLe-vq-l0C" secondAttribute="trailing" constant="64" id="1c3-e2-lfd"/>
+                            <constraint firstItem="gD4-lU-gOu" firstAttribute="leading" secondItem="rlf-23-OMh" secondAttribute="leading" id="3bb-pE-bBb"/>
+                            <constraint firstItem="gD4-lU-gOu" firstAttribute="top" secondItem="rlf-23-OMh" secondAttribute="top" id="3yk-nt-j5Q"/>
+                            <constraint firstItem="rlf-23-OMh" firstAttribute="trailing" secondItem="gD4-lU-gOu" secondAttribute="trailing" id="6r4-n5-rgn"/>
                             <constraint firstItem="6sg-Qm-z81" firstAttribute="leading" secondItem="rlf-23-OMh" secondAttribute="leading" constant="23" id="9eb-BU-Owt"/>
                             <constraint firstAttribute="bottom" secondItem="mLe-vq-l0C" secondAttribute="bottom" constant="72" id="9t4-C5-Uv7"/>
                             <constraint firstItem="bi4-bo-J2J" firstAttribute="centerX" secondItem="8u8-Md-iDA" secondAttribute="centerX" id="A9J-40-s3D"/>
@@ -1536,6 +1594,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                     </view>
                     <navigationItem key="navigationItem" id="IHc-Cn-Sdj"/>
                     <connections>
+                        <outlet property="navBar" destination="gD4-lU-gOu" id="8t9-KJ-oDP"/>
                         <outlet property="textView" destination="B6f-G9-qwV" id="f7V-kv-2gn"/>
                     </connections>
                 </viewController>
@@ -1565,7 +1624,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                     <color key="titleColor" red="0.86666666670000003" green="0.40784313729999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="jUN-Th-g6F" kind="show" id="X6V-eX-9dk"/>
+                                    <segue destination="jUN-Th-g6F" kind="presentation" id="X6V-eX-9dk"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joey-medium" translatesAutoresizingMaskIntoConstraints="NO" id="waQ-jH-dpL">
@@ -1633,6 +1692,13 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mP9-oC-k61" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="jyC-9M-zo8"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1f3-Op-fti"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1642,9 +1708,11 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                             <constraint firstItem="g6I-MI-1MC" firstAttribute="top" secondItem="5FA-16-hCk" secondAttribute="bottom" constant="68" id="Awb-PP-bbZ"/>
                             <constraint firstItem="1f3-Op-fti" firstAttribute="trailing" secondItem="g6I-MI-1MC" secondAttribute="trailing" constant="64" id="G8H-0Q-Q8X"/>
                             <constraint firstItem="5FA-16-hCk" firstAttribute="trailing" secondItem="MSL-LE-Ica" secondAttribute="trailingMargin" id="K8Q-z6-AJT"/>
+                            <constraint firstItem="mP9-oC-k61" firstAttribute="top" secondItem="1f3-Op-fti" secondAttribute="top" id="UnX-Ku-dBa"/>
                             <constraint firstItem="5FA-16-hCk" firstAttribute="centerX" secondItem="MSL-LE-Ica" secondAttribute="centerX" id="Vev-yq-JPh"/>
                             <constraint firstItem="CGp-Z1-DqK" firstAttribute="top" secondItem="1f3-Op-fti" secondAttribute="top" constant="84" id="Yfw-hK-bp1"/>
                             <constraint firstItem="CGp-Z1-DqK" firstAttribute="leading" secondItem="1f3-Op-fti" secondAttribute="leading" constant="24" id="ZdB-3Z-0A4"/>
+                            <constraint firstItem="mP9-oC-k61" firstAttribute="leading" secondItem="1f3-Op-fti" secondAttribute="leading" id="bx8-i7-4WH"/>
                             <constraint firstAttribute="bottom" secondItem="g6I-MI-1MC" secondAttribute="bottom" constant="72" id="giw-Wh-z5Q"/>
                             <constraint firstItem="1f3-Op-fti" firstAttribute="trailing" secondItem="V7w-Gu-AGB" secondAttribute="trailing" constant="24" id="iBG-N4-FTs"/>
                             <constraint firstItem="g6I-MI-1MC" firstAttribute="leading" secondItem="1f3-Op-fti" secondAttribute="leading" constant="64" id="kku-vY-Tig"/>
@@ -1653,10 +1721,12 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                             <constraint firstItem="waQ-jH-dpL" firstAttribute="top" secondItem="CGp-Z1-DqK" secondAttribute="bottom" constant="42" id="oTN-kH-Drx"/>
                             <constraint firstItem="J6m-KU-xru" firstAttribute="centerX" secondItem="MSL-LE-Ica" secondAttribute="centerX" id="pqo-pg-aGv"/>
                             <constraint firstItem="1f3-Op-fti" firstAttribute="trailing" secondItem="CGp-Z1-DqK" secondAttribute="trailing" constant="24" id="qy5-cp-rEp"/>
+                            <constraint firstItem="1f3-Op-fti" firstAttribute="trailing" secondItem="mP9-oC-k61" secondAttribute="trailing" id="r5J-0k-KKK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JtV-UT-05q"/>
                     <connections>
+                        <outlet property="navBar" destination="mP9-oC-k61" id="U8M-5Y-8ef"/>
                         <outlet property="textView" destination="OuC-kj-q0O" id="Cgr-uQ-BJ3"/>
                     </connections>
                 </viewController>
@@ -1707,10 +1777,10 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="UO1-6S-ytg">
-                                <rect key="frame" x="40" y="343" width="334" height="33"/>
+                                <rect key="frame" x="40" y="343" width="334" height="38"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbM-ws-c5w" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Happy">
@@ -1728,9 +1798,12 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="moodsTapped:" destination="nzg-YQ-2ww" eventType="touchUpInside" id="2u1-uX-6yc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyE-Nc-Jpf" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="179" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="179" y="0.0" width="155" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Neutral">
@@ -1752,10 +1825,10 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="5c4-zz-MnD">
-                                <rect key="frame" x="40" y="392" width="334" height="33"/>
+                                <rect key="frame" x="40" y="397" width="334" height="38"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF7-rp-nlN" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Angry">
@@ -1775,7 +1848,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t46-Br-82L" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="179" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="179" y="0.0" width="155" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Sad">
@@ -1797,10 +1870,10 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="bYn-Sy-cl5">
-                                <rect key="frame" x="40" y="441" width="334" height="33"/>
+                                <rect key="frame" x="40" y="451" width="334" height="38"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcp-AL-X82" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Anxious">
@@ -1820,7 +1893,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nK-2c-yoc" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="179" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="179" y="0.0" width="155" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Guilty">
@@ -1842,10 +1915,10 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="qo9-vt-TAg">
-                                <rect key="frame" x="40" y="490" width="334" height="33"/>
+                                <rect key="frame" x="40" y="505" width="334" height="38"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rca-Gl-hK3" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Stressed">
@@ -1865,7 +1938,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWb-QV-RHh" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="179" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="179" y="0.0" width="155" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Dissapointed">
@@ -1887,10 +1960,10 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Kba-u3-sWi">
-                                <rect key="frame" x="40" y="539" width="334" height="33"/>
+                                <rect key="frame" x="40" y="559" width="334" height="38"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVX-7H-tG9" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Empty">
@@ -1910,7 +1983,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJF-aG-D9m" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="179" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="179" y="0.0" width="155" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Ashamed">
@@ -1932,7 +2005,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4I-F5-S9r" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="64" y="596" width="286" height="45"/>
+                                <rect key="frame" x="64" y="621" width="286" height="45"/>
                                 <color key="backgroundColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="2Y7-GZ-HI7"/>
@@ -1952,9 +2025,16 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="aql-KT-kxZ" kind="show" id="xse-3K-ywc"/>
+                                    <action selector="onClickContinueButton:" destination="nzg-YQ-2ww" eventType="touchUpInside" id="PKd-my-ldj"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RNH-AX-P9P" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="xhG-wE-jsy"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3GX-Mo-eXz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1970,7 +2050,9 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                             <constraint firstItem="Kba-u3-sWi" firstAttribute="top" secondItem="qo9-vt-TAg" secondAttribute="bottom" constant="16" id="FZK-w1-9gk"/>
                             <constraint firstItem="3GX-Mo-eXz" firstAttribute="trailing" secondItem="NMn-Mu-ggT" secondAttribute="trailing" constant="24" id="GUm-iz-lpy"/>
                             <constraint firstItem="Kba-u3-sWi" firstAttribute="centerX" secondItem="jPV-Av-z4i" secondAttribute="centerX" id="I3G-vb-69n"/>
+                            <constraint firstItem="3GX-Mo-eXz" firstAttribute="trailing" secondItem="RNH-AX-P9P" secondAttribute="trailing" id="LD1-SY-PRf"/>
                             <constraint firstItem="5c4-zz-MnD" firstAttribute="leading" secondItem="3GX-Mo-eXz" secondAttribute="leading" constant="40" id="NNK-iG-VIX"/>
+                            <constraint firstItem="RNH-AX-P9P" firstAttribute="top" secondItem="3GX-Mo-eXz" secondAttribute="top" id="O07-nB-JJf"/>
                             <constraint firstItem="NMn-Mu-ggT" firstAttribute="leading" secondItem="3GX-Mo-eXz" secondAttribute="leading" constant="24" id="PRs-ZG-Nae"/>
                             <constraint firstItem="bYn-Sy-cl5" firstAttribute="centerX" secondItem="jPV-Av-z4i" secondAttribute="centerX" id="QbR-tm-1Kt"/>
                             <constraint firstItem="3GX-Mo-eXz" firstAttribute="trailing" secondItem="bYn-Sy-cl5" secondAttribute="trailing" constant="40" id="WCE-0Z-MFQ"/>
@@ -1982,6 +2064,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                             <constraint firstItem="bYn-Sy-cl5" firstAttribute="top" secondItem="5c4-zz-MnD" secondAttribute="bottom" constant="16" id="h0u-DU-Vw1"/>
                             <constraint firstItem="3GX-Mo-eXz" firstAttribute="trailing" secondItem="cRp-or-oED" secondAttribute="trailing" constant="24" id="ihe-Bd-boI"/>
                             <constraint firstItem="cRp-or-oED" firstAttribute="top" secondItem="gnN-2O-bTe" secondAttribute="bottom" constant="33" id="jc3-sQ-HFZ"/>
+                            <constraint firstItem="RNH-AX-P9P" firstAttribute="leading" secondItem="3GX-Mo-eXz" secondAttribute="leading" id="lFA-8J-IWc"/>
                             <constraint firstItem="NMn-Mu-ggT" firstAttribute="top" secondItem="3GX-Mo-eXz" secondAttribute="top" constant="84" id="lTq-Lh-Tuv"/>
                             <constraint firstItem="3GX-Mo-eXz" firstAttribute="trailing" secondItem="qo9-vt-TAg" secondAttribute="trailing" constant="40" id="n5Z-BX-KHn"/>
                             <constraint firstItem="5c4-zz-MnD" firstAttribute="centerX" secondItem="jPV-Av-z4i" secondAttribute="centerX" id="o0J-am-cBq"/>
@@ -1994,6 +2077,10 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ffJ-Zy-J1y"/>
+                    <connections>
+                        <outlet property="navBar" destination="RNH-AX-P9P" id="WoW-uL-gHq"/>
+                        <segue destination="aql-KT-kxZ" kind="show" identifier="toFinish" id="ICH-mk-Jc3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rs1-Hr-WWv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2099,10 +2186,10 @@ Do you want to see it?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="yse-95-t6O">
-                                <rect key="frame" x="64" y="416" width="286" height="82"/>
+                                <rect key="frame" x="64" y="416" width="286" height="92"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqp-pa-l4v" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="286" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="286" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Yes">
@@ -2119,9 +2206,12 @@ Do you want to see it?</string>
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="YQw-JE-CmF" kind="show" id="m7p-zS-4Up"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKq-eD-B4M" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="49" width="286" height="33"/>
+                                        <rect key="frame" x="0.0" y="54" width="286" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="No">
@@ -2165,6 +2255,22 @@ Do you want to see it?</string>
             </objects>
             <point key="canvasLocation" x="5562.3188405797109" y="-90.401785714285708"/>
         </scene>
+        <!--Summary View Controller-->
+        <scene sceneID="xRe-qF-05u">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="YQw-JE-CmF" customClass="SummaryViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zPa-AE-edr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="SEG-gJ-PN0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7Hz-nD-RLp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FUf-3P-QvY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6358" y="-90"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="Iha-hn-yWP">
             <objects>
@@ -2188,10 +2294,10 @@ Do you want to see it?</string>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CjY-SE-nQe">
-                                <rect key="frame" x="64" y="416" width="286" height="82"/>
+                                <rect key="frame" x="64" y="416" width="286" height="92"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIU-zg-uVo" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="286" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="286" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="Yes">
@@ -2208,9 +2314,12 @@ Do you want to see it?</string>
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="BYD-lP-QQX" kind="show" id="R1z-Qy-Fwh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwb-9S-x34" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="49" width="286" height="33"/>
+                                        <rect key="frame" x="0.0" y="54" width="286" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                         <state key="normal" title="No">
@@ -2263,102 +2372,105 @@ Do you want to do this activity again?</string>
     </scenes>
     <designables>
         <designable name="5nK-2c-yoc">
-            <size key="intrinsicContentSize" width="47" height="33"/>
+            <size key="intrinsicContentSize" width="49" height="38"/>
         </designable>
         <designable name="7ay-b0-IhI">
-            <size key="intrinsicContentSize" width="72" height="33"/>
+            <size key="intrinsicContentSize" width="68" height="38"/>
         </designable>
         <designable name="BbM-ws-c5w">
-            <size key="intrinsicContentSize" width="54" height="33"/>
+            <size key="intrinsicContentSize" width="52" height="38"/>
         </designable>
         <designable name="CF7-rp-nlN">
-            <size key="intrinsicContentSize" width="47" height="33"/>
+            <size key="intrinsicContentSize" width="48" height="38"/>
         </designable>
         <designable name="HVX-7H-tG9">
-            <size key="intrinsicContentSize" width="52" height="33"/>
+            <size key="intrinsicContentSize" width="53" height="38"/>
         </designable>
         <designable name="IIU-zg-uVo">
-            <size key="intrinsicContentSize" width="30" height="33"/>
+            <size key="intrinsicContentSize" width="30" height="38"/>
         </designable>
         <designable name="JQP-rH-rih">
-            <size key="intrinsicContentSize" width="77" height="33"/>
+            <size key="intrinsicContentSize" width="74" height="38"/>
         </designable>
         <designable name="Juj-MS-h47">
-            <size key="intrinsicContentSize" width="65" height="33"/>
+            <size key="intrinsicContentSize" width="62" height="38"/>
         </designable>
         <designable name="LVr-x4-enK">
-            <size key="intrinsicContentSize" width="81" height="36"/>
+            <size key="intrinsicContentSize" width="81" height="40"/>
         </designable>
         <designable name="LyX-1O-vga">
-            <size key="intrinsicContentSize" width="33" height="33"/>
+            <size key="intrinsicContentSize" width="30" height="38"/>
         </designable>
         <designable name="Rca-Gl-hK3">
-            <size key="intrinsicContentSize" width="72" height="33"/>
+            <size key="intrinsicContentSize" width="68" height="38"/>
         </designable>
         <designable name="SUn-Qu-1Pb">
-            <size key="intrinsicContentSize" width="81" height="36"/>
+            <size key="intrinsicContentSize" width="81" height="40"/>
         </designable>
         <designable name="Xfc-7p-0S5">
-            <size key="intrinsicContentSize" width="52" height="33"/>
+            <size key="intrinsicContentSize" width="53" height="38"/>
         </designable>
         <designable name="YKq-eD-B4M">
-            <size key="intrinsicContentSize" width="30" height="33"/>
+            <size key="intrinsicContentSize" width="30" height="38"/>
         </designable>
         <designable name="ZWb-QV-RHh">
-            <size key="intrinsicContentSize" width="106" height="33"/>
+            <size key="intrinsicContentSize" width="103" height="38"/>
         </designable>
         <designable name="aFl-gc-ptI">
-            <size key="intrinsicContentSize" width="81" height="36"/>
+            <size key="intrinsicContentSize" width="81" height="40"/>
         </designable>
         <designable name="cDc-Rm-lz0">
-            <size key="intrinsicContentSize" width="81" height="36"/>
+            <size key="intrinsicContentSize" width="81" height="40"/>
         </designable>
         <designable name="dcp-AL-X82">
-            <size key="intrinsicContentSize" width="65" height="33"/>
+            <size key="intrinsicContentSize" width="62" height="38"/>
         </designable>
         <designable name="dkg-Cb-LdB">
-            <size key="intrinsicContentSize" width="106" height="33"/>
+            <size key="intrinsicContentSize" width="103" height="38"/>
         </designable>
         <designable name="dqp-pa-l4v">
-            <size key="intrinsicContentSize" width="30" height="33"/>
+            <size key="intrinsicContentSize" width="30" height="38"/>
         </designable>
         <designable name="g6I-MI-1MC">
-            <size key="intrinsicContentSize" width="81" height="36"/>
+            <size key="intrinsicContentSize" width="81" height="40"/>
         </designable>
         <designable name="ioN-YR-MtI">
-            <size key="intrinsicContentSize" width="43" height="36"/>
+            <size key="intrinsicContentSize" width="45" height="40"/>
         </designable>
         <designable name="lae-Nf-sZw">
-            <size key="intrinsicContentSize" width="58" height="33"/>
+            <size key="intrinsicContentSize" width="60" height="38"/>
         </designable>
         <designable name="mLe-vq-l0C">
-            <size key="intrinsicContentSize" width="81" height="36"/>
+            <size key="intrinsicContentSize" width="81" height="40"/>
         </designable>
         <designable name="nJF-aG-D9m">
-            <size key="intrinsicContentSize" width="77" height="33"/>
+            <size key="intrinsicContentSize" width="74" height="38"/>
         </designable>
         <designable name="nwb-9S-x34">
-            <size key="intrinsicContentSize" width="30" height="33"/>
+            <size key="intrinsicContentSize" width="30" height="38"/>
         </designable>
         <designable name="oyE-Nc-Jpf">
-            <size key="intrinsicContentSize" width="58" height="33"/>
+            <size key="intrinsicContentSize" width="60" height="38"/>
         </designable>
         <designable name="qo3-BQ-McZ">
-            <size key="intrinsicContentSize" width="54" height="33"/>
+            <size key="intrinsicContentSize" width="52" height="38"/>
         </designable>
         <designable name="t46-Br-82L">
-            <size key="intrinsicContentSize" width="33" height="33"/>
+            <size key="intrinsicContentSize" width="30" height="38"/>
         </designable>
         <designable name="u4I-F5-S9r">
-            <size key="intrinsicContentSize" width="81" height="36"/>
+            <size key="intrinsicContentSize" width="81" height="40"/>
         </designable>
         <designable name="xP7-7r-H0r">
-            <size key="intrinsicContentSize" width="47" height="33"/>
+            <size key="intrinsicContentSize" width="48" height="38"/>
         </designable>
         <designable name="yVO-7E-olH">
-            <size key="intrinsicContentSize" width="47" height="33"/>
+            <size key="intrinsicContentSize" width="49" height="38"/>
         </designable>
     </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="Y0y-Q6-4kK"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="OB_modalClose_xButton" width="41" height="41"/>
         <image name="TR-Bubble" width="366" height="126"/>

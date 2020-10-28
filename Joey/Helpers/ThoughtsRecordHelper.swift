@@ -17,16 +17,17 @@ class ThoughtsRecordHelper {
         return appDelegate.persistentContainer.viewContext
     }()
     
-    static func save(tRecord: String, onComplete: @escaping (Error?) -> Void) {
+    static func save(tRecord: ThoughtsRecordTemp, onComplete: @escaping (Error?) -> Void) {
         let entity = NSEntityDescription.entity(forEntityName: entityName, in: context)!
-        let tRecord = NSManagedObject(entity: entity, insertInto: context)
-        tRecord.setValue(String(), forKey: "situation")
-        tRecord.setValue([String](), forKey: "moods")
-        tRecord.setValue(String(), forKey: "thoughts")
-        tRecord.setValue(String(), forKey: "evidence_support")
-        tRecord.setValue(String(), forKey: "evidence_not_support")
-        tRecord.setValue(String(), forKey: "alternate_thoughts")
-        tRecord.setValue([String](), forKey: "new_moods")
+        let record = NSManagedObject(entity: entity, insertInto: context)
+        record.setValue(tRecord.situation, forKey: "situation")
+        record.setValue(tRecord.moods.joined(separator: ","), forKey: "moods")
+        record.setValue(tRecord.initialThoughts, forKey: "thoughts")
+        record.setValue(tRecord.evidence, forKey: "evidence_support")
+        record.setValue(tRecord.notSupportedEvidence, forKey: "evidence_not_support")
+        record.setValue(tRecord.alternativeThoughts, forKey: "alternate_thoughts")
+        record.setValue(tRecord.newMoods.joined(separator: ","), forKey: "new_moods")
+        record.setValue(tRecord.createdAt, forKey: "createdAt")
         
         do {
             try context.save()
@@ -35,4 +36,5 @@ class ThoughtsRecordHelper {
             onComplete(error)
         }
     }
+    
 }
