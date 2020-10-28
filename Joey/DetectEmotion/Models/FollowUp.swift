@@ -14,11 +14,11 @@ struct FollowUp {
     var reason: String?
     var scale: Float?
     
-    enum EmotionType {
-        case angry
-        case sad
-        case neutral
-        case happy
+    enum EmotionType: Int {
+        case angry = 1
+        case sad = 2
+        case neutral = 3
+        case happy = 4
     }
     
     enum ScaleType {
