@@ -21,11 +21,23 @@ class DetectEmotionAdviceViewController: UIViewController {
         singleTap.numberOfTouchesRequired = 1
         backgroundImage.addGestureRecognizer(singleTap)
         backgroundImage.isUserInteractionEnabled = true
+        
+        
+    }
+    
+    func saveEmotion() {
+        if let data = data {
+            EmotionHelper.save(data: data) {_ in
+                DispatchQueue.main.async {
+                    self.performSegue(withIdentifier: "toSuggestActivity", sender: nil)
+                }
+            }
+        }
     }
     
     @objc func onBackgroundTapped(sender: UITapGestureRecognizer) {
         if sender.state == .ended {
-            performSegue(withIdentifier: "toSuggestActivity", sender: nil)
+            saveEmotion()
         }
     }
 
