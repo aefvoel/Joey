@@ -37,6 +37,7 @@
 		169C073F25413C3C0071387C /* Instruction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169C073E25413C3C0071387C /* Instruction.storyboard */; };
 		169C0744254143A90071387C /* TextViewFixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169C0743254143A90071387C /* TextViewFixed.swift */; };
 		16AA990B253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AA990A253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift */; };
+		16B3758C254A6B100027B696 /* InstructionModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3758B254A6B100027B696 /* InstructionModalViewController.swift */; };
 		16EE8CA425414A1200FA9CE6 /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE8CA325414A1200FA9CE6 /* InstructionView.swift */; };
 		16FA4BFC2547D7BD00D3EFFC /* DetectEmotionAnalyzeAgainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FA4BFB2547D7BD00D3EFFC /* DetectEmotionAnalyzeAgainViewController.swift */; };
 		5A0FD165254718260048B757 /* AutomaticThoughtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0FD164254718260048B757 /* AutomaticThoughtsViewController.swift */; };
@@ -136,6 +137,7 @@
 		169C073E25413C3C0071387C /* Instruction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Instruction.storyboard; sourceTree = "<group>"; };
 		169C0743254143A90071387C /* TextViewFixed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewFixed.swift; sourceTree = "<group>"; };
 		16AA990A253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionAnalyzeViewController.swift; sourceTree = "<group>"; };
+		16B3758B254A6B100027B696 /* InstructionModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionModalViewController.swift; sourceTree = "<group>"; };
 		16EE8CA325414A1200FA9CE6 /* InstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
 		16FA4BFB2547D7BD00D3EFFC /* DetectEmotionAnalyzeAgainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionAnalyzeAgainViewController.swift; sourceTree = "<group>"; };
 		5A0FD164254718260048B757 /* AutomaticThoughtsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomaticThoughtsViewController.swift; sourceTree = "<group>"; };
@@ -482,6 +484,7 @@
 			isa = PBXGroup;
 			children = (
 				169C073525413C300071387C /* InstructionViewController.swift */,
+				16B3758B254A6B100027B696 /* InstructionModalViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -829,6 +832,7 @@
 				AB46C13D25486A6D00D2F22C /* AfterActivityViewController.swift in Sources */,
 				5AD1E5B22541403B00BD18D5 /* ActivityListCell.swift in Sources */,
 				5A8C6EA6253EA57600F95286 /* TermsOfServiceModel.swift in Sources */,
+				16B3758C254A6B100027B696 /* InstructionModalViewController.swift in Sources */,
 				167E0E7B253EABA700602784 /* EmotionHelper.swift in Sources */,
 				5A684144254825C500CDFB59 /* FinishedViewController.swift in Sources */,
 				1645F8DA2546923A001058A3 /* DetectEmotionAdviceViewController.swift in Sources */,

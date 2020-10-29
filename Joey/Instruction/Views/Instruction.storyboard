@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -48,13 +48,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsQ-48-VLX">
-                                <rect key="frame" x="24" y="328" width="366" height="34"/>
+                                <rect key="frame" x="24" y="328" width="366" height="28"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Cl-wV-rne" customClass="TextViewFixed" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="24" y="380" width="366" height="128"/>
+                                <rect key="frame" x="24" y="374" width="366" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="PAs-hD-h7K"/>
@@ -65,7 +65,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This activity can help you:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0c7-p1-8Oj">
-                                <rect key="frame" x="24" y="556" width="366" height="31"/>
+                                <rect key="frame" x="24" y="526" width="366" height="26"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -97,14 +97,14 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="check-box" translatesAutoresizingMaskIntoConstraints="NO" id="xBD-Yp-UnW">
-                                <rect key="frame" x="24" y="611" width="20" height="20"/>
+                                <rect key="frame" x="24" y="576" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="LtJ-NU-8rg"/>
                                     <constraint firstAttribute="height" constant="20" id="X00-G6-Hhp"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuZ-kH-fdR">
-                                <rect key="frame" x="60" y="610" width="330" height="22.5"/>
+                                <rect key="frame" x="60" y="576.5" width="330" height="19"/>
                                 <string key="text">to release toxic emotions
 </string>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="16"/>
@@ -112,14 +112,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="check-box" translatesAutoresizingMaskIntoConstraints="NO" id="GOM-dO-aL1">
-                                <rect key="frame" x="24" y="647" width="20" height="20"/>
+                                <rect key="frame" x="24" y="612" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="ib6-tj-jxJ"/>
                                     <constraint firstAttribute="width" constant="20" id="r4c-9z-cFj"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjv-Ql-gkz">
-                                <rect key="frame" x="60" y="646" width="330" height="22.5"/>
+                                <rect key="frame" x="60" y="612.5" width="330" height="19"/>
                                 <string key="text">to release toxic emotions
 </string>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="16"/>
@@ -127,36 +127,55 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="check-box" translatesAutoresizingMaskIntoConstraints="NO" id="a0v-3B-iU6">
-                                <rect key="frame" x="24" y="683" width="20" height="20"/>
+                                <rect key="frame" x="24" y="648" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="BV9-Jj-6Ax"/>
                                     <constraint firstAttribute="width" constant="20" id="D9K-hZ-HQ7"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAW-9c-vMm">
-                                <rect key="frame" x="60" y="682" width="330" height="22.5"/>
+                                <rect key="frame" x="60" y="648.5" width="330" height="19"/>
                                 <string key="text">to release toxic emotions
 </string>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifying-glass" translatesAutoresizingMaskIntoConstraints="NO" id="pAq-Hn-UPs">
+                                <rect key="frame" x="24" y="700" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="QGe-qd-rsg"/>
+                                    <constraint firstAttribute="width" constant="20" id="xSZ-jp-Zap"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaP-yX-ERo">
+                                <rect key="frame" x="60" y="695.5" width="92" height="29"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="14"/>
+                                <state key="normal" title="Why is works?">
+                                    <color key="titleColor" red="0.96470588235294119" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="T0t-kp-4ah" kind="presentation" identifier="toModal" id="cw3-6L-efh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wg4-i3-3WF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="eq8-WR-Pyf" firstAttribute="top" secondItem="0X0-c2-zO7" secondAttribute="top" id="03o-z7-sJ6"/>
+                            <constraint firstItem="EaP-yX-ERo" firstAttribute="centerY" secondItem="pAq-Hn-UPs" secondAttribute="centerY" id="4Eu-0c-UAb"/>
                             <constraint firstItem="HsQ-48-VLX" firstAttribute="top" secondItem="wnh-vG-V2p" secondAttribute="bottom" constant="24" id="8bq-vW-E7i"/>
                             <constraint firstItem="a0v-3B-iU6" firstAttribute="top" secondItem="GOM-dO-aL1" secondAttribute="bottom" constant="16" id="9jP-Ud-iAF"/>
                             <constraint firstItem="kht-Pm-doQ" firstAttribute="trailing" secondItem="wg4-i3-3WF" secondAttribute="trailing" id="BCn-WD-vQc"/>
                             <constraint firstItem="eq8-WR-Pyf" firstAttribute="leading" secondItem="wg4-i3-3WF" secondAttribute="leading" id="Bxp-GQ-IhF"/>
                             <constraint firstItem="uTw-sI-wUh" firstAttribute="leading" secondItem="0c7-p1-8Oj" secondAttribute="leading" id="IYW-cA-ALg"/>
-                            <constraint firstItem="0c7-p1-8Oj" firstAttribute="top" secondItem="5Cl-wV-rne" secondAttribute="bottom" constant="48" id="Jgp-t0-pqY"/>
+                            <constraint firstItem="0c7-p1-8Oj" firstAttribute="top" secondItem="5Cl-wV-rne" secondAttribute="bottom" constant="24" id="Jgp-t0-pqY"/>
                             <constraint firstItem="wg4-i3-3WF" firstAttribute="bottom" secondItem="uTw-sI-wUh" secondAttribute="bottom" constant="24" id="KEZ-xV-rJX"/>
                             <constraint firstItem="wnh-vG-V2p" firstAttribute="leading" secondItem="wg4-i3-3WF" secondAttribute="leading" id="Pb5-tM-g9y"/>
                             <constraint firstItem="xBD-Yp-UnW" firstAttribute="top" secondItem="0c7-p1-8Oj" secondAttribute="bottom" constant="24" id="RKw-RZ-Lhw"/>
                             <constraint firstItem="zAW-9c-vMm" firstAttribute="leading" secondItem="a0v-3B-iU6" secondAttribute="trailing" constant="16" id="SdF-PK-jXk"/>
                             <constraint firstItem="DuZ-kH-fdR" firstAttribute="leading" secondItem="xBD-Yp-UnW" secondAttribute="trailing" constant="16" id="Sph-zb-Vch"/>
+                            <constraint firstItem="pAq-Hn-UPs" firstAttribute="top" secondItem="a0v-3B-iU6" secondAttribute="bottom" constant="32" id="TjI-Tc-c81"/>
                             <constraint firstItem="a0v-3B-iU6" firstAttribute="leading" secondItem="GOM-dO-aL1" secondAttribute="leading" id="TtQ-0W-0t1"/>
                             <constraint firstItem="cjv-Ql-gkz" firstAttribute="centerY" secondItem="GOM-dO-aL1" secondAttribute="centerY" id="Uyo-mY-jRu"/>
                             <constraint firstItem="eq8-WR-Pyf" firstAttribute="trailing" secondItem="wg4-i3-3WF" secondAttribute="trailing" id="WBK-mG-fPa"/>
@@ -170,8 +189,10 @@
                             <constraint firstItem="cjv-Ql-gkz" firstAttribute="trailing" secondItem="DuZ-kH-fdR" secondAttribute="trailing" id="gPC-fY-b93"/>
                             <constraint firstItem="GOM-dO-aL1" firstAttribute="leading" secondItem="xBD-Yp-UnW" secondAttribute="leading" id="gSF-ud-b83"/>
                             <constraint firstItem="xBD-Yp-UnW" firstAttribute="leading" secondItem="0c7-p1-8Oj" secondAttribute="leading" id="hKh-FZ-Adc"/>
+                            <constraint firstItem="EaP-yX-ERo" firstAttribute="leading" secondItem="pAq-Hn-UPs" secondAttribute="trailing" constant="16" id="hWh-GG-k16"/>
                             <constraint firstItem="kht-Pm-doQ" firstAttribute="leading" secondItem="wg4-i3-3WF" secondAttribute="leading" id="kze-1Z-lOe"/>
                             <constraint firstItem="zAW-9c-vMm" firstAttribute="trailing" secondItem="cjv-Ql-gkz" secondAttribute="trailing" id="nqK-GY-AT3"/>
+                            <constraint firstItem="pAq-Hn-UPs" firstAttribute="leading" secondItem="a0v-3B-iU6" secondAttribute="leading" id="pST-sq-Zpn"/>
                             <constraint firstItem="DuZ-kH-fdR" firstAttribute="centerY" secondItem="xBD-Yp-UnW" secondAttribute="centerY" id="q97-79-aXg"/>
                             <constraint firstItem="5Cl-wV-rne" firstAttribute="leading" secondItem="HsQ-48-VLX" secondAttribute="leading" id="qWh-jO-eQM"/>
                             <constraint firstItem="HsQ-48-VLX" firstAttribute="leading" secondItem="wg4-i3-3WF" secondAttribute="leading" constant="24" id="r2O-d1-6k8"/>
@@ -233,15 +254,78 @@
             </objects>
             <point key="canvasLocation" x="811" y="314"/>
         </scene>
+        <!--Instruction Modal View Controller-->
+        <scene sceneID="IjT-lX-Apl">
+            <objects>
+                <viewController id="T0t-kp-4ah" customClass="InstructionModalViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yt0-6e-sJj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDU-FO-vvg">
+                                <rect key="frame" x="24" y="24" width="28" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="8sa-w3-QDR"/>
+                                    <constraint firstAttribute="width" constant="28" id="Vby-H0-ks5"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="OB_modalClose_xButton"/>
+                                <connections>
+                                    <action selector="onCloseTapped:" destination="T0t-kp-4ah" eventType="touchUpInside" id="oFC-9P-lEc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Practice Smiling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ch-vh-wnf">
+                                <rect key="frame" x="32" y="84" width="350" height="35"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="ITd-fa-gRu" customClass="TextViewFixed" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="32" y="151" width="350" height="657"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yIX-P7-eej"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ITd-fa-gRu" firstAttribute="top" secondItem="2Ch-vh-wnf" secondAttribute="bottom" constant="32" id="7SG-fu-pkI"/>
+                            <constraint firstItem="ITd-fa-gRu" firstAttribute="bottom" secondItem="yIX-P7-eej" secondAttribute="bottom" id="CIA-Eo-jD2"/>
+                            <constraint firstItem="mDU-FO-vvg" firstAttribute="leading" secondItem="yIX-P7-eej" secondAttribute="leading" constant="24" id="Kqd-DY-3hX"/>
+                            <constraint firstItem="yIX-P7-eej" firstAttribute="trailing" secondItem="2Ch-vh-wnf" secondAttribute="trailing" constant="32" id="MZV-e6-hLo"/>
+                            <constraint firstItem="2Ch-vh-wnf" firstAttribute="leading" secondItem="yIX-P7-eej" secondAttribute="leading" constant="32" id="WPU-Bm-LzI"/>
+                            <constraint firstItem="mDU-FO-vvg" firstAttribute="top" secondItem="yIX-P7-eej" secondAttribute="top" constant="24" id="XiS-te-6Mc"/>
+                            <constraint firstItem="2Ch-vh-wnf" firstAttribute="top" secondItem="mDU-FO-vvg" secondAttribute="bottom" constant="32" id="bek-xI-W6J"/>
+                            <constraint firstItem="ITd-fa-gRu" firstAttribute="leading" secondItem="2Ch-vh-wnf" secondAttribute="leading" id="h16-y3-jzp"/>
+                            <constraint firstItem="ITd-fa-gRu" firstAttribute="trailing" secondItem="2Ch-vh-wnf" secondAttribute="trailing" id="v5p-7a-yuD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3PC-Gs-ORz"/>
+                    <connections>
+                        <outlet property="contentTextView" destination="ITd-fa-gRu" id="2oh-Na-aEP"/>
+                        <outlet property="titleLabel" destination="2Ch-vh-wnf" id="QSJ-bU-4GP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SY8-YI-azX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102.89855072463769" y="897.99107142857133"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="uTw-sI-wUh">
-            <size key="intrinsicContentSize" width="81" height="40"/>
+            <size key="intrinsicContentSize" width="81" height="36"/>
         </designable>
     </designables>
     <resources>
+        <image name="OB_modalClose_xButton" width="41" height="41"/>
         <image name="check-box" width="20" height="19"/>
         <image name="de_background" width="414" height="896"/>
+        <image name="magnifying-glass" width="21" height="21"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
