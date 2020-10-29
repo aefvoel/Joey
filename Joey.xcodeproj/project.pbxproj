@@ -62,6 +62,8 @@
 		5AD1E5B22541403B00BD18D5 /* ActivityListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1E5B12541403B00BD18D5 /* ActivityListCell.swift */; };
 		5AD1E5B7254141D000BD18D5 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		AB46C13D25486A6D00D2F22C /* AfterActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB46C13C25486A6D00D2F22C /* AfterActivityViewController.swift */; };
+		AB51A9DB254B02B100E5E64B /* MySpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51A9DA254B02B100E5E64B /* MySpaceViewController.swift */; };
+		AB51A9E0254B02C500E5E64B /* MySpace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB51A9DF254B02C500E5E64B /* MySpace.storyboard */; };
 		AB7292D6254911ED0003B21E /* StartMirrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7292D5254911ED0003B21E /* StartMirrorViewController.swift */; };
 		AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A174253730F9003F8823 /* AppDelegate.swift */; };
 		AB92A177253730F9003F8823 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A176253730F9003F8823 /* SceneDelegate.swift */; };
@@ -162,6 +164,8 @@
 		5AD1E5B12541403B00BD18D5 /* ActivityListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListCell.swift; sourceTree = "<group>"; };
 		5AD838C8253E8BCC0042D14E /* Yuanti.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yuanti.ttc; sourceTree = "<group>"; };
 		AB46C13C25486A6D00D2F22C /* AfterActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterActivityViewController.swift; sourceTree = "<group>"; };
+		AB51A9DA254B02B100E5E64B /* MySpaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpaceViewController.swift; sourceTree = "<group>"; };
+		AB51A9DF254B02C500E5E64B /* MySpace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MySpace.storyboard; sourceTree = "<group>"; };
 		AB7292D5254911ED0003B21E /* StartMirrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMirrorViewController.swift; sourceTree = "<group>"; };
 		AB92A171253730F9003F8823 /* Joey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB92A174253730F9003F8823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -546,6 +550,31 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		AB51A9D7254B026A00E5E64B /* MySpace */ = {
+			isa = PBXGroup;
+			children = (
+				AB51A9D9254B028B00E5E64B /* Controllers */,
+				AB51A9D8254B028100E5E64B /* Views */,
+			);
+			path = MySpace;
+			sourceTree = "<group>";
+		};
+		AB51A9D8254B028100E5E64B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB51A9DF254B02C500E5E64B /* MySpace.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AB51A9D9254B028B00E5E64B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB51A9DA254B02B100E5E64B /* MySpaceViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		AB92A168253730F9003F8823 = {
 			isa = PBXGroup;
 			children = (
@@ -572,6 +601,7 @@
 		AB92A173253730F9003F8823 /* Joey */ = {
 			isa = PBXGroup;
 			children = (
+				AB51A9D7254B026A00E5E64B /* MySpace */,
 				ABD9DE4225466DE900C2154C /* NavigationBar */,
 				169C073325413C170071387C /* Instruction */,
 				16170AED254126F00095D1A5 /* ThoughtsRecord */,
@@ -788,6 +818,7 @@
 				16170AB4254103750095D1A5 /* Activities.storyboard in Resources */,
 				ABD9DE5C2546721600C2154C /* NavigationBar.xib in Resources */,
 				ABEBCCC3253E949F002E03A6 /* Yuanti.ttc in Resources */,
+				AB51A9E0254B02C500E5E64B /* MySpace.storyboard in Resources */,
 				16170AE325411EBE0095D1A5 /* Mirror.storyboard in Resources */,
 				166C532C253732DF007C5EF3 /* Home.storyboard in Resources */,
 				ABECBF11253D891C00EF7D43 /* ActivitiesCollectionViewCell.xib in Resources */,
@@ -827,6 +858,7 @@
 				5AAE9BBA253F08820075966B /* PrivPolicyTableViewController.swift in Sources */,
 				5AD1E5B7254141D000BD18D5 /* (null) in Sources */,
 				AB46C13D25486A6D00D2F22C /* AfterActivityViewController.swift in Sources */,
+				AB51A9DB254B02B100E5E64B /* MySpaceViewController.swift in Sources */,
 				5AD1E5B22541403B00BD18D5 /* ActivityListCell.swift in Sources */,
 				5A8C6EA6253EA57600F95286 /* TermsOfServiceModel.swift in Sources */,
 				167E0E7B253EABA700602784 /* EmotionHelper.swift in Sources */,
