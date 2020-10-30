@@ -48,13 +48,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsQ-48-VLX">
-                                <rect key="frame" x="24" y="328" width="366" height="28"/>
+                                <rect key="frame" x="24" y="328" width="366" height="34"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Cl-wV-rne" customClass="TextViewFixed" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="24" y="374" width="366" height="128"/>
+                                <rect key="frame" x="24" y="380" width="366" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="PAs-hD-h7K"/>
@@ -65,7 +65,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This activity can help you:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0c7-p1-8Oj">
-                                <rect key="frame" x="24" y="526" width="366" height="26"/>
+                                <rect key="frame" x="24" y="532" width="366" height="31"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -97,14 +97,14 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="check-box" translatesAutoresizingMaskIntoConstraints="NO" id="xBD-Yp-UnW">
-                                <rect key="frame" x="24" y="576" width="20" height="20"/>
+                                <rect key="frame" x="24" y="587" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="LtJ-NU-8rg"/>
                                     <constraint firstAttribute="height" constant="20" id="X00-G6-Hhp"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuZ-kH-fdR">
-                                <rect key="frame" x="60" y="576.5" width="330" height="19"/>
+                                <rect key="frame" x="60" y="586" width="330" height="22.5"/>
                                 <string key="text">to release toxic emotions
 </string>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="16"/>
@@ -112,14 +112,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="check-box" translatesAutoresizingMaskIntoConstraints="NO" id="GOM-dO-aL1">
-                                <rect key="frame" x="24" y="612" width="20" height="20"/>
+                                <rect key="frame" x="24" y="623" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="ib6-tj-jxJ"/>
                                     <constraint firstAttribute="width" constant="20" id="r4c-9z-cFj"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjv-Ql-gkz">
-                                <rect key="frame" x="60" y="612.5" width="330" height="19"/>
+                                <rect key="frame" x="60" y="622" width="330" height="22.5"/>
                                 <string key="text">to release toxic emotions
 </string>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="16"/>
@@ -127,14 +127,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="check-box" translatesAutoresizingMaskIntoConstraints="NO" id="a0v-3B-iU6">
-                                <rect key="frame" x="24" y="648" width="20" height="20"/>
+                                <rect key="frame" x="24" y="659" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="BV9-Jj-6Ax"/>
                                     <constraint firstAttribute="width" constant="20" id="D9K-hZ-HQ7"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAW-9c-vMm">
-                                <rect key="frame" x="60" y="648.5" width="330" height="19"/>
+                                <rect key="frame" x="60" y="658" width="330" height="22.5"/>
                                 <string key="text">to release toxic emotions
 </string>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="16"/>
@@ -142,14 +142,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifying-glass" translatesAutoresizingMaskIntoConstraints="NO" id="pAq-Hn-UPs">
-                                <rect key="frame" x="24" y="700" width="20" height="20"/>
+                                <rect key="frame" x="24" y="711" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="QGe-qd-rsg"/>
                                     <constraint firstAttribute="width" constant="20" id="xSZ-jp-Zap"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaP-yX-ERo">
-                                <rect key="frame" x="60" y="695.5" width="92" height="29"/>
+                                <rect key="frame" x="60" y="705" width="88" height="32"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="14"/>
                                 <state key="normal" title="Why is works?">
                                     <color key="titleColor" red="0.96470588235294119" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
@@ -274,13 +274,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Practice Smiling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ch-vh-wnf">
-                                <rect key="frame" x="32" y="84" width="350" height="35"/>
+                                <rect key="frame" x="32" y="84" width="350" height="42"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="ITd-fa-gRu" customClass="TextViewFixed" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="32" y="151" width="350" height="657"/>
+                                <rect key="frame" x="32" y="158" width="350" height="650"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -315,7 +315,7 @@
     </scenes>
     <designables>
         <designable name="uTw-sI-wUh">
-            <size key="intrinsicContentSize" width="81" height="36"/>
+            <size key="intrinsicContentSize" width="81" height="40"/>
         </designable>
     </designables>
     <resources>

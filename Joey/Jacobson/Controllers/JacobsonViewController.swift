@@ -7,24 +7,50 @@
 
 import UIKit
 
-class JacobsonViewController: UIViewController {
-
+class JacobsonViewController: UIViewController, JacobsonExerciseDelegate {
+    
+    @IBOutlet weak var instructionImage: UIImageView!
+    @IBOutlet weak var instructionText: TextViewFixed!
+    @IBOutlet weak var exerciseLabel: UILabel!
+    @IBOutlet weak var navBar: NavigationBar!
+    
+    var currentExerciseIndex = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Circular Timer
-        // https://stackoverflow.com/a/30292047/11752450
+        updateExerciseData()
+        navBar.delegate = self
     }
     
-
-    /*
+    @IBAction func onStartButtonTapped(_ sender: Any) {
+        performSegue(withIdentifier: "toExercise", sender: nil)
+    }
+    
+    func nextExercise() {
+        if currentExerciseIndex < (jacobsonExercises.count - 1) {
+            currentExerciseIndex += 1
+            updateExerciseData()
+        }
+    }
+    
+    func getExercise() -> JacobsonExcercise {
+        return jacobsonExercises[currentExerciseIndex]
+    }
+    
+    func updateExerciseData() {
+        let exercise = getExercise()
+        instructionImage.image = exercise.image
+        instructionText.text = exercise.instruction
+        exerciseLabel.text = exercise.name
+    }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let vc = segue.destination as? JacobsonExerciseViewController {
+            vc.delegate = self
+        }
     }
-    */
 
 }
