@@ -83,6 +83,13 @@
                                     <segue destination="Wcb-dc-ddC" kind="show" id="RhX-Ll-jfH"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zEm-mt-1kO" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="Vb5-5a-rNa"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7AK-JA-pUu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -99,16 +106,22 @@
                             <constraint firstItem="JTj-TD-LZV" firstAttribute="leading" secondItem="7AK-JA-pUu" secondAttribute="leading" constant="24" id="NHS-5B-3Q3"/>
                             <constraint firstItem="eeZ-rP-h7g" firstAttribute="top" secondItem="F4P-Hf-oH7" secondAttribute="bottom" constant="24" id="QRm-r0-W2h"/>
                             <constraint firstItem="F4P-Hf-oH7" firstAttribute="leading" secondItem="ivt-tD-5Ag" secondAttribute="leading" constant="24" id="RAa-zU-sXU"/>
+                            <constraint firstItem="zEm-mt-1kO" firstAttribute="top" secondItem="7AK-JA-pUu" secondAttribute="top" id="UeT-F7-um5"/>
                             <constraint firstItem="d71-4z-3ep" firstAttribute="top" secondItem="7AK-JA-pUu" secondAttribute="top" constant="93" id="aPt-YB-Gqn"/>
                             <constraint firstItem="F4P-Hf-oH7" firstAttribute="centerX" secondItem="ivt-tD-5Ag" secondAttribute="centerX" id="bpt-8N-wx6"/>
                             <constraint firstItem="C61-Ns-u2B" firstAttribute="centerX" secondItem="ivt-tD-5Ag" secondAttribute="centerX" id="f3r-xu-v9t"/>
+                            <constraint firstItem="7AK-JA-pUu" firstAttribute="trailing" secondItem="zEm-mt-1kO" secondAttribute="trailing" id="gK9-eS-i1o"/>
                             <constraint firstItem="eeZ-rP-h7g" firstAttribute="leading" secondItem="7AK-JA-pUu" secondAttribute="leading" constant="24" id="gPq-OY-N7o"/>
                             <constraint firstItem="d71-4z-3ep" firstAttribute="leading" secondItem="ivt-tD-5Ag" secondAttribute="leading" constant="24" id="hum-a7-gfK"/>
                             <constraint firstItem="7AK-JA-pUu" firstAttribute="trailing" secondItem="eeZ-rP-h7g" secondAttribute="trailing" constant="24" id="wA6-ee-xkP"/>
+                            <constraint firstItem="zEm-mt-1kO" firstAttribute="leading" secondItem="7AK-JA-pUu" secondAttribute="leading" id="wO7-lz-73X"/>
                             <constraint firstItem="F4P-Hf-oH7" firstAttribute="top" secondItem="C61-Ns-u2B" secondAttribute="bottom" constant="32" id="xxY-Bz-xys"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wmv-x5-a13"/>
+                    <connections>
+                        <outlet property="navBar" destination="zEm-mt-1kO" id="kPH-jm-Nq3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IfI-zG-4B4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1547,7 +1560,6 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onClickContinueButton:" destination="wYD-IL-Yff" eventType="touchUpInside" id="7tm-Le-JeL"/>
-                                    <segue destination="jTo-Vr-DOo" kind="show" id="yVp-Go-YYS"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the evidence that against your negative thought?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bi4-bo-J2J">
@@ -1596,6 +1608,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                     <connections>
                         <outlet property="navBar" destination="gD4-lU-gOu" id="8t9-KJ-oDP"/>
                         <outlet property="textView" destination="B6f-G9-qwV" id="f7V-kv-2gn"/>
+                        <segue destination="jTo-Vr-DOo" kind="show" identifier="toAlternateThoughts" id="90O-iL-GNn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ixR-MF-zHh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1679,7 +1692,6 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onClickContinueButton:" destination="jTo-Vr-DOo" eventType="touchUpInside" id="qk4-bf-ohf"/>
-                                    <segue destination="nzg-YQ-2ww" kind="show" id="YoK-Jm-9P3"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now that you understand your negative thinking, how could you have handled the situation differently? " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6m-KU-xru">
@@ -1728,6 +1740,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                     <connections>
                         <outlet property="navBar" destination="mP9-oC-k61" id="U8M-5Y-8ef"/>
                         <outlet property="textView" destination="OuC-kj-q0O" id="Cgr-uQ-BJ3"/>
+                        <segue destination="nzg-YQ-2ww" kind="show" identifier="toNewMoods" id="v3Z-Bv-YCP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uS8-Ug-eaD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1821,6 +1834,9 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="moodsTapped:" destination="nzg-YQ-2ww" eventType="touchUpInside" id="bea-Fg-WND"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -1846,6 +1862,9 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="moodsTapped:" destination="nzg-YQ-2ww" eventType="touchUpInside" id="x1B-c4-W46"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t46-Br-82L" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                         <rect key="frame" x="179" y="0.0" width="155" height="38"/>
@@ -1866,6 +1885,9 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="moodsTapped:" destination="nzg-YQ-2ww" eventType="touchUpInside" id="KOU-92-uxb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -1891,6 +1913,9 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="moodsTapped:" destination="nzg-YQ-2ww" eventType="touchUpInside" id="4X7-3s-xR9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nK-2c-yoc" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                         <rect key="frame" x="179" y="0.0" width="155" height="38"/>
@@ -1911,6 +1936,9 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="moodsTapped:" destination="nzg-YQ-2ww" eventType="touchUpInside" id="2Tn-0F-qLG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -1936,6 +1964,9 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="moodsTapped:" destination="nzg-YQ-2ww" eventType="touchUpInside" id="9XG-M7-ITU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWb-QV-RHh" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                         <rect key="frame" x="179" y="0.0" width="155" height="38"/>
@@ -1956,6 +1987,9 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="moodsTapped:" destination="nzg-YQ-2ww" eventType="touchUpInside" id="ogb-q0-fHF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -1981,6 +2015,9 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="moodsTapped:" destination="nzg-YQ-2ww" eventType="touchUpInside" id="fSw-iM-0Ld"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJF-aG-D9m" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                         <rect key="frame" x="179" y="0.0" width="155" height="38"/>
@@ -2001,6 +2038,9 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                                 <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="moodsTapped:" destination="nzg-YQ-2ww" eventType="touchUpInside" id="yhj-rH-SBJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -2219,7 +2259,7 @@ Do you want to see it?</string>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="YQw-JE-CmF" kind="show" id="m7p-zS-4Up"/>
+                                            <action selector="onClickYesButton:" destination="zk5-Ui-EXK" eventType="touchUpInside" id="Mk4-vs-7hA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKq-eD-B4M" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
@@ -2275,6 +2315,7 @@ Do you want to see it?</string>
                     <navigationItem key="navigationItem" id="OS4-3r-gkI"/>
                     <connections>
                         <outlet property="navBar" destination="11V-JQ-s16" id="H5G-jp-O6j"/>
+                        <segue destination="YQw-JE-CmF" kind="show" identifier="toTRSummary" id="XTE-r9-ijl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ED-br-Sbe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2365,7 +2406,7 @@ Do you want to see it?</string>
                                                                 <constraint firstAttribute="trailing" secondItem="iwR-KA-hb2" secondAttribute="trailing" constant="8" id="vvt-Om-935"/>
                                                             </constraints>
                                                         </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ee-yK-mO8" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ee-yK-mO8">
                                                             <rect key="frame" x="0.0" y="50" width="366" height="82"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvG-Od-LNL">
@@ -2447,6 +2488,7 @@ Do you want to see it?</string>
                     </view>
                     <navigationItem key="navigationItem" id="7Hz-nD-RLp"/>
                     <connections>
+                        <outlet property="labelDate" destination="d5f-gh-9tk" id="60Z-CA-65s"/>
                         <outlet property="navBar" destination="CIj-vs-LXm" id="u8d-KD-FnZ"/>
                         <outlet property="tableView" destination="ayf-OW-n6C" id="25v-Fe-Xcp"/>
                     </connections>
@@ -2556,8 +2598,109 @@ Do you want to do this activity again?</string>
             <point key="canvasLocation" x="5562" y="710"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="5nK-2c-yoc">
+            <size key="intrinsicContentSize" width="49" height="38"/>
+        </designable>
+        <designable name="7ay-b0-IhI">
+            <size key="intrinsicContentSize" width="68" height="38"/>
+        </designable>
+        <designable name="BbM-ws-c5w">
+            <size key="intrinsicContentSize" width="52" height="38"/>
+        </designable>
+        <designable name="CF7-rp-nlN">
+            <size key="intrinsicContentSize" width="48" height="38"/>
+        </designable>
+        <designable name="E8j-TK-oA4">
+            <size key="intrinsicContentSize" width="61" height="40"/>
+        </designable>
+        <designable name="HVX-7H-tG9">
+            <size key="intrinsicContentSize" width="53" height="38"/>
+        </designable>
+        <designable name="IIU-zg-uVo">
+            <size key="intrinsicContentSize" width="30" height="38"/>
+        </designable>
+        <designable name="JQP-rH-rih">
+            <size key="intrinsicContentSize" width="74" height="38"/>
+        </designable>
+        <designable name="Juj-MS-h47">
+            <size key="intrinsicContentSize" width="62" height="38"/>
+        </designable>
+        <designable name="LVr-x4-enK">
+            <size key="intrinsicContentSize" width="81" height="40"/>
+        </designable>
+        <designable name="LyX-1O-vga">
+            <size key="intrinsicContentSize" width="30" height="38"/>
+        </designable>
+        <designable name="Rca-Gl-hK3">
+            <size key="intrinsicContentSize" width="68" height="38"/>
+        </designable>
+        <designable name="SUn-Qu-1Pb">
+            <size key="intrinsicContentSize" width="81" height="40"/>
+        </designable>
+        <designable name="Xfc-7p-0S5">
+            <size key="intrinsicContentSize" width="53" height="38"/>
+        </designable>
+        <designable name="YKq-eD-B4M">
+            <size key="intrinsicContentSize" width="30" height="38"/>
+        </designable>
+        <designable name="ZWb-QV-RHh">
+            <size key="intrinsicContentSize" width="103" height="38"/>
+        </designable>
+        <designable name="aFl-gc-ptI">
+            <size key="intrinsicContentSize" width="81" height="40"/>
+        </designable>
+        <designable name="cDc-Rm-lz0">
+            <size key="intrinsicContentSize" width="81" height="40"/>
+        </designable>
+        <designable name="dcp-AL-X82">
+            <size key="intrinsicContentSize" width="62" height="38"/>
+        </designable>
+        <designable name="dkg-Cb-LdB">
+            <size key="intrinsicContentSize" width="103" height="38"/>
+        </designable>
+        <designable name="dqp-pa-l4v">
+            <size key="intrinsicContentSize" width="30" height="38"/>
+        </designable>
+        <designable name="g6I-MI-1MC">
+            <size key="intrinsicContentSize" width="81" height="40"/>
+        </designable>
+        <designable name="ioN-YR-MtI">
+            <size key="intrinsicContentSize" width="45" height="40"/>
+        </designable>
+        <designable name="lae-Nf-sZw">
+            <size key="intrinsicContentSize" width="60" height="38"/>
+        </designable>
+        <designable name="mLe-vq-l0C">
+            <size key="intrinsicContentSize" width="81" height="40"/>
+        </designable>
+        <designable name="nJF-aG-D9m">
+            <size key="intrinsicContentSize" width="74" height="38"/>
+        </designable>
+        <designable name="nwb-9S-x34">
+            <size key="intrinsicContentSize" width="30" height="38"/>
+        </designable>
+        <designable name="oyE-Nc-Jpf">
+            <size key="intrinsicContentSize" width="60" height="38"/>
+        </designable>
+        <designable name="qo3-BQ-McZ">
+            <size key="intrinsicContentSize" width="52" height="38"/>
+        </designable>
+        <designable name="t46-Br-82L">
+            <size key="intrinsicContentSize" width="30" height="38"/>
+        </designable>
+        <designable name="u4I-F5-S9r">
+            <size key="intrinsicContentSize" width="81" height="40"/>
+        </designable>
+        <designable name="xP7-7r-H0r">
+            <size key="intrinsicContentSize" width="48" height="38"/>
+        </designable>
+        <designable name="yVO-7E-olH">
+            <size key="intrinsicContentSize" width="49" height="38"/>
+        </designable>
+    </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="tkR-WG-BA9"/>
+        <segue reference="ICH-mk-Jc3"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="OB_modalClose_xButton" width="41" height="41"/>

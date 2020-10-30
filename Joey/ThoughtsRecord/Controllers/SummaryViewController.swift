@@ -8,7 +8,16 @@
 import UIKit
 
 class SummaryViewController: UIViewController {
+    
+    struct ThoughtData {
+        var title: String
+        var content: String
+    }
+    
+    var data: ThoughtsRecordTemp?
 
+    @IBOutlet weak var labelDate: UILabel!
+    
     @IBOutlet weak var navBar: NavigationBar!
     
     @IBOutlet weak var tableView: UITableView!
@@ -21,11 +30,21 @@ class SummaryViewController: UIViewController {
         return imageView
     }()
     
+    var thoughts = [ThoughtData]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        createArrayfromThoughtsData()
+        print(thoughts)
+        tableView.delegate = self
+        tableView.dataSource = self
         setupUI()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func createArrayfromThoughtsData() {
+        thoughts.append(ThoughtData(title: "Evidence", content: data?.evidence ?? ""))
     }
     
     func setupUI(){
@@ -52,15 +71,23 @@ class SummaryViewController: UIViewController {
 
 }
 
-//extension SummaryViewController: UITableViewDelegate, UITableViewDataSource {
-//    
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        <#code#>
-//    }
-//    
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        <#code#>
-//    }
-//    
-//    
-//}
+extension SummaryViewController: UITableViewDelegate, UITableViewDataSource {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return thoughts.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let thought = thoughts[indexPath.row]
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "summaryCell") as! SummaryTableViewCell
+        
+        cell.title.text = thought.title
+        cell.content.text = thought.content
+        print(thought)
+        
+        return cell
+    }
+
+
+}

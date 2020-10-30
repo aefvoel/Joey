@@ -12,7 +12,7 @@ class SummaryTableViewCell: UITableViewCell {
     @IBOutlet weak var title: UILabel!
     
     @IBOutlet weak var content: UILabel!
-    
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
