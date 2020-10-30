@@ -34,6 +34,7 @@ class EvidenceViewController: UIViewController, UITextViewDelegate {
     @IBAction func onClickContinueButton(_ sender: Any) {
         guard let answer = textView?.text else { return }
         data?.evidence = answer
+        performSegue(withIdentifier: "toNotSupportedEvidence", sender: nil)
     }
     
     func setupUI(){

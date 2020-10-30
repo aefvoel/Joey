@@ -33,6 +33,7 @@ class EvidenceNotSupportViewController: UIViewController, UITextViewDelegate {
     @IBAction func onClickContinueButton(_ sender: Any) {
         guard let answer = textView?.text else { return }
         data?.notSupportedEvidence = answer
+        performSegue(withIdentifier: "toAlternateThoughts", sender: nil)
     }
     
     func setupUI(){

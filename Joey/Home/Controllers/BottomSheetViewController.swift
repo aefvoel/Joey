@@ -12,7 +12,7 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
     
     @IBOutlet weak var bottomSheetScrollView: UIScrollView!
     @IBOutlet weak var activitiesCollectionView: UICollectionView!
-    @IBOutlet weak var activitiesChartView: LineChartView!
+    @IBOutlet weak var barChartView: BarChartView!
     @IBOutlet weak var labelUserName: UILabel!
     var selectedActivity: ActivitiesInstruction?
     override func viewDidLoad() {
@@ -44,53 +44,40 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
         labelUserName.text = UserDefaultsHelper.getData(type: String.self, forKey: .userName)
     }
     func setupChart(){
-        activitiesChartView.delegate = self
-        activitiesChartView.chartDescription?.enabled = true
-        activitiesChartView.dragEnabled = true
-        activitiesChartView.setScaleEnabled(true)
-        activitiesChartView.pinchZoomEnabled = true
+        barChartView.delegate = self
+        barChartView.chartDescription?.enabled = false
+        barChartView.dragEnabled = true
+        barChartView.setScaleEnabled(false)
+        barChartView.pinchZoomEnabled = false
         
-        activitiesChartView.rightAxis.enabled = false
-        activitiesChartView.xAxis.enabled = true
-        activitiesChartView.xAxis.drawGridLinesEnabled = false
-        activitiesChartView.leftAxis.drawGridLinesEnabled = false
+        barChartView.rightAxis.enabled = false
+        barChartView.xAxis.enabled = true
+        barChartView.xAxis.labelPosition = .bottom
+        barChartView.xAxis.drawGridLinesEnabled = false
+        barChartView.leftAxis.drawGridLinesEnabled = false
+        barChartView.legend.enabled = false
         
-        activitiesChartView.legend.form = .line
+        barChartView.animate(xAxisDuration: 2.5)
         
-        activitiesChartView.animate(xAxisDuration: 2.5)
-        
-        var lineChartEntry = [ChartDataEntry]()
-        let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-        let number = [1,5,3,7,5,3,9,7,15,25,9,11]
+        var barChartEntry = [BarChartDataEntry]()
+        let emotionType = ["","Need cheer-up", "Irritated", "So-so", "Awesome"]
+        let number = [1,1,1,2,3,4,1,2,3,4,1,2,3,4,3,2,2,2,3,3,3,2,1,1,4,4,3,4,1,4]
         for i in 0..<number.count {
-            let value = ChartDataEntry(x: Double(i), y: Double(number[i]))
-            lineChartEntry.append(value)
+            let value = BarChartDataEntry(x: Double(i+1), y: Double(number[i]))
+            barChartEntry.append(value)
         }
-        let lineChart = LineChartDataSet(entries: lineChartEntry, label: "Sad")
-        lineChart.drawIconsEnabled = true
-        lineChart.setColor(.black)
-        lineChart.setCircleColor(.red)
-        lineChart.lineWidth = 3
-        lineChart.circleRadius = 3
-        lineChart.drawCircleHoleEnabled = true
-        lineChart.valueFont = .systemFont(ofSize: 9)
-        lineChart.formLineWidth = 3
-        lineChart.formSize = 15
+        let barChart = BarChartDataSet(entries: barChartEntry, label: "Sad")
+        barChart.setColor(UIColor(red: 0.35, green: 0.76, blue: 0.74, alpha: 1.00))
+        barChart.drawValuesEnabled = false
         
-        let gradientColors = [ChartColorTemplates.colorFromString("#00ff0000").cgColor,
-                              ChartColorTemplates.colorFromString("#ffff0000").cgColor]
-        let gradient = CGGradient(colorsSpace: nil, colors: gradientColors as CFArray, locations: nil)!
-        
-        lineChart.fillAlpha = 5
-        lineChart.fill = Fill(linearGradient: gradient, angle: 90) //.linearGradient(gradient, angle: 90)
-        lineChart.drawFilledEnabled = true
-        
-        let lineChartData = LineChartData()
-        lineChartData.addDataSet(lineChart)
-        activitiesChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: months)
-        activitiesChartView.xAxis.granularity = 1
-        activitiesChartView.data = lineChartData
-        activitiesChartView.chartDescription?.text = "Your Mood"
+        let lineChartData = BarChartData()
+        lineChartData.addDataSet(barChart)
+//        barChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: months)
+        barChartView.leftAxis.valueFormatter = IndexAxisValueFormatter(values: emotionType)
+        barChartView.xAxis.granularity = 1.0
+        barChartView.leftAxis.granularity = 1
+
+        barChartView.data = lineChartData
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -10,7 +10,8 @@ import UIKit
 class AfterActivityViewController: UIViewController {
 
     var data: FollowUp?
-    var instruction: ActivitiesInstruction?
+    var activityInstruction: ActivitiesInstruction?
+    
     @IBOutlet weak var navBar: NavigationBar!
     @IBOutlet weak var suggestionLabel: UILabel!
     var imageView: UIImageView = {
@@ -28,9 +29,6 @@ class AfterActivityViewController: UIViewController {
     
     func setupUI(){
         navBar.delegate = self
-        if let activity = data?.suggestActivity() {
-            instruction = activity
-        }
         self.view.insertSubview(imageView, at: 0)
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -57,7 +55,7 @@ class AfterActivityViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? InstructionViewController {
-            vc.activityInstruction = instruction
+            vc.activityInstruction = activityInstruction
         }
     }
     // MARK: - Navigation
