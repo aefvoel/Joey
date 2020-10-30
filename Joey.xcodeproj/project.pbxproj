@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1604CB11254A7BFA009BFACB /* JacobsonExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1604CB10254A7BFA009BFACB /* JacobsonExerciseViewController.swift */; };
+		1604CB17254A7CFD009BFACB /* JacobsonExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1604CB16254A7CFD009BFACB /* JacobsonExercise.swift */; };
 		16170AAB254103460095D1A5 /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16170AAA254103460095D1A5 /* ActivitiesViewController.swift */; };
 		16170AB4254103750095D1A5 /* Activities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16170AB3254103750095D1A5 /* Activities.storyboard */; };
 		16170ABB254103C20095D1A5 /* JacobsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16170ABA254103C20095D1A5 /* JacobsonViewController.swift */; };
@@ -37,6 +39,7 @@
 		169C073F25413C3C0071387C /* Instruction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169C073E25413C3C0071387C /* Instruction.storyboard */; };
 		169C0744254143A90071387C /* TextViewFixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169C0743254143A90071387C /* TextViewFixed.swift */; };
 		16AA990B253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AA990A253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift */; };
+		16B3758C254A6B100027B696 /* InstructionModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3758B254A6B100027B696 /* InstructionModalViewController.swift */; };
 		16EE8CA425414A1200FA9CE6 /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE8CA325414A1200FA9CE6 /* InstructionView.swift */; };
 		16FA4BFC2547D7BD00D3EFFC /* DetectEmotionAnalyzeAgainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FA4BFB2547D7BD00D3EFFC /* DetectEmotionAnalyzeAgainViewController.swift */; };
 		5A0FD165254718260048B757 /* AutomaticThoughtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0FD164254718260048B757 /* AutomaticThoughtsViewController.swift */; };
@@ -106,6 +109,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1604CB10254A7BFA009BFACB /* JacobsonExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JacobsonExerciseViewController.swift; sourceTree = "<group>"; };
+		1604CB16254A7CFD009BFACB /* JacobsonExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JacobsonExercise.swift; sourceTree = "<group>"; };
 		16170AAA254103460095D1A5 /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
 		16170AB3254103750095D1A5 /* Activities.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Activities.storyboard; sourceTree = "<group>"; };
 		16170ABA254103C20095D1A5 /* JacobsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JacobsonViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +141,7 @@
 		169C073E25413C3C0071387C /* Instruction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Instruction.storyboard; sourceTree = "<group>"; };
 		169C0743254143A90071387C /* TextViewFixed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewFixed.swift; sourceTree = "<group>"; };
 		16AA990A253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionAnalyzeViewController.swift; sourceTree = "<group>"; };
+		16B3758B254A6B100027B696 /* InstructionModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionModalViewController.swift; sourceTree = "<group>"; };
 		16EE8CA325414A1200FA9CE6 /* InstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
 		16FA4BFB2547D7BD00D3EFFC /* DetectEmotionAnalyzeAgainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionAnalyzeAgainViewController.swift; sourceTree = "<group>"; };
 		5A0FD164254718260048B757 /* AutomaticThoughtsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomaticThoughtsViewController.swift; sourceTree = "<group>"; };
@@ -222,9 +228,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1604CB15254A7CE5009BFACB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1604CB16254A7CFD009BFACB /* JacobsonExercise.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		16170AA8254103010095D1A5 /* Jacobson */ = {
 			isa = PBXGroup;
 			children = (
+				1604CB15254A7CE5009BFACB /* Models */,
 				16170AB9254103B10095D1A5 /* Views */,
 				16170AB8254103AC0095D1A5 /* Controllers */,
 			);
@@ -254,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				16170ABA254103C20095D1A5 /* JacobsonViewController.swift */,
+				1604CB10254A7BFA009BFACB /* JacobsonExerciseViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -482,6 +498,7 @@
 			isa = PBXGroup;
 			children = (
 				169C073525413C300071387C /* InstructionViewController.swift */,
+				16B3758B254A6B100027B696 /* InstructionModalViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -829,8 +846,10 @@
 				AB46C13D25486A6D00D2F22C /* AfterActivityViewController.swift in Sources */,
 				5AD1E5B22541403B00BD18D5 /* ActivityListCell.swift in Sources */,
 				5A8C6EA6253EA57600F95286 /* TermsOfServiceModel.swift in Sources */,
+				16B3758C254A6B100027B696 /* InstructionModalViewController.swift in Sources */,
 				167E0E7B253EABA700602784 /* EmotionHelper.swift in Sources */,
 				5A684144254825C500CDFB59 /* FinishedViewController.swift in Sources */,
+				1604CB17254A7CFD009BFACB /* JacobsonExercise.swift in Sources */,
 				1645F8DA2546923A001058A3 /* DetectEmotionAdviceViewController.swift in Sources */,
 				1655E28725467A5300ACCF9C /* DetectEmotionValidateViewController.swift in Sources */,
 				5A6841342547E8AB00CDFB59 /* NewMoodsViewController.swift in Sources */,
@@ -845,6 +864,7 @@
 				5A9841CA254691B1009D9FDD /* SituationViewController.swift in Sources */,
 				ABEBCCAF253E87AC002E03A6 /* UserDefaultsHelper.swift in Sources */,
 				16170ADA25411EAE0095D1A5 /* MirrorViewController.swift in Sources */,
+				1604CB11254A7BFA009BFACB /* JacobsonExerciseViewController.swift in Sources */,
 				5A8C6EAF253EAA4F00F95286 /* TOSTableViewCell.swift in Sources */,
 				AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */,
 				169C0744254143A90071387C /* TextViewFixed.swift in Sources */,

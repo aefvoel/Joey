@@ -12,6 +12,7 @@ struct ActivitiesInstruction {
     var instructionContent: String
     var activityHelpsContent: String
     var whyItWorks: [String]
+    var scientificReason: String
     var activityImage: UIImage
     var activityShortDesc: String
     var activityHomeImage: UIImage
@@ -26,6 +27,7 @@ var activitiesInstructionArray = [
         instructionContent: "This activity works by building your confidence use your subconscious mind. You look straight in front of the mirror, with your head up and shoulders back. Look into your eyes, breath deeply, and start repeating powerful affirmations out loud. Try to think of something positive about yourself and truly believe in every word when you see yourself in a mirror. You can say that you’re fabolous and compliment your clothes, hair, or anything that makes you feel great.\nP.S. During this activity, we will detect your face but it won’t be recorded or saved. Because we want to see your emotion progress.",
         activityHelpsContent: "List of Help",
         whyItWorks: ["Terpercaya", "Bagus", "Nyaman"],
+        scientificReason: "Lorem ipsum",
         activityImage: #imageLiteral(resourceName: "mirrorTechnique_activityList"),
         activityShortDesc: "Release negative thoughts",
         activityHomeImage: #imageLiteral(resourceName: "Mirror Technique_miniCard"),
@@ -38,6 +40,7 @@ var activitiesInstructionArray = [
         instructionContent: "Pecahkan gelembung",
         activityHelpsContent: "List of Help",
         whyItWorks: ["Terpercaya", "Bagus", "Nyaman"],
+        scientificReason: "Lorem ipsum",
         activityImage: #imageLiteral(resourceName: "practiceSmiling_activityList"),
         activityShortDesc: "Practice Mindfulness",
         activityHomeImage: #imageLiteral(resourceName: "practiceSmiling_miniCard"),
@@ -50,6 +53,7 @@ var activitiesInstructionArray = [
         instructionContent: "Tabok aja bor",
         activityHelpsContent: "List of Help",
         whyItWorks: ["Terpercaya", "Bagus", "Nyaman"],
+        scientificReason: "Lorem ipsum",
         activityImage: #imageLiteral(resourceName: "jackobsRelaxation_activityList"),
         activityShortDesc: "Release negative thoughts",
         activityHomeImage: #imageLiteral(resourceName: "Jackob_miniCard"),
