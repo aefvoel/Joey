@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1604CB11254A7BFA009BFACB /* JacobsonExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1604CB10254A7BFA009BFACB /* JacobsonExerciseViewController.swift */; };
+		1604CB17254A7CFD009BFACB /* JacobsonExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1604CB16254A7CFD009BFACB /* JacobsonExercise.swift */; };
 		16170AAB254103460095D1A5 /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16170AAA254103460095D1A5 /* ActivitiesViewController.swift */; };
 		16170AB4254103750095D1A5 /* Activities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16170AB3254103750095D1A5 /* Activities.storyboard */; };
 		16170ABB254103C20095D1A5 /* JacobsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16170ABA254103C20095D1A5 /* JacobsonViewController.swift */; };
@@ -37,6 +39,7 @@
 		169C073F25413C3C0071387C /* Instruction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169C073E25413C3C0071387C /* Instruction.storyboard */; };
 		169C0744254143A90071387C /* TextViewFixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169C0743254143A90071387C /* TextViewFixed.swift */; };
 		16AA990B253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AA990A253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift */; };
+		16B3758C254A6B100027B696 /* InstructionModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3758B254A6B100027B696 /* InstructionModalViewController.swift */; };
 		16EE8CA425414A1200FA9CE6 /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE8CA325414A1200FA9CE6 /* InstructionView.swift */; };
 		16FA4BFC2547D7BD00D3EFFC /* DetectEmotionAnalyzeAgainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FA4BFB2547D7BD00D3EFFC /* DetectEmotionAnalyzeAgainViewController.swift */; };
 		5A0FD165254718260048B757 /* AutomaticThoughtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0FD164254718260048B757 /* AutomaticThoughtsViewController.swift */; };
@@ -64,6 +67,8 @@
 		5AD1E5B22541403B00BD18D5 /* ActivityListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1E5B12541403B00BD18D5 /* ActivityListCell.swift */; };
 		5AD1E5B7254141D000BD18D5 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		AB46C13D25486A6D00D2F22C /* AfterActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB46C13C25486A6D00D2F22C /* AfterActivityViewController.swift */; };
+		AB51A9DB254B02B100E5E64B /* MySpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51A9DA254B02B100E5E64B /* MySpaceViewController.swift */; };
+		AB51A9E0254B02C500E5E64B /* MySpace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB51A9DF254B02C500E5E64B /* MySpace.storyboard */; };
 		AB7292D6254911ED0003B21E /* StartMirrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7292D5254911ED0003B21E /* StartMirrorViewController.swift */; };
 		AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A174253730F9003F8823 /* AppDelegate.swift */; };
 		AB92A177253730F9003F8823 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A176253730F9003F8823 /* SceneDelegate.swift */; };
@@ -76,7 +81,6 @@
 		AB92A19A253730FA003F8823 /* JoeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A199253730FA003F8823 /* JoeyUITests.swift */; };
 		AB92A1B5253747E4003F8823 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = AB92A1B4253747E4003F8823 /* Charts */; };
 		AB92A1BC25374831003F8823 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB92A1BB25374831003F8823 /* CloudKit.framework */; };
-		AB933DE025406D4D00DBBD0D /* TOSPPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB933DDF25406D4D00DBBD0D /* TOSPPViewController.swift */; };
 		AB9857CB253C9F3D00485B29 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9857CA253C9F3D00485B29 /* BottomSheetViewController.swift */; };
 		AB9857D4253CB24E00485B29 /* FittedSheets in Frameworks */ = {isa = PBXBuildFile; productRef = AB9857D3253CB24E00485B29 /* FittedSheets */; };
 		ABD9DE32254157C300C2154C /* StartPracticeSmilingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9DE31254157C300C2154C /* StartPracticeSmilingViewController.swift */; };
@@ -109,6 +113,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1604CB10254A7BFA009BFACB /* JacobsonExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JacobsonExerciseViewController.swift; sourceTree = "<group>"; };
+		1604CB16254A7CFD009BFACB /* JacobsonExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JacobsonExercise.swift; sourceTree = "<group>"; };
 		16170AAA254103460095D1A5 /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
 		16170AB3254103750095D1A5 /* Activities.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Activities.storyboard; sourceTree = "<group>"; };
 		16170ABA254103C20095D1A5 /* JacobsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JacobsonViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +145,7 @@
 		169C073E25413C3C0071387C /* Instruction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Instruction.storyboard; sourceTree = "<group>"; };
 		169C0743254143A90071387C /* TextViewFixed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewFixed.swift; sourceTree = "<group>"; };
 		16AA990A253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionAnalyzeViewController.swift; sourceTree = "<group>"; };
+		16B3758B254A6B100027B696 /* InstructionModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionModalViewController.swift; sourceTree = "<group>"; };
 		16EE8CA325414A1200FA9CE6 /* InstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
 		16FA4BFB2547D7BD00D3EFFC /* DetectEmotionAnalyzeAgainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionAnalyzeAgainViewController.swift; sourceTree = "<group>"; };
 		5A0FD164254718260048B757 /* AutomaticThoughtsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomaticThoughtsViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +174,8 @@
 		5AD1E5B12541403B00BD18D5 /* ActivityListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListCell.swift; sourceTree = "<group>"; };
 		5AD838C8253E8BCC0042D14E /* Yuanti.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yuanti.ttc; sourceTree = "<group>"; };
 		AB46C13C25486A6D00D2F22C /* AfterActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterActivityViewController.swift; sourceTree = "<group>"; };
+		AB51A9DA254B02B100E5E64B /* MySpaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpaceViewController.swift; sourceTree = "<group>"; };
+		AB51A9DF254B02C500E5E64B /* MySpace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MySpace.storyboard; sourceTree = "<group>"; };
 		AB7292D5254911ED0003B21E /* StartMirrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMirrorViewController.swift; sourceTree = "<group>"; };
 		AB92A171253730F9003F8823 /* Joey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB92A174253730F9003F8823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -227,9 +236,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1604CB15254A7CE5009BFACB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1604CB16254A7CFD009BFACB /* JacobsonExercise.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		16170AA8254103010095D1A5 /* Jacobson */ = {
 			isa = PBXGroup;
 			children = (
+				1604CB15254A7CE5009BFACB /* Models */,
 				16170AB9254103B10095D1A5 /* Views */,
 				16170AB8254103AC0095D1A5 /* Controllers */,
 			);
@@ -259,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				16170ABA254103C20095D1A5 /* JacobsonViewController.swift */,
+				1604CB10254A7BFA009BFACB /* JacobsonExerciseViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -489,6 +508,7 @@
 			isa = PBXGroup;
 			children = (
 				169C073525413C300071387C /* InstructionViewController.swift */,
+				16B3758B254A6B100027B696 /* InstructionModalViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -553,6 +573,31 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		AB51A9D7254B026A00E5E64B /* MySpace */ = {
+			isa = PBXGroup;
+			children = (
+				AB51A9D9254B028B00E5E64B /* Controllers */,
+				AB51A9D8254B028100E5E64B /* Views */,
+			);
+			path = MySpace;
+			sourceTree = "<group>";
+		};
+		AB51A9D8254B028100E5E64B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB51A9DF254B02C500E5E64B /* MySpace.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AB51A9D9254B028B00E5E64B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB51A9DA254B02B100E5E64B /* MySpaceViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		AB92A168253730F9003F8823 = {
 			isa = PBXGroup;
 			children = (
@@ -579,6 +624,7 @@
 		AB92A173253730F9003F8823 /* Joey */ = {
 			isa = PBXGroup;
 			children = (
+				AB51A9D7254B026A00E5E64B /* MySpace */,
 				ABD9DE4225466DE900C2154C /* NavigationBar */,
 				169C073325413C170071387C /* Instruction */,
 				16170AED254126F00095D1A5 /* ThoughtsRecord */,
@@ -740,7 +786,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					AB92A170253730F9003F8823 = {
 						CreatedOnToolsVersion = 12.0.1;
@@ -795,6 +841,7 @@
 				16170AB4254103750095D1A5 /* Activities.storyboard in Resources */,
 				ABD9DE5C2546721600C2154C /* NavigationBar.xib in Resources */,
 				ABEBCCC3253E949F002E03A6 /* Yuanti.ttc in Resources */,
+				AB51A9E0254B02C500E5E64B /* MySpace.storyboard in Resources */,
 				16170AE325411EBE0095D1A5 /* Mirror.storyboard in Resources */,
 				166C532C253732DF007C5EF3 /* Home.storyboard in Resources */,
 				ABECBF11253D891C00EF7D43 /* ActivitiesCollectionViewCell.xib in Resources */,
@@ -834,10 +881,13 @@
 				5AAE9BBA253F08820075966B /* PrivPolicyTableViewController.swift in Sources */,
 				5AD1E5B7254141D000BD18D5 /* (null) in Sources */,
 				AB46C13D25486A6D00D2F22C /* AfterActivityViewController.swift in Sources */,
+				AB51A9DB254B02B100E5E64B /* MySpaceViewController.swift in Sources */,
 				5AD1E5B22541403B00BD18D5 /* ActivityListCell.swift in Sources */,
 				5A8C6EA6253EA57600F95286 /* TermsOfServiceModel.swift in Sources */,
+				16B3758C254A6B100027B696 /* InstructionModalViewController.swift in Sources */,
 				167E0E7B253EABA700602784 /* EmotionHelper.swift in Sources */,
 				5A684144254825C500CDFB59 /* FinishedViewController.swift in Sources */,
+				1604CB17254A7CFD009BFACB /* JacobsonExercise.swift in Sources */,
 				1645F8DA2546923A001058A3 /* DetectEmotionAdviceViewController.swift in Sources */,
 				1655E28725467A5300ACCF9C /* DetectEmotionValidateViewController.swift in Sources */,
 				5A6841342547E8AB00CDFB59 /* NewMoodsViewController.swift in Sources */,
@@ -853,12 +903,12 @@
 				5A9841CA254691B1009D9FDD /* SituationViewController.swift in Sources */,
 				ABEBCCAF253E87AC002E03A6 /* UserDefaultsHelper.swift in Sources */,
 				16170ADA25411EAE0095D1A5 /* MirrorViewController.swift in Sources */,
+				1604CB11254A7BFA009BFACB /* JacobsonExerciseViewController.swift in Sources */,
 				5A8C6EAF253EAA4F00F95286 /* TOSTableViewCell.swift in Sources */,
 				AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */,
 				169C0744254143A90071387C /* TextViewFixed.swift in Sources */,
 				5A9DA16125406BFE0090EC41 /* TOSPPViewController.swift in Sources */,
 				5A68412C2547D56400CDFB59 /* EvidenceNotSupportViewController.swift in Sources */,
-				AB933DE025406D4D00DBBD0D /* TOSPPViewController.swift in Sources */,
 				5A0FD165254718260048B757 /* AutomaticThoughtsViewController.swift in Sources */,
 				5AAE9BB5253F08610075966B /* PrivPolicyTableViewCell.swift in Sources */,
 				5A8C7B92254A59D000569797 /* SummaryTableViewCell.swift in Sources */,
@@ -869,7 +919,6 @@
 				16475D9A2547DAE70074D025 /* DetectEmotionSuggestActivityViewController.swift in Sources */,
 				16170AAB254103460095D1A5 /* ActivitiesViewController.swift in Sources */,
 				ABECBF17253D8E7600EF7D43 /* Activity.swift in Sources */,
-				AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */,
 				5AD1E5AD2541363200BD18D5 /* ActivityListViewController.swift in Sources */,
 				16AA990B253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift in Sources */,
 				16170ABB254103C20095D1A5 /* JacobsonViewController.swift in Sources */,
@@ -878,7 +927,6 @@
 				169C073625413C300071387C /* InstructionViewController.swift in Sources */,
 				5A6841272547D45100CDFB59 /* EvidenceViewController.swift in Sources */,
 				5A68414C25482AD200CDFB59 /* ThoughtsRecordHelper.swift in Sources */,
-				166C534D253733A0007C5EF3 /* DetectEmotionStartViewController.swift in Sources */,
 				16475D9F2547DBA80074D025 /* DetectEmotionCorrectionViewController.swift in Sources */,
 				167E0E73253EA1CB00602784 /* FaceData.swift in Sources */,
 				162142DC25468B9D001BFF86 /* DetectEmotionScaleViewController.swift in Sources */,

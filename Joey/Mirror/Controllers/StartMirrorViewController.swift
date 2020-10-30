@@ -15,12 +15,22 @@ class StartMirrorViewController: UIViewController {
     @IBOutlet weak var labelInstruction: UILabel!
     @IBOutlet weak var navBar: NavigationBar!
     @IBOutlet weak var labelPrepare: UILabel!
-    
+    @IBOutlet weak var imgMascot: UIImageView!
+    @IBOutlet weak var imgNext: UIImageView!
+    @IBOutlet weak var imgPrev: UIImageView!
+    @IBOutlet weak var labelTextHint: UILabel!
+    @IBOutlet weak var viewHint: RoundedView!
+    @IBOutlet weak var labelHint: UILabel!
+    @IBOutlet weak var imgBubble: UIImageView!
     var isSmile: Bool! {
         didSet {
             print(isSmile!)
         }
     }
+    
+    var arrayHint = ["I’m getting stronger every day",
+                     "I know my worth",
+                     "I have the courage to say “NO”"]
     
     var countdownTimer: Timer!
     var totalTime: Int?
@@ -39,6 +49,10 @@ class StartMirrorViewController: UIViewController {
         setupUI()
     }
     
+    @IBAction func onClickButtonDone(_ sender: Any) {
+        endTimer()
+        performSegue(withIdentifier: "toAfterActivity", sender: nil)
+    }
     func setupUI(){
         startPrepareTimer()
         navBar.delegate = self
@@ -50,6 +64,9 @@ class StartMirrorViewController: UIViewController {
             imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
+        labelPrepare.font = labelPrepare.font.withSize(48)
+        labelHint.isHidden = true
+        viewHint.isHidden = true
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -87,16 +104,40 @@ class StartMirrorViewController: UIViewController {
         labelPrepare.text = "\(prepareTimeFormatted(prepareTime))"
         
         if prepareTime != 0 {
+            labelInstruction.text = "Start in \(prepareTime).."
             prepareTime -= 1
         } else {
             endTimer()
             startTimer()
+            updateUI()
         }
+    }
+    
+    private func updateUI(){
+        labelInstruction.isHidden = true
+        labelPrepare.font = labelPrepare.font.withSize(24)
+        labelPrepare.text = "Confused on what to say?"
+        imgMascot.isHidden = true
+        imgBubble.isHidden = true
+        labelHint.isHidden = false
+        labelPrepare.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(self.clickHint)))
+        labelHint.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(self.clickHint)))
+    }
+    
+    @objc func clickHint(sender : UITapGestureRecognizer) {
+        viewHint.isHidden = false
+        labelHint.isHidden = true
+        labelPrepare.isHidden = true
+        labelTextHint.text = arrayHint[Int.random(in: 0..<arrayHint.count)]
+        imgPrev.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(self.randomHint)))
+        imgNext.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(self.randomHint)))
+    }
+    @objc func randomHint() {
+        labelTextHint.text = arrayHint[Int.random(in: 0..<arrayHint.count)]
     }
     
     @objc func updateTime() {
         labelTimer.text = "\(timeFormatted(totalTime!))"
-        labelPrepare.text = "Confused on what to say?"
         if totalTime! < 55 && totalTime! > 10 {
             DispatchQueue.main.async {
                 if self.isSmile {
@@ -116,6 +157,12 @@ class StartMirrorViewController: UIViewController {
         } else {
             endTimer()
             performSegue(withIdentifier: "toAfterActivity", sender: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? AfterActivityViewController {
+            vc.activityInstruction = activitiesInstructionArray[0]
         }
     }
     
@@ -152,10 +199,10 @@ extension StartMirrorViewController: ARSCNViewDelegate {
 //            self.handleSmile(smileValue: CGFloat((data.mouthSmileLeft + data.mouthSmileRight)/2.0))
 //        }
 //
-        let workItem = DispatchWorkItem {
-            self.handleSmile(smileValue: CGFloat((data.mouthSmileLeft + data.mouthSmileRight)/2.0))
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: workItem)
+//        let workItem = DispatchWorkItem {
+//            self.handleSmile(smileValue: CGFloat((data.mouthSmileLeft + data.mouthSmileRight)/2.0))
+//        }
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: workItem)
         
     }
 }

@@ -21,8 +21,6 @@ class DetectEmotionAdviceViewController: UIViewController {
         singleTap.numberOfTouchesRequired = 1
         backgroundImage.addGestureRecognizer(singleTap)
         backgroundImage.isUserInteractionEnabled = true
-        
-        
     }
     
     func saveEmotion() {

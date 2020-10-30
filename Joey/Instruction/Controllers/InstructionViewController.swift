@@ -9,7 +9,6 @@ import UIKit
 
 class InstructionViewController: UIViewController {
     
-    @IBOutlet weak var navBar: NavigationBar!
     @IBOutlet var instructionView: InstructionView!
     var activityInstruction: ActivitiesInstruction?
 
@@ -20,7 +19,6 @@ class InstructionViewController: UIViewController {
         if let data = activityInstruction {
             instructionView.setupData(data: data)
         }
-        navBar.delegate = self
     }
     
     @IBAction func buttonContinueTapped(_ sender: Any) {
@@ -36,14 +34,13 @@ class InstructionViewController: UIViewController {
         }
     }
     
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let vc = segue.destination as? InstructionModalViewController {
+            vc.data = activityInstruction
+        }
     }
-    */
 
 }

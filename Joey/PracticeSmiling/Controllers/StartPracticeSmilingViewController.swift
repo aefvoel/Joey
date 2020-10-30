@@ -126,6 +126,12 @@ class StartPracticeSmilingViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? AfterActivityViewController {
+            vc.activityInstruction = activitiesInstructionArray[1]
+        }
+    }
+    
     func endTimer() {
         countdownTimer.invalidate()
     }
