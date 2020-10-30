@@ -20,7 +20,7 @@ class EmotionHelper {
         let entity = NSEntityDescription.entity(forEntityName: entityName, in: context)!
         let emotion = NSManagedObject(entity: entity, insertInto: context)
         emotion.setValue(data.emotion.rawValue, forKey: "emotion")
-        emotion.setValue(data.isDetectionResultValid, forKey: "isResultVaid")
+        emotion.setValue(data.isDetectionResultValid, forKey: "isResultValid")
         emotion.setValue(data.reason, forKey: "reason")
         emotion.setValue(data.scale, forKey: "scale")
         emotion.setValue(Date(), forKey: "testedAt")
