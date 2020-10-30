@@ -22,11 +22,7 @@ class StartMirrorViewController: UIViewController {
     @IBOutlet weak var viewHint: RoundedView!
     @IBOutlet weak var labelHint: UILabel!
     @IBOutlet weak var imgBubble: UIImageView!
-    var isSmile: Bool! {
-        didSet {
-            print(isSmile!)
-        }
-    }
+    var isSmile: Bool = false
     
     var arrayHint = ["I’m getting stronger every day",
                      "I know my worth",
