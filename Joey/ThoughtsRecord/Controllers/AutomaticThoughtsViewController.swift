@@ -34,6 +34,7 @@ class AutomaticThoughtsViewController: UIViewController, UITextViewDelegate {
     @IBAction func onClickContinueButton(_ sender: Any) {
         guard let answer = textViewInitialThoughts?.text else { return }
         data?.initialThoughts = answer
+        performSegue(withIdentifier: "toEvidence", sender: nil)
     }
     
     func setupUI(){

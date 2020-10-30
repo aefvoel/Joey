@@ -17,6 +17,8 @@ class FinishedViewController: UIViewController {
         return imageView
     }()
 
+    @IBOutlet weak var navBar: NavigationBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -29,6 +31,7 @@ class FinishedViewController: UIViewController {
     }
     
     func setupUI(){
+        navBar.delegate = self
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.view.insertSubview(imageView, at: 0)
         NSLayoutConstraint.activate([

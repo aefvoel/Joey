@@ -52,6 +52,8 @@
 		5A8C6EA1253EA51800F95286 /* TOSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C6EA0253EA51800F95286 /* TOSTableViewController.swift */; };
 		5A8C6EA6253EA57600F95286 /* TermsOfServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C6EA5253EA57600F95286 /* TermsOfServiceModel.swift */; };
 		5A8C6EAF253EAA4F00F95286 /* TOSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C6EAE253EAA4F00F95286 /* TOSTableViewCell.swift */; };
+		5A8C7B8A254A511400569797 /* SummaryConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C7B89254A511400569797 /* SummaryConfirmationViewController.swift */; };
+		5A8C7B92254A59D000569797 /* SummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C7B91254A59D000569797 /* SummaryTableViewCell.swift */; };
 		5A9841B925468790009D9FDD /* hintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9841B825468790009D9FDD /* hintsViewController.swift */; };
 		5A9841CA254691B1009D9FDD /* SituationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9841C9254691B1009D9FDD /* SituationViewController.swift */; };
 		5A9DA16125406BFE0090EC41 /* TOSPPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9DA16025406BFE0090EC41 /* TOSPPViewController.swift */; };
@@ -60,7 +62,7 @@
 		5AAE9BBA253F08820075966B /* PrivPolicyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE9BB9253F08820075966B /* PrivPolicyTableViewController.swift */; };
 		5AD1E5AD2541363200BD18D5 /* ActivityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1E5AC2541363200BD18D5 /* ActivityListViewController.swift */; };
 		5AD1E5B22541403B00BD18D5 /* ActivityListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1E5B12541403B00BD18D5 /* ActivityListCell.swift */; };
-		5AD1E5B7254141D000BD18D5 /* ActivityListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1E5B6254141D000BD18D5 /* ActivityListModel.swift */; };
+		5AD1E5B7254141D000BD18D5 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		AB46C13D25486A6D00D2F22C /* AfterActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB46C13C25486A6D00D2F22C /* AfterActivityViewController.swift */; };
 		AB7292D6254911ED0003B21E /* StartMirrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7292D5254911ED0003B21E /* StartMirrorViewController.swift */; };
 		AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92A174253730F9003F8823 /* AppDelegate.swift */; };
@@ -153,6 +155,8 @@
 		5A8C6EA0253EA51800F95286 /* TOSTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOSTableViewController.swift; sourceTree = "<group>"; };
 		5A8C6EA5253EA57600F95286 /* TermsOfServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceModel.swift; sourceTree = "<group>"; };
 		5A8C6EAE253EAA4F00F95286 /* TOSTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOSTableViewCell.swift; sourceTree = "<group>"; };
+		5A8C7B89254A511400569797 /* SummaryConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryConfirmationViewController.swift; sourceTree = "<group>"; };
+		5A8C7B91254A59D000569797 /* SummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryTableViewCell.swift; sourceTree = "<group>"; };
 		5A9841B825468790009D9FDD /* hintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = hintsViewController.swift; path = Joey/ThoughtsRecord/Controllers/hintsViewController.swift; sourceTree = SOURCE_ROOT; };
 		5A9841C9254691B1009D9FDD /* SituationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SituationViewController.swift; sourceTree = "<group>"; };
 		5A9DA16025406BFE0090EC41 /* TOSPPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TOSPPViewController.swift; sourceTree = "<group>"; };
@@ -341,8 +345,10 @@
 				5A68413B2547E8FA00CDFB59 /* AlternativeThoughtsViewController.swift */,
 				5A6841332547E8AB00CDFB59 /* NewMoodsViewController.swift */,
 				5A684143254825C500CDFB59 /* FinishedViewController.swift */,
-				5A9841B825468790009D9FDD /* hintsViewController.swift */,
+				5A8C7B89254A511400569797 /* SummaryConfirmationViewController.swift */,
 				5A5506E925498AA4006A4A48 /* SummaryViewController.swift */,
+				5A8C7B91254A59D000569797 /* SummaryTableViewCell.swift */,
+				5A9841B825468790009D9FDD /* hintsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -826,7 +832,7 @@
 				AB7292D6254911ED0003B21E /* StartMirrorViewController.swift in Sources */,
 				ABD9DE32254157C300C2154C /* StartPracticeSmilingViewController.swift in Sources */,
 				5AAE9BBA253F08820075966B /* PrivPolicyTableViewController.swift in Sources */,
-				5AD1E5B7254141D000BD18D5 /* ActivityListModel.swift in Sources */,
+				5AD1E5B7254141D000BD18D5 /* (null) in Sources */,
 				AB46C13D25486A6D00D2F22C /* AfterActivityViewController.swift in Sources */,
 				5AD1E5B22541403B00BD18D5 /* ActivityListCell.swift in Sources */,
 				5A8C6EA6253EA57600F95286 /* TermsOfServiceModel.swift in Sources */,
@@ -835,6 +841,7 @@
 				1645F8DA2546923A001058A3 /* DetectEmotionAdviceViewController.swift in Sources */,
 				1655E28725467A5300ACCF9C /* DetectEmotionValidateViewController.swift in Sources */,
 				5A6841342547E8AB00CDFB59 /* NewMoodsViewController.swift in Sources */,
+				5A8C7B8A254A511400569797 /* SummaryConfirmationViewController.swift in Sources */,
 				5A5506EA25498AA4006A4A48 /* SummaryViewController.swift in Sources */,
 				AB92A179253730F9003F8823 /* ViewController.swift in Sources */,
 				16FA4BFC2547D7BD00D3EFFC /* DetectEmotionAnalyzeAgainViewController.swift in Sources */,
@@ -854,6 +861,7 @@
 				AB933DE025406D4D00DBBD0D /* TOSPPViewController.swift in Sources */,
 				5A0FD165254718260048B757 /* AutomaticThoughtsViewController.swift in Sources */,
 				5AAE9BB5253F08610075966B /* PrivPolicyTableViewCell.swift in Sources */,
+				5A8C7B92254A59D000569797 /* SummaryTableViewCell.swift in Sources */,
 				16170AD0254105070095D1A5 /* PracticeSmilingViewController.swift in Sources */,
 				ABECBF10253D891C00EF7D43 /* ActivitiesCollectionViewCell.swift in Sources */,
 				166C534D253733A0007C5EF3 /* DetectEmotionStartViewController.swift in Sources */,

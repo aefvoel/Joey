@@ -34,6 +34,7 @@ class SituationViewController: UIViewController, UITextViewDelegate {
     @IBAction func onClickContinueButton(_ sender: Any) {
         guard let answer = textViewSituationAnswer?.text else { return }
         data.situation = answer
+        performSegue(withIdentifier: "toMoods", sender: nil)
     }
     
     func setupUI(){
