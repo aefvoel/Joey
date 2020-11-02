@@ -88,7 +88,6 @@
 		ABEBCCC3253E949F002E03A6 /* Yuanti.ttc in Resources */ = {isa = PBXBuildFile; fileRef = ABEBCCC2253E949F002E03A6 /* Yuanti.ttc */; };
 		ABECBF10253D891C00EF7D43 /* ActivitiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECBF0E253D891C00EF7D43 /* ActivitiesCollectionViewCell.swift */; };
 		ABECBF11253D891C00EF7D43 /* ActivitiesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABECBF0F253D891C00EF7D43 /* ActivitiesCollectionViewCell.xib */; };
-		ABECBF17253D8E7600EF7D43 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECBF16253D8E7600EF7D43 /* Activity.swift */; };
 		ABECBF22253D9F1900EF7D43 /* CornerRadiusHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECBF21253D9F1900EF7D43 /* CornerRadiusHelper.swift */; };
 		ABED45F62538198E0005176A /* ActivityListInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABED45F52538198E0005176A /* ActivityListInstruction.swift */; };
 /* End PBXBuildFile section */
@@ -199,7 +198,6 @@
 		ABEBCCC2253E949F002E03A6 /* Yuanti.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yuanti.ttc; sourceTree = "<group>"; };
 		ABECBF0E253D891C00EF7D43 /* ActivitiesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesCollectionViewCell.swift; sourceTree = "<group>"; };
 		ABECBF0F253D891C00EF7D43 /* ActivitiesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivitiesCollectionViewCell.xib; sourceTree = "<group>"; };
-		ABECBF16253D8E7600EF7D43 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		ABECBF21253D9F1900EF7D43 /* CornerRadiusHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusHelper.swift; sourceTree = "<group>"; };
 		ABED45F52538198E0005176A /* ActivityListInstruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListInstruction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -377,7 +375,6 @@
 		166C532125373272007C5EF3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				ABECBF15253D8D9700EF7D43 /* Models */,
 				166C5326253732AB007C5EF3 /* Controllers */,
 				166C5325253732A5007C5EF3 /* Views */,
 			);
@@ -687,14 +684,6 @@
 			path = NavigationBar;
 			sourceTree = "<group>";
 		};
-		ABECBF15253D8D9700EF7D43 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				ABECBF16253D8E7600EF7D43 /* Activity.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		ABED45F3253819530005176A /* Activities */ = {
 			isa = PBXGroup;
 			children = (
@@ -910,7 +899,6 @@
 				5A2F7149254872ED007929C5 /* ThoughtsRecordTemp.swift in Sources */,
 				16475D9A2547DAE70074D025 /* DetectEmotionSuggestActivityViewController.swift in Sources */,
 				16170AAB254103460095D1A5 /* ActivitiesViewController.swift in Sources */,
-				ABECBF17253D8E7600EF7D43 /* Activity.swift in Sources */,
 				5AD1E5AD2541363200BD18D5 /* ActivityListViewController.swift in Sources */,
 				16AA990B253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift in Sources */,
 				16170ABB254103C20095D1A5 /* JacobsonViewController.swift in Sources */,
