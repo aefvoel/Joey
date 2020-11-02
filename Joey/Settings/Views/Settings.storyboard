@@ -314,13 +314,110 @@
                         <outlet property="privacyItem" destination="gZy-K7-2uo" id="nPL-gL-T08"/>
                         <outlet property="resetItem" destination="flz-GW-A6a" id="HFR-iT-0hx"/>
                         <outlet property="termsItem" destination="qwE-Rw-t8l" id="Shx-Qv-i3H"/>
+                        <segue destination="hwb-Py-66y" kind="show" identifier="toName" id="D5N-lm-k5k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wzZ-ck-HFb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-26.086956521739133" y="-4.0178571428571423"/>
         </scene>
+        <!--Settings Name View Controller-->
+        <scene sceneID="2kN-Hx-P7k">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="hwb-Py-66y" customClass="SettingsNameViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fRB-PB-XEJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T90-z1-FgY" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="67W-XZ-c2z"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JY5-g9-6F2">
+                                <rect key="frame" x="64" y="367.5" width="286" height="50.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pN-5c-vNL" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="64" y="753" width="286" height="45"/>
+                                <color key="backgroundColor" red="0.3529411764705882" green="0.76078431372549016" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="TkV-oA-iEY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onSaveButtonTapped:" destination="hwb-Py-66y" eventType="touchUpInside" id="p51-d1-JPd"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lfb-A4-DXp" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="64" y="425.5" width="286" height="45"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter a nickname..." textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="MjX-xg-zgn">
+                                        <rect key="frame" x="12" y="0.0" width="262" height="45"/>
+                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="0hq-3r-QBY"/>
+                                    <constraint firstItem="MjX-xg-zgn" firstAttribute="top" secondItem="Lfb-A4-DXp" secondAttribute="top" id="7w5-io-0Vz"/>
+                                    <constraint firstItem="MjX-xg-zgn" firstAttribute="leading" secondItem="Lfb-A4-DXp" secondAttribute="leading" constant="12" id="9lv-1P-NF5"/>
+                                    <constraint firstAttribute="trailing" secondItem="MjX-xg-zgn" secondAttribute="trailing" constant="12" id="Dbl-ek-qnD"/>
+                                    <constraint firstAttribute="bottom" secondItem="MjX-xg-zgn" secondAttribute="bottom" id="IsY-UM-Dui"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="les-8F-avF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="T90-z1-FgY" firstAttribute="top" secondItem="les-8F-avF" secondAttribute="top" id="BBu-nx-y96"/>
+                            <constraint firstItem="Lfb-A4-DXp" firstAttribute="leading" secondItem="les-8F-avF" secondAttribute="leading" constant="64" id="BqL-gf-Yw8"/>
+                            <constraint firstItem="les-8F-avF" firstAttribute="trailing" secondItem="Lfb-A4-DXp" secondAttribute="trailing" constant="64" id="C9X-gb-tKN"/>
+                            <constraint firstItem="6pN-5c-vNL" firstAttribute="trailing" secondItem="Lfb-A4-DXp" secondAttribute="trailing" id="FKu-fY-JCR"/>
+                            <constraint firstItem="Lfb-A4-DXp" firstAttribute="centerY" secondItem="fRB-PB-XEJ" secondAttribute="centerY" id="Kfw-vX-J3r"/>
+                            <constraint firstItem="T90-z1-FgY" firstAttribute="leading" secondItem="les-8F-avF" secondAttribute="leading" id="WPB-MH-FIF"/>
+                            <constraint firstItem="les-8F-avF" firstAttribute="bottom" secondItem="6pN-5c-vNL" secondAttribute="bottom" constant="64" id="eJJ-R8-fUA"/>
+                            <constraint firstItem="T90-z1-FgY" firstAttribute="trailing" secondItem="les-8F-avF" secondAttribute="trailing" id="hmF-aF-Urb"/>
+                            <constraint firstItem="6pN-5c-vNL" firstAttribute="leading" secondItem="Lfb-A4-DXp" secondAttribute="leading" id="x9m-5Z-LCe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hi4-6G-XMO"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="MjX-xg-zgn" id="hpX-5j-cCw"/>
+                        <outlet property="navBar" destination="T90-z1-FgY" id="Lfj-lI-oEf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3bY-ts-gs0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915.94202898550736" y="-4.0178571428571423"/>
+        </scene>
     </scenes>
+    <designables>
+        <designable name="6pN-5c-vNL">
+            <size key="intrinsicContentSize" width="41" height="40"/>
+        </designable>
+    </designables>
     <resources>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="settings_about" width="50" height="50"/>

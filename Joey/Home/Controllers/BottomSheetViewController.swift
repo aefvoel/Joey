@@ -23,6 +23,10 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        labelUserName.text = UserDefaultsHelper.getData(type: String.self, forKey: .userName)
+    }
+    
     @IBAction func onClickButtonLogout(_ sender: UIButton) {
         UserDefaultsHelper.setData(value: false, key: .isLoggedIn)
         self.navigationController?.popViewController(animated: true)
@@ -41,7 +45,6 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
     }
     func setupUI(){
         self.sheetViewController?.handleScrollView(self.bottomSheetScrollView)
-        labelUserName.text = UserDefaultsHelper.getData(type: String.self, forKey: .userName)
     }
     func setupChart(){
         barChartView.delegate = self

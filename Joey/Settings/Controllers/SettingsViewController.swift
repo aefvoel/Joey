@@ -38,7 +38,7 @@ class SettingsViewController: UIViewController {
         if sender.state == .ended {
             switch sender.view {
             case nameItem:
-                print("Name!")
+                performSegue(withIdentifier: "toName", sender: nil)
             case resetItem:
                 print("Reset!")
             case aboutItem:
