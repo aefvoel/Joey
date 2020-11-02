@@ -10,14 +10,19 @@ import UIKit
 class DetectEmotionValidateViewController: UIViewController {
     
     @IBOutlet weak var navBar: NavigationBar!
+    @IBOutlet weak var labelResult: UILabel!
     var data: FollowUp?
     var emotion: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navBar.delegate = self
+        setupUI()
     }
     
+    func setupUI(){
+        navBar.delegate = self
+        labelResult.text = "Hi, \(UserDefaultsHelper.getData(type: String.self, forKey: .userName) ?? "")! From what I see, you look \(data?.emotion.description ?? "") now. Is that true?"
+    }
     @IBAction func validResultTapped(_ sender: UIButton) {
         data?.isDetectionResultValid = true
         performSegue(withIdentifier: "toScale", sender: nil)

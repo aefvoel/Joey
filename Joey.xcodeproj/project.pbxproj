@@ -83,6 +83,10 @@
 		AB92A1BC25374831003F8823 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB92A1BB25374831003F8823 /* CloudKit.framework */; };
 		AB9857CB253C9F3D00485B29 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9857CA253C9F3D00485B29 /* BottomSheetViewController.swift */; };
 		AB9857D4253CB24E00485B29 /* FittedSheets in Frameworks */ = {isa = PBXBuildFile; productRef = AB9857D3253CB24E00485B29 /* FittedSheets */; };
+		ABB1EE92254FB61800D1C5C1 /* HistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB1EE90254FB61800D1C5C1 /* HistoryCollectionViewCell.swift */; };
+		ABB1EE93254FB61800D1C5C1 /* HistoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB1EE91254FB61800D1C5C1 /* HistoryCollectionViewCell.xib */; };
+		ABB1EE99254FCD2C00D1C5C1 /* EmotionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB1EE98254FCD2C00D1C5C1 /* EmotionList.swift */; };
+		ABB1EEA1254FEDE800D1C5C1 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB1EEA0254FEDE800D1C5C1 /* HistoryViewController.swift */; };
 		ABD9DE32254157C300C2154C /* StartPracticeSmilingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9DE31254157C300C2154C /* StartPracticeSmilingViewController.swift */; };
 		ABD9DE4425466E9D00C2154C /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9DE4325466E9D00C2154C /* NavigationBar.swift */; };
 		ABD9DE5C2546721600C2154C /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD9DE5B2546721600C2154C /* NavigationBar.xib */; };
@@ -195,6 +199,10 @@
 		AB92A1BB25374831003F8823 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		AB933DDF25406D4D00DBBD0D /* TOSPPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TOSPPViewController.swift; sourceTree = "<group>"; };
 		AB9857CA253C9F3D00485B29 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		ABB1EE90254FB61800D1C5C1 /* HistoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		ABB1EE91254FB61800D1C5C1 /* HistoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		ABB1EE98254FCD2C00D1C5C1 /* EmotionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionList.swift; sourceTree = "<group>"; };
+		ABB1EEA0254FEDE800D1C5C1 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		ABD9DE31254157C300C2154C /* StartPracticeSmilingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPracticeSmilingViewController.swift; sourceTree = "<group>"; };
 		ABD9DE4325466E9D00C2154C /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		ABD9DE5B2546721600C2154C /* NavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
@@ -573,6 +581,7 @@
 		AB51A9D7254B026A00E5E64B /* MySpace */ = {
 			isa = PBXGroup;
 			children = (
+				ABB1EE97254FCD0C00D1C5C1 /* Models */,
 				AB51A9D9254B028B00E5E64B /* Controllers */,
 				AB51A9D8254B028100E5E64B /* Views */,
 			);
@@ -583,6 +592,8 @@
 			isa = PBXGroup;
 			children = (
 				AB51A9DF254B02C500E5E64B /* MySpace.storyboard */,
+				ABB1EE90254FB61800D1C5C1 /* HistoryCollectionViewCell.swift */,
+				ABB1EE91254FB61800D1C5C1 /* HistoryCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -591,6 +602,7 @@
 			isa = PBXGroup;
 			children = (
 				AB51A9DA254B02B100E5E64B /* MySpaceViewController.swift */,
+				ABB1EEA0254FEDE800D1C5C1 /* HistoryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -679,6 +691,14 @@
 				5AD838C8253E8BCC0042D14E /* Yuanti.ttc */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		ABB1EE97254FCD0C00D1C5C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABB1EE98254FCD2C00D1C5C1 /* EmotionList.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		ABD9DE4225466DE900C2154C /* NavigationBar */ = {
@@ -822,6 +842,7 @@
 				AB92A184253730FA003F8823 /* LaunchScreen.storyboard in Resources */,
 				16170AC3254103CC0095D1A5 /* Jacobson.storyboard in Resources */,
 				166C53362537332F007C5EF3 /* Onboarding.storyboard in Resources */,
+				ABB1EE93254FB61800D1C5C1 /* HistoryCollectionViewCell.xib in Resources */,
 				AB92A181253730FA003F8823 /* Assets.xcassets in Resources */,
 				166C534025373372007C5EF3 /* DetectEmotion.storyboard in Resources */,
 				16170AF9254127100095D1A5 /* ThoughtsRecord.storyboard in Resources */,
@@ -875,12 +896,14 @@
 				5A8C6EA6253EA57600F95286 /* TermsOfServiceModel.swift in Sources */,
 				16B3758C254A6B100027B696 /* InstructionModalViewController.swift in Sources */,
 				167E0E7B253EABA700602784 /* EmotionHelper.swift in Sources */,
+				ABB1EE92254FB61800D1C5C1 /* HistoryCollectionViewCell.swift in Sources */,
 				5A684144254825C500CDFB59 /* FinishedViewController.swift in Sources */,
 				1604CB17254A7CFD009BFACB /* JacobsonExercise.swift in Sources */,
 				1645F8DA2546923A001058A3 /* DetectEmotionAdviceViewController.swift in Sources */,
 				1655E28725467A5300ACCF9C /* DetectEmotionValidateViewController.swift in Sources */,
 				5A6841342547E8AB00CDFB59 /* NewMoodsViewController.swift in Sources */,
 				5A8C7B8A254A511400569797 /* SummaryConfirmationViewController.swift in Sources */,
+				ABB1EE99254FCD2C00D1C5C1 /* EmotionList.swift in Sources */,
 				5A5506EA25498AA4006A4A48 /* SummaryViewController.swift in Sources */,
 				AB92A179253730F9003F8823 /* ViewController.swift in Sources */,
 				16FA4BFC2547D7BD00D3EFFC /* DetectEmotionAnalyzeAgainViewController.swift in Sources */,
@@ -896,6 +919,7 @@
 				5A8C6EAF253EAA4F00F95286 /* TOSTableViewCell.swift in Sources */,
 				AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */,
 				169C0744254143A90071387C /* TextViewFixed.swift in Sources */,
+				ABB1EEA1254FEDE800D1C5C1 /* HistoryViewController.swift in Sources */,
 				5A9DA16125406BFE0090EC41 /* TOSPPViewController.swift in Sources */,
 				5A68412C2547D56400CDFB59 /* EvidenceNotSupportViewController.swift in Sources */,
 				5A0FD165254718260048B757 /* AutomaticThoughtsViewController.swift in Sources */,

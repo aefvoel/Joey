@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct FollowUp {
     var emotion: EmotionType
@@ -19,6 +20,24 @@ struct FollowUp {
         case sad = 2
         case neutral = 3
         case happy = 4
+        
+        var description : String {
+            switch self {
+            case .angry: return "Need cheer-up"
+            case .sad: return "Irritated"
+            case .neutral: return "So-so"
+            case .happy: return "Awesome"
+            }
+        }
+        
+        var image: UIImage {
+            switch self {
+            case .angry: return #imageLiteral(resourceName: "angry-icon")
+            case .sad: return #imageLiteral(resourceName: "sad-icon")
+            case .neutral: return #imageLiteral(resourceName: "neutral-icon")
+            case .happy: return #imageLiteral(resourceName: "happy-icon")
+            }
+        }
     }
     
     enum ScaleType {
@@ -26,7 +45,7 @@ struct FollowUp {
         case medium
         case small
     }
-
+    
     var scaleType: ScaleType? {
         if let scale = scale {
             if scale <= 0.3 {
