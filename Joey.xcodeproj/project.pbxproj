@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1604CB11254A7BFA009BFACB /* JacobsonExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1604CB10254A7BFA009BFACB /* JacobsonExerciseViewController.swift */; };
 		1604CB17254A7CFD009BFACB /* JacobsonExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1604CB16254A7CFD009BFACB /* JacobsonExercise.swift */; };
+		160CFCF5254FAB75007481B0 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160CFCF4254FAB75007481B0 /* Settings.storyboard */; };
+		160CFCFA254FAC2F007481B0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160CFCF9254FAC2F007481B0 /* SettingsViewController.swift */; };
 		16170AAB254103460095D1A5 /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16170AAA254103460095D1A5 /* ActivitiesViewController.swift */; };
 		16170AB4254103750095D1A5 /* Activities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16170AB3254103750095D1A5 /* Activities.storyboard */; };
 		16170ABB254103C20095D1A5 /* JacobsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16170ABA254103C20095D1A5 /* JacobsonViewController.swift */; };
@@ -115,6 +117,8 @@
 /* Begin PBXFileReference section */
 		1604CB10254A7BFA009BFACB /* JacobsonExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JacobsonExerciseViewController.swift; sourceTree = "<group>"; };
 		1604CB16254A7CFD009BFACB /* JacobsonExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JacobsonExercise.swift; sourceTree = "<group>"; };
+		160CFCF4254FAB75007481B0 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		160CFCF9254FAC2F007481B0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		16170AAA254103460095D1A5 /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
 		16170AB3254103750095D1A5 /* Activities.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Activities.storyboard; sourceTree = "<group>"; };
 		16170ABA254103C20095D1A5 /* JacobsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JacobsonViewController.swift; sourceTree = "<group>"; };
@@ -242,6 +246,31 @@
 				1604CB16254A7CFD009BFACB /* JacobsonExercise.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		160CFCD8254FA22E007481B0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				160CFCDB254FA243007481B0 /* Controllers */,
+				160CFCD9254FA237007481B0 /* Views */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		160CFCD9254FA237007481B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				160CFCF4254FAB75007481B0 /* Settings.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		160CFCDB254FA243007481B0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				160CFCF9254FAC2F007481B0 /* SettingsViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		16170AA8254103010095D1A5 /* Jacobson */ = {
@@ -624,6 +653,7 @@
 		AB92A173253730F9003F8823 /* Joey */ = {
 			isa = PBXGroup;
 			children = (
+				160CFCD8254FA22E007481B0 /* Settings */,
 				AB51A9D7254B026A00E5E64B /* MySpace */,
 				ABD9DE4225466DE900C2154C /* NavigationBar */,
 				169C073325413C170071387C /* Instruction */,
@@ -831,6 +861,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB92A184253730FA003F8823 /* LaunchScreen.storyboard in Resources */,
+				160CFCF5254FAB75007481B0 /* Settings.storyboard in Resources */,
 				16170AC3254103CC0095D1A5 /* Jacobson.storyboard in Resources */,
 				166C53362537332F007C5EF3 /* Onboarding.storyboard in Resources */,
 				AB92A181253730FA003F8823 /* Assets.xcassets in Resources */,
@@ -905,6 +936,7 @@
 				16170ADA25411EAE0095D1A5 /* MirrorViewController.swift in Sources */,
 				1604CB11254A7BFA009BFACB /* JacobsonExerciseViewController.swift in Sources */,
 				5A8C6EAF253EAA4F00F95286 /* TOSTableViewCell.swift in Sources */,
+				160CFCFA254FAC2F007481B0 /* SettingsViewController.swift in Sources */,
 				AB92A175253730F9003F8823 /* AppDelegate.swift in Sources */,
 				169C0744254143A90071387C /* TextViewFixed.swift in Sources */,
 				5A9DA16125406BFE0090EC41 /* TOSPPViewController.swift in Sources */,
