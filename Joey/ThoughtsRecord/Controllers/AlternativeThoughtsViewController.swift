@@ -33,6 +33,7 @@ class AlternativeThoughtsViewController: UIViewController, UITextViewDelegate {
     @IBAction func onClickContinueButton(_ sender: Any) {
         guard let answer = textView?.text else { return }
         data?.alternativeThoughts = answer
+        performSegue(withIdentifier: "toNewMoods", sender: nil)
     }
     
     func setupUI(){

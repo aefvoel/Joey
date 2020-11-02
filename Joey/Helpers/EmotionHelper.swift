@@ -32,4 +32,14 @@ class EmotionHelper {
             onComplete(error)
         }
     }
+    
+    static func list(onComplete: @escaping ([Emotion], Error?) -> Void) {
+        let request = NSFetchRequest<Emotion>(entityName: entityName)
+        do {
+            let result = try context.fetch(request)
+            onComplete(result, nil)
+        } catch {
+            onComplete([], error)
+        }
+    }
 }

@@ -9,6 +9,8 @@ import UIKit
 
 class FinishedViewController: UIViewController {
     
+    var data: ThoughtsRecordTemp?
+    
     var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.image = UIImage(named: "page_background3")
@@ -17,6 +19,8 @@ class FinishedViewController: UIViewController {
         return imageView
     }()
 
+    @IBOutlet weak var navBar: NavigationBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -29,6 +33,7 @@ class FinishedViewController: UIViewController {
     }
     
     func setupUI(){
+        navBar.delegate = self
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.view.insertSubview(imageView, at: 0)
         NSLayoutConstraint.activate([
@@ -39,14 +44,15 @@ class FinishedViewController: UIViewController {
         ])
     }
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let vc = segue.destination as? SummaryConfirmationViewController {
+            vc.data = data
+        }
     }
-    */
+    
 
 }

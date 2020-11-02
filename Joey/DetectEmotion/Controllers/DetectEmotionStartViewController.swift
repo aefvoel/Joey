@@ -17,6 +17,13 @@ class DetectEmotionStartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navBar.delegate = self
+        EmotionHelper.list { (emotions, error) in
+            if error != nil {
+                print("failed to fetch emotions")
+            } else {
+                print(emotions)
+            }
+        }
     }
     
     @IBAction func buttonStartTapped(_ sender: Any) {

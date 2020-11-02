@@ -9,8 +9,11 @@ import UIKit
 
 class ThoughtsRecordViewController: UIViewController {
 
+    @IBOutlet weak var navBar: NavigationBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        navBar.delegate = self
 
         // Do any additional setup after loading the view.
     }
