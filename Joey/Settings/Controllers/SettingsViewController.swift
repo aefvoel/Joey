@@ -42,13 +42,13 @@ class SettingsViewController: UIViewController {
             case resetItem:
                 print("Reset!")
             case aboutItem:
-                print("About!")
+                performSegue(withIdentifier: "toAbout", sender: nil)
             case faqItem:
-                print("FAQ!")
+                performSegue(withIdentifier: "toFAQ", sender: nil)
             case privacyItem:
-                print("Privacy!")
+                performSegue(withIdentifier: "toPrivacy", sender: nil)
             default:
-                print("Terms!")
+                performSegue(withIdentifier: "toTerms", sender: nil)
             }
         }
     }
