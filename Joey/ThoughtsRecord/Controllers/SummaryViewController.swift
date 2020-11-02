@@ -35,14 +35,23 @@ class SummaryViewController: UIViewController {
         super.viewDidLoad()
         createArrayfromThoughtsData()
         print(thoughts)
+        setupUI()
+        setupTableView()
+        formattedDate()
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func onClickButtonDone(_ sender: Any) {
+        performSegue(withIdentifier: "toDoActivityConfirmation", sender: nil)
+    }
+    
+    func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
         self.tableView.separatorStyle = .none
         self.tableView.backgroundColor = .clear
-        setupUI()
-        formattedDate()
-        
-        // Do any additional setup after loading the view.
+        self.tableView.showsVerticalScrollIndicator = false
     }
     
     func formattedDate() {
@@ -87,21 +96,38 @@ class SummaryViewController: UIViewController {
 }
 
 extension SummaryViewController: UITableViewDelegate, UITableViewDataSource {
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
         return thoughts.count
     }
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let thought = thoughts[indexPath.row]
+        let thought = thoughts[indexPath.section]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "summaryCell") as! SummaryTableViewCell
         
         cell.title.text = thought.title
         cell.content.text = thought.content
+        cell.layer.borderWidth = 2
+        cell.layer.cornerRadius = 14
+        cell.layer.borderColor = #colorLiteral(red: 0.4125145674, green: 0.7986539006, blue: 0.7881773114, alpha: 1)
         print(thought)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView()
+        footerView.backgroundColor = .clear
+        return footerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 24
     }
 
 

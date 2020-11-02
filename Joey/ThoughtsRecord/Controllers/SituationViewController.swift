@@ -27,6 +27,7 @@ class SituationViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         setupUI()
         textViewPlaceholder()
+        dismissKeyboardOnScreen()
         
         // Do any additional setup after loading the view.
     }
@@ -54,6 +55,18 @@ class SituationViewController: UIViewController, UITextViewDelegate {
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
             NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    func dismissKeyboardOnScreen() {
+        let tapOnScreen: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        
+        tapOnScreen.cancelsTouchesInView = false
+        
+        view.addGestureRecognizer(tapOnScreen)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     func textViewPlaceholder() {
