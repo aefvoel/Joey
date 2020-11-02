@@ -199,6 +199,7 @@ class SettingsItem: UIView {
     }
     
     func setupUI() {
+        isUserInteractionEnabled = true
         backgroundColor = #colorLiteral(red: 0.9647058824, green: 0.9647058824, blue: 0.9647058824, alpha: 1)
         layer.borderWidth = 1 / 2
         layer.borderColor = #colorLiteral(red: 0.5921568627, green: 0.5921568627, blue: 0.5921568627, alpha: 1)

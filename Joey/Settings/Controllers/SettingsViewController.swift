@@ -10,10 +10,47 @@ import UIKit
 class SettingsViewController: UIViewController {
 
     @IBOutlet weak var navBar: NavigationBar!
+    @IBOutlet weak var nameItem: SettingsItem!
+    @IBOutlet weak var resetItem: SettingsItem!
+    @IBOutlet weak var notificationsItem: SettingsItem!
+    @IBOutlet weak var aboutItem: SettingsItem!
+    @IBOutlet weak var faqItem: SettingsItem!
+    @IBOutlet weak var privacyItem: SettingsItem!
+    @IBOutlet weak var termsItem: SettingsItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navBar.delegate = self
+        
+        nameItem.addGestureRecognizer(getTapGestureRecognizer())
+        resetItem.addGestureRecognizer(getTapGestureRecognizer())
+        aboutItem.addGestureRecognizer(getTapGestureRecognizer())
+        faqItem.addGestureRecognizer(getTapGestureRecognizer())
+        privacyItem.addGestureRecognizer(getTapGestureRecognizer())
+        termsItem.addGestureRecognizer(getTapGestureRecognizer())
+    }
+    
+    func getTapGestureRecognizer() -> UITapGestureRecognizer {
+        return UITapGestureRecognizer(target: self, action: #selector(self.onItemTapped(_:)))
+    }
+    
+    @objc func onItemTapped(_ sender: UITapGestureRecognizer) {
+        if sender.state == .ended {
+            switch sender.view {
+            case nameItem:
+                print("Name!")
+            case resetItem:
+                print("Reset!")
+            case aboutItem:
+                print("About!")
+            case faqItem:
+                print("FAQ!")
+            case privacyItem:
+                print("Privacy!")
+            default:
+                print("Terms!")
+            }
+        }
     }
 
     /*

@@ -306,7 +306,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="aboutItem" destination="GfA-qA-fw8" id="lSM-r8-xm2"/>
+                        <outlet property="faqItem" destination="ZY2-WO-MNo" id="j4H-oO-vQd"/>
+                        <outlet property="nameItem" destination="zki-ew-h0w" id="BT9-HF-g7x"/>
                         <outlet property="navBar" destination="IbT-H3-kQ9" id="bft-xL-kOP"/>
+                        <outlet property="notificationsItem" destination="qTf-Si-avE" id="PW2-5A-K4n"/>
+                        <outlet property="privacyItem" destination="gZy-K7-2uo" id="nPL-gL-T08"/>
+                        <outlet property="resetItem" destination="flz-GW-A6a" id="HFR-iT-0hx"/>
+                        <outlet property="termsItem" destination="qwE-Rw-t8l" id="Shx-Qv-i3H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wzZ-ck-HFb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
