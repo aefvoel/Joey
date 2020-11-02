@@ -898,7 +898,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVr-x4-enK" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVr-x4-enK" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                 <rect key="frame" x="64" y="779" width="286" height="45"/>
                                 <color key="backgroundColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -2330,13 +2330,6 @@ Do you want to see it?</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIj-vs-LXm" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="47" id="4P2-tL-Dsv"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8j-TK-oA4" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                 <rect key="frame" x="64" y="779" width="286" height="45"/>
                                 <color key="backgroundColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -2345,7 +2338,7 @@ Do you want to see it?</string>
                                     <constraint firstAttribute="width" constant="286" id="kXX-kV-AZa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Done">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -2378,15 +2371,15 @@ Do you want to see it?</string>
                                 <rect key="frame" x="24" y="320.5" width="366" height="393.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="summaryCell" rowHeight="132" id="CCT-bz-oos" customClass="SummaryTableViewCell" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="366" height="132"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="summaryCell" rowHeight="197" id="CCT-bz-oos" customClass="SummaryTableViewCell" customModule="Joey" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="366" height="197"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CCT-bz-oos" id="to8-gA-79D">
-                                            <rect key="frame" x="0.0" y="0.0" width="366" height="132"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="366" height="197"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FfI-Mc-Yp8">
-                                                    <rect key="frame" x="0.0" y="0.0" width="366" height="132"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="366" height="197"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="izI-0b-yKb">
                                                             <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
@@ -2407,10 +2400,10 @@ Do you want to see it?</string>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ee-yK-mO8">
-                                                            <rect key="frame" x="0.0" y="50" width="366" height="82"/>
+                                                            <rect key="frame" x="0.0" y="50" width="366" height="147"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvG-Od-LNL">
-                                                                    <rect key="frame" x="8" y="6" width="350" height="68"/>
+                                                                    <rect key="frame" x="8" y="6" width="350" height="133"/>
                                                                     <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -2427,12 +2420,12 @@ Do you want to see it?</string>
                                                                 <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                                     <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </userDefinedRuntimeAttribute>
-                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="NO"/>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                    <real key="value" value="2"/>
+                                                                    <real key="value" value="0.0"/>
                                                                 </userDefinedRuntimeAttribute>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                    <real key="value" value="14"/>
+                                                                    <real key="value" value="0.0"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
@@ -2471,15 +2464,12 @@ Do you want to see it?</string>
                             <constraint firstItem="cFF-5S-EMm" firstAttribute="leading" secondItem="SEG-gJ-PN0" secondAttribute="leading" constant="30" id="8ng-XW-zVi"/>
                             <constraint firstItem="ayf-OW-n6C" firstAttribute="top" secondItem="d5f-gh-9tk" secondAttribute="bottom" constant="24" id="CB3-eU-o9K"/>
                             <constraint firstItem="fyl-WO-sFZ" firstAttribute="leading" secondItem="SEG-gJ-PN0" secondAttribute="leading" constant="24" id="Cbv-ug-zmd"/>
-                            <constraint firstItem="CIj-vs-LXm" firstAttribute="top" secondItem="SEG-gJ-PN0" secondAttribute="top" id="DeT-WG-l0D"/>
                             <constraint firstItem="cFF-5S-EMm" firstAttribute="top" secondItem="SEG-gJ-PN0" secondAttribute="top" constant="188" id="GbW-5V-avc"/>
                             <constraint firstItem="SEG-gJ-PN0" firstAttribute="trailing" secondItem="ayf-OW-n6C" secondAttribute="trailing" constant="24" id="HVG-V0-o9P"/>
+                            <constraint firstItem="fyl-WO-sFZ" firstAttribute="top" secondItem="SEG-gJ-PN0" secondAttribute="top" constant="94" id="JO7-u9-S8z"/>
                             <constraint firstItem="SEG-gJ-PN0" firstAttribute="trailing" secondItem="d5f-gh-9tk" secondAttribute="trailing" constant="30" id="Kog-p5-hOO"/>
                             <constraint firstItem="SEG-gJ-PN0" firstAttribute="trailing" secondItem="cFF-5S-EMm" secondAttribute="trailing" constant="30" id="MTi-vJ-wdF"/>
-                            <constraint firstItem="CIj-vs-LXm" firstAttribute="leading" secondItem="SEG-gJ-PN0" secondAttribute="leading" id="NVn-7w-7dg"/>
-                            <constraint firstItem="fyl-WO-sFZ" firstAttribute="top" secondItem="CIj-vs-LXm" secondAttribute="bottom" constant="47" id="Sap-Wd-z2E"/>
                             <constraint firstItem="SEG-gJ-PN0" firstAttribute="bottom" secondItem="E8j-TK-oA4" secondAttribute="bottom" constant="38" id="UNT-0Y-F7j"/>
-                            <constraint firstItem="SEG-gJ-PN0" firstAttribute="trailing" secondItem="CIj-vs-LXm" secondAttribute="trailing" id="e6c-OM-kcJ"/>
                             <constraint firstItem="E8j-TK-oA4" firstAttribute="leading" secondItem="SEG-gJ-PN0" secondAttribute="leading" constant="64" id="jkE-10-ALy"/>
                             <constraint firstItem="E8j-TK-oA4" firstAttribute="top" secondItem="ayf-OW-n6C" secondAttribute="bottom" constant="65" id="kwF-kl-dTc"/>
                             <constraint firstItem="d5f-gh-9tk" firstAttribute="leading" secondItem="SEG-gJ-PN0" secondAttribute="leading" constant="30" id="qWK-KT-RiI"/>
@@ -2489,7 +2479,6 @@ Do you want to see it?</string>
                     <navigationItem key="navigationItem" id="7Hz-nD-RLp"/>
                     <connections>
                         <outlet property="labelDate" destination="d5f-gh-9tk" id="60Z-CA-65s"/>
-                        <outlet property="navBar" destination="CIj-vs-LXm" id="u8d-KD-FnZ"/>
                         <outlet property="tableView" destination="ayf-OW-n6C" id="25v-Fe-Xcp"/>
                     </connections>
                 </viewController>
@@ -2612,7 +2601,7 @@ Do you want to do this activity again?</string>
             <size key="intrinsicContentSize" width="48" height="38"/>
         </designable>
         <designable name="E8j-TK-oA4">
-            <size key="intrinsicContentSize" width="61" height="40"/>
+            <size key="intrinsicContentSize" width="45" height="40"/>
         </designable>
         <designable name="HVX-7H-tG9">
             <size key="intrinsicContentSize" width="53" height="38"/>
@@ -2700,7 +2689,7 @@ Do you want to do this activity again?</string>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="ICH-mk-Jc3"/>
+        <segue reference="yT1-9K-27U"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="OB_modalClose_xButton" width="41" height="41"/>

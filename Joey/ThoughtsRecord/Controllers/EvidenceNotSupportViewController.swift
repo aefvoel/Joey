@@ -31,6 +31,9 @@ class EvidenceNotSupportViewController: UIViewController, UITextViewDelegate {
     }
     
     @IBAction func onClickContinueButton(_ sender: Any) {
+        if textView.text == "Type your answer here" {
+            textView.text = ""
+        }
         guard let answer = textView?.text else { return }
         data?.notSupportedEvidence = answer
         performSegue(withIdentifier: "toAlternateThoughts", sender: nil)
@@ -46,6 +49,9 @@ class EvidenceNotSupportViewController: UIViewController, UITextViewDelegate {
             imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     func textViewPlaceholder() {
@@ -68,6 +74,19 @@ class EvidenceNotSupportViewController: UIViewController, UITextViewDelegate {
         }
     }
 
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
     
     // MARK: - Navigation
 
