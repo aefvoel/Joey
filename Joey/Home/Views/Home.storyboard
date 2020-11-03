@@ -36,21 +36,12 @@
                                     <constraint firstAttribute="width" constant="784" id="ExY-GV-Pwo"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ri8-it-KYW">
-                                <rect key="frame" x="24" y="44" width="30" height="32"/>
-                                <state key="normal" backgroundImage="settings"/>
-                                <connections>
-                                    <segue destination="oMs-ek-BN9" kind="show" id="FUR-5V-GR0"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Vb-8w-1uo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Vb-8w-1uo" firstAttribute="bottom" secondItem="LKJ-NC-ujO" secondAttribute="bottom" constant="657" id="7Gn-RJ-nCZ"/>
-                            <constraint firstItem="ri8-it-KYW" firstAttribute="leading" secondItem="6Vb-8w-1uo" secondAttribute="leading" constant="24" id="D4v-5J-VHX"/>
                             <constraint firstItem="6Vb-8w-1uo" firstAttribute="trailing" secondItem="LKJ-NC-ujO" secondAttribute="trailing" constant="24" id="Tyq-by-B1c"/>
-                            <constraint firstItem="ri8-it-KYW" firstAttribute="top" secondItem="6Vb-8w-1uo" secondAttribute="top" id="Upo-dO-hZk"/>
                             <constraint firstItem="efr-Rp-BVm" firstAttribute="top" secondItem="6Vb-8w-1uo" secondAttribute="top" constant="161" id="aNp-hZ-SmZ"/>
                             <constraint firstItem="LKJ-NC-ujO" firstAttribute="leading" secondItem="XRl-KS-eZV" secondAttribute="leadingMargin" constant="4" id="aOa-Io-Ikm"/>
                             <constraint firstItem="LKJ-NC-ujO" firstAttribute="top" secondItem="6Vb-8w-1uo" secondAttribute="top" constant="44" id="rkE-x2-xNy"/>
@@ -236,9 +227,17 @@
                                                     <action selector="onClickButtonLogout:" destination="YTt-tT-nY8" eventType="touchUpInside" id="bNL-ej-ZC3"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDv-Oc-1v9">
+                                                <rect key="frame" x="333" y="688" width="57" height="30"/>
+                                                <state key="normal" title="Settings"/>
+                                                <connections>
+                                                    <segue destination="oMs-ek-BN9" kind="show" id="rGX-At-0aP"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="VDv-Oc-1v9" firstAttribute="trailing" secondItem="ePU-PO-rAe" secondAttribute="trailing" id="0Xi-4l-Ucc"/>
                                             <constraint firstItem="reY-YN-JA1" firstAttribute="baseline" secondItem="PuK-we-T1M" secondAttribute="baseline" id="3Mz-92-Z63"/>
                                             <constraint firstItem="cP4-sd-ZzV" firstAttribute="centerX" secondItem="b6i-8m-YNn" secondAttribute="centerX" id="5YH-a4-jPc"/>
                                             <constraint firstAttribute="bottom" secondItem="ePU-PO-rAe" secondAttribute="bottom" constant="185" id="68V-Au-72o"/>
@@ -250,6 +249,7 @@
                                             <constraint firstItem="ePU-PO-rAe" firstAttribute="top" secondItem="k9H-5I-fPH" secondAttribute="bottom" constant="24" id="OIq-BB-JPM"/>
                                             <constraint firstItem="reY-YN-JA1" firstAttribute="leading" secondItem="b6i-8m-YNn" secondAttribute="leading" constant="24" id="Wpk-zi-aIn"/>
                                             <constraint firstItem="k9H-5I-fPH" firstAttribute="leading" secondItem="ePU-PO-rAe" secondAttribute="leading" id="YfZ-Ca-57U"/>
+                                            <constraint firstItem="VDv-Oc-1v9" firstAttribute="centerY" secondItem="Dm7-6O-Rib" secondAttribute="centerY" id="Zgn-xy-HOt"/>
                                             <constraint firstItem="Dm7-6O-Rib" firstAttribute="top" secondItem="ePU-PO-rAe" secondAttribute="bottom" constant="15" id="Zyt-m1-Bf2"/>
                                             <constraint firstItem="reY-YN-JA1" firstAttribute="top" secondItem="b6i-8m-YNn" secondAttribute="topMargin" constant="16" id="cGk-8r-WWA"/>
                                             <constraint firstItem="cP4-sd-ZzV" firstAttribute="top" secondItem="reY-YN-JA1" secondAttribute="bottom" constant="16" id="iMN-El-EHC"/>
@@ -320,7 +320,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HD2-sk-TeZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="463" y="159"/>
+            <point key="canvasLocation" x="718" y="980"/>
         </scene>
         <!--ActivityListVC-->
         <scene sceneID="1AU-I1-tei">
@@ -351,7 +351,6 @@
     <resources>
         <image name="Joey" width="923" height="2047"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
-        <image name="settings" width="30" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -587,16 +587,80 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OOq-gq-dxa">
+                                <rect key="frame" x="64" y="238" width="286" height="658"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="102" id="lm5-XO-sLc">
+                                        <rect key="frame" x="0.0" y="28" width="286" height="102"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lm5-XO-sLc" id="6t9-mn-8DP">
+                                            <rect key="frame" x="0.0" y="0.0" width="286" height="102"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfC-7R-b4U" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="286" height="45"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How anonymous is this?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51J-jm-bCc">
+                                                            <rect key="frame" x="20" y="10.5" width="246" height="24"/>
+                                                            <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="51J-jm-bCc" secondAttribute="trailing" constant="20" id="HVG-mP-UM4"/>
+                                                        <constraint firstAttribute="height" constant="45" id="Hxg-U5-dAE"/>
+                                                        <constraint firstItem="51J-jm-bCc" firstAttribute="leading" secondItem="wfC-7R-b4U" secondAttribute="leading" constant="20" id="TON-q4-wlj"/>
+                                                        <constraint firstItem="51J-jm-bCc" firstAttribute="centerY" secondItem="wfC-7R-b4U" secondAttribute="centerY" id="hBO-O5-bJ8"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="7"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AnH-ha-KtQ" customClass="TextViewFixed" customModule="Joey" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="45" width="286" height="57"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="57" id="6sM-BE-66w"/>
+                                                    </constraints>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="AnH-ha-KtQ" secondAttribute="bottom" id="3aN-qf-cDe"/>
+                                                <constraint firstItem="wfC-7R-b4U" firstAttribute="top" secondItem="6t9-mn-8DP" secondAttribute="top" id="4c3-ei-7pW"/>
+                                                <constraint firstItem="AnH-ha-KtQ" firstAttribute="leading" secondItem="6t9-mn-8DP" secondAttribute="leading" id="4th-cw-VmN"/>
+                                                <constraint firstAttribute="trailing" secondItem="wfC-7R-b4U" secondAttribute="trailing" id="Iln-PU-Uu5"/>
+                                                <constraint firstAttribute="trailing" secondItem="AnH-ha-KtQ" secondAttribute="trailing" id="Uwa-gH-OLz"/>
+                                                <constraint firstItem="wfC-7R-b4U" firstAttribute="leading" secondItem="6t9-mn-8DP" secondAttribute="leading" id="iiE-Ky-MaQ"/>
+                                                <constraint firstItem="AnH-ha-KtQ" firstAttribute="top" secondItem="wfC-7R-b4U" secondAttribute="bottom" id="zu0-Cw-fmm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yZL-pp-XuQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ysf-V6-Tml" firstAttribute="top" secondItem="M0v-2x-MML" secondAttribute="bottom" constant="64" id="JtD-Xy-qkR"/>
+                            <constraint firstAttribute="bottom" secondItem="OOq-gq-dxa" secondAttribute="bottom" id="MbC-9o-GlT"/>
                             <constraint firstItem="yZL-pp-XuQ" firstAttribute="trailing" secondItem="Ysf-V6-Tml" secondAttribute="trailing" constant="64" id="ORa-An-RB8"/>
                             <constraint firstItem="M0v-2x-MML" firstAttribute="trailing" secondItem="yZL-pp-XuQ" secondAttribute="trailing" id="bg4-ph-4cc"/>
+                            <constraint firstItem="OOq-gq-dxa" firstAttribute="trailing" secondItem="Ysf-V6-Tml" secondAttribute="trailing" id="bhU-NA-GpY"/>
                             <constraint firstItem="M0v-2x-MML" firstAttribute="leading" secondItem="yZL-pp-XuQ" secondAttribute="leading" id="hEa-BN-Y8W"/>
                             <constraint firstItem="M0v-2x-MML" firstAttribute="top" secondItem="yZL-pp-XuQ" secondAttribute="top" id="nZa-Ws-HN2"/>
                             <constraint firstItem="Ysf-V6-Tml" firstAttribute="leading" secondItem="yZL-pp-XuQ" secondAttribute="leading" constant="64" id="ohK-6n-jBg"/>
+                            <constraint firstItem="OOq-gq-dxa" firstAttribute="top" secondItem="Ysf-V6-Tml" secondAttribute="bottom" constant="32" id="qKN-Pv-qmK"/>
+                            <constraint firstItem="OOq-gq-dxa" firstAttribute="leading" secondItem="Ysf-V6-Tml" secondAttribute="leading" id="tUd-7O-gkY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gYk-qq-zB1"/>
@@ -606,7 +670,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eRr-e6-lVt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3038" y="-4"/>
+            <point key="canvasLocation" x="3037.68115942029" y="-4.0178571428571423"/>
         </scene>
     </scenes>
     <designables>
