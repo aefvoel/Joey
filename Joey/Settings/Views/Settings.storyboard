@@ -341,7 +341,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JY5-g9-6F2">
-                                <rect key="frame" x="64" y="365.5" width="286" height="42"/>
+                                <rect key="frame" x="64" y="357" width="286" height="50.5"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -582,38 +582,49 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of Service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysf-V6-Tml">
-                                <rect key="frame" x="64" y="155" width="286" height="51"/>
+                                <rect key="frame" x="64" y="155" width="286" height="50.5"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OOq-gq-dxa">
-                                <rect key="frame" x="64" y="238" width="286" height="658"/>
+                                <rect key="frame" x="64" y="237.5" width="286" height="658.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="102" id="lm5-XO-sLc">
-                                        <rect key="frame" x="0.0" y="28" width="286" height="102"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="termsCell" rowHeight="493" id="lm5-XO-sLc" customClass="AccordionTableViewCell" customModule="Joey" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="286" height="493"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lm5-XO-sLc" id="6t9-mn-8DP">
-                                            <rect key="frame" x="0.0" y="0.0" width="286" height="102"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="286" height="493"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfC-7R-b4U" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9wZ-Mq-NLW" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="286" height="45"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How anonymous is this?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51J-jm-bCc">
-                                                            <rect key="frame" x="20" y="10.5" width="246" height="24"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How anonymous is this?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHm-QT-bus">
+                                                            <rect key="frame" x="18" y="0.0" width="233" height="45"/>
                                                             <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="I6A-Oj-iAX">
+                                                            <rect key="frame" x="251" y="19" width="17" height="7.5"/>
+                                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="17" id="GX1-hU-fwP"/>
+                                                                <constraint firstAttribute="width" constant="17" id="z07-37-NqX"/>
+                                                            </constraints>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="51J-jm-bCc" secondAttribute="trailing" constant="20" id="HVG-mP-UM4"/>
-                                                        <constraint firstAttribute="height" constant="45" id="Hxg-U5-dAE"/>
-                                                        <constraint firstItem="51J-jm-bCc" firstAttribute="leading" secondItem="wfC-7R-b4U" secondAttribute="leading" constant="20" id="TON-q4-wlj"/>
-                                                        <constraint firstItem="51J-jm-bCc" firstAttribute="centerY" secondItem="wfC-7R-b4U" secondAttribute="centerY" id="hBO-O5-bJ8"/>
+                                                        <constraint firstItem="NHm-QT-bus" firstAttribute="top" secondItem="9wZ-Mq-NLW" secondAttribute="top" id="1Cb-1K-1nH"/>
+                                                        <constraint firstAttribute="trailing" secondItem="I6A-Oj-iAX" secondAttribute="trailing" constant="18" id="2c9-0m-FQK"/>
+                                                        <constraint firstAttribute="bottom" secondItem="NHm-QT-bus" secondAttribute="bottom" id="PRO-5Y-NmX"/>
+                                                        <constraint firstItem="I6A-Oj-iAX" firstAttribute="centerY" secondItem="NHm-QT-bus" secondAttribute="centerY" id="XaH-l8-QSM"/>
+                                                        <constraint firstItem="I6A-Oj-iAX" firstAttribute="leading" secondItem="NHm-QT-bus" secondAttribute="trailing" id="dqm-98-oDw"/>
+                                                        <constraint firstItem="NHm-QT-bus" firstAttribute="leading" secondItem="9wZ-Mq-NLW" secondAttribute="leading" constant="18" id="jgz-XH-vbu"/>
+                                                        <constraint firstAttribute="height" constant="45" id="mCi-bp-LSZ"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
@@ -622,28 +633,33 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AnH-ha-KtQ" customClass="TextViewFixed" customModule="Joey" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="45" width="286" height="57"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="57" id="6sM-BE-66w"/>
-                                                    </constraints>
-                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                    <color key="textColor" systemColor="labelColor"/>
-                                                    <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPf-Gu-j5v">
+                                                    <rect key="frame" x="0.0" y="45" width="286" height="448"/>
+                                                    <mutableString key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</mutableString>
+                                                    <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="AnH-ha-KtQ" secondAttribute="bottom" id="3aN-qf-cDe"/>
-                                                <constraint firstItem="wfC-7R-b4U" firstAttribute="top" secondItem="6t9-mn-8DP" secondAttribute="top" id="4c3-ei-7pW"/>
-                                                <constraint firstItem="AnH-ha-KtQ" firstAttribute="leading" secondItem="6t9-mn-8DP" secondAttribute="leading" id="4th-cw-VmN"/>
-                                                <constraint firstAttribute="trailing" secondItem="wfC-7R-b4U" secondAttribute="trailing" id="Iln-PU-Uu5"/>
-                                                <constraint firstAttribute="trailing" secondItem="AnH-ha-KtQ" secondAttribute="trailing" id="Uwa-gH-OLz"/>
-                                                <constraint firstItem="wfC-7R-b4U" firstAttribute="leading" secondItem="6t9-mn-8DP" secondAttribute="leading" id="iiE-Ky-MaQ"/>
-                                                <constraint firstItem="AnH-ha-KtQ" firstAttribute="top" secondItem="wfC-7R-b4U" secondAttribute="bottom" id="zu0-Cw-fmm"/>
+                                                <constraint firstAttribute="trailing" secondItem="aPf-Gu-j5v" secondAttribute="trailing" id="0jl-kN-Krd"/>
+                                                <constraint firstAttribute="bottom" secondItem="aPf-Gu-j5v" secondAttribute="bottom" id="5SY-DL-kRv"/>
+                                                <constraint firstItem="aPf-Gu-j5v" firstAttribute="leading" secondItem="6t9-mn-8DP" secondAttribute="leading" id="FzS-2Y-0dJ"/>
+                                                <constraint firstItem="9wZ-Mq-NLW" firstAttribute="leading" secondItem="6t9-mn-8DP" secondAttribute="leading" id="SQ4-cE-eRA"/>
+                                                <constraint firstItem="9wZ-Mq-NLW" firstAttribute="top" secondItem="6t9-mn-8DP" secondAttribute="top" id="aFG-9p-CXS"/>
+                                                <constraint firstAttribute="trailing" secondItem="9wZ-Mq-NLW" secondAttribute="trailing" id="eGY-QK-sfk"/>
+                                                <constraint firstItem="aPf-Gu-j5v" firstAttribute="top" secondItem="9wZ-Mq-NLW" secondAttribute="bottom" id="wZl-zP-Lky"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="contentLabel" destination="aPf-Gu-j5v" id="tfL-6g-qRd"/>
+                                            <outlet property="titleLabel" destination="NHm-QT-bus" id="pJI-qo-PlS"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -666,6 +682,7 @@
                     <navigationItem key="navigationItem" id="gYk-qq-zB1"/>
                     <connections>
                         <outlet property="navBar" destination="M0v-2x-MML" id="gpQ-sz-PeY"/>
+                        <outlet property="termsTableView" destination="OOq-gq-dxa" id="7e3-5u-aVd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eRr-e6-lVt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -675,10 +692,11 @@
     </scenes>
     <designables>
         <designable name="6pN-5c-vNL">
-            <size key="intrinsicContentSize" width="45" height="36"/>
+            <size key="intrinsicContentSize" width="41" height="40"/>
         </designable>
     </designables>
     <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="de_background" width="414" height="896"/>
         <image name="settings_about" width="50" height="50"/>
