@@ -2325,7 +2325,7 @@ Do you want to see it?</string>
         <!--Summary View Controller-->
         <scene sceneID="xRe-qF-05u">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="YQw-JE-CmF" customClass="SummaryViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SummaryViewController" modalPresentationStyle="fullScreen" id="YQw-JE-CmF" customClass="SummaryViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zPa-AE-edr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

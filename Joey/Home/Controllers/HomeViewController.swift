@@ -67,7 +67,7 @@ class HomeViewController: UIViewController {
             useInlineMode: true
         )
         let sheetController = SheetViewController(controller: controller, sizes: [.percent(0.4), .percent(0.75)], options: options)
-        
+        sheetController.allowGestureThroughOverlay = true
         // The size of the grip in the pull bar
         sheetController.gripSize = CGSize(width: 83, height: 7)
         // The color of the grip on the pull bar

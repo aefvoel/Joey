@@ -104,7 +104,6 @@ class StartMirrorViewController: UIViewController {
     
     private func updateUI(){
         labelInstruction.isHidden = true
-        navBar.labelTitle.font = navBar.labelTitle.font.withSize(24)
         navBar.buttonDone.isHidden = false
         navBar.buttonDone.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(self.onClickButtonDone)))
         labelPrepare.text = ""
@@ -129,20 +128,6 @@ class StartMirrorViewController: UIViewController {
     
     @objc func updateTime() {
         navBar.labelTitle.text = "\(timeFormatted(totalTime!))"
-        if totalTime! < 55 && totalTime! > 10 {
-            DispatchQueue.main.async {
-                if self.isSmile {
-                    self.labelInstruction.text = "Yup! Keep that smile longer.. Hold on for 5 more seconds!"
-                } else {
-                    self.labelInstruction.text = "Think of something positive about yourself and try to smile naturally"
-                }
-            }
-        }
-        else if totalTime! < 10 && totalTime! > 0 {
-            labelInstruction.text = "Almost there.."
-        }
-        
-        
         if totalTime != 0 {
             totalTime! -= 1
         } else {

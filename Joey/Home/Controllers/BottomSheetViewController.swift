@@ -14,6 +14,7 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var activitiesCollectionView: UICollectionView!
     @IBOutlet weak var barChartView: BarChartView!
     @IBOutlet weak var labelUserName: UILabel!
+    var recordData: ThoughtsRecordTemp?
     var listEmotion = [EmotionList]()
     var listEmotionByMonth = [EmotionList]()
     var emotionData: EmotionList!
@@ -61,7 +62,6 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
             list.forEach { emotion in
                 let date = emotion.value(forKey: "testedAt") as! Date
                 let emotionType = emotion.value(forKey: "emotion") as! Int
-                let formatDate = date.getFormattedDate(format: "EEEE, MMMM d yyyy, h:mm a")
                 let formatDay = date.getFormattedDate(format: "d")
                 let formatMonth = date.getFormattedDate(format: "MMMM")
 
@@ -69,17 +69,16 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
                                             emotion: FollowUp.EmotionType(rawValue: emotionType)!,
                                             reason: emotion.value(forKey: "reason") as! String,
                                             scale: emotion.value(forKey: "scale") as! Float,
-                                            date: formatDate,
+                                            date: date,
                                             day: Int(formatDay)!,
                                             month: formatMonth))
-                
                 self.listMonth.append(formatMonth)
             }
         }
         
         DispatchQueue.main.async {
             self.listMonth = self.listMonth.unique()
-            self.setupChart(month: self.listMonth.last!)
+            self.setupChart(month: self.listMonth.last ?? "")
             self.listEmotion.reverse()
         }
         
@@ -117,6 +116,7 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
         let lineChartData = BarChartData()
         lineChartData.addDataSet(barChart)
         barChartView.leftAxis.valueFormatter = IndexAxisValueFormatter(values: emotionType)
+        barChartView.xAxis.granularityEnabled = true
         barChartView.xAxis.granularity = 5
         barChartView.xAxis.axisMinimum = 1
         barChartView.xAxis.axisMaximum = 31

@@ -11,7 +11,7 @@ struct EmotionList {
     var emotion: FollowUp.EmotionType
     var reason: String
     var scale: Float
-    var date: String
+    var date: Date
     var day: Int
     var month: String
 }

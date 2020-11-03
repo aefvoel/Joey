@@ -15,5 +15,5 @@ struct ThoughtsRecordTemp {
     var notSupportedEvidence: String?
     var alternativeThoughts: String?
     var newMoods: [String] = []
-    let createdAt = Date()
+    var createdAt = Date()
 }

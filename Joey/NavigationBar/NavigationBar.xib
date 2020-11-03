@@ -60,11 +60,11 @@
                     <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shB-5G-YQw">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="shB-5G-YQw">
                     <rect key="frame" x="93" y="1" width="228" height="47"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <accessibility key="accessibilityConfiguration" identifier="topBarNavigation_titleLbl"/>
-                    <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                    <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="36"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
