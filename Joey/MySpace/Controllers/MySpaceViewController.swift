@@ -106,7 +106,7 @@ class MySpaceViewController: UIViewController, ChartViewDelegate {
         DispatchQueue.main.async {
             self.viewHeight.constant = self.historyCollectionView.contentSize.height
             self.listMonth = self.listMonth.unique()
-            self.selectedMonth = self.listMonth.last!
+            self.selectedMonth = self.listMonth.last ?? ""
             self.setupChart(month: self.selectedMonth!)
             self.listEmotion.reverse()
             self.historyCollectionView.reloadData()

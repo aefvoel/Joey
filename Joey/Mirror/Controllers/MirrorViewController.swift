@@ -12,8 +12,9 @@ class MirrorViewController: UIViewController {
 
     @IBOutlet weak var navBar: NavigationBar!
     @IBOutlet var selectTime: [RoundedView]!
+    @IBOutlet var labelTime: [UILabel]!
     
-    var timer = 60
+    var timer = 300
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,17 +23,21 @@ class MirrorViewController: UIViewController {
     
     func setupUI(){
         navBar.delegate = self
-        for time in selectTime {
-            time.layer.borderWidth = 0.0
+        for time in labelTime {
+            if time.tag == timer {
+                time.font = UIFont.boldSystemFont(ofSize: time.font.pointSize)
+            }
+            else {
+                time.font = UIFont.systemFont(ofSize: time.font.pointSize)
+            }
             let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.checkAction))
             time.addGestureRecognizer(gesture)
         }
 
     }
     @objc func checkAction(sender : UITapGestureRecognizer) {
-        setupUI()
-        sender.view!.layer.borderWidth = 2.0
         timer = sender.view!.tag
+        setupUI()
     }
     
     

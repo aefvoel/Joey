@@ -13,6 +13,7 @@ class NavigationBar: UIView {
     
     @IBOutlet var view: UIView!
     @IBOutlet weak var buttonBack: UIButton!
+    @IBOutlet weak var buttonDone: RoundedButton!
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelIndicator: UILabel!
     var delegate: UIViewController!
