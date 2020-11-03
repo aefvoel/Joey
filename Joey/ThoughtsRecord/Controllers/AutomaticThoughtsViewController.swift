@@ -27,11 +27,15 @@ class AutomaticThoughtsViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         setupUI()
         textViewPlaceholder()
+        dismissKeyboardOnScreen()
 
         // Do any additional setup after loading the view.
     }
     
     @IBAction func onClickContinueButton(_ sender: Any) {
+        if textViewInitialThoughts.text == "Type your answer here" {
+            textViewInitialThoughts.text = ""
+        }
         guard let answer = textViewInitialThoughts?.text else { return }
         data?.initialThoughts = answer
         performSegue(withIdentifier: "toEvidence", sender: nil)
@@ -47,6 +51,21 @@ class AutomaticThoughtsViewController: UIViewController, UITextViewDelegate {
             imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    func dismissKeyboardOnScreen() {
+        let tapOnScreen: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        
+        tapOnScreen.cancelsTouchesInView = false
+        
+        view.addGestureRecognizer(tapOnScreen)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     func textViewPlaceholder() {
@@ -69,6 +88,19 @@ class AutomaticThoughtsViewController: UIViewController, UITextViewDelegate {
         }
     }
 
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if ((notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue) != nil {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= 175
+            }
+        }
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
     
     // MARK: - Navigation
 
