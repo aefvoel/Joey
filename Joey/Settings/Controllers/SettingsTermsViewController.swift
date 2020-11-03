@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct TermsOfService {
+struct AccordionItem {
     let title: String
     let content: String
 }
@@ -15,9 +15,9 @@ struct TermsOfService {
 class SettingsTermsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var terms = [
-        TermsOfService(title: "How anonymous is this?", content: "You do not need to go through a registration or sign-up process, so you do not need to give us an email id or phone number. This makes sure that all your conversations are totally anonymous."),
-        TermsOfService(title: "Who can see my data?", content: "You do not need to go through a registration or sign-up process, so you do not need to give us an email id or phone number."),
-        TermsOfService(title: "How can I protect my data?", content: "You do not need to go through a registration or sign-up process, so you do not need to give us an email id or phone number. This makes sure that all your conversations are totally anonymous.")
+        AccordionItem(title: "How anonymous is this?", content: "You do not need to go through a registration or sign-up process, so you do not need to give us an email id or phone number. This makes sure that all your conversations are totally anonymous."),
+        AccordionItem(title: "Who can see my data?", content: "You do not need to go through a registration or sign-up process, so you do not need to give us an email id or phone number."),
+        AccordionItem(title: "How can I protect my data?", content: "You do not need to go through a registration or sign-up process, so you do not need to give us an email id or phone number. This makes sure that all your conversations are totally anonymous.")
     ]
     var selectedIndexPath: IndexPath?
 
