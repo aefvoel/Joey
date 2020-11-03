@@ -68,13 +68,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="858"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reY-YN-JA1">
-                                                <rect key="frame" x="24" y="24" width="32" height="30.5"/>
+                                                <rect key="frame" x="24" y="24" width="29" height="36.5"/>
                                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="26"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cP4-sd-ZzV" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="70.5" width="366" height="45"/>
+                                                <rect key="frame" x="24" y="76.5" width="366" height="45"/>
                                                 <color key="backgroundColor" red="1" green="0.80392156862745101" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="bqu-cv-9wq"/>
@@ -94,10 +94,10 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9H-5I-fPH" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="139.5" width="366" height="236.5"/>
+                                                <rect key="frame" x="24" y="145.5" width="366" height="230.5"/>
                                                 <subviews>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bns-O8-eDQ">
-                                                        <rect key="frame" x="8" y="50" width="350" height="178.5"/>
+                                                        <rect key="frame" x="8" y="55" width="350" height="167.5"/>
                                                         <color key="backgroundColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="E08-lV-QEV">
                                                             <size key="itemSize" width="128" height="128"/>
@@ -112,13 +112,13 @@
                                                         </connections>
                                                     </collectionView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImO-Xs-HoM">
-                                                        <rect key="frame" x="16" y="16" width="88.5" height="26"/>
+                                                        <rect key="frame" x="16" y="16" width="90.5" height="31"/>
                                                         <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8z-A4-pae">
-                                                        <rect key="frame" x="320" y="14" width="38" height="30"/>
+                                                        <rect key="frame" x="320" y="14" width="38" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="38" id="k5Y-fS-S3R"/>
                                                         </constraints>
@@ -151,7 +151,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuK-we-T1M">
-                                                <rect key="frame" x="64" y="24" width="54.5" height="30.5"/>
+                                                <rect key="frame" x="61" y="24" width="52" height="36.5"/>
                                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="26"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -160,16 +160,16 @@
                                                 <rect key="frame" x="24" y="400" width="366" height="273"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Space" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mE-xT-02q">
-                                                        <rect key="frame" x="16" y="16" width="99.5" height="26"/>
+                                                        <rect key="frame" x="16" y="16" width="92" height="31"/>
                                                         <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOZ-Od-OgE" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
-                                                        <rect key="frame" x="8" y="58" width="350" height="205"/>
+                                                        <rect key="frame" x="8" y="63" width="350" height="200"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcP-JR-Lut" customClass="BarChartView" customModule="Charts">
-                                                                <rect key="frame" x="0.0" y="12" width="350" height="185"/>
+                                                                <rect key="frame" x="0.0" y="12" width="350" height="180"/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             </view>
                                                         </subviews>
@@ -188,7 +188,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2e9-ol-hf2">
-                                                        <rect key="frame" x="320" y="14" width="38" height="30"/>
+                                                        <rect key="frame" x="320" y="14" width="38" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="38" id="fQs-d7-80z"/>
                                                         </constraints>
@@ -345,7 +345,7 @@
     </scenes>
     <designables>
         <designable name="cP4-sd-ZzV">
-            <size key="intrinsicContentSize" width="167" height="36"/>
+            <size key="intrinsicContentSize" width="164" height="40"/>
         </designable>
     </designables>
     <resources>

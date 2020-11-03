@@ -13,6 +13,7 @@ class hintsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        textView.showsVerticalScrollIndicator = false
         textView.isEditable = false
 
         // Do any additional setup after loading the view.

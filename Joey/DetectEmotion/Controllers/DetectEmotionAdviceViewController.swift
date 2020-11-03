@@ -17,8 +17,8 @@ class DetectEmotionAdviceViewController: UIViewController {
         super.viewDidLoad()
         navBar.delegate = self
         let singleTap = UITapGestureRecognizer(target: self, action: #selector(onBackgroundTapped))
-        singleTap.numberOfTapsRequired = 1
-        singleTap.numberOfTouchesRequired = 1
+//        singleTap.numberOfTapsRequired = 1
+//        singleTap.numberOfTouchesRequired = 1
         backgroundImage.addGestureRecognizer(singleTap)
         backgroundImage.isUserInteractionEnabled = true
     }

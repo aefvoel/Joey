@@ -14,17 +14,27 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var activitiesCollectionView: UICollectionView!
     @IBOutlet weak var barChartView: BarChartView!
     @IBOutlet weak var labelUserName: UILabel!
+    var listEmotion = [EmotionList]()
+    var listEmotionByMonth = [EmotionList]()
+    var emotionData: EmotionList!
+    var listMonth = [String]()
+    let emotionType = ["",
+                       FollowUp.EmotionType.angry.description,
+                       FollowUp.EmotionType.sad.description,
+                       FollowUp.EmotionType.neutral.description,
+                       FollowUp.EmotionType.happy.description]
     var selectedActivity: ActivitiesInstruction?
     override func viewDidLoad() {
         super.viewDidLoad()
         registerNib()
         setupUI()
-        setupChart()
+        getEmotionHistory()
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         labelUserName.text = UserDefaultsHelper.getData(type: String.self, forKey: .userName)
+        getEmotionHistory()
     }
     
     @IBAction func onClickButtonLogout(_ sender: UIButton) {
@@ -46,7 +56,35 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
     func setupUI(){
         self.sheetViewController?.handleScrollView(self.bottomSheetScrollView)
     }
-    func setupChart(){
+    func getEmotionHistory(){
+        EmotionHelper.list { (list: [Emotion], _: Error?) in
+            list.forEach { emotion in
+                let date = emotion.value(forKey: "testedAt") as! Date
+                let emotionType = emotion.value(forKey: "emotion") as! Int
+                let formatDate = date.getFormattedDate(format: "EEEE, MMMM d yyyy, h:mm a")
+                let formatDay = date.getFormattedDate(format: "d")
+                let formatMonth = date.getFormattedDate(format: "MMMM")
+
+                self.listEmotion.append(EmotionList(
+                                            emotion: FollowUp.EmotionType(rawValue: emotionType)!,
+                                            reason: emotion.value(forKey: "reason") as! String,
+                                            scale: emotion.value(forKey: "scale") as! Float,
+                                            date: formatDate,
+                                            day: Int(formatDay)!,
+                                            month: formatMonth))
+                
+                self.listMonth.append(formatMonth)
+            }
+        }
+        
+        DispatchQueue.main.async {
+            self.listMonth = self.listMonth.unique()
+            self.setupChart(month: self.listMonth.last!)
+            self.listEmotion.reverse()
+        }
+        
+    }
+    func setupChart(month: String){
         barChartView.delegate = self
         barChartView.chartDescription?.enabled = false
         barChartView.dragEnabled = true
@@ -63,22 +101,28 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
         barChartView.animate(xAxisDuration: 2.5)
         
         var barChartEntry = [BarChartDataEntry]()
-        let emotionType = ["","Need cheer-up", "Irritated", "So-so", "Awesome"]
-        let number = [1,1,1,2,3,4,1,2,3,4,1,2,3,4,3,2,2,2,3,3,3,2,1,1,4,4,3,4,1,4]
-        for i in 0..<number.count {
-            let value = BarChartDataEntry(x: Double(i+1), y: Double(number[i]))
-            barChartEntry.append(value)
+        
+        listEmotionByMonth.removeAll()
+        for i in 0..<listEmotion.count {
+            if listEmotion[i].month == month {
+                listEmotionByMonth.append(listEmotion[i])
+                let value = BarChartDataEntry(x: Double(listEmotion[i].day), y: Double(listEmotion[i].emotion.rawValue))
+                barChartEntry.append(value)
+            }
         }
-        let barChart = BarChartDataSet(entries: barChartEntry, label: "Sad")
+        let barChart = BarChartDataSet(entries: barChartEntry)
         barChart.setColor(UIColor(red: 0.35, green: 0.76, blue: 0.74, alpha: 1.00))
         barChart.drawValuesEnabled = false
         
         let lineChartData = BarChartData()
         lineChartData.addDataSet(barChart)
-//        barChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: months)
         barChartView.leftAxis.valueFormatter = IndexAxisValueFormatter(values: emotionType)
-        barChartView.xAxis.granularity = 1.0
+        barChartView.xAxis.granularity = 5
+        barChartView.xAxis.axisMinimum = 1
+        barChartView.xAxis.axisMaximum = 31
         barChartView.leftAxis.granularity = 1
+        barChartView.leftAxis.axisMinimum = 0
+        barChartView.leftAxis.axisMaximum = 4
 
         barChartView.data = lineChartData
     }

@@ -341,7 +341,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JY5-g9-6F2">
-                                <rect key="frame" x="64" y="357" width="286" height="50.5"/>
+                                <rect key="frame" x="64" y="365.5" width="286" height="42"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -675,7 +675,7 @@
     </scenes>
     <designables>
         <designable name="6pN-5c-vNL">
-            <size key="intrinsicContentSize" width="41" height="40"/>
+            <size key="intrinsicContentSize" width="45" height="36"/>
         </designable>
     </designables>
     <resources>
