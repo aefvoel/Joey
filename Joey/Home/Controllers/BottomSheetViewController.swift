@@ -79,7 +79,7 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
         
         DispatchQueue.main.async {
             self.listMonth = self.listMonth.unique()
-            self.setupChart(month: self.listMonth.last!)
+            self.setupChart(month: self.listMonth.last ?? "")
             self.listEmotion.reverse()
         }
         
