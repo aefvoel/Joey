@@ -33,6 +33,10 @@ class JacobsonViewController: UIViewController, JacobsonExerciseDelegate {
         }
     }
     
+    func isLastExercise() -> Bool {
+        return currentExerciseIndex == jacobsonExercises.count - 1
+    }
+    
     func getExercise() -> JacobsonExcercise {
         return jacobsonExercises[currentExerciseIndex]
     }

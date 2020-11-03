@@ -31,9 +31,12 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
         getEmotionHistory()
         // Do any additional setup after loading the view.
     }
+    
     override func viewDidAppear(_ animated: Bool) {
+        labelUserName.text = UserDefaultsHelper.getData(type: String.self, forKey: .userName)
         getEmotionHistory()
     }
+    
     @IBAction func onClickButtonLogout(_ sender: UIButton) {
         UserDefaultsHelper.setData(value: false, key: .isLoggedIn)
         self.navigationController?.popViewController(animated: true)
@@ -52,7 +55,6 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
     }
     func setupUI(){
         self.sheetViewController?.handleScrollView(self.bottomSheetScrollView)
-        labelUserName.text = UserDefaultsHelper.getData(type: String.self, forKey: .userName)
     }
     func getEmotionHistory(){
         EmotionHelper.list { (list: [Emotion], _: Error?) in

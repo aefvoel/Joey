@@ -10,6 +10,7 @@ import FittedSheets
 
 class HomeViewController: UIViewController {
     
+//    @IBOutlet weak var settingsButton: UIButton!
     var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.image = UIImage(named: "homepage_background")
@@ -22,9 +23,19 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         openBottomSheet()
+//        setupSettingsButton()
         // Do any additional setup after loading the view.
     }
     
+//    func setupSettingsButton() {
+//        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onSettingsButtonTapped))
+//        settingsButton.addGestureRecognizer(tapGesture)
+//    }
+//
+//    @objc func onSettingsButtonTapped() {
+//        print("Hello, world!")
+//    }
+//
     
     /*
      // MARK: - Navigation

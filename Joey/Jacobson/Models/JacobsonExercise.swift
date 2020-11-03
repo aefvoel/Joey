@@ -23,4 +23,5 @@ let jacobsonExercises = [
 protocol JacobsonExerciseDelegate {
     func nextExercise()
     func getExercise() -> JacobsonExcercise
+    func isLastExercise() -> Bool
 }
