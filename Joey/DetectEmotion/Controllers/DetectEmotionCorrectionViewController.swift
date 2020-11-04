@@ -15,18 +15,20 @@ class DetectEmotionCorrectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navBar.delegate = self
+        navBar.labelIndicator.isHidden = false
+        navBar.labelIndicator.text = "1/5"
     }
     
     @IBAction func onAnswerButtonTapped(_ sender: UIButton) {
         switch sender.tag {
         case 1:
-            data?.correctEmotion = .happy
+            data?.emotion = .happy
         case 2:
-            data?.correctEmotion = .neutral
+            data?.emotion = .neutral
         case 3:
-            data?.correctEmotion = .angry
+            data?.emotion = .angry
         default:
-            data?.correctEmotion = .sad
+            data?.emotion = .sad
         }
         performSegue(withIdentifier: "toScale", sender: nil)
     }

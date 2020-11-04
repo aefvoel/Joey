@@ -36,20 +36,20 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xg8-uk-Ki9" customClass="TextViewFixed" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="55" y="538" width="304" height="140"/>
+                                <rect key="frame" x="55" y="506" width="304" height="200"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="140" id="rZQ-Xl-1BT"/>
+                                    <constraint firstAttribute="height" constant="200" id="rZQ-Xl-1BT"/>
                                 </constraints>
                                 <string key="text">1. 	Gently tighten the muscles of your abdomen, but don’t strain.
 2. 	Notice the tension for a few moments. Then release, and notice the relaxation. Repeat.
 3. 	Become aware of the difference between the tensed muscles and the relaxed muscles.</string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUQ-S4-cVY">
-                                <rect key="frame" x="309" y="702" width="50" height="50"/>
+                                <rect key="frame" x="309" y="748" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="QqA-iB-Sez"/>
                                     <constraint firstAttribute="width" constant="50" id="w2w-pD-8hm"/>
@@ -72,8 +72,8 @@
                         <constraints>
                             <constraint firstItem="LMd-s8-rY1" firstAttribute="top" secondItem="nOi-Je-ZVU" secondAttribute="top" id="5a1-6z-UTy"/>
                             <constraint firstItem="LMd-s8-rY1" firstAttribute="trailing" secondItem="nOi-Je-ZVU" secondAttribute="trailing" id="5tb-8V-XRx"/>
-                            <constraint firstItem="xg8-uk-Ki9" firstAttribute="top" secondItem="M3W-eA-uMz" secondAttribute="bottom" constant="64" id="9O2-iT-mq1"/>
-                            <constraint firstItem="jUQ-S4-cVY" firstAttribute="top" secondItem="xg8-uk-Ki9" secondAttribute="bottom" constant="24" id="CIB-Qc-1Qi"/>
+                            <constraint firstItem="xg8-uk-Ki9" firstAttribute="top" secondItem="M3W-eA-uMz" secondAttribute="bottom" constant="32" id="9O2-iT-mq1"/>
+                            <constraint firstItem="nOi-Je-ZVU" firstAttribute="bottom" secondItem="jUQ-S4-cVY" secondAttribute="bottom" constant="64" id="HwK-HY-u08"/>
                             <constraint firstItem="M3W-eA-uMz" firstAttribute="centerX" secondItem="hro-XD-Ui6" secondAttribute="centerX" id="RmJ-W2-tzz"/>
                             <constraint firstItem="xg8-uk-Ki9" firstAttribute="trailing" secondItem="M3W-eA-uMz" secondAttribute="trailing" constant="32" id="ZA4-6K-3kV"/>
                             <constraint firstItem="LMd-s8-rY1" firstAttribute="leading" secondItem="nOi-Je-ZVU" secondAttribute="leading" id="bqa-8m-kMP"/>
@@ -197,7 +197,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pSe-b7-9FI"/>
+        <segue reference="BM5-6E-nqG"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="de_background" width="414" height="896"/>

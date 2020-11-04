@@ -341,7 +341,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JY5-g9-6F2">
-                                <rect key="frame" x="64" y="365.5" width="286" height="42"/>
+                                <rect key="frame" x="64" y="357" width="286" height="50.5"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -423,7 +423,7 @@
             <objects>
                 <tableViewController id="zOk-OZ-EYI" customClass="SettingsAccordionTableViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sMG-4H-H83">
-                        <rect key="frame" x="0.0" y="0.0" width="286" height="658.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="286" height="658"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <connections>
@@ -455,13 +455,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAQ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8P-BS-kei">
-                                <rect key="frame" x="64" y="155" width="286" height="51"/>
+                                <rect key="frame" x="64" y="155" width="286" height="42"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5v-dh-8jn">
-                                <rect key="frame" x="64" y="238" width="286" height="658"/>
+                                <rect key="frame" x="64" y="229" width="286" height="667"/>
                                 <connections>
                                     <segue destination="zOk-OZ-EYI" kind="embed" identifier="toTableView" id="jzJ-Sy-Voc"/>
                                 </connections>
@@ -522,7 +522,11 @@
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCJ-Lg-xN4" customClass="TextViewFixed" customModule="Joey" customModuleProvider="target">
                                 <rect key="frame" x="64" y="238" width="286" height="624"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">Often times we feel the pressure due to the accumulation of thoughts that we don't want. These persistently negative thoughts if allowed will makes symptoms of depression. Therefore, we need to be aware of the emotions we feel.
+
+You can control your negative thoughts to have a more balanced way of thinking. It’s time to change with Joey!
+
+Joey will help you to control your negative thoughts by suggesting you activity to do to control your negative thoughts using thoughts record and mindfulness activity. Joey will also help you to journal your feelings but what makes it special is that Joey can help you to identify your emotion by detecting your face expression using Augmented Reality so that you know what you need to do to overcome the thoughts that you don't want.</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -659,11 +663,11 @@
     </scenes>
     <designables>
         <designable name="6pN-5c-vNL">
-            <size key="intrinsicContentSize" width="45" height="36"/>
+            <size key="intrinsicContentSize" width="41" height="40"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="agm-SE-wvb"/>
+        <segue reference="jzJ-Sy-Voc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.right" catalog="system" width="96" height="128"/>

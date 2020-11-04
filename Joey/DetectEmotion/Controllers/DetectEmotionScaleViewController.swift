@@ -16,6 +16,12 @@ class DetectEmotionScaleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navBar.delegate = self
+        navBar.labelIndicator.isHidden = false
+        if let isDetectionValid = data?.isDetectionResultValid, isDetectionValid {
+            navBar.labelIndicator.text = "1/4"
+        } else {
+            navBar.labelIndicator.text = "2/5"
+        }
     }
     
     @IBAction func onOkayButtonTapped(_ sender: Any) {

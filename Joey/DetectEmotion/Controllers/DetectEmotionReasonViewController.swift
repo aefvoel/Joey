@@ -15,6 +15,12 @@ class DetectEmotionReasonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navBar.delegate = self
+        navBar.labelIndicator.isHidden = false
+        if let isDetectionValid = data?.isDetectionResultValid, isDetectionValid {
+            navBar.labelIndicator.text = "2/4"
+        } else {
+            navBar.labelIndicator.text = "3/5"
+        }
     }
     
     @IBAction func answerTapped(_ sender: UIButton) {
