@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
 //    @IBOutlet weak var settingsButton: UIButton!
     var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
-        imageView.image = UIImage(named: "homepage_background")
+        imageView.image = UIImage(named: "page_background3")
         imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView

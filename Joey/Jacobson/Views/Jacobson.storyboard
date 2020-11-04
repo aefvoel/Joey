@@ -119,7 +119,7 @@
                                     <constraint firstAttribute="width" constant="240" id="cRb-HM-Yb5"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="de_background" translatesAutoresizingMaskIntoConstraints="NO" id="b4Z-uy-GYJ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page_background3" translatesAutoresizingMaskIntoConstraints="NO" id="b4Z-uy-GYJ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -197,12 +197,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="BM5-6E-nqG"/>
+        <segue reference="pSe-b7-9FI"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="de_background" width="414" height="896"/>
         <image name="feetGuide" width="286" height="286"/>
         <image name="next" width="50" height="50"/>
+        <image name="page_background3" width="414" height="896"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

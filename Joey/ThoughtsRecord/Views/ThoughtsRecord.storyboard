@@ -288,7 +288,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBH-cK-IAi">
                                 <rect key="frame" x="24" y="165" width="366" height="643"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">As Albert Einstein once said, “The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”, and I agree! Whenever you feel like drowning in your own thoughts, you can change it by challenging it! 
+                                <string key="text">As Albert Einstein once said, “The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”, and I agree! Whenever you feel like drowning in your own thoughts, you can change it by challenging it! 
 
 Thoughts Record helps you think about your thinking. It is the basic tool of cognitive therapy. It is a series of questions that lead you step-by-step through the process of identifying your negative thinking and changing it.
 
@@ -303,7 +303,7 @@ Try not to be frustrated about the fact that this takes time. These are big chan
 Source:
 1. https://www.psychologytools.com/self-help/thought-records/
 2. https://theprivatetherapyclinic.co.uk/what-is-a-thought-record/
-3. https://ibpf.org/putting-your-thoughts-on-trial-how-to-use-cbt-thought-records/</mutableString>
+3. https://ibpf.org/putting-your-thoughts-on-trial-how-to-use-cbt-thought-records/</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2450,7 +2450,6 @@ Do you want to see it?</string>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LYB-aF-sxo" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="47"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="0Bf-kf-6Pz"/>
                                 </constraints>
@@ -2695,7 +2694,7 @@ Do you want to do this activity again?</string>
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="R1z-Qy-Fwh"/>
-        <segue reference="RFT-ku-kxy"/>
+        <segue reference="Y0y-Q6-4kK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="OB_modalClose_xButton" width="41" height="41"/>

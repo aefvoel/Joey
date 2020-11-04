@@ -25,7 +25,6 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jnn-za-1Ry" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="47"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRD-4h-E0m" customClass="CardView" customModule="Joey" customModuleProvider="target">
                                 <rect key="frame" x="24" y="99" width="366" height="213"/>
@@ -422,7 +421,6 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V2y-lo-tGV" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="45"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzQ-aa-0DD" customClass="CardView" customModule="Joey" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="362" width="414" height="534"/>

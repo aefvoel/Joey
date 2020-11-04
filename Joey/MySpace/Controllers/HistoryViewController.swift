@@ -24,7 +24,7 @@ class HistoryViewController: UIViewController {
     var emotionData: EmotionList!
     var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
-        imageView.image = UIImage(named: "de_background")
+        imageView.image = UIImage(named: "page_background3")
         imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
