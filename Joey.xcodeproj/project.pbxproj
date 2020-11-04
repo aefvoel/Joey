@@ -27,6 +27,9 @@
 		1645F8DA2546923A001058A3 /* DetectEmotionAdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F8D92546923A001058A3 /* DetectEmotionAdviceViewController.swift */; };
 		16475D9A2547DAE70074D025 /* DetectEmotionSuggestActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16475D992547DAE70074D025 /* DetectEmotionSuggestActivityViewController.swift */; };
 		16475D9F2547DBA80074D025 /* DetectEmotionCorrectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16475D9E2547DBA80074D025 /* DetectEmotionCorrectionViewController.swift */; };
+		164B4F0125521A8200FCAA42 /* SettingsAccordionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164B4F0025521A8200FCAA42 /* SettingsAccordionTableViewController.swift */; };
+		164B4F0725521AFC00FCAA42 /* SettingsAccordionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164B4F0525521AFC00FCAA42 /* SettingsAccordionTableViewCell.swift */; };
+		164B4F0825521AFC00FCAA42 /* SettingsAccordionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 164B4F0625521AFC00FCAA42 /* SettingsAccordionTableViewCell.xib */; };
 		1655E28725467A5300ACCF9C /* DetectEmotionValidateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1655E28625467A5300ACCF9C /* DetectEmotionValidateViewController.swift */; };
 		1655E28C25467BF700ACCF9C /* DetectEmotionReasonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1655E28B25467BF700ACCF9C /* DetectEmotionReasonViewController.swift */; };
 		166C532C253732DF007C5EF3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166C532B253732DF007C5EF3 /* Home.storyboard */; };
@@ -36,7 +39,6 @@
 		166C534025373372007C5EF3 /* DetectEmotion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166C533F25373372007C5EF3 /* DetectEmotion.storyboard */; };
 		166C534D253733A0007C5EF3 /* DetectEmotionStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C534C253733A0007C5EF3 /* DetectEmotionStartViewController.swift */; };
 		166C5353253738F4007C5EF3 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C5352253738F4007C5EF3 /* AlertHelper.swift */; };
-		167837D12551187400C2866F /* AccordionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167837D02551187400C2866F /* AccordionTableViewCell.swift */; };
 		167E0E73253EA1CB00602784 /* FaceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167E0E72253EA1CB00602784 /* FaceData.swift */; };
 		167E0E7B253EABA700602784 /* EmotionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167E0E7A253EABA700602784 /* EmotionHelper.swift */; };
 		169C073625413C300071387C /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169C073525413C300071387C /* InstructionViewController.swift */; };
@@ -144,6 +146,9 @@
 		1645F8D92546923A001058A3 /* DetectEmotionAdviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionAdviceViewController.swift; sourceTree = "<group>"; };
 		16475D992547DAE70074D025 /* DetectEmotionSuggestActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionSuggestActivityViewController.swift; sourceTree = "<group>"; };
 		16475D9E2547DBA80074D025 /* DetectEmotionCorrectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionCorrectionViewController.swift; sourceTree = "<group>"; };
+		164B4F0025521A8200FCAA42 /* SettingsAccordionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAccordionTableViewController.swift; sourceTree = "<group>"; };
+		164B4F0525521AFC00FCAA42 /* SettingsAccordionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAccordionTableViewCell.swift; sourceTree = "<group>"; };
+		164B4F0625521AFC00FCAA42 /* SettingsAccordionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsAccordionTableViewCell.xib; sourceTree = "<group>"; };
 		1655E28625467A5300ACCF9C /* DetectEmotionValidateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionValidateViewController.swift; sourceTree = "<group>"; };
 		1655E28B25467BF700ACCF9C /* DetectEmotionReasonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionReasonViewController.swift; sourceTree = "<group>"; };
 		166C532B253732DF007C5EF3 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -153,7 +158,6 @@
 		166C533F25373372007C5EF3 /* DetectEmotion.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetectEmotion.storyboard; sourceTree = "<group>"; };
 		166C534C253733A0007C5EF3 /* DetectEmotionStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionStartViewController.swift; sourceTree = "<group>"; };
 		166C5352253738F4007C5EF3 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
-		167837D02551187400C2866F /* AccordionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccordionTableViewCell.swift; sourceTree = "<group>"; };
 		167E0E72253EA1CB00602784 /* FaceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceData.swift; sourceTree = "<group>"; };
 		167E0E7A253EABA700602784 /* EmotionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionHelper.swift; sourceTree = "<group>"; };
 		169C073525413C300071387C /* InstructionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
@@ -279,7 +283,8 @@
 			isa = PBXGroup;
 			children = (
 				160CFCF4254FAB75007481B0 /* Settings.storyboard */,
-				167837D02551187400C2866F /* AccordionTableViewCell.swift */,
+				164B4F0525521AFC00FCAA42 /* SettingsAccordionTableViewCell.swift */,
+				164B4F0625521AFC00FCAA42 /* SettingsAccordionTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 				16F09105254FCCC500D27D58 /* SettingsFAQViewController.swift */,
 				16F0910D254FCF4B00D27D58 /* SettingsTermsViewController.swift */,
 				16F09112254FCF5800D27D58 /* SettingsPrivacyViewController.swift */,
+				164B4F0025521A8200FCAA42 /* SettingsAccordionTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -896,6 +902,7 @@
 				166C534025373372007C5EF3 /* DetectEmotion.storyboard in Resources */,
 				16170AF9254127100095D1A5 /* ThoughtsRecord.storyboard in Resources */,
 				AB92A17C253730F9003F8823 /* Main.storyboard in Resources */,
+				164B4F0825521AFC00FCAA42 /* SettingsAccordionTableViewCell.xib in Resources */,
 				169C073F25413C3C0071387C /* Instruction.storyboard in Resources */,
 				16170AB4254103750095D1A5 /* Activities.storyboard in Resources */,
 				ABD9DE5C2546721600C2154C /* NavigationBar.xib in Resources */,
@@ -933,7 +940,6 @@
 				ABED45F62538198E0005176A /* ActivityListInstruction.swift in Sources */,
 				ABECBF22253D9F1900EF7D43 /* CornerRadiusHelper.swift in Sources */,
 				16EE8CA425414A1200FA9CE6 /* InstructionView.swift in Sources */,
-				167837D12551187400C2866F /* AccordionTableViewCell.swift in Sources */,
 				166C533B25373359007C5EF3 /* OnboardingViewController.swift in Sources */,
 				AB92A17F253730F9003F8823 /* Joey.xcdatamodeld in Sources */,
 				AB7292D6254911ED0003B21E /* StartMirrorViewController.swift in Sources */,
@@ -943,6 +949,7 @@
 				AB46C13D25486A6D00D2F22C /* AfterActivityViewController.swift in Sources */,
 				AB51A9DB254B02B100E5E64B /* MySpaceViewController.swift in Sources */,
 				5AD1E5B22541403B00BD18D5 /* ActivityListCell.swift in Sources */,
+				164B4F0125521A8200FCAA42 /* SettingsAccordionTableViewController.swift in Sources */,
 				5A8C6EA6253EA57600F95286 /* TermsOfServiceModel.swift in Sources */,
 				16B3758C254A6B100027B696 /* InstructionModalViewController.swift in Sources */,
 				167E0E7B253EABA700602784 /* EmotionHelper.swift in Sources */,
@@ -997,6 +1004,7 @@
 				5A68414C25482AD200CDFB59 /* ThoughtsRecordHelper.swift in Sources */,
 				16475D9F2547DBA80074D025 /* DetectEmotionCorrectionViewController.swift in Sources */,
 				167E0E73253EA1CB00602784 /* FaceData.swift in Sources */,
+				164B4F0725521AFC00FCAA42 /* SettingsAccordionTableViewCell.swift in Sources */,
 				162142DC25468B9D001BFF86 /* DetectEmotionScaleViewController.swift in Sources */,
 				5A9841B925468790009D9FDD /* hintsViewController.swift in Sources */,
 				AB92A177253730F9003F8823 /* SceneDelegate.swift in Sources */,
