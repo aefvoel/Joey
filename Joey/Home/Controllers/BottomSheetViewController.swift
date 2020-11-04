@@ -38,15 +38,6 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
         getEmotionHistory()
     }
     
-    @IBAction func onClickButtonLogout(_ sender: UIButton) {
-        UserDefaultsHelper.setData(value: false, key: .isLoggedIn)
-        self.navigationController?.popViewController(animated: true)
-        if let vc = UIStoryboard(name: "Onboarding", bundle: nil).instantiateViewController(withIdentifier: "InitialOnboarding") as? OnboardingViewController {
-            if let navigator = navigationController {
-                navigator.pushViewController(vc, animated: true)
-            }
-        }
-    }
     func registerNib() {
         let nib = UINib(nibName: ActivitiesCollectionViewCell.nibName, bundle: nil)
         activitiesCollectionView?.register(nib, forCellWithReuseIdentifier: ActivitiesCollectionViewCell.reuseIdentifier)
