@@ -328,14 +328,14 @@
     </scenes>
     <designables>
         <designable name="QlN-5b-92t">
-            <size key="intrinsicContentSize" width="30" height="40"/>
+            <size key="intrinsicContentSize" width="30" height="36"/>
         </designable>
         <designable name="S3i-6H-BJ3">
-            <size key="intrinsicContentSize" width="30" height="40"/>
+            <size key="intrinsicContentSize" width="32" height="36"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="Sww-Ta-kut"/>
+        <segue reference="1XG-7W-f1l"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="mascotBubble" width="231" height="125"/>

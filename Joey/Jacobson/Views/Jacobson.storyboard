@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -207,12 +207,23 @@
                         <outlet property="exerciseLabel" destination="gtP-tJ-Buu" id="vJ5-RW-PuG"/>
                         <outlet property="instructionImage" destination="4il-Pm-czO" id="e78-HQ-x7e"/>
                         <outlet property="timerLabel" destination="jdc-Fo-YHA" id="RAX-n6-znu"/>
-                        <segue destination="dHo-ki-yiJ" kind="show" id="ANh-1W-DxZ"/>
+                        <segue destination="dHo-ki-yiJ" kind="show" identifier="toDetail" id="pSe-b7-9FI"/>
+                        <segue destination="qMq-qF-McL" kind="show" identifier="toFinish" id="nZI-kl-Gdc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pIg-65-V26" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1069.5652173913045" y="164.73214285714286"/>
+        </scene>
+        <!--AfterActivityViewController-->
+        <scene sceneID="Ost-3p-7FD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Activities" referencedIdentifier="AfterActivityViewController" id="qMq-qF-McL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="r6O-I6-1Wg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5O3-2q-UWP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1707" y="165"/>
         </scene>
     </scenes>
     <designables>
@@ -221,7 +232,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="ANh-1W-DxZ"/>
+        <segue reference="pSe-b7-9FI"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.left.circle.fill" catalog="system" width="128" height="121"/>

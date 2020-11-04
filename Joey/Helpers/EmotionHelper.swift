@@ -42,4 +42,23 @@ class EmotionHelper {
             onComplete([], error)
         }
     }
+    
+    static func deleteAll(onComplete: @escaping (Error?) -> Void) {
+        list { (emotions, error) in
+            if let error = error {
+                onComplete(error)
+                return
+            }
+            
+            for emotion in emotions {
+                context.delete(emotion)
+            }
+            
+            do {
+                try context.save()
+            } catch {
+                onComplete(error)
+            }
+        }
+    }
 }

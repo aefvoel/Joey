@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mirror Technique" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRX-Mn-LLa">
-                                <rect key="frame" x="56" y="111" width="302" height="56"/>
+                                <rect key="frame" x="56" y="111" width="302" height="47"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -39,7 +39,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBV-3L-FnD" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="24" y="192" width="366" height="340"/>
+                                <rect key="frame" x="24" y="183" width="366" height="349"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mirror Technique_miniCard" translatesAutoresizingMaskIntoConstraints="NO" id="e8V-bN-LuN">
                                         <rect key="frame" x="8" y="8" width="350" height="332"/>
@@ -116,7 +116,7 @@
                                         <rect key="frame" x="80.5" y="0.0" width="77" height="61"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKw-D4-OJm">
-                                                <rect key="frame" x="4" y="8" width="69" height="45"/>
+                                                <rect key="frame" x="4" y="8" width="69" height="37.5"/>
                                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="16"/>
                                                 <color key="textColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -145,7 +145,7 @@
                                         <rect key="frame" x="161.5" y="0.0" width="76.5" height="61"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuL-EQ-N16">
-                                                <rect key="frame" x="4" y="8" width="68.5" height="45"/>
+                                                <rect key="frame" x="4" y="8" width="68.5" height="37.5"/>
                                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="16"/>
                                                 <color key="textColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -439,10 +439,10 @@
     </scenes>
     <designables>
         <designable name="k8l-dF-REe">
-            <size key="intrinsicContentSize" width="45" height="40"/>
+            <size key="intrinsicContentSize" width="43" height="36"/>
         </designable>
         <designable name="rbJ-VO-5RX">
-            <size key="intrinsicContentSize" width="43" height="39"/>
+            <size key="intrinsicContentSize" width="46" height="35"/>
         </designable>
     </designables>
     <resources>
