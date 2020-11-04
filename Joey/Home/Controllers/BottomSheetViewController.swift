@@ -14,6 +14,7 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var activitiesCollectionView: UICollectionView!
     @IBOutlet weak var barChartView: BarChartView!
     @IBOutlet weak var labelUserName: UILabel!
+    var recordData: ThoughtsRecordTemp?
     var listEmotion = [EmotionList]()
     var listEmotionByMonth = [EmotionList]()
     var emotionData: EmotionList!
@@ -37,15 +38,6 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
         getEmotionHistory()
     }
     
-    @IBAction func onClickButtonLogout(_ sender: UIButton) {
-        UserDefaultsHelper.setData(value: false, key: .isLoggedIn)
-        self.navigationController?.popViewController(animated: true)
-        if let vc = UIStoryboard(name: "Onboarding", bundle: nil).instantiateViewController(withIdentifier: "InitialOnboarding") as? OnboardingViewController {
-            if let navigator = navigationController {
-                navigator.pushViewController(vc, animated: true)
-            }
-        }
-    }
     func registerNib() {
         let nib = UINib(nibName: ActivitiesCollectionViewCell.nibName, bundle: nil)
         activitiesCollectionView?.register(nib, forCellWithReuseIdentifier: ActivitiesCollectionViewCell.reuseIdentifier)
@@ -61,7 +53,6 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
             list.forEach { emotion in
                 let date = emotion.value(forKey: "testedAt") as! Date
                 let emotionType = emotion.value(forKey: "emotion") as! Int
-                let formatDate = date.getFormattedDate(format: "EEEE, MMMM d yyyy, h:mm a")
                 let formatDay = date.getFormattedDate(format: "d")
                 let formatMonth = date.getFormattedDate(format: "MMMM")
 
@@ -69,10 +60,9 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
                                             emotion: FollowUp.EmotionType(rawValue: emotionType)!,
                                             reason: emotion.value(forKey: "reason") as! String,
                                             scale: emotion.value(forKey: "scale") as! Float,
-                                            date: formatDate,
+                                            date: date,
                                             day: Int(formatDay)!,
                                             month: formatMonth))
-                
                 self.listMonth.append(formatMonth)
             }
         }
@@ -117,6 +107,7 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
         let lineChartData = BarChartData()
         lineChartData.addDataSet(barChart)
         barChartView.leftAxis.valueFormatter = IndexAxisValueFormatter(values: emotionType)
+        barChartView.xAxis.granularityEnabled = true
         barChartView.xAxis.granularity = 5
         barChartView.xAxis.axisMinimum = 1
         barChartView.xAxis.axisMaximum = 31

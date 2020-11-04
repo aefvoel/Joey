@@ -29,6 +29,7 @@ class MySpaceViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var historyCollectionView: UICollectionView!
     var selectedActivity: ActivitiesInstruction?
     var selectedMonth: String?
+    var recordData = [ThoughtsRecordTemp]()
     
     var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
@@ -62,19 +63,27 @@ class MySpaceViewController: UIViewController, ChartViewDelegate {
         ])
     }
     @IBAction func onNextButton(_ sender: Any) {
+        guard !listMonth.isEmpty else {
+            return
+        }
         let currentIndex = listMonth.firstIndex(of: selectedMonth ?? String()) ?? -1
         var nextIndex = currentIndex + 1
         nextIndex = listMonth.indices.contains(nextIndex) ? nextIndex : 0
         selectedMonth = listMonth[nextIndex]
         setupChart(month: selectedMonth!)
+        
     }
     
     @IBAction func onPrevButton(_ sender: Any) {
+        guard !listMonth.isEmpty else {
+            return
+        }
         let currentIndex = listMonth.firstIndex(of: selectedMonth ?? String()) ?? -1
         var nextIndex = currentIndex - 1
         nextIndex = listMonth.indices.contains(nextIndex) ? nextIndex : listMonth.count - 1
         selectedMonth = listMonth[nextIndex]
         setupChart(month: selectedMonth!)
+        
     }
     
     func registerNib() {
@@ -87,7 +96,6 @@ class MySpaceViewController: UIViewController, ChartViewDelegate {
             list.forEach { emotion in
                 let date = emotion.value(forKey: "testedAt") as! Date
                 let emotionType = emotion.value(forKey: "emotion") as! Int
-                let formatDate = date.getFormattedDate(format: "EEEE, MMMM d yyyy, h:mm a")
                 let formatDay = date.getFormattedDate(format: "d")
                 let formatMonth = date.getFormattedDate(format: "MMMM")
 
@@ -95,7 +103,7 @@ class MySpaceViewController: UIViewController, ChartViewDelegate {
                                             emotion: FollowUp.EmotionType(rawValue: emotionType)!,
                                             reason: emotion.value(forKey: "reason") as! String,
                                             scale: emotion.value(forKey: "scale") as! Float,
-                                            date: formatDate,
+                                            date: date,
                                             day: Int(formatDay)!,
                                             month: formatMonth))
                 
@@ -103,13 +111,31 @@ class MySpaceViewController: UIViewController, ChartViewDelegate {
             }
         }
         
+        ThoughtsRecordHelper.list { (list: [ThoughtsRecord], _: Error?) in
+            list.forEach { data in
+                let moods = data.value(forKey: "moods") as? String
+                let moodsArray = moods?.components(separatedBy: ",")
+                let newMoods = data.value(forKey: "new_moods") as? String
+                let newMoodsArray = newMoods?.components(separatedBy: ",")
+                self.recordData.append(ThoughtsRecordTemp(
+                                        situation: data.value(forKey: "situation") as? String,
+                                        moods: moodsArray!,
+                                        initialThoughts: data.value(forKey: "thoughts") as? String,
+                                        evidence: data.value(forKey: "evidence_support") as? String,
+                                        notSupportedEvidence: data.value(forKey: "evidence_not_support") as? String,
+                                        alternativeThoughts: data.value(forKey: "alternate_thoughts") as? String,
+                                        newMoods: newMoodsArray!,
+                                        createdAt: data.value(forKey: "createdAt") as! Date))
+            }
+        }
+        
+        
+        
         DispatchQueue.main.async {
             self.viewHeight.constant = self.historyCollectionView.contentSize.height
             self.listMonth = self.listMonth.unique()
-            self.selectedMonth = self.listMonth.last!
+            self.selectedMonth = self.listMonth.last ?? ""
             self.setupChart(month: self.selectedMonth!)
-            self.listEmotion.reverse()
-            self.historyCollectionView.reloadData()
         }
         
     }
@@ -143,6 +169,8 @@ class MySpaceViewController: UIViewController, ChartViewDelegate {
                 let value = BarChartDataEntry(x: Double(listEmotion[i].day), y: Double(listEmotion[i].emotion.rawValue))
                 barChartEntry.append(value)
                 
+            }
+            if (listEmotion.count - 7) <= i  {
                 switch listEmotion[i].emotion.rawValue {
                 case 1: angryCount += 1
                 case 2: sadCount += 1
@@ -153,6 +181,8 @@ class MySpaceViewController: UIViewController, ChartViewDelegate {
                 }
             }
         }
+
+        listEmotionByMonth.reverse()
         historyCollectionView.reloadData()
         labelSadCount.text = "\(sadCount) times"
         labelAngryCount.text = "\(angryCount) times"
@@ -194,7 +224,8 @@ extension MySpaceViewController: UICollectionViewDataSource, UICollectionViewDel
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HistoryCollectionViewCell.reuseIdentifier,
                                                          for: indexPath) as? HistoryCollectionViewCell {
-            cell.configureCell(label: listEmotionByMonth[indexPath.row].date)
+            let formatDate = listEmotionByMonth[indexPath.row].date.getFormattedDate(format: "EEEE, MMMM d yyyy, h:mm a")
+            cell.configureCell(label: formatDate)
             return cell
         }
         return UICollectionViewCell()
@@ -207,6 +238,7 @@ extension MySpaceViewController: UICollectionViewDataSource, UICollectionViewDel
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? HistoryViewController {
             vc.emotionData = emotionData
+            vc.recordData = recordData
         }
     }
     

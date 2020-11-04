@@ -17,11 +17,7 @@ class StartPracticeSmilingViewController: UIViewController {
     @IBOutlet weak var navBar: NavigationBar!
     var progressBarTimer: Timer!
     var isRunning = false
-    var isSmile: Bool! {
-        didSet {
-            print(isSmile!)
-        }
-    }
+    var isSmile = false
     
     var countdownTimer: Timer!
     var totalTime = 60
@@ -102,7 +98,7 @@ class StartPracticeSmilingViewController: UIViewController {
     }
     
     @objc func updateTime() {
-        labelSmile.text = "\(timeFormatted(totalTime))"
+        navBar.labelTitle.text = "\(timeFormatted(totalTime))"
         
         if totalTime < 55 && totalTime > 10 {
             DispatchQueue.main.async {
