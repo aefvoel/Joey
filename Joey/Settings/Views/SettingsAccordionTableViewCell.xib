@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Yuanti.ttc">
+            <string>STYuanti-SC-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="accordionCell" id="KGk-i7-Jjw" customClass="SettingsAccordionTableViewCell" customModule="Joey" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGY-0s-21l" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keG-5Q-GjP">
+                                <rect key="frame" x="18" y="0.0" width="262" height="45"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VXE-QA-y8c">
+                                <rect key="frame" x="280" y="16.5" width="22" height="12.5"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="uhW-4I-hoa"/>
+                                    <constraint firstAttribute="height" constant="22" id="xJt-Y0-oWc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="keG-5Q-GjP" firstAttribute="leading" secondItem="aGY-0s-21l" secondAttribute="leading" constant="18" id="G6l-pt-krw"/>
+                            <constraint firstAttribute="trailing" secondItem="VXE-QA-y8c" secondAttribute="trailing" constant="18" id="NOi-up-yuJ"/>
+                            <constraint firstAttribute="height" constant="45" id="WXm-1X-9Nz"/>
+                            <constraint firstAttribute="bottom" secondItem="keG-5Q-GjP" secondAttribute="bottom" id="h5p-4K-dPC"/>
+                            <constraint firstItem="VXE-QA-y8c" firstAttribute="centerY" secondItem="keG-5Q-GjP" secondAttribute="centerY" id="okc-xS-z55"/>
+                            <constraint firstItem="keG-5Q-GjP" firstAttribute="top" secondItem="aGY-0s-21l" secondAttribute="top" id="yzy-op-50l"/>
+                            <constraint firstItem="VXE-QA-y8c" firstAttribute="leading" secondItem="keG-5Q-GjP" secondAttribute="trailing" id="zlS-r1-rbN"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvb-Sq-k9r" customClass="PaddingLabel" customModule="Joey" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="45" width="320" height="455"/>
+                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="jvb-Sq-k9r" secondAttribute="bottom" id="3zh-Rj-Yn2"/>
+                    <constraint firstAttribute="trailing" secondItem="jvb-Sq-k9r" secondAttribute="trailing" id="4S5-I2-Put"/>
+                    <constraint firstItem="jvb-Sq-k9r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6ju-RM-GGC"/>
+                    <constraint firstItem="jvb-Sq-k9r" firstAttribute="top" secondItem="aGY-0s-21l" secondAttribute="bottom" id="7Ft-TE-XjQ"/>
+                    <constraint firstAttribute="trailing" secondItem="aGY-0s-21l" secondAttribute="trailing" id="Loz-0g-kRe"/>
+                    <constraint firstItem="aGY-0s-21l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PyS-j4-ttJ"/>
+                    <constraint firstItem="aGY-0s-21l" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="eIF-Mr-y3U"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="chevronImage" destination="VXE-QA-y8c" id="CDV-yc-abv"/>
+                <outlet property="contentLabel" destination="jvb-Sq-k9r" id="FHY-3L-EpA"/>
+                <outlet property="titleLabel" destination="keG-5Q-GjP" id="tjv-d7-haa"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="262.16517857142856"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="jvb-Sq-k9r">
+            <size key="intrinsicContentSize" width="51" height="30.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
+    </resources>
+</document>
