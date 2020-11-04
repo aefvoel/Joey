@@ -17,6 +17,12 @@ class DetectEmotionSuggestActivityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navBar.delegate = self
+        navBar.labelIndicator.isHidden = false
+        if let isDetectionValid = data?.isDetectionResultValid, isDetectionValid {
+            navBar.labelIndicator.text = "4/4"
+        } else {
+            navBar.labelIndicator.text = "5/5"
+        }
         if let activity = data?.suggestActivity() {
             instruction = activity
             suggestionLabel.text = "This is the activity that you can do to calm yourself, \(activity.title).\nDo you want to start now?"

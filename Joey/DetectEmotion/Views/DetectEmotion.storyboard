@@ -10,7 +10,6 @@
     <customFonts key="customFonts">
         <array key="Yuanti.ttc">
             <string>STYuanti-SC-Bold</string>
-            <string>STYuanti-SC-Light</string>
             <string>STYuanti-SC-Regular</string>
         </array>
     </customFonts>
@@ -28,7 +27,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Analyzing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00e-RX-0hD">
-                                <rect key="frame" x="62" y="108" width="290" height="51.5"/>
+                                <rect key="frame" x="62" y="108" width="290" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="290" id="LJP-IV-Zqh"/>
                                 </constraints>
@@ -44,7 +43,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9p-zv-U66" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="62" y="513.5" width="290" height="45"/>
+                                <rect key="frame" x="62" y="524" width="290" height="45"/>
                                 <color key="backgroundColor" red="0.3529411764705882" green="0.76078431372549016" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="j8B-wi-0Ww"/>
@@ -71,7 +70,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="analyzing" translatesAutoresizingMaskIntoConstraints="NO" id="ck5-L6-UO3">
-                                <rect key="frame" x="62" y="191.5" width="290" height="290"/>
+                                <rect key="frame" x="62" y="202" width="290" height="290"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ck5-L6-UO3" secondAttribute="height" multiplier="1:1" id="St4-Ug-JlT"/>
                                 </constraints>
@@ -138,7 +137,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotBubble" translatesAutoresizingMaskIntoConstraints="NO" id="FSQ-z2-zMF">
-                                <rect key="frame" x="113" y="648" width="239" height="128"/>
+                                <rect key="frame" x="143" y="648" width="239" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="0HC-5e-tg8"/>
                                     <constraint firstAttribute="width" constant="239" id="BDG-CE-bm1"/>
@@ -152,7 +151,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please make sure your  face is visible so that I can see you clearly" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVf-Nj-wjl">
-                                <rect key="frame" x="132" y="659" width="201" height="80"/>
+                                <rect key="frame" x="162" y="659" width="201" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="BJr-XR-ehj"/>
                                     <constraint firstAttribute="width" constant="201" id="ydM-Qx-NbV"/>
@@ -169,22 +168,20 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gFM-ZM-ZG0" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="62" y="211" width="290" height="360"/>
+                                <rect key="frame" x="32" y="136.5" width="350" height="434.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KtU-jb-9Xh" customClass="ARSCNView">
-                                        <rect key="frame" x="0.0" y="0.0" width="290" height="360"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="434.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="290" id="C8k-Mn-DrU"/>
-                                            <constraint firstAttribute="width" secondItem="KtU-jb-9Xh" secondAttribute="height" multiplier="29:36" id="vST-j1-iyX"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="KtU-jb-9Xh" firstAttribute="centerY" secondItem="gFM-ZM-ZG0" secondAttribute="centerY" id="ekw-ar-hUF"/>
-                                    <constraint firstItem="KtU-jb-9Xh" firstAttribute="centerX" secondItem="gFM-ZM-ZG0" secondAttribute="centerX" id="pct-X0-4uA"/>
-                                    <constraint firstItem="KtU-jb-9Xh" firstAttribute="top" secondItem="gFM-ZM-ZG0" secondAttribute="top" id="snF-a8-Blg"/>
+                                    <constraint firstItem="KtU-jb-9Xh" firstAttribute="leading" secondItem="gFM-ZM-ZG0" secondAttribute="leading" id="BPq-yB-kDE"/>
+                                    <constraint firstAttribute="trailing" secondItem="KtU-jb-9Xh" secondAttribute="trailing" id="EbR-sg-1Cv"/>
+                                    <constraint firstAttribute="bottom" secondItem="KtU-jb-9Xh" secondAttribute="bottom" id="VQj-Ju-jfa"/>
+                                    <constraint firstItem="KtU-jb-9Xh" firstAttribute="top" secondItem="gFM-ZM-ZG0" secondAttribute="top" id="VnW-Zm-Z05"/>
+                                    <constraint firstAttribute="width" secondItem="gFM-ZM-ZG0" secondAttribute="height" multiplier="29:36" id="k14-fE-X0o"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
@@ -209,8 +206,8 @@
                             <constraint firstAttribute="bottom" secondItem="4eb-pA-LAT" secondAttribute="bottom" id="Gp5-qk-Gle"/>
                             <constraint firstItem="FSQ-z2-zMF" firstAttribute="top" secondItem="gFM-ZM-ZG0" secondAttribute="bottom" constant="77" id="Iec-g0-iLB"/>
                             <constraint firstItem="gFM-ZM-ZG0" firstAttribute="trailing" secondItem="FSQ-z2-zMF" secondAttribute="trailing" id="KlM-gi-PTM"/>
+                            <constraint firstItem="cgB-vY-EfF" firstAttribute="trailing" secondItem="gFM-ZM-ZG0" secondAttribute="trailing" constant="32" id="Pnh-w9-Ote"/>
                             <constraint firstItem="4eb-pA-LAT" firstAttribute="trailing" secondItem="cgB-vY-EfF" secondAttribute="trailing" id="U4v-Nf-ctZ"/>
-                            <constraint firstItem="gFM-ZM-ZG0" firstAttribute="leading" secondItem="cgB-vY-EfF" secondAttribute="leading" constant="62" id="UI3-oO-maP"/>
                             <constraint firstItem="FSQ-z2-zMF" firstAttribute="top" secondItem="BVf-Nj-wjl" secondAttribute="bottom" constant="-91" id="bi1-Cv-4zp"/>
                             <constraint firstItem="BVf-Nj-wjl" firstAttribute="leading" secondItem="FSQ-z2-zMF" secondAttribute="trailing" constant="-220" id="c7e-7j-KGd"/>
                             <constraint firstItem="gFM-ZM-ZG0" firstAttribute="centerX" secondItem="Frc-Ts-xLe" secondAttribute="centerX" id="lCh-e0-miV"/>
@@ -218,6 +215,7 @@
                             <constraint firstItem="FtL-af-9OW" firstAttribute="top" secondItem="FSQ-z2-zMF" secondAttribute="bottom" constant="-12" id="nky-oT-gLD"/>
                             <constraint firstAttribute="bottom" secondItem="FtL-af-9OW" secondAttribute="bottom" id="oal-iT-Rj5"/>
                             <constraint firstItem="Frc-Ts-xLe" firstAttribute="top" secondItem="cgB-vY-EfF" secondAttribute="top" id="wHj-uc-1hr"/>
+                            <constraint firstItem="gFM-ZM-ZG0" firstAttribute="leading" secondItem="cgB-vY-EfF" secondAttribute="leading" constant="32" id="yKI-LI-NZH"/>
                             <constraint firstItem="Frc-Ts-xLe" firstAttribute="trailing" secondItem="cgB-vY-EfF" secondAttribute="trailing" id="ynU-FY-dIU"/>
                         </constraints>
                     </view>
@@ -750,13 +748,13 @@ how intense do you think you need to be cheered up?</string>
                                 </userDefinedRuntimeAttributes>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaM-L9-HcK">
-                                <rect key="frame" x="365.5" y="406.5" width="24.5" height="26"/>
+                                <rect key="frame" x="370" y="406.5" width="20" height="31"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWu-x7-s6U">
-                                <rect key="frame" x="24" y="406.5" width="13" height="26"/>
+                                <rect key="frame" x="24" y="406.5" width="13" height="31"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1228,7 +1226,7 @@ how intense do you think you need to be cheered up?</string>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7s-jH-UZn">
                                 <rect key="frame" x="137.5" y="434" width="139" height="28"/>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Light" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1264,6 +1262,7 @@ how intense do you think you need to be cheered up?</string>
                     </view>
                     <navigationItem key="navigationItem" id="mKk-Uk-KQE"/>
                     <connections>
+                        <outlet property="adviceLabel" destination="Urd-yx-3nh" id="iTM-cu-rP7"/>
                         <outlet property="backgroundImage" destination="Qjt-Gd-3ia" id="Tdg-00-j2o"/>
                         <outlet property="navBar" destination="dEz-rJ-kmv" id="vc1-AM-xml"/>
                         <segue destination="uny-x4-LER" kind="show" identifier="toSuggestActivity" id="pg2-9w-kOs"/>
@@ -1418,73 +1417,73 @@ Do you want to start now?</string>
     </scenes>
     <designables>
         <designable name="3as-GI-k6f">
-            <size key="intrinsicContentSize" width="112" height="36"/>
+            <size key="intrinsicContentSize" width="110" height="40"/>
         </designable>
         <designable name="7pt-Us-iSp">
-            <size key="intrinsicContentSize" width="42" height="33"/>
+            <size key="intrinsicContentSize" width="41" height="38"/>
         </designable>
         <designable name="8UW-K0-gkC">
-            <size key="intrinsicContentSize" width="119" height="33"/>
+            <size key="intrinsicContentSize" width="113" height="38"/>
         </designable>
         <designable name="93C-Ac-rPn">
-            <size key="intrinsicContentSize" width="61" height="36"/>
+            <size key="intrinsicContentSize" width="59" height="40"/>
         </designable>
         <designable name="F7J-km-hhE">
-            <size key="intrinsicContentSize" width="30" height="36"/>
+            <size key="intrinsicContentSize" width="30" height="40"/>
         </designable>
         <designable name="Gzb-iW-F76">
-            <size key="intrinsicContentSize" width="90" height="36"/>
+            <size key="intrinsicContentSize" width="90" height="40"/>
         </designable>
         <designable name="LzU-3y-o1a">
-            <size key="intrinsicContentSize" width="49" height="33"/>
+            <size key="intrinsicContentSize" width="47" height="38"/>
         </designable>
         <designable name="Swh-4c-4Wt">
-            <size key="intrinsicContentSize" width="46" height="33"/>
+            <size key="intrinsicContentSize" width="46" height="38"/>
         </designable>
         <designable name="Tlv-mX-jcb">
-            <size key="intrinsicContentSize" width="62" height="33"/>
+            <size key="intrinsicContentSize" width="67" height="38"/>
         </designable>
         <designable name="b5f-5x-3iR">
-            <size key="intrinsicContentSize" width="53" height="33"/>
+            <size key="intrinsicContentSize" width="50" height="38"/>
         </designable>
         <designable name="dQ4-7d-7Yr">
-            <size key="intrinsicContentSize" width="30" height="36"/>
+            <size key="intrinsicContentSize" width="30" height="40"/>
         </designable>
         <designable name="fF8-TX-VEG">
-            <size key="intrinsicContentSize" width="32" height="36"/>
+            <size key="intrinsicContentSize" width="30" height="40"/>
         </designable>
         <designable name="i5S-LX-MZM">
-            <size key="intrinsicContentSize" width="100" height="33"/>
+            <size key="intrinsicContentSize" width="98" height="38"/>
         </designable>
         <designable name="noC-Lw-i7n">
-            <size key="intrinsicContentSize" width="32" height="36"/>
+            <size key="intrinsicContentSize" width="30" height="40"/>
         </designable>
         <designable name="rRs-0Q-hcs">
-            <size key="intrinsicContentSize" width="104" height="33"/>
+            <size key="intrinsicContentSize" width="102" height="38"/>
         </designable>
         <designable name="rWm-k0-d0m">
-            <size key="intrinsicContentSize" width="102" height="33"/>
+            <size key="intrinsicContentSize" width="103" height="38"/>
         </designable>
         <designable name="s1S-VN-MEe">
-            <size key="intrinsicContentSize" width="53" height="33"/>
+            <size key="intrinsicContentSize" width="53" height="38"/>
         </designable>
         <designable name="snN-j3-4qP">
-            <size key="intrinsicContentSize" width="47" height="36"/>
+            <size key="intrinsicContentSize" width="46" height="40"/>
         </designable>
         <designable name="uoG-nf-PLd">
-            <size key="intrinsicContentSize" width="53" height="33"/>
+            <size key="intrinsicContentSize" width="53" height="38"/>
         </designable>
         <designable name="weG-KG-ehu">
-            <size key="intrinsicContentSize" width="80" height="33"/>
+            <size key="intrinsicContentSize" width="77" height="38"/>
         </designable>
         <designable name="y1e-D9-KBi">
-            <size key="intrinsicContentSize" width="55" height="33"/>
+            <size key="intrinsicContentSize" width="53" height="38"/>
         </designable>
         <designable name="y9p-zv-U66">
-            <size key="intrinsicContentSize" width="43" height="36"/>
+            <size key="intrinsicContentSize" width="45" height="40"/>
         </designable>
         <designable name="ybp-mn-gz0">
-            <size key="intrinsicContentSize" width="60" height="33"/>
+            <size key="intrinsicContentSize" width="58" height="38"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>

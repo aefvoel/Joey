@@ -17,6 +17,7 @@ class SettingsNameViewController: UIViewController, UITextFieldDelegate {
         
         navBar.delegate = self
         nameTextField.delegate = self
+        nameTextField.text = UserDefaultsHelper.getData(type: String.self, forKey: .userName) ?? ""
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

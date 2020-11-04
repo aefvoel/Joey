@@ -21,7 +21,9 @@ class DetectEmotionValidateViewController: UIViewController {
     
     func setupUI(){
         navBar.delegate = self
-        labelResult.text = "Hi, \(UserDefaultsHelper.getData(type: String.self, forKey: .userName) ?? "")! From what I see, you look \(data?.emotion.description ?? "") now. Is that true?"
+        if let response = data?.emotion.response {
+            labelResult.text = "Hi, \(UserDefaultsHelper.getData(type: String.self, forKey: .userName) ?? "")!\n\(response)"
+        }
     }
     @IBAction func validResultTapped(_ sender: UIButton) {
         data?.isDetectionResultValid = true

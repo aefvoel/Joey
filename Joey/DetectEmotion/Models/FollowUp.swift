@@ -30,6 +30,15 @@ struct FollowUp {
             }
         }
         
+        var response: String {
+            switch self {
+            case .angry: return "From what I see, you look like annoyed.\nIs that true?"
+            case .sad: return "From what I see, you look need to be cheered up now.\nIs that true?"
+            case .neutral: return "From what I see, you look quite fine.\nIs that true?"
+            case .happy: return "Wow, what a good day for you! From what I see, you look happy!\nIs that true? "
+            }
+        }
+        
         var image: UIImage {
             switch self {
             case .angry: return #imageLiteral(resourceName: "angry-icon")
@@ -103,6 +112,16 @@ struct FollowUp {
             default:
                 return smile
             }
+        }
+    }
+    
+    func getAdvice() -> String {
+        let thing = reason?.lowercased() ?? "it"
+        switch emotion {
+        case .angry: return "I see that \(thing) annoys you at the moment. You can’t calm the storm, but I am sure you can calm yourself under the storm..."
+        case .sad: return "I see that \(thing) make you feel like need cheering up. You can’t calm the storm, but I am sure you can calm yourself under the storm..."
+        case .neutral: return "I see that \(thing) make you feel like you’re fine. It’s really good that you can see it in a positive way, but actually you can do better!"
+        case .happy: return "I see that \(thing) make you happy. Sometimes happiness comes from the smallest things in your life, and doing simple things can help you to be happier!"
         }
     }
 }

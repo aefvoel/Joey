@@ -47,4 +47,23 @@ class ThoughtsRecordHelper {
         }
     }
     
+    static func deleteAll(onComplete: @escaping (Error?) -> Void) {
+        list { (thoughts, error) in
+            if let error = error {
+                onComplete(error)
+                return
+            }
+            
+            for emotion in emotions {
+                context.delete(thoughts)
+            }
+            
+            do {
+                try context.save()
+            } catch {
+                onComplete(error)
+            }
+        }
+    }
+    
 }

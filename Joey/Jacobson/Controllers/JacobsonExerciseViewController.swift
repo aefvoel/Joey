@@ -9,6 +9,7 @@ import UIKit
 
 class JacobsonExerciseViewController: UIViewController {
 
+    @IBOutlet weak var navBar: NavigationBar!
     @IBOutlet weak var instructionImage: UIImageView!
     @IBOutlet weak var exerciseLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
@@ -19,6 +20,12 @@ class JacobsonExerciseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navBar.delegate = self
+        navBar.buttonDone.isHidden = false
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onDoneButtonTapped(_:)))
+        navBar.buttonDone.addGestureRecognizer(tapGesture)
+        
         if let exercise = delegate?.getExercise() {
             instructionImage.image = exercise.image
             exerciseLabel.text = exercise.name
@@ -38,17 +45,15 @@ class JacobsonExerciseViewController: UIViewController {
         }
     }
     
-    @IBAction func onBackButtonTapped(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-    }
-    
-    @IBAction func onDoneButtonTapped(_ sender: Any) {
-        guard let isLast = delegate?.isLastExercise() else { return }
-        if isLast {
-            performSegue(withIdentifier: "toFinish", sender: nil)
-        } else {
-            delegate?.nextExercise()
-            navigationController?.popViewController(animated: true)
+    @objc func onDoneButtonTapped(_ sender: UITapGestureRecognizer) {
+        if sender.state == .ended {
+            guard let isLast = delegate?.isLastExercise() else { return }
+            if isLast {
+                performSegue(withIdentifier: "toFinish", sender: nil)
+            } else {
+                delegate?.nextExercise()
+                navigationController?.popViewController(animated: true)
+            }
         }
     }
     

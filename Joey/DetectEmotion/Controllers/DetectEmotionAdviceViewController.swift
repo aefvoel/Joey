@@ -12,13 +12,19 @@ class DetectEmotionAdviceViewController: UIViewController {
     var data: FollowUp?
     @IBOutlet weak var navBar: NavigationBar!
     @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var adviceLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navBar.delegate = self
+        navBar.labelIndicator.isHidden = false
+        if let isDetectionValid = data?.isDetectionResultValid, isDetectionValid {
+            navBar.labelIndicator.text = "3/4"
+        } else {
+            navBar.labelIndicator.text = "4/5"
+        }
+        adviceLabel.text = data?.getAdvice()
         let singleTap = UITapGestureRecognizer(target: self, action: #selector(onBackgroundTapped))
-//        singleTap.numberOfTapsRequired = 1
-//        singleTap.numberOfTouchesRequired = 1
         backgroundImage.addGestureRecognizer(singleTap)
         backgroundImage.isUserInteractionEnabled = true
     }

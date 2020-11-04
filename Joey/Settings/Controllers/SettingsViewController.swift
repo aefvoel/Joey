@@ -40,7 +40,7 @@ class SettingsViewController: UIViewController {
             case nameItem:
                 performSegue(withIdentifier: "toName", sender: nil)
             case resetItem:
-                print("Reset!")
+                resetData()
             case aboutItem:
                 performSegue(withIdentifier: "toAbout", sender: nil)
             case faqItem:
@@ -51,6 +51,49 @@ class SettingsViewController: UIViewController {
                 performSegue(withIdentifier: "toTerms", sender: nil)
             }
         }
+    }
+    
+    func popTo<T>(_ vc: T.Type) {
+       let targetVC = navigationController?.viewControllers.first{$0 is T}
+       if let targetVC = targetVC {
+          navigationController?.popToViewController(targetVC, animated: true)
+       }
+    }
+    
+    func resetData() {
+        let alert = AlertHelper.createPrompt(title: "Attention!", question: "All your previous data in this app will be lost!") { (result) in
+            if result {
+                let group = DispatchGroup()
+                
+                group.enter()
+                EmotionHelper.deleteAll { (error) in
+                    if error == nil {
+                        print("Error")
+                    } else {
+                        group.leave()
+                    }
+                }
+                
+                group.enter()
+                ThoughtsRecordHelper.deleteAll { (error) in
+                    if error == nil {
+                        print("Error")
+                    } else {
+                        group.leave()
+                    }
+                }
+                
+                UserDefaultsHelper.removeData(key: .userName)
+                UserDefaultsHelper.removeData(key: .isLoggedIn)
+                
+                group.notify(queue: .main) {
+                    self.popTo(OnboardingViewController.self)
+                }
+            } else {
+                
+            }
+        }
+        present(alert, animated: true)
     }
 
     /*
