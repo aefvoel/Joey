@@ -37,4 +37,14 @@ class ThoughtsRecordHelper {
         }
     }
     
+    static func list(onComplete: @escaping ([ThoughtsRecord], Error?) -> Void) {
+        let request = NSFetchRequest<ThoughtsRecord>(entityName: entityName)
+        do {
+            let result = try context.fetch(request)
+            onComplete(result, nil)
+        } catch {
+            onComplete([], error)
+        }
+    }
+    
 }

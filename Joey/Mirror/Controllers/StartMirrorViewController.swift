@@ -10,7 +10,6 @@ import ARKit
 
 class StartMirrorViewController: UIViewController {
 
-    @IBOutlet weak var labelTimer: UILabel!
     @IBOutlet weak var sceneView: ARSCNView!
     @IBOutlet weak var labelInstruction: UILabel!
     @IBOutlet weak var navBar: NavigationBar!
@@ -20,7 +19,6 @@ class StartMirrorViewController: UIViewController {
     @IBOutlet weak var imgPrev: UIImageView!
     @IBOutlet weak var labelTextHint: UILabel!
     @IBOutlet weak var viewHint: RoundedView!
-    @IBOutlet weak var labelHint: UILabel!
     @IBOutlet weak var imgBubble: UIImageView!
     var isSmile: Bool = false
     
@@ -45,10 +43,6 @@ class StartMirrorViewController: UIViewController {
         setupUI()
     }
     
-    @IBAction func onClickButtonDone(_ sender: Any) {
-        endTimer()
-        performSegue(withIdentifier: "toAfterActivity", sender: nil)
-    }
     func setupUI(){
         startPrepareTimer()
         navBar.delegate = self
@@ -61,7 +55,6 @@ class StartMirrorViewController: UIViewController {
             imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
         labelPrepare.font = labelPrepare.font.withSize(48)
-        labelHint.isHidden = true
         viewHint.isHidden = true
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -111,43 +104,30 @@ class StartMirrorViewController: UIViewController {
     
     private func updateUI(){
         labelInstruction.isHidden = true
-        labelPrepare.font = labelPrepare.font.withSize(24)
-        labelPrepare.text = "Confused on what to say?"
+        navBar.buttonDone.isHidden = false
+        navBar.buttonDone.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(self.onClickButtonDone)))
+        labelPrepare.text = ""
         imgMascot.isHidden = true
         imgBubble.isHidden = true
-        labelHint.isHidden = false
-        labelPrepare.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(self.clickHint)))
-        labelHint.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(self.clickHint)))
-    }
-    
-    @objc func clickHint(sender : UITapGestureRecognizer) {
         viewHint.isHidden = false
-        labelHint.isHidden = true
         labelPrepare.isHidden = true
         labelTextHint.text = arrayHint[Int.random(in: 0..<arrayHint.count)]
         imgPrev.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(self.randomHint)))
         imgNext.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(self.randomHint)))
+
     }
+    
+    @objc func onClickButtonDone(sender : UITapGestureRecognizer){
+        endTimer()
+        performSegue(withIdentifier: "toAfterActivity", sender: nil)
+    }
+
     @objc func randomHint() {
         labelTextHint.text = arrayHint[Int.random(in: 0..<arrayHint.count)]
     }
     
     @objc func updateTime() {
-        labelTimer.text = "\(timeFormatted(totalTime!))"
-        if totalTime! < 55 && totalTime! > 10 {
-            DispatchQueue.main.async {
-                if self.isSmile {
-                    self.labelInstruction.text = "Yup! Keep that smile longer.. Hold on for 5 more seconds!"
-                } else {
-                    self.labelInstruction.text = "Think of something positive about yourself and try to smile naturally"
-                }
-            }
-        }
-        else if totalTime! < 10 && totalTime! > 0 {
-            labelInstruction.text = "Almost there.."
-        }
-        
-        
+        navBar.labelTitle.text = "\(timeFormatted(totalTime!))"
         if totalTime != 0 {
             totalTime! -= 1
         } else {
