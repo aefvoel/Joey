@@ -39,6 +39,8 @@ class ThoughtsRecordHelper {
     
     static func list(onComplete: @escaping ([ThoughtsRecord], Error?) -> Void) {
         let request = NSFetchRequest<ThoughtsRecord>(entityName: entityName)
+        let sort = NSSortDescriptor(key: "createdAt", ascending: true)
+        request.sortDescriptors = [sort]
         do {
             let result = try context.fetch(request)
             onComplete(result, nil)

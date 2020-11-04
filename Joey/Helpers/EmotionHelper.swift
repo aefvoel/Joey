@@ -35,6 +35,8 @@ class EmotionHelper {
     
     static func list(onComplete: @escaping ([Emotion], Error?) -> Void) {
         let request = NSFetchRequest<Emotion>(entityName: entityName)
+        let sort = NSSortDescriptor(key: "testedAt", ascending: true)
+        request.sortDescriptors = [sort]
         do {
             let result = try context.fetch(request)
             onComplete(result, nil)

@@ -25,9 +25,9 @@ class InstructionViewController: UIViewController {
         switch activityInstruction?.title {
         case "Mirror Technique":
             performSegue(withIdentifier: "toMirror", sender: nil)
-        case "Jacobson's Technique":
+        case "Jacob's Relaxation":
             performSegue(withIdentifier: "toJacobson", sender: nil)
-        case "Smile":
+        case "Practice Smiling":
             performSegue(withIdentifier: "toSmiling", sender: nil)
         default:
             navigationController?.popViewController(animated: true)
