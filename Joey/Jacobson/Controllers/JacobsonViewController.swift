@@ -9,6 +9,7 @@ import UIKit
 
 class JacobsonViewController: UIViewController, JacobsonExerciseDelegate {
     
+    var exercise: JacobsonExcercise?
     @IBOutlet weak var instructionImage: UIImageView!
     @IBOutlet weak var instructionText: TextViewFixed!
     @IBOutlet weak var exerciseLabel: UILabel!

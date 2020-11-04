@@ -43,8 +43,13 @@ class JacobsonExerciseViewController: UIViewController {
     }
     
     @IBAction func onDoneButtonTapped(_ sender: Any) {
-        delegate?.nextExercise()
-        navigationController?.popViewController(animated: true)
+        guard let isLast = delegate?.isLastExercise() else { return }
+        if isLast {
+            performSegue(withIdentifier: "toFinish", sender: nil)
+        } else {
+            delegate?.nextExercise()
+            navigationController?.popViewController(animated: true)
+        }
     }
     
     /*
