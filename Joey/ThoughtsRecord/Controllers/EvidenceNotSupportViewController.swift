@@ -42,6 +42,7 @@ class EvidenceNotSupportViewController: UIViewController, UITextViewDelegate {
     
     func setupUI(){
         navBar.delegate = self
+        navBar.labelIndicator.text = "5/7"
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.view.insertSubview(imageView, at: 0)
         NSLayoutConstraint.activate([

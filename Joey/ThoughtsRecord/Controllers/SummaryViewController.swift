@@ -18,6 +18,7 @@ class SummaryViewController: UIViewController {
 
     @IBOutlet weak var labelDate: UILabel!
     
+    @IBOutlet weak var navBar: NavigationBar!
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -73,6 +74,7 @@ class SummaryViewController: UIViewController {
     }
     
     func setupUI(){
+        navBar.delegate = self
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.view.insertSubview(imageView, at: 0)
         NSLayoutConstraint.activate([
