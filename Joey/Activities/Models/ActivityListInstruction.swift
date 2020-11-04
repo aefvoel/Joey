@@ -24,7 +24,8 @@ var activitiesInstructionArray = [
     //Mirror Technique
     ActivitiesInstruction(
         title: "Mirror Technique",
-        instructionContent: "This activity works by building your confidence use your subconscious mind. You look straight in front of the mirror, with your head up and shoulders back. Look into your eyes, breath deeply, and start repeating powerful affirmations out loud. Try to think of something positive about yourself and truly believe in every word when you see yourself in a mirror. You can say that you’re fabolous and compliment your clothes, hair, or anything that makes you feel great.\nP.S. During this activity, we will detect your face but it won’t be recorded or saved. Because we want to see your emotion progress.",
+//        instructionContent: "This activity works by building your confidence use your subconscious mind. You look straight in front of the mirror, with your head up and shoulders back. Look into your eyes, breath deeply, and start repeating powerful affirmations out loud. Try to think of something positive about yourself and truly believe in every word when you see yourself in a mirror. You can say that you’re fabolous and compliment your clothes, hair, or anything that makes you feel great.\nP.S. During this activity, we will detect your face but it won’t be recorded or saved. Because we want to see your emotion progress.",
+        instructionContent: "This activity works by building your confidence use your subconscious mind. You look straight in front of the mirror, with your head up and shoulders back. Look into your eyes, breath deeply, and start repeating powerful affirmations out loud.",
         activityHelpsContent: "List of Help",
         whyItWorks: ["Terpercaya", "Bagus", "Nyaman"],
         scientificReason: "Lorem ipsum",
