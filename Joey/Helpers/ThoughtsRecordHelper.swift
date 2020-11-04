@@ -56,8 +56,8 @@ class ThoughtsRecordHelper {
                 return
             }
             
-            for emotion in emotions {
-                context.delete(thoughts)
+            for thought in thoughts{
+                context.delete(thought)
             }
             
             do {
