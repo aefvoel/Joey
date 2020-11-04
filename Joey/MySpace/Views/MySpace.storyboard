@@ -31,23 +31,23 @@
                                 <rect key="frame" x="24" y="99" width="366" height="213"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Progress" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apF-is-Ttp">
-                                        <rect key="frame" x="24" y="8" width="125" height="26"/>
+                                        <rect key="frame" x="24" y="8" width="122" height="28"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VuV-oa-Xz0" customClass="BarChartView" customModule="Charts">
-                                        <rect key="frame" x="8" y="34" width="350" height="145"/>
+                                        <rect key="frame" x="8" y="36" width="350" height="141"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JG-Qv-JLU">
-                                        <rect key="frame" x="39" y="183" width="288" height="30"/>
+                                        <rect key="frame" x="39" y="181" width="288" height="32"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXl-Z4-f0n">
-                                        <rect key="frame" x="334" y="187" width="24" height="22"/>
+                                        <rect key="frame" x="334" y="185" width="24" height="24"/>
                                         <color key="tintColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" image="chevron.right" catalog="system"/>
                                         <connections>
@@ -55,7 +55,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybk-rN-Wav">
-                                        <rect key="frame" x="8" y="187" width="24" height="22"/>
+                                        <rect key="frame" x="8" y="185" width="24" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="24" id="WnQ-va-y7V"/>
                                         </constraints>
@@ -145,7 +145,7 @@
                                 <rect key="frame" x="24" y="320" width="366" height="169"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In the last 7 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaB-NW-z4d">
-                                        <rect key="frame" x="24" y="8" width="167.5" height="31"/>
+                                        <rect key="frame" x="24" y="8" width="165" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="31" id="V05-7c-KKU"/>
                                         </constraints>
@@ -154,7 +154,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your emotions were:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ha6-Sm-srD">
-                                        <rect key="frame" x="24" y="40.5" width="128" height="16.5"/>
+                                        <rect key="frame" x="24" y="37" width="127" height="20"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Light" family="Yuanti SC" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -300,13 +300,13 @@
                                 <rect key="frame" x="24" y="561" width="366" height="301"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your History" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aC7-f1-atp">
-                                        <rect key="frame" x="24" y="8" width="288" height="23.5"/>
+                                        <rect key="frame" x="24" y="8" width="288" height="28"/>
                                         <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="t2L-Ou-JCQ">
-                                        <rect key="frame" x="8" y="40.5" width="350" height="252.5"/>
+                                        <rect key="frame" x="8" y="45" width="350" height="248"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="4" minimumInteritemSpacing="0.0" id="1fl-r5-GTp">
                                             <size key="itemSize" width="330" height="45"/>
@@ -595,7 +595,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="csN-1f-RPW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

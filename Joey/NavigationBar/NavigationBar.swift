@@ -25,7 +25,7 @@ class NavigationBar: UIView {
     }
     var indicator: String = "" {
         didSet {
-            labelIndicator.text = title
+            labelIndicator.text = indicator
         }
     }
     
