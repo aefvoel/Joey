@@ -12,6 +12,7 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var buttonOnboarding: UIButton!
     @IBOutlet weak var textFieldName: UITextField!
     @IBOutlet weak var viewLabelBackground: UIView!
+    @IBOutlet weak var buttonCheck: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,17 @@ class OnboardingViewController: UIViewController {
         }
     }
     
+    @IBAction func onClickCheckButton(_ sender: Any) {
+        if buttonCheck.isSelected {
+        buttonCheck.setImage(#imageLiteral(resourceName: "OBUncheck"), for: .normal)
+            buttonCheck.isSelected = false
+        }
+        else {
+            buttonCheck.setImage(#imageLiteral(resourceName: "OBChecklist"), for: .normal)
+            buttonCheck.isSelected = true
+        }
+    }
+    
     @IBAction func onClickButtonEnterName(_ sender: Any) {
         if textFieldName.text?.isEmpty == true {
             let alert = AlertHelper.createAlert(title: "Oops!", message: "Please enter your nickname first.") {
@@ -44,6 +56,13 @@ class OnboardingViewController: UIViewController {
             alert.view.tintColor = #colorLiteral(red: 0.3529411765, green: 0.7607843137, blue: 0.7411764706, alpha: 1)
             present(alert, animated: true, completion: nil)
             
+        }
+        else if !buttonCheck.isSelected {
+            let alert = AlertHelper.createAlert(title: "Oops!", message: "You must agree to Joey Terms of Service & Privacy Policy first") {
+                
+            }
+            alert.view.tintColor = #colorLiteral(red: 0.3529411765, green: 0.7607843137, blue: 0.7411764706, alpha: 1)
+            present(alert, animated: true, completion: nil)
         }
         else {
             UserDefaultsHelper.setData(value: textFieldName.text, key: .userName)

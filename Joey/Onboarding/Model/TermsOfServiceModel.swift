@@ -8,12 +8,10 @@
 import Foundation
 
 struct TermsOfServiceModel {
-    var tosId: Int
     var tosQuestion: String
     var tosAnswer: String
     
-    init(tosId: Int, tosQuestion: String, tosAnswer: String) {
-        self.tosId = tosId
+    init(tosQuestion: String, tosAnswer: String) {
         self.tosQuestion = tosQuestion
         self.tosAnswer = tosAnswer
     }
