@@ -32,7 +32,7 @@ var activitiesInstructionArray = [
         activityImage: #imageLiteral(resourceName: "mirrorTechnique_activityList"),
         activityShortDesc: "Release negative thoughts",
         activityHomeImage: #imageLiteral(resourceName: "Mirror Technique_miniCard"),
-        activityInstructionImage: #imageLiteral(resourceName: "MT_Instruction")
+        activityInstructionImage: #imageLiteral(resourceName: "MT_InstructionNew")
     ),
     
     //Practice Smile

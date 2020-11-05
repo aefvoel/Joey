@@ -1,15 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "MT_InstructionNew.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "MT_InstructionNew@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "MT_Instruction.png",
+      "filename" : "MT_InstructionNew@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
