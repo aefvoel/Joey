@@ -36,11 +36,8 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xg8-uk-Ki9" customClass="TextViewFixed" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="55" y="506" width="304" height="200"/>
+                                <rect key="frame" x="55" y="506" width="304" height="292"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="rZQ-Xl-1BT"/>
-                                </constraints>
                                 <string key="text">1. 	Gently tighten the muscles of your abdomen, but don’t strain.
 2. 	Notice the tension for a few moments. Then release, and notice the relaxation. Repeat.
 3. 	Become aware of the difference between the tensed muscles and the relaxed muscles.</string>
@@ -80,6 +77,7 @@
                             <constraint firstItem="xg8-uk-Ki9" firstAttribute="leading" secondItem="M3W-eA-uMz" secondAttribute="leading" constant="-32" id="cAU-9a-pu3"/>
                             <constraint firstItem="nOi-Je-ZVU" firstAttribute="trailing" secondItem="hro-XD-Ui6" secondAttribute="trailing" constant="24" id="eKR-G9-s00"/>
                             <constraint firstItem="M3W-eA-uMz" firstAttribute="top" secondItem="hro-XD-Ui6" secondAttribute="bottom" constant="42" id="fPc-mD-us1"/>
+                            <constraint firstItem="nOi-Je-ZVU" firstAttribute="bottom" secondItem="xg8-uk-Ki9" secondAttribute="bottom" constant="64" id="hoI-Zy-BJg"/>
                             <constraint firstItem="hro-XD-Ui6" firstAttribute="top" secondItem="nOi-Je-ZVU" secondAttribute="top" constant="86" id="nld-5v-Kh8"/>
                             <constraint firstItem="jUQ-S4-cVY" firstAttribute="trailing" secondItem="xg8-uk-Ki9" secondAttribute="trailing" id="rsW-bD-cuk"/>
                             <constraint firstItem="hro-XD-Ui6" firstAttribute="leading" secondItem="nOi-Je-ZVU" secondAttribute="leading" constant="24" id="sTl-mm-Yuy"/>
@@ -197,7 +195,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pSe-b7-9FI"/>
+        <segue reference="BM5-6E-nqG"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="feetGuide" width="286" height="286"/>

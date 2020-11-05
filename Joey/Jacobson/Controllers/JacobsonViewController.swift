@@ -45,8 +45,25 @@ class JacobsonViewController: UIViewController, JacobsonExerciseDelegate {
     func updateExerciseData() {
         let exercise = getExercise()
         instructionImage.image = exercise.image
-        instructionText.text = exercise.instruction
+        instructionText.attributedText = getExerciseLabelString(label: instructionText, instructions: exercise.instruction)
         exerciseLabel.text = exercise.name
+    }
+    
+    func getExerciseLabelString(label: UITextView, instructions: String) -> NSAttributedString {
+        let htmlString = """
+<style>
+ol {
+font-size: 20px;
+font-family: '-apple-system';
+font-size: \(label.font!.pointSize);
+}
+</style>
+<ol>\(instructions)</ol>
+"""
+        let htmlData = NSString(string: htmlString).data(using: String.Encoding.unicode.rawValue)
+        let options = [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.html]
+        let attributedString = try! NSAttributedString(data: htmlData!, options: options, documentAttributes: nil)
+        return attributedString
     }
     
     // MARK: - Navigation
