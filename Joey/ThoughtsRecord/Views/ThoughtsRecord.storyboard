@@ -2557,6 +2557,9 @@ Do you want to see it?</string>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="GGA-Xk-8F6" kind="show" id="4vL-u6-Yvj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -2589,6 +2592,16 @@ Do you want to do this activity again?</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kMQ-lk-4dG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5562" y="710"/>
+        </scene>
+        <!--HomeViewController-->
+        <scene sceneID="vki-fg-qQ4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="HomeViewController" id="GGA-Xk-8F6" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cm3-NO-hwd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lgs-tL-IIr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6562" y="731"/>
         </scene>
     </scenes>
     <designables>

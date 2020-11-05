@@ -14,7 +14,6 @@ class MySpaceViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var barChartView: BarChartView!
     @IBOutlet weak var labelMonth: UILabel!
     
-    @IBOutlet weak var viewHeight: NSLayoutConstraint!
     @IBOutlet weak var cardView: CardView!
     var listEmotion = [EmotionList]()
     var listEmotionByMonth = [EmotionList]()
@@ -132,7 +131,6 @@ class MySpaceViewController: UIViewController, ChartViewDelegate {
         
         
         DispatchQueue.main.async {
-            self.viewHeight.constant = self.historyCollectionView.contentSize.height
             self.listMonth = self.listMonth.unique()
             self.selectedMonth = self.listMonth.last ?? ""
             self.setupChart(month: self.selectedMonth!)
