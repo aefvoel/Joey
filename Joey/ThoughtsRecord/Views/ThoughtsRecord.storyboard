@@ -10,7 +10,6 @@
     <customFonts key="customFonts">
         <array key="Yuanti.ttc">
             <string>STYuanti-SC-Bold</string>
-            <string>STYuanti-SC-Light</string>
             <string>STYuanti-SC-Regular</string>
         </array>
     </customFonts>
@@ -2156,7 +2155,7 @@ Phew, it’s never been an easy task but glad you made it! </string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uic-9A-JyE">
                                 <rect key="frame" x="22" y="549" width="370" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Light" family="Yuanti SC" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2490,10 +2489,10 @@ Do you want to see it?</string>
             </objects>
             <point key="canvasLocation" x="6357.971014492754" y="-90.401785714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Thoughts Record Do Activity Again View Controller-->
         <scene sceneID="Iha-hn-yWP">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="m8q-Yz-mdC" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="m8q-Yz-mdC" customClass="ThoughtsRecordDoActivityAgainViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vti-Ru-LtW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2707,7 +2706,7 @@ Do you want to do this activity again?</string>
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="R1z-Qy-Fwh"/>
-        <segue reference="Y0y-Q6-4kK"/>
+        <segue reference="RFT-ku-kxy"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="OB_modalClose_xButton" width="41" height="41"/>
