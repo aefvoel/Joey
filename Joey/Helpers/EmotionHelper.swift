@@ -58,6 +58,7 @@ class EmotionHelper {
             
             do {
                 try context.save()
+                onComplete(nil)
             } catch {
                 onComplete(error)
             }

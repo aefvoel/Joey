@@ -62,6 +62,7 @@ class ThoughtsRecordHelper {
             
             do {
                 try context.save()
+                onComplete(nil)
             } catch {
                 onComplete(error)
             }

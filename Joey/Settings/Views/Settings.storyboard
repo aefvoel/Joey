@@ -107,44 +107,8 @@
                                     <constraint firstAttribute="height" constant="70" id="kRt-Ee-xVQ"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZY2-WO-MNo" customClass="SettingsItem" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="535.5" width="414" height="70"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqf-Px-hNP">
-                                        <rect key="frame" x="84" y="18" width="45" height="34"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="24"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings_faq" translatesAutoresizingMaskIntoConstraints="NO" id="idm-tY-Jkh">
-                                        <rect key="frame" x="24" y="14" width="42" height="42"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="42" id="Xhx-1V-jZz"/>
-                                            <constraint firstAttribute="width" constant="42" id="jF7-co-uiS"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="KNC-Y4-zBq">
-                                        <rect key="frame" x="358" y="21" width="32" height="28.5"/>
-                                        <color key="tintColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="32" id="1ac-UT-b2F"/>
-                                            <constraint firstAttribute="height" constant="32" id="St1-3y-1aA"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="KNC-Y4-zBq" firstAttribute="centerY" secondItem="idm-tY-Jkh" secondAttribute="centerY" id="BXH-3l-G2m"/>
-                                    <constraint firstItem="Cqf-Px-hNP" firstAttribute="leading" secondItem="idm-tY-Jkh" secondAttribute="trailing" constant="18" id="Bb0-Nd-hx6"/>
-                                    <constraint firstAttribute="height" constant="70" id="Hqm-U6-iND"/>
-                                    <constraint firstItem="Cqf-Px-hNP" firstAttribute="centerY" secondItem="ZY2-WO-MNo" secondAttribute="centerY" id="IDr-HP-7rx"/>
-                                    <constraint firstItem="idm-tY-Jkh" firstAttribute="leading" secondItem="ZY2-WO-MNo" secondAttribute="leading" constant="24" id="YBe-tY-cNc"/>
-                                    <constraint firstItem="idm-tY-Jkh" firstAttribute="centerY" secondItem="ZY2-WO-MNo" secondAttribute="centerY" id="a3S-yU-Iqf"/>
-                                    <constraint firstAttribute="trailing" secondItem="KNC-Y4-zBq" secondAttribute="trailing" constant="24" id="uaZ-2b-Jf1"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZy-K7-2uo" customClass="SettingsItem" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="605.5" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="535.5" width="414" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prH-ib-KFd">
                                         <rect key="frame" x="84" y="18" width="147" height="34"/>
@@ -237,7 +201,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwE-Rw-t8l" customClass="SettingsItem" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="675.5" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="605.5" width="414" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FJ-7q-Z6C">
                                         <rect key="frame" x="84" y="18" width="176" height="34"/>
@@ -281,10 +245,10 @@
                             <constraint firstItem="Tmz-rP-am5" firstAttribute="leading" secondItem="eaC-U0-4Gh" secondAttribute="leading" constant="24" id="BQT-St-H64"/>
                             <constraint firstItem="zki-ew-h0w" firstAttribute="trailing" secondItem="eaC-U0-4Gh" secondAttribute="trailing" id="HWL-lf-YVT"/>
                             <constraint firstItem="zki-ew-h0w" firstAttribute="leading" secondItem="eaC-U0-4Gh" secondAttribute="leading" id="I66-uw-cIa"/>
-                            <constraint firstItem="ZY2-WO-MNo" firstAttribute="top" secondItem="GfA-qA-fw8" secondAttribute="bottom" id="IA7-Cu-RGu"/>
                             <constraint firstItem="qTf-Si-avE" firstAttribute="trailing" secondItem="eaC-U0-4Gh" secondAttribute="trailing" id="MXF-Zc-z5B"/>
                             <constraint firstItem="eaC-U0-4Gh" firstAttribute="trailing" secondItem="Tmz-rP-am5" secondAttribute="trailing" constant="24" id="MfV-9v-gI5"/>
                             <constraint firstItem="flz-GW-A6a" firstAttribute="leading" secondItem="eaC-U0-4Gh" secondAttribute="leading" id="Qtl-a9-Y8R"/>
+                            <constraint firstItem="gZy-K7-2uo" firstAttribute="top" secondItem="GfA-qA-fw8" secondAttribute="bottom" id="REA-FN-56N"/>
                             <constraint firstItem="Tmz-rP-am5" firstAttribute="top" secondItem="IbT-H3-kQ9" secondAttribute="bottom" constant="18" id="RGn-N8-xYg"/>
                             <constraint firstItem="qTf-Si-avE" firstAttribute="leading" secondItem="eaC-U0-4Gh" secondAttribute="leading" id="TFh-bU-zBA"/>
                             <constraint firstItem="IbT-H3-kQ9" firstAttribute="trailing" secondItem="eaC-U0-4Gh" secondAttribute="trailing" id="Un8-fD-lc7"/>
@@ -294,12 +258,9 @@
                             <constraint firstItem="gZy-K7-2uo" firstAttribute="trailing" secondItem="eaC-U0-4Gh" secondAttribute="trailing" id="kWJ-cP-zQF"/>
                             <constraint firstItem="IbT-H3-kQ9" firstAttribute="top" secondItem="eaC-U0-4Gh" secondAttribute="top" id="knp-7m-bcH"/>
                             <constraint firstItem="IbT-H3-kQ9" firstAttribute="leading" secondItem="eaC-U0-4Gh" secondAttribute="leading" id="l1u-1x-Xvl"/>
-                            <constraint firstItem="ZY2-WO-MNo" firstAttribute="leading" secondItem="eaC-U0-4Gh" secondAttribute="leading" id="lGn-Ey-Dwd"/>
-                            <constraint firstItem="ZY2-WO-MNo" firstAttribute="trailing" secondItem="eaC-U0-4Gh" secondAttribute="trailing" id="nfo-mk-bU2"/>
                             <constraint firstItem="GfA-qA-fw8" firstAttribute="trailing" secondItem="eaC-U0-4Gh" secondAttribute="trailing" id="q7x-Zf-RWG"/>
                             <constraint firstItem="flz-GW-A6a" firstAttribute="top" secondItem="zki-ew-h0w" secondAttribute="bottom" id="qWW-Do-Xgd"/>
                             <constraint firstItem="qwE-Rw-t8l" firstAttribute="leading" secondItem="eaC-U0-4Gh" secondAttribute="leading" id="sSj-Yd-cQH"/>
-                            <constraint firstItem="gZy-K7-2uo" firstAttribute="top" secondItem="ZY2-WO-MNo" secondAttribute="bottom" id="uB7-L7-YZu"/>
                             <constraint firstItem="qwE-Rw-t8l" firstAttribute="top" secondItem="gZy-K7-2uo" secondAttribute="bottom" id="uGB-SG-mU3"/>
                             <constraint firstItem="zki-ew-h0w" firstAttribute="top" secondItem="Tmz-rP-am5" secondAttribute="bottom" constant="32" id="ugw-qL-Eba"/>
                             <constraint firstItem="GfA-qA-fw8" firstAttribute="top" secondItem="qTf-Si-avE" secondAttribute="bottom" constant="32" id="zWr-Ap-fbv"/>
@@ -307,7 +268,6 @@
                     </view>
                     <connections>
                         <outlet property="aboutItem" destination="GfA-qA-fw8" id="lSM-r8-xm2"/>
-                        <outlet property="faqItem" destination="ZY2-WO-MNo" id="j4H-oO-vQd"/>
                         <outlet property="nameItem" destination="zki-ew-h0w" id="BT9-HF-g7x"/>
                         <outlet property="navBar" destination="IbT-H3-kQ9" id="bft-xL-kOP"/>
                         <outlet property="notificationsItem" destination="qTf-Si-avE" id="PW2-5A-K4n"/>
@@ -316,7 +276,6 @@
                         <outlet property="termsItem" destination="qwE-Rw-t8l" id="Shx-Qv-i3H"/>
                         <segue destination="hwb-Py-66y" kind="show" identifier="toName" id="D5N-lm-k5k"/>
                         <segue destination="47t-po-NnY" kind="show" identifier="toAbout" id="SQs-EM-Kjw"/>
-                        <segue destination="Ohp-50-n0G" kind="show" identifier="toFAQ" id="c59-kt-NRC"/>
                         <segue destination="SvD-nw-ooT" kind="show" identifier="toPrivacy" id="d9m-Py-EyA"/>
                         <segue destination="jEf-8A-ngm" kind="show" identifier="toTerms" id="dBL-ch-DYK"/>
                     </connections>
@@ -423,7 +382,7 @@
             <objects>
                 <tableViewController id="zOk-OZ-EYI" customClass="SettingsAccordionTableViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sMG-4H-H83">
-                        <rect key="frame" x="0.0" y="0.0" width="286" height="658"/>
+                        <rect key="frame" x="0.0" y="0.0" width="366" height="650.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <connections>
@@ -434,66 +393,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G7t-3r-c0v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4109" y="-4"/>
-        </scene>
-        <!--SettingsFAQ View Controller-->
-        <scene sceneID="puJ-er-wSn">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Ohp-50-n0G" customClass="SettingsFAQViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xre-k1-kcI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="de_background" translatesAutoresizingMaskIntoConstraints="NO" id="pnx-nf-mJm">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zB-SQ-H2F" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="47" id="e6X-PM-84w"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAQ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8P-BS-kei">
-                                <rect key="frame" x="64" y="155" width="286" height="42"/>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="36"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5v-dh-8jn">
-                                <rect key="frame" x="64" y="229" width="286" height="667"/>
-                                <connections>
-                                    <segue destination="zOk-OZ-EYI" kind="embed" identifier="toTableView" id="jzJ-Sy-Voc"/>
-                                </connections>
-                            </containerView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="blc-fx-exR"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="v5v-dh-8jn" secondAttribute="bottom" id="3rT-RE-XU8"/>
-                            <constraint firstItem="pnx-nf-mJm" firstAttribute="top" secondItem="xre-k1-kcI" secondAttribute="top" id="Bga-69-vlJ"/>
-                            <constraint firstItem="pnx-nf-mJm" firstAttribute="trailing" secondItem="blc-fx-exR" secondAttribute="trailing" id="MUI-Qb-QNI"/>
-                            <constraint firstItem="v5v-dh-8jn" firstAttribute="trailing" secondItem="h8P-BS-kei" secondAttribute="trailing" id="ZsB-yF-0sC"/>
-                            <constraint firstItem="9zB-SQ-H2F" firstAttribute="top" secondItem="blc-fx-exR" secondAttribute="top" id="aR6-tI-hV0"/>
-                            <constraint firstItem="pnx-nf-mJm" firstAttribute="leading" secondItem="blc-fx-exR" secondAttribute="leading" id="bWg-Zj-cH4"/>
-                            <constraint firstItem="h8P-BS-kei" firstAttribute="top" secondItem="9zB-SQ-H2F" secondAttribute="bottom" constant="64" id="dAp-1w-p08"/>
-                            <constraint firstItem="h8P-BS-kei" firstAttribute="leading" secondItem="blc-fx-exR" secondAttribute="leading" constant="64" id="fN1-rN-CYz"/>
-                            <constraint firstItem="v5v-dh-8jn" firstAttribute="top" secondItem="h8P-BS-kei" secondAttribute="bottom" constant="32" id="j18-Eh-rx1"/>
-                            <constraint firstItem="9zB-SQ-H2F" firstAttribute="trailing" secondItem="blc-fx-exR" secondAttribute="trailing" id="ouL-3Y-Auk"/>
-                            <constraint firstAttribute="bottom" secondItem="pnx-nf-mJm" secondAttribute="bottom" id="p3d-0v-zau"/>
-                            <constraint firstItem="blc-fx-exR" firstAttribute="trailing" secondItem="h8P-BS-kei" secondAttribute="trailing" constant="64" id="q1h-VG-Mpd"/>
-                            <constraint firstItem="9zB-SQ-H2F" firstAttribute="leading" secondItem="blc-fx-exR" secondAttribute="leading" id="rBF-6L-rl6"/>
-                            <constraint firstItem="v5v-dh-8jn" firstAttribute="leading" secondItem="h8P-BS-kei" secondAttribute="leading" id="rcc-Q3-QYT"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="6Pa-tY-IHf"/>
-                    <connections>
-                        <outlet property="navBar" destination="9zB-SQ-H2F" id="6tL-rW-Pc5"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eqV-4x-Czz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2031.8840579710147" y="-457.36607142857139"/>
+            <point key="canvasLocation" x="3062" y="-4"/>
         </scene>
         <!--Settings About View Controller-->
         <scene sceneID="Oyx-w0-5ue">
@@ -503,13 +403,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="de_background" translatesAutoresizingMaskIntoConstraints="NO" id="plH-bZ-ON7">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page_background3" translatesAutoresizingMaskIntoConstraints="NO" id="plH-bZ-ON7">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sof-ke-MQh" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="47"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="Rns-eC-d4e"/>
                                 </constraints>
@@ -520,13 +419,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCJ-Lg-xN4" customClass="TextViewFixed" customModule="Joey" customModuleProvider="target">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCJ-Lg-xN4" customClass="TextViewFixed" customModule="Joey" customModuleProvider="target">
                                 <rect key="frame" x="64" y="238" width="286" height="624"/>
-                                <mutableString key="text">Often times we feel the pressure due to the accumulation of thoughts that we don't want. These persistently negative thoughts if allowed will makes symptoms of depression. Therefore, we need to be aware of the emotions we feel.
+                                <string key="text">Often times we feel the pressure due to the accumulation of thoughts that we don't want. These persistently negative thoughts if allowed will makes symptoms of depression. Therefore, we need to be aware of the emotions we feel.
 
 You can control your negative thoughts to have a more balanced way of thinking. It’s time to change with Joey!
 
-Joey will help you to control your negative thoughts by suggesting you activity to do to control your negative thoughts using thoughts record and mindfulness activity. Joey will also help you to journal your feelings but what makes it special is that Joey can help you to identify your emotion by detecting your face expression using Augmented Reality so that you know what you need to do to overcome the thoughts that you don't want.</mutableString>
+Joey will help you to control your negative thoughts by suggesting you activity to do to control your negative thoughts using thoughts record and mindfulness activity. Joey will also help you to journal your feelings but what makes it special is that Joey can help you to identify your emotion by detecting your face expression using Augmented Reality so that you know what you need to do to overcome the thoughts that you don't want.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -572,13 +471,13 @@ Joey will help you to control your negative thoughts by suggesting you activity 
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZy-DC-zUR">
-                                <rect key="frame" x="64" y="155" width="286" height="51"/>
+                                <rect key="frame" x="24" y="155" width="366" height="51"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rNt-Mf-rrS">
-                                <rect key="frame" x="64" y="238" width="286" height="658"/>
+                                <rect key="frame" x="24" y="246" width="366" height="650"/>
                                 <connections>
                                     <segue destination="zOk-OZ-EYI" kind="embed" identifier="toTableView" id="bfk-fJ-p69"/>
                                 </connections>
@@ -587,15 +486,15 @@ Joey will help you to control your negative thoughts by suggesting you activity 
                         <viewLayoutGuide key="safeArea" id="gdR-4w-b3H"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="oZy-DC-zUR" firstAttribute="leading" secondItem="gdR-4w-b3H" secondAttribute="leading" constant="64" id="9ZD-M8-pjB"/>
+                            <constraint firstItem="oZy-DC-zUR" firstAttribute="leading" secondItem="gdR-4w-b3H" secondAttribute="leading" constant="24" id="9ZD-M8-pjB"/>
                             <constraint firstItem="NFq-AV-lUD" firstAttribute="top" secondItem="gdR-4w-b3H" secondAttribute="top" id="G1s-zg-DFS"/>
                             <constraint firstItem="oZy-DC-zUR" firstAttribute="top" secondItem="NFq-AV-lUD" secondAttribute="bottom" constant="64" id="O3o-aB-hnB"/>
                             <constraint firstItem="NFq-AV-lUD" firstAttribute="trailing" secondItem="gdR-4w-b3H" secondAttribute="trailing" id="PP0-0D-qYe"/>
                             <constraint firstAttribute="bottom" secondItem="rNt-Mf-rrS" secondAttribute="bottom" id="WIk-Gc-dae"/>
                             <constraint firstItem="NFq-AV-lUD" firstAttribute="leading" secondItem="gdR-4w-b3H" secondAttribute="leading" id="dh4-fH-5PU"/>
-                            <constraint firstItem="rNt-Mf-rrS" firstAttribute="top" secondItem="oZy-DC-zUR" secondAttribute="bottom" constant="32" id="dm4-hD-8aS"/>
+                            <constraint firstItem="rNt-Mf-rrS" firstAttribute="top" secondItem="oZy-DC-zUR" secondAttribute="bottom" constant="40" id="dm4-hD-8aS"/>
                             <constraint firstItem="rNt-Mf-rrS" firstAttribute="trailing" secondItem="oZy-DC-zUR" secondAttribute="trailing" id="kj7-20-pqO"/>
-                            <constraint firstItem="gdR-4w-b3H" firstAttribute="trailing" secondItem="oZy-DC-zUR" secondAttribute="trailing" constant="64" id="rdp-Ke-1YT"/>
+                            <constraint firstItem="gdR-4w-b3H" firstAttribute="trailing" secondItem="oZy-DC-zUR" secondAttribute="trailing" constant="24" id="rdp-Ke-1YT"/>
                             <constraint firstItem="rNt-Mf-rrS" firstAttribute="leading" secondItem="oZy-DC-zUR" secondAttribute="leading" id="uCu-Mr-fxQ"/>
                         </constraints>
                     </view>
@@ -624,13 +523,13 @@ Joey will help you to control your negative thoughts by suggesting you activity 
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of Service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysf-V6-Tml">
-                                <rect key="frame" x="64" y="155" width="286" height="50.5"/>
+                                <rect key="frame" x="24" y="155" width="366" height="50.5"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aai-TY-GuF">
-                                <rect key="frame" x="64" y="237.5" width="286" height="658.5"/>
+                                <rect key="frame" x="24" y="245.5" width="366" height="650.5"/>
                                 <connections>
                                     <segue destination="zOk-OZ-EYI" kind="embed" id="agm-SE-wvb"/>
                                 </connections>
@@ -641,14 +540,14 @@ Joey will help you to control your negative thoughts by suggesting you activity 
                         <constraints>
                             <constraint firstItem="aai-TY-GuF" firstAttribute="trailing" secondItem="Ysf-V6-Tml" secondAttribute="trailing" id="GVd-cf-qnL"/>
                             <constraint firstItem="Ysf-V6-Tml" firstAttribute="top" secondItem="M0v-2x-MML" secondAttribute="bottom" constant="64" id="JtD-Xy-qkR"/>
-                            <constraint firstItem="yZL-pp-XuQ" firstAttribute="trailing" secondItem="Ysf-V6-Tml" secondAttribute="trailing" constant="64" id="ORa-An-RB8"/>
+                            <constraint firstItem="yZL-pp-XuQ" firstAttribute="trailing" secondItem="Ysf-V6-Tml" secondAttribute="trailing" constant="24" id="ORa-An-RB8"/>
                             <constraint firstItem="aai-TY-GuF" firstAttribute="leading" secondItem="Ysf-V6-Tml" secondAttribute="leading" id="RKE-QR-MaB"/>
-                            <constraint firstItem="aai-TY-GuF" firstAttribute="top" secondItem="Ysf-V6-Tml" secondAttribute="bottom" constant="32" id="SZT-uB-38b"/>
+                            <constraint firstItem="aai-TY-GuF" firstAttribute="top" secondItem="Ysf-V6-Tml" secondAttribute="bottom" constant="40" id="SZT-uB-38b"/>
                             <constraint firstItem="M0v-2x-MML" firstAttribute="trailing" secondItem="yZL-pp-XuQ" secondAttribute="trailing" id="bg4-ph-4cc"/>
                             <constraint firstItem="M0v-2x-MML" firstAttribute="leading" secondItem="yZL-pp-XuQ" secondAttribute="leading" id="hEa-BN-Y8W"/>
                             <constraint firstAttribute="bottom" secondItem="aai-TY-GuF" secondAttribute="bottom" id="k9R-wi-9pg"/>
                             <constraint firstItem="M0v-2x-MML" firstAttribute="top" secondItem="yZL-pp-XuQ" secondAttribute="top" id="nZa-Ws-HN2"/>
-                            <constraint firstItem="Ysf-V6-Tml" firstAttribute="leading" secondItem="yZL-pp-XuQ" secondAttribute="leading" constant="64" id="ohK-6n-jBg"/>
+                            <constraint firstItem="Ysf-V6-Tml" firstAttribute="leading" secondItem="yZL-pp-XuQ" secondAttribute="leading" constant="24" id="ohK-6n-jBg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gYk-qq-zB1"/>
@@ -658,7 +557,7 @@ Joey will help you to control your negative thoughts by suggesting you activity 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eRr-e6-lVt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3037.68115942029" y="-4.0178571428571423"/>
+            <point key="canvasLocation" x="2032" y="-457"/>
         </scene>
     </scenes>
     <designables>
@@ -667,13 +566,12 @@ Joey will help you to control your negative thoughts by suggesting you activity 
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="jzJ-Sy-Voc"/>
+        <segue reference="agm-SE-wvb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
-        <image name="de_background" width="414" height="896"/>
+        <image name="page_background3" width="414" height="896"/>
         <image name="settings_about" width="50" height="50"/>
-        <image name="settings_faq" width="50" height="50"/>
         <image name="settings_name" width="50" height="50"/>
         <image name="settings_notification" width="50" height="50"/>
         <image name="settings_privacy" width="50" height="50"/>

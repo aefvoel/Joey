@@ -14,7 +14,6 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var resetItem: SettingsItem!
     @IBOutlet weak var notificationsItem: SettingsItem!
     @IBOutlet weak var aboutItem: SettingsItem!
-    @IBOutlet weak var faqItem: SettingsItem!
     @IBOutlet weak var privacyItem: SettingsItem!
     @IBOutlet weak var termsItem: SettingsItem!
     
@@ -25,7 +24,6 @@ class SettingsViewController: UIViewController {
         nameItem.addGestureRecognizer(getTapGestureRecognizer())
         resetItem.addGestureRecognizer(getTapGestureRecognizer())
         aboutItem.addGestureRecognizer(getTapGestureRecognizer())
-        faqItem.addGestureRecognizer(getTapGestureRecognizer())
         privacyItem.addGestureRecognizer(getTapGestureRecognizer())
         termsItem.addGestureRecognizer(getTapGestureRecognizer())
     }
@@ -43,8 +41,6 @@ class SettingsViewController: UIViewController {
                 resetData()
             case aboutItem:
                 performSegue(withIdentifier: "toAbout", sender: nil)
-            case faqItem:
-                performSegue(withIdentifier: "toFAQ", sender: nil)
             case privacyItem:
                 performSegue(withIdentifier: "toPrivacy", sender: nil)
             default:
@@ -67,7 +63,7 @@ class SettingsViewController: UIViewController {
                 
                 group.enter()
                 EmotionHelper.deleteAll { (error) in
-                    if error == nil {
+                    if error != nil {
                         print("Error")
                     } else {
                         group.leave()
@@ -76,7 +72,7 @@ class SettingsViewController: UIViewController {
                 
                 group.enter()
                 ThoughtsRecordHelper.deleteAll { (error) in
-                    if error == nil {
+                    if error != nil {
                         print("Error")
                     } else {
                         group.leave()
@@ -84,9 +80,10 @@ class SettingsViewController: UIViewController {
                 }
                 
                 UserDefaultsHelper.removeData(key: .userName)
-                UserDefaultsHelper.removeData(key: .isLoggedIn)
+                UserDefaultsHelper.setData(value: false, key: .isLoggedIn)
                 
                 group.notify(queue: .main) {
+                    print("Hello, world!")
                     self.popTo(OnboardingViewController.self)
                 }
             } else {
