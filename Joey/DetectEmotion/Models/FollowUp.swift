@@ -47,6 +47,15 @@ struct FollowUp {
             case .happy: return #imageLiteral(resourceName: "happy-icon")
             }
         }
+        
+        var scaleQuestion: String {
+            switch self {
+            case .angry: return "how intense do you think your annoyance is?"
+            case .sad: return "how intense do you think you need to be cheered up?"
+            case .neutral: return "how fine do you think you are at the moment?"
+            case .happy: return "how intense do you think your happy day is?"
+            }
+        }
     }
     
     enum ScaleType {
