@@ -19,6 +19,7 @@ class ActivityListViewController: UIViewController {
         super.viewDidLoad()
         
         self.tableView.separatorStyle = .none
+        tableView.isScrollEnabled = false
         
         tableView.delegate = self
         tableView.dataSource = self
