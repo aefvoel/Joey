@@ -9,18 +9,14 @@ import UIKit
 
 class TOSTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var upperCell: UIView!
     @IBOutlet weak var labelQuestion: UILabel!
     
-    @IBOutlet weak var lowerCell: UIView!
     @IBOutlet weak var labelAnswer: UILabel!
     
     var tosItem: TermsOfServiceModel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        self.upperCell.layer.cornerRadius = 7.0
         
         // Initialization code
     }

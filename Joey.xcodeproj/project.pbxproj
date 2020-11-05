@@ -72,6 +72,7 @@
 		5AAE9BAB253F03400075966B /* PrivacyPolicyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE9BAA253F03400075966B /* PrivacyPolicyModel.swift */; };
 		5AAE9BB5253F08610075966B /* PrivPolicyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE9BB4253F08610075966B /* PrivPolicyTableViewCell.swift */; };
 		5AAE9BBA253F08820075966B /* PrivPolicyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE9BB9253F08820075966B /* PrivPolicyTableViewController.swift */; };
+		5AC8DB4825537E3000A60BD0 /* ThoughtsRecordDoActivityAgainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC8DB4725537E3000A60BD0 /* ThoughtsRecordDoActivityAgainViewController.swift */; };
 		5AD1E5AD2541363200BD18D5 /* ActivityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1E5AC2541363200BD18D5 /* ActivityListViewController.swift */; };
 		5AD1E5B22541403B00BD18D5 /* ActivityListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1E5B12541403B00BD18D5 /* ActivityListCell.swift */; };
 		5AD1E5B7254141D000BD18D5 /* (null) in Sources */ = {isa = PBXBuildFile; };
@@ -193,6 +194,7 @@
 		5AAE9BAA253F03400075966B /* PrivacyPolicyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyModel.swift; sourceTree = "<group>"; };
 		5AAE9BB4253F08610075966B /* PrivPolicyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivPolicyTableViewCell.swift; sourceTree = "<group>"; };
 		5AAE9BB9253F08820075966B /* PrivPolicyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivPolicyTableViewController.swift; sourceTree = "<group>"; };
+		5AC8DB4725537E3000A60BD0 /* ThoughtsRecordDoActivityAgainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtsRecordDoActivityAgainViewController.swift; sourceTree = "<group>"; };
 		5AD1E5AC2541363200BD18D5 /* ActivityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListViewController.swift; sourceTree = "<group>"; };
 		5AD1E5B12541403B00BD18D5 /* ActivityListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListCell.swift; sourceTree = "<group>"; };
 		5AD838C8253E8BCC0042D14E /* Yuanti.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yuanti.ttc; sourceTree = "<group>"; };
@@ -428,6 +430,7 @@
 				5A5506E925498AA4006A4A48 /* SummaryViewController.swift */,
 				5A8C7B91254A59D000569797 /* SummaryTableViewCell.swift */,
 				5A9841B825468790009D9FDD /* hintsViewController.swift */,
+				5AC8DB4725537E3000A60BD0 /* ThoughtsRecordDoActivityAgainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -984,6 +987,7 @@
 				169C0744254143A90071387C /* TextViewFixed.swift in Sources */,
 				ABB1EEA1254FEDE800D1C5C1 /* HistoryViewController.swift in Sources */,
 				5A9DA16125406BFE0090EC41 /* TOSPPViewController.swift in Sources */,
+				5AC8DB4825537E3000A60BD0 /* ThoughtsRecordDoActivityAgainViewController.swift in Sources */,
 				5A68412C2547D56400CDFB59 /* EvidenceNotSupportViewController.swift in Sources */,
 				5A0FD165254718260048B757 /* AutomaticThoughtsViewController.swift in Sources */,
 				16F09113254FCF5800D27D58 /* SettingsPrivacyViewController.swift in Sources */,
