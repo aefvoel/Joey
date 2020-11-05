@@ -48,7 +48,6 @@
 		16B3758C254A6B100027B696 /* InstructionModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3758B254A6B100027B696 /* InstructionModalViewController.swift */; };
 		16EE8CA425414A1200FA9CE6 /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EE8CA325414A1200FA9CE6 /* InstructionView.swift */; };
 		16F09100254FCCA100D27D58 /* SettingsAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F090FF254FCCA100D27D58 /* SettingsAboutViewController.swift */; };
-		16F09106254FCCC500D27D58 /* SettingsFAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F09105254FCCC500D27D58 /* SettingsFAQViewController.swift */; };
 		16F0910E254FCF4B00D27D58 /* SettingsTermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F0910D254FCF4B00D27D58 /* SettingsTermsViewController.swift */; };
 		16F09113254FCF5800D27D58 /* SettingsPrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F09112254FCF5800D27D58 /* SettingsPrivacyViewController.swift */; };
 		16FA4BFC2547D7BD00D3EFFC /* DetectEmotionAnalyzeAgainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FA4BFB2547D7BD00D3EFFC /* DetectEmotionAnalyzeAgainViewController.swift */; };
@@ -73,6 +72,7 @@
 		5AAE9BAB253F03400075966B /* PrivacyPolicyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE9BAA253F03400075966B /* PrivacyPolicyModel.swift */; };
 		5AAE9BB5253F08610075966B /* PrivPolicyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE9BB4253F08610075966B /* PrivPolicyTableViewCell.swift */; };
 		5AAE9BBA253F08820075966B /* PrivPolicyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE9BB9253F08820075966B /* PrivPolicyTableViewController.swift */; };
+		5AC8DB4825537E3000A60BD0 /* ThoughtsRecordDoActivityAgainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC8DB4725537E3000A60BD0 /* ThoughtsRecordDoActivityAgainViewController.swift */; };
 		5AD1E5AD2541363200BD18D5 /* ActivityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1E5AC2541363200BD18D5 /* ActivityListViewController.swift */; };
 		5AD1E5B22541403B00BD18D5 /* ActivityListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1E5B12541403B00BD18D5 /* ActivityListCell.swift */; };
 		5AD1E5B7254141D000BD18D5 /* (null) in Sources */ = {isa = PBXBuildFile; };
@@ -169,7 +169,6 @@
 		16B3758B254A6B100027B696 /* InstructionModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionModalViewController.swift; sourceTree = "<group>"; };
 		16EE8CA325414A1200FA9CE6 /* InstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
 		16F090FF254FCCA100D27D58 /* SettingsAboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAboutViewController.swift; sourceTree = "<group>"; };
-		16F09105254FCCC500D27D58 /* SettingsFAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFAQViewController.swift; sourceTree = "<group>"; };
 		16F0910D254FCF4B00D27D58 /* SettingsTermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTermsViewController.swift; sourceTree = "<group>"; };
 		16F09112254FCF5800D27D58 /* SettingsPrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyViewController.swift; sourceTree = "<group>"; };
 		16FA4BFB2547D7BD00D3EFFC /* DetectEmotionAnalyzeAgainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionAnalyzeAgainViewController.swift; sourceTree = "<group>"; };
@@ -195,6 +194,7 @@
 		5AAE9BAA253F03400075966B /* PrivacyPolicyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyModel.swift; sourceTree = "<group>"; };
 		5AAE9BB4253F08610075966B /* PrivPolicyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivPolicyTableViewCell.swift; sourceTree = "<group>"; };
 		5AAE9BB9253F08820075966B /* PrivPolicyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivPolicyTableViewController.swift; sourceTree = "<group>"; };
+		5AC8DB4725537E3000A60BD0 /* ThoughtsRecordDoActivityAgainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtsRecordDoActivityAgainViewController.swift; sourceTree = "<group>"; };
 		5AD1E5AC2541363200BD18D5 /* ActivityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListViewController.swift; sourceTree = "<group>"; };
 		5AD1E5B12541403B00BD18D5 /* ActivityListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListCell.swift; sourceTree = "<group>"; };
 		5AD838C8253E8BCC0042D14E /* Yuanti.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yuanti.ttc; sourceTree = "<group>"; };
@@ -299,7 +299,6 @@
 				160CFCF9254FAC2F007481B0 /* SettingsViewController.swift */,
 				160CFCFE254FC299007481B0 /* SettingsNameViewController.swift */,
 				16F090FF254FCCA100D27D58 /* SettingsAboutViewController.swift */,
-				16F09105254FCCC500D27D58 /* SettingsFAQViewController.swift */,
 				16F0910D254FCF4B00D27D58 /* SettingsTermsViewController.swift */,
 				16F09112254FCF5800D27D58 /* SettingsPrivacyViewController.swift */,
 				164B4F0025521A8200FCAA42 /* SettingsAccordionTableViewController.swift */,
@@ -431,6 +430,7 @@
 				5A5506E925498AA4006A4A48 /* SummaryViewController.swift */,
 				5A8C7B91254A59D000569797 /* SummaryTableViewCell.swift */,
 				5A9841B825468790009D9FDD /* hintsViewController.swift */,
+				5AC8DB4725537E3000A60BD0 /* ThoughtsRecordDoActivityAgainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -967,7 +967,6 @@
 				1655E28725467A5300ACCF9C /* DetectEmotionValidateViewController.swift in Sources */,
 				5A6841342547E8AB00CDFB59 /* NewMoodsViewController.swift in Sources */,
 				5A8C7B8A254A511400569797 /* SummaryConfirmationViewController.swift in Sources */,
-				16F09106254FCCC500D27D58 /* SettingsFAQViewController.swift in Sources */,
 				ABB1EE99254FCD2C00D1C5C1 /* EmotionList.swift in Sources */,
 				5A5506EA25498AA4006A4A48 /* SummaryViewController.swift in Sources */,
 				AB92A179253730F9003F8823 /* ViewController.swift in Sources */,
@@ -988,6 +987,7 @@
 				169C0744254143A90071387C /* TextViewFixed.swift in Sources */,
 				ABB1EEA1254FEDE800D1C5C1 /* HistoryViewController.swift in Sources */,
 				5A9DA16125406BFE0090EC41 /* TOSPPViewController.swift in Sources */,
+				5AC8DB4825537E3000A60BD0 /* ThoughtsRecordDoActivityAgainViewController.swift in Sources */,
 				5A68412C2547D56400CDFB59 /* EvidenceNotSupportViewController.swift in Sources */,
 				5A0FD165254718260048B757 /* AutomaticThoughtsViewController.swift in Sources */,
 				16F09113254FCF5800D27D58 /* SettingsPrivacyViewController.swift in Sources */,

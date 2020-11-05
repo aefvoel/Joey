@@ -9,6 +9,7 @@ import UIKit
 
 class DetectEmotionScaleViewController: UIViewController {
 
+    @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var navBar: NavigationBar!
     var data: FollowUp?
     @IBOutlet weak var scaleSlider: CustomSlider!
@@ -22,6 +23,8 @@ class DetectEmotionScaleViewController: UIViewController {
         } else {
             navBar.labelIndicator.text = "2/5"
         }
+        
+        questionLabel.text = data?.emotion.scaleQuestion
     }
     
     @IBAction func onOkayButtonTapped(_ sender: Any) {

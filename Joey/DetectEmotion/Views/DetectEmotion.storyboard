@@ -27,7 +27,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Analyzing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00e-RX-0hD">
-                                <rect key="frame" x="62" y="108" width="290" height="62"/>
+                                <rect key="frame" x="62" y="108" width="290" height="51.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="290" id="LJP-IV-Zqh"/>
                                 </constraints>
@@ -43,7 +43,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9p-zv-U66" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="62" y="524" width="290" height="45"/>
+                                <rect key="frame" x="62" y="513.5" width="290" height="45"/>
                                 <color key="backgroundColor" red="0.3529411764705882" green="0.76078431372549016" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="j8B-wi-0Ww"/>
@@ -70,7 +70,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="analyzing" translatesAutoresizingMaskIntoConstraints="NO" id="ck5-L6-UO3">
-                                <rect key="frame" x="62" y="202" width="290" height="290"/>
+                                <rect key="frame" x="62" y="191.5" width="290" height="290"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ck5-L6-UO3" secondAttribute="height" multiplier="1:1" id="St4-Ug-JlT"/>
                                 </constraints>
@@ -265,10 +265,10 @@ From what I see, you look need to be cheered up now. Is that true?</string>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fF8-TX-VEG" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="87" y="366.5" width="240" height="45"/>
+                                <rect key="frame" x="64" y="366.5" width="286" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="JeC-9e-iCF"/>
+                                    <constraint firstAttribute="width" constant="286" id="JeC-9e-iCF"/>
                                     <constraint firstAttribute="height" constant="45" id="NuH-Io-K0W"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
@@ -292,11 +292,11 @@ From what I see, you look need to be cheered up now. Is that true?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7J-km-hhE" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="87" y="435.5" width="240" height="45"/>
+                                <rect key="frame" x="64" y="435.5" width="286" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="LJv-Gj-wPL"/>
-                                    <constraint firstAttribute="width" constant="240" id="n50-uo-5bB"/>
+                                    <constraint firstAttribute="width" constant="286" id="n50-uo-5bB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
                                 <state key="normal" title="No">
@@ -319,10 +319,10 @@ From what I see, you look need to be cheered up now. Is that true?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93C-Ac-rPn" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="87" y="504.5" width="240" height="45"/>
+                                <rect key="frame" x="64" y="504.5" width="286" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="KrD-mn-Uxt"/>
+                                    <constraint firstAttribute="width" constant="286" id="KrD-mn-Uxt"/>
                                     <constraint firstAttribute="height" constant="45" id="kSU-aP-PIs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
@@ -406,11 +406,11 @@ From what I see, you look need to be cheered up now. Is that true?</string>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noC-Lw-i7n" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="87" y="367" width="240" height="45"/>
+                                <rect key="frame" x="64" y="367" width="286" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="aB3-pK-XuQ"/>
-                                    <constraint firstAttribute="width" constant="240" id="dBS-Sz-d7y"/>
+                                    <constraint firstAttribute="width" constant="286" id="dBS-Sz-d7y"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
                                 <state key="normal" title="Yes">
@@ -433,10 +433,10 @@ From what I see, you look need to be cheered up now. Is that true?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQ4-7d-7Yr" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="87" y="436" width="240" height="45"/>
+                                <rect key="frame" x="64" y="436" width="286" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="Ykl-he-YK7"/>
+                                    <constraint firstAttribute="width" constant="286" id="Ykl-he-YK7"/>
                                     <constraint firstAttribute="height" constant="45" id="yaK-dO-Arf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
@@ -743,22 +743,22 @@ how intense do you think you need to be cheered up?</string>
                                 </userDefinedRuntimeAttributes>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaM-L9-HcK">
-                                <rect key="frame" x="370" y="406.5" width="20" height="31"/>
+                                <rect key="frame" x="365.5" y="406.5" width="24.5" height="26"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWu-x7-s6U">
-                                <rect key="frame" x="24" y="406.5" width="13" height="31"/>
+                                <rect key="frame" x="24" y="406.5" width="13" height="26"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snN-j3-4qP" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="87" y="496.5" width="240" height="45"/>
+                                <rect key="frame" x="64" y="496.5" width="286" height="45"/>
                                 <color key="backgroundColor" red="0.3529411764705882" green="0.76078431372549016" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="y7w-pO-Stf"/>
+                                    <constraint firstAttribute="width" constant="286" id="y7w-pO-Stf"/>
                                     <constraint firstAttribute="height" constant="45" id="zUl-lo-TXW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
@@ -819,6 +819,7 @@ how intense do you think you need to be cheered up?</string>
                     <navigationItem key="navigationItem" id="2WT-he-2Uc"/>
                     <connections>
                         <outlet property="navBar" destination="e0v-6M-yxl" id="JPj-qj-7Kw"/>
+                        <outlet property="questionLabel" destination="pE8-yA-Cc5" id="8NQ-dE-U4L"/>
                         <outlet property="scaleSlider" destination="NfW-C8-BrN" id="RkM-hC-dS1"/>
                         <segue destination="Nme-VA-Ttw" kind="show" identifier="toReason" id="FrB-i7-GOI"/>
                     </connections>
@@ -1300,11 +1301,11 @@ Do you want to start now?</string>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzb-iW-F76" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="87" y="367" width="240" height="45"/>
+                                <rect key="frame" x="64" y="367" width="286" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="mca-FR-eJ1"/>
-                                    <constraint firstAttribute="width" constant="240" id="nCr-B4-Dkv"/>
+                                    <constraint firstAttribute="width" constant="286" id="nCr-B4-Dkv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
                                 <state key="normal" title="Start Now">
@@ -1327,10 +1328,10 @@ Do you want to start now?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3as-GI-k6f" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="87" y="436" width="240" height="45"/>
+                                <rect key="frame" x="64" y="436" width="286" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="MkD-2r-SCN"/>
+                                    <constraint firstAttribute="width" constant="286" id="MkD-2r-SCN"/>
                                     <constraint firstAttribute="height" constant="45" id="XTc-wP-Z6Q"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
@@ -1408,77 +1409,77 @@ Do you want to start now?</string>
     </scenes>
     <designables>
         <designable name="3as-GI-k6f">
-            <size key="intrinsicContentSize" width="110" height="40"/>
+            <size key="intrinsicContentSize" width="112" height="36"/>
         </designable>
         <designable name="7pt-Us-iSp">
-            <size key="intrinsicContentSize" width="41" height="38"/>
+            <size key="intrinsicContentSize" width="42" height="33"/>
         </designable>
         <designable name="8UW-K0-gkC">
-            <size key="intrinsicContentSize" width="113" height="38"/>
+            <size key="intrinsicContentSize" width="119" height="33"/>
         </designable>
         <designable name="93C-Ac-rPn">
-            <size key="intrinsicContentSize" width="59" height="40"/>
+            <size key="intrinsicContentSize" width="61" height="36"/>
         </designable>
         <designable name="F7J-km-hhE">
-            <size key="intrinsicContentSize" width="30" height="40"/>
+            <size key="intrinsicContentSize" width="30" height="36"/>
         </designable>
         <designable name="Gzb-iW-F76">
-            <size key="intrinsicContentSize" width="90" height="40"/>
+            <size key="intrinsicContentSize" width="90" height="36"/>
         </designable>
         <designable name="LzU-3y-o1a">
-            <size key="intrinsicContentSize" width="47" height="38"/>
+            <size key="intrinsicContentSize" width="49" height="33"/>
         </designable>
         <designable name="Swh-4c-4Wt">
-            <size key="intrinsicContentSize" width="46" height="38"/>
+            <size key="intrinsicContentSize" width="46" height="33"/>
         </designable>
         <designable name="Tlv-mX-jcb">
-            <size key="intrinsicContentSize" width="67" height="38"/>
+            <size key="intrinsicContentSize" width="62" height="33"/>
         </designable>
         <designable name="b5f-5x-3iR">
-            <size key="intrinsicContentSize" width="50" height="38"/>
+            <size key="intrinsicContentSize" width="53" height="33"/>
         </designable>
         <designable name="dQ4-7d-7Yr">
-            <size key="intrinsicContentSize" width="30" height="40"/>
+            <size key="intrinsicContentSize" width="30" height="36"/>
         </designable>
         <designable name="fF8-TX-VEG">
-            <size key="intrinsicContentSize" width="30" height="40"/>
+            <size key="intrinsicContentSize" width="32" height="36"/>
         </designable>
         <designable name="i5S-LX-MZM">
-            <size key="intrinsicContentSize" width="98" height="38"/>
+            <size key="intrinsicContentSize" width="100" height="33"/>
         </designable>
         <designable name="noC-Lw-i7n">
-            <size key="intrinsicContentSize" width="30" height="40"/>
+            <size key="intrinsicContentSize" width="32" height="36"/>
         </designable>
         <designable name="rRs-0Q-hcs">
-            <size key="intrinsicContentSize" width="102" height="38"/>
+            <size key="intrinsicContentSize" width="104" height="33"/>
         </designable>
         <designable name="rWm-k0-d0m">
-            <size key="intrinsicContentSize" width="103" height="38"/>
+            <size key="intrinsicContentSize" width="102" height="33"/>
         </designable>
         <designable name="s1S-VN-MEe">
-            <size key="intrinsicContentSize" width="53" height="38"/>
+            <size key="intrinsicContentSize" width="53" height="33"/>
         </designable>
         <designable name="snN-j3-4qP">
-            <size key="intrinsicContentSize" width="46" height="40"/>
+            <size key="intrinsicContentSize" width="47" height="36"/>
         </designable>
         <designable name="uoG-nf-PLd">
-            <size key="intrinsicContentSize" width="53" height="38"/>
+            <size key="intrinsicContentSize" width="53" height="33"/>
         </designable>
         <designable name="weG-KG-ehu">
-            <size key="intrinsicContentSize" width="77" height="38"/>
+            <size key="intrinsicContentSize" width="80" height="33"/>
         </designable>
         <designable name="y1e-D9-KBi">
-            <size key="intrinsicContentSize" width="53" height="38"/>
+            <size key="intrinsicContentSize" width="55" height="33"/>
         </designable>
         <designable name="y9p-zv-U66">
-            <size key="intrinsicContentSize" width="45" height="40"/>
+            <size key="intrinsicContentSize" width="43" height="36"/>
         </designable>
         <designable name="ybp-mn-gz0">
-            <size key="intrinsicContentSize" width="58" height="38"/>
+            <size key="intrinsicContentSize" width="60" height="33"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="Pps-6o-9vR"/>
+        <segue reference="pvP-8n-yaw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="analyzing" width="357" height="340"/>

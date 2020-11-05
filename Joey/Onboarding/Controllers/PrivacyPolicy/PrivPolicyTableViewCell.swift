@@ -9,10 +9,8 @@ import UIKit
 
 class PrivPolicyTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var upperView: UIView!
     @IBOutlet weak var labelPPQuestion: UILabel!
     
-    @IBOutlet weak var lowerView: UIView!
     @IBOutlet weak var labelPPAnswer: UILabel!
     
     var ppItem: PrivacyPolicyModel!

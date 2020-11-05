@@ -7,6 +7,27 @@
 
 import UIKit
 
+let termsOfServiceText = """
+By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app.
+You’re not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages, or make derivative versions. The app itself, and all the trade marks, copyright, database rights and other intellectual property rights related to it, still belong to developer of Joey.
+
+Developer of joey is committed to ensuring that the app is as useful and efficient as possible. For that reason, we reserve the right to make changes to the app or to charge for its services, at any time and for any reason. We will never charge you for the app or its services without making it very clear to you exactly what you’re paying for.
+ 
+The Joey app stores and processes personal data that you have provided to us, in order to provide Joey. It’s your responsibility to keep your phone and access to the app secure. We therefore recommend that you do not jailbreak or root your phone, which is the process of removing software restrictions and limitations imposed by the official operating system of your device. It could make your phone vulnerable to malware/viruses/malicious programs, compromise your phone’s security features and it could mean that the Joey app won’t work properly or at all.
+ 
+Along the same lines, we cannot always take responsibility for the way you use the app i.e. You need to make sure that your device stays charged – if it runs out of battery and you can’t turn it on to avail Joey, we cannot accept responsibility.
+ 
+With respect to our responsibility for your use of the app, when you’re using the app, it’s important to bear in mind that although we endeavour to ensure that it is updated and correct at all times, we do rely on third parties to provide information to us so that we can make it available to you. We accept no liability for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the app.
+ 
+At some point, we may wish to update the app. The app is currently available on iOS – the requirements for system (and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep using the app. We do not promise that it will always update the app so that it is relevant to you and/or works with the iOS version that you have installed on your device. However, you promise to always accept updates to the application when offered to you, We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if needed) delete it from your device.
+"""
+
+let changesOfThisTermsOfServiceText = """
+We may update our Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Terms and Conditions on this page.
+
+These terms and conditions are effective as of 2020-10-30
+"""
+
 class SettingsTermsViewController: UIViewController {
     
     @IBOutlet weak var navBar: NavigationBar!
@@ -22,9 +43,9 @@ class SettingsTermsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? SettingsAccordionTableViewController {
             vc.data = [
-                AccordionItem(title: "How anonymous is this?", content: "You do not need to go through a registration or sign-up process, so you do not need to give us an email id or phone number. This makes sure that all your conversations are totally anonymous."),
-                AccordionItem(title: "Who can see my data?", content: "You do not need to go through a registration or sign-up process, so you do not need to give us an email id or phone number."),
-                AccordionItem(title: "How can I protect my data?", content: "You do not need to go through a registration or sign-up process, so you do not need to give us an email id or phone number. This makes sure that all your conversations are totally anonymous.")
+                AccordionItem(title: "Our terms of service", content: termsOfServiceText),
+                AccordionItem(title: "Changes to this terms of service", content: changesOfThisTermsOfServiceText),
+                AccordionItem(title: "Contact us", content: "If you have any questions or suggestions about our Terms and Conditions, do not hesitate to contact us at joey@gmail.com.")
             ]
         }
     }
