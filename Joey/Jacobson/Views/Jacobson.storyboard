@@ -35,7 +35,7 @@
                                     <constraint firstAttribute="height" constant="240" id="Wdg-TH-ZIH"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xg8-uk-Ki9" customClass="TextViewFixed" customModule="Joey" customModuleProvider="target">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xg8-uk-Ki9" customClass="TextViewFixed" customModule="Joey" customModuleProvider="target">
                                 <rect key="frame" x="55" y="506" width="304" height="292"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">1. 	Gently tighten the muscles of your abdomen, but don’t strain.
