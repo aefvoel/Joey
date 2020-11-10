@@ -173,7 +173,6 @@
 		16F09112254FCF5800D27D58 /* SettingsPrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyViewController.swift; sourceTree = "<group>"; };
 		16FA4BFB2547D7BD00D3EFFC /* DetectEmotionAnalyzeAgainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionAnalyzeAgainViewController.swift; sourceTree = "<group>"; };
 		5A0FD164254718260048B757 /* AutomaticThoughtsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomaticThoughtsViewController.swift; sourceTree = "<group>"; };
-		5A119155253D995C00775C8D /* OnboardThemeSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardThemeSelectorViewController.swift; sourceTree = "<group>"; };
 		5A2F7148254872ED007929C5 /* ThoughtsRecordTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtsRecordTemp.swift; sourceTree = "<group>"; };
 		5A5506E925498AA4006A4A48 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		5A6841212547B71F00CDFB59 /* MoodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodsViewController.swift; sourceTree = "<group>"; };
@@ -197,7 +196,6 @@
 		5AC8DB4725537E3000A60BD0 /* ThoughtsRecordDoActivityAgainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtsRecordDoActivityAgainViewController.swift; sourceTree = "<group>"; };
 		5AD1E5AC2541363200BD18D5 /* ActivityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListViewController.swift; sourceTree = "<group>"; };
 		5AD1E5B12541403B00BD18D5 /* ActivityListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListCell.swift; sourceTree = "<group>"; };
-		5AD838C8253E8BCC0042D14E /* Yuanti.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yuanti.ttc; sourceTree = "<group>"; };
 		AB19AEA22551B15F00B72BC8 /* RecordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCollectionViewCell.swift; sourceTree = "<group>"; };
 		AB19AEA32551B15F00B72BC8 /* RecordCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordCollectionViewCell.xib; sourceTree = "<group>"; };
 		AB46C13C25486A6D00D2F22C /* AfterActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterActivityViewController.swift; sourceTree = "<group>"; };
@@ -601,14 +599,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		5A9DA15F25406BA10090EC41 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				5A119155253D995C00775C8D /* OnboardThemeSelectorViewController.swift */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		5AAE9BAF253F03B60075966B /* TermsOfService */ = {
 			isa = PBXGroup;
 			children = (
@@ -674,8 +664,6 @@
 				AB92A198253730FA003F8823 /* JoeyUITests */,
 				AB92A172253730F9003F8823 /* Products */,
 				AB92A1BA25374831003F8823 /* Frameworks */,
-				5A9DA15F25406BA10090EC41 /* Recovered References */,
-				AB933DDB25406AEE00DBBD0D /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -743,14 +731,6 @@
 				AB92A1BB25374831003F8823 /* CloudKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AB933DDB25406AEE00DBBD0D /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				5AD838C8253E8BCC0042D14E /* Yuanti.ttc */,
-			);
-			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		ABB1EE97254FCD0C00D1C5C1 /* Models */ = {
@@ -1199,7 +1179,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = A97SVDB2Q9;
 				INFOPLIST_FILE = Joey/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1222,7 +1202,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = A97SVDB2Q9;
 				INFOPLIST_FILE = Joey/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
