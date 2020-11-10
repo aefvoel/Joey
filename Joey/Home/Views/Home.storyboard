@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -135,20 +136,28 @@
                                                         <state key="normal">
                                                             <imageReference key="image" image="chevron.right" catalog="system" symbolScale="large"/>
                                                         </state>
-                                                        <connections>
-                                                            <segue destination="VC8-iB-yPj" kind="show" id="Y83-pZ-wyi"/>
-                                                        </connections>
                                                     </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSK-wi-xOz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="49"/>
+                                                        <gestureRecognizers/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="h1G-1q-3oR" appends="YES" id="sSW-ab-msu"/>
+                                                        </connections>
+                                                    </view>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.3529411764705882" green="0.76078431372549016" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="dSK-wi-xOz" secondAttribute="trailing" id="47k-Ch-Qva"/>
                                                     <constraint firstItem="z8z-A4-pae" firstAttribute="trailing" secondItem="bns-O8-eDQ" secondAttribute="trailing" id="AZA-Z6-lf4"/>
+                                                    <constraint firstItem="bns-O8-eDQ" firstAttribute="top" secondItem="dSK-wi-xOz" secondAttribute="bottom" constant="6" id="MGm-aA-qAI"/>
                                                     <constraint firstItem="z8z-A4-pae" firstAttribute="centerY" secondItem="ImO-Xs-HoM" secondAttribute="centerY" id="NXC-Is-twC"/>
                                                     <constraint firstItem="ImO-Xs-HoM" firstAttribute="leading" secondItem="bns-O8-eDQ" secondAttribute="leading" constant="8" id="Rbt-Hq-bPZ"/>
                                                     <constraint firstItem="bns-O8-eDQ" firstAttribute="top" secondItem="z8z-A4-pae" secondAttribute="bottom" constant="6" id="ZtL-R5-Nnv"/>
                                                     <constraint firstItem="ImO-Xs-HoM" firstAttribute="top" secondItem="k9H-5I-fPH" secondAttribute="top" constant="16" id="bhQ-NZ-ms4"/>
+                                                    <constraint firstItem="dSK-wi-xOz" firstAttribute="top" secondItem="k9H-5I-fPH" secondAttribute="top" id="h9C-6x-hr5"/>
                                                     <constraint firstAttribute="bottom" secondItem="bns-O8-eDQ" secondAttribute="bottom" constant="8" id="hdv-Jw-pm0"/>
                                                     <constraint firstItem="bns-O8-eDQ" firstAttribute="centerX" secondItem="k9H-5I-fPH" secondAttribute="centerX" id="nXr-AZ-ini"/>
+                                                    <constraint firstItem="dSK-wi-xOz" firstAttribute="leading" secondItem="k9H-5I-fPH" secondAttribute="leading" id="q3Z-dL-CE4"/>
                                                     <constraint firstItem="bns-O8-eDQ" firstAttribute="top" secondItem="ImO-Xs-HoM" secondAttribute="bottom" constant="8" id="qL3-Vz-5LA"/>
                                                     <constraint firstItem="ImO-Xs-HoM" firstAttribute="leading" secondItem="k9H-5I-fPH" secondAttribute="leading" constant="16" id="vw0-HF-GB0"/>
                                                 </constraints>
@@ -205,12 +214,10 @@
                                                         <state key="normal">
                                                             <imageReference key="image" image="chevron.right" catalog="system" symbolScale="large"/>
                                                         </state>
-                                                        <connections>
-                                                            <segue destination="WJi-62-i7p" kind="show" id="DbA-q3-pQ2"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.8666666666666667" green="0.40784313725490196" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstItem="2e9-ol-hf2" firstAttribute="centerY" secondItem="5mE-xT-02q" secondAttribute="centerY" id="7LD-zK-c8U"/>
                                                     <constraint firstItem="5mE-xT-02q" firstAttribute="leading" secondItem="ePU-PO-rAe" secondAttribute="leading" constant="16" id="BCu-LW-poU"/>
@@ -228,6 +235,9 @@
                                                         <real key="value" value="20"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="K8G-Eu-syl" appends="YES" id="mVG-JG-pOs"/>
+                                                </connections>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -280,6 +290,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zYA-E2-0BO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="h1G-1q-3oR">
+                    <connections>
+                        <segue destination="VC8-iB-yPj" kind="show" id="yaP-KM-vfc"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="K8G-Eu-syl">
+                    <connections>
+                        <segue destination="WJi-62-i7p" kind="show" id="jc0-Yx-3zP"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-291.304347826087" y="866.51785714285711"/>
         </scene>
@@ -301,7 +321,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W42-7V-VtR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="722" y="920"/>
+            <point key="canvasLocation" x="683" y="624"/>
         </scene>
         <!--SettingsViewController-->
         <scene sceneID="ITV-Qc-NKf">
@@ -321,7 +341,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="62w-Js-cuY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="680" y="846"/>
+            <point key="canvasLocation" x="642" y="712"/>
         </scene>
         <!--InstructionViewController-->
         <scene sceneID="8ln-Pb-JGW">
