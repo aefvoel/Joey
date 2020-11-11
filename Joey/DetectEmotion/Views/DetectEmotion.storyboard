@@ -196,8 +196,8 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8NC-22-5n7">
-                                <rect key="frame" x="139.5" y="582" width="135" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <rect key="frame" x="137.5" y="582" width="139" height="28"/>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -831,7 +831,7 @@ how intense do you think you need to be cheered up?</string>
                             <constraint firstItem="sO9-KW-DzL" firstAttribute="centerX" secondItem="xYR-A5-fv7" secondAttribute="centerX" id="f8Z-QW-Zbc"/>
                             <constraint firstItem="NfW-C8-BrN" firstAttribute="top" secondItem="FWu-pZ-5iH" secondAttribute="bottom" constant="128" id="g2p-nc-cr6"/>
                             <constraint firstItem="LaM-L9-HcK" firstAttribute="top" secondItem="NfW-C8-BrN" secondAttribute="bottom" constant="10" id="gSb-Yx-WxK"/>
-                            <constraint firstItem="VRr-Qs-888" firstAttribute="centerX" secondItem="NfW-C8-BrN" secondAttribute="centerX" id="hZ0-s7-xGL"/>
+                            <constraint firstItem="VRr-Qs-888" firstAttribute="centerX" secondItem="NfW-C8-BrN" secondAttribute="centerX" identifier="indicatorLabel" id="hZ0-s7-xGL"/>
                             <constraint firstItem="e0v-6M-yxl" firstAttribute="leading" secondItem="0Va-v8-nfB" secondAttribute="leading" id="hfE-9M-H9H"/>
                             <constraint firstItem="snN-j3-4qP" firstAttribute="top" secondItem="NfW-C8-BrN" secondAttribute="bottom" constant="100" id="i8y-5a-rPO"/>
                             <constraint firstItem="NfW-C8-BrN" firstAttribute="trailing" secondItem="FWu-pZ-5iH" secondAttribute="trailing" id="lH5-dZ-wdf"/>

@@ -12,8 +12,12 @@ class DetectEmotionScaleViewController: UIViewController {
     @IBOutlet weak var indicatorLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var navBar: NavigationBar!
-    var data: FollowUp?
+
     @IBOutlet weak var scaleSlider: CustomSlider!
+    @IBOutlet weak var scaleNumberLabel: UILabel!
+    
+    var data: FollowUp?
+    var currentScale = 5
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,16 +29,25 @@ class DetectEmotionScaleViewController: UIViewController {
             navBar.labelIndicator.text = "2/5"
         }
         
+        let thumbImage = UIImage(named: "indicator-\(currentScale)")
+        scaleSlider.setThumbImage(thumbImage, for: .normal)
+        scaleSlider.setThumbImage(thumbImage, for: .highlighted)
         questionLabel.text = data?.emotion.scaleQuestion
     }
     
     @IBAction func onSliderChanged(_ sender: UISlider) {
+        let scale = Int((sender.value * 10).rounded())
+        if currentScale != scale {
+            let thumbImage = UIImage(named: "indicator-\(scale)")
+            sender.setThumbImage(thumbImage, for: .normal)
+            sender.setThumbImage(thumbImage, for: .highlighted)
+            currentScale = scale
+            data?.scale = sender.value
+            indicatorLabel.text = data?.scaleType?.rawValue
+        }
         let trackRect = sender.trackRect(forBounds: sender.frame)
         let thumbRect = sender.thumbRect(forBounds: sender.bounds, trackRect: trackRect, value: sender.value)
-        indicatorLabel.center = CGPoint(x: thumbRect.midX, y: indicatorLabel.center.y)
-        
-        data?.scale = sender.value
-        indicatorLabel.text = data?.scaleType?.rawValue
+        indicatorLabel.center.x = thumbRect.midX
     }
     
     @IBAction func onOkayButtonTapped(_ sender: Any) {
