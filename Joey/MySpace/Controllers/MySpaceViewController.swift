@@ -132,7 +132,7 @@ class MySpaceViewController: UIViewController, ChartViewDelegate {
         
         
         DispatchQueue.main.async {
-            if !self.recordData.isEmpty {
+            if !self.listMonth.isEmpty {
                 self.labelNoHistory.isHidden = true
             }
             self.listMonth = self.listMonth.unique()

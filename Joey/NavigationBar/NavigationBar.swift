@@ -29,12 +29,25 @@ class NavigationBar: UIView {
         }
     }
     
+    var isBackToHome = false
+    
     override func awakeFromNib() {
         initWithNib()
     }
     
     @IBAction func onClickBackButton(_ sender: Any) {
-        delegate.navigationController?.popViewController(animated: true)
+        if isBackToHome {
+            popTo(HomeViewController.self)
+        } else {
+            delegate.navigationController?.popViewController(animated: true)
+        }
+    }
+    
+    func popTo<T>(_ vc: T.Type) {
+        let targetVC = delegate.navigationController?.viewControllers.first{$0 is T}
+       if let targetVC = targetVC {
+        delegate.navigationController?.popToViewController(targetVC, animated: true)
+       }
     }
     
     private func initWithNib() {
