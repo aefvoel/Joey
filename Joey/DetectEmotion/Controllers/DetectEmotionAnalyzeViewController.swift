@@ -21,9 +21,8 @@ class DetectEmotionAnalyzeViewController: UIViewController {
         sceneView.delegate = self
         navBar.delegate = self
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(sceneViewTapped))
-        tapGesture.delegate = self
-        sceneView.addGestureRecognizer(tapGesture)
+        let backgroundTapGesture = UITapGestureRecognizer(target: self, action: #selector(sceneViewTapped))
+        view.addGestureRecognizer(backgroundTapGesture)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -46,6 +45,11 @@ class DetectEmotionAnalyzeViewController: UIViewController {
         }
     }
 
+    // MARK: - Gesture Recognizer
+    
+    @objc func sceneViewTapped() {
+        performSegue(withIdentifier: "toQuestions", sender: nil)
+    }
 }
 
 // MARK: - ARSCNView Delegate
@@ -65,13 +69,5 @@ extension DetectEmotionAnalyzeViewController: ARSCNViewDelegate {
         } else {
             emotion = .neutral
         }
-    }
-}
-
-// MARK: - Gesture Recognizer
-
-extension DetectEmotionAnalyzeViewController: UIGestureRecognizerDelegate {
-    @objc func sceneViewTapped() {
-        performSegue(withIdentifier: "toQuestions", sender: nil)
     }
 }
