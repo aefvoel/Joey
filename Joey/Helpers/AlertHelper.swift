@@ -9,10 +9,12 @@ import UIKit
 
 class AlertHelper {
     // Create an alert with "Okay" button.
-    static func createAlert(title: String, message: String, onComplete: @escaping () -> Void) -> UIAlertController {
+    static func createAlert(title: String, message: String, onComplete: ( () -> Void)?) -> UIAlertController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: { (action) in
-            onComplete()
+            if let onComplete = onComplete {
+                onComplete()
+            }
         }))
         return alert
     }

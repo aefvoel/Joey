@@ -47,14 +47,21 @@ class NewMoodsViewController: UIViewController {
     }
     
     @IBAction func onClickContinueButton(_ sender: Any) {
-        if let data = data {
-            ThoughtsRecordHelper.save(tRecord: data) { (error) in
-                if error != nil {
-                    print("error")
-                }
-                else {
-                    DispatchQueue.main.async {
-                        self.performSegue(withIdentifier: "toFinish", sender: nil)
+        if data?.newMoods.isEmpty == true {
+            let alert = AlertHelper.createAlert(title: "Oops!", message: "Please tell me what's on your mind before we go on", onComplete: nil)
+            alert.view.tintColor = #colorLiteral(red: 0.3529411765, green: 0.7607843137, blue: 0.7411764706, alpha: 1)
+            present(alert, animated: true, completion: nil)
+        }
+        else {
+            if let data = data {
+                ThoughtsRecordHelper.save(tRecord: data) { (error) in
+                    if error != nil {
+                        print("error")
+                    }
+                    else {
+                        DispatchQueue.main.async {
+                            self.performSegue(withIdentifier: "toFinish", sender: nil)
+                        }
                     }
                 }
             }
@@ -76,14 +83,14 @@ class NewMoodsViewController: UIViewController {
     
     
     
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? FinishedViewController {
             vc.data = data
         }
-     }
-     
+    }
+    
     
 }
