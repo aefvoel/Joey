@@ -206,7 +206,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What’s the situation that leads you to the unpleasant feelings? " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsV-aP-7be">
-                                <rect key="frame" x="44.5" y="143" width="325" height="56"/>
+                                <rect key="frame" x="44.5" y="151" width="325" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="325" id="eCV-ds-BsC"/>
                                     <constraint firstAttribute="height" constant="56" id="kko-ng-QHo"/>
@@ -230,7 +230,6 @@
                             <constraint firstItem="gsV-aP-7be" firstAttribute="centerX" secondItem="rOX-SD-4yK" secondAttribute="centerX" id="HdH-PZ-NIZ"/>
                             <constraint firstItem="SUn-Qu-1Pb" firstAttribute="leading" secondItem="hd9-dn-A5V" secondAttribute="leading" constant="64" id="Hj4-aT-azt"/>
                             <constraint firstItem="hd9-dn-A5V" firstAttribute="trailing" secondItem="3Nl-8i-Q74" secondAttribute="trailing" constant="24" id="KSN-2f-lJb"/>
-                            <constraint firstItem="hd9-dn-A5V" firstAttribute="bottom" secondItem="gak-SE-me5" secondAttribute="bottom" constant="608" id="LBg-VH-zgV"/>
                             <constraint firstItem="j4c-DI-q3C" firstAttribute="top" secondItem="hd9-dn-A5V" secondAttribute="top" id="LWJ-ib-FT0"/>
                             <constraint firstItem="3Nl-8i-Q74" firstAttribute="top" secondItem="hd9-dn-A5V" secondAttribute="top" constant="84" id="O2n-7y-SKh"/>
                             <constraint firstItem="wWz-gX-rQc" firstAttribute="top" secondItem="eWY-jb-Lxo" secondAttribute="bottom" id="Pp8-id-mkn"/>
@@ -241,7 +240,8 @@
                             <constraint firstItem="hd9-dn-A5V" firstAttribute="trailing" secondItem="j4c-DI-q3C" secondAttribute="trailing" id="haU-uA-9Jz"/>
                             <constraint firstItem="wWz-gX-rQc" firstAttribute="centerX" secondItem="rOX-SD-4yK" secondAttribute="centerX" id="ign-KS-rQr"/>
                             <constraint firstItem="3Nl-8i-Q74" firstAttribute="leading" secondItem="hd9-dn-A5V" secondAttribute="leading" constant="24" id="mNm-5Q-e4V"/>
-                            <constraint firstItem="gak-SE-me5" firstAttribute="top" secondItem="gsV-aP-7be" secondAttribute="bottom" constant="33" id="o1F-kT-Mwq"/>
+                            <constraint firstItem="gak-SE-me5" firstAttribute="top" secondItem="gsV-aP-7be" secondAttribute="bottom" constant="25" id="o1F-kT-Mwq"/>
+                            <constraint firstItem="gsV-aP-7be" firstAttribute="top" secondItem="hd9-dn-A5V" secondAttribute="top" constant="107" id="rak-zJ-8by"/>
                             <constraint firstAttribute="bottom" secondItem="SUn-Qu-1Pb" secondAttribute="bottom" constant="72" id="uAF-kI-D6Y"/>
                             <constraint firstItem="hd9-dn-A5V" firstAttribute="trailing" secondItem="gak-SE-me5" secondAttribute="trailing" constant="24" id="zXT-eg-zRG"/>
                         </constraints>
@@ -918,7 +918,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What was going through your mind when the situation happpened?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gio-4K-qfe">
-                                <rect key="frame" x="44.5" y="143" width="325" height="56"/>
+                                <rect key="frame" x="44.5" y="151" width="325" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="325" id="Ica-ci-fIi"/>
                                     <constraint firstAttribute="height" constant="56" id="q1B-CM-P6T"/>
@@ -939,13 +939,13 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                         <constraints>
                             <constraint firstItem="x5w-Fp-oUR" firstAttribute="trailing" secondItem="vlQ-gr-0MG" secondAttribute="trailing" constant="24" id="1Me-Ks-fBT"/>
                             <constraint firstItem="4zM-oo-Ct5" firstAttribute="top" secondItem="vlQ-gr-0MG" secondAttribute="bottom" constant="42" id="31I-7P-CKj"/>
-                            <constraint firstItem="x5w-Fp-oUR" firstAttribute="bottom" secondItem="ryL-t0-orx" secondAttribute="bottom" constant="608" id="7DK-sN-Oej"/>
                             <constraint firstItem="LVr-x4-enK" firstAttribute="leading" secondItem="x5w-Fp-oUR" secondAttribute="leading" constant="64" id="7Yl-tw-BrF"/>
                             <constraint firstItem="vlQ-gr-0MG" firstAttribute="leading" secondItem="x5w-Fp-oUR" secondAttribute="leading" constant="24" id="7ih-Ge-Uxn"/>
                             <constraint firstItem="LVr-x4-enK" firstAttribute="top" secondItem="p92-9P-m7V" secondAttribute="bottom" constant="68" id="9vq-3z-Rn6"/>
+                            <constraint firstItem="Gio-4K-qfe" firstAttribute="top" secondItem="x5w-Fp-oUR" secondAttribute="top" constant="107" id="DAZ-7v-79G"/>
                             <constraint firstItem="x5w-Fp-oUR" firstAttribute="trailing" secondItem="LVr-x4-enK" secondAttribute="trailing" constant="64" id="Ogm-tN-Ffi"/>
                             <constraint firstItem="vlQ-gr-0MG" firstAttribute="top" secondItem="x5w-Fp-oUR" secondAttribute="top" constant="84" id="SBM-VP-L91"/>
-                            <constraint firstItem="ryL-t0-orx" firstAttribute="top" secondItem="Gio-4K-qfe" secondAttribute="bottom" constant="33" id="bVW-tH-kwe"/>
+                            <constraint firstItem="ryL-t0-orx" firstAttribute="top" secondItem="Gio-4K-qfe" secondAttribute="bottom" constant="25" id="bVW-tH-kwe"/>
                             <constraint firstItem="Gio-4K-qfe" firstAttribute="centerX" secondItem="oOq-Hw-d9N" secondAttribute="centerX" id="emg-NA-OUb"/>
                             <constraint firstItem="1K0-ST-YgA" firstAttribute="top" secondItem="x5w-Fp-oUR" secondAttribute="top" id="f8b-NV-O1w"/>
                             <constraint firstItem="x5w-Fp-oUR" firstAttribute="trailing" secondItem="ryL-t0-orx" secondAttribute="trailing" constant="24" id="h7y-5z-Jnd"/>
@@ -1002,7 +1002,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you feel about that?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7k9-tU-e6Z">
-                                <rect key="frame" x="44.5" y="143" width="325" height="56"/>
+                                <rect key="frame" x="44.5" y="149" width="325" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="6Zq-a8-Rpr"/>
                                     <constraint firstAttribute="width" constant="325" id="Ci0-B9-KrH"/>
@@ -1310,7 +1310,6 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                             <constraint firstItem="aFl-gc-ptI" firstAttribute="top" secondItem="C2H-BZ-dGi" secondAttribute="bottom" constant="24" id="EL5-0Y-q39"/>
                             <constraint firstItem="5HS-IZ-fcO" firstAttribute="trailing" secondItem="Zlr-Ks-xno" secondAttribute="trailing" id="HEF-uW-GZc"/>
                             <constraint firstItem="R9e-ac-pAw" firstAttribute="top" secondItem="K5O-gs-Uje" secondAttribute="bottom" constant="16" id="Hbm-N1-fqi"/>
-                            <constraint firstItem="5HS-IZ-fcO" firstAttribute="bottom" secondItem="s6q-Tz-eXp" secondAttribute="bottom" constant="608" id="Hej-qs-mLI"/>
                             <constraint firstItem="R9e-ac-pAw" firstAttribute="centerX" secondItem="ZCb-cL-0vf" secondAttribute="centerX" id="INL-I2-LyW"/>
                             <constraint firstItem="5HS-IZ-fcO" firstAttribute="trailing" secondItem="Ayk-ie-BpX" secondAttribute="trailing" constant="40" id="Mxf-Wa-d9M"/>
                             <constraint firstItem="C2H-BZ-dGi" firstAttribute="leading" secondItem="5HS-IZ-fcO" secondAttribute="leading" constant="40" id="QaG-Zf-MTO"/>
@@ -1333,7 +1332,8 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                             <constraint firstItem="Ayk-ie-BpX" firstAttribute="top" secondItem="NDu-DZ-2Z6" secondAttribute="bottom" constant="16" id="o2q-zd-mFB"/>
                             <constraint firstItem="zfI-ku-sYQ" firstAttribute="top" secondItem="5HS-IZ-fcO" secondAttribute="top" constant="84" id="oJv-Hc-qtm"/>
                             <constraint firstItem="NDu-DZ-2Z6" firstAttribute="centerX" secondItem="ZCb-cL-0vf" secondAttribute="centerX" id="pqR-NB-Sb7"/>
-                            <constraint firstItem="s6q-Tz-eXp" firstAttribute="top" secondItem="7k9-tU-e6Z" secondAttribute="bottom" constant="33" id="wip-7x-RPG"/>
+                            <constraint firstItem="7k9-tU-e6Z" firstAttribute="top" secondItem="5HS-IZ-fcO" secondAttribute="top" constant="105" id="rdh-ci-zIw"/>
+                            <constraint firstItem="s6q-Tz-eXp" firstAttribute="top" secondItem="7k9-tU-e6Z" secondAttribute="bottom" constant="27" id="wip-7x-RPG"/>
                             <constraint firstItem="aFl-gc-ptI" firstAttribute="leading" secondItem="5HS-IZ-fcO" secondAttribute="leading" constant="64" id="zao-1n-0iX"/>
                         </constraints>
                     </view>
@@ -1428,7 +1428,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the evidence that makes you think this thought is true?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sug-Kn-7QE">
-                                <rect key="frame" x="44.5" y="143" width="325" height="56"/>
+                                <rect key="frame" x="44.5" y="151" width="325" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="XFL-Yr-noP"/>
                                     <constraint firstAttribute="width" constant="325" id="vRf-Kl-Gg6"/>
@@ -1450,7 +1450,6 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                             <constraint firstItem="rVU-7b-mn5" firstAttribute="leading" secondItem="b9e-zI-Eds" secondAttribute="leading" id="1lH-4X-ae3"/>
                             <constraint firstItem="b9e-zI-Eds" firstAttribute="trailing" secondItem="cDc-Rm-lz0" secondAttribute="trailing" constant="64" id="3DS-2h-A7D"/>
                             <constraint firstItem="QtT-Oi-CkW" firstAttribute="leading" secondItem="b9e-zI-Eds" secondAttribute="leading" constant="24" id="4NX-C5-FT1"/>
-                            <constraint firstItem="b9e-zI-Eds" firstAttribute="bottom" secondItem="Z9D-kG-MYt" secondAttribute="bottom" constant="608" id="4y9-gT-gea"/>
                             <constraint firstItem="b9e-zI-Eds" firstAttribute="trailing" secondItem="rVU-7b-mn5" secondAttribute="trailing" id="Asb-w3-uok"/>
                             <constraint firstItem="cDc-Rm-lz0" firstAttribute="leading" secondItem="b9e-zI-Eds" secondAttribute="leading" constant="64" id="BVt-fQ-Ia2"/>
                             <constraint firstItem="cDc-Rm-lz0" firstAttribute="top" secondItem="cRg-SK-eb4" secondAttribute="bottom" constant="68" id="F9Z-wC-3QK"/>
@@ -1458,6 +1457,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                             <constraint firstItem="Sug-Kn-7QE" firstAttribute="centerX" secondItem="7Ff-FZ-eoQ" secondAttribute="centerX" id="L9a-n2-9ms"/>
                             <constraint firstItem="QtT-Oi-CkW" firstAttribute="top" secondItem="b9e-zI-Eds" secondAttribute="top" constant="84" id="Mi7-Ac-f5E"/>
                             <constraint firstAttribute="bottom" secondItem="cDc-Rm-lz0" secondAttribute="bottom" constant="72" id="N91-Id-pbE"/>
+                            <constraint firstItem="Sug-Kn-7QE" firstAttribute="top" secondItem="b9e-zI-Eds" secondAttribute="top" constant="107" id="O89-i8-hfm"/>
                             <constraint firstItem="Efg-kK-VPH" firstAttribute="top" secondItem="QtT-Oi-CkW" secondAttribute="bottom" constant="42" id="SFP-Pc-lbg"/>
                             <constraint firstItem="Efg-kK-VPH" firstAttribute="leading" secondItem="b9e-zI-Eds" secondAttribute="leading" constant="23" id="UDS-Y1-zaR"/>
                             <constraint firstItem="b9e-zI-Eds" firstAttribute="trailing" secondItem="QtT-Oi-CkW" secondAttribute="trailing" constant="24" id="Ybi-pc-eUC"/>
@@ -1465,7 +1465,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                             <constraint firstItem="b9e-zI-Eds" firstAttribute="trailing" secondItem="Z9D-kG-MYt" secondAttribute="trailing" constant="24" id="aaN-Wq-OwH"/>
                             <constraint firstItem="rVU-7b-mn5" firstAttribute="top" secondItem="b9e-zI-Eds" secondAttribute="top" id="cgg-z1-YM8"/>
                             <constraint firstItem="cRg-SK-eb4" firstAttribute="top" secondItem="Efg-kK-VPH" secondAttribute="bottom" id="jRl-jk-49k"/>
-                            <constraint firstItem="Z9D-kG-MYt" firstAttribute="top" secondItem="Sug-Kn-7QE" secondAttribute="bottom" constant="33" id="o2K-As-3Oe"/>
+                            <constraint firstItem="Z9D-kG-MYt" firstAttribute="top" secondItem="Sug-Kn-7QE" secondAttribute="bottom" constant="25" id="o2K-As-3Oe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="s2U-j9-akk"/>
@@ -1559,7 +1559,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the evidence that against your negative thought?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bi4-bo-J2J">
-                                <rect key="frame" x="44.5" y="143" width="325" height="56"/>
+                                <rect key="frame" x="44.5" y="151" width="325" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="325" id="MYP-VM-qyJ"/>
                                     <constraint firstAttribute="height" constant="56" id="ysv-ip-93x"/>
@@ -1581,6 +1581,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                             <constraint firstItem="rlf-23-OMh" firstAttribute="trailing" secondItem="mLe-vq-l0C" secondAttribute="trailing" constant="64" id="1c3-e2-lfd"/>
                             <constraint firstItem="gD4-lU-gOu" firstAttribute="leading" secondItem="rlf-23-OMh" secondAttribute="leading" id="3bb-pE-bBb"/>
                             <constraint firstItem="gD4-lU-gOu" firstAttribute="top" secondItem="rlf-23-OMh" secondAttribute="top" id="3yk-nt-j5Q"/>
+                            <constraint firstItem="bi4-bo-J2J" firstAttribute="top" secondItem="rlf-23-OMh" secondAttribute="top" constant="107" id="5VF-t1-eyd"/>
                             <constraint firstItem="rlf-23-OMh" firstAttribute="trailing" secondItem="gD4-lU-gOu" secondAttribute="trailing" id="6r4-n5-rgn"/>
                             <constraint firstItem="6sg-Qm-z81" firstAttribute="leading" secondItem="rlf-23-OMh" secondAttribute="leading" constant="23" id="9eb-BU-Owt"/>
                             <constraint firstAttribute="bottom" secondItem="mLe-vq-l0C" secondAttribute="bottom" constant="72" id="9t4-C5-Uv7"/>
@@ -1593,9 +1594,8 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                             <constraint firstItem="Wge-qa-0gS" firstAttribute="top" secondItem="rlf-23-OMh" secondAttribute="top" constant="84" id="Z3T-J0-1NC"/>
                             <constraint firstItem="6sg-Qm-z81" firstAttribute="top" secondItem="Wge-qa-0gS" secondAttribute="bottom" constant="42" id="ZGf-0M-EdB"/>
                             <constraint firstItem="rlf-23-OMh" firstAttribute="trailing" secondItem="iBw-3f-t77" secondAttribute="trailing" constant="24" id="aW9-u8-n2B"/>
-                            <constraint firstItem="rlf-23-OMh" firstAttribute="bottom" secondItem="iBw-3f-t77" secondAttribute="bottom" constant="608" id="js6-d3-RDn"/>
                             <constraint firstItem="mLe-vq-l0C" firstAttribute="leading" secondItem="rlf-23-OMh" secondAttribute="leading" constant="64" id="pPn-nT-95F"/>
-                            <constraint firstItem="iBw-3f-t77" firstAttribute="top" secondItem="bi4-bo-J2J" secondAttribute="bottom" constant="33" id="yYH-Le-JAU"/>
+                            <constraint firstItem="iBw-3f-t77" firstAttribute="top" secondItem="bi4-bo-J2J" secondAttribute="bottom" constant="25" id="yYH-Le-JAU"/>
                             <constraint firstItem="JlT-jv-Smg" firstAttribute="top" secondItem="6sg-Qm-z81" secondAttribute="bottom" id="yug-Dj-fbn"/>
                         </constraints>
                     </view>
@@ -1709,9 +1709,9 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                         <viewLayoutGuide key="safeArea" id="1f3-Op-fti"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="1f3-Op-fti" firstAttribute="bottom" secondItem="V7w-Gu-AGB" secondAttribute="bottom" constant="608" id="0uH-Hz-bp7"/>
                             <constraint firstItem="5FA-16-hCk" firstAttribute="top" secondItem="waQ-jH-dpL" secondAttribute="bottom" id="AwK-EO-dxa"/>
                             <constraint firstItem="g6I-MI-1MC" firstAttribute="top" secondItem="5FA-16-hCk" secondAttribute="bottom" constant="68" id="Awb-PP-bbZ"/>
+                            <constraint firstItem="J6m-KU-xru" firstAttribute="top" secondItem="1f3-Op-fti" secondAttribute="top" constant="90" id="G3w-Jj-deR"/>
                             <constraint firstItem="1f3-Op-fti" firstAttribute="trailing" secondItem="g6I-MI-1MC" secondAttribute="trailing" constant="64" id="G8H-0Q-Q8X"/>
                             <constraint firstItem="5FA-16-hCk" firstAttribute="trailing" secondItem="MSL-LE-Ica" secondAttribute="trailingMargin" id="K8Q-z6-AJT"/>
                             <constraint firstItem="mP9-oC-k61" firstAttribute="top" secondItem="1f3-Op-fti" secondAttribute="top" id="UnX-Ku-dBa"/>
@@ -1774,7 +1774,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now, how do you feel after believing in your new thoughts?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnN-2O-bTe">
-                                <rect key="frame" x="44.5" y="143" width="325" height="56"/>
+                                <rect key="frame" x="44.5" y="151" width="325" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="325" id="3Vf-uu-RVB"/>
                                     <constraint firstAttribute="height" constant="56" id="zzC-cq-G4y"/>
@@ -2093,11 +2093,11 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                             <constraint firstItem="5c4-zz-MnD" firstAttribute="top" secondItem="UO1-6S-ytg" secondAttribute="bottom" constant="16" id="Wtc-gD-G6F"/>
                             <constraint firstItem="u4I-F5-S9r" firstAttribute="leading" secondItem="3GX-Mo-eXz" secondAttribute="leading" constant="64" id="bnQ-BC-ZGU"/>
                             <constraint firstItem="3GX-Mo-eXz" firstAttribute="trailing" secondItem="u4I-F5-S9r" secondAttribute="trailing" constant="64" id="bom-7U-2rA"/>
-                            <constraint firstItem="3GX-Mo-eXz" firstAttribute="bottom" secondItem="cRp-or-oED" secondAttribute="bottom" constant="608" id="de8-Ey-46G"/>
                             <constraint firstItem="3GX-Mo-eXz" firstAttribute="trailing" secondItem="UO1-6S-ytg" secondAttribute="trailing" constant="40" id="e9p-f7-qG8"/>
                             <constraint firstItem="bYn-Sy-cl5" firstAttribute="top" secondItem="5c4-zz-MnD" secondAttribute="bottom" constant="16" id="h0u-DU-Vw1"/>
+                            <constraint firstItem="gnN-2O-bTe" firstAttribute="top" secondItem="3GX-Mo-eXz" secondAttribute="top" constant="107" id="iQz-l8-0kw"/>
                             <constraint firstItem="3GX-Mo-eXz" firstAttribute="trailing" secondItem="cRp-or-oED" secondAttribute="trailing" constant="24" id="ihe-Bd-boI"/>
-                            <constraint firstItem="cRp-or-oED" firstAttribute="top" secondItem="gnN-2O-bTe" secondAttribute="bottom" constant="33" id="jc3-sQ-HFZ"/>
+                            <constraint firstItem="cRp-or-oED" firstAttribute="top" secondItem="gnN-2O-bTe" secondAttribute="bottom" constant="25" id="jc3-sQ-HFZ"/>
                             <constraint firstItem="RNH-AX-P9P" firstAttribute="leading" secondItem="3GX-Mo-eXz" secondAttribute="leading" id="lFA-8J-IWc"/>
                             <constraint firstItem="NMn-Mu-ggT" firstAttribute="top" secondItem="3GX-Mo-eXz" secondAttribute="top" constant="84" id="lTq-Lh-Tuv"/>
                             <constraint firstItem="3GX-Mo-eXz" firstAttribute="trailing" secondItem="qo9-vt-TAg" secondAttribute="trailing" constant="40" id="n5Z-BX-KHn"/>
@@ -2136,29 +2136,35 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                     <constraint firstAttribute="width" constant="227" id="egx-JD-AHU"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Well Done!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olu-NU-fag">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Well Done!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olu-NU-fag">
                                 <rect key="frame" x="12" y="137" width="390" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="44"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mascotBigBubble" translatesAutoresizingMaskIntoConstraints="NO" id="WYH-CA-Gxh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotBigBubble" translatesAutoresizingMaskIntoConstraints="NO" id="WYH-CA-Gxh">
                                 <rect key="frame" x="24" y="214" width="366" height="293"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="366" id="7vN-iI-BMg"/>
+                                    <constraint firstAttribute="height" constant="293" id="qzV-mo-HuX"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMn-NV-Arw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMn-NV-Arw">
                                 <rect key="frame" x="36" y="242" width="342" height="174"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="nFf-vl-TCP"/>
+                                </constraints>
                                 <string key="text">You just finished challenging your thoughts! 
 Phew, it’s never been an easy task but glad you made it! </string>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uic-9A-JyE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uic-9A-JyE">
                                 <rect key="frame" x="22" y="549" width="370" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="b3K-gg-iF2"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2174,11 +2180,23 @@ Phew, it’s never been an easy task but glad you made it! </string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="Olu-NU-fag" firstAttribute="top" secondItem="GTG-MB-nHO" secondAttribute="bottom" constant="46" id="0Nk-CK-X1l"/>
+                            <constraint firstItem="VMn-NV-Arw" firstAttribute="top" secondItem="Olu-NU-fag" secondAttribute="bottom" constant="43" id="0Zl-wO-evX"/>
+                            <constraint firstItem="msv-Sq-pp5" firstAttribute="trailing" secondItem="uic-9A-JyE" secondAttribute="trailing" constant="22" id="24z-Qj-0c8"/>
+                            <constraint firstItem="uic-9A-JyE" firstAttribute="leading" secondItem="msv-Sq-pp5" secondAttribute="leading" constant="22" id="8SA-84-oM7"/>
                             <constraint firstItem="GTG-MB-nHO" firstAttribute="leading" secondItem="msv-Sq-pp5" secondAttribute="leading" id="8oC-kK-J6l"/>
+                            <constraint firstItem="WYH-CA-Gxh" firstAttribute="leading" secondItem="msv-Sq-pp5" secondAttribute="leading" constant="24" id="ACr-Gw-aRe"/>
                             <constraint firstItem="GTG-MB-nHO" firstAttribute="top" secondItem="msv-Sq-pp5" secondAttribute="top" id="Bdy-y7-RkP"/>
+                            <constraint firstItem="msv-Sq-pp5" firstAttribute="trailing" secondItem="WYH-CA-Gxh" secondAttribute="trailing" constant="24" id="Be0-uV-ahB"/>
+                            <constraint firstItem="Olu-NU-fag" firstAttribute="leading" secondItem="msv-Sq-pp5" secondAttribute="leading" constant="12" id="Ls6-Ft-P4B"/>
                             <constraint firstItem="msv-Sq-pp5" firstAttribute="trailing" secondItem="GTG-MB-nHO" secondAttribute="trailing" id="Rxs-7i-phK"/>
                             <constraint firstItem="uJJ-gY-5I2" firstAttribute="centerX" secondItem="VHA-Zt-Xzg" secondAttribute="centerX" id="SPh-WW-ol9"/>
+                            <constraint firstItem="VMn-NV-Arw" firstAttribute="leading" secondItem="msv-Sq-pp5" secondAttribute="leading" constant="36" id="e4x-pA-nMY"/>
+                            <constraint firstItem="WYH-CA-Gxh" firstAttribute="top" secondItem="Olu-NU-fag" secondAttribute="bottom" constant="15" id="feT-TY-r5f"/>
+                            <constraint firstItem="uic-9A-JyE" firstAttribute="top" secondItem="WYH-CA-Gxh" secondAttribute="bottom" constant="42" id="gRq-6j-RHl"/>
                             <constraint firstAttribute="bottom" secondItem="uJJ-gY-5I2" secondAttribute="bottom" id="hzd-WJ-iG9"/>
+                            <constraint firstItem="msv-Sq-pp5" firstAttribute="trailing" secondItem="VMn-NV-Arw" secondAttribute="trailing" constant="36" id="pq0-R3-xLY"/>
+                            <constraint firstItem="msv-Sq-pp5" firstAttribute="trailing" secondItem="Olu-NU-fag" secondAttribute="trailing" constant="12" id="wUF-c9-cEB"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="bcJ-Yi-9n9" appends="YES" id="uYd-uU-nIi"/>
@@ -2221,9 +2239,11 @@ Phew, it’s never been an easy task but glad you made it! </string>
                                     <constraint firstAttribute="height" constant="206" id="lAS-eH-ff6"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dq4-CZ-XJK">
-                                <rect key="frame" x="43" y="154" width="329" height="134"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dq4-CZ-XJK">
+                                <rect key="frame" x="42" y="154" width="330" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="Myt-N3-txb"/>
+                                </constraints>
                                 <string key="text">I’ve prepared the summary of your answers for this activity. 
 Do you want to see it?</string>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
@@ -2280,6 +2300,14 @@ Do you want to see it?</string>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="dqp-pa-l4v" firstAttribute="leading" secondItem="yse-95-t6O" secondAttribute="leading" id="2i6-WZ-ckv"/>
+                                    <constraint firstItem="YKq-eD-B4M" firstAttribute="top" secondItem="dqp-pa-l4v" secondAttribute="bottom" constant="16" id="EhT-3J-vSM"/>
+                                    <constraint firstAttribute="trailing" secondItem="YKq-eD-B4M" secondAttribute="trailing" id="Myc-Dc-qQD"/>
+                                    <constraint firstItem="dqp-pa-l4v" firstAttribute="top" secondItem="yse-95-t6O" secondAttribute="top" id="NkO-Tz-wFi"/>
+                                    <constraint firstItem="YKq-eD-B4M" firstAttribute="leading" secondItem="yse-95-t6O" secondAttribute="leading" id="ObN-FG-86x"/>
+                                    <constraint firstAttribute="trailing" secondItem="dqp-pa-l4v" secondAttribute="trailing" id="QZq-ka-63a"/>
+                                </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11V-JQ-s16" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="47"/>
@@ -2303,6 +2331,9 @@ Do you want to see it?</string>
                             <constraint firstItem="jbg-bS-hBT" firstAttribute="top" secondItem="rkB-wc-H4F" secondAttribute="top" constant="93" id="a4C-ch-2J9"/>
                             <constraint firstItem="yse-95-t6O" firstAttribute="top" secondItem="jbg-bS-hBT" secondAttribute="bottom" constant="73" id="btP-y8-Ea0"/>
                             <constraint firstItem="11V-JQ-s16" firstAttribute="top" secondItem="rkB-wc-H4F" secondAttribute="top" id="k3g-aA-pjh"/>
+                            <constraint firstItem="rkB-wc-H4F" firstAttribute="trailing" secondItem="dq4-CZ-XJK" secondAttribute="trailing" constant="42" id="m58-mN-4eA"/>
+                            <constraint firstItem="dq4-CZ-XJK" firstAttribute="leading" secondItem="rkB-wc-H4F" secondAttribute="leading" constant="42" id="oJ6-0R-lMB"/>
+                            <constraint firstItem="dq4-CZ-XJK" firstAttribute="top" secondItem="11V-JQ-s16" secondAttribute="bottom" constant="63" id="zmp-85-6FQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OS4-3r-gkI"/>
@@ -2565,10 +2596,20 @@ Do you want to see it?</string>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nwb-9S-x34" secondAttribute="trailing" id="65w-Bq-4ap"/>
+                                    <constraint firstItem="nwb-9S-x34" firstAttribute="leading" secondItem="CjY-SE-nQe" secondAttribute="leading" id="746-mt-XAI"/>
+                                    <constraint firstItem="IIU-zg-uVo" firstAttribute="top" secondItem="CjY-SE-nQe" secondAttribute="top" id="P1h-bG-VBy"/>
+                                    <constraint firstItem="IIU-zg-uVo" firstAttribute="leading" secondItem="CjY-SE-nQe" secondAttribute="leading" id="XOv-MF-zWf"/>
+                                    <constraint firstItem="nwb-9S-x34" firstAttribute="top" secondItem="IIU-zg-uVo" secondAttribute="bottom" constant="16" id="XmD-cT-hqO"/>
+                                    <constraint firstAttribute="trailing" secondItem="IIU-zg-uVo" secondAttribute="trailing" id="oPD-gA-OsI"/>
+                                </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOF-XZ-ZRt">
-                                <rect key="frame" x="32" y="152" width="351" height="134"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOF-XZ-ZRt">
+                                <rect key="frame" x="31" y="152" width="352" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="VEt-Fw-f83"/>
+                                </constraints>
                                 <string key="text">Don’t worry, your answers are saved in “My Space”. You can always see it anytime you want. 
 Do you want to do this activity again?</string>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
@@ -2580,13 +2621,16 @@ Do you want to do this activity again?</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="Z7M-X8-Zwh" firstAttribute="trailing" secondItem="HOF-XZ-ZRt" secondAttribute="trailing" constant="31" id="1E7-lX-Qvw"/>
                             <constraint firstItem="CjY-SE-nQe" firstAttribute="top" secondItem="pbC-Df-mg1" secondAttribute="bottom" constant="73" id="5Ss-Bb-0k3"/>
                             <constraint firstItem="gF9-Be-2Aa" firstAttribute="centerX" secondItem="vti-Ru-LtW" secondAttribute="centerX" id="AD7-hV-sYq"/>
                             <constraint firstAttribute="bottom" secondItem="gF9-Be-2Aa" secondAttribute="bottom" id="I2q-aV-oDS"/>
+                            <constraint firstItem="HOF-XZ-ZRt" firstAttribute="top" secondItem="Z7M-X8-Zwh" secondAttribute="top" constant="108" id="I7W-Fj-0So"/>
                             <constraint firstItem="CjY-SE-nQe" firstAttribute="leading" secondItem="Z7M-X8-Zwh" secondAttribute="leading" constant="64" id="KCo-fo-dgB"/>
                             <constraint firstItem="Z7M-X8-Zwh" firstAttribute="trailing" secondItem="CjY-SE-nQe" secondAttribute="trailing" constant="64" id="LwR-sj-bAF"/>
                             <constraint firstItem="pbC-Df-mg1" firstAttribute="leading" secondItem="Z7M-X8-Zwh" secondAttribute="leading" constant="24" id="PdE-46-YLT"/>
                             <constraint firstItem="pbC-Df-mg1" firstAttribute="top" secondItem="Z7M-X8-Zwh" secondAttribute="top" constant="93" id="bdM-T8-kUm"/>
+                            <constraint firstItem="HOF-XZ-ZRt" firstAttribute="leading" secondItem="Z7M-X8-Zwh" secondAttribute="leading" constant="31" id="d4y-lz-3Gy"/>
                             <constraint firstItem="Z7M-X8-Zwh" firstAttribute="trailing" secondItem="pbC-Df-mg1" secondAttribute="trailing" constant="24" id="rGo-c9-b30"/>
                         </constraints>
                     </view>
@@ -2709,8 +2753,8 @@ Do you want to do this activity again?</string>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="XPe-b6-hJn"/>
-        <segue reference="RFT-ku-kxy"/>
+        <segue reference="R1z-Qy-Fwh"/>
+        <segue reference="Y0y-Q6-4kK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="OB_modalClose_xButton" width="41" height="41"/>
