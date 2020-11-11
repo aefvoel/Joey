@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -307,6 +308,7 @@
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="t2L-Ou-JCQ">
                                         <rect key="frame" x="8" y="44" width="350" height="249"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <inset key="scrollIndicatorInsets" minX="-1" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="4" minimumInteritemSpacing="0.0" id="1fl-r5-GTp">
                                             <size key="itemSize" width="330" height="45"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -319,16 +321,23 @@
                                             <outlet property="delegate" destination="wHO-vL-hh1" id="eJI-Q9-BJr"/>
                                         </connections>
                                     </collectionView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We dont have any history yet. Let's get closer by checking your feeling and recording your thoughts with me :)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Kge-Yl-gzZ">
+                                        <rect key="frame" x="40" y="22" width="286" height="249"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="STYuanti-SC-Light" family="Yuanti SC" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="aC7-f1-atp" secondAttribute="trailing" constant="54" id="DAo-pb-9DX"/>
-                                    <constraint firstAttribute="bottom" secondItem="t2L-Ou-JCQ" secondAttribute="bottom" id="Pkb-tM-jHv"/>
+                                    <constraint firstItem="aC7-f1-atp" firstAttribute="leading" secondItem="5VW-iQ-Sh8" secondAttribute="leading" constant="24" id="BGE-QE-UDb"/>
+                                    <constraint firstAttribute="bottom" secondItem="t2L-Ou-JCQ" secondAttribute="bottom" id="Ccv-K3-D8L"/>
+                                    <constraint firstAttribute="trailing" secondItem="aC7-f1-atp" secondAttribute="trailing" constant="54" id="HUF-Al-ptj"/>
                                     <constraint firstItem="t2L-Ou-JCQ" firstAttribute="top" secondItem="aC7-f1-atp" secondAttribute="bottom" constant="8" id="Yaj-Pl-zFB"/>
-                                    <constraint firstItem="t2L-Ou-JCQ" firstAttribute="trailing" secondItem="5VW-iQ-Sh8" secondAttribute="trailingMargin" id="bms-VX-8vl"/>
-                                    <constraint firstItem="aC7-f1-atp" firstAttribute="leading" secondItem="5VW-iQ-Sh8" secondAttribute="leading" constant="24" id="caA-40-LXC"/>
-                                    <constraint firstItem="t2L-Ou-JCQ" firstAttribute="leading" secondItem="5VW-iQ-Sh8" secondAttribute="leadingMargin" id="rVB-iJ-Ox4"/>
-                                    <constraint firstItem="aC7-f1-atp" firstAttribute="top" secondItem="5VW-iQ-Sh8" secondAttribute="topMargin" id="v36-zf-Kpg"/>
+                                    <constraint firstItem="t2L-Ou-JCQ" firstAttribute="centerX" secondItem="Kge-Yl-gzZ" secondAttribute="centerX" id="sNh-hI-eHh"/>
+                                    <constraint firstItem="aC7-f1-atp" firstAttribute="top" secondItem="5VW-iQ-Sh8" secondAttribute="topMargin" id="uvX-j9-hN2"/>
+                                    <constraint firstItem="t2L-Ou-JCQ" firstAttribute="leading" secondItem="5VW-iQ-Sh8" secondAttribute="leadingMargin" id="z1g-Oa-Oum"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -347,25 +356,25 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="gRD-4h-E0m" firstAttribute="top" secondItem="jnn-za-1Ry" secondAttribute="bottom" constant="8" id="8XZ-oV-kaM"/>
-                            <constraint firstItem="5VW-iQ-Sh8" firstAttribute="bottom" secondItem="mD2-Xq-dff" secondAttribute="bottom" id="8um-wz-OLQ"/>
                             <constraint firstItem="LCh-Yr-Qor" firstAttribute="top" secondItem="67s-Gs-JQB" secondAttribute="top" constant="320" id="BKl-4s-E9n"/>
                             <constraint firstItem="gRD-4h-E0m" firstAttribute="leading" secondItem="mD2-Xq-dff" secondAttribute="leading" constant="24" id="Bid-Mn-aLj"/>
+                            <constraint firstItem="5VW-iQ-Sh8" firstAttribute="trailing" secondItem="qk5-Bn-mwb" secondAttribute="trailing" id="CPB-F5-I2u"/>
                             <constraint firstItem="gRD-4h-E0m" firstAttribute="leading" secondItem="LCh-Yr-Qor" secondAttribute="leading" id="FB6-Rh-r5j"/>
                             <constraint firstItem="qk5-Bn-mwb" firstAttribute="leading" secondItem="LCh-Yr-Qor" secondAttribute="leading" id="JF6-Xy-IUz"/>
                             <constraint firstItem="LCh-Yr-Qor" firstAttribute="top" secondItem="gRD-4h-E0m" secondAttribute="bottom" constant="24" id="MYa-mX-KdP"/>
+                            <constraint firstItem="5VW-iQ-Sh8" firstAttribute="top" secondItem="67s-Gs-JQB" secondAttribute="top" constant="569" id="McA-Yg-yaa"/>
                             <constraint firstItem="jnn-za-1Ry" firstAttribute="centerX" secondItem="67s-Gs-JQB" secondAttribute="centerX" id="N0J-7n-oip"/>
                             <constraint firstItem="jnn-za-1Ry" firstAttribute="leading" secondItem="mD2-Xq-dff" secondAttribute="leading" id="Nml-Uo-J5m"/>
                             <constraint firstItem="gRD-4h-E0m" firstAttribute="top" secondItem="67s-Gs-JQB" secondAttribute="top" constant="99" id="RGT-tV-x05"/>
                             <constraint firstItem="jnn-za-1Ry" firstAttribute="centerX" secondItem="gRD-4h-E0m" secondAttribute="centerX" id="VIq-7N-ci3"/>
-                            <constraint firstItem="5VW-iQ-Sh8" firstAttribute="trailing" secondItem="qk5-Bn-mwb" secondAttribute="trailing" id="YNe-Tg-eUr"/>
+                            <constraint firstItem="5VW-iQ-Sh8" firstAttribute="leading" secondItem="qk5-Bn-mwb" secondAttribute="leading" id="XGD-B0-fV9"/>
                             <constraint firstItem="qk5-Bn-mwb" firstAttribute="top" secondItem="LCh-Yr-Qor" secondAttribute="bottom" constant="24" id="bv9-AX-qom"/>
                             <constraint firstItem="gRD-4h-E0m" firstAttribute="trailing" secondItem="LCh-Yr-Qor" secondAttribute="trailing" id="e4A-8d-M1O"/>
-                            <constraint firstItem="5VW-iQ-Sh8" firstAttribute="leading" secondItem="qk5-Bn-mwb" secondAttribute="leading" id="eXu-J7-SYe"/>
-                            <constraint firstItem="5VW-iQ-Sh8" firstAttribute="top" secondItem="67s-Gs-JQB" secondAttribute="top" constant="569" id="gMa-OL-zQX"/>
+                            <constraint firstItem="5VW-iQ-Sh8" firstAttribute="top" secondItem="qk5-Bn-mwb" secondAttribute="bottom" constant="24" id="huO-lx-9WB"/>
+                            <constraint firstItem="5VW-iQ-Sh8" firstAttribute="bottom" secondItem="mD2-Xq-dff" secondAttribute="bottom" id="ooA-N3-wlb"/>
                             <constraint firstItem="qk5-Bn-mwb" firstAttribute="trailing" secondItem="LCh-Yr-Qor" secondAttribute="trailing" id="ppc-wN-dia"/>
                             <constraint firstItem="jnn-za-1Ry" firstAttribute="top" secondItem="mD2-Xq-dff" secondAttribute="top" id="tJv-at-RTA"/>
                             <constraint firstItem="qk5-Bn-mwb" firstAttribute="top" secondItem="67s-Gs-JQB" secondAttribute="top" constant="497" id="tia-oI-pRy"/>
-                            <constraint firstItem="5VW-iQ-Sh8" firstAttribute="top" secondItem="qk5-Bn-mwb" secondAttribute="bottom" constant="24" id="zcv-Hg-KZn"/>
                         </constraints>
                     </view>
                     <connections>
@@ -376,6 +385,7 @@
                         <outlet property="labelHappyCount" destination="nCl-P1-PsY" id="Wh4-jA-Y3Q"/>
                         <outlet property="labelMonth" destination="4JG-Qv-JLU" id="vAk-z3-0mX"/>
                         <outlet property="labelNeutralCount" destination="A8T-TD-4x9" id="2wJ-kV-KiD"/>
+                        <outlet property="labelNoHistory" destination="Kge-Yl-gzZ" id="JJ2-Rd-glW"/>
                         <outlet property="labelSadCount" destination="XJ3-ET-wQW" id="BGs-Tz-8LB"/>
                         <outlet property="navBar" destination="jnn-za-1Ry" id="IZ1-Za-7e2"/>
                         <segue destination="5Ma-cn-iNR" kind="show" identifier="toHistory" id="f8J-04-uTQ"/>
@@ -421,7 +431,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kTa-ie-tL0" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
                                         <rect key="frame" x="24" y="26" width="366" height="137"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your are.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7if-uy-kV8">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7if-uy-kV8">
                                                 <rect key="frame" x="16" y="8" width="342" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="40f-H6-P22"/>
