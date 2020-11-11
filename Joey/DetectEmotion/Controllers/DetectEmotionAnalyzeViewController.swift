@@ -52,12 +52,10 @@ class DetectEmotionAnalyzeViewController: UIViewController {
 
 extension DetectEmotionAnalyzeViewController: ARSCNViewDelegate {
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
-        guard let faceAnchor = anchor as? ARFaceAnchor, let faceGeometry = node.geometry as? ARSCNFaceGeometry else {
-            return
-        }
-        
+        guard let faceAnchor = anchor as? ARFaceAnchor else { return }
+
         let data = FaceData(faceAnchor)
-        
+
         if data.browDownRight > 0.3 && data.browDownLeft > 0.3 {
             emotion = .angry
         } else if data.mouthFrownRight > 0.3 && data.mouthFrownLeft > 0.3 {
@@ -67,8 +65,6 @@ extension DetectEmotionAnalyzeViewController: ARSCNViewDelegate {
         } else {
             emotion = .neutral
         }
-        
-        faceGeometry.update(from: faceAnchor.geometry)
     }
 }
 
