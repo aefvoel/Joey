@@ -19,6 +19,8 @@ class NewMoodsViewController: UIViewController {
         return imageView
     }()
     
+    @IBOutlet weak var otherButton: RoundedButton!
+    
     @IBOutlet weak var navBar: NavigationBar!
     
     override func viewDidLoad() {
@@ -26,6 +28,21 @@ class NewMoodsViewController: UIViewController {
         setupUI()
         print(data!)
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func othersTapped(_ sender: Any) {
+        let alert = UIAlertController(title: "How do you feel about that?", message: "Tell me what you feel :)", preferredStyle: .alert)
+        alert.addTextField { (textField) in
+            textField.placeholder = ""
+        }
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: { [weak alert] (_) in
+            let textField = alert?.textFields![0]
+            self.data?.newMoods.append((textField?.text)!)
+            self.otherButton.backgroundColor = #colorLiteral(red: 0.4125145674, green: 0.7986539006, blue: 0.7881773114, alpha: 1)
+            self.otherButton.setTitleColor(.white, for: .normal)
+        }))
+        present(alert, animated: true, completion: nil)
     }
     
     @IBAction func moodsTapped(_ sender: UIButton) {
