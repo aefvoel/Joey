@@ -9,6 +9,7 @@ import UIKit
 
 class DetectEmotionScaleViewController: UIViewController {
 
+    @IBOutlet weak var indicatorLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var navBar: NavigationBar!
     var data: FollowUp?
@@ -25,6 +26,15 @@ class DetectEmotionScaleViewController: UIViewController {
         }
         
         questionLabel.text = data?.emotion.scaleQuestion
+    }
+    
+    @IBAction func onSliderChanged(_ sender: UISlider) {
+        let trackRect = sender.trackRect(forBounds: sender.frame)
+        let thumbRect = sender.thumbRect(forBounds: sender.bounds, trackRect: trackRect, value: sender.value)
+        indicatorLabel.center = CGPoint(x: thumbRect.midX, y: indicatorLabel.center.y)
+        
+        data?.scale = sender.value
+        indicatorLabel.text = data?.scaleType?.rawValue
     }
     
     @IBAction func onOkayButtonTapped(_ sender: Any) {

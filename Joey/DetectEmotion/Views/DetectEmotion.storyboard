@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -117,7 +118,7 @@
                     <connections>
                         <outlet property="buttonStart" destination="y9p-zv-U66" id="eqt-Qs-kW5"/>
                         <outlet property="navBar" destination="kfn-23-Ub2" id="Dmn-Uo-NYK"/>
-                        <segue destination="4Qy-Oq-1m0" kind="show" identifier="toDetectEmotion" id="M1E-V1-3Bb"/>
+                        <segue destination="4Qy-Oq-1m0" kind="show" identifier="toDetectEmotion" id="sKl-gj-FXJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uqT-oa-ZmN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -734,28 +735,32 @@ how intense do you think you need to be cheered up?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NfW-C8-BrN" customClass="CustomSlider" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="22" y="366.5" width="370" height="31"/>
+                                <rect key="frame" x="22" y="430.5" width="370" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.3529411764705882" green="0.76078431372549016" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="thumbTintColor" red="1" green="0.80000000000000004" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="trackHeight">
                                         <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onSliderChanged:" destination="Iai-ai-YmM" eventType="valueChanged" id="qN1-26-Kqx"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaM-L9-HcK">
-                                <rect key="frame" x="365.5" y="406.5" width="24.5" height="26"/>
+                                <rect key="frame" x="365.5" y="470.5" width="24.5" height="26"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWu-x7-s6U">
-                                <rect key="frame" x="24" y="406.5" width="13" height="26"/>
+                                <rect key="frame" x="24" y="470.5" width="13" height="26"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snN-j3-4qP" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="64" y="496.5" width="286" height="45"/>
+                                <rect key="frame" x="64" y="560.5" width="286" height="45"/>
                                 <color key="backgroundColor" red="0.3529411764705882" green="0.76078431372549016" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="286" id="y7w-pO-Stf"/>
@@ -788,6 +793,15 @@ how intense do you think you need to be cheered up?</string>
                                     <constraint firstAttribute="height" constant="47" id="lfZ-Es-DLx"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRr-Qs-888">
+                                <rect key="frame" x="132" y="380.5" width="150" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="FBN-rB-DhN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0Va-v8-nfB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -797,6 +811,7 @@ how intense do you think you need to be cheered up?</string>
                             <constraint firstItem="NfW-C8-BrN" firstAttribute="leading" secondItem="FWu-pZ-5iH" secondAttribute="leading" id="9co-wv-UFM"/>
                             <constraint firstItem="pE8-yA-Cc5" firstAttribute="centerX" secondItem="xYR-A5-fv7" secondAttribute="centerX" id="9ge-PD-nkV"/>
                             <constraint firstItem="AWu-x7-s6U" firstAttribute="leading" secondItem="NfW-C8-BrN" secondAttribute="leading" id="Bzw-t8-g86"/>
+                            <constraint firstItem="NfW-C8-BrN" firstAttribute="top" secondItem="VRr-Qs-888" secondAttribute="bottom" constant="22" id="OjK-LM-Yxa"/>
                             <constraint firstItem="FWu-pZ-5iH" firstAttribute="top" secondItem="0Va-v8-nfB" secondAttribute="top" constant="64" id="Pos-cY-pso"/>
                             <constraint firstItem="FWu-pZ-5iH" firstAttribute="top" secondItem="pE8-yA-Cc5" secondAttribute="bottom" constant="-143" id="QL7-nV-TKE"/>
                             <constraint firstItem="e0v-6M-yxl" firstAttribute="top" secondItem="0Va-v8-nfB" secondAttribute="top" id="RjU-BG-OqX"/>
@@ -806,8 +821,9 @@ how intense do you think you need to be cheered up?</string>
                             <constraint firstItem="snN-j3-4qP" firstAttribute="centerX" secondItem="NfW-C8-BrN" secondAttribute="centerX" id="aM7-s9-8tt"/>
                             <constraint firstItem="LaM-L9-HcK" firstAttribute="trailing" secondItem="NfW-C8-BrN" secondAttribute="trailing" id="abo-E6-QA0"/>
                             <constraint firstItem="sO9-KW-DzL" firstAttribute="centerX" secondItem="xYR-A5-fv7" secondAttribute="centerX" id="f8Z-QW-Zbc"/>
-                            <constraint firstItem="NfW-C8-BrN" firstAttribute="top" secondItem="FWu-pZ-5iH" secondAttribute="bottom" constant="64" id="g2p-nc-cr6"/>
+                            <constraint firstItem="NfW-C8-BrN" firstAttribute="top" secondItem="FWu-pZ-5iH" secondAttribute="bottom" constant="128" id="g2p-nc-cr6"/>
                             <constraint firstItem="LaM-L9-HcK" firstAttribute="top" secondItem="NfW-C8-BrN" secondAttribute="bottom" constant="10" id="gSb-Yx-WxK"/>
+                            <constraint firstItem="VRr-Qs-888" firstAttribute="centerX" secondItem="NfW-C8-BrN" secondAttribute="centerX" id="hZ0-s7-xGL"/>
                             <constraint firstItem="e0v-6M-yxl" firstAttribute="leading" secondItem="0Va-v8-nfB" secondAttribute="leading" id="hfE-9M-H9H"/>
                             <constraint firstItem="snN-j3-4qP" firstAttribute="top" secondItem="NfW-C8-BrN" secondAttribute="bottom" constant="100" id="i8y-5a-rPO"/>
                             <constraint firstItem="NfW-C8-BrN" firstAttribute="trailing" secondItem="FWu-pZ-5iH" secondAttribute="trailing" id="lH5-dZ-wdf"/>
@@ -818,6 +834,7 @@ how intense do you think you need to be cheered up?</string>
                     </view>
                     <navigationItem key="navigationItem" id="2WT-he-2Uc"/>
                     <connections>
+                        <outlet property="indicatorLabel" destination="VRr-Qs-888" id="paQ-Du-2IE"/>
                         <outlet property="navBar" destination="e0v-6M-yxl" id="JPj-qj-7Kw"/>
                         <outlet property="questionLabel" destination="pE8-yA-Cc5" id="8NQ-dE-U4L"/>
                         <outlet property="scaleSlider" destination="NfW-C8-BrN" id="RkM-hC-dS1"/>
@@ -1479,7 +1496,7 @@ Do you want to start now?</string>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="pvP-8n-yaw"/>
+        <segue reference="Pps-6o-9vR"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="analyzing" width="357" height="340"/>
