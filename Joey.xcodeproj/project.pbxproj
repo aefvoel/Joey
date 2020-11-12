@@ -54,6 +54,7 @@
 		16FA4BFC2547D7BD00D3EFFC /* DetectEmotionAnalyzeAgainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FA4BFB2547D7BD00D3EFFC /* DetectEmotionAnalyzeAgainViewController.swift */; };
 		5A0D858A255CDA37002A98FE /* Khula-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A0D8588255CDA37002A98FE /* Khula-Regular.ttf */; };
 		5A0D858B255CDA37002A98FE /* Khula-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A0D8589255CDA37002A98FE /* Khula-Bold.ttf */; };
+		5A0D85E2255CFBA1002A98FE /* SignInWithAppleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D85E1255CFBA1002A98FE /* SignInWithAppleViewController.swift */; };
 		5A0FD165254718260048B757 /* AutomaticThoughtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0FD164254718260048B757 /* AutomaticThoughtsViewController.swift */; };
 		5A2F7149254872ED007929C5 /* ThoughtsRecordTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F7148254872ED007929C5 /* ThoughtsRecordTemp.swift */; };
 		5A5506EA25498AA4006A4A48 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5506E925498AA4006A4A48 /* SummaryViewController.swift */; };
@@ -177,6 +178,7 @@
 		16FA4BFB2547D7BD00D3EFFC /* DetectEmotionAnalyzeAgainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionAnalyzeAgainViewController.swift; sourceTree = "<group>"; };
 		5A0D8588255CDA37002A98FE /* Khula-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Khula-Regular.ttf"; sourceTree = "<group>"; };
 		5A0D8589255CDA37002A98FE /* Khula-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Khula-Bold.ttf"; sourceTree = "<group>"; };
+		5A0D85E1255CFBA1002A98FE /* SignInWithAppleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleViewController.swift; sourceTree = "<group>"; };
 		5A0FD164254718260048B757 /* AutomaticThoughtsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomaticThoughtsViewController.swift; sourceTree = "<group>"; };
 		5A2F7148254872ED007929C5 /* ThoughtsRecordTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtsRecordTemp.swift; sourceTree = "<group>"; };
 		5A5506E925498AA4006A4A48 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
@@ -490,6 +492,7 @@
 			children = (
 				166C5330253732E9007C5EF3 /* HomeViewController.swift */,
 				AB9857CA253C9F3D00485B29 /* BottomSheetViewController.swift */,
+				5A0D85E1255CFBA1002A98FE /* SignInWithAppleViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -951,6 +954,7 @@
 				AB46C13D25486A6D00D2F22C /* AfterActivityViewController.swift in Sources */,
 				AB51A9DB254B02B100E5E64B /* MySpaceViewController.swift in Sources */,
 				5AD1E5B22541403B00BD18D5 /* ActivityListCell.swift in Sources */,
+				5A0D85E2255CFBA1002A98FE /* SignInWithAppleViewController.swift in Sources */,
 				164B4F0125521A8200FCAA42 /* SettingsAccordionTableViewController.swift in Sources */,
 				5A8C6EA6253EA57600F95286 /* TermsOfServiceModel.swift in Sources */,
 				16B3758C254A6B100027B696 /* InstructionModalViewController.swift in Sources */,
