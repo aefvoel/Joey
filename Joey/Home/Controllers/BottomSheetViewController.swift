@@ -7,6 +7,8 @@
 
 import UIKit
 import Charts
+import AuthenticationServices
+import FittedSheets
 
 class BottomSheetViewController: UIViewController, ChartViewDelegate {
     
@@ -14,6 +16,7 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var activitiesCollectionView: UICollectionView!
     @IBOutlet weak var barChartView: BarChartView!
     @IBOutlet weak var labelUserName: UILabel!
+    var appleIDCheck: String = ""
     var recordData: ThoughtsRecordTemp?
     var listEmotion = [EmotionList]()
     var listEmotionByMonth = [EmotionList]()
@@ -35,7 +38,45 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         labelUserName.text = UserDefaultsHelper.getData(type: String.self, forKey: .userName)
+        appleIDCheck = UserDefaultsHelper.getData(type: String.self, forKey: .signInWithAppleIdentifier) ?? "Nothing"
         getEmotionHistory()
+    }
+    
+    
+    @IBAction func tapMySpace(_ sender: Any) {
+        if appleIDCheck == "Nothing" {
+            if let userIdentifier = UserDefaultsHelper.getData(type: String.self, forKey: .signInWithAppleIdentifier) {
+                let authorizationProvider = ASAuthorizationAppleIDProvider()
+                authorizationProvider.getCredentialState(forUserID: userIdentifier) { (state, error) in
+                    
+                    switch (state) {
+                    case .authorized:
+                        print("SignedIn")
+                        DispatchQueue.main.async {
+                            //self.present(MySpaceViewController(), animated: true, completion: .none)
+                            self.performSegue(withIdentifier: "toMySpace", sender: nil)
+                        }
+                        break
+                        
+                    case .notFound:
+                        print("Belom masuk samsek")
+                        DispatchQueue.main.async {
+                            self.openSignInWithApple()
+                        }
+                        break
+                        
+                    case .revoked:
+                        print("gegayaan usernya anj")
+                        fallthrough
+                        
+                    default:
+                        break
+                    }
+                }
+            }
+        }
+        
+        //performSegue(withIdentifier: "toMySpace", sender: nil)
     }
     
     func registerNib() {
@@ -55,7 +96,7 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
                 let emotionType = emotion.value(forKey: "emotion") as! Int
                 let formatDay = date.getFormattedDate(format: "d")
                 let formatMonth = date.getFormattedDate(format: "MMMM")
-
+                
                 self.listEmotion.append(EmotionList(
                                             emotion: FollowUp.EmotionType(rawValue: emotionType)!,
                                             reason: emotion.value(forKey: "reason") as! String,
@@ -114,8 +155,49 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
         barChartView.leftAxis.granularity = 1
         barChartView.leftAxis.axisMinimum = 0
         barChartView.leftAxis.axisMaximum = 4
-
+        
         barChartView.data = lineChartData
+    }
+    
+    private func openSignInWithApple(){
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: "SignInWithAppleViewController") as! SignInWithAppleViewController
+        let options = SheetOptions(
+            // Pulls the view controller behind the safe area top, especially useful when embedding navigation controllers
+            useFullScreenMode: false,
+            // Determines if using inline mode or not
+            useInlineMode: true
+        )
+        let sheetController = SheetViewController(controller: controller, sizes: [.percent(0.4), .percent(0.75)], options: options)
+        sheetController.allowGestureThroughOverlay = true
+        // The size of the grip in the pull bar
+        sheetController.gripSize = CGSize(width: 83, height: 7)
+        // The color of the grip on the pull bar
+        sheetController.gripColor = UIColor(white: 0.868, alpha: 1)
+        // The corner radius of the sheet
+        sheetController.cornerRadius = 24
+        // Disable the dismiss on background tap functionality
+        sheetController.dismissOnOverlayTap = false
+        // Disable the ability to pull down to dismiss the modal
+        sheetController.dismissOnPull = false
+        // Change the overlay color
+        sheetController.overlayColor = UIColor.clear
+        //        self.present(sheetController, animated: false, completion: nil)
+        // Add child
+        sheetController.willMove(toParent: self)
+        self.addChild(sheetController)
+        view.addSubview(sheetController.view)
+        sheetController.didMove(toParent: self)
+        
+        sheetController.view.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            sheetController.view.topAnchor.constraint(equalTo: view.topAnchor),
+            sheetController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            sheetController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            sheetController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
+        
+        // animate in
+        sheetController.animateIn()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -59,28 +59,24 @@ extension SignInWithAppleViewController: ASAuthorizationControllerDelegate {
     // ASAuthorizationControllerDelegate function for successful authorization
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
 
-        if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
+        switch authorization.credential {
+        case let appleIDCredential as ASAuthorizationAppleIDCredential:
+            let userIdentifier = appleIDCredential.user
             
-            // Create an account as per your requirement
-            let appleId = appleIDCredential.user
-            let appleUserFirstName = appleIDCredential.fullName?.givenName
-            let appleUserLastName = appleIDCredential.fullName?.familyName
-            let appleUserEmail = appleIDCredential.email
-
-            //Write your code
-        }
-        else if let passwordCredential = authorization.credential as? ASPasswordCredential {
-            let appleUsername = passwordCredential.user
-            let applePassword = passwordCredential.password
+            print(userIdentifier)
+            UserDefaultsHelper.setData(value: userIdentifier, key: .signInWithAppleIdentifier)
             
-            //Write your code
+            let vc = HomeViewController()
+            self.present(UINavigationController(rootViewController: vc), animated: true)
+            break
+        default:
+            break
         }
     }
     
 }
 
 extension SignInWithAppleViewController: ASAuthorizationControllerPresentationContextProviding {
-    //For present window
     func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
         return self.view.window!
     }
