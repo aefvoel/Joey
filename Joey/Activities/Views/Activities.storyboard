@@ -2,12 +2,16 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Khula-Bold.ttf">
+            <string>Khula-Bold</string>
+        </array>
         <array key="Yuanti.ttc">
             <string>STYuanti-SC-Bold</string>
             <string>STYuanti-SC-Regular</string>
@@ -23,7 +27,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ffb-z8-gh1">
-                                <rect key="frame" x="24" y="203" width="366" height="659"/>
+                                <rect key="frame" x="24" y="194" width="366" height="668"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ActivityListCell" rowHeight="141" id="7cY-Fe-907" customClass="ActivityListCell" customModule="Joey" customModuleProvider="target">
@@ -48,8 +52,8 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Activity Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShA-iI-V4x">
-                                                    <rect key="frame" x="0.0" y="45" width="365" height="40"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShA-iI-V4x">
+                                                    <rect key="frame" x="96.5" y="45" width="173.5" height="33"/>
                                                     <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="28"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -76,7 +80,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9o-07-c5q">
-                                <rect key="frame" x="133.5" y="104" width="147.5" height="51"/>
+                                <rect key="frame" x="134.5" y="104" width="145" height="42"/>
                                 <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -123,84 +127,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wzR-1B-lT9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-133" y="587"/>
-        </scene>
-        <!--Activities View Controller-->
-        <scene sceneID="bYS-hW-KJz">
-            <objects>
-                <viewController storyboardIdentifier="ActivitiesViewController" id="stn-ve-a9C" customClass="ActivitiesViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lLp-Dm-jjP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZP-Lr-fOH">
-                                <rect key="frame" x="172" y="438" width="70" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXT-3k-EjK">
-                                <rect key="frame" x="174" y="499" width="67" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Jacobson"/>
-                                <connections>
-                                    <segue destination="1tA-ld-XfP" kind="show" id="Wnf-sx-yt4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbA-fT-gps">
-                                <rect key="frame" x="152" y="556" width="111" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Practice Smiling"/>
-                                <connections>
-                                    <segue destination="weI-Jj-1Po" kind="show" id="zYO-BA-bMW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbn-wY-KYo">
-                                <rect key="frame" x="186" y="621" width="42" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Mirror"/>
-                                <connections>
-                                    <segue destination="gGL-D5-EFZ" kind="show" id="Bhj-hD-Jje"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Lhd-ua-s83"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g26-MR-boR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1052.1739130434783" y="183.48214285714286"/>
-        </scene>
-        <!--JacobsonViewController-->
-        <scene sceneID="Nim-j7-EJu">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Jacobson" referencedIdentifier="JacobsonViewController" id="1tA-ld-XfP" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="TeN-DC-TrS"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="43k-5p-hfV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1771.0144927536232" y="79.6875"/>
-        </scene>
-        <!--PracticeSmilingViewController-->
-        <scene sceneID="sax-2w-dc4">
-            <objects>
-                <viewControllerPlaceholder storyboardName="PracticeSmiling" referencedIdentifier="PracticeSmilingViewController" id="weI-Jj-1Po" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="PaN-Vg-Yd8"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bBg-oC-Mrf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1860.144927536232" y="203.57142857142856"/>
-        </scene>
-        <!--MirrorViewController-->
-        <scene sceneID="nVh-ci-fJI">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Mirror" referencedIdentifier="MirrorViewController" id="gGL-D5-EFZ" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="VuJ-w2-aCn"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eYx-Pe-h3d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1821.7391304347827" y="307.36607142857139"/>
         </scene>
         <!--After Activity View Controller-->
         <scene sceneID="NDT-ai-n2i">
@@ -324,13 +250,211 @@
             </objects>
             <point key="canvasLocation" x="-739" y="955"/>
         </scene>
+        <!--Analyzing After Activity View Controller-->
+        <scene sceneID="8j8-5f-FJb">
+            <objects>
+                <viewController storyboardIdentifier="AnalyzingAfterActivityViewController" modalPresentationStyle="fullScreen" id="dmB-56-QT2" customClass="AnalyzingAfterActivityViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5AT-xZ-BR7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotBubble" translatesAutoresizingMaskIntoConstraints="NO" id="4Yb-eM-bof">
+                                <rect key="frame" x="24" y="156" width="366" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4Yb-eM-bof" secondAttribute="height" multiplier="15:8" id="cWm-35-rCF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Well done! You’re being genuinely. Do you want to start again?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNa-No-8zw">
+                                <rect key="frame" x="47" y="167" width="318" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="EIn-Jw-MaW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hU-n0-vOW" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="86" y="414" width="240" height="45"/>
+                                <color key="backgroundColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="TNk-lT-olK"/>
+                                    <constraint firstAttribute="height" constant="45" id="lnO-g4-vEi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
+                                <state key="normal" title="Finish">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onStartButtonTapped:" destination="dmB-56-QT2" eventType="touchUpInside" id="NJf-8o-6nS"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotImage" translatesAutoresizingMaskIntoConstraints="NO" id="MO1-pJ-rAz">
+                                <rect key="frame" x="107" y="696" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="klC-qX-uL5"/>
+                                    <constraint firstAttribute="height" constant="200" id="yKs-vC-6mf"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCf-G4-yrv" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="86" y="415" width="240" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="8cV-2k-YWn"/>
+                                    <constraint firstAttribute="height" constant="45" id="t7k-fC-IxN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
+                                <state key="normal" title="Yes">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onStartButtonTapped:" destination="dmB-56-QT2" eventType="touchUpInside" id="l6Z-07-SXG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Sw-bq-PFp" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="86" y="484" width="240" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="AXY-4d-uXE"/>
+                                    <constraint firstAttribute="width" constant="240" id="P2r-AO-cK2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onNoButtonTapped:" destination="dmB-56-QT2" eventType="touchUpInside" id="6N8-Q0-djV"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZvO-C4-ehx" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="RL5-f4-aTf"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awesome Job!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxk-ek-UsR">
+                                <rect key="frame" x="88" y="99" width="238" height="58"/>
+                                <fontDescription key="fontDescription" name="Khula-Bold" family="Khula" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbx-y8-7MS">
+                                <rect key="frame" x="225" y="322" width="165" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="JMp-EF-hYM"/>
+                                    <constraint firstAttribute="width" constant="165" id="vVX-p8-mTK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="16"/>
+                                <state key="normal" title="How do you know?">
+                                    <color key="titleColor" red="0.86666666670000003" green="0.40784313729999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="323-ru-yep" kind="show" id="2YE-UJ-bIe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qi4-KG-mq9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Sw-bq-PFp" firstAttribute="top" secondItem="9hU-n0-vOW" secondAttribute="bottom" constant="25" id="Aka-Fh-q1p"/>
+                            <constraint firstItem="jCf-G4-yrv" firstAttribute="top" secondItem="4Yb-eM-bof" secondAttribute="bottom" constant="64" id="BLJ-dr-gqE"/>
+                            <constraint firstItem="ZvO-C4-ehx" firstAttribute="leading" secondItem="Qi4-KG-mq9" secondAttribute="leading" id="KK1-YH-P0v"/>
+                            <constraint firstItem="Qi4-KG-mq9" firstAttribute="trailing" secondItem="4Yb-eM-bof" secondAttribute="trailing" constant="24" id="R7d-YE-0b6"/>
+                            <constraint firstItem="1Sw-bq-PFp" firstAttribute="centerX" secondItem="jCf-G4-yrv" secondAttribute="centerX" id="XRp-sE-nSZ"/>
+                            <constraint firstItem="MO1-pJ-rAz" firstAttribute="centerX" secondItem="5AT-xZ-BR7" secondAttribute="centerX" id="YWc-N1-Efp"/>
+                            <constraint firstItem="wxk-ek-UsR" firstAttribute="trailing" secondItem="9hU-n0-vOW" secondAttribute="trailing" id="Zd0-z4-24d"/>
+                            <constraint firstItem="FNa-No-8zw" firstAttribute="leading" secondItem="Qi4-KG-mq9" secondAttribute="leading" constant="47" id="Zwt-CL-8Ge"/>
+                            <constraint firstItem="Qi4-KG-mq9" firstAttribute="trailing" secondItem="FNa-No-8zw" secondAttribute="trailing" constant="49" id="aQn-MY-bOT"/>
+                            <constraint firstItem="1Sw-bq-PFp" firstAttribute="top" secondItem="jCf-G4-yrv" secondAttribute="bottom" constant="24" id="bNR-kT-iGH"/>
+                            <constraint firstItem="jCf-G4-yrv" firstAttribute="centerX" secondItem="4Yb-eM-bof" secondAttribute="centerX" constant="-1" id="buf-2E-uCs"/>
+                            <constraint firstItem="ZvO-C4-ehx" firstAttribute="top" secondItem="Qi4-KG-mq9" secondAttribute="top" id="cEO-9f-qXY"/>
+                            <constraint firstItem="ZvO-C4-ehx" firstAttribute="trailing" secondItem="Qi4-KG-mq9" secondAttribute="trailing" id="dMn-gr-1g4"/>
+                            <constraint firstItem="wxk-ek-UsR" firstAttribute="top" secondItem="ZvO-C4-ehx" secondAttribute="bottom" constant="8" id="eSQ-Sh-2wh"/>
+                            <constraint firstItem="4Yb-eM-bof" firstAttribute="top" secondItem="Qi4-KG-mq9" secondAttribute="top" constant="112" id="mzP-st-Uxh"/>
+                            <constraint firstAttribute="bottom" secondItem="MO1-pJ-rAz" secondAttribute="bottom" id="nrQ-jV-gvj"/>
+                            <constraint firstItem="9hU-n0-vOW" firstAttribute="leading" secondItem="jCf-G4-yrv" secondAttribute="leading" id="otl-uO-1FC"/>
+                            <constraint firstItem="Sbx-y8-7MS" firstAttribute="trailing" secondItem="4Yb-eM-bof" secondAttribute="trailing" id="q8L-zt-bFy"/>
+                            <constraint firstItem="Sbx-y8-7MS" firstAttribute="top" secondItem="FNa-No-8zw" secondAttribute="bottom" constant="23" id="r5l-Ao-Qt7"/>
+                            <constraint firstItem="4Yb-eM-bof" firstAttribute="leading" secondItem="Qi4-KG-mq9" secondAttribute="leading" constant="24" id="wQh-oa-zwu"/>
+                            <constraint firstItem="4Yb-eM-bof" firstAttribute="top" secondItem="FNa-No-8zw" secondAttribute="bottom" constant="-143" id="y9P-ZR-jcC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="an8-1o-m1D"/>
+                    <connections>
+                        <outlet property="buttonFinish" destination="9hU-n0-vOW" id="drK-6o-MFd"/>
+                        <outlet property="buttonNo" destination="1Sw-bq-PFp" id="YY3-su-Rpd"/>
+                        <outlet property="buttonYes" destination="jCf-G4-yrv" id="4SW-v9-6oc"/>
+                        <outlet property="labelAwesome" destination="wxk-ek-UsR" id="fRc-3w-yyo"/>
+                        <outlet property="labelExplain" destination="4Yb-eM-bof" id="feb-QU-GTE"/>
+                        <outlet property="navBar" destination="ZvO-C4-ehx" id="uca-Va-IQ8"/>
+                        <outlet property="suggestionLabel" destination="FNa-No-8zw" id="345-eB-dFf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rxl-EU-spr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-739.13043478260875" y="1689.5089285714284"/>
+        </scene>
+        <!--hintsViewController-->
+        <scene sceneID="uld-r3-hwr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ThoughtsRecord" referencedIdentifier="hintsViewController" id="323-ru-yep" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Igq-JH-Dy9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UnW-O6-InF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45" y="1690"/>
+        </scene>
     </scenes>
     <designables>
+        <designable name="1Sw-bq-PFp">
+            <size key="intrinsicContentSize" width="30" height="36"/>
+        </designable>
+        <designable name="9hU-n0-vOW">
+            <size key="intrinsicContentSize" width="53" height="36"/>
+        </designable>
         <designable name="QlN-5b-92t">
-            <size key="intrinsicContentSize" width="30" height="40"/>
+            <size key="intrinsicContentSize" width="30" height="36"/>
         </designable>
         <designable name="S3i-6H-BJ3">
-            <size key="intrinsicContentSize" width="30" height="40"/>
+            <size key="intrinsicContentSize" width="32" height="36"/>
+        </designable>
+        <designable name="jCf-G4-yrv">
+            <size key="intrinsicContentSize" width="32" height="36"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>

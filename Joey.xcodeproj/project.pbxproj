@@ -12,7 +12,7 @@
 		160CFCF5254FAB75007481B0 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160CFCF4254FAB75007481B0 /* Settings.storyboard */; };
 		160CFCFA254FAC2F007481B0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160CFCF9254FAC2F007481B0 /* SettingsViewController.swift */; };
 		160CFCFF254FC299007481B0 /* SettingsNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160CFCFE254FC299007481B0 /* SettingsNameViewController.swift */; };
-		16170AAB254103460095D1A5 /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16170AAA254103460095D1A5 /* ActivitiesViewController.swift */; };
+		16170AAB254103460095D1A5 /* AnalyzingAfterActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16170AAA254103460095D1A5 /* AnalyzingAfterActivityViewController.swift */; };
 		16170AB4254103750095D1A5 /* Activities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16170AB3254103750095D1A5 /* Activities.storyboard */; };
 		16170ABB254103C20095D1A5 /* JacobsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16170ABA254103C20095D1A5 /* JacobsonViewController.swift */; };
 		16170AC3254103CC0095D1A5 /* Jacobson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16170AC2254103CC0095D1A5 /* Jacobson.storyboard */; };
@@ -134,7 +134,7 @@
 		160CFCF4254FAB75007481B0 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		160CFCF9254FAC2F007481B0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		160CFCFE254FC299007481B0 /* SettingsNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNameViewController.swift; sourceTree = "<group>"; };
-		16170AAA254103460095D1A5 /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		16170AAA254103460095D1A5 /* AnalyzingAfterActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzingAfterActivityViewController.swift; sourceTree = "<group>"; };
 		16170AB3254103750095D1A5 /* Activities.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Activities.storyboard; sourceTree = "<group>"; };
 		16170ABA254103C20095D1A5 /* JacobsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JacobsonViewController.swift; sourceTree = "<group>"; };
 		16170AC2254103CC0095D1A5 /* Jacobson.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jacobson.storyboard; sourceTree = "<group>"; };
@@ -319,7 +319,7 @@
 		16170AA9254103360095D1A5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				16170AAA254103460095D1A5 /* ActivitiesViewController.swift */,
+				16170AAA254103460095D1A5 /* AnalyzingAfterActivityViewController.swift */,
 				5AD1E5AC2541363200BD18D5 /* ActivityListViewController.swift */,
 				5AD1E5B12541403B00BD18D5 /* ActivityListCell.swift */,
 				AB46C13C25486A6D00D2F22C /* AfterActivityViewController.swift */,
@@ -983,7 +983,7 @@
 				166C534D253733A0007C5EF3 /* DetectEmotionStartViewController.swift in Sources */,
 				5A2F7149254872ED007929C5 /* ThoughtsRecordTemp.swift in Sources */,
 				16475D9A2547DAE70074D025 /* DetectEmotionSuggestActivityViewController.swift in Sources */,
-				16170AAB254103460095D1A5 /* ActivitiesViewController.swift in Sources */,
+				16170AAB254103460095D1A5 /* AnalyzingAfterActivityViewController.swift in Sources */,
 				5AD1E5AD2541363200BD18D5 /* ActivityListViewController.swift in Sources */,
 				16F0910E254FCF4B00D27D58 /* SettingsTermsViewController.swift in Sources */,
 				16AA990B253DC9A2006C4865 /* DetectEmotionAnalyzeViewController.swift in Sources */,
