@@ -50,6 +50,7 @@
 		16F09100254FCCA100D27D58 /* SettingsAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F090FF254FCCA100D27D58 /* SettingsAboutViewController.swift */; };
 		16F0910E254FCF4B00D27D58 /* SettingsTermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F0910D254FCF4B00D27D58 /* SettingsTermsViewController.swift */; };
 		16F09113254FCF5800D27D58 /* SettingsPrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F09112254FCF5800D27D58 /* SettingsPrivacyViewController.swift */; };
+		16F27E35255CE0160074E4B8 /* MirrorHint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F27E34255CE0160074E4B8 /* MirrorHint.swift */; };
 		16FA4BFC2547D7BD00D3EFFC /* DetectEmotionAnalyzeAgainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FA4BFB2547D7BD00D3EFFC /* DetectEmotionAnalyzeAgainViewController.swift */; };
 		5A0D858A255CDA37002A98FE /* Khula-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A0D8588255CDA37002A98FE /* Khula-Regular.ttf */; };
 		5A0D858B255CDA37002A98FE /* Khula-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A0D8589255CDA37002A98FE /* Khula-Bold.ttf */; };
@@ -172,6 +173,7 @@
 		16F090FF254FCCA100D27D58 /* SettingsAboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAboutViewController.swift; sourceTree = "<group>"; };
 		16F0910D254FCF4B00D27D58 /* SettingsTermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTermsViewController.swift; sourceTree = "<group>"; };
 		16F09112254FCF5800D27D58 /* SettingsPrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyViewController.swift; sourceTree = "<group>"; };
+		16F27E34255CE0160074E4B8 /* MirrorHint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorHint.swift; sourceTree = "<group>"; };
 		16FA4BFB2547D7BD00D3EFFC /* DetectEmotionAnalyzeAgainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionAnalyzeAgainViewController.swift; sourceTree = "<group>"; };
 		5A0D8588255CDA37002A98FE /* Khula-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Khula-Regular.ttf"; sourceTree = "<group>"; };
 		5A0D8589255CDA37002A98FE /* Khula-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Khula-Bold.ttf"; sourceTree = "<group>"; };
@@ -381,6 +383,7 @@
 		16170AD725411E9D0095D1A5 /* Mirror */ = {
 			isa = PBXGroup;
 			children = (
+				16F27E33255CE00C0074E4B8 /* Models */,
 				16170AE125411EB20095D1A5 /* Views */,
 				16170AD825411EA10095D1A5 /* Controllers */,
 			);
@@ -582,6 +585,14 @@
 				16EE8CA325414A1200FA9CE6 /* InstructionView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		16F27E33255CE00C0074E4B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				16F27E34255CE0160074E4B8 /* MirrorHint.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		5A2F7147254872D2007929C5 /* Models */ = {
@@ -978,6 +989,7 @@
 				5AAE9BB5253F08610075966B /* PrivPolicyTableViewCell.swift in Sources */,
 				5A8C7B92254A59D000569797 /* SummaryTableViewCell.swift in Sources */,
 				16170AD0254105070095D1A5 /* PracticeSmilingViewController.swift in Sources */,
+				16F27E35255CE0160074E4B8 /* MirrorHint.swift in Sources */,
 				ABECBF10253D891C00EF7D43 /* ActivitiesCollectionViewCell.swift in Sources */,
 				16F09100254FCCA100D27D58 /* SettingsAboutViewController.swift in Sources */,
 				166C534D253733A0007C5EF3 /* DetectEmotionStartViewController.swift in Sources */,
