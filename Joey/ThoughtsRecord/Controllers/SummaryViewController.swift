@@ -14,13 +14,17 @@ class SummaryViewController: UIViewController {
         var content: String
     }
     
+    var segueFromHistory = false
+    
     var data: ThoughtsRecordTemp?
 
-    @IBOutlet weak var labelDate: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
     
     @IBOutlet weak var navBar: NavigationBar!
     
     @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var doneButton: RoundedButton!
     
     var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
@@ -43,6 +47,13 @@ class SummaryViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if segueFromHistory {
+            doneButton.isEnabled = false
+            doneButton.alpha = 0.0
+        }
+    }
+    
     @IBAction func onClickButtonDone(_ sender: Any) {
         performSegue(withIdentifier: "toDoActivityConfirmation", sender: nil)
     }
@@ -58,7 +69,7 @@ class SummaryViewController: UIViewController {
     func formattedDate() {
         let format = DateFormatter()
         format.dateFormat = "EEEE, MMMM d, yyyy"
-        labelDate.text = format.string(from: data!.createdAt)
+        dateLabel.text = format.string(from: data!.createdAt)
     }
     
     func createArrayfromThoughtsData() {
