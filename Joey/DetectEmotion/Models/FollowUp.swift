@@ -56,6 +56,14 @@ struct FollowUp {
             case .happy: return "how intense do you think your happy day is?"
             }
         }
+        var analyze: String {
+            switch self {
+            case .angry: return "I see that you still need to be cheered up. Do you also feel that?"
+            case .sad: return "I see that you still need to be cheered up. Do you also feel that?"
+            case .neutral: return "I see that you’re getting better. Do you also feel that?"
+            case .happy: return "I see that you’re getting better. Do you also feel that?"
+            }
+        }
     }
     
     enum ScaleType: String {

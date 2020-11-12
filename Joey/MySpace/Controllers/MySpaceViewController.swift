@@ -13,6 +13,7 @@ class MySpaceViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var navBar: NavigationBar!
     @IBOutlet weak var barChartView: BarChartView!
     @IBOutlet weak var labelMonth: UILabel!
+    @IBOutlet weak var labelNoHistory: UILabel!
     
     @IBOutlet weak var cardView: CardView!
     var listEmotion = [EmotionList]()
@@ -131,6 +132,9 @@ class MySpaceViewController: UIViewController, ChartViewDelegate {
         
         
         DispatchQueue.main.async {
+            if !self.listMonth.isEmpty {
+                self.labelNoHistory.isHidden = true
+            }
             self.listMonth = self.listMonth.unique()
             self.selectedMonth = self.listMonth.last ?? ""
             self.setupChart(month: self.selectedMonth!)

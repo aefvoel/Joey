@@ -16,6 +16,7 @@ class InstructionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navBar.delegate = self
+        navBar.isBackToHome = true
         if let data = activityInstruction {
             instructionView.setupData(data: data)
         }

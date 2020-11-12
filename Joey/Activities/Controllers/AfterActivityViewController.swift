@@ -38,24 +38,20 @@ class AfterActivityViewController: UIViewController {
         ])
     }
     
-    func popTo<T>(_ vc: T.Type) {
-       let targetVC = navigationController?.viewControllers.first{$0 is T}
-       if let targetVC = targetVC {
-          navigationController?.popToViewController(targetVC, animated: true)
-       }
-    }
 
     @IBAction func onStartButtonTapped(_ sender: Any) {
         performSegue(withIdentifier: "toInstruction", sender: nil)
     }
     
     @IBAction func onNoButtonTapped(_ sender: Any) {
-        popTo(HomeViewController.self)
+        performSegue(withIdentifier: "toAnalyze", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? InstructionViewController {
             vc.activityInstruction = activityInstruction
+        } else if let vc = segue.destination as? AnalyzingAfterActivityViewController {
+            vc.data = data
         }
     }
     // MARK: - Navigation

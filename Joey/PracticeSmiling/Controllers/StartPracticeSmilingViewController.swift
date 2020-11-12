@@ -21,6 +21,7 @@ class StartPracticeSmilingViewController: UIViewController {
     
     var countdownTimer: Timer!
     var totalTime = 60
+    var emotion: FollowUp.EmotionType?
     
     var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
@@ -123,8 +124,9 @@ class StartPracticeSmilingViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? AfterActivityViewController {
+        if let vc = segue.destination as? AfterActivityViewController, let emotion = emotion {
             vc.activityInstruction = activitiesInstructionArray[1]
+            vc.data = FollowUp(emotion: emotion)
         }
     }
     
@@ -150,6 +152,15 @@ extension StartPracticeSmilingViewController: ARSCNViewDelegate {
         
         let data = FaceData(faceAnchor)
         
+        if data.browDownRight > 0.3 && data.browDownLeft > 0.3 {
+            emotion = .angry
+        } else if data.mouthFrownRight > 0.3 && data.mouthFrownLeft > 0.3 {
+            emotion = .sad
+        } else if data.mouthSmileRight > 0.3 && data.mouthSmileLeft > 0.3 {
+            emotion = .happy
+        } else {
+            emotion = .neutral
+        }
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             self.handleSmile(smileValue: CGFloat((data.mouthSmileLeft + data.mouthSmileRight)/2.0))
         }
