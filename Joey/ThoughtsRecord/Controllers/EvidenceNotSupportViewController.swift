@@ -33,7 +33,9 @@ class EvidenceNotSupportViewController: UIViewController, UITextViewDelegate {
     
     @IBAction func onClickContinueButton(_ sender: Any) {
         if textView.text == "Type your answer here" {
-            textView.text = ""
+            let alert = AlertHelper.createAlert(title: "Oops!", message: "Please tell me what's on your mind before we go on", onComplete: nil)
+            alert.view.tintColor = #colorLiteral(red: 0.3529411765, green: 0.7607843137, blue: 0.7411764706, alpha: 1)
+            present(alert, animated: true, completion: nil)
         }
         guard let answer = textView?.text else { return }
         data?.notSupportedEvidence = answer
@@ -43,7 +45,6 @@ class EvidenceNotSupportViewController: UIViewController, UITextViewDelegate {
     func setupUI(){
         navBar.delegate = self
         navBar.labelIndicator.text = "5/7"
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.view.insertSubview(imageView, at: 0)
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: view.topAnchor),
