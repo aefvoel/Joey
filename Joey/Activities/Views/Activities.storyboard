@@ -244,6 +244,7 @@
                         <outlet property="navBar" destination="jIq-b7-Tua" id="PW9-MF-DmU"/>
                         <outlet property="suggestionLabel" destination="qzc-zY-rI7" id="KtS-O1-HtW"/>
                         <segue destination="zos-N4-orj" kind="show" identifier="toInstruction" id="1XG-7W-f1l"/>
+                        <segue destination="dmB-56-QT2" kind="show" identifier="toAnalyze" id="d2l-al-oRi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7E2-yo-T8R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -264,7 +265,7 @@
                                     <constraint firstAttribute="width" secondItem="4Yb-eM-bof" secondAttribute="height" multiplier="15:8" id="cWm-35-rCF"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Well done! You’re being genuinely. Do you want to start again?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNa-No-8zw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You just finished your activity! I see that you’re getting better. Do you also feel that?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNa-No-8zw">
                                 <rect key="frame" x="47" y="167" width="318" height="132"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="132" id="EIn-Jw-MaW"/>
@@ -273,7 +274,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hU-n0-vOW" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                            <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hU-n0-vOW" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                 <rect key="frame" x="86" y="414" width="240" height="45"/>
                                 <color key="backgroundColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -307,7 +308,7 @@
                                     <constraint firstAttribute="height" constant="200" id="yKs-vC-6mf"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCf-G4-yrv" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCf-G4-yrv" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                 <rect key="frame" x="86" y="415" width="240" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -334,7 +335,7 @@
                                     <action selector="onStartButtonTapped:" destination="dmB-56-QT2" eventType="touchUpInside" id="l6Z-07-SXG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Sw-bq-PFp" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Sw-bq-PFp" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                 <rect key="frame" x="86" y="484" width="240" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -373,7 +374,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbx-y8-7MS">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbx-y8-7MS">
                                 <rect key="frame" x="225" y="322" width="165" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="JMp-EF-hYM"/>
@@ -384,7 +385,7 @@
                                     <color key="titleColor" red="0.86666666670000003" green="0.40784313729999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="323-ru-yep" kind="show" id="2YE-UJ-bIe"/>
+                                    <action selector="onExplainButtonTapped:" destination="dmB-56-QT2" eventType="touchUpInside" id="CW1-SC-rJJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -416,13 +417,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="an8-1o-m1D"/>
                     <connections>
+                        <outlet property="buttonExplain" destination="Sbx-y8-7MS" id="cyX-M1-H2O"/>
                         <outlet property="buttonFinish" destination="9hU-n0-vOW" id="drK-6o-MFd"/>
                         <outlet property="buttonNo" destination="1Sw-bq-PFp" id="YY3-su-Rpd"/>
                         <outlet property="buttonYes" destination="jCf-G4-yrv" id="4SW-v9-6oc"/>
                         <outlet property="labelAwesome" destination="wxk-ek-UsR" id="fRc-3w-yyo"/>
-                        <outlet property="labelExplain" destination="4Yb-eM-bof" id="feb-QU-GTE"/>
                         <outlet property="navBar" destination="ZvO-C4-ehx" id="uca-Va-IQ8"/>
                         <outlet property="suggestionLabel" destination="FNa-No-8zw" id="345-eB-dFf"/>
+                        <segue destination="aWb-hs-sIz" kind="show" identifier="toThoughtsRecord" id="hEV-0z-69L"/>
+                        <segue destination="hbN-M6-cnu" kind="presentation" identifier="toExplain" id="PhJ-5D-ZHe"/>
+                        <segue destination="323-ru-yep" kind="presentation" identifier="toHint" id="2Ua-A6-8qE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rxl-EU-spr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -437,7 +441,82 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UnW-O6-InF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="45" y="1690"/>
+            <point key="canvasLocation" x="-7" y="1586"/>
+        </scene>
+        <!--ThoughtsRecordViewController-->
+        <scene sceneID="hfx-QE-JW3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ThoughtsRecord" referencedIdentifier="ThoughtsRecordViewController" id="aWb-hs-sIz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="H5X-KN-6H8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iuB-jS-lE6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="1807"/>
+        </scene>
+        <!--Hints View Controller-->
+        <scene sceneID="Gx5-Cn-V3Q">
+            <objects>
+                <viewController storyboardIdentifier="hintsViewController" id="hbN-M6-cnu" customClass="hintsViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f4s-Ew-xJA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyQ-tC-ZIM">
+                                <rect key="frame" x="24" y="24" width="41" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="AM0-l8-Jdb"/>
+                                    <constraint firstAttribute="height" constant="41" id="SHV-az-j5l"/>
+                                </constraints>
+                                <state key="normal" image="OB_modalClose_xButton"/>
+                                <connections>
+                                    <action selector="onClickDismissButton:" destination="hbN-M6-cnu" eventType="touchUpInside" id="dS1-BZ-oR8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Analyzing Throughout Activity" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHV-tn-Zqe">
+                                <rect key="frame" x="24" y="73" width="366" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="PVc-CC-rsr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="30"/>
+                                <color key="textColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kZR-NQ-bg8">
+                                <rect key="frame" x="24" y="200" width="366" height="608"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">As I told you before, whenever you’re doing an activity, I will actively detecting your face to understand your emotion while doing the activity. 
+
+This will help me to understand you better and to know whether my recommendation works for you.
+
+That’s how I can know what you’re feeling!
+
+However, don’t worry! I will only detect your face during the activity, and it won’t be recorded or saved. It will purely used to understand your emotion during the activity. </string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="C8z-6B-xty"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LyQ-tC-ZIM" firstAttribute="top" secondItem="C8z-6B-xty" secondAttribute="top" constant="24" id="1XZ-fq-OfT"/>
+                            <constraint firstItem="LyQ-tC-ZIM" firstAttribute="leading" secondItem="C8z-6B-xty" secondAttribute="leading" constant="24" id="BFL-ec-IHM"/>
+                            <constraint firstItem="C8z-6B-xty" firstAttribute="trailing" secondItem="oHV-tn-Zqe" secondAttribute="trailing" constant="24" id="DgC-cj-EIr"/>
+                            <constraint firstItem="C8z-6B-xty" firstAttribute="trailing" secondItem="kZR-NQ-bg8" secondAttribute="trailing" constant="24" id="HAF-52-YEC"/>
+                            <constraint firstItem="oHV-tn-Zqe" firstAttribute="top" secondItem="f4s-Ew-xJA" secondAttribute="top" constant="73" id="N5N-Ka-5Mx"/>
+                            <constraint firstItem="oHV-tn-Zqe" firstAttribute="leading" secondItem="C8z-6B-xty" secondAttribute="leading" constant="24" id="U5i-8e-upZ"/>
+                            <constraint firstItem="kZR-NQ-bg8" firstAttribute="top" secondItem="oHV-tn-Zqe" secondAttribute="bottom" constant="30" id="iRW-bp-BeQ"/>
+                            <constraint firstItem="kZR-NQ-bg8" firstAttribute="leading" secondItem="C8z-6B-xty" secondAttribute="leading" constant="24" id="pKC-6c-xgj"/>
+                            <constraint firstItem="kZR-NQ-bg8" firstAttribute="bottom" secondItem="C8z-6B-xty" secondAttribute="bottom" id="xr7-xv-ejd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="kZR-NQ-bg8" id="8RR-Cv-JYc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9r0-vv-aTO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828.98550724637687" y="1689.5089285714284"/>
         </scene>
     </scenes>
     <designables>
@@ -461,8 +540,12 @@
         <segue reference="1XG-7W-f1l"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="OB_modalClose_xButton" width="41" height="41"/>
         <image name="mascotBubble" width="231" height="125"/>
         <image name="mascotImage" width="132" height="132"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

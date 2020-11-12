@@ -35,6 +35,8 @@ class StartMirrorViewController: UIViewController {
     var prepareTime = 3
     var currentHint: MirrorHint?
     
+    var emotion: FollowUp.EmotionType?
+    
     var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.image = UIImage(named: "page_background3")
@@ -260,8 +262,9 @@ class StartMirrorViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? AfterActivityViewController {
+        if let vc = segue.destination as? AfterActivityViewController, let emotion = emotion {
             vc.activityInstruction = activitiesInstructionArray[0]
+            vc.data = FollowUp(emotion: emotion)
         }
     }
     
@@ -293,6 +296,16 @@ extension StartMirrorViewController: ARSCNViewDelegate {
         }
         
         let data = FaceData(faceAnchor)
+        
+        if data.browDownRight > 0.3 && data.browDownLeft > 0.3 {
+            emotion = .angry
+        } else if data.mouthFrownRight > 0.3 && data.mouthFrownLeft > 0.3 {
+            emotion = .sad
+        } else if data.mouthSmileRight > 0.3 && data.mouthSmileLeft > 0.3 {
+            emotion = .happy
+        } else {
+            emotion = .neutral
+        }
         
 //        DispatchQueue.main.async {
 //            self.handleSmile(smileValue: CGFloat((data.mouthSmileLeft + data.mouthSmileRight)/2.0))

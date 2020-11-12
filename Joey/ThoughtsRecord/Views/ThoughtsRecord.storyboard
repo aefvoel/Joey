@@ -2753,7 +2753,6 @@ Do you want to do this activity again?</string>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="ivM-Y4-Ime"/>
         <segue reference="RFT-ku-kxy"/>
     </inferredMetricsTieBreakers>
     <resources>
