@@ -8,11 +8,9 @@
 import UIKit
 import ARKit
 import Speech
+import CoreHaptics
 
-struct MirrorHint {
-    let hint: String
-    let plainText: String
-}
+
 
 class StartMirrorViewController: UIViewController {
 
@@ -26,13 +24,11 @@ class StartMirrorViewController: UIViewController {
     @IBOutlet weak var labelTextHint: UILabel!
     @IBOutlet weak var viewHint: RoundedView!
     @IBOutlet weak var imgBubble: UIImageView!
-    var isSmile: Bool = false
     
-    let hints = [
-        MirrorHint(hint: "I’m getting stronger every day", plainText: "I'm getting stronger every day"),
-        MirrorHint(hint: "I know my worth", plainText: "I know my worth"),
-        MirrorHint(hint: "I have the courage to say “NO”", plainText: "I have the courage to say no")
-    ]
+    var isSmile: Bool = false
+    var hapticEngine: CHHapticEngine?
+    
+    let hints = MirrorHint.hints
     
     var countdownTimer: Timer!
     var totalTime: Int?
@@ -81,7 +77,10 @@ class StartMirrorViewController: UIViewController {
             var isFinal = false
             if result != nil {
                 if let hint = self.currentHint?.plainText, let words = result?.bestTranscription.formattedString {
-                    if words.hasSuffix(hint) {
+                    print("words: \(words)")
+                    print("hints: \(hint)")
+                    if words.lowercased().hasSuffix(hint.lowercased()) {
+                        self.playHaptic()
                         self.randomHint()
                     }
                 }
@@ -112,10 +111,56 @@ class StartMirrorViewController: UIViewController {
         print("Say something, I'm listening!")
     }
     
+    func playHaptic() {
+        guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
+
+        let intensity = CHHapticEventParameter(parameterID: .hapticIntensity, value: 1)
+        let sharpness = CHHapticEventParameter(parameterID: .hapticSharpness, value: 1)
+        let event = CHHapticEvent(eventType: .hapticTransient, parameters: [intensity, sharpness], relativeTime: 0)
+
+        do {
+            let pattern = try CHHapticPattern(events: [event], parameters: [])
+            let player = try hapticEngine?.makePlayer(with: pattern)
+            try player?.start(atTime: 0)
+        } catch {
+            print("Failed to play pattern: \(error.localizedDescription).")
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        setupHaptic()
         startRecording()
+    }
+    
+    func setupHaptic() {
+        guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
+
+        do {
+            hapticEngine = try CHHapticEngine()
+            try hapticEngine?.start()
+            
+            hapticEngine?.stoppedHandler = { reason in
+                print("Stop Handler: The engine stopped for reason: \(reason.rawValue)")
+                switch reason {
+                case .audioSessionInterrupt: print("Audio session interrupt")
+                case .applicationSuspended: print("Application suspended")
+                case .idleTimeout: print("Idle timeout")
+                case .systemError: print("System error")
+                case .notifyWhenFinished:
+                    print("Notify when finished")
+                case .engineDestroyed:
+                    print("Engine destroyed")
+                case .gameControllerDisconnect:
+                    print("Game controller disconnect")
+                @unknown default:
+                    print("Unknown error")
+                }
+            }
+        } catch {
+            print("There was an error creating the engine: \(error.localizedDescription)")
+        }
     }
     
     func setupUI(){
