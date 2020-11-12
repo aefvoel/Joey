@@ -24,7 +24,8 @@
 	<string>Joey needs to access your camera to analyze your emotion based on your current face expression.</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Yuanti.ttc</string>
+		<string>Khula-Bold.ttf</string>
+		<string>Khula-Regular.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
