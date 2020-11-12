@@ -8,52 +8,48 @@
 import UIKit
 
 class JacobsonExerciseViewController: UIViewController {
-
-    @IBOutlet weak var navBar: NavigationBar!
-    @IBOutlet weak var instructionImage: UIImageView!
-    @IBOutlet weak var exerciseLabel: UILabel!
-    @IBOutlet weak var timerLabel: UILabel!
     
-    var delegate: JacobsonExerciseDelegate?
-    var timer: Timer?
-    var count = 300
+    @IBOutlet weak var navBar: NavigationBar!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var instructionLabel: UILabel!
+    @IBOutlet weak var instructionImageView: UIImageView!
+    
+    var exercise: JacobsonExcercise {
+        JacobsonExcercise.list[currentExerciseIndex]
+    }
+    var currentExerciseIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navBar.delegate = self
         navBar.buttonDone.isHidden = false
+        navBar.buttonDone.setTitle("Next", for: .normal)
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onDoneButtonTapped(_:)))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onNextClicked(_:)))
         navBar.buttonDone.addGestureRecognizer(tapGesture)
         
-        if let exercise = delegate?.getExercise() {
-            instructionImage.image = exercise.image
-            exerciseLabel.text = exercise.name
-        }
-        
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+        updateExerciseData()
     }
     
-    @objc func updateTimer() {
-        if count > 0 {
-            let minutes = String(format: "%02d", count / 60)
-            let seconds = String(format: "%02d", count % 60)
-            timerLabel.text = "\(minutes):\(seconds)"
-            count -= 1
+    func updateExerciseData() {
+        if currentExerciseIndex < JacobsonExcercise.list.count {
+            titleLabel.text = exercise.title
+            instructionLabel.text = exercise.instruction
+            instructionImageView.image = exercise.image
         } else {
-            timerLabel.text = "Time's up!"
+            titleLabel.text = "Well done!"
+            instructionLabel.text = "We’re finished.. don’t you feel a little different?"
+            instructionImageView.image = UIImage(named: "jacobson-finish")
+            navBar.buttonDone.setTitle("Done", for: .normal)
         }
     }
     
-    @objc func onDoneButtonTapped(_ sender: UITapGestureRecognizer) {
-        if sender.state == .ended {
-            guard let isLast = delegate?.isLastExercise() else { return }
-            if isLast {
-                performSegue(withIdentifier: "toFinish", sender: nil)
-            } else {
-                delegate?.nextExercise()
-                navigationController?.popViewController(animated: true)
-            }
+    @objc func onNextClicked(_ sender: UITapGestureRecognizer) {
+        if currentExerciseIndex < JacobsonExcercise.list.count {
+            currentExerciseIndex += 1
+            updateExerciseData()
+        } else {
+            performSegue(withIdentifier: "toFinish", sender: nil)
         }
     }
     

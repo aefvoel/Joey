@@ -9,41 +9,149 @@ import Foundation
 import UIKit
 
 struct JacobsonExcercise {
-    let name: String
+    let title: String
     let instruction: String
-    let image: UIImage
-}
-
-let feetInstruction = """
-<li>Bring your attention to your feet.</li>
-<li>Point your feet downward, and curl your toes under.</li>
-<li>Tighten your toe muscles gently, but don’t strain.</li>
-<li>Notice the tension for a few moments, then release, and notice the relaxation. Repeat.</li>
-<li>Become aware of the difference between the muscles when they’re tensed and when they’re relaxed.</li>
-<li>Continue to tense and relax the leg muscles from the foot to the abdominal area.</li>
-"""
-
-let abdomenInstruction = """
-<li>Gently tighten the muscles of your abdomen, but don’t strain.</li>
-<li>Notice the tension for a few moments. Then release, and notice the relaxation. Repeat.</li>
-<li>Become aware of the difference between the tensed muscles and the relaxed muscles.</li>
-"""
-
-let shouldersAndNeckInstruction = """
-<li>Very gently shrug your shoulders straight up towards your ears. Don’t strain.</li>
-<li>Feel the tension for a few moments, release, and then feel the relaxation. Repeat.</li>
-<li>Notice the difference between the tensed muscles and the relaxed muscles.</li>
-<li>Focus on the neck muscles, first tensing and then relaxing until you feel total relaxation in this area.</li>
-"""
-
-let jacobsonExercises = [
-    JacobsonExcercise(name: "Feet", instruction: feetInstruction, image: #imageLiteral(resourceName: "feetGuide")),
-    JacobsonExcercise(name: "Abdomen", instruction: abdomenInstruction, image: #imageLiteral(resourceName: "abdomenGuide")),
-    JacobsonExcercise(name: "Shoulders & Neck", instruction: abdomenInstruction, image: #imageLiteral(resourceName: "shouldersGuide"))
-]
-
-protocol JacobsonExerciseDelegate {
-    func nextExercise()
-    func getExercise() -> JacobsonExcercise
-    func isLastExercise() -> Bool
+    let image: UIImage?
+    
+    static let list = [
+        
+        // Legs
+        
+        JacobsonExcercise(
+            title: "Legs",
+            instruction: "Let’s start with the legs",
+            image: UIImage(named: "jacobson-legs-1")
+        ),
+        JacobsonExcercise(
+            title: "Legs",
+            instruction: "Raise your legs in the air and contract your muscles",
+            image: UIImage(named: "jacobson-legs-2")
+        ),
+        JacobsonExcercise(
+            title: "Legs",
+            instruction: "Hold for 5 secs..",
+            image: UIImage(named: "jacobson-legs-2")
+        ),
+        JacobsonExcercise(
+            title: "Legs",
+            instruction: "Now relax your muscles",
+            image: UIImage(named: "jacobson-legs-3")
+        ),
+        JacobsonExcercise(
+            title: "Legs",
+            instruction: "How do your legs feel now?\nLet’s repeat for best result",
+            image: UIImage(named: "jacobson-legs-1")
+        ),
+        JacobsonExcercise(
+            title: "Legs",
+            instruction: "Raise your legs in the air and contract your muscles",
+            image: UIImage(named: "jacobson-legs-2")
+        ),
+        JacobsonExcercise(
+            title: "Legs",
+            instruction: "Hold for 5 secs..",
+            image: UIImage(named: "jacobson-legs-2")
+        ),
+        JacobsonExcercise(
+            title: "Legs",
+            instruction: "Now relax your muscles.\nGreat! you finished the hands step",
+            image: UIImage(named: "jacobson-legs-3")
+        ),
+        
+        // Hands
+        
+        JacobsonExcercise(
+            title: "Hands",
+            instruction: "Now let’s try the hands",
+            image: UIImage(named: "jacobson-hands-1")
+        ),
+        JacobsonExcercise(
+            title: "Hands",
+            instruction: "Raise your hands in the air",
+            image: UIImage(named: "jacobson-hands-2")
+        ),
+        JacobsonExcercise(
+            title: "Hands",
+            instruction: "Clench your hands into a fist and contract",
+            image: UIImage(named: "jacobson-hands-3")
+        ),
+        JacobsonExcercise(
+            title: "Hands",
+            instruction: "Hold on for 5 secs..",
+            image: UIImage(named: "jacobson-hands-3")
+        ),
+        JacobsonExcercise(
+            title: "Hands",
+            instruction: "Now relax your muscles",
+            image: UIImage(named: "jacobson-hands-4")
+        ),
+        JacobsonExcercise(
+            title: "Hands",
+            instruction: "How do your hands feel now?\nLet’s repeat for best result",
+            image: UIImage(named: "jacobson-legs-1")
+        ),
+        JacobsonExcercise(
+            title: "Hands",
+            instruction: "Get your hands ready",
+            image: UIImage(named: "jacobson-hands-1")
+        ),
+        JacobsonExcercise(
+            title: "Hands",
+            instruction: "Raise your hands in the air",
+            image: UIImage(named: "jacobson-hands-2")
+        ),
+        JacobsonExcercise(
+            title: "Hands",
+            instruction: "Clench your hands into a fist and contract",
+            image: UIImage(named: "jacobson-hands-3")
+        ),
+        JacobsonExcercise(
+            title: "Hands",
+            instruction: "Hold on for 5 secs..",
+            image: UIImage(named: "jacobson-hands-3")
+        ),
+        JacobsonExcercise(
+            title: "Hands",
+            instruction: "Now relax your muscles.\nWell done, you finished the hands step",
+            image: UIImage(named: "jacobson-hands-4")
+        ),
+        
+        // Shoulders
+        
+        JacobsonExcercise(
+            title: "Shoulders",
+            instruction: "Move on to shoulders",
+            image: UIImage(named: "jacobson-legs-1")
+        ),
+        JacobsonExcercise(
+            title: "Shoulders",
+            instruction: "Shrug your shoulders up against your ears as tight as you can",
+            image: UIImage(named: "jacobson-shoulders-1")
+        ),
+        JacobsonExcercise(
+            title: "Shoulders",
+            instruction: "Hold on for 5 secs..",
+            image: UIImage(named: "jacobson-shoulders-1")
+        ),
+        JacobsonExcercise(
+            title: "Shoulders",
+            instruction: "Has anything changed?\nLet’s repeat for best result",
+            image: UIImage(named: "jacobson-shoulders-2")
+        ),
+        JacobsonExcercise(
+            title: "Shoulders",
+            instruction: "Shrug your shoulders up against your ears as tight as you can",
+            image: UIImage(named: "jacobson-shoulders-1")
+        ),
+        JacobsonExcercise(
+            title: "Shoulders",
+            instruction: "Hold on for 5 secs..",
+            image: UIImage(named: "jacobson-shoulders-1")
+        ),
+        JacobsonExcercise(
+            title: "Shoulders",
+            instruction: "Now relax your muscles.\nGreat!",
+            image: UIImage(named: "jacobson-shoulders-2")
+        )
+    ]
 }
