@@ -34,7 +34,10 @@ class SituationViewController: UIViewController, UITextViewDelegate {
     
     @IBAction func onClickContinueButton(_ sender: Any) {
         if textViewSituationAnswer.text == "Type your answer here" {
-            textViewSituationAnswer.text = ""
+            //textViewSituationAnswer.text = ""
+            let alert = AlertHelper.createAlert(title: "Oops!", message: "Please tell me what's on your mind before we go on", onComplete: nil)
+            alert.view.tintColor = #colorLiteral(red: 0.3529411765, green: 0.7607843137, blue: 0.7411764706, alpha: 1)
+            present(alert, animated: true, completion: nil)
         }
         guard let answer = textViewSituationAnswer?.text else { return }
         data.situation = answer
@@ -45,7 +48,6 @@ class SituationViewController: UIViewController, UITextViewDelegate {
         
         navBar.delegate = self
         navBar.labelIndicator.text = "1/7"
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.view.insertSubview(imageView, at: 0)
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: view.topAnchor),

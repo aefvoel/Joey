@@ -101,6 +101,7 @@ class HistoryViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? SummaryViewController {
             vc.data = selectedData
+            vc.segueFromHistory = true
         }
     }
     /*
