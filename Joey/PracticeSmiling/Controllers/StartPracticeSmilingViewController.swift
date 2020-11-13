@@ -104,7 +104,7 @@ class StartPracticeSmilingViewController: UIViewController {
         if totalTime < 55 && totalTime > 10 {
             DispatchQueue.main.async {
                 if self.isSmile {
-                    self.labelInstruction.text = "Yup! Keep that smile longer.. Hold on for 5 more seconds!"
+                    self.labelInstruction.text = "Your smile is cool, right? Hold on your smile for 5 seconds!"
                 } else {
                     self.labelInstruction.text = "Think of something positive about yourself and try to smile naturally"
                 }
