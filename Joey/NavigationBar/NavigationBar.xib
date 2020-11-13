@@ -58,21 +58,21 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="shB-5G-YQw">
-                    <rect key="frame" x="93" y="0.0" width="228" height="47"/>
+                    <rect key="frame" x="90" y="0.0" width="231" height="47"/>
                     <accessibility key="accessibilityConfiguration" identifier="topBarNavigation_titleLbl"/>
                     <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="36"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unR-Ml-tWu">
-                    <rect key="frame" x="20" y="4" width="43" height="38.5"/>
+                    <rect key="frame" x="20" y="3.5" width="40" height="40"/>
                     <accessibility key="accessibilityConfiguration" identifier="topBarNavigation_backBtn"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="43" id="aZG-o4-JtG"/>
-                        <constraint firstAttribute="height" constant="43" id="hfd-UZ-usw"/>
+                        <constraint firstAttribute="width" constant="40" id="aZG-o4-JtG"/>
+                        <constraint firstAttribute="height" constant="40" id="hfd-UZ-usw"/>
                     </constraints>
                     <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal">
-                        <imageReference key="backgroundImage" image="chevron.left.circle.fill" catalog="system" symbolScale="small"/>
+                        <imageReference key="backgroundImage" image="back_button" symbolScale="small"/>
                     </state>
                     <connections>
                         <action selector="onClickBackButton:" destination="-1" eventType="touchUpInside" id="e8e-q6-Jrs"/>
@@ -105,6 +105,6 @@
         </designable>
     </designables>
     <resources>
-        <image name="chevron.left.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="back_button" width="45" height="45"/>
     </resources>
 </document>
