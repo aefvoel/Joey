@@ -30,6 +30,8 @@
 		164B4F0125521A8200FCAA42 /* SettingsAccordionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164B4F0025521A8200FCAA42 /* SettingsAccordionTableViewController.swift */; };
 		164B4F0725521AFC00FCAA42 /* SettingsAccordionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164B4F0525521AFC00FCAA42 /* SettingsAccordionTableViewCell.swift */; };
 		164B4F0825521AFC00FCAA42 /* SettingsAccordionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 164B4F0625521AFC00FCAA42 /* SettingsAccordionTableViewCell.xib */; };
+		165591F7255EB99E000B56A3 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 165591F5255EB99E000B56A3 /* Nunito-Bold.ttf */; };
+		165591F8255EB99E000B56A3 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 165591F6255EB99E000B56A3 /* Nunito-Regular.ttf */; };
 		1655E28725467A5300ACCF9C /* DetectEmotionValidateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1655E28625467A5300ACCF9C /* DetectEmotionValidateViewController.swift */; };
 		1655E28C25467BF700ACCF9C /* DetectEmotionReasonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1655E28B25467BF700ACCF9C /* DetectEmotionReasonViewController.swift */; };
 		166C532C253732DF007C5EF3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166C532B253732DF007C5EF3 /* Home.storyboard */; };
@@ -153,6 +155,8 @@
 		164B4F0025521A8200FCAA42 /* SettingsAccordionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAccordionTableViewController.swift; sourceTree = "<group>"; };
 		164B4F0525521AFC00FCAA42 /* SettingsAccordionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAccordionTableViewCell.swift; sourceTree = "<group>"; };
 		164B4F0625521AFC00FCAA42 /* SettingsAccordionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsAccordionTableViewCell.xib; sourceTree = "<group>"; };
+		165591F5255EB99E000B56A3 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		165591F6255EB99E000B56A3 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		1655E28625467A5300ACCF9C /* DetectEmotionValidateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionValidateViewController.swift; sourceTree = "<group>"; };
 		1655E28B25467BF700ACCF9C /* DetectEmotionReasonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectEmotionReasonViewController.swift; sourceTree = "<group>"; };
 		166C532B253732DF007C5EF3 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -634,6 +638,8 @@
 			isa = PBXGroup;
 			children = (
 				5A0D8589255CDA37002A98FE /* Khula-Bold.ttf */,
+				165591F5255EB99E000B56A3 /* Nunito-Bold.ttf */,
+				165591F6255EB99E000B56A3 /* Nunito-Regular.ttf */,
 				5A0D8588255CDA37002A98FE /* Khula-Regular.ttf */,
 			);
 			path = Font;
@@ -899,6 +905,7 @@
 				166C53362537332F007C5EF3 /* Onboarding.storyboard in Resources */,
 				ABB1EE93254FB61800D1C5C1 /* HistoryCollectionViewCell.xib in Resources */,
 				AB19AEA52551B15F00B72BC8 /* RecordCollectionViewCell.xib in Resources */,
+				165591F7255EB99E000B56A3 /* Nunito-Bold.ttf in Resources */,
 				AB92A181253730FA003F8823 /* Assets.xcassets in Resources */,
 				166C534025373372007C5EF3 /* DetectEmotion.storyboard in Resources */,
 				16170AF9254127100095D1A5 /* ThoughtsRecord.storyboard in Resources */,
@@ -913,6 +920,7 @@
 				166C532C253732DF007C5EF3 /* Home.storyboard in Resources */,
 				5A0D858A255CDA37002A98FE /* Khula-Regular.ttf in Resources */,
 				ABECBF11253D891C00EF7D43 /* ActivitiesCollectionViewCell.xib in Resources */,
+				165591F8255EB99E000B56A3 /* Nunito-Regular.ttf in Resources */,
 				16170ACB254104EE0095D1A5 /* PracticeSmiling.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
