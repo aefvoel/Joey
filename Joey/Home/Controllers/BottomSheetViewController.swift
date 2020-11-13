@@ -53,8 +53,7 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
                     case .authorized:
                         print("SignedIn")
                         DispatchQueue.main.async {
-                            self.present(MySpaceViewController(), animated: true, completion: .none)
-                            //self.performSegue(withIdentifier: "toMySpace", sender: nil)
+                            self.performSegue(withIdentifier: "toMySpace", sender: nil)
                         }
                         break
                         
@@ -74,9 +73,16 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
                     }
                 }
             }
+            else {
+                self.openSignInWithApple()
+            }
+            
+            
+        }
+        else {
+            performSegue(withIdentifier: "toMySpace", sender: nil)
         }
         
-        //performSegue(withIdentifier: "toMySpace", sender: nil)
     }
     
     func registerNib() {
@@ -165,7 +171,7 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
             // Pulls the view controller behind the safe area top, especially useful when embedding navigation controllers
             useFullScreenMode: false,
             // Determines if using inline mode or not
-            useInlineMode: true
+            useInlineMode: false
         )
         let sheetController = SheetViewController(controller: controller, sizes: [.percent(0.4), .percent(0.75)], options: options)
         sheetController.allowGestureThroughOverlay = true
@@ -181,23 +187,10 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
         sheetController.dismissOnPull = false
         // Change the overlay color
         sheetController.overlayColor = UIColor.clear
-        //        self.present(sheetController, animated: false, completion: nil)
-        // Add child
-        sheetController.willMove(toParent: self)
-        self.addChild(sheetController)
-        view.addSubview(sheetController.view)
-        sheetController.didMove(toParent: self)
+        self.present(sheetController, animated: false, completion: nil)
         
-        sheetController.view.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            sheetController.view.topAnchor.constraint(equalTo: view.topAnchor),
-            sheetController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            sheetController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            sheetController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ])
         
-        // animate in
-        sheetController.animateIn()
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
