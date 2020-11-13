@@ -12,6 +12,7 @@ class SignInWithAppleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupSignInWithApple()
 
         // Do any additional setup after loading the view.
     }

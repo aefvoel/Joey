@@ -53,8 +53,8 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
                     case .authorized:
                         print("SignedIn")
                         DispatchQueue.main.async {
-                            //self.present(MySpaceViewController(), animated: true, completion: .none)
-                            self.performSegue(withIdentifier: "toMySpace", sender: nil)
+                            self.present(MySpaceViewController(), animated: true, completion: .none)
+                            //self.performSegue(withIdentifier: "toMySpace", sender: nil)
                         }
                         break
                         
