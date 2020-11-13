@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
         <array key="Yuanti.ttc">
             <string>STYuanti-SC-Bold</string>
             <string>STYuanti-SC-Regular</string>
@@ -143,7 +146,7 @@
                                     <constraint firstAttribute="width" constant="165" id="FB3-1F-yqt"/>
                                     <constraint firstAttribute="height" constant="22" id="xjS-zz-Rkw"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="16"/>
                                 <state key="normal" title="How do I answer this?">
                                     <color key="titleColor" red="0.86666666670000003" green="0.40784313729999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -191,7 +194,7 @@
                                     <constraint firstAttribute="height" constant="45" id="Q8i-uq-7Vj"/>
                                     <constraint firstAttribute="width" constant="286" id="Tfc-RX-FjR"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -211,7 +214,7 @@
                                     <constraint firstAttribute="width" constant="325" id="eCV-ds-BsC"/>
                                     <constraint firstAttribute="height" constant="56" id="kko-ng-QHo"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2689,7 +2692,7 @@ Do you want to do this activity again?</string>
             <size key="intrinsicContentSize" width="72" height="33"/>
         </designable>
         <designable name="SUn-Qu-1Pb">
-            <size key="intrinsicContentSize" width="81" height="36"/>
+            <size key="intrinsicContentSize" width="83" height="40"/>
         </designable>
         <designable name="Xfc-7p-0S5">
             <size key="intrinsicContentSize" width="52" height="33"/>

@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Khula-Bold.ttf">
-            <string>Khula-Bold</string>
+        <array key="Khula-Regular.ttf">
+            <string>Khula-Regular</string>
+        </array>
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
         </array>
         <array key="Yuanti.ttc">
             <string>STYuanti-SC-Bold</string>
@@ -27,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ffb-z8-gh1">
-                                <rect key="frame" x="24" y="194" width="366" height="668"/>
+                                <rect key="frame" x="24" y="201.5" width="366" height="660.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ActivityListCell" rowHeight="141" id="7cY-Fe-907" customClass="ActivityListCell" customModule="Joey" customModuleProvider="target">
@@ -48,13 +54,13 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="34" id="mOs-WO-pWG"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="14"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShA-iI-V4x">
-                                                    <rect key="frame" x="96.5" y="45" width="173.5" height="33"/>
-                                                    <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="28"/>
+                                                    <rect key="frame" x="91.5" y="45" width="183.5" height="38.5"/>
+                                                    <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="28"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -80,8 +86,8 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9o-07-c5q">
-                                <rect key="frame" x="134.5" y="104" width="145" height="42"/>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="36"/>
+                                <rect key="frame" x="30" y="104" width="354" height="49.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -101,9 +107,11 @@
                             <constraint firstItem="WNp-uS-HXX" firstAttribute="bottom" secondItem="ffb-z8-gh1" secondAttribute="bottom" id="FE2-JZ-Dfa"/>
                             <constraint firstItem="mhe-gG-Zcd" firstAttribute="leading" secondItem="WNp-uS-HXX" secondAttribute="leading" id="GBH-5O-fOe"/>
                             <constraint firstItem="mhe-gG-Zcd" firstAttribute="centerX" secondItem="n9o-07-c5q" secondAttribute="centerX" id="Rwz-nS-qZL"/>
+                            <constraint firstItem="WNp-uS-HXX" firstAttribute="trailing" secondItem="n9o-07-c5q" secondAttribute="trailing" constant="30" id="VST-yh-fJI"/>
                             <constraint firstItem="WNp-uS-HXX" firstAttribute="trailing" secondItem="ffb-z8-gh1" secondAttribute="trailing" constant="24" id="k3h-4Z-9wr"/>
                             <constraint firstItem="ffb-z8-gh1" firstAttribute="leading" secondItem="WNp-uS-HXX" secondAttribute="leading" constant="24" id="kLl-KT-kHu"/>
                             <constraint firstItem="mhe-gG-Zcd" firstAttribute="top" secondItem="WNp-uS-HXX" secondAttribute="top" id="kwe-Vh-Lwz"/>
+                            <constraint firstItem="n9o-07-c5q" firstAttribute="leading" secondItem="WNp-uS-HXX" secondAttribute="leading" constant="30" id="l9F-cd-wkH"/>
                             <constraint firstItem="ffb-z8-gh1" firstAttribute="top" secondItem="n9o-07-c5q" secondAttribute="bottom" constant="48" id="udk-si-ZRX"/>
                         </constraints>
                     </view>
@@ -270,7 +278,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="132" id="EIn-Jw-MaW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -309,13 +317,13 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCf-G4-yrv" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="86" y="415" width="240" height="45"/>
+                                <rect key="frame" x="64" y="415" width="286" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="8cV-2k-YWn"/>
+                                    <constraint firstAttribute="width" constant="286" id="8cV-2k-YWn"/>
                                     <constraint firstAttribute="height" constant="45" id="t7k-fC-IxN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
                                 <state key="normal" title="Yes">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -336,13 +344,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Sw-bq-PFp" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="86" y="484" width="240" height="45"/>
+                                <rect key="frame" x="64" y="484" width="286" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="AXY-4d-uXE"/>
-                                    <constraint firstAttribute="width" constant="240" id="P2r-AO-cK2"/>
+                                    <constraint firstAttribute="width" constant="286" id="P2r-AO-cK2"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
                                 <state key="normal" title="No">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -368,19 +376,13 @@
                                     <constraint firstAttribute="height" constant="47" id="RL5-f4-aTf"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awesome Job!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxk-ek-UsR">
-                                <rect key="frame" x="88" y="99" width="238" height="58"/>
-                                <fontDescription key="fontDescription" name="Khula-Bold" family="Khula" pointSize="36"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbx-y8-7MS">
                                 <rect key="frame" x="225" y="322" width="165" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="JMp-EF-hYM"/>
                                     <constraint firstAttribute="width" constant="165" id="vVX-p8-mTK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="16"/>
                                 <state key="normal" title="How do you know?">
                                     <color key="titleColor" red="0.86666666670000003" green="0.40784313729999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -388,6 +390,12 @@
                                     <action selector="onExplainButtonTapped:" destination="dmB-56-QT2" eventType="touchUpInside" id="CW1-SC-rJJ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awesome Job!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxk-ek-UsR">
+                                <rect key="frame" x="75" y="99" width="264.5" height="55"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Qi4-KG-mq9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -398,17 +406,17 @@
                             <constraint firstItem="Qi4-KG-mq9" firstAttribute="trailing" secondItem="4Yb-eM-bof" secondAttribute="trailing" constant="24" id="R7d-YE-0b6"/>
                             <constraint firstItem="1Sw-bq-PFp" firstAttribute="centerX" secondItem="jCf-G4-yrv" secondAttribute="centerX" id="XRp-sE-nSZ"/>
                             <constraint firstItem="MO1-pJ-rAz" firstAttribute="centerX" secondItem="5AT-xZ-BR7" secondAttribute="centerX" id="YWc-N1-Efp"/>
-                            <constraint firstItem="wxk-ek-UsR" firstAttribute="trailing" secondItem="9hU-n0-vOW" secondAttribute="trailing" id="Zd0-z4-24d"/>
+                            <constraint firstItem="wxk-ek-UsR" firstAttribute="trailing" secondItem="9hU-n0-vOW" secondAttribute="trailing" constant="13.5" id="Zd0-z4-24d"/>
                             <constraint firstItem="FNa-No-8zw" firstAttribute="leading" secondItem="Qi4-KG-mq9" secondAttribute="leading" constant="47" id="Zwt-CL-8Ge"/>
                             <constraint firstItem="Qi4-KG-mq9" firstAttribute="trailing" secondItem="FNa-No-8zw" secondAttribute="trailing" constant="49" id="aQn-MY-bOT"/>
                             <constraint firstItem="1Sw-bq-PFp" firstAttribute="top" secondItem="jCf-G4-yrv" secondAttribute="bottom" constant="24" id="bNR-kT-iGH"/>
-                            <constraint firstItem="jCf-G4-yrv" firstAttribute="centerX" secondItem="4Yb-eM-bof" secondAttribute="centerX" constant="-1" id="buf-2E-uCs"/>
+                            <constraint firstItem="jCf-G4-yrv" firstAttribute="centerX" secondItem="4Yb-eM-bof" secondAttribute="centerX" id="buf-2E-uCs"/>
                             <constraint firstItem="ZvO-C4-ehx" firstAttribute="top" secondItem="Qi4-KG-mq9" secondAttribute="top" id="cEO-9f-qXY"/>
                             <constraint firstItem="ZvO-C4-ehx" firstAttribute="trailing" secondItem="Qi4-KG-mq9" secondAttribute="trailing" id="dMn-gr-1g4"/>
                             <constraint firstItem="wxk-ek-UsR" firstAttribute="top" secondItem="ZvO-C4-ehx" secondAttribute="bottom" constant="8" id="eSQ-Sh-2wh"/>
                             <constraint firstItem="4Yb-eM-bof" firstAttribute="top" secondItem="Qi4-KG-mq9" secondAttribute="top" constant="112" id="mzP-st-Uxh"/>
                             <constraint firstAttribute="bottom" secondItem="MO1-pJ-rAz" secondAttribute="bottom" id="nrQ-jV-gvj"/>
-                            <constraint firstItem="9hU-n0-vOW" firstAttribute="leading" secondItem="jCf-G4-yrv" secondAttribute="leading" id="otl-uO-1FC"/>
+                            <constraint firstItem="9hU-n0-vOW" firstAttribute="leading" secondItem="jCf-G4-yrv" secondAttribute="leading" constant="22" id="otl-uO-1FC"/>
                             <constraint firstItem="Sbx-y8-7MS" firstAttribute="trailing" secondItem="4Yb-eM-bof" secondAttribute="trailing" id="q8L-zt-bFy"/>
                             <constraint firstItem="Sbx-y8-7MS" firstAttribute="top" secondItem="FNa-No-8zw" secondAttribute="bottom" constant="23" id="r5l-Ao-Qt7"/>
                             <constraint firstItem="4Yb-eM-bof" firstAttribute="leading" secondItem="Qi4-KG-mq9" secondAttribute="leading" constant="24" id="wQh-oa-zwu"/>
@@ -477,7 +485,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="97" id="PVc-CC-rsr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="30"/>
                                 <color key="textColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -492,7 +500,7 @@ That’s how I can know what you’re feeling!
 
 However, don’t worry! I will only detect your face during the activity, and it won’t be recorded or saved. It will purely used to understand your emotion during the activity. </string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Khula-Regular" family="Khula" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -521,7 +529,7 @@ However, don’t worry! I will only detect your face during the activity, and it
     </scenes>
     <designables>
         <designable name="1Sw-bq-PFp">
-            <size key="intrinsicContentSize" width="30" height="36"/>
+            <size key="intrinsicContentSize" width="30" height="40"/>
         </designable>
         <designable name="9hU-n0-vOW">
             <size key="intrinsicContentSize" width="53" height="36"/>
@@ -533,7 +541,7 @@ However, don’t worry! I will only detect your face during the activity, and it
             <size key="intrinsicContentSize" width="32" height="36"/>
         </designable>
         <designable name="jCf-G4-yrv">
-            <size key="intrinsicContentSize" width="32" height="36"/>
+            <size key="intrinsicContentSize" width="31" height="40"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
