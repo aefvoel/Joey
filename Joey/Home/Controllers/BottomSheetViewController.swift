@@ -38,13 +38,11 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         labelUserName.text = UserDefaultsHelper.getData(type: String.self, forKey: .userName)
-        appleIDCheck = UserDefaultsHelper.getData(type: String.self, forKey: .signInWithAppleIdentifier) ?? "Nothing"
         getEmotionHistory()
     }
     
     
     @IBAction func tapMySpace(_ sender: Any) {
-        if appleIDCheck == "Nothing" {
             if let userIdentifier = UserDefaultsHelper.getData(type: String.self, forKey: .signInWithAppleIdentifier) {
                 let authorizationProvider = ASAuthorizationAppleIDProvider()
                 authorizationProvider.getCredentialState(forUserID: userIdentifier) { (state, error) in
@@ -75,13 +73,8 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
             }
             else {
                 self.openSignInWithApple()
+            
             }
-            
-            
-        }
-        else {
-            performSegue(withIdentifier: "toMySpace", sender: nil)
-        }
         
     }
     

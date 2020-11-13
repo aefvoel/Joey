@@ -67,8 +67,8 @@ extension SignInWithAppleViewController: ASAuthorizationControllerDelegate {
             print(userIdentifier)
             UserDefaultsHelper.setData(value: userIdentifier, key: .signInWithAppleIdentifier)
             
-            let vc = HomeViewController()
-            self.present(UINavigationController(rootViewController: vc), animated: true)
+            performSegue(withIdentifier: "toMySpace", sender: nil)
+            
             break
         default:
             break

@@ -57,6 +57,9 @@
                             <constraint firstItem="Wfm-8G-M6V" firstAttribute="leading" secondItem="KUx-tL-Sx3" secondAttribute="leading" constant="30" id="l25-qD-8hu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="WJi-62-i7p" kind="show" identifier="toMySpace" id="aeR-vN-zta"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcI-eE-5Ui" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -347,7 +350,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-291.304347826087" y="866.51785714285711"/>
+            <point key="canvasLocation" x="1716" y="548"/>
         </scene>
         <!--DetectEmotionStartViewController-->
         <scene sceneID="7uB-tu-wgk">
@@ -367,7 +370,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W42-7V-VtR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="598" y="996"/>
+            <point key="canvasLocation" x="641" y="1013"/>
         </scene>
         <!--SettingsViewController-->
         <scene sceneID="ITV-Qc-NKf">
@@ -405,6 +408,9 @@
             <size key="intrinsicContentSize" width="167" height="36"/>
         </designable>
     </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="aeR-vN-zta"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Joey" width="923" height="2047"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
