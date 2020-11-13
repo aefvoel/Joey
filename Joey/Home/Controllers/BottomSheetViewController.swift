@@ -164,10 +164,10 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
             // Pulls the view controller behind the safe area top, especially useful when embedding navigation controllers
             useFullScreenMode: false,
             // Determines if using inline mode or not
-            useInlineMode: false
+            useInlineMode: true
         )
-        let sheetController = SheetViewController(controller: controller, sizes: [.percent(0.4), .percent(0.75)], options: options)
-        sheetController.allowGestureThroughOverlay = true
+        let sheetController = SheetViewController(controller: controller, sizes: [.percent(0.50)], options: options)
+        sheetController.allowGestureThroughOverlay = false
         // The size of the grip in the pull bar
         sheetController.gripSize = CGSize(width: 83, height: 7)
         // The color of the grip on the pull bar
@@ -175,12 +175,27 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
         // The corner radius of the sheet
         sheetController.cornerRadius = 24
         // Disable the dismiss on background tap functionality
-        sheetController.dismissOnOverlayTap = false
+        sheetController.dismissOnOverlayTap = true
         // Disable the ability to pull down to dismiss the modal
-        sheetController.dismissOnPull = false
+        sheetController.dismissOnPull = true
         // Change the overlay color
         sheetController.overlayColor = UIColor.clear
-        self.present(sheetController, animated: false, completion: nil)
+        // Add child
+        sheetController.willMove(toParent: self)
+        self.addChild(sheetController)
+        view.addSubview(sheetController.view)
+        sheetController.didMove(toParent: self)
+        
+        sheetController.view.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            sheetController.view.topAnchor.constraint(equalTo: view.topAnchor),
+            sheetController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            sheetController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            sheetController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
+        
+        // animate in
+        sheetController.animateIn()
         
         
         

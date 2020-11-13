@@ -67,7 +67,11 @@ extension SignInWithAppleViewController: ASAuthorizationControllerDelegate {
             print(userIdentifier)
             UserDefaultsHelper.setData(value: userIdentifier, key: .signInWithAppleIdentifier)
             
-            performSegue(withIdentifier: "toMySpace", sender: nil)
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "toMySpace", sender: nil)
+            }
+            
+
             
             break
         default:
