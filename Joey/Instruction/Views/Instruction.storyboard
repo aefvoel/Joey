@@ -9,8 +9,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Yuanti.ttc">
-            <string>STYuanti-SC-Bold</string>
+        <array key="Khula-Regular.ttf">
+            <string>Khula-Regular</string>
+        </array>
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
         </array>
     </customFonts>
     <scenes>
@@ -36,65 +39,65 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsQ-48-VLX">
                                                 <rect key="frame" x="66" y="24" width="324" height="28"/>
-                                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="24"/>
+                                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This activity can help you:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0c7-p1-8Oj">
-                                                <rect key="frame" x="24" y="141.5" width="366" height="26"/>
-                                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="22"/>
+                                                <rect key="frame" x="24" y="150" width="366" height="26"/>
+                                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="check-box" translatesAutoresizingMaskIntoConstraints="NO" id="xBD-Yp-UnW">
-                                                <rect key="frame" x="24" y="231" width="20" height="20"/>
+                                                <rect key="frame" x="24" y="249" width="20" height="19"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuZ-kH-fdR">
-                                                <rect key="frame" x="52" y="203.5" width="338" height="19"/>
+                                                <rect key="frame" x="52" y="221.5" width="338" height="19"/>
                                                 <string key="text">to release toxic emotions
 </string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Khula-Regular" family="Khula" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="check-box" translatesAutoresizingMaskIntoConstraints="NO" id="GOM-dO-aL1">
-                                                <rect key="frame" x="24" y="203" width="20" height="20"/>
+                                                <rect key="frame" x="24" y="221" width="20" height="20"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjv-Ql-gkz">
-                                                <rect key="frame" x="52" y="175.5" width="338" height="19.5"/>
+                                                <rect key="frame" x="52" y="194" width="338" height="19"/>
                                                 <string key="text">to release toxic emotions
 </string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Khula-Regular" family="Khula" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="check-box" translatesAutoresizingMaskIntoConstraints="NO" id="a0v-3B-iU6">
-                                                <rect key="frame" x="24" y="175.5" width="20" height="19.5"/>
+                                                <rect key="frame" x="24" y="194" width="20" height="19"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAW-9c-vMm">
-                                                <rect key="frame" x="52" y="231" width="338" height="20"/>
+                                                <rect key="frame" x="52" y="249" width="338" height="19"/>
                                                 <string key="text">to release toxic emotions
 </string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Khula-Regular" family="Khula" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifying-glass" translatesAutoresizingMaskIntoConstraints="NO" id="pAq-Hn-UPs">
-                                                <rect key="frame" x="24" y="274" width="20" height="20"/>
+                                                <rect key="frame" x="24" y="291" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="QGe-qd-rsg"/>
                                                     <constraint firstAttribute="width" constant="20" id="xSZ-jp-Zap"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhA-S0-ECJ">
-                                                <rect key="frame" x="24" y="60" width="366" height="57.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <rect key="frame" x="24" y="70" width="366" height="56"/>
+                                                <fontDescription key="fontDescription" name="Khula-Regular" family="Khula" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaP-yX-ERo">
-                                                <rect key="frame" x="52" y="267" width="89" height="29"/>
-                                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="14"/>
+                                                <rect key="frame" x="52" y="284" width="89" height="29"/>
+                                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="14"/>
                                                 <state key="normal" title="Why it works?">
                                                     <color key="titleColor" red="0.96470588235294119" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
@@ -115,9 +118,9 @@
                                             <constraint firstItem="a0v-3B-iU6" firstAttribute="leading" secondItem="KhA-S0-ECJ" secondAttribute="leading" id="331-iJ-C2H"/>
                                             <constraint firstItem="0c7-p1-8Oj" firstAttribute="top" secondItem="KhA-S0-ECJ" secondAttribute="bottom" constant="24" id="445-ab-oRv"/>
                                             <constraint firstItem="a0v-3B-iU6" firstAttribute="leading" secondItem="91R-qM-qVE" secondAttribute="leading" constant="24" id="5cv-Sa-XPE"/>
-                                            <constraint firstItem="a0v-3B-iU6" firstAttribute="top" secondItem="0c7-p1-8Oj" secondAttribute="bottom" constant="8" id="5he-2P-bXV"/>
+                                            <constraint firstItem="a0v-3B-iU6" firstAttribute="top" secondItem="0c7-p1-8Oj" secondAttribute="bottom" constant="18" id="5he-2P-bXV"/>
                                             <constraint firstItem="xBD-Yp-UnW" firstAttribute="top" secondItem="GOM-dO-aL1" secondAttribute="bottom" constant="8" id="65x-Jx-pC0"/>
-                                            <constraint firstItem="KhA-S0-ECJ" firstAttribute="top" secondItem="HsQ-48-VLX" secondAttribute="bottom" constant="8" id="7di-7c-z2T"/>
+                                            <constraint firstItem="KhA-S0-ECJ" firstAttribute="top" secondItem="HsQ-48-VLX" secondAttribute="bottom" constant="18" id="7di-7c-z2T"/>
                                             <constraint firstItem="HsQ-48-VLX" firstAttribute="trailing" secondItem="KhA-S0-ECJ" secondAttribute="trailing" id="8k1-eo-HpD"/>
                                             <constraint firstAttribute="height" constant="650" id="ABv-KN-mpV"/>
                                             <constraint firstItem="xBD-Yp-UnW" firstAttribute="bottom" secondItem="zAW-9c-vMm" secondAttribute="bottom" id="DfX-el-Olu"/>
@@ -168,7 +171,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jacobson's Relaxation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TG4-B0-EAU">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="28"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -188,7 +191,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="hzW-34-NSB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
                                 <state key="normal" title="Got It">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -300,17 +303,17 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Practice Smiling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ch-vh-wnf">
-                                <rect key="frame" x="24" y="76" width="366" height="42"/>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="30"/>
+                                <rect key="frame" x="24" y="76" width="366" height="41"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITd-fa-gRu" customClass="TextViewFixed" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="24" y="150" width="366" height="658"/>
+                                <rect key="frame" x="24" y="149" width="366" height="659"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Khula-Regular" family="Khula" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
