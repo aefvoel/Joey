@@ -19,6 +19,52 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Sign In With Apple View Controller-->
+        <scene sceneID="h5D-9i-Pwc">
+            <objects>
+                <viewController storyboardIdentifier="SignInWithAppleViewController" id="inD-xX-nO5" customClass="SignInWithAppleViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ute-E6-OVa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ByL-v2-GDk">
+                                <rect key="frame" x="30" y="108" width="354" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="o2o-a7-GR3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start your journey today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wfm-8G-M6V">
+                                <rect key="frame" x="30" y="145" width="354" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="VLB-Nh-gcJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KUx-tL-Sx3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KUx-tL-Sx3" firstAttribute="trailing" secondItem="Wfm-8G-M6V" secondAttribute="trailing" constant="30" id="3Hg-PJ-3FL"/>
+                            <constraint firstItem="KUx-tL-Sx3" firstAttribute="trailing" secondItem="ByL-v2-GDk" secondAttribute="trailing" constant="30" id="Dle-t5-Lyi"/>
+                            <constraint firstItem="Wfm-8G-M6V" firstAttribute="top" secondItem="ByL-v2-GDk" secondAttribute="bottom" constant="8" id="VEY-tw-Ybc"/>
+                            <constraint firstItem="ByL-v2-GDk" firstAttribute="top" secondItem="KUx-tL-Sx3" secondAttribute="top" constant="64" id="WJR-4z-Qr2"/>
+                            <constraint firstItem="ByL-v2-GDk" firstAttribute="leading" secondItem="KUx-tL-Sx3" secondAttribute="leading" constant="30" id="jGe-Sa-K7b"/>
+                            <constraint firstItem="Wfm-8G-M6V" firstAttribute="leading" secondItem="KUx-tL-Sx3" secondAttribute="leading" constant="30" id="l25-qD-8hu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="WJi-62-i7p" kind="show" identifier="toMySpace" id="aeR-vN-zta"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dcI-eE-5Ui" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1261" y="159"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="0IO-Bv-S47">
             <objects>
@@ -343,6 +389,7 @@
                         <outlet property="bottomSheetScrollView" destination="rtM-n7-fJH" id="e2K-tx-qBy"/>
                         <outlet property="labelUserName" destination="PuK-we-T1M" id="w4E-iW-hGh"/>
                         <segue destination="1MQ-dT-jJO" kind="show" identifier="toInstruction" id="YPz-2S-p8Q"/>
+                        <segue destination="WJi-62-i7p" kind="show" identifier="toMySpace" id="7aP-qn-ahZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zYA-E2-0BO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -353,7 +400,7 @@
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="K8G-Eu-syl">
                     <connections>
-                        <segue destination="WJi-62-i7p" kind="show" id="jc0-Yx-3zP"/>
+                        <action selector="tapMySpace:" destination="YTt-tT-nY8" id="tey-9b-uND"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="gLx-RX-Otv">
@@ -362,7 +409,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-291.304347826087" y="866.51785714285711"/>
+            <point key="canvasLocation" x="1716" y="548"/>
         </scene>
         <!--DetectEmotionStartViewController-->
         <scene sceneID="7uB-tu-wgk">
@@ -382,7 +429,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W42-7V-VtR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="683" y="624"/>
+            <point key="canvasLocation" x="641" y="1013"/>
         </scene>
         <!--SettingsViewController-->
         <scene sceneID="ITV-Qc-NKf">
@@ -433,6 +480,9 @@
             <size key="intrinsicContentSize" width="167" height="36"/>
         </designable>
     </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="aeR-vN-zta"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Joey" width="923" height="2047"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
