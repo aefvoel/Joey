@@ -26,7 +26,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jacobson-home" translatesAutoresizingMaskIntoConstraints="NO" id="ff8-J9-pOn">
-                                <rect key="frame" x="24" y="183.5" width="366" height="366"/>
+                                <rect key="frame" x="24" y="176.5" width="366" height="366"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ff8-J9-pOn" secondAttribute="height" multiplier="1:1" id="993-hL-QcB"/>
                                 </constraints>
@@ -39,13 +39,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jacob’s Relaxation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6w-Bt-EBL">
-                                <rect key="frame" x="24" y="115" width="366" height="50.5"/>
+                                <rect key="frame" x="24" y="115" width="366" height="43.5"/>
                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obg-UQ-mZW" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="64" y="573.5" width="286" height="45"/>
+                                <rect key="frame" x="64" y="566.5" width="286" height="45"/>
                                 <color key="backgroundColor" red="0.3529411764705882" green="0.76078431372549016" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="286" id="O57-J4-ZT0"/>
@@ -232,7 +232,7 @@ Great! you finished the hands step</string>
     </scenes>
     <designables>
         <designable name="Obg-UQ-mZW">
-            <size key="intrinsicContentSize" width="83" height="40"/>
+            <size key="intrinsicContentSize" width="81" height="36"/>
         </designable>
     </designables>
     <resources>
