@@ -131,6 +131,12 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuK-we-T1M">
+                                                <rect key="frame" x="63" y="24" width="54.5" height="30.5"/>
+                                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cP4-sd-ZzV" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="70.5" width="366" height="45"/>
                                                 <color key="backgroundColor" red="1" green="0.80392156862745101" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
@@ -216,12 +222,6 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuK-we-T1M">
-                                                <rect key="frame" x="63" y="200" width="54.5" height="30.5"/>
-                                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="26"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePU-PO-rAe" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="604" width="366" height="244"/>
                                                 <subviews>
@@ -341,7 +341,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="5dk-7g-EWz" firstAttribute="leading" secondItem="cP4-sd-ZzV" secondAttribute="leading" id="1so-l6-UCT"/>
-                                            <constraint firstItem="reY-YN-JA1" firstAttribute="baseline" secondItem="PuK-we-T1M" secondAttribute="baseline" constant="-176" id="3Mz-92-Z63"/>
+                                            <constraint firstItem="reY-YN-JA1" firstAttribute="baseline" secondItem="PuK-we-T1M" secondAttribute="baseline" id="3Mz-92-Z63"/>
                                             <constraint firstItem="5dk-7g-EWz" firstAttribute="top" secondItem="cP4-sd-ZzV" secondAttribute="bottom" constant="16" id="3VR-ke-64f"/>
                                             <constraint firstItem="cP4-sd-ZzV" firstAttribute="centerX" secondItem="b6i-8m-YNn" secondAttribute="centerX" id="5YH-a4-jPc"/>
                                             <constraint firstAttribute="bottom" secondItem="ePU-PO-rAe" secondAttribute="bottom" constant="10" id="68V-Au-72o"/>
@@ -481,7 +481,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="aeR-vN-zta"/>
+        <segue reference="7aP-qn-ahZ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Joey" width="923" height="2047"/>
