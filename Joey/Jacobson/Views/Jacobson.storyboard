@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jacobson-home" translatesAutoresizingMaskIntoConstraints="NO" id="ff8-J9-pOn">
-                                <rect key="frame" x="24" y="176" width="366" height="366"/>
+                                <rect key="frame" x="24" y="174" width="366" height="366"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ff8-J9-pOn" secondAttribute="height" multiplier="1:1" id="993-hL-QcB"/>
                                 </constraints>
@@ -31,19 +31,19 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jacob’s Relaxation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6w-Bt-EBL">
-                                <rect key="frame" x="24" y="115" width="366" height="43"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <rect key="frame" x="24" y="115" width="366" height="41"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obg-UQ-mZW" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="64" y="566" width="286" height="45"/>
+                                <rect key="frame" x="64" y="564" width="286" height="45"/>
                                 <color key="backgroundColor" red="0.3529411764705882" green="0.76078431372549016" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="286" id="O57-J4-ZT0"/>
                                     <constraint firstAttribute="height" constant="45" id="hFq-Uo-dgr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -77,7 +77,7 @@
                                     <constraint firstAttribute="height" constant="80" id="NJI-eN-Eg7"/>
                                     <constraint firstAttribute="width" constant="201" id="THm-gi-ONU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -224,7 +224,7 @@ Great! you finished the hands step</string>
     </scenes>
     <designables>
         <designable name="Obg-UQ-mZW">
-            <size key="intrinsicContentSize" width="86" height="36"/>
+            <size key="intrinsicContentSize" width="69" height="33"/>
         </designable>
     </designables>
     <resources>
