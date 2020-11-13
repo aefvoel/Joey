@@ -28,4 +28,5 @@ enum UserDefaultKeys: String, CaseIterable {
     case userName
     case themeColor
     case isLoggedIn
+    case signInWithAppleIdentifier
 }
