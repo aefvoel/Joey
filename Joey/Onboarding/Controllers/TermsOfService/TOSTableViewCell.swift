@@ -33,5 +33,13 @@ class TOSTableViewCell: UITableViewCell {
         labelQuestion.text = tosItem.tosQuestion
         labelAnswer.text = tosItem.tosAnswer
     }
+    
+    func setChevron(_ toActive: Bool) {
+        if toActive {
+            chevronImage.image = UIImage(systemName: "chevron.up")
+        } else {
+            chevronImage.image = UIImage(systemName: "chevron.down")
+        }
+    }
 
 }

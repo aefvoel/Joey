@@ -2754,7 +2754,6 @@ Do you want to do this activity again?</string>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="ICH-mk-Jc3"/>
         <segue reference="Y0y-Q6-4kK"/>
     </inferredMetricsTieBreakers>
     <resources>

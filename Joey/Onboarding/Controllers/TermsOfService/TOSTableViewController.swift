@@ -67,24 +67,25 @@ class TOSTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if selectedCellIndexPath != nil && selectedCellIndexPath == indexPath {
-            tos.chevronImage?.image = UIImage(systemName: "chevron.up")
-            selectedCellIndexPath = nil
-        } else {
-            tos.chevronImage?.image = UIImage(systemName: "chevron.down")
-            selectedCellIndexPath = indexPath
-        }
-        
         tableView.beginUpdates()
         tableView.endUpdates()
+    }
+    
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        guard let cell = tableView.cellForRow(at: indexPath) as? TOSTableViewCell else { return indexPath }
         
-        if selectedCellIndexPath != nil {
-            // This ensures, that the cell is fully visible once expanded
-            tableView.scrollToRow(at: indexPath, at: .none, animated: true)
+        if selectedCellIndexPath == indexPath {
+            selectedCellIndexPath = nil
+            cell.setChevron(false)
+        } else {
+            selectedCellIndexPath = indexPath
+            cell.setChevron(true)
+            guard let previousCellIndexPath = tableView.indexPathForSelectedRow else { return indexPath }
+            guard let previousCell = tableView.cellForRow(at: previousCellIndexPath) as? TOSTableViewCell else { return indexPath }
+            previousCell.setChevron(true)
         }
         
-        print("Cell \(indexPath.row) selected")
-        
+        return indexPath
     }
 
 /*

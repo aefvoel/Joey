@@ -33,5 +33,13 @@ class PrivPolicyTableViewCell: UITableViewCell {
         labelPPQuestion.text = ppItem.privPolicyQuestion
         labelPPAnswer.text = ppItem.privPolicyAnswer
     }
+    
+    func setChevron(_ toActive: Bool) {
+        if toActive {
+            chevronImage.image = UIImage(systemName: "chevron.up")
+        } else {
+            chevronImage.image = UIImage(systemName: "chevron.down")
+        }
+    }
 
 }
