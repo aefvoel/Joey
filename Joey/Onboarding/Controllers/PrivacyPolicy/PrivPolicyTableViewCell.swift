@@ -11,6 +11,8 @@ class PrivPolicyTableViewCell: UITableViewCell {
 
     @IBOutlet weak var labelPPQuestion: UILabel!
     
+    @IBOutlet weak var chevronImage: UIImageView!
+    
     @IBOutlet weak var labelPPAnswer: UILabel!
     
     var ppItem: PrivacyPolicyModel!

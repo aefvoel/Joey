@@ -9,12 +9,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Khula-Regular.ttf">
+            <string>Khula-Regular</string>
+        </array>
         <array key="Nunito-Bold.ttf">
             <string>Nunito-Bold</string>
         </array>
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
         <array key="Yuanti.ttc">
             <string>STYuanti-SC-Bold</string>
-            <string>STYuanti-SC-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -27,33 +32,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thoughts Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d71-4z-3ep">
-                                <rect key="frame" x="24" y="137" width="366" height="35"/>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="30"/>
+                                <rect key="frame" x="24" y="137" width="366" height="41"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TR-Icon" translatesAutoresizingMaskIntoConstraints="NO" id="C61-Ns-u2B">
-                                <rect key="frame" x="114" y="204" width="186" height="186"/>
+                                <rect key="frame" x="114" y="210" width="186" height="186"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4P-Hf-oH7">
-                                <rect key="frame" x="24" y="422" width="366" height="115"/>
+                                <rect key="frame" x="24" y="428" width="366" height="164"/>
                                 <string key="text">Thoughts record is a part of CBT that is already proven to help you challenge your negative thinking. All you have to do is following the steps and tell Joey what you really think and feel. It doesn’t have to be perfect! However, make it as specific and honest as possible.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Khula-Regular" family="Khula" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeZ-rP-h7g">
-                                <rect key="frame" x="24" y="561" width="366" height="76.5"/>
+                                <rect key="frame" x="24" y="616" width="366" height="109.5"/>
                                 <string key="text">Thoughts Record can help you to be aware of your negative thoughts, to create rational alternatives, to challenge negative (and unhelpful positive) thoughts</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Khula-Regular" family="Khula" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whyitworks-icon" translatesAutoresizingMaskIntoConstraints="NO" id="JTj-TD-LZV">
-                                <rect key="frame" x="24" y="669.5" width="21" height="21"/>
+                                <rect key="frame" x="24" y="733.5" width="21" height="21"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCe-pO-lc0">
-                                <rect key="frame" x="53" y="669.5" width="89" height="21"/>
+                                <rect key="frame" x="53" y="733.5" width="89" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="RIk-Qv-I0o"/>
                                 </constraints>
@@ -72,7 +77,7 @@
                                     <constraint firstAttribute="width" constant="286" id="3de-QT-4ke"/>
                                     <constraint firstAttribute="height" constant="45" id="MPD-iK-o4l"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -101,8 +106,8 @@
                             <constraint firstItem="eeZ-rP-h7g" firstAttribute="centerX" secondItem="ivt-tD-5Ag" secondAttribute="centerX" id="67E-ni-T3B"/>
                             <constraint firstAttribute="trailing" secondItem="F4P-Hf-oH7" secondAttribute="trailing" constant="24" id="B1n-3I-Xnr"/>
                             <constraint firstItem="xCe-pO-lc0" firstAttribute="leading" secondItem="JTj-TD-LZV" secondAttribute="trailing" constant="8" id="Cge-ks-Bif"/>
-                            <constraint firstItem="xCe-pO-lc0" firstAttribute="top" secondItem="eeZ-rP-h7g" secondAttribute="bottom" constant="32" id="DhN-j7-xJ3"/>
-                            <constraint firstItem="JTj-TD-LZV" firstAttribute="top" secondItem="eeZ-rP-h7g" secondAttribute="bottom" constant="32" id="FUV-T9-SJw"/>
+                            <constraint firstItem="xCe-pO-lc0" firstAttribute="top" secondItem="eeZ-rP-h7g" secondAttribute="bottom" constant="8" id="DhN-j7-xJ3"/>
+                            <constraint firstItem="JTj-TD-LZV" firstAttribute="top" secondItem="eeZ-rP-h7g" secondAttribute="bottom" constant="8" id="FUV-T9-SJw"/>
                             <constraint firstItem="ioN-YR-MtI" firstAttribute="centerX" secondItem="ivt-tD-5Ag" secondAttribute="centerX" id="H4q-lK-8Bq"/>
                             <constraint firstItem="C61-Ns-u2B" firstAttribute="top" secondItem="d71-4z-3ep" secondAttribute="bottom" constant="32" id="Jec-eE-cRC"/>
                             <constraint firstItem="JTj-TD-LZV" firstAttribute="leading" secondItem="7AK-JA-pUu" secondAttribute="leading" constant="24" id="NHS-5B-3Q3"/>
@@ -169,7 +174,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -284,7 +289,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="cjn-PO-xi3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="30"/>
                                 <color key="textColor" red="0.3529411764705882" green="0.76078431372549016" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -308,7 +313,7 @@ Source:
 2. https://theprivatetherapyclinic.co.uk/what-is-a-thought-record/
 3. https://ibpf.org/putting-your-thoughts-on-trial-how-to-use-cbt-thought-records/</string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Khula-Regular" family="Khula" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -358,7 +363,7 @@ Source:
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="5QY-Zo-SuU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="30"/>
                                 <color key="textColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -385,7 +390,7 @@ This is just an example. You can always do it in any way you like, after all it�
 You don’t have to do thought records perfectly. Its not rocket science or brain surgery. Just do the best you can and don’t think too much!
 </string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Khula-Regular" family="Khula" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -435,7 +440,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="1b6-7E-Qhk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="30"/>
                                 <color key="textColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -453,7 +458,7 @@ This is just an example. You can always do it in any way you like, after all it�
 
 You don’t have to do thought records perfectly. Its not rocket science or brain surgery. Just do the best you can and don’t think too much!</string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Khula-Regular" family="Khula" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -503,7 +508,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="Kld-yb-slk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="30"/>
                                 <color key="textColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -531,7 +536,7 @@ This is just an example. You can always do it in any way you like, after all it�
 You don’t have to do thought records perfectly. Its not rocket science or brain surgery. Just do the best you can and don’t think too much!
 </string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Khula-Regular" family="Khula" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -581,7 +586,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="NyF-n1-YL5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="30"/>
                                 <color key="textColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -603,7 +608,7 @@ This is just an example. You can always do it in any way you like, after all it�
 You don’t have to do thought records perfectly. Its not rocket science or brain surgery. Just do the best you can and don’t think too much!
 </string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Khula-Regular" family="Khula" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -653,7 +658,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 <constraints>
                                     <constraint firstAttribute="height" constant="86" id="gKH-QX-5Dr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="30"/>
                                 <color key="textColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -676,7 +681,7 @@ This is just an example. You can always do it in any way you like, after all it�
 You don’t have to do thought records perfectly. Its not rocket science or brain surgery. Just do the best you can and don’t think too much!
 </string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Khula-Regular" family="Khula" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -726,7 +731,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="s7v-DO-Kdp"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="30"/>
                                 <color key="textColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -743,7 +748,7 @@ This is just an example. You can always do it in any way you like, after all it�
 You don’t have to do thought records perfectly. Its not rocket science or brain surgery. Just do the best you can and don’t think too much!
 </string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Khula-Regular" family="Khula" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -793,7 +798,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="Sw2-Tw-pNs"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="30"/>
                                 <color key="textColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -814,7 +819,7 @@ This is just an example. You can always do it in any way you like, after all it�
 You don’t have to do thought records perfectly. Its not rocket science or brain surgery. Just do the best you can and don’t think too much!
 </string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Khula-Regular" family="Khula" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -858,7 +863,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                     <constraint firstAttribute="width" constant="165" id="AfL-ql-SZB"/>
                                     <constraint firstAttribute="height" constant="22" id="i2X-0O-Ulk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="16"/>
                                 <state key="normal" title="How do I answer this?">
                                     <color key="titleColor" red="0.86666666670000003" green="0.40784313729999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -881,7 +886,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -906,7 +911,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                     <constraint firstAttribute="width" constant="286" id="FEf-Wo-LF1"/>
                                     <constraint firstAttribute="height" constant="45" id="TWC-9t-Rdz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -920,22 +925,22 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                     <action selector="onClickContinueButton:" destination="kRS-yZ-wOh" eventType="touchUpInside" id="nch-o8-vSR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What was going through your mind when the situation happpened?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gio-4K-qfe">
-                                <rect key="frame" x="44.5" y="151" width="325" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="325" id="Ica-ci-fIi"/>
-                                    <constraint firstAttribute="height" constant="56" id="q1B-CM-P6T"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1K0-ST-YgA" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="r7O-qs-j87"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What was going through your mind when the situation happpened?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gio-4K-qfe">
+                                <rect key="frame" x="39" y="151" width="336" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="336" id="Ica-ci-fIi"/>
+                                    <constraint firstAttribute="height" constant="56" id="q1B-CM-P6T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="x5w-Fp-oUR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -970,7 +975,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jey-fg-SFc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="922" y="-90"/>
+            <point key="canvasLocation" x="921.73913043478262" y="-90.401785714285708"/>
         </scene>
         <!--Moods View Controller-->
         <scene sceneID="ajZ-PB-kSS">
@@ -989,7 +994,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                     <constraint firstAttribute="width" constant="165" id="bmX-e3-O71"/>
                                     <constraint firstAttribute="height" constant="22" id="x2a-7m-ZrD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="16"/>
                                 <state key="normal" title="How do I answer this?">
                                     <color key="titleColor" red="0.86666666670000003" green="0.40784313729999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -1010,17 +1015,17 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                     <constraint firstAttribute="height" constant="56" id="6Zq-a8-Rpr"/>
                                     <constraint firstAttribute="width" constant="325" id="Ci0-B9-KrH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="K5O-gs-Uje">
-                                <rect key="frame" x="40" y="343" width="334" height="33"/>
+                                <rect key="frame" x="40" y="343" width="334" height="37"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qo3-BQ-McZ" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Happy">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1041,9 +1046,9 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lae-Nf-sZw" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="179" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="179" y="0.0" width="155" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Neutral">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1066,12 +1071,12 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="R9e-ac-pAw">
-                                <rect key="frame" x="40" y="392" width="334" height="33"/>
+                                <rect key="frame" x="40" y="396" width="334" height="37"/>
                                 <subviews>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xP7-7r-H0r" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Angry">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1092,9 +1097,9 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyX-1O-vga" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="179" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="179" y="0.0" width="155" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Sad">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1117,12 +1122,12 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="NDu-DZ-2Z6">
-                                <rect key="frame" x="40" y="441" width="334" height="33"/>
+                                <rect key="frame" x="40" y="449" width="334" height="37"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Juj-MS-h47" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Anxious">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1143,9 +1148,9 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVO-7E-olH" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="179" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="179" y="0.0" width="155" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Guilty">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1168,12 +1173,12 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Ayk-ie-BpX">
-                                <rect key="frame" x="40" y="490" width="334" height="33"/>
+                                <rect key="frame" x="40" y="502" width="334" height="37"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ay-b0-IhI" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Stressed">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1194,9 +1199,9 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkg-Cb-LdB" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="179" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="179" y="0.0" width="155" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Dissapointed">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1219,12 +1224,12 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="C2H-BZ-dGi">
-                                <rect key="frame" x="40" y="539" width="334" height="33"/>
+                                <rect key="frame" x="40" y="555" width="334" height="37"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfc-7p-0S5" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Empty">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1245,9 +1250,9 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQP-rH-rih" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="179" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="179" y="0.0" width="155" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Others..">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1270,13 +1275,13 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFl-gc-ptI" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="64" y="596" width="286" height="45"/>
+                                <rect key="frame" x="64" y="616" width="286" height="45"/>
                                 <color key="backgroundColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="DS4-MU-ZpM"/>
                                     <constraint firstAttribute="width" constant="286" id="hX9-eN-C8a"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1368,7 +1373,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                     <constraint firstAttribute="width" constant="165" id="Rif-X7-kGi"/>
                                     <constraint firstAttribute="height" constant="22" id="gMP-VY-u10"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="16"/>
                                 <state key="normal" title="How do I answer this?">
                                     <color key="titleColor" red="0.86666666670000003" green="0.40784313729999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -1391,7 +1396,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -1416,7 +1421,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                     <constraint firstAttribute="width" constant="286" id="Fkl-O8-Oot"/>
                                     <constraint firstAttribute="height" constant="45" id="PSa-rq-Skr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1436,7 +1441,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                     <constraint firstAttribute="height" constant="56" id="XFL-Yr-noP"/>
                                     <constraint firstAttribute="width" constant="325" id="vRf-Kl-Gg6"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1499,7 +1504,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                     <constraint firstAttribute="width" constant="165" id="Dbp-bS-2qa"/>
                                     <constraint firstAttribute="height" constant="22" id="oJU-HP-ON5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="16"/>
                                 <state key="normal" title="How do I answer this?">
                                     <color key="titleColor" red="0.86666666670000003" green="0.40784313729999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -1522,7 +1527,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -1547,7 +1552,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                     <constraint firstAttribute="width" constant="286" id="gAV-wh-kvM"/>
                                     <constraint firstAttribute="height" constant="45" id="r8A-kh-Nye"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1567,7 +1572,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                     <constraint firstAttribute="width" constant="325" id="MYP-VM-qyJ"/>
                                     <constraint firstAttribute="height" constant="56" id="ysv-ip-93x"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1630,7 +1635,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                     <constraint firstAttribute="height" constant="22" id="5Fn-1d-qIa"/>
                                     <constraint firstAttribute="width" constant="165" id="nXz-hT-GGx"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="16"/>
                                 <state key="normal" title="How do I answer this?">
                                     <color key="titleColor" red="0.86666666670000003" green="0.40784313729999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -1653,7 +1658,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -1678,7 +1683,7 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                     <constraint firstAttribute="height" constant="45" id="Jyx-I5-9Ea"/>
                                     <constraint firstAttribute="width" constant="286" id="csz-zO-aCn"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1692,22 +1697,22 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                     <action selector="onClickContinueButton:" destination="jTo-Vr-DOo" eventType="touchUpInside" id="qk4-bf-ohf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now that you understand your negative thinking, how could you have handled the situation differently? " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6m-KU-xru">
-                                <rect key="frame" x="32.5" y="134" width="349" height="90"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="LDk-0E-xl9"/>
-                                    <constraint firstAttribute="width" constant="349" id="Z07-HR-93J"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mP9-oC-k61" customClass="NavigationBar" customModule="Joey" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="jyC-9M-zo8"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now that you understand your negative thinking, how could you have handled the situation differently? " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6m-KU-xru">
+                                <rect key="frame" x="26" y="134" width="362" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="LDk-0E-xl9"/>
+                                    <constraint firstAttribute="width" constant="362" id="Z07-HR-93J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1f3-Op-fti"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1787,12 +1792,12 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="UO1-6S-ytg">
-                                <rect key="frame" x="40" y="343" width="334" height="33"/>
+                                <rect key="frame" x="40" y="343" width="334" height="37"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbM-ws-c5w" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Happy">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1813,9 +1818,9 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyE-Nc-Jpf" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="179" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="179" y="0.0" width="155" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Neutral">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1838,12 +1843,12 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="5c4-zz-MnD">
-                                <rect key="frame" x="40" y="392" width="334" height="33"/>
+                                <rect key="frame" x="40" y="396" width="334" height="37"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF7-rp-nlN" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Angry">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1864,9 +1869,9 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t46-Br-82L" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="179" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="179" y="0.0" width="155" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Sad">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1889,12 +1894,12 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="bYn-Sy-cl5">
-                                <rect key="frame" x="40" y="441" width="334" height="33"/>
+                                <rect key="frame" x="40" y="449" width="334" height="37"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcp-AL-X82" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Anxious">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1915,9 +1920,9 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nK-2c-yoc" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="179" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="179" y="0.0" width="155" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Guilty">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1940,12 +1945,12 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="qo9-vt-TAg">
-                                <rect key="frame" x="40" y="490" width="334" height="33"/>
+                                <rect key="frame" x="40" y="502" width="334" height="37"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rca-Gl-hK3" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Stressed">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1966,9 +1971,9 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWb-QV-RHh" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="179" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="179" y="0.0" width="155" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Dissapointed">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1991,12 +1996,12 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Kba-u3-sWi">
-                                <rect key="frame" x="40" y="539" width="334" height="33"/>
+                                <rect key="frame" x="40" y="555" width="334" height="37"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVX-7H-tG9" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Empty">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -2017,9 +2022,9 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJF-aG-D9m" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="179" y="0.0" width="155" height="33"/>
+                                        <rect key="frame" x="179" y="0.0" width="155" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Others..">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -2042,13 +2047,13 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4I-F5-S9r" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="64" y="596" width="286" height="45"/>
+                                <rect key="frame" x="64" y="616" width="286" height="45"/>
                                 <color key="backgroundColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="2Y7-GZ-HI7"/>
                                     <constraint firstAttribute="width" constant="286" id="zgm-kO-BqD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -2139,35 +2144,35 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Well Done!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olu-NU-fag">
-                                <rect key="frame" x="12" y="137" width="390" height="51.5"/>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="44"/>
+                                <rect key="frame" x="12" y="137" width="390" height="60.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="44"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotBigBubble" translatesAutoresizingMaskIntoConstraints="NO" id="WYH-CA-Gxh">
-                                <rect key="frame" x="24" y="203.5" width="366" height="293"/>
+                                <rect key="frame" x="24" y="212.5" width="366" height="293"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="366" id="7vN-iI-BMg"/>
                                     <constraint firstAttribute="height" constant="293" id="qzV-mo-HuX"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMn-NV-Arw">
-                                <rect key="frame" x="36" y="231.5" width="342" height="174"/>
+                                <rect key="frame" x="36" y="240.5" width="342" height="174"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="174" id="nFf-vl-TCP"/>
                                 </constraints>
                                 <string key="text">You just finished challenging your thoughts! 
 Phew, it’s never been an easy task but glad you made it! </string>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uic-9A-JyE">
-                                <rect key="frame" x="22" y="538.5" width="370" height="28"/>
+                                <rect key="frame" x="22" y="547.5" width="370" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="b3K-gg-iF2"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2248,17 +2253,17 @@ Phew, it’s never been an easy task but glad you made it! </string>
                                 </constraints>
                                 <string key="text">I’ve prepared the summary of your answers for this activity. 
 Do you want to see it?</string>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="yse-95-t6O">
-                                <rect key="frame" x="64" y="416" width="286" height="82"/>
+                                <rect key="frame" x="64" y="416" width="286" height="90"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqp-pa-l4v" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="286" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="286" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Yes">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -2279,9 +2284,9 @@ Do you want to see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKq-eD-B4M" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="49" width="286" height="33"/>
+                                        <rect key="frame" x="0.0" y="53" width="286" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="No">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -2363,7 +2368,7 @@ Do you want to see it?</string>
                                     <constraint firstAttribute="height" constant="45" id="6Yr-6z-7WK"/>
                                     <constraint firstAttribute="width" constant="286" id="kXX-kV-AZa"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
                                 <state key="normal" title="Done">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -2385,19 +2390,19 @@ Do you want to see it?</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Thoughts Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFF-5S-EMm">
-                                <rect key="frame" x="30" y="232" width="354" height="28"/>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="24"/>
+                                <rect key="frame" x="30" y="232" width="354" height="33"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friday, October 16th 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5f-gh-9tk">
-                                <rect key="frame" x="30" y="268" width="354" height="19"/>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="16"/>
+                                <rect key="frame" x="30" y="273" width="354" height="22"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ayf-OW-n6C">
-                                <rect key="frame" x="24" y="311" width="366" height="403"/>
+                                <rect key="frame" x="24" y="319" width="366" height="395"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="summaryCell" rowHeight="197" id="CCT-bz-oos" customClass="SummaryTableViewCell" customModule="Joey" customModuleProvider="target">
@@ -2414,8 +2419,8 @@ Do you want to see it?</string>
                                                             <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evidence that does not Support" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwR-KA-hb2">
-                                                                    <rect key="frame" x="8" y="11" width="350" height="23.5"/>
-                                                                    <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                                                    <rect key="frame" x="8" y="11" width="350" height="27.5"/>
+                                                                    <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -2433,7 +2438,7 @@ Do you want to see it?</string>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvG-Od-LNL">
                                                                     <rect key="frame" x="8" y="6" width="350" height="133"/>
-                                                                    <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                                                    <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -2550,12 +2555,12 @@ Do you want to see it?</string>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CjY-SE-nQe">
-                                <rect key="frame" x="64" y="416" width="286" height="82"/>
+                                <rect key="frame" x="64" y="416" width="286" height="90"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIU-zg-uVo" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="286" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="286" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="Yes">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -2576,9 +2581,9 @@ Do you want to see it?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwb-9S-x34" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="49" width="286" height="33"/>
+                                        <rect key="frame" x="0.0" y="53" width="286" height="37"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                         <state key="normal" title="No">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -2615,7 +2620,7 @@ Do you want to see it?</string>
                                 </constraints>
                                 <string key="text">Don’t worry, your answers are saved in “My Space”. You can always see it anytime you want. 
 Do you want to do this activity again?</string>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2654,110 +2659,9 @@ Do you want to do this activity again?</string>
             <point key="canvasLocation" x="6562" y="731"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="5nK-2c-yoc">
-            <size key="intrinsicContentSize" width="47" height="33"/>
-        </designable>
-        <designable name="7ay-b0-IhI">
-            <size key="intrinsicContentSize" width="72" height="33"/>
-        </designable>
-        <designable name="BbM-ws-c5w">
-            <size key="intrinsicContentSize" width="54" height="33"/>
-        </designable>
-        <designable name="CF7-rp-nlN">
-            <size key="intrinsicContentSize" width="47" height="33"/>
-        </designable>
-        <designable name="E8j-TK-oA4">
-            <size key="intrinsicContentSize" width="48" height="36"/>
-        </designable>
-        <designable name="HVX-7H-tG9">
-            <size key="intrinsicContentSize" width="52" height="33"/>
-        </designable>
-        <designable name="IIU-zg-uVo">
-            <size key="intrinsicContentSize" width="30" height="33"/>
-        </designable>
-        <designable name="JQP-rH-rih">
-            <size key="intrinsicContentSize" width="65" height="33"/>
-        </designable>
-        <designable name="Juj-MS-h47">
-            <size key="intrinsicContentSize" width="65" height="33"/>
-        </designable>
-        <designable name="LVr-x4-enK">
-            <size key="intrinsicContentSize" width="81" height="36"/>
-        </designable>
-        <designable name="LyX-1O-vga">
-            <size key="intrinsicContentSize" width="33" height="33"/>
-        </designable>
-        <designable name="Rca-Gl-hK3">
-            <size key="intrinsicContentSize" width="72" height="33"/>
-        </designable>
-        <designable name="SUn-Qu-1Pb">
-            <size key="intrinsicContentSize" width="83" height="40"/>
-        </designable>
-        <designable name="Xfc-7p-0S5">
-            <size key="intrinsicContentSize" width="52" height="33"/>
-        </designable>
-        <designable name="YKq-eD-B4M">
-            <size key="intrinsicContentSize" width="30" height="33"/>
-        </designable>
-        <designable name="ZWb-QV-RHh">
-            <size key="intrinsicContentSize" width="106" height="33"/>
-        </designable>
-        <designable name="aFl-gc-ptI">
-            <size key="intrinsicContentSize" width="81" height="36"/>
-        </designable>
-        <designable name="cDc-Rm-lz0">
-            <size key="intrinsicContentSize" width="81" height="36"/>
-        </designable>
-        <designable name="dcp-AL-X82">
-            <size key="intrinsicContentSize" width="65" height="33"/>
-        </designable>
-        <designable name="dkg-Cb-LdB">
-            <size key="intrinsicContentSize" width="106" height="33"/>
-        </designable>
-        <designable name="dqp-pa-l4v">
-            <size key="intrinsicContentSize" width="30" height="33"/>
-        </designable>
-        <designable name="g6I-MI-1MC">
-            <size key="intrinsicContentSize" width="81" height="36"/>
-        </designable>
-        <designable name="ioN-YR-MtI">
-            <size key="intrinsicContentSize" width="43" height="36"/>
-        </designable>
-        <designable name="lae-Nf-sZw">
-            <size key="intrinsicContentSize" width="58" height="33"/>
-        </designable>
-        <designable name="mLe-vq-l0C">
-            <size key="intrinsicContentSize" width="81" height="36"/>
-        </designable>
-        <designable name="nJF-aG-D9m">
-            <size key="intrinsicContentSize" width="65" height="33"/>
-        </designable>
-        <designable name="nwb-9S-x34">
-            <size key="intrinsicContentSize" width="30" height="33"/>
-        </designable>
-        <designable name="oyE-Nc-Jpf">
-            <size key="intrinsicContentSize" width="58" height="33"/>
-        </designable>
-        <designable name="qo3-BQ-McZ">
-            <size key="intrinsicContentSize" width="54" height="33"/>
-        </designable>
-        <designable name="t46-Br-82L">
-            <size key="intrinsicContentSize" width="33" height="33"/>
-        </designable>
-        <designable name="u4I-F5-S9r">
-            <size key="intrinsicContentSize" width="81" height="36"/>
-        </designable>
-        <designable name="xP7-7r-H0r">
-            <size key="intrinsicContentSize" width="47" height="33"/>
-        </designable>
-        <designable name="yVO-7E-olH">
-            <size key="intrinsicContentSize" width="47" height="33"/>
-        </designable>
-    </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="RhX-Ll-jfH"/>
-        <segue reference="RFT-ku-kxy"/>
+        <segue reference="R1z-Qy-Fwh"/>
+        <segue reference="Y0y-Q6-4kK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="OB_modalClose_xButton" width="41" height="41"/>

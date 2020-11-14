@@ -398,12 +398,24 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RcI-aU-yLd">
+                                                            <rect key="frame" x="329" y="20" width="21" height="11.5"/>
+                                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="21" id="Hzu-B8-5lg"/>
+                                                                <constraint firstAttribute="height" constant="21" id="MJX-SS-yHM"/>
+                                                            </constraints>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="RcI-aU-yLd" secondAttribute="trailing" constant="16" id="1wa-iJ-9RY"/>
+                                                        <constraint firstItem="RcI-aU-yLd" firstAttribute="leading" secondItem="HrY-yH-5bI" secondAttribute="trailing" constant="2" id="2Vs-t7-Ykv"/>
                                                         <constraint firstItem="HrY-yH-5bI" firstAttribute="top" secondItem="vlQ-7W-FVk" secondAttribute="top" constant="15" id="6wg-q1-gq0"/>
                                                         <constraint firstAttribute="bottom" secondItem="HrY-yH-5bI" secondAttribute="bottom" constant="15" id="Fsj-qd-z8A"/>
+                                                        <constraint firstItem="RcI-aU-yLd" firstAttribute="top" secondItem="vlQ-7W-FVk" secondAttribute="top" constant="15" id="HsN-Tb-A5y"/>
                                                         <constraint firstItem="HrY-yH-5bI" firstAttribute="leading" secondItem="vlQ-7W-FVk" secondAttribute="leading" constant="16" id="Wdk-97-FHl"/>
+                                                        <constraint firstAttribute="bottom" secondItem="RcI-aU-yLd" secondAttribute="bottom" constant="15" id="cNV-hy-woM"/>
                                                         <constraint firstAttribute="trailing" secondItem="HrY-yH-5bI" secondAttribute="trailing" constant="39" id="fXb-Az-895"/>
                                                         <constraint firstAttribute="height" constant="51" id="jdL-Fv-weX"/>
                                                     </constraints>
@@ -452,6 +464,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="chevronImage" destination="RcI-aU-yLd" id="vP8-TB-Ll2"/>
                                     <outlet property="labelAnswer" destination="6pi-8g-GBu" id="zhe-l7-OI1"/>
                                     <outlet property="labelQuestion" destination="HrY-yH-5bI" id="8Of-QJ-Cwu"/>
                                 </connections>
@@ -607,14 +620,26 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4aF-8Y-0Ou">
+                                                            <rect key="frame" x="329" y="20" width="21" height="11.5"/>
+                                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="CcK-n0-TZ1"/>
+                                                                <constraint firstAttribute="width" constant="21" id="aHA-SN-Iss"/>
+                                                            </constraints>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="4aF-8Y-0Ou" secondAttribute="bottom" constant="15" id="87g-yr-RYp"/>
+                                                        <constraint firstItem="4aF-8Y-0Ou" firstAttribute="leading" secondItem="zsk-3M-fD2" secondAttribute="trailing" constant="15" id="9Xk-ra-KtJ"/>
                                                         <constraint firstAttribute="trailing" secondItem="zsk-3M-fD2" secondAttribute="trailing" constant="52" id="M9O-rX-dyZ"/>
                                                         <constraint firstItem="zsk-3M-fD2" firstAttribute="top" secondItem="skz-Yu-tic" secondAttribute="top" constant="12" id="UES-IV-gBm"/>
                                                         <constraint firstItem="zsk-3M-fD2" firstAttribute="leading" secondItem="skz-Yu-tic" secondAttribute="leading" constant="16" id="brE-ZI-RAs"/>
                                                         <constraint firstAttribute="height" constant="51" id="eAi-0N-gK1"/>
                                                         <constraint firstAttribute="bottom" secondItem="zsk-3M-fD2" secondAttribute="bottom" constant="12" id="mTB-vJ-4hh"/>
+                                                        <constraint firstItem="4aF-8Y-0Ou" firstAttribute="top" secondItem="skz-Yu-tic" secondAttribute="top" constant="15" id="pLW-SU-77C"/>
+                                                        <constraint firstAttribute="trailing" secondItem="4aF-8Y-0Ou" secondAttribute="trailing" constant="16" id="pTf-6I-6sT"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -658,6 +683,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="chevronImage" destination="4aF-8Y-0Ou" id="wGO-up-eFt"/>
                                     <outlet property="labelPPAnswer" destination="Ir8-aF-k5b" id="rbP-90-zPK"/>
                                     <outlet property="labelPPQuestion" destination="zsk-3M-fD2" id="hGP-fk-NIj"/>
                                 </connections>
@@ -679,6 +705,7 @@
         <image name="OB_joeyMascott" width="71" height="76"/>
         <image name="OB_modalClose_xButton" width="41" height="41"/>
         <image name="activitiesIcon" width="56" height="54"/>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
         <image name="detectEmotionIcon" width="56" height="56"/>
         <image name="yourSpaceIcon" width="56" height="56"/>
         <systemColor name="systemBackgroundColor">
