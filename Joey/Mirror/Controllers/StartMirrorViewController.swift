@@ -8,12 +8,9 @@
 import UIKit
 import ARKit
 import Speech
-import CoreHaptics
-
-
 
 class StartMirrorViewController: UIViewController {
-
+    
     @IBOutlet weak var sceneView: ARSCNView!
     @IBOutlet weak var labelInstruction: UILabel!
     @IBOutlet weak var navBar: NavigationBar!
@@ -25,8 +22,11 @@ class StartMirrorViewController: UIViewController {
     @IBOutlet weak var viewHint: RoundedView!
     @IBOutlet weak var imgBubble: UIImageView!
     
-    var isSmile: Bool = false
-    var hapticEngine: CHHapticEngine?
+    
+    let notification = UINotificationFeedbackGenerator()
+    var audioSession = AVAudioSession.sharedInstance()
+    private var inputNode: AVAudioInputNode!
+
     
     let hints = MirrorHint.hints
     
@@ -34,6 +34,7 @@ class StartMirrorViewController: UIViewController {
     var totalTime: Int?
     var prepareTime = 3
     var currentHint: MirrorHint?
+    
     
     var emotion: FollowUp.EmotionType?
     
@@ -56,10 +57,9 @@ class StartMirrorViewController: UIViewController {
             recognitionTask = nil
         }
         
-        let audioSession = AVAudioSession.sharedInstance()
         do {
-            try audioSession.setCategory(.record)
-            try audioSession.setMode(.measurement)
+            try audioSession.setCategory(.record, mode: .spokenAudio, options: .duckOthers)
+//            try audioSession.setMode(.measurement)
             try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
         } catch {
             print("audioSession properties weren't set because of an error.")
@@ -67,7 +67,7 @@ class StartMirrorViewController: UIViewController {
         
         recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
         
-        let inputNode = audioEngine.inputNode
+        inputNode = audioEngine.inputNode
         
         guard let recognitionRequest = recognitionRequest else {
             fatalError("Unable to create an SFSpeechAudioBufferRecognitionRequest object")
@@ -82,7 +82,6 @@ class StartMirrorViewController: UIViewController {
                     print("words: \(words)")
                     print("hints: \(hint)")
                     if words.lowercased().hasSuffix(hint.lowercased()) {
-                        self.playHaptic()
                         self.randomHint()
                     }
                 }
@@ -90,10 +89,10 @@ class StartMirrorViewController: UIViewController {
             }
             
             if error != nil || isFinal {
-                self.audioEngine.stop()
-                inputNode.removeTap(onBus: 0)
-                self.recognitionRequest = nil
-                self.recognitionTask = nil
+//                self.audioEngine.stop()
+//                self.inputNode.removeTap(onBus: 0)
+//                self.recognitionRequest = nil
+//                self.recognitionTask = nil
             }
         })
         
@@ -113,56 +112,25 @@ class StartMirrorViewController: UIViewController {
         print("Say something, I'm listening!")
     }
     
-    func playHaptic() {
-        guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
+    private func stopRecording() {
+        // End the recognition request.
+        recognitionRequest?.endAudio()
+        recognitionRequest = nil
+        recognitionTask = nil
+      
+        // Stop recording.
+        audioEngine.stop()
+        inputNode.removeTap(onBus: 0) // Call after audio engine is stopped as it modifies the graph.
+      
+        // Stop our session.
+        try? audioSession.setActive(false)
 
-        let intensity = CHHapticEventParameter(parameterID: .hapticIntensity, value: 1)
-        let sharpness = CHHapticEventParameter(parameterID: .hapticSharpness, value: 1)
-        let event = CHHapticEvent(eventType: .hapticTransient, parameters: [intensity, sharpness], relativeTime: 0)
-
-        do {
-            let pattern = try CHHapticPattern(events: [event], parameters: [])
-            let player = try hapticEngine?.makePlayer(with: pattern)
-            try player?.start(atTime: 0)
-        } catch {
-            print("Failed to play pattern: \(error.localizedDescription).")
-        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        setupHaptic()
         startRecording()
-    }
-    
-    func setupHaptic() {
-        guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
-
-        do {
-            hapticEngine = try CHHapticEngine()
-            try hapticEngine?.start()
-            
-            hapticEngine?.stoppedHandler = { reason in
-                print("Stop Handler: The engine stopped for reason: \(reason.rawValue)")
-                switch reason {
-                case .audioSessionInterrupt: print("Audio session interrupt")
-                case .applicationSuspended: print("Application suspended")
-                case .idleTimeout: print("Idle timeout")
-                case .systemError: print("System error")
-                case .notifyWhenFinished:
-                    print("Notify when finished")
-                case .engineDestroyed:
-                    print("Engine destroyed")
-                case .gameControllerDisconnect:
-                    print("Game controller disconnect")
-                @unknown default:
-                    print("Unknown error")
-                }
-            }
-        } catch {
-            print("There was an error creating the engine: \(error.localizedDescription)")
-        }
     }
     
     func setupUI(){
@@ -191,15 +159,6 @@ class StartMirrorViewController: UIViewController {
         super.viewDidDisappear(animated)
         sceneView.session.pause()
         countdownTimer.invalidate()
-    }
-    
-    func handleSmile(smileValue: CGFloat) {
-        if smileValue > 0.2 {
-            isSmile = true
-        }
-        else {
-            isSmile = false
-        }
     }
     
     
@@ -237,18 +196,24 @@ class StartMirrorViewController: UIViewController {
         labelTextHint.text = currentHint?.hint
         imgPrev.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(self.randomHint)))
         imgNext.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(self.randomHint)))
-
+        
     }
     
     @objc func onClickButtonDone(sender : UITapGestureRecognizer){
         endTimer()
         performSegue(withIdentifier: "toAfterActivity", sender: nil)
     }
-
+    
     @objc func randomHint() {
+        stopRecording()
+        notification.notificationOccurred(.success)
         let index = Int.random(in: 0..<hints.count)
         labelTextHint.text = hints[index].hint
         currentHint = hints[index]
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.startRecording()
+        }
     }
     
     @objc func updateTime() {
@@ -306,15 +271,6 @@ extension StartMirrorViewController: ARSCNViewDelegate {
         } else {
             emotion = .neutral
         }
-        
-//        DispatchQueue.main.async {
-//            self.handleSmile(smileValue: CGFloat((data.mouthSmileLeft + data.mouthSmileRight)/2.0))
-//        }
-//
-//        let workItem = DispatchWorkItem {
-//            self.handleSmile(smileValue: CGFloat((data.mouthSmileLeft + data.mouthSmileRight)/2.0))
-//        }
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: workItem)
         
     }
 }
