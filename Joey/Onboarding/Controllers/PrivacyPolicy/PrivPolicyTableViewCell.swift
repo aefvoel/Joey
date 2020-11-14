@@ -11,6 +11,8 @@ class PrivPolicyTableViewCell: UITableViewCell {
 
     @IBOutlet weak var labelPPQuestion: UILabel!
     
+    @IBOutlet weak var chevronImage: UIImageView!
+    
     @IBOutlet weak var labelPPAnswer: UILabel!
     
     var ppItem: PrivacyPolicyModel!
@@ -30,6 +32,14 @@ class PrivPolicyTableViewCell: UITableViewCell {
         ppItem = ppData
         labelPPQuestion.text = ppItem.privPolicyQuestion
         labelPPAnswer.text = ppItem.privPolicyAnswer
+    }
+    
+    func setChevron(_ toActive: Bool) {
+        if toActive {
+            chevronImage.image = UIImage(systemName: "chevron.up")
+        } else {
+            chevronImage.image = UIImage(systemName: "chevron.down")
+        }
     }
 
 }
