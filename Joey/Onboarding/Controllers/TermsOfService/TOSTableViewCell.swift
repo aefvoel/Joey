@@ -19,7 +19,6 @@ class TOSTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        chevronImage.image = UIImage(systemName: "chevron.down")
         // Initialization code
     }
 

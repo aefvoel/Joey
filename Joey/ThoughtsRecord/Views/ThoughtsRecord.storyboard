@@ -145,14 +145,13 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TR-Bubble" translatesAutoresizingMaskIntoConstraints="NO" id="3Nl-8i-Q74">
                                 <rect key="frame" x="24" y="128" width="366" height="126"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gak-SE-me5">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gak-SE-me5">
                                 <rect key="frame" x="225" y="232" width="165" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="165" id="FB3-1F-yqt"/>
                                     <constraint firstAttribute="height" constant="22" id="xjS-zz-Rkw"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="16"/>
-                                <state key="normal" title="How do I answer this?">
+                                <state key="normal" image="HowDoIAnswerThis">
                                     <color key="titleColor" red="0.86666666670000003" green="0.40784313729999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -857,14 +856,13 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TR-Bubble" translatesAutoresizingMaskIntoConstraints="NO" id="vlQ-gr-0MG">
                                 <rect key="frame" x="24" y="128" width="366" height="126"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryL-t0-orx">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryL-t0-orx">
                                 <rect key="frame" x="225" y="232" width="165" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="165" id="AfL-ql-SZB"/>
                                     <constraint firstAttribute="height" constant="22" id="i2X-0O-Ulk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="16"/>
-                                <state key="normal" title="How do I answer this?">
+                                <state key="normal" image="HowDoIAnswerThis">
                                     <color key="titleColor" red="0.86666666670000003" green="0.40784313729999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -988,14 +986,13 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TR-Bubble" translatesAutoresizingMaskIntoConstraints="NO" id="zfI-ku-sYQ">
                                 <rect key="frame" x="24" y="128" width="366" height="126"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6q-Tz-eXp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6q-Tz-eXp">
                                 <rect key="frame" x="225" y="232" width="165" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="165" id="bmX-e3-O71"/>
                                     <constraint firstAttribute="height" constant="22" id="x2a-7m-ZrD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="16"/>
-                                <state key="normal" title="How do I answer this?">
+                                <state key="normal" image="HowDoIAnswerThis">
                                     <color key="titleColor" red="0.86666666670000003" green="0.40784313729999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -1367,14 +1364,13 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TR-Bubble" translatesAutoresizingMaskIntoConstraints="NO" id="QtT-Oi-CkW">
                                 <rect key="frame" x="24" y="128" width="366" height="126"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9D-kG-MYt">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9D-kG-MYt">
                                 <rect key="frame" x="225" y="232" width="165" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="165" id="Rif-X7-kGi"/>
                                     <constraint firstAttribute="height" constant="22" id="gMP-VY-u10"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="16"/>
-                                <state key="normal" title="How do I answer this?">
+                                <state key="normal" image="HowDoIAnswerThis">
                                     <color key="titleColor" red="0.86666666670000003" green="0.40784313729999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -1498,14 +1494,13 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TR-Bubble" translatesAutoresizingMaskIntoConstraints="NO" id="Wge-qa-0gS">
                                 <rect key="frame" x="24" y="128" width="366" height="126"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBw-3f-t77">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBw-3f-t77">
                                 <rect key="frame" x="225" y="232" width="165" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="165" id="Dbp-bS-2qa"/>
                                     <constraint firstAttribute="height" constant="22" id="oJU-HP-ON5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="16"/>
-                                <state key="normal" title="How do I answer this?">
+                                <state key="normal" image="HowDoIAnswerThis">
                                     <color key="titleColor" red="0.86666666670000003" green="0.40784313729999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -1629,14 +1624,13 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TR-Bubble" translatesAutoresizingMaskIntoConstraints="NO" id="CGp-Z1-DqK">
                                 <rect key="frame" x="24" y="128" width="366" height="126"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7w-Gu-AGB">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7w-Gu-AGB">
                                 <rect key="frame" x="225" y="232" width="165" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="5Fn-1d-qIa"/>
                                     <constraint firstAttribute="width" constant="165" id="nXz-hT-GGx"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="16"/>
-                                <state key="normal" title="How do I answer this?">
+                                <state key="normal" image="HowDoIAnswerThis">
                                     <color key="titleColor" red="0.86666666670000003" green="0.40784313729999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -1760,14 +1754,13 @@ You don’t have to do thought records perfectly. Its not rocket science or br
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TR-Bubble" translatesAutoresizingMaskIntoConstraints="NO" id="NMn-Mu-ggT">
                                 <rect key="frame" x="24" y="128" width="366" height="126"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRp-or-oED">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRp-or-oED">
                                 <rect key="frame" x="225" y="232" width="165" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="165" id="7lD-X3-dwu"/>
                                     <constraint firstAttribute="height" constant="22" id="gAg-MT-DFd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="16"/>
-                                <state key="normal" title="How do I answer this?">
+                                <state key="normal" image="HowDoIAnswerThis">
                                     <color key="titleColor" red="0.86666666670000003" green="0.40784313729999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -2659,11 +2652,113 @@ Do you want to do this activity again?</string>
             <point key="canvasLocation" x="6562" y="731"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="5nK-2c-yoc">
+            <size key="intrinsicContentSize" width="48" height="37"/>
+        </designable>
+        <designable name="7ay-b0-IhI">
+            <size key="intrinsicContentSize" width="71" height="37"/>
+        </designable>
+        <designable name="BbM-ws-c5w">
+            <size key="intrinsicContentSize" width="54" height="37"/>
+        </designable>
+        <designable name="CF7-rp-nlN">
+            <size key="intrinsicContentSize" width="51" height="37"/>
+        </designable>
+        <designable name="E8j-TK-oA4">
+            <size key="intrinsicContentSize" width="49" height="40"/>
+        </designable>
+        <designable name="HVX-7H-tG9">
+            <size key="intrinsicContentSize" width="52" height="37"/>
+        </designable>
+        <designable name="IIU-zg-uVo">
+            <size key="intrinsicContentSize" width="30" height="37"/>
+        </designable>
+        <designable name="JQP-rH-rih">
+            <size key="intrinsicContentSize" width="63" height="37"/>
+        </designable>
+        <designable name="Juj-MS-h47">
+            <size key="intrinsicContentSize" width="66" height="37"/>
+        </designable>
+        <designable name="LVr-x4-enK">
+            <size key="intrinsicContentSize" width="83" height="40"/>
+        </designable>
+        <designable name="LyX-1O-vga">
+            <size key="intrinsicContentSize" width="32" height="37"/>
+        </designable>
+        <designable name="Rca-Gl-hK3">
+            <size key="intrinsicContentSize" width="71" height="37"/>
+        </designable>
+        <designable name="SUn-Qu-1Pb">
+            <size key="intrinsicContentSize" width="83" height="40"/>
+        </designable>
+        <designable name="Xfc-7p-0S5">
+            <size key="intrinsicContentSize" width="52" height="37"/>
+        </designable>
+        <designable name="YKq-eD-B4M">
+            <size key="intrinsicContentSize" width="30" height="37"/>
+        </designable>
+        <designable name="ZWb-QV-RHh">
+            <size key="intrinsicContentSize" width="106" height="37"/>
+        </designable>
+        <designable name="aFl-gc-ptI">
+            <size key="intrinsicContentSize" width="83" height="40"/>
+        </designable>
+        <designable name="cDc-Rm-lz0">
+            <size key="intrinsicContentSize" width="83" height="40"/>
+        </designable>
+        <designable name="dcp-AL-X82">
+            <size key="intrinsicContentSize" width="66" height="37"/>
+        </designable>
+        <designable name="dkg-Cb-LdB">
+            <size key="intrinsicContentSize" width="106" height="37"/>
+        </designable>
+        <designable name="dqp-pa-l4v">
+            <size key="intrinsicContentSize" width="30" height="37"/>
+        </designable>
+        <designable name="g6I-MI-1MC">
+            <size key="intrinsicContentSize" width="83" height="40"/>
+        </designable>
+        <designable name="ioN-YR-MtI">
+            <size key="intrinsicContentSize" width="47" height="40"/>
+        </designable>
+        <designable name="lae-Nf-sZw">
+            <size key="intrinsicContentSize" width="60" height="37"/>
+        </designable>
+        <designable name="mLe-vq-l0C">
+            <size key="intrinsicContentSize" width="83" height="40"/>
+        </designable>
+        <designable name="nJF-aG-D9m">
+            <size key="intrinsicContentSize" width="63" height="37"/>
+        </designable>
+        <designable name="nwb-9S-x34">
+            <size key="intrinsicContentSize" width="30" height="37"/>
+        </designable>
+        <designable name="oyE-Nc-Jpf">
+            <size key="intrinsicContentSize" width="60" height="37"/>
+        </designable>
+        <designable name="qo3-BQ-McZ">
+            <size key="intrinsicContentSize" width="54" height="37"/>
+        </designable>
+        <designable name="t46-Br-82L">
+            <size key="intrinsicContentSize" width="32" height="37"/>
+        </designable>
+        <designable name="u4I-F5-S9r">
+            <size key="intrinsicContentSize" width="83" height="40"/>
+        </designable>
+        <designable name="xP7-7r-H0r">
+            <size key="intrinsicContentSize" width="51" height="37"/>
+        </designable>
+        <designable name="yVO-7E-olH">
+            <size key="intrinsicContentSize" width="48" height="37"/>
+        </designable>
+    </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="R1z-Qy-Fwh"/>
+        <segue reference="ICH-mk-Jc3"/>
         <segue reference="Y0y-Q6-4kK"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="HowDoIAnswerThis" width="165" height="15"/>
         <image name="OB_modalClose_xButton" width="41" height="41"/>
         <image name="TR-Bubble" width="366" height="126"/>
         <image name="TR-Icon" width="186" height="186"/>
