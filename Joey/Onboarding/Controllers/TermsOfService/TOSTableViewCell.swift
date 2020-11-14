@@ -13,11 +13,12 @@ class TOSTableViewCell: UITableViewCell {
     
     @IBOutlet weak var labelAnswer: UILabel!
     
+    @IBOutlet weak var chevronImage: UIImageView!
+    
     var tosItem: TermsOfServiceModel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         // Initialization code
     }
 
@@ -31,6 +32,14 @@ class TOSTableViewCell: UITableViewCell {
         tosItem = tosData
         labelQuestion.text = tosItem.tosQuestion
         labelAnswer.text = tosItem.tosAnswer
+    }
+    
+    func setChevron(_ toActive: Bool) {
+        if toActive {
+            chevronImage.image = UIImage(systemName: "chevron.up")
+        } else {
+            chevronImage.image = UIImage(systemName: "chevron.down")
+        }
     }
 
 }

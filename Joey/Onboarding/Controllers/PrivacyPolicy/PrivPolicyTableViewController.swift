@@ -70,24 +70,26 @@ class PrivPolicyTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if selectedCellIndexPath != nil && selectedCellIndexPath == indexPath {
-            selectedCellIndexPath = nil
-        } else {
-            selectedCellIndexPath = indexPath
-        }
-        
         tableView.beginUpdates()
         tableView.endUpdates()
-        
-        if selectedCellIndexPath != nil {
-            // This ensures, that the cell is fully visible once expanded
-            tableView.scrollToRow(at: indexPath, at: .none, animated: true)
-        }
-        
-        print("Cell \(indexPath.row) selected")
-        
     }
     
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        guard let cell = tableView.cellForRow(at: indexPath) as? PrivPolicyTableViewCell else { return indexPath }
+        
+        if selectedCellIndexPath == indexPath {
+            selectedCellIndexPath = nil
+            cell.setChevron(false)
+        } else {
+            selectedCellIndexPath = indexPath
+            cell.setChevron(true)
+            guard let previousCellIndexPath = tableView.indexPathForSelectedRow else { return indexPath }
+            guard let previousCell = tableView.cellForRow(at: previousCellIndexPath) as? PrivPolicyTableViewCell else { return indexPath }
+            previousCell.setChevron(true)
+        }
+        
+        return indexPath
+    }
     /*
      // Override to support conditional editing of the table view.
      override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

@@ -2,15 +2,21 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Yuanti.ttc">
-            <string>STYuanti-SC-Bold</string>
-            <string>STYuanti-SC-Regular</string>
+        <array key="Khula-Regular.ttf">
+            <string>Khula-Regular</string>
+        </array>
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -30,17 +36,17 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tmz-rP-am5">
-                                <rect key="frame" x="24" y="109" width="366" height="50.5"/>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="36"/>
+                                <rect key="frame" x="24" y="109" width="366" height="49.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zki-ew-h0w" customClass="SettingsItem" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="191.5" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="190.5" width="414" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWx-c0-5Vb">
-                                        <rect key="frame" x="84" y="18" width="63" height="34"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="24"/>
+                                        <rect key="frame" x="84" y="18.5" width="64" height="33"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -72,11 +78,11 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GfA-qA-fw8" customClass="SettingsItem" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="465.5" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="464.5" width="414" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I48-fo-iCd">
-                                        <rect key="frame" x="84" y="18" width="65" height="34"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="24"/>
+                                        <rect key="frame" x="84" y="18.5" width="66.5" height="33"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -108,11 +114,11 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZy-K7-2uo" customClass="SettingsItem" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="535.5" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="534.5" width="414" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prH-ib-KFd">
-                                        <rect key="frame" x="84" y="18" width="147" height="34"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="24"/>
+                                        <rect key="frame" x="84" y="18.5" width="146.5" height="33"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -144,11 +150,11 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flz-GW-A6a" customClass="SettingsItem" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="261.5" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="260.5" width="414" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset my data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5Z-dW-i8t">
-                                        <rect key="frame" x="84" y="18" width="155" height="34"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="24"/>
+                                        <rect key="frame" x="84" y="18.5" width="154.5" height="33"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="24"/>
                                         <color key="textColor" red="0.8666666666666667" green="0.40784313725490196" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -170,11 +176,11 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTf-Si-avE" customClass="SettingsItem" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="363.5" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="362.5" width="414" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qm3-Bq-fgx">
-                                        <rect key="frame" x="84" y="18" width="137" height="34"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="24"/>
+                                        <rect key="frame" x="84" y="18.5" width="135" height="33"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -201,11 +207,11 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwE-Rw-t8l" customClass="SettingsItem" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="605.5" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="604.5" width="414" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FJ-7q-Z6C">
-                                        <rect key="frame" x="84" y="18" width="176" height="34"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="24"/>
+                                        <rect key="frame" x="84" y="18.5" width="175" height="33"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -300,8 +306,8 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JY5-g9-6F2">
-                                <rect key="frame" x="64" y="357" width="286" height="50.5"/>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="36"/>
+                                <rect key="frame" x="64" y="358" width="286" height="49.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -311,7 +317,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="TkV-oA-iEY"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -330,7 +336,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter a nickname..." textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="MjX-xg-zgn">
                                         <rect key="frame" x="12" y="0.0" width="262" height="45"/>
-                                        <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
@@ -382,7 +388,7 @@
             <objects>
                 <tableViewController id="zOk-OZ-EYI" customClass="SettingsAccordionTableViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sMG-4H-H83">
-                        <rect key="frame" x="0.0" y="0.0" width="366" height="650.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="366" height="651.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <connections>
@@ -414,20 +420,20 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00A-EK-SUE">
-                                <rect key="frame" x="64" y="155" width="286" height="51"/>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="36"/>
+                                <rect key="frame" x="64" y="155" width="286" height="49.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCJ-Lg-xN4" customClass="TextViewFixed" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="64" y="238" width="286" height="624"/>
+                                <rect key="frame" x="64" y="236.5" width="286" height="625.5"/>
                                 <string key="text">Often times we feel the pressure due to the accumulation of thoughts that we don't want. These persistently negative thoughts if allowed will makes symptoms of depression. Therefore, we need to be aware of the emotions we feel.
 
 You can control your negative thoughts to have a more balanced way of thinking. It’s time to change with Joey!
 
 Joey will help you to control your negative thoughts by suggesting you activity to do to control your negative thoughts using thoughts record and mindfulness activity. Joey will also help you to journal your feelings but what makes it special is that Joey can help you to identify your emotion by detecting your face expression using Augmented Reality so that you know what you need to do to overcome the thoughts that you don't want.</string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Khula-Regular" family="Khula" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -471,13 +477,13 @@ Joey will help you to control your negative thoughts by suggesting you activity 
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZy-DC-zUR">
-                                <rect key="frame" x="24" y="155" width="366" height="51"/>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="36"/>
+                                <rect key="frame" x="24" y="155" width="366" height="49.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rNt-Mf-rrS">
-                                <rect key="frame" x="24" y="246" width="366" height="650"/>
+                                <rect key="frame" x="24" y="244.5" width="366" height="651.5"/>
                                 <connections>
                                     <segue destination="zOk-OZ-EYI" kind="embed" identifier="toTableView" id="bfk-fJ-p69"/>
                                 </connections>
@@ -523,13 +529,13 @@ Joey will help you to control your negative thoughts by suggesting you activity 
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of Service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysf-V6-Tml">
-                                <rect key="frame" x="24" y="155" width="366" height="50.5"/>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="36"/>
+                                <rect key="frame" x="24" y="155" width="366" height="49.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aai-TY-GuF">
-                                <rect key="frame" x="24" y="245.5" width="366" height="650.5"/>
+                                <rect key="frame" x="24" y="244.5" width="366" height="651.5"/>
                                 <connections>
                                     <segue destination="zOk-OZ-EYI" kind="embed" id="agm-SE-wvb"/>
                                 </connections>
@@ -562,7 +568,7 @@ Joey will help you to control your negative thoughts by suggesting you activity 
     </scenes>
     <designables>
         <designable name="6pN-5c-vNL">
-            <size key="intrinsicContentSize" width="41" height="40"/>
+            <size key="intrinsicContentSize" width="45" height="40"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
