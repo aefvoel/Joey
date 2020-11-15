@@ -81,6 +81,7 @@ class SettingsViewController: UIViewController {
                 
                 UserDefaultsHelper.removeData(key: .userName)
                 UserDefaultsHelper.setData(value: false, key: .isLoggedIn)
+                UserDefaultsHelper.removeData(key: .signInWithAppleIdentifier)
                 
                 group.notify(queue: .main) {
                     print("Hello, world!")
