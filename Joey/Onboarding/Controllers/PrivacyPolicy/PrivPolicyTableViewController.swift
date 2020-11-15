@@ -85,7 +85,7 @@ class PrivPolicyTableViewController: UITableViewController {
             cell.setChevron(true)
             guard let previousCellIndexPath = tableView.indexPathForSelectedRow else { return indexPath }
             guard let previousCell = tableView.cellForRow(at: previousCellIndexPath) as? PrivPolicyTableViewCell else { return indexPath }
-            previousCell.setChevron(true)
+            previousCell.setChevron(false)
         }
         
         return indexPath
