@@ -48,7 +48,12 @@ class DetectEmotionAnalyzeViewController: UIViewController {
     // MARK: - Gesture Recognizer
     
     @objc func sceneViewTapped() {
-        performSegue(withIdentifier: "toQuestions", sender: nil)
+        if emotion == nil {
+            let alert = AlertHelper.createAlert(title: "Analyzing failed!", message: "Please put your face on the frame properly.", onComplete: nil)
+            present(alert, animated: true, completion: nil)
+        } else {
+            performSegue(withIdentifier: "toQuestions", sender: nil)
+        }
     }
 }
 
