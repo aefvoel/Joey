@@ -81,8 +81,10 @@ class StartMirrorViewController: UIViewController {
                 if let hint = self.currentHint?.plainText, let words = result?.bestTranscription.formattedString {
                     print("words: \(words)")
                     print("hints: \(hint)")
-                    if words.lowercased().hasSuffix(hint.lowercased()) {
-                        self.randomHint()
+                    for text in hint {
+                        if words.lowercased().hasSuffix(text.lowercased()) {
+                            self.randomHint()
+                        }
                     }
                 }
                 isFinal = (result?.isFinal)!
