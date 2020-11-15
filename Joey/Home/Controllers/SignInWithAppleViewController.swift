@@ -16,7 +16,7 @@ class SignInWithAppleViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+
     func setupSignInWithApple() {
         let signInWithAppleButton = ASAuthorizationAppleIDButton()
         signInWithAppleButton.frame = CGRect(x: 64, y: 272, width: 286, height: 45)
@@ -68,7 +68,7 @@ extension SignInWithAppleViewController: ASAuthorizationControllerDelegate {
             UserDefaultsHelper.setData(value: userIdentifier, key: .signInWithAppleIdentifier)
             
             DispatchQueue.main.async {
-                self.performSegue(withIdentifier: "toMySpace", sender: nil)
+                self.dismiss(animated: true, completion: nil)
             }
             
 

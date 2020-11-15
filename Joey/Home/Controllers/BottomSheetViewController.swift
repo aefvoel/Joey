@@ -164,9 +164,9 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
             // Pulls the view controller behind the safe area top, especially useful when embedding navigation controllers
             useFullScreenMode: false,
             // Determines if using inline mode or not
-            useInlineMode: true
+            useInlineMode: false
         )
-        let sheetController = SheetViewController(controller: controller, sizes: [.percent(1.00)], options: options)
+        let sheetController = SheetViewController(controller: controller, sizes: [.percent(0.5)], options: options)
         sheetController.allowGestureThroughOverlay = false
         // The size of the grip in the pull bar
         sheetController.gripSize = CGSize(width: 83, height: 7)
@@ -181,21 +181,22 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
         // Change the overlay color
         sheetController.overlayColor = UIColor.clear
         // Add child
-        sheetController.willMove(toParent: self)
-        self.addChild(sheetController)
-        view.addSubview(sheetController.view)
-        sheetController.didMove(toParent: self)
-        
-        sheetController.view.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            sheetController.view.topAnchor.constraint(equalTo: view.topAnchor),
-            sheetController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            sheetController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            sheetController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ])
-        
-        // animate in
-        sheetController.animateIn()
+        self.present(sheetController, animated: false, completion: nil)
+//        sheetController.willMove(toParent: self)
+//        self.addChild(sheetController)
+//        view.addSubview(sheetController.view)
+//        sheetController.didMove(toParent: self)
+//
+//        sheetController.view.translatesAutoresizingMaskIntoConstraints = false
+//        NSLayoutConstraint.activate([
+//            sheetController.view.topAnchor.constraint(equalTo: view.topAnchor),
+//            sheetController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+//            sheetController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+//            sheetController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+//        ])
+//
+//        // animate in
+//        sheetController.animateIn()
         
         
         
