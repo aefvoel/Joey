@@ -7,7 +7,6 @@
 
 import UIKit
 import ARKit
-import AVFoundation
 
 class StartPracticeSmilingViewController: UIViewController {
     
@@ -22,6 +21,8 @@ class StartPracticeSmilingViewController: UIViewController {
     var countdownTimer: Timer!
     var totalTime = 60
     var emotion: FollowUp.EmotionType?
+    
+    let notification = UINotificationFeedbackGenerator()
     
     var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
@@ -73,26 +74,6 @@ class StartPracticeSmilingViewController: UIViewController {
         }
     }
     
-//    func setRunning(){
-//        if isRunning {
-//            progressBarTimer.invalidate()
-//        } else {
-//            progressView.progress = 0.0
-//            self.progressBarTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.updateProgressView), userInfo: nil, repeats: true)
-//        }
-//        isRunning = !isRunning
-//
-//    }
-//    @objc func updateProgressView(){
-//        progressView.progress += 0.1
-//        progressView.setProgress(progressView.progress, animated: true)
-//        if(progressView.progress == 1.0)
-//        {
-//            progressBarTimer.invalidate()
-//            isRunning = false
-//        }
-//    }
-    
     
     func startTimer() {
         countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateTime), userInfo: nil, repeats: true)
@@ -100,10 +81,10 @@ class StartPracticeSmilingViewController: UIViewController {
     
     @objc func updateTime() {
         navBar.labelTitle.text = "\(timeFormatted(totalTime))"
-        
         if totalTime < 55 && totalTime > 10 {
             DispatchQueue.main.async {
                 if self.isSmile {
+                    self.notification.notificationOccurred(.success)
                     self.labelInstruction.text = "Your smile is cool, right? Hold on your smile for 5 seconds!"
                 } else {
                     self.labelInstruction.text = "Think of something positive about yourself and try to smile naturally"

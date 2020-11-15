@@ -9,9 +9,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Yuanti.ttc">
-            <string>STYuanti-SC-Bold</string>
-            <string>STYuanti-SC-Regular</string>
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
         </array>
     </customFonts>
     <objects>
@@ -36,7 +35,7 @@
                         <constraint firstAttribute="width" constant="64" id="6RT-x9-Klb"/>
                         <constraint firstAttribute="height" constant="31" id="PaW-lU-kWP"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="16"/>
+                    <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="16"/>
                     <state key="normal" title="Done">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
@@ -54,13 +53,13 @@
                         <constraint firstAttribute="width" constant="64" id="4T3-h7-NaE"/>
                         <constraint firstAttribute="height" constant="32" id="hJv-47-rfF"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
+                    <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="shB-5G-YQw">
                     <rect key="frame" x="90" y="0.0" width="231" height="47"/>
                     <accessibility key="accessibilityConfiguration" identifier="topBarNavigation_titleLbl"/>
-                    <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="36"/>
+                    <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="36"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unR-Ml-tWu">
@@ -101,7 +100,7 @@
     </objects>
     <designables>
         <designable name="ph0-sS-AP8">
-            <size key="intrinsicContentSize" width="38" height="31"/>
+            <size key="intrinsicContentSize" width="40" height="34"/>
         </designable>
     </designables>
     <resources>

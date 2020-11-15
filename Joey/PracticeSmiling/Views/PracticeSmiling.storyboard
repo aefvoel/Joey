@@ -2,14 +2,20 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YiK-O8-0XZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
         <array key="Yuanti.ttc">
-            <string>STYuanti-SC-Bold</string>
             <string>STYuanti-SC-Regular</string>
         </array>
     </customFonts>
@@ -22,32 +28,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Practice Smiling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7j6-6r-E9H">
-                                <rect key="frame" x="62" y="111" width="290" height="47"/>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Practice Smiling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7j6-6r-E9H">
+                                <rect key="frame" x="24" y="111" width="366" height="55"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bX9-NF-RR3" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="62" y="565" width="290" height="45"/>
-                                <color key="backgroundColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="XiY-Zf-apL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
-                                <state key="normal" title="Start">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="14"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="onClickStart:" destination="YiK-O8-0XZ" eventType="touchUpInside" id="FCH-qr-iq3"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascotImage" translatesAutoresizingMaskIntoConstraints="NO" id="nc2-t9-ZnT">
                                 <rect key="frame" x="0.0" y="768" width="194" height="128"/>
                                 <constraints>
@@ -61,17 +47,17 @@
                                 <rect key="frame" x="24" y="183" width="366" height="349"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="practiceSmiling_miniCard" translatesAutoresizingMaskIntoConstraints="NO" id="TJC-Ts-jQg">
-                                        <rect key="frame" x="8" y="8" width="350" height="332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="349"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="332" id="2Q3-6B-ReJ"/>
+                                            <constraint firstAttribute="height" constant="349" id="2Q3-6B-ReJ"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="TJC-Ts-jQg" firstAttribute="top" secondItem="GzL-PP-IEE" secondAttribute="topMargin" id="LZM-Fp-SDQ"/>
-                                    <constraint firstItem="TJC-Ts-jQg" firstAttribute="trailing" secondItem="GzL-PP-IEE" secondAttribute="trailingMargin" id="Qlu-aY-vUe"/>
-                                    <constraint firstItem="TJC-Ts-jQg" firstAttribute="leading" secondItem="GzL-PP-IEE" secondAttribute="leadingMargin" id="TV5-fn-r7W"/>
+                                    <constraint firstItem="TJC-Ts-jQg" firstAttribute="top" secondItem="GzL-PP-IEE" secondAttribute="topMargin" constant="-8" id="LZM-Fp-SDQ"/>
+                                    <constraint firstItem="TJC-Ts-jQg" firstAttribute="trailing" secondItem="GzL-PP-IEE" secondAttribute="trailingMargin" constant="8" id="Qlu-aY-vUe"/>
+                                    <constraint firstItem="TJC-Ts-jQg" firstAttribute="leading" secondItem="GzL-PP-IEE" secondAttribute="leadingMargin" constant="-8" id="TV5-fn-r7W"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -94,31 +80,51 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="GKS-yV-OyZ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bX9-NF-RR3" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
+                                <rect key="frame" x="77" y="562" width="260" height="45"/>
+                                <color key="backgroundColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="h5u-di-pmr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onClickStart:" destination="YiK-O8-0XZ" eventType="touchUpInside" id="FCH-qr-iq3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="211-UR-vbh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="DEB-Ej-Kxy" firstAttribute="centerX" secondItem="Iu6-jN-CIp" secondAttribute="centerX" id="1xW-TY-aRl"/>
-                            <constraint firstItem="7j6-6r-E9H" firstAttribute="leading" secondItem="bX9-NF-RR3" secondAttribute="leading" id="25R-4f-WwW"/>
                             <constraint firstItem="7j6-6r-E9H" firstAttribute="top" secondItem="yGS-V0-hms" secondAttribute="bottom" constant="20" id="4g4-56-vb1"/>
                             <constraint firstItem="7j6-6r-E9H" firstAttribute="top" secondItem="d7l-mt-3pp" secondAttribute="top" constant="111" id="79e-FS-xmL"/>
                             <constraint firstItem="yGS-V0-hms" firstAttribute="leading" secondItem="211-UR-vbh" secondAttribute="leading" id="91m-IN-Qqf"/>
                             <constraint firstItem="211-UR-vbh" firstAttribute="bottom" secondItem="Iu6-jN-CIp" secondAttribute="bottom" constant="70" id="AK2-HV-om7"/>
                             <constraint firstItem="yGS-V0-hms" firstAttribute="top" secondItem="211-UR-vbh" secondAttribute="top" id="EuR-7r-Xx6"/>
-                            <constraint firstItem="DEB-Ej-Kxy" firstAttribute="top" secondItem="bX9-NF-RR3" secondAttribute="bottom" constant="97" id="L0l-43-Wts"/>
+                            <constraint firstItem="bX9-NF-RR3" firstAttribute="centerX" secondItem="GzL-PP-IEE" secondAttribute="centerX" id="HDK-hO-Doa"/>
                             <constraint firstItem="GzL-PP-IEE" firstAttribute="leading" secondItem="211-UR-vbh" secondAttribute="leading" constant="24" id="McL-Em-f0j"/>
+                            <constraint firstAttribute="bottom" secondItem="bX9-NF-RR3" secondAttribute="bottom" constant="289" id="MvH-QG-Xf9"/>
+                            <constraint firstItem="bX9-NF-RR3" firstAttribute="leading" secondItem="211-UR-vbh" secondAttribute="leading" constant="77" id="Pck-gA-Hfx"/>
                             <constraint firstItem="Iu6-jN-CIp" firstAttribute="leading" secondItem="211-UR-vbh" secondAttribute="leading" constant="178" id="TXH-O7-Sre"/>
                             <constraint firstItem="DEB-Ej-Kxy" firstAttribute="top" secondItem="Iu6-jN-CIp" secondAttribute="top" id="VzU-oX-gxD"/>
                             <constraint firstItem="DEB-Ej-Kxy" firstAttribute="leading" secondItem="211-UR-vbh" secondAttribute="leading" constant="170" id="Wmp-XY-bpt"/>
                             <constraint firstItem="211-UR-vbh" firstAttribute="bottom" secondItem="DEB-Ej-Kxy" secondAttribute="bottom" constant="42" id="boX-nH-s95"/>
                             <constraint firstItem="GzL-PP-IEE" firstAttribute="top" secondItem="7j6-6r-E9H" secondAttribute="bottom" constant="25" id="i8L-Yg-F4O"/>
                             <constraint firstItem="DEB-Ej-Kxy" firstAttribute="trailing" secondItem="d7l-mt-3pp" secondAttribute="trailingMargin" id="k3w-MC-ChK"/>
-                            <constraint firstItem="211-UR-vbh" firstAttribute="trailing" secondItem="bX9-NF-RR3" secondAttribute="trailing" constant="62" id="obh-OK-B5v"/>
-                            <constraint firstItem="bX9-NF-RR3" firstAttribute="top" secondItem="GzL-PP-IEE" secondAttribute="bottom" constant="33" id="qkT-7d-r47"/>
+                            <constraint firstItem="bX9-NF-RR3" firstAttribute="top" secondItem="GzL-PP-IEE" secondAttribute="bottom" constant="30" id="l20-wE-emQ"/>
                             <constraint firstItem="yGS-V0-hms" firstAttribute="centerX" secondItem="d7l-mt-3pp" secondAttribute="centerX" id="tLu-WD-vfP"/>
                             <constraint firstItem="yGS-V0-hms" firstAttribute="leading" secondItem="nc2-t9-ZnT" secondAttribute="leading" id="ufG-dG-6kH"/>
                             <constraint firstItem="211-UR-vbh" firstAttribute="trailing" secondItem="nc2-t9-ZnT" secondAttribute="trailing" constant="220" id="wiI-X2-BuP"/>
@@ -167,7 +173,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="a7o-5M-UFe"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>

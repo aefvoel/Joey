@@ -10,12 +10,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Khula-Bold.ttf">
-            <string>Khula-Bold</string>
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
         </array>
-        <array key="Yuanti.ttc">
-            <string>STYuanti-SC-Bold</string>
-            <string>STYuanti-SC-Regular</string>
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -32,7 +31,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="o2o-a7-GR3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -41,7 +40,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="VLB-Nh-gcJ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -63,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcI-eE-5Ui" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1261" y="159"/>
+            <point key="canvasLocation" x="-1158" y="159"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="0IO-Bv-S47">
@@ -74,8 +73,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am Joey! Glad to see you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKJ-NC-ujO">
-                                <rect key="frame" x="0.0" y="88" width="414" height="116"/>
-                                <fontDescription key="fontDescription" name="Khula-Bold" family="Khula" pointSize="36"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="98.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -126,24 +125,24 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="858"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reY-YN-JA1">
-                                                <rect key="frame" x="24" y="24" width="32" height="30.5"/>
-                                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="26"/>
+                                                <rect key="frame" x="24" y="24" width="33" height="35.5"/>
+                                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="26"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuK-we-T1M">
-                                                <rect key="frame" x="63" y="24" width="54.5" height="30.5"/>
-                                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="26"/>
+                                                <rect key="frame" x="64" y="24" width="55.5" height="35.5"/>
+                                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="26"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cP4-sd-ZzV" customClass="RoundedButton" customModule="Joey" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="70.5" width="366" height="45"/>
+                                                <rect key="frame" x="24" y="75.5" width="366" height="45"/>
                                                 <color key="backgroundColor" red="1" green="0.80392156862745101" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="bqu-cv-9wq"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
                                                 <state key="normal" title="Check your feeling">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -158,12 +157,12 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9H-5I-fPH" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="353" width="366" height="235"/>
+                                                <rect key="frame" x="24" y="358" width="366" height="230"/>
                                                 <subviews>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bns-O8-eDQ">
-                                                        <rect key="frame" x="8" y="50" width="350" height="177"/>
+                                                        <rect key="frame" x="16" y="54.5" width="334" height="167.5"/>
                                                         <color key="backgroundColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="E08-lV-QEV">
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="3" minimumInteritemSpacing="3" id="E08-lV-QEV">
                                                             <size key="itemSize" width="128" height="128"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -176,13 +175,13 @@
                                                         </connections>
                                                     </collectionView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImO-Xs-HoM">
-                                                        <rect key="frame" x="16" y="16" width="88.5" height="26"/>
-                                                        <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="22"/>
+                                                        <rect key="frame" x="16" y="16" width="95" height="30.5"/>
+                                                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8z-A4-pae">
-                                                        <rect key="frame" x="320" y="14" width="38" height="30"/>
+                                                        <rect key="frame" x="320" y="14" width="38" height="34.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="38" id="k5Y-fS-S3R"/>
                                                         </constraints>
@@ -192,7 +191,7 @@
                                                         </state>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSK-wi-xOz">
-                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="44"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="48.5"/>
                                                         <gestureRecognizers/>
                                                         <connections>
                                                             <outletCollection property="gestureRecognizers" destination="h1G-1q-3oR" appends="YES" id="sSW-ab-msu"/>
@@ -202,10 +201,10 @@
                                                 <color key="backgroundColor" red="0.3529411764705882" green="0.76078431372549016" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="dSK-wi-xOz" secondAttribute="trailing" id="47k-Ch-Qva"/>
-                                                    <constraint firstItem="z8z-A4-pae" firstAttribute="trailing" secondItem="bns-O8-eDQ" secondAttribute="trailing" id="AZA-Z6-lf4"/>
+                                                    <constraint firstItem="z8z-A4-pae" firstAttribute="trailing" secondItem="bns-O8-eDQ" secondAttribute="trailing" constant="8" id="AZA-Z6-lf4"/>
                                                     <constraint firstItem="bns-O8-eDQ" firstAttribute="top" secondItem="dSK-wi-xOz" secondAttribute="bottom" constant="6" id="MGm-aA-qAI"/>
                                                     <constraint firstItem="z8z-A4-pae" firstAttribute="centerY" secondItem="ImO-Xs-HoM" secondAttribute="centerY" id="NXC-Is-twC"/>
-                                                    <constraint firstItem="ImO-Xs-HoM" firstAttribute="leading" secondItem="bns-O8-eDQ" secondAttribute="leading" constant="8" id="Rbt-Hq-bPZ"/>
+                                                    <constraint firstItem="ImO-Xs-HoM" firstAttribute="leading" secondItem="bns-O8-eDQ" secondAttribute="leading" id="Rbt-Hq-bPZ"/>
                                                     <constraint firstItem="bns-O8-eDQ" firstAttribute="top" secondItem="z8z-A4-pae" secondAttribute="bottom" constant="6" id="ZtL-R5-Nnv"/>
                                                     <constraint firstItem="ImO-Xs-HoM" firstAttribute="top" secondItem="k9H-5I-fPH" secondAttribute="top" constant="16" id="bhQ-NZ-ms4"/>
                                                     <constraint firstItem="dSK-wi-xOz" firstAttribute="top" secondItem="k9H-5I-fPH" secondAttribute="top" id="h9C-6x-hr5"/>
@@ -226,13 +225,13 @@
                                                 <rect key="frame" x="24" y="604" width="366" height="244"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Space" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mE-xT-02q">
-                                                        <rect key="frame" x="16" y="16" width="99.5" height="26"/>
-                                                        <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="22"/>
+                                                        <rect key="frame" x="16" y="16" width="98" height="30.5"/>
+                                                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2e9-ol-hf2">
-                                                        <rect key="frame" x="320" y="10" width="38" height="38"/>
+                                                        <rect key="frame" x="320" y="10" width="38" height="42.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="38" id="fQs-d7-80z"/>
                                                         </constraints>
@@ -240,12 +239,15 @@
                                                         <state key="normal">
                                                             <imageReference key="image" image="chevron.right" catalog="system" symbolScale="large"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapMySpace:" destination="YTt-tT-nY8" eventType="touchUpInside" id="yTv-Aa-ghH"/>
+                                                        </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOZ-Od-OgE" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
-                                                        <rect key="frame" x="17" y="50" width="332" height="178"/>
+                                                        <rect key="frame" x="17" y="54.5" width="332" height="173.5"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcP-JR-Lut" customClass="BarChartView" customModule="Charts">
-                                                                <rect key="frame" x="8" y="16" width="316" height="146"/>
+                                                                <rect key="frame" x="8" y="16" width="316" height="141.5"/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             </view>
                                                         </subviews>
@@ -288,16 +290,16 @@
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5dk-7g-EWz" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="131.5" width="366" height="205.5"/>
+                                                <rect key="frame" x="24" y="136.5" width="366" height="205.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record your Thoughts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZL-ja-oOC">
-                                                        <rect key="frame" x="16" y="16" width="219.5" height="26"/>
-                                                        <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="22"/>
+                                                        <rect key="frame" x="16" y="16" width="227" height="30.5"/>
+                                                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sz2-vo-2AA">
-                                                        <rect key="frame" x="320" y="18" width="38" height="22"/>
+                                                        <rect key="frame" x="320" y="18" width="38" height="26.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="38" id="smM-pu-NuU"/>
                                                         </constraints>
@@ -307,7 +309,7 @@
                                                         </state>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joeyTRHome" translatesAutoresizingMaskIntoConstraints="NO" id="Toh-XB-hTs" customClass="RoundedImage" customModule="Joey" customModuleProvider="target">
-                                                        <rect key="frame" x="17" y="53" width="332" height="136.5"/>
+                                                        <rect key="frame" x="17" y="52.5" width="332" height="137"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -325,7 +327,7 @@
                                                     <constraint firstItem="sz2-vo-2AA" firstAttribute="trailing" secondItem="5dk-7g-EWz" secondAttribute="trailingMargin" id="Wez-c0-wOA"/>
                                                     <constraint firstItem="PZL-ja-oOC" firstAttribute="top" secondItem="5dk-7g-EWz" secondAttribute="top" constant="16" id="vP0-wI-h5N"/>
                                                     <constraint firstAttribute="bottom" secondItem="Toh-XB-hTs" secondAttribute="bottom" constant="16" id="xqp-JS-UgD"/>
-                                                    <constraint firstItem="Toh-XB-hTs" firstAttribute="top" secondItem="sz2-vo-2AA" secondAttribute="bottom" constant="13" id="zdK-tb-6VG"/>
+                                                    <constraint firstItem="Toh-XB-hTs" firstAttribute="top" secondItem="sz2-vo-2AA" secondAttribute="bottom" constant="8" id="zdK-tb-6VG"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
@@ -409,7 +411,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1716" y="548"/>
+            <point key="canvasLocation" x="-1159" y="1031"/>
         </scene>
         <!--DetectEmotionStartViewController-->
         <scene sceneID="7uB-tu-wgk">
@@ -419,7 +421,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RoB-U9-TaC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="770" y="813"/>
+            <point key="canvasLocation" x="124" y="1049"/>
         </scene>
         <!--MySpaceViewController-->
         <scene sceneID="Vq8-Tb-2fw">
@@ -429,7 +431,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W42-7V-VtR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="641" y="1013"/>
+            <point key="canvasLocation" x="-549" y="580"/>
         </scene>
         <!--SettingsViewController-->
         <scene sceneID="ITV-Qc-NKf">
@@ -449,7 +451,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="62w-Js-cuY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="642" y="712"/>
+            <point key="canvasLocation" x="33" y="982"/>
         </scene>
         <!--InstructionViewController-->
         <scene sceneID="8ln-Pb-JGW">
@@ -459,7 +461,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ete-IT-2Vu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="730" y="885"/>
+            <point key="canvasLocation" x="84" y="1086"/>
         </scene>
         <!--ThoughtsRecordViewController-->
         <scene sceneID="9xb-Vu-inG">
@@ -469,7 +471,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RcU-aO-O04" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="560" y="1009"/>
+            <point key="canvasLocation" x="109" y="1014"/>
         </scene>
     </scenes>
     <designables>
@@ -477,7 +479,7 @@
             <size key="intrinsicContentSize" width="332" height="137"/>
         </designable>
         <designable name="cP4-sd-ZzV">
-            <size key="intrinsicContentSize" width="167" height="36"/>
+            <size key="intrinsicContentSize" width="171" height="40"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>

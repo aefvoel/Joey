@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,7 +19,6 @@
             <string>Nunito-Regular</string>
         </array>
         <array key="Yuanti.ttc">
-            <string>STYuanti-SC-Bold</string>
             <string>STYuanti-SC-Regular</string>
         </array>
     </customFonts>
@@ -155,7 +154,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="132" id="hkz-xH-LoB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Bold" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -173,7 +172,7 @@
                                     <constraint firstAttribute="height" constant="45" id="3TO-1p-de6"/>
                                     <constraint firstAttribute="width" constant="240" id="OeJ-CT-YyB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
                                 <state key="normal" title="Yes">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -200,7 +199,7 @@
                                     <constraint firstAttribute="width" constant="240" id="3zG-3p-Yy6"/>
                                     <constraint firstAttribute="height" constant="45" id="zlO-aI-8np"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STYuanti-SC-Regular" family="Yuanti SC" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
                                 <state key="normal" title="No">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -535,10 +534,10 @@ However, don’t worry! I will only detect your face during the activity, and it
             <size key="intrinsicContentSize" width="53" height="36"/>
         </designable>
         <designable name="QlN-5b-92t">
-            <size key="intrinsicContentSize" width="30" height="36"/>
+            <size key="intrinsicContentSize" width="30" height="40"/>
         </designable>
         <designable name="S3i-6H-BJ3">
-            <size key="intrinsicContentSize" width="32" height="36"/>
+            <size key="intrinsicContentSize" width="31" height="40"/>
         </designable>
         <designable name="jCf-G4-yrv">
             <size key="intrinsicContentSize" width="31" height="40"/>
