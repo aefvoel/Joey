@@ -29,7 +29,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mirror Technique" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRX-Mn-LLa">
-                                <rect key="frame" x="20" y="111" width="370" height="47"/>
+                                <rect key="frame" x="20" y="111" width="370" height="55"/>
                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -44,7 +44,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="47"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBV-3L-FnD" customClass="RoundedView" customModule="Joey" customModuleProvider="target">
-                                <rect key="frame" x="24" y="183" width="366" height="349"/>
+                                <rect key="frame" x="24" y="191" width="366" height="341"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mirror Technique_miniCard" translatesAutoresizingMaskIntoConstraints="NO" id="e8V-bN-LuN">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="340"/>
@@ -121,7 +121,7 @@
                                         <rect key="frame" x="80.5" y="0.0" width="77" height="61"/>
                                         <subviews>
                                             <label opaque="NO" tag="300" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKw-D4-OJm">
-                                                <rect key="frame" x="4" y="8" width="69" height="37.5"/>
+                                                <rect key="frame" x="4" y="8" width="69" height="44"/>
                                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="16"/>
                                                 <color key="textColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -150,7 +150,7 @@
                                         <rect key="frame" x="161.5" y="0.0" width="76.5" height="61"/>
                                         <subviews>
                                             <label opaque="NO" tag="480" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8 minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuL-EQ-N16">
-                                                <rect key="frame" x="4" y="8" width="68.5" height="37.5"/>
+                                                <rect key="frame" x="4" y="8" width="68.5" height="44"/>
                                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="16"/>
                                                 <color key="textColor" red="0.35294117650000001" green="0.76078431369999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -399,7 +399,7 @@
     </scenes>
     <designables>
         <designable name="k8l-dF-REe">
-            <size key="intrinsicContentSize" width="43" height="36"/>
+            <size key="intrinsicContentSize" width="47" height="40"/>
         </designable>
     </designables>
     <resources>
