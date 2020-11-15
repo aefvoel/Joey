@@ -84,6 +84,7 @@ class StartMirrorViewController: UIViewController {
                     for text in hint {
                         if words.lowercased().hasSuffix(text.lowercased()) {
                             self.randomHint()
+                            break
                         }
                     }
                 }
