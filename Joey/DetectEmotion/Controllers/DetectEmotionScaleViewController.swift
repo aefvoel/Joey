@@ -33,6 +33,7 @@ class DetectEmotionScaleViewController: UIViewController {
         scaleSlider.setThumbImage(thumbImage, for: .normal)
         scaleSlider.setThumbImage(thumbImage, for: .highlighted)
         questionLabel.text = data?.emotion.scaleQuestion
+        indicatorLabel.isHidden = true
     }
     
     @IBAction func onSliderChanged(_ sender: UISlider) {
@@ -48,6 +49,11 @@ class DetectEmotionScaleViewController: UIViewController {
         let trackRect = sender.trackRect(forBounds: sender.frame)
         let thumbRect = sender.thumbRect(forBounds: sender.bounds, trackRect: trackRect, value: sender.value)
         indicatorLabel.center.x = thumbRect.midX
+        
+        if indicatorLabel.isHidden {
+            indicatorLabel.center.y = sender.frame.midY - 45
+            indicatorLabel.isHidden = false
+        }
     }
     
     @IBAction func onOkayButtonTapped(_ sender: Any) {
