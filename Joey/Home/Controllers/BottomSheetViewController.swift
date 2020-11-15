@@ -166,7 +166,7 @@ class BottomSheetViewController: UIViewController, ChartViewDelegate {
             // Determines if using inline mode or not
             useInlineMode: true
         )
-        let sheetController = SheetViewController(controller: controller, sizes: [.percent(0.50)], options: options)
+        let sheetController = SheetViewController(controller: controller, sizes: [.percent(1.00)], options: options)
         sheetController.allowGestureThroughOverlay = false
         // The size of the grip in the pull bar
         sheetController.gripSize = CGSize(width: 83, height: 7)

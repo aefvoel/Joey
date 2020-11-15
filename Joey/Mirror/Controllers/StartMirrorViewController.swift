@@ -58,7 +58,7 @@ class StartMirrorViewController: UIViewController {
         }
         
         do {
-            try audioSession.setCategory(.record, mode: .spokenAudio, options: .duckOthers)
+            try audioSession.setCategory(.record, mode: .measurement, options: .duckOthers)
 //            try audioSession.setMode(.measurement)
             try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
         } catch {
@@ -120,7 +120,6 @@ class StartMirrorViewController: UIViewController {
       
         // Stop recording.
         audioEngine.stop()
-        inputNode.removeTap(onBus: 0) // Call after audio engine is stopped as it modifies the graph.
       
         // Stop our session.
         try? audioSession.setActive(false)
@@ -212,6 +211,7 @@ class StartMirrorViewController: UIViewController {
         currentHint = hints[index]
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.inputNode.removeTap(onBus: 0) // Call after audio engine is stopped as it modifies the graph.
             self.startRecording()
         }
     }
