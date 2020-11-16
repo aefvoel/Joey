@@ -67,9 +67,9 @@ struct FollowUp {
     }
     
     enum ScaleType: String {
-        case big = "High"
+        case big = "Very intense"
         case medium = "Average"
-        case small = "Very intense"
+        case small = "Mild"
     }
     
     var scaleType: ScaleType? {
