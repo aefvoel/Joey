@@ -60,8 +60,13 @@ class StartPracticeSmilingViewController: UIViewController {
     }
     
     @objc func onClickButtonDone(sender : UITapGestureRecognizer){
-        endTimer()
-        performSegue(withIdentifier: "toAfterActivity", sender: nil)
+        if emotion == nil {
+            let alert = AlertHelper.createAlert(title: "Analyzing failed!", message: "Please put your face on the frame properly.", onComplete: nil)
+            present(alert, animated: true, completion: nil)
+        } else {
+            endTimer()
+            performSegue(withIdentifier: "toAfterActivity", sender: nil)
+        }
     }
     
     override func viewDidDisappear(_ animated: Bool) {
