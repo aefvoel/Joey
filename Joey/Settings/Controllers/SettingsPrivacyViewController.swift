@@ -65,7 +65,7 @@ This policy is effective as of 2020-10-30
 """
 
 let privacyContactUsText = """
-If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at joey@gmail.com.
+If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at joey.carebuddy@gmail.com.
 """
 
 class SettingsPrivacyViewController: UIViewController {

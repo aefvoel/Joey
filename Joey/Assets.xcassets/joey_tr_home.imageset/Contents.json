@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "joeyTRHome.jpg",
+      "filename" : "joey_tr_home.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "joeyTRHome@2x.jpg",
+      "filename" : "joey_tr_home@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "joeyTRHome@3x.jpg",
+      "filename" : "joey_tr_home@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
