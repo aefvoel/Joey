@@ -38,22 +38,22 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsQ-48-VLX">
-                                                <rect key="frame" x="66" y="24" width="324" height="33"/>
+                                                <rect key="frame" x="66" y="24" width="324" height="28"/>
                                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This activity can help you:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0c7-p1-8Oj">
-                                                <rect key="frame" x="24" y="176.5" width="366" height="30.5"/>
+                                                <rect key="frame" x="24" y="150" width="366" height="26"/>
                                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="check-box" translatesAutoresizingMaskIntoConstraints="NO" id="xBD-Yp-UnW">
-                                                <rect key="frame" x="24" y="294" width="20" height="26"/>
+                                                <rect key="frame" x="24" y="249" width="20" height="19"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuZ-kH-fdR">
-                                                <rect key="frame" x="52" y="259.5" width="338" height="26"/>
+                                                <rect key="frame" x="52" y="221.5" width="338" height="19"/>
                                                 <string key="text">to release toxic emotions
 </string>
                                                 <fontDescription key="fontDescription" name="Khula-Regular" family="Khula" pointSize="16"/>
@@ -61,10 +61,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="check-box" translatesAutoresizingMaskIntoConstraints="NO" id="GOM-dO-aL1">
-                                                <rect key="frame" x="24" y="259" width="20" height="27"/>
+                                                <rect key="frame" x="24" y="221" width="20" height="20"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjv-Ql-gkz">
-                                                <rect key="frame" x="52" y="225" width="338" height="26"/>
+                                                <rect key="frame" x="52" y="194" width="338" height="19"/>
                                                 <string key="text">to release toxic emotions
 </string>
                                                 <fontDescription key="fontDescription" name="Khula-Regular" family="Khula" pointSize="16"/>
@@ -72,10 +72,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="check-box" translatesAutoresizingMaskIntoConstraints="NO" id="a0v-3B-iU6">
-                                                <rect key="frame" x="24" y="225" width="20" height="26"/>
+                                                <rect key="frame" x="24" y="194" width="20" height="19"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAW-9c-vMm">
-                                                <rect key="frame" x="52" y="294" width="338" height="26"/>
+                                                <rect key="frame" x="52" y="249" width="338" height="19"/>
                                                 <string key="text">to release toxic emotions
 </string>
                                                 <fontDescription key="fontDescription" name="Khula-Regular" family="Khula" pointSize="16"/>
@@ -83,20 +83,20 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifying-glass" translatesAutoresizingMaskIntoConstraints="NO" id="pAq-Hn-UPs">
-                                                <rect key="frame" x="24" y="343" width="20" height="20"/>
+                                                <rect key="frame" x="24" y="291" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="QGe-qd-rsg"/>
                                                     <constraint firstAttribute="width" constant="20" id="xSZ-jp-Zap"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhA-S0-ECJ">
-                                                <rect key="frame" x="24" y="75" width="366" height="77.5"/>
+                                                <rect key="frame" x="24" y="70" width="366" height="56"/>
                                                 <fontDescription key="fontDescription" name="Khula-Regular" family="Khula" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaP-yX-ERo">
-                                                <rect key="frame" x="52" y="336" width="95" height="32"/>
+                                                <rect key="frame" x="52" y="284" width="89" height="29"/>
                                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="14"/>
                                                 <state key="normal" title="Why it works?">
                                                     <color key="titleColor" red="0.96470588235294119" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
@@ -285,7 +285,7 @@
         <!--Instruction Modal View Controller-->
         <scene sceneID="IjT-lX-Apl">
             <objects>
-                <viewController id="T0t-kp-4ah" customClass="InstructionModalViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InstructionModalViewController" id="T0t-kp-4ah" customClass="InstructionModalViewController" customModule="Joey" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yt0-6e-sJj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -343,7 +343,7 @@
     </scenes>
     <designables>
         <designable name="uTw-sI-wUh">
-            <size key="intrinsicContentSize" width="52" height="40"/>
+            <size key="intrinsicContentSize" width="50" height="36"/>
         </designable>
     </designables>
     <resources>
