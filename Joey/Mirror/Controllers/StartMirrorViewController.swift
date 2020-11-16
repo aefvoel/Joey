@@ -161,6 +161,7 @@ class StartMirrorViewController: UIViewController {
         super.viewDidDisappear(animated)
         sceneView.session.pause()
         countdownTimer.invalidate()
+        stopRecording()
     }
     
     

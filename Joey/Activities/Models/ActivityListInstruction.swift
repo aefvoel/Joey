@@ -17,6 +17,7 @@ struct ActivitiesInstruction {
     var activityShortDesc: String
     var activityHomeImage: UIImage
     var activityInstructionImage: UIImage
+    var acrivityAfterLabel: String
 }
 
 var activitiesInstructionArray = [
@@ -32,7 +33,8 @@ var activitiesInstructionArray = [
         activityImage: #imageLiteral(resourceName: "mirrorTechnique_activityList"),
         activityShortDesc: "Boost Self-Esteem Instantly",
         activityHomeImage: #imageLiteral(resourceName: "Mirror Technique_miniCard"),
-        activityInstructionImage: #imageLiteral(resourceName: "MT_InstructionNew")
+        activityInstructionImage: #imageLiteral(resourceName: "MT_InstructionNew"),
+        acrivityAfterLabel: "Well done! You had told yourself you are that worthy! Confidence is the ultimate success. Once you have this mindset, nothing can stop you.\nDo you want to start again?"
     ),
     
     //Practice Smile
@@ -45,7 +47,8 @@ var activitiesInstructionArray = [
         activityImage: #imageLiteral(resourceName: "practiceSmiling_activityList"),
         activityShortDesc: "Reduce Distress",
         activityHomeImage: #imageLiteral(resourceName: "practiceSmiling_miniCard"),
-        activityInstructionImage: #imageLiteral(resourceName: "instruction_practicesmiling")
+        activityInstructionImage: #imageLiteral(resourceName: "instruction_practicesmiling"),
+        acrivityAfterLabel: "Well done! You had seen how cool your smile is and it should lift up your mood even a bit because that’s the power of smiling!\nDo you want to start again?"
     ),
     
     //Jacobson's Technique
@@ -58,7 +61,8 @@ var activitiesInstructionArray = [
         activityImage: #imageLiteral(resourceName: "jackobsRelaxation_activityList"),
         activityShortDesc: "Relieving Anxiety",
         activityHomeImage: #imageLiteral(resourceName: "Jackob_miniCard"),
-        activityInstructionImage: #imageLiteral(resourceName: "instruction_jacobson")
+        activityInstructionImage: #imageLiteral(resourceName: "instruction_jacobson"),
+        acrivityAfterLabel: "Well done! Get rid of the tense in your muscles and relax!\nDo you want to start again?"
     ),
     
     //Thought Records

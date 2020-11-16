@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -150,9 +150,9 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Well done! You’re being genuinely. Do you want to start again?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzc-zY-rI7">
-                                <rect key="frame" x="48" y="119" width="318" height="132"/>
+                                <rect key="frame" x="33" y="108" width="348" height="155"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="132" id="hkz-xH-LoB"/>
+                                    <constraint firstAttribute="height" constant="155" id="hkz-xH-LoB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -235,10 +235,10 @@
                             <constraint firstItem="QlN-5b-92t" firstAttribute="top" secondItem="S3i-6H-BJ3" secondAttribute="bottom" constant="24" id="PvW-pH-eId"/>
                             <constraint firstItem="QlN-5b-92t" firstAttribute="centerX" secondItem="S3i-6H-BJ3" secondAttribute="centerX" id="Rqn-aT-7ak"/>
                             <constraint firstItem="bNL-we-2H8" firstAttribute="leading" secondItem="yCG-DK-Eq2" secondAttribute="leading" constant="24" id="YsV-d8-tfq"/>
-                            <constraint firstItem="bNL-we-2H8" firstAttribute="top" secondItem="qzc-zY-rI7" secondAttribute="bottom" constant="-143" id="ZO7-Yb-EnA"/>
+                            <constraint firstItem="bNL-we-2H8" firstAttribute="top" secondItem="qzc-zY-rI7" secondAttribute="bottom" constant="-155" id="ZO7-Yb-EnA"/>
                             <constraint firstItem="jIq-b7-Tua" firstAttribute="leading" secondItem="yCG-DK-Eq2" secondAttribute="leading" id="dOh-8X-GMU"/>
-                            <constraint firstItem="yCG-DK-Eq2" firstAttribute="trailing" secondItem="qzc-zY-rI7" secondAttribute="trailing" constant="48" id="eJT-v9-eeh"/>
-                            <constraint firstItem="qzc-zY-rI7" firstAttribute="leading" secondItem="yCG-DK-Eq2" secondAttribute="leading" constant="48" id="g0j-RN-fZF"/>
+                            <constraint firstItem="yCG-DK-Eq2" firstAttribute="trailing" secondItem="qzc-zY-rI7" secondAttribute="trailing" constant="33" id="eJT-v9-eeh"/>
+                            <constraint firstItem="qzc-zY-rI7" firstAttribute="leading" secondItem="yCG-DK-Eq2" secondAttribute="leading" constant="33" id="g0j-RN-fZF"/>
                             <constraint firstItem="yCG-DK-Eq2" firstAttribute="trailing" secondItem="bNL-we-2H8" secondAttribute="trailing" constant="24" id="ljF-Xu-lNk"/>
                             <constraint firstItem="jIq-b7-Tua" firstAttribute="top" secondItem="yCG-DK-Eq2" secondAttribute="top" id="lq5-1A-ZvN"/>
                             <constraint firstItem="S3i-6H-BJ3" firstAttribute="top" secondItem="bNL-we-2H8" secondAttribute="bottom" constant="64" id="qOB-hY-02y"/>
@@ -256,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7E2-yo-T8R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-739" y="955"/>
+            <point key="canvasLocation" x="-739.13043478260875" y="954.91071428571422"/>
         </scene>
         <!--Analyzing After Activity View Controller-->
         <scene sceneID="8j8-5f-FJb">
@@ -390,7 +390,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awesome Job!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxk-ek-UsR">
-                                <rect key="frame" x="24" y="93" width="366" height="47"/>
+                                <rect key="frame" x="24" y="93" width="366" height="55"/>
                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -529,19 +529,19 @@ However, don’t worry! I will only detect your face during the activity, and it
     </scenes>
     <designables>
         <designable name="1Sw-bq-PFp">
-            <size key="intrinsicContentSize" width="30" height="36"/>
+            <size key="intrinsicContentSize" width="30" height="40"/>
         </designable>
         <designable name="9hU-n0-vOW">
             <size key="intrinsicContentSize" width="53" height="36"/>
         </designable>
         <designable name="QlN-5b-92t">
-            <size key="intrinsicContentSize" width="30" height="36"/>
+            <size key="intrinsicContentSize" width="30" height="40"/>
         </designable>
         <designable name="S3i-6H-BJ3">
-            <size key="intrinsicContentSize" width="32" height="36"/>
+            <size key="intrinsicContentSize" width="31" height="40"/>
         </designable>
         <designable name="jCf-G4-yrv">
-            <size key="intrinsicContentSize" width="32" height="36"/>
+            <size key="intrinsicContentSize" width="31" height="40"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>

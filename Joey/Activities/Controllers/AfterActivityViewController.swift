@@ -29,6 +29,7 @@ class AfterActivityViewController: UIViewController {
     
     func setupUI(){
         navBar.delegate = self
+        suggestionLabel.text = activityInstruction?.acrivityAfterLabel
         self.view.insertSubview(imageView, at: 0)
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: view.topAnchor),
