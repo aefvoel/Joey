@@ -390,7 +390,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awesome Job!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxk-ek-UsR">
-                                <rect key="frame" x="75" y="99" width="264.5" height="55"/>
+                                <rect key="frame" x="75" y="99" width="264.5" height="47"/>
                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -528,19 +528,19 @@ However, don’t worry! I will only detect your face during the activity, and it
     </scenes>
     <designables>
         <designable name="1Sw-bq-PFp">
-            <size key="intrinsicContentSize" width="30" height="40"/>
+            <size key="intrinsicContentSize" width="30" height="36"/>
         </designable>
         <designable name="9hU-n0-vOW">
             <size key="intrinsicContentSize" width="53" height="36"/>
         </designable>
         <designable name="QlN-5b-92t">
-            <size key="intrinsicContentSize" width="30" height="40"/>
+            <size key="intrinsicContentSize" width="30" height="36"/>
         </designable>
         <designable name="S3i-6H-BJ3">
-            <size key="intrinsicContentSize" width="31" height="40"/>
+            <size key="intrinsicContentSize" width="32" height="36"/>
         </designable>
         <designable name="jCf-G4-yrv">
-            <size key="intrinsicContentSize" width="31" height="40"/>
+            <size key="intrinsicContentSize" width="32" height="36"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>

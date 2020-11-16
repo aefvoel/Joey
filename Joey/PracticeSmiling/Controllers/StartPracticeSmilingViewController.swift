@@ -41,8 +41,8 @@ class StartPracticeSmilingViewController: UIViewController {
         startTimer()
         navBar.delegate = self
         sceneView.delegate = self
-//        progressView.progress = 0.0
-//        progressView.layer.cornerRadius = 4
+        navBar.buttonDone.isHidden = false
+        navBar.buttonDone.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(self.onClickButtonDone)))
         self.view.insertSubview(imageView, at: 0)
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -57,6 +57,11 @@ class StartPracticeSmilingViewController: UIViewController {
         configuration.isLightEstimationEnabled = true
         sceneView.session.run(configuration)
         
+    }
+    
+    @objc func onClickButtonDone(sender : UITapGestureRecognizer){
+        endTimer()
+        performSegue(withIdentifier: "toAfterActivity", sender: nil)
     }
     
     override func viewDidDisappear(_ animated: Bool) {

@@ -1205,6 +1205,7 @@
 				CODE_SIGN_ENTITLEMENTS = Joey/Joey.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A97SVDB2Q9;
 				INFOPLIST_FILE = Joey/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1212,6 +1213,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = id.appleacademy.Joey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Joey;
@@ -1228,6 +1230,7 @@
 				CODE_SIGN_ENTITLEMENTS = Joey/Joey.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A97SVDB2Q9;
 				INFOPLIST_FILE = Joey/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1235,6 +1238,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = id.appleacademy.Joey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Joey;
