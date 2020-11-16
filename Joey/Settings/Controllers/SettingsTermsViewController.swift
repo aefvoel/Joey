@@ -45,7 +45,7 @@ class SettingsTermsViewController: UIViewController {
             vc.data = [
                 AccordionItem(title: "Our terms of service", content: termsOfServiceText),
                 AccordionItem(title: "Changes to this terms of service", content: changesOfThisTermsOfServiceText),
-                AccordionItem(title: "Contact us", content: "If you have any questions or suggestions about our Terms and Conditions, do not hesitate to contact us at joey@gmail.com.")
+                AccordionItem(title: "Contact us", content: "If you have any questions or suggestions about our Terms and Conditions, do not hesitate to contact us at joey.carebuddy@gmail.com.")
             ]
         }
     }
