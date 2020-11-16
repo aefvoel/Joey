@@ -50,6 +50,8 @@ class DetectEmotionSuggestActivityViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? InstructionViewController {
             vc.activityInstruction = instruction
+        } else if let vc = segue.destination as? InstructionModalViewController {
+            vc.data = instruction
         }
     }
 
