@@ -32,7 +32,9 @@ class DetectEmotionScaleViewController: UIViewController {
         let thumbImage = UIImage(named: "indicator-\(currentScale)")
         scaleSlider.setThumbImage(thumbImage, for: .normal)
         scaleSlider.setThumbImage(thumbImage, for: .highlighted)
-        questionLabel.text = data?.emotion.scaleQuestion
+        if let scaleQuestion = data?.emotion.scaleQuestion {
+            questionLabel.text = "From scale 1 to 10, \(scaleQuestion)"
+        }
         indicatorLabel.isHidden = true
     }
     
